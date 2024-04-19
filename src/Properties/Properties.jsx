@@ -1,13 +1,24 @@
 import Product from "../Product/Product";
 import LuxuryVilla from "../assets/Luxury Villa.png"
-import ModernApartment from "../assets/Modern Apartment.png"
-import CozyCottage from "../assets/Cozy Cottage.png"
-import SpaciousCondo from "../assets/Spacious Condo.png"
-import LuxuryPenthouse from "../assets/LuxuryPenthouse.png"
-import LakefrontRepeat from "../assets/LakefrontRepeat.png"
-import CharmingBungalow from "../assets/Charming Bungalow.png"
-import LuxuryVilla2 from "../assets/Luxury Villa2.png"
+// import ModernApartment from "../assets/Modern Apartment.png"
+// import CozyCottage from "../assets/Cozy Cottage.png"
+// import SpaciousCondo from "../assets/Spacious Condo.png"
+// import LuxuryPenthouse from "../assets/LuxuryPenthouse.png"
+// import LakefrontRepeat from "../assets/LakefrontRepeat.png"
+// import CharmingBungalow from "../assets/Charming Bungalow.png"
+// import LuxuryVilla2 from "../assets/Luxury Villa2.png"
+import axios from "axios";
+import { useEffect } from "react";
+import { useState } from "react";
 const Properties = () => {
+  const [productData,setProductData] = useState()
+  useEffect(() => {
+    axios.get('http://localhost:1337/products')
+      .then((res) => {
+        setProductData(res.data)
+      })
+  }, []);
+  
   return (
     <section
       style={{
@@ -111,13 +122,20 @@ const Properties = () => {
             fontSize: "18px",
           }}
         >
-          <Product
-            placeholderImage={LuxuryVilla}
-            heading="Luxury Villa"
-            text="Oceanfront"
-            price="$1,000,000"
-          />
-          <Product
+          {productData?.map((items,index)=>{
+            console.log(items);
+            return(
+              <Product
+              key={index}
+              placeholderImage={LuxuryVilla}
+              heading={items.productName}
+              text={items.category}
+              price={items.price}
+            />
+            )
+          })}
+        
+          {/* <Product
             placeholderImage={ModernApartment}
             heading="Modern Apartment"
             text="City Center"
@@ -158,7 +176,7 @@ const Properties = () => {
             heading="Luxury Villa"
             text="Oceanfront"
             price="$1,000,000"
-          />
+          /> */}
         </div>
       </div>
     </section>
