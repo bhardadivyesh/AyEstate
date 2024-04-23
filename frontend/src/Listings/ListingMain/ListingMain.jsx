@@ -15,13 +15,137 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const ListingMain = () => {
-  const [productData, setProductData] = useState();
+  const productData = [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "price": 29.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "price": 89.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 4,
+      "name": "Smartphone",
+      "price": 699.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 5,
+      "name": "Gaming Headset",
+      "price": 59.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "4K Monitor",
+      "price": 299.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 7,
+      "name": "USB-C Cable",
+      "price": 9.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 8,
+      "name": "External Hard Drive",
+      "price": 79.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 9,
+      "name": "Laptop Stand",
+      "price": 19.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 10,
+      "name": "Portable Charger",
+      "price": 29.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 11,
+      "name": "Fitness Tracker",
+      "price": 59.99,
+      "category": "Wearables"
+    },
+    {
+      "id": 12,
+      "name": "Wireless Earbuds",
+      "price": 49.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 13,
+      "name": "Tablet",
+      "price": 199.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 14,
+      "name": "Smartwatch",
+      "price": 199.99,
+      "category": "Wearables"
+    },
+    {
+      "id": 15,
+      "name": "Laptop",
+      "price": 999.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 16,
+      "name": "HD Webcam",
+      "price": 49.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 17,
+      "name": "Desk Lamp",
+      "price": 24.99,
+      "category": "Home & Office"
+    },
+    {
+      "id": 18,
+      "name": "Electric Toothbrush",
+      "price": 39.99,
+      "category": "Personal Care"
+    },
+    {
+      "id": 19,
+      "name": "Wireless Charger",
+      "price": 19.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 20,
+      "name": "Smart Home Speaker",
+      "price": 99.99,
+      "category": "Smart Home"
+    }
+  ];
+  
+  
+  // const [productData, setProductData] = useState();
   // api call
-  useEffect(() => {
-    axios.get("http://localhost:1337/listings").then((res) => {
-      setProductData(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:1337/listings").then((res) => {
+  //     setProductData(res.data);
+  //   });
+  // }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedLocations, setSelectedLocations] = useState([]);
@@ -120,60 +244,57 @@ const ListingMain = () => {
     );
   });
 // pagination
-  const data = productData // Example data array
-  const [currentPage, setCurrentPage] = useState(1);
-  
-  const [itemsPerPage] = useState(6); // Set itemsPerPage equal to total items for no pagination
+const [currentPage, setCurrentPage] = useState(1);
 
-  const totalItems = data?.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+const itemsPerPage = 6;
+const totalItems = productData.length;
+const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-  // Determine the indices for the current page
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+// Determine the indices for the current page
+const startIndex = (currentPage - 1) * itemsPerPage;
+const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
 
-  // Get the items for the current page
-  const currentItems = data?.slice(startIndex, endIndex);
-  
+// Get the items for the current page
+const currentItems = productData.slice(startIndex, endIndex);
+console.log(currentItems);
 
-  // Conditionally render pagination controls
-  const renderPagination = itemsPerPage !== totalItems;
- 
-  // Conditionally render pagination controls
-  const generateButtons = () => {
-    const buttons = [];
-    for (let i = 1; i <= currentPage; i++) {
-      buttons.push(
-        <button
-          key={i}
-          onClick={() => setCurrentPage(i)}
-          className="specificHeightButton"
-          style={{
-            height: "45px",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            padding: "11px 18px 11px 19px",
-            cursor: "pointer",
-            backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
-          }}
-        >
-          {i}
-        </button>
-      );
-    }
-    return buttons;
-  };
-  const previousPage = () =>{
-    setCurrentPage(()=> currentPage - 1)
+const generatePageButtons = () => {
+  const buttons = [];
+  for (let i = 1; i <= totalPages; i++) {
+    buttons.push(
+      <button
+        key={i}
+        onClick={() => setCurrentPage(i)}
+        className="specificHeightButton"
+        style={{
+          height: "45px",
+          width : "45px",
+          borderRadius: "8px",
+          border: "1px solid #e4e9ee",
+          boxSizing: "border-box",
+          cursor: "pointer",
+          backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
+        }}
+      >
+        {i}
+      </button>
+    );
   }
-  const nextPage = () =>{
-    setCurrentPage(()=> currentPage + 1)
+  return buttons;
+};
+
+const previousPage = () => {
+  if (currentPage > 1) {
+    setCurrentPage(currentPage - 1);
   }
+};
+
+const nextPage = () => {
+  if (currentPage < totalPages) {
+    setCurrentPage(currentPage + 1);
+  }
+};
+
   useEffect(()=>{
 
   },[])
@@ -1590,7 +1711,7 @@ const ListingMain = () => {
                         maxWidth: "calc(100% - 319px)",
                         fontSize: "22px",
                         color: "#000",
-                        display: "grid",
+                        // display: "grid",
                         gridTemplateColumns: "repeat(2, 1fr)",
                       }}
                     >
@@ -1618,7 +1739,7 @@ const ListingMain = () => {
                           size={items.size}
                           name={items.name}
                           location={items.location}
-                          propBackgroundImage={`url(http://localhost:1337${items.image[0].url})`}
+                          // propBackgroundImage={`url(http://localhost:1337${items?.image[0]?.url})`}
                           price={`$${items.price}`}
                         />
                         {productData[index + 1] && (
@@ -1636,9 +1757,9 @@ const ListingMain = () => {
                             size={productData[index + 1].size}
                             name={productData[index + 1].name}
                             location={productData[index + 1].location}
-                            propBackgroundImage={`url(http://localhost:1337${
-                              productData[index + 1].image[0].url
-                            })`}
+                            // propBackgroundImage={`url(http://localhost:1337${
+                            //   productData[index + 1].image[0].url
+                            // })`}
                             price={`$${productData[index + 1].price}`}
                           />
                         )}
@@ -1652,7 +1773,7 @@ const ListingMain = () => {
         </section>
       </main>
 
-      <div
+      {/* <div
         style={{
           width: "2122px",
           display: "flex",
@@ -1663,7 +1784,7 @@ const ListingMain = () => {
           maxWidth: "50%",
         }}
       >
-        {productData?.length > 6 && (
+        
           <div
             style={{
               height: "44px",
@@ -1734,8 +1855,120 @@ const ListingMain = () => {
             >
             </div>
           </div>
+        
+      </div> */}
+       {/* <div
+    style={{
+      width: "2122px",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      justifyContent: "center",
+      boxSizing: "border-box",
+      maxWidth: "50%",
+    }}
+  >
+    <div
+      style={{
+        height: "44px",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        gap: "8px",
+        fontFamily: "Sora, sans-serif",
+        fontWeight: "regular",
+        fontSize: "16px",
+      }}
+    >
+      {currentPage > 1 && (
+        <button
+          onClick={previousPage}
+          style={{
+            height: "45px",
+            borderRadius: "8px",
+            border: "1px solid #e4e9ee",
+            boxSizing: "border-box",
+            padding: "11px 18px",
+            color: "#1d9e34",
+            cursor: "pointer",
+            backgroundColor: "#f9f9f9",
+          }}
+        >
+          Previous
+        </button>
+      )}
+
+      
+      {generatePageButtons()}
+
+      
+      {currentPage < totalPages && (
+        <button
+          onClick={nextPage}
+          style={{
+            height: "45px",
+            borderRadius: "8px",
+            border: "1px solid #e4e9ee",
+            boxSizing: "border-box",
+            padding: "11px 18px",
+            cursor: "pointer",
+            backgroundColor: "#f9f9f9",
+          }}
+        >
+          Next
+        </button>
+      )}
+    </div>
+  </div>  */}
+   <div>
+      <div
+        style={{
+          height: "44px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          gap: "8px",
+        }}
+      >
+        {currentPage > 1 && (
+          <button
+            onClick={previousPage}
+            style={{
+              height: "45px",
+              borderRadius: "8px",
+              border: "1px solid #e4e9ee",
+              boxSizing: "border-box",
+              padding: "11px 18px",
+              cursor: "pointer",
+              backgroundColor: "#f9f9f9",
+            }}
+          >
+            Previous
+          </button>
+        )}
+
+        {generatePageButtons()}
+
+        {currentPage < totalPages && (
+          <button
+            onClick={nextPage}
+            style={{
+              height: "45px",
+              borderRadius: "8px",
+              border: "1px solid #e4e9ee",
+              boxSizing: "border-box",
+              padding: "11px 18px",
+              cursor: "pointer",
+              backgroundColor: "#f9f9f9",
+            }}
+          >
+            Next
+          </button>
         )}
       </div>
+    </div>
       <Navigation1 />
     </div>
   );
