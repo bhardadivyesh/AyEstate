@@ -16,21 +16,19 @@ import axios from "axios";
 
 const ListingMain = () => {
   const [productData, setProductData] = useState();
-    // api call
-    useEffect(() => {
-      axios.get("http://localhost:1337/listings").then((res) => {
-        setProductData(res.data);
-      });
-    }, []);
+  // api call
+  useEffect(() => {
+    axios.get("http://localhost:1337/listings").then((res) => {
+      setProductData(res.data);
+    });
+  }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedLocations, setSelectedLocations] = useState([]);
-  const [starMatched,setStarMatched] = useState([])
-  const [LuxuryBuilding,setLuxuryBuilding] = useState([])
-  const [bestSeller,setBestSeller] = useState([])
-  const [discount,setDiscount] = useState([])
-
-
+  const [starMatched, setStarMatched] = useState([]);
+  const [LuxuryBuilding, setLuxuryBuilding] = useState([]);
+  const [bestSeller, setBestSeller] = useState([]);
+  const [discount, setDiscount] = useState([]);
 
   const handleCategoryChange = (e) => {
     const { value, checked } = e.target;
@@ -93,7 +91,6 @@ const ListingMain = () => {
       );
     }
   };
- 
 
   const filteredProperties = productData?.filter((property) => {
     const categoryMatch =
@@ -105,43 +102,47 @@ const ListingMain = () => {
     const starMatche =
       starMatched.length === 0 ||
       property.star >= 4 ||
-      starMatched.includes(property.star); 
+      starMatched.includes(property.star);
     const buildingmatched =
       LuxuryBuilding.length === 0 ||
       LuxuryBuilding.includes(property.LuxuryBuilding);
     const bestSellerMatched =
-      bestSeller.length === 0 ||
-      bestSeller.includes(property.BestSeller);
+      bestSeller.length === 0 || bestSeller.includes(property.BestSeller);
     const discountMatched =
-      discount.length === 0 ||
-      discount.includes(property.Discount);
-    return categoryMatch && locationMatch && starMatche && buildingmatched && bestSellerMatched && discountMatched;
+      discount.length === 0 || discount.includes(property.Discount);
+    return (
+      categoryMatch &&
+      locationMatch &&
+      starMatche &&
+      buildingmatched &&
+      bestSellerMatched &&
+      discountMatched
+    );
   });
-  // pagination logic
-  const firstPage = () => {
-    setCurrentPage(1);
-  };
-  const lastPage = () => {
-    setCurrentPage(totalPages);
-  };
-  const data = productData;
-  const [currentPage, setCurrentPage] = useState(2);
-  // console.log(currentPage);
+// pagination
+  const data = productData // Example data array
+  const [currentPage, setCurrentPage] = useState(1);
   
-  const [itemsPerPage] = useState(1);
+  const [itemsPerPage] = useState(6); // Set itemsPerPage equal to total items for no pagination
+
   const totalItems = data?.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
+
   // Determine the indices for the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
+
   // Get the items for the current page
   const currentItems = data?.slice(startIndex, endIndex);
-  // console.log(currentItems);
   
+
+  // Conditionally render pagination controls
+  const renderPagination = itemsPerPage !== totalItems;
+ 
   // Conditionally render pagination controls
   const generateButtons = () => {
     const buttons = [];
-    for (let i = 2; i <= currentPage; i++) {
+    for (let i = 1; i <= currentPage; i++) {
       buttons.push(
         <button
           key={i}
@@ -167,17 +168,19 @@ const ListingMain = () => {
     }
     return buttons;
   };
+  const previousPage = () =>{
+    setCurrentPage(()=> currentPage - 1)
+  }
+  const nextPage = () =>{
+    setCurrentPage(()=> currentPage + 1)
+  }
+  useEffect(()=>{
 
-  const [buttonCount,setButtonCount] = useState(3)
-  
-
-  useEffect(() => {
-    const buttons = document.getElementsByClassName('specificHeightButton');
-      setButtonCount(buttons.length)
-  }, [currentPage]);
-  
-  
-  
+  },[])
+  // useEffect(() => {
+  //   const buttons = document.getElementsByClassName("specificHeightButton");
+  //   setButtonCount(buttons.length);
+  // }, [currentPage]);
 
   return (
     <div
@@ -1656,12 +1659,11 @@ const ListingMain = () => {
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "center",
-          // padding: "0px 745px 29px",
           boxSizing: "border-box",
           maxWidth: "50%",
         }}
       >
-        {productData?.length > 5 && (
+        {productData?.length > 6 && (
           <div
             style={{
               height: "44px",
@@ -1677,9 +1679,10 @@ const ListingMain = () => {
             }}
           >
             <button
-              onClick={firstPage}
-              className="specificHeightButton"
+              onClick={previousPage}
               style={{
+                // disabled:(currentPage === 1),
+                display : (currentPage === 1 ? "none" : "flex"),
                 height: "45px",
                 // flex: "0.2308",
                 borderRadius: "8px",
@@ -1695,53 +1698,15 @@ const ListingMain = () => {
                 backgroundColor: "#f9f9f9",
               }}
             >
-              1
+              Previous
             </button>
-            {/* <button
-              onClick={() => setCurrentPage(2)}
-              className="specificHeightButton"
-              style={{
-                height: "45px",
-                // flex: "0.3654",
-                borderRadius: "8px",
-                border: "1px solid #e4e9ee",
-                boxSizing: "border-box",
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                padding: "11px 16px 11px 17.5px",
-                cursor: "pointer",
-                backgroundColor: "#f9f9f9",
-              }}
-              disabled={totalPages == 1}
-            >
-              2
-            </button> */}
             {currentPage !== totalPages && generateButtons()}
 
-            <div
-            style={{
-                height: "45px",
-                // flex: "0.4615",
-                borderRadius: "8px",
-                border: "1px solid #e4e9ee",
-                boxSizing: "border-box",
-                display: (buttonCount >= totalPages) ? "none" : "flex",
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "flex-start",
-                padding: "11px 15px 11px 16px",
-                cursor: "pointer",
-                backgroundColor: "#f9f9f9",
-            }}
-        >
-            ...
-        </div>
+            
             <button
-              onClick={lastPage}
-              className="specificHeightButton"
-              style={{
+               onClick={nextPage}
+               style={{
+                disabled:(currentPage === totalPages),
                 height: "45px",
                 borderRadius: "8px",
                 border: "1px solid #e4e9ee",
@@ -1755,37 +1720,18 @@ const ListingMain = () => {
                 backgroundColor: "#f9f9f9",
               }}
             >
-              {totalPages}
+              Next
             </button>
 
             <div
               style={{
                 borderRadius: "8px",
-                
                 flexDirection: "column",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
                 padding: "10px",
-                
               }}
             >
-              <img
-                style={{
-                  width: "24px",
-                  height: "24px",
-                  position: "relative",
-                  objectFit: "contain",
-                  display:(currentPage == totalPages - 1 ? "none" : "flex")
-                }}
-                alt=""
-                src={rightArrow}
-                onClick={
-                  currentPage !== totalPages
-                    ? () => setCurrentPage(currentPage + 1)
-                    : undefined
-                }
-                
-              />
             </div>
           </div>
         )}
