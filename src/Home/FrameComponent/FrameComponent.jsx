@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import { useContext, useMemo, useState } from "react";
-import minus from "../assets/minus.png";
-// import add from "../assets/add.png";
-import myContext from "../context/context";
+import minus from "../../assets/minus.png";
+// import add from "../../assets/add.png";
+import myContext from "../../context/context";
 
 const getStyleValue = (key, value) => {
   if (value === undefined || value === "") return;

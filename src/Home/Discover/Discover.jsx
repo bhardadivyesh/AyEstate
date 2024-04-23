@@ -1,6 +1,6 @@
 import Column1 from "../Column1/Column1";
-import frame from "../assets/Frame 162767.png";
-import buttonIcon from "../assets/chevron-right.png";
+import frame from "../../assets/Frame 162767.png";
+import buttonIcon from "../../assets/chevron-right.png";
 
 const Discover = () => {
   return (

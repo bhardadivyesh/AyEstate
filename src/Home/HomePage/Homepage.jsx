@@ -1,21 +1,20 @@
-import Hero from "../Home/Hero/Hero";
-import Discover from "../Home/Discover/Discover";
-import Simplify from "../Home/Simplify/Simplify";
-import Innovative from "../Home/Innovative/Innovative";
-import Properties from "../Home/Properties/Properties";
-import Testimonials from "../Home/Testimonials/Testimonials";
-import FAQs from "../Home/Faqs/Faqs";
-import CTASection from "../Home/CtaSection/CtaSection";
-import NavigationBar from "../CommanComponent/NavigationBar/NavigationBar ";
-import Navigation1 from "../CommanComponent/Navigation1/Navigation1";
-import myContext from "../context/context"
+import Hero from "../Hero/Hero";
+import Discover from "../Discover/Discover";
+import Simplify from "../Simplify/Simplify";
+import Innovative from "../Innovative/Innovative";
+import Properties from "../Properties/Properties";
+import Testimonials from "../Testimonials/Testimonials";
+import FAQs from "../Faqs/Faqs";
+import CTASection from "../CtaSection/CtaSection";
+import NavigationBar from "../../CommanComponent/NavigationBar/NavigationBar ";
+import Navigation1 from "../../CommanComponent/Navigation1/Navigation1";
+import myContext from "../../context/context"
 import { useState } from "react";
 const Homepage = () => {
   const [buttonstate,setbuttonstate] = useState()
   
   return (
-   <>
-   <myContext.Provider value={""}>
+    <myContext.Provider value={{buttonstate,setbuttonstate}}>
     <div
       style={{
         width: "100%",
@@ -28,6 +27,7 @@ const Homepage = () => {
         letterSpacing: "normal",
       }}
     >
+      <NavigationBar />
       <Hero />
       <Discover />
       <section
@@ -49,10 +49,9 @@ const Homepage = () => {
        <Testimonials /> 
        <FAQs /> 
       <CTASection />
-      <NavigationBar />
       <Navigation1 />  
     </div>
-    </myContext.Provider></>
+    </myContext.Provider>
   )}
 
 export default Homepage

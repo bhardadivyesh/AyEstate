@@ -1,5 +1,5 @@
-import buttonArrow from "../assets/arrow-up-right.png"
-import background from "../assets/CTA Section.png"
+import buttonArrow from "../../assets/arrow-up-right.png"
+import background from "../../assets/CTA Section.png"
 const CTASection = () => {
   return (
     <section

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FrameComponent from "../FrameComponent/FrameComponent";
-import add from "../assets/add.png"
-import minus from "../assets/minus.png"
+import add from "../../assets/add.png"
+import minus from "../../assets/minus.png"
 
 const FAQs = () => {
   const [showContent,setShowContent] = useState(true)

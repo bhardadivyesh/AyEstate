@@ -1,7 +1,7 @@
 import Column from "../Column/Column";
-import placeholderImage1 from "../assets/Placeholder Image1.png"
-import placeholderImage2 from "../assets/Placeholder Image2.png"
-import placeholderImage3 from "../assets/Placeholder Image3.png"
+import placeholderImage1 from "../../assets/Placeholder Image1.png"
+import placeholderImage2 from "../../assets/Placeholder Image2.png"
+import placeholderImage3 from "../../assets/Placeholder Image3.png"
 
 
 const Simplify = () => {

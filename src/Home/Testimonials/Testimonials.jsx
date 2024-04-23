@@ -1,5 +1,5 @@
-import Vector from "../assets/Vector.png"
-import Avatar from "../assets/Avatar Image.png"
+import Vector from "../../assets/Vector.png"
+import Avatar from "../../assets/Avatar Image.png"
 const Testimonials = () => {
     return (
       <section
