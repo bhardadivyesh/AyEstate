@@ -15,53 +15,122 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const ListingMain = () => {
- 
   const [productData, setProductData] = useState();
+  // filtering logic
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedLocations, setSelectedLocations] = useState([]);
+  const [starMatched,setStarMatched] = useState([])
+  const [LuxuryBuilding,setLuxuryBuilding] = useState([])
+  const [bestSeller,setBestSeller] = useState([])
+  const [discount,setDiscount] = useState([])
+
+
+
   const handleCategoryChange = (e) => {
     const { value, checked } = e.target;
     if (checked) {
-      setSelectedCategories(prevSelected => [...prevSelected, value]);
+      setSelectedCategories((prevSelected) => [...prevSelected, value]);
     } else {
-      setSelectedCategories(prevSelected => prevSelected.filter(cat => cat !== value));
+      setSelectedCategories((prevSelected) =>
+        prevSelected.filter((cat) => cat !== value)
+      );
     }
   };
 
-  
   const handleLocationChange = (e) => {
     const { value, checked } = e.target;
     if (checked) {
-      setSelectedLocations(prevSelected => [...prevSelected, value]);
+      setSelectedLocations((prevSelected) => [...prevSelected, value]);
     } else {
-      setSelectedLocations(prevSelected => prevSelected.filter(loc => loc !== value));
+      setSelectedLocations((prevSelected) =>
+        prevSelected.filter((loc) => loc !== value)
+      );
     }
   };
-  const filteredProperties = productData?.filter(property => {
-    const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(property.category);
-    const locationMatch = selectedLocations.length === 0 || selectedLocations.includes(property.location);
-    return categoryMatch && locationMatch;
-  });
-  console.log(filteredProperties);
-  
-  useEffect(() => {
-    axios.get("http://localhost:1337/listings").then((res) => {
-      setProductData(res.data);
-    });
-  }, []);
-  // pagination logic
-  const [currentPage, setCurrentPage] = useState(1);
-  console.log(currentPage);
-  const [totalPages,setTotalPages] = useState(22)
+  const handleStarChange = (e) => {
+    const { value, checked } = e.target;
+    if (checked) {
+      setStarMatched((prevSelected) => [...prevSelected, value]);
+    } else {
+      setStarMatched((prevSelected) =>
+        prevSelected.filter((cat) => cat !== value)
+      );
+    }
+  };
+  const handleBuldingChange = (e) => {
+    const { value, checked } = e.target;
+    if (checked) {
+      setLuxuryBuilding((prevSelected) => [...prevSelected, value]);
+    } else {
+      setLuxuryBuilding((prevSelected) =>
+        prevSelected.filter((cat) => cat !== value)
+      );
+    }
+  };
+  const handleBestSeller = (e) => {
+    const { value, checked } = e.target;
+    if (checked) {
+      setBestSeller((prevSelected) => [...prevSelected, value]);
+    } else {
+      setBestSeller((prevSelected) =>
+        prevSelected.filter((cat) => cat !== value)
+      );
+    }
+  };
+  const handleDiscount = (e) => {
+    const { value, checked } = e.target;
+    if (checked && value !== "" && value !== null && value !== undefined) {
+      setDiscount((prevSelected) => [...prevSelected, value]);
+    } else {
+      setDiscount((prevSelected) =>
+        prevSelected.filter((cat) => cat !== value)
+      );
+    }
+  };
  
 
+  const filteredProperties = productData?.filter((property) => {
+    const categoryMatch =
+      selectedCategories.length === 0 ||
+      selectedCategories.includes(property.category);
+    const locationMatch =
+      selectedLocations.length === 0 ||
+      selectedLocations.includes(property.location);
+    const starMatche =
+      starMatched.length === 0 ||
+      property.star >= 4 ||
+      starMatched.includes(property.star); 
+    const buildingmatched =
+      LuxuryBuilding.length === 0 ||
+      LuxuryBuilding.includes(property.LuxuryBuilding);
+    const bestSellerMatched =
+      bestSeller.length === 0 ||
+      bestSeller.includes(property.BestSeller);
+    const discountMatched =
+      discount.length === 0 ||
+      discount.includes(property.Discount);
+    return categoryMatch && locationMatch && starMatche && buildingmatched && bestSellerMatched && discountMatched;
+  });
+console.log(filteredProperties);
+  // pagination logic
   const firstPage = () => {
     setCurrentPage(1);
   };
-
   const lastPage = () => {
     setCurrentPage(totalPages);
   };
+  const data = productData;
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(6);
+  const totalItems = data?.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  // Determine the indices for the current page
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  // Get the items for the current page
+  const currentItems = data?.slice(startIndex, endIndex);
+  
+  // Conditionally render pagination controls
   const generateButtons = () => {
     const buttons = [];
     for (let i = 3; i <= currentPage; i++) {
@@ -70,18 +139,18 @@ const ListingMain = () => {
           key={i}
           onClick={() => setCurrentPage(i)}
           style={{
-            height: '45px',
-            flex: '1',
-            borderRadius: '8px',
-            border: '1px solid #e4e9ee',
-            boxSizing: 'border-box',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start',
-            justifyContent: 'center',
-            padding: '11px 8px 11px 9px',
-            cursor: 'pointer',
-            backgroundColor: i === currentPage ? '#f9f9f9' : '#ffffff',
+            height: "45px",
+            flex: "1",
+            borderRadius: "8px",
+            border: "1px solid #e4e9ee",
+            boxSizing: "border-box",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "center",
+            padding: "11px 8px 11px 9px",
+            cursor: "pointer",
+            backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
           }}
         >
           {i}
@@ -90,6 +159,12 @@ const ListingMain = () => {
     }
     return buttons;
   };
+  // api call
+  useEffect(() => {
+    axios.get("http://localhost:1337/listings").then((res) => {
+      setProductData(res.data);
+    });
+  }, []);
 
   return (
     <div
@@ -299,7 +374,9 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-
+                        value="Star"
+                        checked={starMatched.includes("Star")}
+                        onChange={handleStarChange}
                       />
                       <div
                         style={{
@@ -349,6 +426,9 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
+                        value="Luxury Building"
+                        checked={LuxuryBuilding.includes("Luxury Building")}
+                        onChange={handleBuldingChange}
                       />
                       <div
                         style={{
@@ -378,6 +458,9 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
+                        value="Best Seller"
+                        checked={bestSeller.includes("Best Seller")}
+                        onChange={handleBestSeller}
                       />
                       <div
                         style={{
@@ -407,6 +490,9 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
+                        value="discount"
+                        checked={discount.includes("discount")}
+                        onChange={handleDiscount}
                       />
                       <div
                         style={{
@@ -525,8 +611,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Bandung" 
-                        checked={selectedLocations.includes("Bandung")} 
+                        value="Bandung"
+                        checked={selectedLocations.includes("Bandung")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -557,8 +643,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Jakarta" 
-                        checked={selectedLocations.includes("Jakarta")} 
+                        value="Jakarta"
+                        checked={selectedLocations.includes("Jakarta")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -589,8 +675,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Bali" 
-                        checked={selectedLocations.includes("Bali")} 
+                        value="Bali"
+                        checked={selectedLocations.includes("Bali")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -621,8 +707,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Medan" 
-                        checked={selectedLocations.includes("Medan")} 
+                        value="Medan"
+                        checked={selectedLocations.includes("Medan")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -653,8 +739,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Surabaya" 
-                        checked={selectedLocations.includes("Surabaya")} 
+                        value="Surabaya"
+                        checked={selectedLocations.includes("Surabaya")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -685,8 +771,8 @@ const ListingMain = () => {
                           position: "relative",
                         }}
                         type="checkbox"
-                        value="Jogja" 
-                        checked={selectedLocations.includes("Jogja")} 
+                        value="Jogja"
+                        checked={selectedLocations.includes("Jogja")}
                         onChange={handleLocationChange}
                       />
                       <div
@@ -806,8 +892,8 @@ const ListingMain = () => {
                     style={{ margin: "0", height: "25px", width: "24px" }}
                     type="checkbox"
                     value="House"
-                    checked={selectedCategories.includes("House")} 
-                    onChange={handleCategoryChange} 
+                    checked={selectedCategories.includes("House")}
+                    onChange={handleCategoryChange}
                   />
                   <div
                     style={{
@@ -866,8 +952,8 @@ const ListingMain = () => {
                     style={{ margin: "0", height: "25px", width: "24px" }}
                     type="checkbox"
                     value="Villa"
-                    checked={selectedCategories.includes("Villa")} 
-                    onChange={handleCategoryChange} 
+                    checked={selectedCategories.includes("Villa")}
+                    onChange={handleCategoryChange}
                   />
                   <div
                     style={{
@@ -926,8 +1012,8 @@ const ListingMain = () => {
                     style={{ margin: "0", height: "25px", width: "24px" }}
                     type="checkbox"
                     value="Apartment"
-                    checked={selectedCategories.includes("Apartment")} 
-                    onChange={handleCategoryChange} 
+                    checked={selectedCategories.includes("Apartment")}
+                    onChange={handleCategoryChange}
                   />
                   <div
                     style={{
@@ -986,8 +1072,8 @@ const ListingMain = () => {
                     style={{ margin: "0", height: "25px", width: "24px" }}
                     type="checkbox"
                     value="Hotel"
-                    checked={selectedCategories.includes("Hotel")} 
-                    onChange={handleCategoryChange} 
+                    checked={selectedCategories.includes("Hotel")}
+                    onChange={handleCategoryChange}
                   />
                   <div
                     style={{
@@ -1046,8 +1132,8 @@ const ListingMain = () => {
                     style={{ margin: "0", height: "25px", width: "24px" }}
                     type="checkbox"
                     value="Real Estate"
-                    checked={selectedCategories.includes("Real Estate")} 
-                    onChange={handleCategoryChange} 
+                    checked={selectedCategories.includes("Real Estate")}
+                    onChange={handleCategoryChange}
                   />
                   <div
                     style={{
@@ -1549,137 +1635,145 @@ const ListingMain = () => {
           </div>
         </section>
       </main>
-     
-   <div
-      style={{
-        width: "2122px",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "center",
-        padding: "0px 20px 29px",
-        boxSizing: "border-box",
-        maxWidth: "85%",
-      }}
-    >
+
       <div
         style={{
-          height: "44px",
-          width: "100pc",
+          width: "2122px",
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
-          justifyContent: "flex-start",
-          gap: "8px",
-          fontFamily: "Sora, sans-serif",
-          fontWeight: "regular",
-          fontSize: "16px",
+          justifyContent: "center",
+          padding: "0px 745px 29px",
+          boxSizing: "border-box",
+          maxWidth: "85%",
         }}
       >
-        <button
-          onClick={firstPage}
-          style={{
-            height: "45px",
-            flex: "0.2308",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "11px 18px 11px 19px",
-            color: "#1d9e34",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          1
-        </button>
-        <button
-          onClick={() => setCurrentPage(2)}
-          style={{
-            height: "45px",
-            flex: "0.3654",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "11px 16px 11px 17.5px",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          2
-        </button>
-        {generateButtons()}
-      
-        <div
-          style={{
-            height: "45px",
-            flex: "0.4615",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "11px 15px 11px 16px",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          ...
-        </div>
-        <button
-          onClick={lastPage}
-          style={{
-            height: "45px",
-            flex: "1",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "11px 8px 11px 9px",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          {totalPages}
-        </button>
-      
-        <div
+        {productData?.length > 5 && (
+          <div
             style={{
-              borderRadius: "8px",
+              height: "44px",
+              width: "100pc",
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "row",
               alignItems: "flex-start",
               justifyContent: "flex-start",
-              padding: "10px",
+              gap: "8px",
+              fontFamily: "Sora, sans-serif",
+              fontWeight: "regular",
+              fontSize: "16px",
             }}
           >
-            <img
+            <button
+              onClick={firstPage}
               style={{
-                width: "24px",
-                height: "24px",
-                position: "relative",
-                objectFit: "contain",
+                height: "45px",
+                // flex: "0.2308",
+                borderRadius: "8px",
+                border: "1px solid #e4e9ee",
+                boxSizing: "border-box",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                padding: "11px 18px 11px 19px",
+                color: "#1d9e34",
+                cursor: "pointer",
+                backgroundColor: "#f9f9f9",
               }}
-              alt=""
-              src={rightArrow}
-              onClick={()=>setCurrentPage(currentPage + 1)}
-            />
+            >
+              1
+            </button>
+            <button
+              onClick={() => setCurrentPage(2)}
+              style={{
+                height: "45px",
+                // flex: "0.3654",
+                borderRadius: "8px",
+                border: "1px solid #e4e9ee",
+                boxSizing: "border-box",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                padding: "11px 16px 11px 17.5px",
+                cursor: "pointer",
+                backgroundColor: "#f9f9f9",
+              }}
+              disabled={totalPages == 1}
+            >
+              2
+            </button>
+            {currentPage !== totalPages && generateButtons()}
+
+            <div
+              style={{
+                height: "45px",
+                // flex: "0.4615",
+                borderRadius: "8px",
+                border: "1px solid #e4e9ee",
+                boxSizing: "border-box",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+                padding: "11px 15px 11px 16px",
+                cursor: "pointer",
+                backgroundColor: "#f9f9f9",
+              }}
+            >
+              ...
+            </div>
+            <button
+              onClick={lastPage}
+              style={{
+                height: "45px",
+                // flex: "1",
+                borderRadius: "8px",
+                border: "1px solid #e4e9ee",
+                boxSizing: "border-box",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                padding: "11px 8px 11px 9px",
+                cursor: "pointer",
+                backgroundColor: "#f9f9f9",
+              }}
+            >
+              {totalPages}
+            </button>
+
+            <div
+              style={{
+                borderRadius: "8px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+                padding: "10px",
+              }}
+            >
+              <img
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  position: "relative",
+                  objectFit: "contain",
+                }}
+                alt=""
+                src={rightArrow}
+                onClick={
+                  currentPage !== totalPages
+                    ? () => setCurrentPage(currentPage + 1)
+                    : undefined
+                }
+                disabled={currentPage === totalPages}
+              />
+            </div>
           </div>
+        )}
       </div>
-    </div>
-           <Navigation1 />
+      <Navigation1 />
     </div>
   );
 };
