@@ -16,6 +16,12 @@ import axios from "axios";
 
 const ListingMain = () => {
   const [productData, setProductData] = useState();
+    // api call
+    useEffect(() => {
+      axios.get("http://localhost:1337/listings").then((res) => {
+        setProductData(res.data);
+      });
+    }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedLocations, setSelectedLocations] = useState([]);
@@ -111,7 +117,6 @@ const ListingMain = () => {
       discount.includes(property.Discount);
     return categoryMatch && locationMatch && starMatche && buildingmatched && bestSellerMatched && discountMatched;
   });
-console.log(filteredProperties);
   // pagination logic
   const firstPage = () => {
     setCurrentPage(1);
@@ -120,8 +125,10 @@ console.log(filteredProperties);
     setCurrentPage(totalPages);
   };
   const data = productData;
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(6);
+  const [currentPage, setCurrentPage] = useState(2);
+  // console.log(currentPage);
+  
+  const [itemsPerPage] = useState(1);
   const totalItems = data?.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   // Determine the indices for the current page
@@ -129,18 +136,19 @@ console.log(filteredProperties);
   const endIndex = startIndex + itemsPerPage;
   // Get the items for the current page
   const currentItems = data?.slice(startIndex, endIndex);
+  // console.log(currentItems);
   
   // Conditionally render pagination controls
   const generateButtons = () => {
     const buttons = [];
-    for (let i = 3; i <= currentPage; i++) {
+    for (let i = 2; i <= currentPage; i++) {
       buttons.push(
         <button
           key={i}
           onClick={() => setCurrentPage(i)}
+          className="specificHeightButton"
           style={{
             height: "45px",
-            flex: "1",
             borderRadius: "8px",
             border: "1px solid #e4e9ee",
             boxSizing: "border-box",
@@ -148,7 +156,7 @@ console.log(filteredProperties);
             flexDirection: "row",
             alignItems: "flex-start",
             justifyContent: "center",
-            padding: "11px 8px 11px 9px",
+            padding: "11px 18px 11px 19px",
             cursor: "pointer",
             backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
           }}
@@ -159,12 +167,17 @@ console.log(filteredProperties);
     }
     return buttons;
   };
-  // api call
+
+  const [buttonCount,setButtonCount] = useState(3)
+  
+
   useEffect(() => {
-    axios.get("http://localhost:1337/listings").then((res) => {
-      setProductData(res.data);
-    });
-  }, []);
+    const buttons = document.getElementsByClassName('specificHeightButton');
+      setButtonCount(buttons.length)
+  }, [currentPage]);
+  
+  
+  
 
   return (
     <div
@@ -172,7 +185,7 @@ console.log(filteredProperties);
         width: "100%",
         position: "relative",
         backgroundColor: "#fff",
-        overflow: "hidden",
+        overflow: "auto",
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-end",
@@ -1643,9 +1656,9 @@ console.log(filteredProperties);
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "center",
-          padding: "0px 745px 29px",
+          // padding: "0px 745px 29px",
           boxSizing: "border-box",
-          maxWidth: "85%",
+          maxWidth: "50%",
         }}
       >
         {productData?.length > 5 && (
@@ -1665,6 +1678,7 @@ console.log(filteredProperties);
           >
             <button
               onClick={firstPage}
+              className="specificHeightButton"
               style={{
                 height: "45px",
                 // flex: "0.2308",
@@ -1683,8 +1697,9 @@ console.log(filteredProperties);
             >
               1
             </button>
-            <button
+            {/* <button
               onClick={() => setCurrentPage(2)}
+              className="specificHeightButton"
               style={{
                 height: "45px",
                 // flex: "0.3654",
@@ -1702,32 +1717,32 @@ console.log(filteredProperties);
               disabled={totalPages == 1}
             >
               2
-            </button>
+            </button> */}
             {currentPage !== totalPages && generateButtons()}
 
             <div
-              style={{
+            style={{
                 height: "45px",
                 // flex: "0.4615",
                 borderRadius: "8px",
                 border: "1px solid #e4e9ee",
                 boxSizing: "border-box",
-                display: "flex",
+                display: (buttonCount >= totalPages) ? "none" : "flex",
                 flexDirection: "row",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
                 padding: "11px 15px 11px 16px",
                 cursor: "pointer",
                 backgroundColor: "#f9f9f9",
-              }}
-            >
-              ...
-            </div>
+            }}
+        >
+            ...
+        </div>
             <button
               onClick={lastPage}
+              className="specificHeightButton"
               style={{
                 height: "45px",
-                // flex: "1",
                 borderRadius: "8px",
                 border: "1px solid #e4e9ee",
                 boxSizing: "border-box",
@@ -1746,11 +1761,12 @@ console.log(filteredProperties);
             <div
               style={{
                 borderRadius: "8px",
-                display: "flex",
+                
                 flexDirection: "column",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
                 padding: "10px",
+                
               }}
             >
               <img
@@ -1759,6 +1775,7 @@ console.log(filteredProperties);
                   height: "24px",
                   position: "relative",
                   objectFit: "contain",
+                  display:(currentPage == totalPages - 1 ? "none" : "flex")
                 }}
                 alt=""
                 src={rightArrow}
@@ -1767,7 +1784,7 @@ console.log(filteredProperties);
                     ? () => setCurrentPage(currentPage + 1)
                     : undefined
                 }
-                disabled={currentPage === totalPages}
+                
               />
             </div>
           </div>
