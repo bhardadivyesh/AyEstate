@@ -195,13 +195,13 @@ const Innovative = () => {
         </div>
         <div
           style={{
-            width: "1116.7px",
+            width: "1845.7px",
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
             alignItems: "flex-start",
             justifyContent: "flex-start",
-            gap: "48px",
+            gap: "553px",
             maxWidth: "100%",
             fontSize: "80px",
             fontFamily: "Roboto",

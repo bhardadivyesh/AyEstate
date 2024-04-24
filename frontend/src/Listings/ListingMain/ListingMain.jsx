@@ -6,7 +6,6 @@ import star from "../../assets/star.png";
 import heart from "../../assets/heart.png";
 import arrowDown from "../../assets/arrow-down.jpg";
 import arrowDown1 from "../../assets/arrow-down2.png";
-import rightArrow from "../../assets/rightArrow.png";
 import homeFrame from "../../assets/Frame.jpg";
 import vectorimg from "../../assets/Vectorimg.png";
 import frames from "../../assets/Frames.png";
@@ -15,140 +14,35 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const ListingMain = () => {
-  const productData = [
-    {
-      "id": 1,
-      "name": "Wireless Mouse",
-      "price": 29.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 2,
-      "name": "Mechanical Keyboard",
-      "price": 89.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 3,
-      "name": "Bluetooth Speaker",
-      "price": 49.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 4,
-      "name": "Smartphone",
-      "price": 699.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 5,
-      "name": "Gaming Headset",
-      "price": 59.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 6,
-      "name": "4K Monitor",
-      "price": 299.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 7,
-      "name": "USB-C Cable",
-      "price": 9.99,
-      "category": "Accessories"
-    },
-    {
-      "id": 8,
-      "name": "External Hard Drive",
-      "price": 79.99,
-      "category": "Accessories"
-    },
-    {
-      "id": 9,
-      "name": "Laptop Stand",
-      "price": 19.99,
-      "category": "Accessories"
-    },
-    {
-      "id": 10,
-      "name": "Portable Charger",
-      "price": 29.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 11,
-      "name": "Fitness Tracker",
-      "price": 59.99,
-      "category": "Wearables"
-    },
-    {
-      "id": 12,
-      "name": "Wireless Earbuds",
-      "price": 49.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 13,
-      "name": "Tablet",
-      "price": 199.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 14,
-      "name": "Smartwatch",
-      "price": 199.99,
-      "category": "Wearables"
-    },
-    {
-      "id": 15,
-      "name": "Laptop",
-      "price": 999.99,
-      "category": "Electronics"
-    },
-    {
-      "id": 16,
-      "name": "HD Webcam",
-      "price": 49.99,
-      "category": "Accessories"
-    },
-    {
-      "id": 17,
-      "name": "Desk Lamp",
-      "price": 24.99,
-      "category": "Home & Office"
-    },
-    {
-      "id": 18,
-      "name": "Electric Toothbrush",
-      "price": 39.99,
-      "category": "Personal Care"
-    },
-    {
-      "id": 19,
-      "name": "Wireless Charger",
-      "price": 19.99,
-      "category": "Accessories"
-    },
-    {
-      "id": 20,
-      "name": "Smart Home Speaker",
-      "price": 99.99,
-      "category": "Smart Home"
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
+  let minPriceValue = parseInt(minPrice);
+  let maxPriceValue = parseInt(maxPrice);
+
+  const handleMinInputChange = (event) => {
+    setMinPrice(event.target.value);
+  };
+  const handleMaxChange = (event) => {
+    setMaxPrice(event.target.value);
+  };
+  const handlePriceClick = (...args) => {
+    if (args.length == 2) {
+      setMinPrice(args[0]);
+      setMaxPrice(args[1]);
+    } else {
+      setMinPrice(args[0]);
     }
-  ];
-  
-  
-  // const [productData, setProductData] = useState();
+  };
+  const [productData, setProductData] = useState();
   // api call
-  // useEffect(() => {
-  //   axios.get("http://localhost:1337/listings").then((res) => {
-  //     setProductData(res.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    axios.get("http://localhost:1337/listings").then((res) => {
+      setProductData(res.data);
+    });
+  }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedLocations, setSelectedLocations] = useState([]);
+  const [selectedLocation, setSelectedLocation] = useState("");
   const [starMatched, setStarMatched] = useState([]);
   const [LuxuryBuilding, setLuxuryBuilding] = useState([]);
   const [bestSeller, setBestSeller] = useState([]);
@@ -164,69 +58,23 @@ const ListingMain = () => {
       );
     }
   };
-
-  const handleLocationChange = (e) => {
-    const { value, checked } = e.target;
-    if (checked) {
-      setSelectedLocations((prevSelected) => [...prevSelected, value]);
-    } else {
-      setSelectedLocations((prevSelected) =>
-        prevSelected.filter((loc) => loc !== value)
-      );
-    }
+  const handleCheckboxChange = (value) => {
+    setStarMatched(value === "Star" ? value : []);
+    setLuxuryBuilding(value === "Luxury Building" ? value : []);
+    setBestSeller(value === "Best Seller" ? value : []);
+    setDiscount(value === "discount" ? value : []);
+    setSelectedLocation(value === selectedLocation ? null : value);
   };
-  const handleStarChange = (e) => {
-    const { value, checked } = e.target;
-    if (checked) {
-      setStarMatched((prevSelected) => [...prevSelected, value]);
-    } else {
-      setStarMatched((prevSelected) =>
-        prevSelected.filter((cat) => cat !== value)
-      );
-    }
-  };
-  const handleBuldingChange = (e) => {
-    const { value, checked } = e.target;
-    if (checked) {
-      setLuxuryBuilding((prevSelected) => [...prevSelected, value]);
-    } else {
-      setLuxuryBuilding((prevSelected) =>
-        prevSelected.filter((cat) => cat !== value)
-      );
-    }
-  };
-  const handleBestSeller = (e) => {
-    const { value, checked } = e.target;
-    if (checked) {
-      setBestSeller((prevSelected) => [...prevSelected, value]);
-    } else {
-      setBestSeller((prevSelected) =>
-        prevSelected.filter((cat) => cat !== value)
-      );
-    }
-  };
-  const handleDiscount = (e) => {
-    const { value, checked } = e.target;
-    if (checked && value !== "" && value !== null && value !== undefined) {
-      setDiscount((prevSelected) => [...prevSelected, value]);
-    } else {
-      setDiscount((prevSelected) =>
-        prevSelected.filter((cat) => cat !== value)
-      );
-    }
-  };
-
   const filteredProperties = productData?.filter((property) => {
     const categoryMatch =
       selectedCategories.length === 0 ||
       selectedCategories.includes(property.category);
     const locationMatch =
-      selectedLocations.length === 0 ||
-      selectedLocations.includes(property.location);
-    const starMatche =
-      starMatched.length === 0 ||
-      property.star >= 4 ||
-      starMatched.includes(property.star);
+      selectedLocation?.length === 0 ||
+      selectedLocation?.includes(property.location);
+      const starMatche =
+       starMatched.length != 0 || property.star >= 4 || starMatched.includes(property.star);
+      console.log(property.star >= 4);
     const buildingmatched =
       LuxuryBuilding.length === 0 ||
       LuxuryBuilding.includes(property.LuxuryBuilding);
@@ -234,75 +82,72 @@ const ListingMain = () => {
       bestSeller.length === 0 || bestSeller.includes(property.BestSeller);
     const discountMatched =
       discount.length === 0 || discount.includes(property.Discount);
+    const priceMatched =
+      isNaN(minPriceValue) ||
+      isNaN(maxPriceValue) ||
+      (minPriceValue <= property.price && maxPriceValue >= property.price);
     return (
       categoryMatch &&
       locationMatch &&
       starMatche &&
       buildingmatched &&
       bestSellerMatched &&
-      discountMatched
+      discountMatched &&
+      priceMatched
     );
   });
-// pagination
-const [currentPage, setCurrentPage] = useState(1);
 
-const itemsPerPage = 6;
-const totalItems = productData.length;
-const totalPages = Math.ceil(totalItems / itemsPerPage);
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+  const totalItems = filteredProperties?.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-// Determine the indices for the current page
-const startIndex = (currentPage - 1) * itemsPerPage;
-const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-
-// Get the items for the current page
-const currentItems = productData.slice(startIndex, endIndex);
-console.log(currentItems);
-
-const generatePageButtons = () => {
-  const buttons = [];
-  for (let i = 1; i <= totalPages; i++) {
-    buttons.push(
-      <button
-        key={i}
-        onClick={() => setCurrentPage(i)}
-        className="specificHeightButton"
-        style={{
-          height: "45px",
-          width : "45px",
-          borderRadius: "8px",
-          border: "1px solid #e4e9ee",
-          boxSizing: "border-box",
-          cursor: "pointer",
-          backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
-        }}
-      >
-        {i}
-      </button>
-    );
+  let startIndex, endIndex;
+  if (typeof totalItems === "number" && !isNaN(totalItems)) {
+    startIndex = (currentPage - 1) * itemsPerPage;
+    endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+  } else {
+    startIndex = 0;
+    endIndex = 0;
   }
-  return buttons;
-};
+  const currentItems = filteredProperties?.slice(startIndex, endIndex);
+  const generatePageButtons = () => {
+    const buttons = [];
+    for (let i = 1; i <= totalPages; i++) {
+      buttons.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className="specificHeightButton"
+          style={{
+            height: "45px",
+            width: "45px",
+            borderRadius: "8px",
+            border: "1px solid #e4e9ee",
+            boxSizing: "border-box",
+            cursor: "pointer",
+            backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
+          }}
+        >
+          {i}
+        </button>
+      );
+    }
+    return buttons;
+  };
 
-const previousPage = () => {
-  if (currentPage > 1) {
-    setCurrentPage(currentPage - 1);
-  }
-};
+  const previousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
-const nextPage = () => {
-  if (currentPage < totalPages) {
-    setCurrentPage(currentPage + 1);
-  }
-};
-
-  useEffect(()=>{
-
-  },[])
-  // useEffect(() => {
-  //   const buttons = document.getElementsByClassName("specificHeightButton");
-  //   setButtonCount(buttons.length);
-  // }, [currentPage]);
-
+  const nextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
   return (
     <div
       style={{
@@ -351,7 +196,7 @@ const nextPage = () => {
             fontFamily: "Sora",
           }}
         >
-          <FrameComponent />
+          <FrameComponent productCount={productData?.length} />
           <div
             style={{
               alignSelf: "stretch",
@@ -513,7 +358,7 @@ const nextPage = () => {
                         type="checkbox"
                         value="Star"
                         checked={starMatched.includes("Star")}
-                        onChange={handleStarChange}
+                        onChange={() => handleCheckboxChange("Star")}
                       />
                       <div
                         style={{
@@ -565,7 +410,7 @@ const nextPage = () => {
                         type="checkbox"
                         value="Luxury Building"
                         checked={LuxuryBuilding.includes("Luxury Building")}
-                        onChange={handleBuldingChange}
+                        onChange={() => handleCheckboxChange("Luxury Building")}
                       />
                       <div
                         style={{
@@ -597,7 +442,7 @@ const nextPage = () => {
                         type="checkbox"
                         value="Best Seller"
                         checked={bestSeller.includes("Best Seller")}
-                        onChange={handleBestSeller}
+                        onChange={() => handleCheckboxChange("Best Seller")}
                       />
                       <div
                         style={{
@@ -629,7 +474,7 @@ const nextPage = () => {
                         type="checkbox"
                         value="discount"
                         checked={discount.includes("discount")}
-                        onChange={handleDiscount}
+                        onChange={() => handleCheckboxChange("discount")}
                       />
                       <div
                         style={{
@@ -749,8 +594,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Bandung"
-                        checked={selectedLocations.includes("Bandung")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Bandung"}
+                        onChange={() => handleCheckboxChange("Bandung")}
                       />
                       <div
                         style={{
@@ -781,8 +626,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Jakarta"
-                        checked={selectedLocations.includes("Jakarta")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Jakarta"}
+                        onChange={() => handleCheckboxChange("Jakarta")}
                       />
                       <div
                         style={{
@@ -813,8 +658,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Bali"
-                        checked={selectedLocations.includes("Bali")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Bali"}
+                        onChange={() => handleCheckboxChange("Bali")}
                       />
                       <div
                         style={{
@@ -845,8 +690,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Medan"
-                        checked={selectedLocations.includes("Medan")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Medan"}
+                        onChange={() => handleCheckboxChange("Medan")}
                       />
                       <div
                         style={{
@@ -877,8 +722,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Surabaya"
-                        checked={selectedLocations.includes("Surabaya")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Surabaya"}
+                        onChange={() => handleCheckboxChange("Surabaya")}
                       />
                       <div
                         style={{
@@ -909,8 +754,8 @@ const nextPage = () => {
                         }}
                         type="checkbox"
                         value="Jogja"
-                        checked={selectedLocations.includes("Jogja")}
-                        onChange={handleLocationChange}
+                        checked={selectedLocation === "Jogja"}
+                        onChange={() => handleCheckboxChange("Jogja")}
                       />
                       <div
                         style={{
@@ -1494,7 +1339,9 @@ const nextPage = () => {
                       />
                     </div>
                   </div>
-                  <div
+                  <input
+                    type="number"
+                    step="1"
                     style={{
                       position: "relative",
                       lineHeight: "26px",
@@ -1502,10 +1349,13 @@ const nextPage = () => {
                       display: "inline-block",
                       minWidth: "122px",
                       zIndex: "1",
+                      border: "none",
+                      appearance: "textfield",
                     }}
-                  >
-                    Minimum price
-                  </div>
+                    placeholder="Minimum price"
+                    value={minPrice}
+                    onChange={handleMinInputChange}
+                  />
                 </div>
                 <div
                   style={{
@@ -1586,7 +1436,7 @@ const nextPage = () => {
                     >
                       <div
                         style={{
-                          width: "1px",
+                          width: "px",
                           height: "25px",
                           position: "relative",
                           borderRight: "1px solid #e4e9ee",
@@ -1596,18 +1446,22 @@ const nextPage = () => {
                       />
                     </div>
                   </div>
-                  <div
+                  <input
+                    type="number"
+                    step="1"
                     style={{
                       position: "relative",
                       lineHeight: "26px",
                       color: "#818b9c",
                       display: "inline-block",
-                      minWidth: "125px",
+                      minWidth: "146px",
                       zIndex: "1",
+                      width: "146px",
                     }}
-                  >
-                    Maximum price
-                  </div>
+                    placeholder="Maximum price"
+                    value={maxPrice}
+                    onChange={handleMaxChange}
+                  />
                 </div>
                 <div
                   style={{
@@ -1630,7 +1484,9 @@ const nextPage = () => {
                       lineHeight: "26px",
                       display: "inline-block",
                       minWidth: "98px",
+                      cursor: "pointer",
                     }}
+                    onClick={() => handlePriceClick(0, 5000)}
                   >
                     $0 - $5,000
                   </div>
@@ -1650,7 +1506,14 @@ const nextPage = () => {
                     zIndex: "1",
                   }}
                 >
-                  <div style={{ position: "relative", lineHeight: "26px" }}>
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "26px",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => handlePriceClick(5000, 50000)}
+                  >
                     $5,000 - $50,000
                   </div>
                 </div>
@@ -1682,7 +1545,10 @@ const nextPage = () => {
                       display: "inline-block",
                       minWidth: "86px",
                     }}
-                  >{`> $50,000`}</div>
+                    onClick={() => handlePriceClick(50000)}
+                  >
+                    {`> $50,000`}
+                  </div>
                 </button>
               </div>
             </div>
@@ -1696,7 +1562,7 @@ const nextPage = () => {
                 gap: "24px",
               }}
             >
-              {productData?.map((items, index) => {
+              {currentItems?.map((items, index) => {
                 if (index % 2 === 0) {
                   return (
                     <div
@@ -1711,7 +1577,6 @@ const nextPage = () => {
                         maxWidth: "calc(100% - 319px)",
                         fontSize: "22px",
                         color: "#000",
-                        // display: "grid",
                         gridTemplateColumns: "repeat(2, 1fr)",
                       }}
                     >
@@ -1739,7 +1604,7 @@ const nextPage = () => {
                           size={items.size}
                           name={items.name}
                           location={items.location}
-                          // propBackgroundImage={`url(http://localhost:1337${items?.image[0]?.url})`}
+                          propBackgroundImage={`url(http://localhost:1337${items?.image[0]?.url})`}
                           price={`$${items.price}`}
                         />
                         {productData[index + 1] && (
@@ -1757,9 +1622,9 @@ const nextPage = () => {
                             size={productData[index + 1].size}
                             name={productData[index + 1].name}
                             location={productData[index + 1].location}
-                            // propBackgroundImage={`url(http://localhost:1337${
-                            //   productData[index + 1].image[0].url
-                            // })`}
+                            propBackgroundImage={`url(http://localhost:1337${
+                              productData[index + 1].image[0].url
+                            })`}
                             price={`$${productData[index + 1].price}`}
                           />
                         )}
@@ -1772,203 +1637,55 @@ const nextPage = () => {
           </div>
         </section>
       </main>
-
-      {/* <div
-        style={{
-          width: "2122px",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          boxSizing: "border-box",
-          maxWidth: "50%",
-        }}
-      >
-        
-          <div
-            style={{
-              height: "44px",
-              width: "100pc",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "flex-start",
-              justifyContent: "flex-start",
-              gap: "8px",
-              fontFamily: "Sora, sans-serif",
-              fontWeight: "regular",
-              fontSize: "16px",
-            }}
-          >
+      <div>
+        <div
+          style={{
+            height: "44px",
+            width: "1000px",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-start",
+            gap: "8px",
+          }}
+        >
+          {currentPage > 1 && (
             <button
               onClick={previousPage}
               style={{
-                // disabled:(currentPage === 1),
-                display : (currentPage === 1 ? "none" : "flex"),
                 height: "45px",
-                // flex: "0.2308",
                 borderRadius: "8px",
                 border: "1px solid #e4e9ee",
                 boxSizing: "border-box",
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                padding: "11px 18px 11px 19px",
-                color: "#1d9e34",
+                padding: "11px 18px",
                 cursor: "pointer",
                 backgroundColor: "#f9f9f9",
               }}
             >
               Previous
             </button>
-            {currentPage !== totalPages && generateButtons()}
+          )}
 
-            
+          {generatePageButtons()}
+
+          {currentPage < totalPages && (
             <button
-               onClick={nextPage}
-               style={{
-                disabled:(currentPage === totalPages),
+              onClick={nextPage}
+              style={{
                 height: "45px",
                 borderRadius: "8px",
                 border: "1px solid #e4e9ee",
                 boxSizing: "border-box",
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                padding: "11px 8px 11px 9px",
+                padding: "11px 18px",
                 cursor: "pointer",
                 backgroundColor: "#f9f9f9",
               }}
             >
               Next
             </button>
-
-            <div
-              style={{
-                borderRadius: "8px",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                justifyContent: "flex-start",
-                padding: "10px",
-              }}
-            >
-            </div>
-          </div>
-        
-      </div> */}
-       {/* <div
-    style={{
-      width: "2122px",
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "flex-start",
-      justifyContent: "center",
-      boxSizing: "border-box",
-      maxWidth: "50%",
-    }}
-  >
-    <div
-      style={{
-        height: "44px",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "flex-start",
-        gap: "8px",
-        fontFamily: "Sora, sans-serif",
-        fontWeight: "regular",
-        fontSize: "16px",
-      }}
-    >
-      {currentPage > 1 && (
-        <button
-          onClick={previousPage}
-          style={{
-            height: "45px",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            padding: "11px 18px",
-            color: "#1d9e34",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          Previous
-        </button>
-      )}
-
-      
-      {generatePageButtons()}
-
-      
-      {currentPage < totalPages && (
-        <button
-          onClick={nextPage}
-          style={{
-            height: "45px",
-            borderRadius: "8px",
-            border: "1px solid #e4e9ee",
-            boxSizing: "border-box",
-            padding: "11px 18px",
-            cursor: "pointer",
-            backgroundColor: "#f9f9f9",
-          }}
-        >
-          Next
-        </button>
-      )}
-    </div>
-  </div>  */}
-   <div>
-      <div
-        style={{
-          height: "44px",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "flex-start",
-          gap: "8px",
-        }}
-      >
-        {currentPage > 1 && (
-          <button
-            onClick={previousPage}
-            style={{
-              height: "45px",
-              borderRadius: "8px",
-              border: "1px solid #e4e9ee",
-              boxSizing: "border-box",
-              padding: "11px 18px",
-              cursor: "pointer",
-              backgroundColor: "#f9f9f9",
-            }}
-          >
-            Previous
-          </button>
-        )}
-
-        {generatePageButtons()}
-
-        {currentPage < totalPages && (
-          <button
-            onClick={nextPage}
-            style={{
-              height: "45px",
-              borderRadius: "8px",
-              border: "1px solid #e4e9ee",
-              boxSizing: "border-box",
-              padding: "11px 18px",
-              cursor: "pointer",
-              backgroundColor: "#f9f9f9",
-            }}
-          >
-            Next
-          </button>
-        )}
+          )}
+        </div>
       </div>
-    </div>
       <Navigation1 />
     </div>
   );

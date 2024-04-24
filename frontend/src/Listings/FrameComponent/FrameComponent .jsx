@@ -2,8 +2,9 @@ import arrowRight from "../../assets/arrow-right.png";
 import downArrow from "../../assets/arrow-down.png";
 import searchbox from "../../assets/Search Box.png";
 import menuSvg from "../../assets/Search Box (1).png";
+import { Link } from "react-router-dom";
 
-const FrameComponent = () => {
+const FrameComponent = ({productCount}) => {
   return (
     <div
       style={{
@@ -30,7 +31,8 @@ const FrameComponent = () => {
           gap: "8px",
         }}
       >
-        <div
+        <Link 
+          to="/"
           style={{
             position: "relative",
             lineHeight: "26px",
@@ -39,7 +41,7 @@ const FrameComponent = () => {
           }}
         >
           Home
-        </div>
+        </Link>
         <div
           style={{
             display: "flex",
@@ -139,7 +141,8 @@ const FrameComponent = () => {
               fontWeight: "normal",
             }}
           >
-            Showing 1 - 60 Properties
+             {`Showing 1 - ${productCount} Properties`}
+           
           </div>
         </div>
         <div
