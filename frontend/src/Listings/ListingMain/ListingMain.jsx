@@ -73,8 +73,10 @@ const ListingMain = () => {
       selectedLocation?.length === 0 ||
       selectedLocation?.includes(property.location);
       const starMatche =
-       starMatched.length != 0 || property.star >= 4 || starMatched.includes(property.star);
-      console.log(property.star >= 4);
+      starMatched.length === 0 ||
+      property.star >= 4 ||
+      starMatched.includes(property.star);
+      console.log(starMatche.length);
     const buildingmatched =
       LuxuryBuilding.length === 0 ||
       LuxuryBuilding.includes(property.LuxuryBuilding);
