@@ -4,7 +4,7 @@ import searchbox from "../../assets/Search Box.png";
 import menuSvg from "../../assets/Search Box (1).png";
 import { Link } from "react-router-dom";
 
-const FrameComponent = ({productCount}) => {
+const FrameComponent = ({ productCount, category }) => {
   return (
     <div
       style={{
@@ -31,7 +31,7 @@ const FrameComponent = ({productCount}) => {
           gap: "8px",
         }}
       >
-        <Link 
+        <Link
           to="/"
           style={{
             position: "relative",
@@ -66,265 +66,61 @@ const FrameComponent = ({productCount}) => {
             minWidth: "89px",
           }}
         >
-          Real Estate
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "7px 0px 0px",
-          }}
-        >
-          <img
-            style={{ width: "12px", height: "12px", position: "relative" }}
-            alt=""
-            src={arrowRight}
-          />
-        </div>
-        <div
-          style={{
-            position: "relative",
-            lineHeight: "26px",
-            color: "#0b0f0e",
-            display: "inline-block",
-            minWidth: "35px",
-          }}
-        >
-          Villa
+          {category}
         </div>
       </div>
-      <div
-        style={{
-          alignSelf: "stretch",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          maxWidth: "100%",
-          gap: "20px",
-          fontSize: "24px",
-          color: "#0b0f0e",
-        }}
-      >
+      {category != "" && (
         <div
           style={{
+            alignSelf: "stretch",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             alignItems: "flex-start",
-            justifyContent: "flex-start",
-            gap: "4px",
+            justifyContent: "space-between",
             maxWidth: "100%",
-          }}
-        >
-          <h2
-            style={{
-              margin: "0",
-              position: "relative",
-              fontSize: "inherit",
-              letterSpacing: "-0.2px",
-              lineHeight: "34px",
-              fontWeight: "600",
-              fontFamily: "inherit",
-            }}
-          >
-            Showing listings properties for “Villa”
-          </h2>
-          <div
-            style={{
-              position: "relative",
-              fontSize: "16px",
-              lineHeight: "26px",
-              color: "#818b9c",
-              fontFamily: "Sora, sans-serif",
-              fontWeight: "normal",
-            }}
-          >
-             {`Showing 1 - ${productCount} Properties`}
-           
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "10px 0px 0px",
-            boxSizing: "border-box",
-            maxWidth: "100%",
-            fontSize: "16px",
-            color: "#818b9c",
+            gap: "20px",
+            fontSize: "24px",
+            color: "#0b0f0e",
           }}
         >
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection: "column",
               alignItems: "flex-start",
               justifyContent: "flex-start",
-              gap: "23.5px",
-              height: "20px",
+              gap: "4px",
+              maxWidth: "100%",
             }}
           >
-            <div
+            <h2
               style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "flex-start",
-                padding: "0px 0px 0px 0px",
-                gap: "4px",
+                margin: "0",
+                position: "relative",
+                fontSize: "inherit",
+                letterSpacing: "-0.2px",
+                lineHeight: "34px",
+                fontWeight: "600",
+                fontFamily: "inherit",
               }}
             >
-              <div
-                style={{
-                  position: "relative",
-                  lineHeight: "26px",
-                  display: "inline-block",
-                  minWidth: "63px",
-                  fontFamily: "Sora, sans-serif",
-                  fontSize: "20px",
-                  fontWeight: "normal",
-                }}
-              >
-                Sort By:
-              </div>
-              <div
-                style={{
-                  borderRadius: "8px",
-                  border: "1px solid #e4e9ee",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  justifyContent: "flex-start",
-                  padding: "15px 15px",
-                  fontSize: "14px",
-                  color: "#0b0f0e",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "flex-start",
-                    gap: "4px",
-                  }}
-                >
-                  <div
-                    style={{
-                      position: "relative",
-                      lineHeight: "160%",
-                      fontWeight: "600",
-                      fontFamily: "Sora, sans-serif",
-                      fontSize: "14px",
-                    }}
-                  >
-                    Relevant Products
-                  </div>
-                  <img
-                    style={{
-                      height: "12px",
-                      width: "12px",
-                      position: "relative",
-                    }}
-                    alt=""
-                    src={downArrow}
-                  />
-                </div>
-              </div>
-            </div>
+              {`Showing listings properties for "${category}"`}
+            </h2>
             <div
               style={{
-                height: "34px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                justifyContent: "flex-start",
-                padding: "10px 0px 0px",
-                boxSizing: "border-box",
+                position: "relative",
+                fontSize: "16px",
+                lineHeight: "26px",
+                color: "#818b9c",
+                fontFamily: "Sora, sans-serif",
+                fontWeight: "normal",
               }}
             >
-              <div
-                style={{
-                  width: "1px",
-                  height: "25px",
-                  position: "relative",
-                  borderRight: "1px solid #e4e9ee",
-                  boxSizing: "border-box",
-                }}
-              />
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "flex-start",
-                gap: "8px",
-              }}
-            >
-              <div
-                style={{
-                  borderRadius: "8px",
-                  backgroundColor: "#1e4c2f",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  justifyContent: "flex-start",
-                  padding: "10px",
-                }}
-              >
-                <img
-                  style={{
-                    width: "32px",
-                    height: "32px",
-                    position: "relative",
-                  }}
-                  loading="lazy"
-                  alt=""
-                  src={searchbox}
-                />
-              </div>
-              <div
-                style={{
-                  width: "44px",
-                  borderRadius: "8px",
-                  border: "1px solid #e4e9ee",
-                  boxSizing: "border-box",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  justifyContent: "flex-start",
-                  padding: "8px 9px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "flex-start",
-                  }}
-                >
-                  <img
-                    style={{
-                      height: "32px",
-                      width: "32px",
-                      position: "relative",
-                    }}
-                    loading="lazy"
-                    alt=""
-                    src={menuSvg}
-                  />
-                </div>
-              </div>
+              {`Showing 1 - ${productCount} Properties`}
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

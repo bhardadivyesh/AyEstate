@@ -9,9 +9,7 @@ import CTASection from "../Home/CtaSection/CtaSection";
 import NavigationBar from "../CommanComponent/NavigationBar/NavigationBar ";
 import Navigation1 from "../CommanComponent/Navigation1/Navigation1";
 import myContext from "../context/context"
-import { useState } from "react";
 const Homepage = () => {
-  const [buttonstate,setbuttonstate] = useState()
   
   return (
    <>
