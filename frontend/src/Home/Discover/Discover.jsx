@@ -196,9 +196,9 @@ const Discover = () => {
                 lineHeight: "150%",
                 display: "inline-block",
                 minWidth: "56px",
-                fontFamily: "Roboto, sans-serif",
+                fontFamily: "Roboto",
                 fontSize: "16px",
-                fontWeight: "400", 
+                fontWeight: "normal",
               }}
             >
               Contact

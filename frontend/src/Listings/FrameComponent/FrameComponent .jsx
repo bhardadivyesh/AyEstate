@@ -4,7 +4,7 @@ import searchbox from "../../assets/Search Box.png";
 import menuSvg from "../../assets/Search Box (1).png";
 import { Link } from "react-router-dom";
 
-const FrameComponent = ({ productCount, category }) => {
+const FrameComponent = ({ productCount, category, location }) => {
   return (
     <div
       style={{
@@ -69,7 +69,7 @@ const FrameComponent = ({ productCount, category }) => {
           {category}
         </div>
       </div>
-      {category != "" && (
+      {(category !== "" || location !== "") && (
         <div
           style={{
             alignSelf: "stretch",
@@ -104,7 +104,9 @@ const FrameComponent = ({ productCount, category }) => {
                 fontFamily: "inherit",
               }}
             >
-              {`Showing listings properties for "${category}"`}
+              {`Showing listings property ${category ? `for ${category}` : ""}${
+                category && location ? " " : ""
+              }${location ? ` in ${location}` : ""}`}
             </h2>
             <div
               style={{

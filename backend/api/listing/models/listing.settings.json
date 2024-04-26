@@ -34,18 +34,6 @@
       "type": "string",
       "required": true
     },
-    "star": {
-      "type": "integer"
-    },
-    "LuxuryBuilding": {
-      "type": "string"
-    },
-    "BestSeller": {
-      "type": "string"
-    },
-    "priceRange": {
-      "type": "string"
-    },
     "washbasin": {
       "type": "integer",
       "required": true
@@ -65,6 +53,18 @@
     "Discount": {
       "type": "string",
       "default": "Discount"
+    },
+    "categorys": {
+      "type": "enumeration",
+      "enum": [
+        "House",
+        "Villa",
+        "Appartment"
+      ]
+    },
+    "Discription": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

@@ -100,7 +100,7 @@ const Column = ({ placeholderImage, heading,heading2, text,text2,text3 }) => {
               alignSelf: "stretch",
               position: "relative",
               fontSize: "16px", 
-              lineHeight: "60%", 
+              lineHeight: "100%", 
               fontFamily: "Sora", 
               fontWeight: "normal",
             }}

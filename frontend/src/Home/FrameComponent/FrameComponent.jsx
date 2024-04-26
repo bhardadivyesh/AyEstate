@@ -1,6 +1,5 @@
 import { useContext, useMemo, useState } from "react";
 import minus from "../../assets/minus.png";
-// import add from "../../assets/add.png";
 import myContext from "../../context/context";
 
 const getStyleValue = (key, value) => {
@@ -24,25 +23,38 @@ const FrameComponent = ({
       ...getStyleValue("height", propHeight),
     };
   }, [propAlignSelf, propWidth, propHeight]);
+
   const [buttonOneState, setButtonOneState] = useState(false);
   const [buttonTwoState, setButtonTwoState] = useState(false);
   const [buttonThreeState, setButtonThreeState] = useState(false);
   const [buttonFourState, setButtonFourState] = useState(false);
 
   const handleButtonClick = (buttonNumber) => {
+    console.log(buttonNumber);
     switch (buttonNumber) {
       case 1:
         setButtonOneState(!buttonOneState);
-        values.setButtonOneState(!buttonOneState);
+        setButtonTwoState(false);
+        setButtonThreeState(false);
+        setButtonFourState(false);
         break;
       case 2:
         setButtonTwoState(!buttonTwoState);
+        setButtonOneState(false); // Ensure other button states are reset
+        setButtonThreeState(false);
+        setButtonFourState(false);
         break;
       case 3:
         setButtonThreeState(!buttonThreeState);
+        setButtonOneState(false); // Ensure other button states are reset
+        setButtonTwoState(false);
+        setButtonFourState(false);
         break;
       case 4:
         setButtonFourState(!buttonFourState);
+        setButtonOneState(false); // Ensure other button states are reset
+        setButtonTwoState(false);
+        setButtonThreeState(false);
         break;
       default:
         break;

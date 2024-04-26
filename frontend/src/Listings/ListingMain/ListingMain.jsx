@@ -9,10 +9,13 @@ import homeFrame from "../../assets/Frame.jpg";
 import vectorimg from "../../assets/Vectorimg.png";
 import frames from "../../assets/Frames.png";
 import vector2 from "../../assets/vector2.png";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import "./ListingMain.css";
+import MyContext from "../../context/context";
 const ListingMain = () => {
+  const value = useContext(MyContext)
+  // console.log(value.detailPropertyData);
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   let minPriceValue = parseInt(minPrice);
@@ -125,6 +128,7 @@ const ListingMain = () => {
           <FrameComponent
             productCount={productData?.length}
             category={selectedCategories}
+            location={selectedLocation}
           />
           <div className="section-firstDiv">
             <div
@@ -187,7 +191,6 @@ const ListingMain = () => {
                       productData
                         .slice(3)
                         .reduce((uniqueLocations, item) => {
-                          console.log(item.location);
                           if (
                             !uniqueLocations.includes(item.location) &&
                             item.location !== "Bandung" &&

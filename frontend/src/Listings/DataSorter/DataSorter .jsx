@@ -1,4 +1,6 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
+import MyContext from "../../context/context";
 
 const getStyleValue = (key, value) => {
   if (value === undefined || value === "") return;
@@ -13,13 +15,6 @@ const DataSorter = ({
   progressBarParent,
   radioButtonParent,
   propBackgroundImage,
-  category,
-  washbasin,
-  bed,
-  size,
-  price,
-  name,
-  location,
   currentItems,
 }) => {
   const dataFinderStyle = useMemo(() => {
@@ -27,6 +22,14 @@ const DataSorter = ({
       ...getStyleValue("backgroundImage", propBackgroundImage),
     };
   }, [propBackgroundImage]);
+  const value = useContext(MyContext)
+  const navigate = useNavigate();
+  const handleProductClick = (productData) => {
+    console.log();
+    value.setDetailPropertyData(productData)
+
+    navigate("/detailProperty");
+  };
   return (
     <div
       style={{
@@ -40,6 +43,7 @@ const DataSorter = ({
       {currentItems?.map((items, index) => {
         return (
           <div
+            onClick={() => handleProductClick(items)}
             key={index}
             style={{
               flexBasis: "calc(50% - 8px)",
@@ -129,7 +133,7 @@ const DataSorter = ({
                 flexDirection: "column",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
-                gap: "8px",
+                // gap: "8px",
                 maxWidth: "100%",
               }}
             >
@@ -137,10 +141,10 @@ const DataSorter = ({
                 style={{
                   alignSelf: "stretch",
                   position: "relative",
-                  lineHeight: "150%",
+                  lineHeight: "120%",
                   fontWeight: "600",
                   fontFamily: "Sora",
-                  fontSize: "22px"
+                  fontSize: "32px",
                 }}
               >
                 {`$${items.price}`}
@@ -163,7 +167,7 @@ const DataSorter = ({
                     lineHeight: "150%",
                     fontWeight: "600",
                     fontFamily: "Sora",
-                    fontSize: "18px"
+                    fontSize: "26px",
                   }}
                 >
                   {items.category} {items.name}
@@ -175,6 +179,9 @@ const DataSorter = ({
                     fontSize: "14px",
                     lineHeight: "150%",
                     color: "#333",
+                    fontFamily: "Sora",
+                    fontWeight: "normal",
+                    fontSize: "14px",
                   }}
                 >
                   {items.location}

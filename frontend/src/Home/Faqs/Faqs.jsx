@@ -307,7 +307,7 @@ const FAQs = () => {
             value = "2"
             propAlignSelf="unset"
             propWidth="612px"
-            propHeight="82px"
+            propHeight="unset"
           />
           <FrameComponent
             whatDoWeNeedToApplyForAJo="Can we reschedule the interview meeting?"

@@ -75,7 +75,6 @@ const Navigation1 = () => {
               fontSize: "18px",
               color: "#7f879e",
               fontFamily: "'Plus Jakarta Sans'",
-              marginLeft : "50px"
             }}
           >
             <div
