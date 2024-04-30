@@ -4,7 +4,6 @@ import DataSorter from "../DataSorter/DataSorter ";
 import Navigation1 from "../../CommanComponent/Navigation1/Navigation1";
 import heart from "../../assets/heart.png";
 import arrowDown from "../../assets/arrow-down.jpg";
-import arrowDown1 from "../../assets/arrow-down2.png";
 import homeFrame from "../../assets/Frame.jpg";
 import vectorimg from "../../assets/Vectorimg.png";
 import frames from "../../assets/Frames.png";
@@ -86,6 +85,19 @@ const ListingMain = () => {
     endIndex = 0;
   }
   const currentItems = filteredProperties?.slice(startIndex, endIndex);
+  console.log(currentItems);
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(parseFloat(String(price).replace(/[^0-9.-]+/g,"")));
+  };
+
+  // Map through the array and replace price values with formatted prices
+  const formattedItems = currentItems?.map(item => {
+    return {
+      ...item,
+      price: formatPrice(item.price)
+    };
+  });
+  console.log(formattedItems);
   const generatePageButtons = () => {
     const buttons = [];
     for (let i = 1; i <= totalPages; i++) {

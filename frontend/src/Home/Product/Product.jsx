@@ -1,4 +1,6 @@
 const Product = ({ placeholderImage, heading, text, price }) => {
+  const numericPrice = parseFloat(price.replace(/[^0-9.-]+/g,""));
+  const formattedPrice = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(numericPrice);
   return (
     <div
       style={{
@@ -82,7 +84,7 @@ const Product = ({ placeholderImage, heading, text, price }) => {
             whiteSpace: "nowrap",
           }}
         >
-          {price}
+          {formattedPrice}
         </div>
       </div>
       <button

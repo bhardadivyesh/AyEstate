@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "../Form/Form";
 import "./MultiLevelMessageCardStack.css";
 import arrow from "../../assets/contactus/icons/arrow-down.png"
+import axios from "axios"
 
 const MultiLevelMessageCardStack = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const MultiLevelMessageCardStack = () => {
     additionalInfo: "",
     agreeToTerms: false,
   });
+  
   const handleFormChange = (fieldName, value) => {
     setFormData(prevData => ({
       ...prevData,
@@ -27,8 +29,14 @@ const MultiLevelMessageCardStack = () => {
   };
 
   const handleSubmit = () => {
+    axios.post('http://localhost:1337/contactuses', formData)
+  .then(response => {
+    console.log('Response:', response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  }); 
     
-    console.log(formData);
   };
   return (
     <div className="multi-level-message-card-stack">

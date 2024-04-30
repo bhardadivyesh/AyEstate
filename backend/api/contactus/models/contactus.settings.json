@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactUs",
+  "info": {
+    "name": "contactus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "yourName": {
+      "type": "string",
+      "required": true
+    },
+    "companySize": {
+      "type": "string",
+      "required": true
+    },
+    "agreeToTerms": {
+      "type": "boolean",
+      "required": true
+    },
+    "additionalInfo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

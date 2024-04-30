@@ -1,5 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import "./CardTypes.css";
+import MyContext from "../../../context/context";
+import { useNavigate } from "react-router-dom";
 
 const CardType = ({
   propWidth,
@@ -28,18 +30,28 @@ const CardType = ({
       flex: propFlex1,
     };
   }, [propDisplay, propMinWidth, propFlex1]);
+  const value = useContext(MyContext);
+  const navigate = useNavigate()
+  const handleArticalClick = (items) =>{
+    value.setResentArticalData(items)
+    navigate('/resent-artical-detail')
+  }
   return (
     <>
       {articals.map((items) => {
         return (
-          <div className="card-type">
-            {console.log(items)}
+          <div
+            className="card-type"
+            key={items?.id}
+            onClick={() => handleArticalClick(items)}
+          >
             <img
               className="card-type-child"
               loading="lazy"
               alt=""
               src={`http://localhost:1337${items.images[0].url}`}
             />
+
             <div className="button-instance-parent">
               <div className="button-instance" style={buttonInstanceStyle}>
                 <div className="may-20221" style={may2022Style}>

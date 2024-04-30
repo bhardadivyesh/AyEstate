@@ -1,6 +1,7 @@
 import "./ContentData.css";
 import { useContext, useEffect, useState } from "react";
 import MyContext from "../../context/context";
+import SimpleImageSlider from "react-simple-image-slider";
 const ContentData = () => {
   const value = useContext(MyContext);
   const [data, setdata] = useState();
@@ -24,6 +25,13 @@ const ContentData = () => {
   const part2 = text?.slice(partLength, 2 * partLength);
   const part3 = text?.slice(2 * partLength);
   console.log(data);
+  const images = [
+    { url: `http://localhost:1337${data?.image?.[1]?.url}` },
+    { url: `http://localhost:1337${data?.image?.[3  ]?.url}` },
+    { url: `http://localhost:1337${data?.image?.[4]?.url}` },
+
+    
+  ];
   return (
     <section className="content-5">
       <div className="content17">
@@ -43,13 +51,20 @@ const ContentData = () => {
             </div>
           </div>
         </div>
-        <div className="gallery">
+        <SimpleImageSlider
+        width={896}
+        height={504}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+        {/* <div className="gallery">
           <img
             className="placeholder-image-icon4"
             alt=""
             src={`http://localhost:1337${data?.image?.[1]?.url}`}
-          />
-          <img
+          /> */}
+          {/* <img
             className="placeholder-image-icon5"
             alt=""
             src={`http://localhost:1337${data?.image?.[2]?.url}`}
@@ -58,8 +73,8 @@ const ContentData = () => {
             className="placeholder-image-icon6"
             alt=""
             src={`http://localhost:1337${data?.image?.[4]?.url}`}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
       </div>
     </section>
   );

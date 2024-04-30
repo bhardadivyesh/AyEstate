@@ -201,7 +201,7 @@ const Innovative = () => {
             flexWrap: "wrap",
             alignItems: "flex-start",
             justifyContent: "flex-start",
-            gap: "553px",
+            gap: "503px",
             maxWidth: "100%",
             fontSize: "80px",
             fontFamily: "Roboto",

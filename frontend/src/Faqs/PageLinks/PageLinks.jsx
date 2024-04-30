@@ -2,12 +2,20 @@ import "./PageLinks.css";
 import minus from "../../assets/faqs/icons/minus.png";
 import plus from "../../assets/faqs/icons/add.png";
 import { useState } from "react";
+import {useNavigate} from "react-router-dom"
 const PageLinks = () => {
   const [buttonOneState, setButtonOneState] = useState(true);
   const [buttonTwoState, setButtonTwoState] = useState(false);
   const [buttonThreeState, setButtonThreeState] = useState(false);
   const [buttonFourState, setButtonFourState] = useState(false);
   const [buttonFiveState,setButtonFiveState] = useState(false)
+
+  const navigate = useNavigate()
+
+  const handleGiveAquotebtnClick = () =>{
+    navigate('/contact')
+  }
+
   return (
     <div className="page-links">
       <div className="logo-and-menu">
@@ -158,7 +166,7 @@ const PageLinks = () => {
         </div>
       </div>
       <div className="button-wrapper3">
-        <button className="button33">
+        <button className="button33" onClick={handleGiveAquotebtnClick}>
           <div className="detail-information12">Give a Quote</div>
         </button>
       </div>

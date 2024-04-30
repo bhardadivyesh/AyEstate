@@ -133,7 +133,6 @@ const DataSorter = ({
                 flexDirection: "column",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
-                // gap: "8px",
                 maxWidth: "100%",
               }}
             >
@@ -147,7 +146,7 @@ const DataSorter = ({
                   fontSize: "32px",
                 }}
               >
-                {`$${items.price}`}
+                {items.category} {items.name}
               </div>
               <div
                 style={{
@@ -170,7 +169,7 @@ const DataSorter = ({
                     fontSize: "26px",
                   }}
                 >
-                  {items.category} {items.name}
+                   {`$${items.price}`}
                 </div>
                 <div
                   style={{

@@ -218,9 +218,9 @@
     font-family: "Plus Jakarta Sans";
   }
   .network-navigator {
-    align-self: stretch;
-    justify-content: space-between;
-    gap: 1.25rem;
+    align-self: center;
+    justify-content: center;
+    gap: 15.25rem;
     z-index: 1;
   }
   .copyright-ayestate2 {
@@ -232,7 +232,7 @@
     z-index: 1;
   }
   .copyright-ayestate-designe-container {
-    width: 68.5rem;
+    width: 97.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

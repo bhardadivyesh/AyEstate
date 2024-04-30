@@ -45,6 +45,10 @@
       "type": "richtext",
       "required": true,
       "minLength": 20
+    },
+    "socialMedia": {
+      "type": "string",
+      "required": true
     }
   }
 }

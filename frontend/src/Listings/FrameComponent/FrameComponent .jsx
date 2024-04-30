@@ -1,7 +1,5 @@
 import arrowRight from "../../assets/arrow-right.png";
-import downArrow from "../../assets/arrow-down.png";
-import searchbox from "../../assets/Search Box.png";
-import menuSvg from "../../assets/Search Box (1).png";
+
 import { Link } from "react-router-dom";
 
 const FrameComponent = ({ productCount, category, location }) => {
