@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "AboutUs",
+  "info": {
+    "name": "AboutUs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "fullName": {
+      "type": "text",
+      "required": true,
+      "minLength": 5
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "Director",
+        "CEO",
+        "Manager",
+        "Supervisor",
+        "CreativeDirector",
+        "Developers",
+        "Marketing",
+        "ContentCreator"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 20
+    }
+  }
+}

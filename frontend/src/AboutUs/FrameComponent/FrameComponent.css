@@ -1,0 +1,109 @@
+.title7 {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+  }
+  .facebook-logowine-icon,
+  .netflix-logowine-icon {
+    height: 8.125rem;
+    width: 12.5rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 8.125rem;
+  }
+  .amazon-company-logowine-icon {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .amazon-company-logowine-wrapper {
+    height: 8.125rem;
+    width: 13.944rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1.443rem 0 0;
+    box-sizing: border-box;
+  }
+  .g7433-icon,
+  .g7451-icon {
+    align-self: stretch;
+    position: relative;
+  }
+  .g7433-icon {
+    width: 3.063rem;
+    max-height: 100%;
+    min-height: 2.125rem;
+  }
+  .g7451-icon {
+    height: 1.888rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .g7451-wrapper {
+    flex: 1;
+    flex-direction: column;
+    padding: 0.081rem 0 0;
+  }
+  .frame-wrapper1,
+  .g7433-parent,
+  .g7451-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .g7433-parent {
+    align-self: stretch;
+    flex-direction: row;
+    gap: 0.306rem;
+  }
+  .frame-wrapper1 {
+    width: 11.056rem;
+    flex-direction: column;
+    padding: 3rem 1.443rem 0 0;
+    box-sizing: border-box;
+  }
+  .google-logowine-1-icon {
+    height: 8.125rem;
+    width: 12.469rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 8.125rem;
+  }
+  .facebook-logowine-parent,
+  .title-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3.125rem;
+  }
+  .title-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #c7c1ea;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 1350px) {
+    .facebook-logowine-parent {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .facebook-logowine-parent {
+      gap: 1.563rem;
+    }
+  }
+  

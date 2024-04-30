@@ -23,12 +23,13 @@ const ContentData = () => {
   const part1 = text?.slice(0, partLength);
   const part2 = text?.slice(partLength, 2 * partLength);
   const part3 = text?.slice(2 * partLength);
+  console.log(data);
   return (
     <section className="content-5">
       <div className="content17">
         <div className="column7">
           <h1 className="heading9">
-            Stunning Property with Luxurious Amenities
+            Stunning Property with {data?.category}
           </h1>
           <div className="rich-text">
             <div className="content18">

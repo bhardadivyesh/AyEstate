@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blogs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "suggestion": {
+      "type": "enumeration",
+      "enum": [
+        "SuccessStories",
+        "InvestStrategies",
+        "Tips",
+        "SuccessStory"
+      ],
+      "required": true
+    },
+    "sortDescription": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 50
+    },
+    "longDescription": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 100
+    }
+  }
+}

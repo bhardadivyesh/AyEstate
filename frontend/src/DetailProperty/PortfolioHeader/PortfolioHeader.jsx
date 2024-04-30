@@ -16,12 +16,13 @@ useEffect(()=>{
   let parsedata = JSON.parse(localStorageData)
   setdata(parsedata)
 },[]) 
+// console.log(data.date);
   return (
     <section className="portfolio-header-7">
       <div className="content13">
         <div className="column6">
           <div className="content14">
-            <h1 className="heading8">Luxury Beach Villa</h1>
+            <h1 className="heading8">Luxury Beach {data?.category}</h1>
             <div className="text15">
               Experience the ultimate in beachfront luxury with breathtaking
               ocean views.
@@ -47,7 +48,7 @@ useEffect(()=>{
             </div>
             <div className="list-item1">
               <b className="style-primary">Date</b>
-              <div className="style-secondary">March 2023</div>
+              <div className="style-secondary">{data?.date}</div>
             </div>
           </div>
           <div className="content16">

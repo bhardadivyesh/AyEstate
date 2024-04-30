@@ -65,6 +65,10 @@
     "Discription": {
       "type": "richtext",
       "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
     }
   }
 }

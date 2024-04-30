@@ -1,0 +1,308 @@
+.navigation-inner {
+    width: 90rem;
+    height: 26.188rem;
+    position: relative;
+    background-color: #111;
+    display: none;
+    max-width: 100%;
+  }
+  .ayestate6 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 2.625rem;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 7.063rem;
+  }
+  .helloayestateexamplecom2,
+  .p2 {
+    margin: 0;
+  }
+  .helloayestateexamplecom-12 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 500;
+  }
+  .new-mexico-311342,
+  .parker-rd-allentown2 {
+    margin: 0;
+  }
+  .parker-rd-allentown-container2 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 500;
+  }
+  .calculation-controller,
+  .matrix-mixer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .calculation-controller {
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    color: #7f879e;
+    font-family: "Plus Jakarta Sans";
+  }
+  .matrix-mixer {
+    gap: 2.125rem;
+    min-width: 16.188rem;
+  }
+  .about-us7,
+  .blog6,
+  .listings6,
+  .pages2 {
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 3.375rem;
+  }
+  .about-us7,
+  .blog6,
+  .listings6 {
+    line-height: 180%;
+    font-weight: 500;
+    min-width: 4.188rem;
+  }
+  .about-us7,
+  .blog6 {
+    min-width: 4.813rem;
+  }
+  .blog6 {
+    min-width: 2.563rem;
+  }
+  .event-emitter,
+  .script-scribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .event-emitter {
+    gap: 0.75rem;
+    color: #7f879e;
+  }
+  .script-scribe {
+    gap: 2rem;
+  }
+  .contact-us2,
+  .faq2,
+  .properties3,
+  .support2 {
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 4.563rem;
+  }
+  .contact-us2,
+  .faq2,
+  .properties3 {
+    line-height: 180%;
+    font-weight: 500;
+    min-width: 5.688rem;
+  }
+  .contact-us2,
+  .faq2 {
+    min-width: 2.313rem;
+  }
+  .contact-us2 {
+    min-width: 6.063rem;
+  }
+  .properties-container,
+  .script-scribe1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .properties-container {
+    gap: 0.75rem;
+    color: #7f879e;
+  }
+  .script-scribe1 {
+    gap: 2rem;
+  }
+  .webflow-stuff2 {
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 7.875rem;
+  }
+  .changelog2,
+  .instructions2,
+  .licensing2,
+  .style-guide2 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 6.25rem;
+  }
+  .changelog2,
+  .instructions2,
+  .licensing2 {
+    min-width: 6.063rem;
+  }
+  .instructions2,
+  .licensing2 {
+    min-width: 5.188rem;
+  }
+  .instructions2 {
+    min-width: 6.375rem;
+  }
+  .style-guide-container,
+  .webflow-stuff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .style-guide-container {
+    gap: 0.75rem;
+    color: #7f879e;
+  }
+  .webflow-stuff-container {
+    gap: 2rem;
+  }
+  .platform2 {
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 4.75rem;
+  }
+  .app-store2,
+  .official-website2,
+  .play-store2 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 500;
+  }
+  .app-store2,
+  .play-store2 {
+    display: inline-block;
+    min-width: 5.438rem;
+  }
+  .official-website-container,
+  .script-scribe2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .official-website-container {
+    gap: 0.75rem;
+    color: #7f879e;
+  }
+  .script-scribe2 {
+    gap: 2rem;
+  }
+  .network-navigator,
+  .variable-vault {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .variable-vault {
+    justify-content: flex-start;
+    gap: 5rem;
+    min-width: 42.438rem;
+    font-size: 1.125rem;
+    font-family: "Plus Jakarta Sans";
+  }
+  .network-navigator {
+    align-self: stretch;
+    justify-content: space-between;
+    gap: 1.25rem;
+    z-index: 1;
+  }
+  .copyright-ayestate2 {
+    width: 25.125rem;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+    display: inline-block;
+    z-index: 1;
+  }
+  .copyright-ayestate-designe-container {
+    width: 68.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    text-align: right;
+    font-size: 1.125rem;
+    color: #f3f3f3;
+    font-family: Sora;
+  }
+  .navigation2 {
+    align-self: stretch;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 6.25rem 10.75rem 2rem 6.25rem;
+    box-sizing: border-box;
+    gap: 1.937rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: #fff;
+    font-family: Playball;
+  }
+  @media screen and (max-width: 1350px) {
+    .matrix-mixer,
+    .variable-vault {
+      flex: 1;
+    }
+    .network-navigator {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    .variable-vault {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .ayestate6 {
+      font-size: 1.625rem;
+      line-height: 2.063rem;
+    }
+    .variable-vault {
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+    .navigation2 {
+      gap: 0.938rem;
+      padding-left: 3.125rem;
+      padding-right: 5.375rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .ayestate6 {
+      font-size: 1.188rem;
+      line-height: 1.563rem;
+    }
+    .matrix-mixer {
+      gap: 1.063rem;
+    }
+    .variable-vault {
+      gap: 1.25rem;
+    }
+    .navigation2 {
+      padding: 4.063rem 1.25rem 1.313rem;
+      box-sizing: border-box;
+    }
+  }
+  

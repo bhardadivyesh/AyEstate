@@ -1,181 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./NavigationBar.css";
+
 const NavigationBar = () => {
+  const navigate = useNavigate( )
+  const handleContactBtnClick = ()=>{
+    navigate("/contact")
+  }
   return (
-    <header
-    style={{
-       width: "100%",
-       margin: "0",
-       position: "absolute",
-       top: "0px",
-       right: "0px",
-       left: "10px",
-       overflow: "hidden",
-       display: "flex",
-       flexDirection: "row",
-       alignItems: "flex-start",
-       justifyContent: "center",
-       padding: "22px 20px",
-       boxSizing: "border-box",
-       gap: "370px",
-       maxWidth: "100%",
-       zIndex: "1",
-       textAlign: "left",
-       fontSize: "32px",
-       color: "#111",
-       fontFamily: "Playball",
-      }}
-    >
-      <div
-        style={{
-          width: "159px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          padding: "7px 20px 0px 0px",
-          boxSizing: "border-box",
-        }}
-      >
-        <h1
-          style={{
-            margin: "0",
-            position: "relative",
-            fontSize: "inherit",
-            lineHeight: "42px",
-            fontWeight: "400",
-            fontFamily: "inherit",
-            display: "inline-block",
-            minWidth: "113px",
-            whiteSpace: "nowrap",
-          }}
-        >
-          AyEstate
-        </h1>
+    <header className="navigation-bar6">
+      <div className="branching-logic">
+        <h1 className="ayestate5">AyEstate</h1>
       </div>
-      <nav
-        style={{
-          margin: "0",
-          width: "549px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          padding: "16px 0px 0px",
-          boxSizing: "border-box",
-          maxWidth: "100%",
-        }}
-      >
-        <nav
-          style={{
-            margin: "0",
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "space-between",
-            gap: "20px",
-            textAlign: "left",
-            fontSize: "18px",
-            color: "#7f879e",
-            fontFamily: "Sora",
-          }}
-        >
-          <Link
-          to="/"
-            style={{
-              position: "relative",
-              lineHeight: "130%",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "56px",
-            }}
-          >
-            Home
-          </Link>
-          <Link
-          to="/listing"
-            style={{
-              position: "relative",
-              lineHeight: "130%",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "74px",
-            }}
-          >
-            Listings
-          </Link>
-          <div
-            style={{
-              position: "relative",
-              lineHeight: "130%",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "90px",
-            }}
-          >
-            Company
-          </div>
-          <div
-            style={{
-              position: "relative",
-              lineHeight: "130%",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "43px",
-            }}
-          >
-            Blog
-          </div>
-          <div
-            style={{
-              position: "relative",
-              lineHeight: "130%",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "86px",
-              whiteSpace: "nowrap",
-            }}
-          >
-            About Us
-          </div>
+      <nav className="image-handler-wrapper">
+        <nav className="image-handler">
+          <Link className="home3" to="/" >Home</Link>
+          <Link className="listings5" to="/listing">Listings</Link>
+          <Link className="company3" to="/company">Company</Link>
+          <Link className="blog5" to="/blog">Blog</Link>
+          <Link className="about-us6" to="/aboutus">About Us</Link>
         </nav>
       </nav>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          fontSize: "16px",
-          fontFamily: "Sora",
-        }}
-      >
-        <div
-          style={{
-            borderRadius: "12px",
-            backgroundColor: "#b7e08a",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "17.5px 34px",
-            whiteSpace: "nowrap",
-          }}
-        >
-          <div
-            style={{
-              position: "relative",
-              lineHeight: "21px",
-              fontWeight: "600",
-              display: "inline-block",
-              minWidth: "92px",
-            }}
-          >
-            Contact Us
-          </div>
+      <div className="connector">
+        <div className="button26">
+          <button className="detail-information7" onClick={handleContactBtnClick}>Contact Us</button>
         </div>
       </div>
     </header>
-  )}
-  // export default   
-  export default NavigationBar 
+  );
+};
+
+export default NavigationBar;

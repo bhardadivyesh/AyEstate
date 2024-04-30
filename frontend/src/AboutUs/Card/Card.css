@@ -1,0 +1,78 @@
+.photo-by-juan-ordonez {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  border-radius: 100px;
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+  }
+  .job-title,
+  .name {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+  }
+  .name {
+    font-weight: 600;
+  }
+  .job-title {
+    font-size: 1.125rem;
+  }
+  .title4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .blend-mode {
+    align-self: stretch;
+    position: relative;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  .content23 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .icon-dribble,
+  .icon-linkedin,
+  .icon-x {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 1.5rem;
+  }
+  .card,
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.875rem;
+  }
+  .card {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 18.063rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #000;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 450px) {
+    .name {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  

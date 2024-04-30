@@ -1,0 +1,61 @@
+.copyright-ay-estate {
+    width: 4.75rem;
+    height: 4.75rem;
+    position: relative;
+  }
+  .my-account {
+    position: relative;
+    line-height: 130%;
+    text-transform: capitalize;
+  }
+  .from-how-to {
+    align-self: stretch;
+    position: relative;
+    font-size: 1.125rem;
+    line-height: 160%;
+    color: #7f879e;
+  }
+  .style-guide-changelog-licensin1 {
+    gap: 1rem;
+  }
+  .designed-by-a-y-studio,
+  .style-guide-changelog-licensin1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .alternative-ways-to-get-answer,
+  .our-community {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .our-community {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  .alternative-ways-to-get-answer {
+    border-radius: 16px;
+    border: 1px solid #f6f8f9;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.375rem 1.437rem 1.375rem 1.5rem;
+    min-width: 18.813rem;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #252a3f;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 450px) {
+    .my-account {
+      font-size: 1.188rem;
+      line-height: 1.563rem;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+.excelent-customer-service {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 130%;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .excelent-customer-service-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 4.687rem 0 4.625rem;
+  }
+  .if-you-have {
+    align-self: stretch;
+    position: relative;
+    font-size: 1.125rem;
+    line-height: 160%;
+    color: #7f879e;
+  }
+  .copyright-ay-estate-designed-b {
+    width: 47.563rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.875rem;
+    max-width: 100%;
+  }
+  .style-guide-changelog-licensin {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1.25rem 0 1.312rem;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-inner {
+    height: 32.5rem;
+    flex: 1;
+    position: relative;
+    border-radius: 16px;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .frame-icon {
+    height: 3.25rem;
+    width: 3.25rem;
+    position: absolute;
+    margin: 0 !important;
+    top: 13.063rem;
+    left: calc(50% - 26px);
+    z-index: 1;
+  }
+  .rectangle-container,
+  .style-guide-changelog-licensin-parent {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .rectangle-container {
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+  }
+  .style-guide-changelog-licensin-parent {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3.125rem;
+    text-align: center;
+    font-size: 2.75rem;
+    color: #252a3f;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 750px) {
+    .excelent-customer-service {
+      font-size: 2.188rem;
+      line-height: 2.875rem;
+    }
+    .excelent-customer-service-wrapper {
+      padding-left: 2.313rem;
+      padding-right: 2.313rem;
+      box-sizing: border-box;
+    }
+    .style-guide-changelog-licensin-parent {
+      gap: 1.563rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .excelent-customer-service {
+      font-size: 1.625rem;
+      line-height: 2.125rem;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.medal-star-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    position: relative;
+  }
+  .subtitle3,
+  .title6 {
+    position: relative;
+    letter-spacing: -0.02em;
+  }
+  .title6 {
+    margin: 0;
+    font-size: inherit;
+    line-height: 2.25rem;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .subtitle3 {
+    align-self: stretch;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #c7c1ea;
+  }
+  .benefit-1,
+  .shape-set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .shape-set {
+    align-self: stretch;
+    gap: 1rem;
+  }
+  .benefit-1 {
+    flex: 1;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    gap: 1.5rem;
+    min-width: 17.813rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 450px) {
+    .title6 {
+      font-size: 1.375rem;
+      line-height: 1.813rem;
+    }
+  }
+  

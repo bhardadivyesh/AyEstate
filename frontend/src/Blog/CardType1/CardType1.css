@@ -1,0 +1,90 @@
+.card-type-child {
+    height: 11rem;
+    width: 11.875rem;
+    position: relative;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  .sep-2022 {
+    position: relative;
+    line-height: 1.313rem;
+    font-weight: 600;
+  }
+  .pages-menu-child {
+    width: 0.188rem;
+    height: 0.188rem;
+    position: relative;
+    border-radius: 50%;
+    background-color: #d4d7df;
+  }
+  .pages-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.562rem 0 0;
+  }
+  .career-tips {
+    position: relative;
+    line-height: 1.313rem;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 2.188rem;
+  }
+  .sep-2022-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+  .how-to-figure {
+    align-self: stretch;
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 130%;
+    text-transform: capitalize;
+    font-family: "Plus Jakarta Sans";
+    color: #1b2124;
+  }
+  .frame-parent6 {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .card-type,
+  .card-type-inner,
+  .frame-parent6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .card-type-inner {
+    flex: 1;
+    flex-direction: column;
+    padding: 2.843rem 0 0;
+    box-sizing: border-box;
+    min-width: 12.438rem;
+  }
+  .card-type {
+    align-self: stretch;
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #7f879e;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 450px) {
+    .card-type-child {
+      flex: 1;
+    }
+    .how-to-figure {
+      font-size: 1rem;
+      line-height: 1.313rem;
+    }
+    .card-type {
+      flex-wrap: wrap;
+    }
+  }
+  

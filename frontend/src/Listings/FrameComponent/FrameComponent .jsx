@@ -19,7 +19,6 @@ const FrameComponent = ({ productCount, category, location }) => {
         fontSize: "16px",
         color: "#1d9e34",
         fontFamily: "Sora",
-        marginTop: "150px",
       }}
     >
       <div

@@ -1,0 +1,175 @@
+.helping-you-is {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 130%;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .helping-you {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1.25rem 0 1.312rem;
+  }
+  .collect-keywords-child {
+    height: 4.25rem;
+    width: 51.25rem;
+    position: relative;
+    box-shadow: 0 4px 120px rgba(151, 159, 183, 0.15);
+    border-radius: 16px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .search-normal-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    min-height: 1.5rem;
+    z-index: 1;
+  }
+  .search-question1 {
+    position: relative;
+    line-height: 1.313rem;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .engage-contacts {
+    flex-direction: column;
+    padding: 0.093rem 0 0;
+  }
+  .account-setup,
+  .email-campaigns,
+  .engage-contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .email-campaigns {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  .account-setup {
+    flex-direction: column;
+    padding: 1rem 0 0;
+  }
+  .detail-information11 {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.313rem;
+    font-weight: 600;
+    font-family: Sora;
+    color: #111;
+    text-align: left;
+    display: inline-block;
+    min-width: 3.563rem;
+  }
+  .button32,
+  .collect-keywords {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .button32 {
+    cursor: pointer;
+    border: 0;
+    padding: 1.093rem 3.343rem;
+    background-color: #b7e08a;
+    border-radius: 12px;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .button32:hover {
+    background-color: #85ad57;
+  }
+  .collect-keywords {
+    align-self: stretch;
+    box-shadow: 0 4px 120px rgba(151, 159, 183, 0.15);
+    border-radius: 16px;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 0.375rem 0.375rem 0.375rem 1.375rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 1.25rem;
+  }
+  .we-are-collect {
+    position: relative;
+    line-height: 1.313rem;
+    font-weight: 600;
+  }
+  .property-f-a-q {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+  .button-detail-info1 {
+    width: 51.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  .search-question,
+  .support-ayestatecom {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .search-question {
+    padding: 0 1.25rem 3.125rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 1rem;
+    color: #7f879e;
+  }
+  .support-ayestatecom {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 1.5rem;
+  }
+  .home-listings-company-blog {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 3.125rem;
+    max-width: 100%;
+    text-align: center;
+    font-size: 2.75rem;
+    color: #252a3f;
+    font-family: Sora;
+  }
+  @media screen and (max-width: 750px) {
+    .helping-you-is {
+      font-size: 2.188rem;
+      line-height: 2.875rem;
+    }
+    .home-listings-company-blog {
+      gap: 1.563rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .helping-you-is {
+      font-size: 1.625rem;
+      line-height: 2.125rem;
+    }
+    .collect-keywords {
+      flex-wrap: wrap;
+    }
+  }
+  

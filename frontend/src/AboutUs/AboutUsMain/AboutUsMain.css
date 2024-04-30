@@ -1,0 +1,167 @@
+.summarizer-icon {
+    height: 31.25rem;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .summarizer-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 6.25rem;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .label-title {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Sora;
+    color: #f4f2ff;
+    text-align: left;
+    display: inline-block;
+    min-width: 7.625rem;
+  }
+  .label {
+    cursor: pointer;
+    border: 0;
+    padding: 0.75rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .label:hover {
+    background-color: rgba(230, 230, 230, 0.1);
+  }
+  .title1 {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    line-height: 3.375rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .description,
+  .title-wrapper {
+    flex: 1;
+    min-width: 22.75rem;
+    max-width: 100%;
+  }
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.062rem 0 0;
+    box-sizing: border-box;
+  }
+  .description {
+    position: relative;
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+    color: #c7c1ea;
+    display: inline-block;
+  }
+  .frame-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5rem;
+    max-width: 100%;
+  }
+  .divider {
+    align-self: stretch;
+    height: 0.094rem;
+    position: relative;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+  .about-us1,
+  .benefits-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .benefits-section {
+    align-self: stretch;
+    background-color: #16112f;
+    padding: 5rem 7.375rem 5rem 7.5rem;
+    box-sizing: border-box;
+    gap: 3.725rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 2.25rem;
+    color: #f4f2ff;
+    font-family: Sora;
+  }
+  .about-us1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1350px) {
+    .frame-parent {
+      gap: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    .benefits-section {
+      padding-top: 3.25rem;
+      padding-bottom: 3.25rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .summarizer-wrapper {
+      padding-bottom: 4.063rem;
+      box-sizing: border-box;
+    }
+    .title1 {
+      font-size: 1.813rem;
+      line-height: 2.688rem;
+    }
+    .description,
+    .title-wrapper {
+      min-width: 100%;
+    }
+    .frame-parent {
+      gap: 1.25rem;
+    }
+    .benefits-section {
+      gap: 1.875rem;
+      padding: 2.125rem 3.688rem 2.125rem 3.75rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .title1 {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+    .benefits-section {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      box-sizing: border-box;
+    }
+  }
+  

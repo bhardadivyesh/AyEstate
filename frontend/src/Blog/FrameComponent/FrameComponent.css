@@ -1,0 +1,26 @@
+.article-listings,
+.frame-parent10 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.article-listings {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.812rem;
+}
+.frame-parent10 {
+  flex-direction: column;
+  gap: 3.125rem;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #7f879e;
+  font-family: Sora;
+}
+@media screen and (max-width: 750px) {
+  .frame-parent10 {
+    gap: 1.563rem;
+  }
+}

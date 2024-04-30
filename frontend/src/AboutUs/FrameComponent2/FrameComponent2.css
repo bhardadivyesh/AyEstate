@@ -1,0 +1,150 @@
+.divide,
+.succesfull-project {
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.divide {
+  line-height: 2.25rem;
+  display: inline-block;
+  min-width: 4.75rem;
+}
+.succesfull-project {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #534f69;
+}
+.merge,
+.trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.merge {
+  gap: 0.75rem;
+}
+.trigger {
+  flex: 1;
+  min-width: 6.438rem;
+}
+.b,
+.satisfied-client {
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.b {
+  line-height: 2.25rem;
+  display: inline-block;
+  min-width: 4.813rem;
+}
+.satisfied-client {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #534f69;
+}
+.parent {
+  gap: 0.75rem;
+}
+.parent,
+.trigger1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.awwards-winners,
+.b1 {
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.b1 {
+  line-height: 2.25rem;
+  display: inline-block;
+  min-width: 4.188rem;
+}
+.awwards-winners {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #534f69;
+}
+.group {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.delay,
+.group,
+.trigger2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.trigger2 {
+  flex: 1;
+  flex-direction: column;
+  min-width: 6.438rem;
+}
+.delay {
+  width: 33.313rem;
+  flex-direction: row;
+  gap: 2.5rem;
+  max-width: 100%;
+}
+.were-a-diverse {
+  width: 30.5rem;
+  position: relative;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  line-height: 1.75rem;
+  color: #534f69;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 30.5rem;
+  max-width: 100%;
+}
+.error-handler,
+.error-handler-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.error-handler {
+  width: 75rem;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.error-handler-wrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.25rem 11.25rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 1.75rem;
+  color: #16112f;
+  font-family: Sora;
+}
+@media screen and (max-width: 1125px) {
+  .were-a-diverse {
+    flex: 1;
+  }
+  .error-handler {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .delay {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .were-a-diverse {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .b1,
+  .divide {
+    font-size: 1.375rem;
+    line-height: 1.813rem;
+  }
+}

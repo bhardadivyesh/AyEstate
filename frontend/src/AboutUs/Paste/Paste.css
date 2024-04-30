@@ -1,0 +1,61 @@
+.our-process {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  .title-button3 {
+    position: relative;
+    font-size: 0.875rem;
+    letter-spacing: -0.02em;
+    line-height: 1.25rem;
+    font-weight: 600;
+    font-family: Sora;
+    color: #f4f2ff;
+    text-align: left;
+    display: inline-block;
+    min-width: 6.875rem;
+  }
+  .arrow-up-right-icon3 {
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .button27,
+  .paste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button27 {
+    cursor: pointer;
+    border: 1px solid #f4f2ff;
+    padding: 0.75rem 1.437rem;
+    background-color: transparent;
+    border-radius: 40px;
+    flex-direction: row;
+    gap: 0.625rem;
+    white-space: nowrap;
+  }
+  .button27:hover {
+    background-color: rgba(219, 217, 230, 0.09);
+    border: 1px solid #dbd9e6;
+    box-sizing: border-box;
+  }
+  .paste {
+    /* width: 74.25rem; */
+    flex-direction: column;
+    gap: 1.875rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: Sora;
+  }
+  

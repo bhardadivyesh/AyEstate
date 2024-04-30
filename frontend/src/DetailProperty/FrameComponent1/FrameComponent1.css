@@ -70,12 +70,12 @@
   min-width: 4.188rem;
 }
 .icon-chevron-right2 {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  min-height: 1.5rem;
+  min-height: 0.1rem;
 }
 .stylelink-smallfalse-dark3 {
   display: flex;

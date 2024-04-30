@@ -1,0 +1,43 @@
+.span {
+    color: #e60019;
+  }
+  .first-name {
+    position: relative;
+    line-height: 130%;
+    text-transform: capitalize;
+    display: inline-block;
+    min-width: 6.438rem;
+  }
+  .client-engagement-point,
+  .form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Sora;
+  }
+  .client-engagement-point {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #f6f8f9;
+    align-self: stretch;
+    height: 3.625rem;
+    border-radius: 16px;
+    flex-direction: row;
+    padding: 1.125rem 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    color: #7f879e;
+    min-width: 15.625rem;
+  }
+  .form {
+    flex: 1;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 17.563rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    color: #1b2124;
+  }
+  
