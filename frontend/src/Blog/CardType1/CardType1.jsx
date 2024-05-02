@@ -1,6 +1,6 @@
 import "./CardType1.css";
 
-const CardType1 = ({ rectangle9616, sep2022, howToFigureOutIfAPotentia }) => {
+const CardType1 = ({ rectangle9616, sep2022, howToFigureOutIfAPotentia,suggestion }) => {
   return (
     <div className="card-type">
       <img className="card-type-child" alt="" src={rectangle9616} />
@@ -11,7 +11,7 @@ const CardType1 = ({ rectangle9616, sep2022, howToFigureOutIfAPotentia }) => {
             <div className="pages-menu">
               <div className="pages-menu-child" />
             </div>
-            <div className="career-tips">Tips</div>
+            <div className="career-tips">{suggestion}</div>
           </div>
           <b className="how-to-figure">{howToFigureOutIfAPotentia}</b>
         </div>

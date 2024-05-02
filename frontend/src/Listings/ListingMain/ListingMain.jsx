@@ -44,11 +44,21 @@ const ListingMain = () => {
   };
   const [productData, setProductData] = useState();
   // api call
+  // useEffect(() => {
+  //   axios.get("http://localhost:1337/listings").then((res) => {
+  //     setProductData(res.data);
+  //   });
+  // }, []);
   useEffect(() => {
-    axios.get("http://localhost:1337/listings").then((res) => {
-      setProductData(res.data);
-    });
+    axios.get("http://localhost:3000/get-listing")
+      .then((res) => {
+        setProductData(res.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product data:", error);
+      });
   }, []);
+  console.log(productData);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -85,19 +95,6 @@ const ListingMain = () => {
     endIndex = 0;
   }
   const currentItems = filteredProperties?.slice(startIndex, endIndex);
-  console.log(currentItems);
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(parseFloat(String(price).replace(/[^0-9.-]+/g,"")));
-  };
-
-  // Map through the array and replace price values with formatted prices
-  const formattedItems = currentItems?.map(item => {
-    return {
-      ...item,
-      price: formatPrice(item.price)
-    };
-  });
-  console.log(formattedItems);
   const generatePageButtons = () => {
     const buttons = [];
     for (let i = 1; i <= totalPages; i++) {

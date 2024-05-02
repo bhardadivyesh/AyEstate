@@ -1,7 +1,36 @@
 import "./FrameComponent3.css";
-import searchIcon from "../../assets/blogs/icons/search.jpg"
-
+import searchIcon from "../../assets/blogs/icons/search.jpg";
+import { useEffect, useState } from "react";
+import axios from "axios"
 const FrameComponent3 = () => {
+  const [articals,setArticals] = useState([])
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const articleNames = [];
+
+  const handleChange = (event) => {
+    const { value } = event.target;
+    setQuery(value);
+    const filteredSuggestions =articleNames?.filter(
+      (item) => item.toLowerCase().includes(value.toLowerCase())
+    );
+    setSuggestions(filteredSuggestions);
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    setQuery(suggestion);
+    setSuggestions([]);
+  };
+  useEffect(()=>{
+    axios.get('http://localhost:1337/blogs').then((res)=>{
+      setArticals(res.data)
+    })
+  },[])
+  articals.forEach((item) => {
+    if (!articleNames.includes(item.suggestion)) {
+      articleNames.push(item.suggestion);
+    }
+  });
   return (
     <div className="search-bar-instance-wrapper">
       <div className="search-bar-instance">
@@ -20,7 +49,25 @@ const FrameComponent3 = () => {
                   src={searchIcon}
                 />
                 <div className="search-article-name-wrapper">
-                  <div className="search-article-name">Search article name</div>
+                  <input
+                    type="text"
+                    value={query}
+                    onChange={handleChange}
+                    className="search-article-name"
+                    placeholder="Search article name"
+                  />
+                  {query.length > 0 && (
+                    <ul>
+                      {suggestions.map((item, index) => (
+                        <li
+                          key={index}
+                          onClick={() => handleSuggestionClick(item)}
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>
@@ -33,10 +80,12 @@ const FrameComponent3 = () => {
               <div className="suggested-wrapper">
                 <div className="suggested">Suggested:</div>
               </div>
-              <div className="success-stories">Success Stories</div>
-              <div className="invest-strategies">Invest Strategies</div>
-              <div className="tips">Tips</div>
-              <div className="success-story">Success Story</div>
+              {articleNames.map((items,index)=>{
+                return(
+
+                  <div className="success-stories invest-strategies tips success-story" style={{marginLeft : "20px"}}>{items}</div>
+                )
+              })}
             </div>
           </div>
         </div>

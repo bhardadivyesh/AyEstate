@@ -12,7 +12,55 @@ const BlogRecentArticles = () => {
       setArticals(res.data);
     });
   }, []);
-  //   console.log(articals);
+  console.log(articals);
+  // pagination logic
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+  const totalItems = articals?.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  let startIndex, endIndex;
+  if (typeof totalItems === "number" && !isNaN(totalItems)) {
+    startIndex = (currentPage - 1) * itemsPerPage;
+    endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+  } else {
+    startIndex = 0;
+    endIndex = 0;
+  }
+  const currentItems = articals?.slice(startIndex, endIndex);
+  const generatePageButtons = () => {
+    const buttons = [];
+    for (let i = 1; i <= totalPages; i++) {
+      buttons.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className="generate-pagination-btn"
+          style={{
+            height: "45px",
+            width: "45px",
+            borderRadius: "8px",
+            border: "1px solid #e4e9ee",
+            boxSizing: "border-box",
+            cursor: "pointer",
+            backgroundColor: i === currentPage ? "#f9f9f9" : "#ffffff",
+          }}
+        >
+          {i}
+        </button>
+      );
+    }
+    return buttons;
+  };
+  const previousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+  const nextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
   return (
     <div className="blog-recent-articles">
       <NavigationBar />
@@ -27,7 +75,7 @@ const BlogRecentArticles = () => {
             </div>
             <div className="card-type-parent">
               <CardType
-                articals={articals}
+                articals={currentItems}
                 propWidth="unset"
                 propFlex="unset"
                 propDisplay="inline-block"
@@ -38,31 +86,17 @@ const BlogRecentArticles = () => {
           </div>
           <div className="frame-wrapper">
             <div className="frame-container">
-              <div className="arrow-left-wrapper">
-                <img
-                  className="arrow-left-icon"
-                  loading="lazy"
-                  alt=""
-                  src="/arrowleft.svg"
-                />
-              </div>
-              <div className="pages-container-parent">
-                <div className="pages-container">
-                  <div className="page-title">1</div>
-                </div>
-                <div className="pages-container1">
-                  <div className="div">2</div>
-                </div>
-                <div className="pages-container2">
-                  <div className="div1">3</div>
-                </div>
-                <div className="pages-container3">
-                  <div className="div2">...</div>
-                </div>
-              </div>
-              <div className="arrow-left-container">
-                <img className="arrow-left-icon1" alt="" src="/arrowleft.svg" />
-              </div>
+             {currentPage > 1 && (
+            <button onClick={previousPage} className="previous-btn">
+              Previous
+            </button>
+          )}
+          {generatePageButtons()}
+          {currentPage < totalPages && (
+            <button className="next-btn" onClick={nextPage}>
+              Next
+            </button>
+          )}
             </div>
           </div>
         </section>

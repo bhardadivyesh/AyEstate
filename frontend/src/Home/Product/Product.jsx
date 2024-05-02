@@ -1,4 +1,6 @@
+import mainImage from "../../assets/DetailProperty/firstImage.png"
 const Product = ({ placeholderImage, heading, text, price }) => {
+  console.log(placeholderImage);
   const numericPrice = parseFloat(price.replace(/[^0-9.-]+/g,""));
   const formattedPrice = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(numericPrice);
   return (
@@ -20,6 +22,7 @@ const Product = ({ placeholderImage, heading, text, price }) => {
         marginLeft : "60px"
       }}
     >
+      {placeholderImage &&
       <img
         style={{
           alignSelf: "stretch",
@@ -32,8 +35,9 @@ const Product = ({ placeholderImage, heading, text, price }) => {
           objectFit: "cover",
         }}
         alt=""
-        src={placeholderImage}
+        src={`data:image/jpeg;base64,${placeholderImage}`}
       />
+    }
       <div
         style={{
           alignSelf: "stretch",

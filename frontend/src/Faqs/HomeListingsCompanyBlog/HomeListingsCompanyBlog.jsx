@@ -1,11 +1,22 @@
 import AlternativeWaysToGetAnswer from "../AlternativeWaysToGetAnswer/AlternativeWaysToGetAnswer";
 import "./HomeListingsCompanyBlog.css";
-import search from "../../assets/faqs/icons/search.png"
-import myAccount from "../../assets/faqs/icons/myAccount.png"
-import mail from "../../assets/faqs/icons/mail.png"
-import study from "../../assets/faqs/icons/study.png"
+import search from "../../assets/faqs/icons/search.png";
+import myAccount from "../../assets/faqs/icons/myAccount.png";
+import mail from "../../assets/faqs/icons/mail.png";
+import study from "../../assets/faqs/icons/study.png";
+import { useState } from "react";
 
 const HomeListingsCompanyBlog = () => {
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const handleChange = (event) => {
+    const { value } = event.target;
+    setQuery(value);
+    const filteredSuggestions = ["apple", "banana", "cherry", "date"].filter(
+      (item) => item.toLowerCase().includes(value.toLowerCase())
+    );
+    setSuggestions(filteredSuggestions);
+  };
   return (
     <div className="home-listings-company-blog">
       <div className="helping-you">
@@ -24,7 +35,25 @@ const HomeListingsCompanyBlog = () => {
                   src={search}
                 />
                 <div className="engage-contacts">
-                  <input className="search-question1" placeholder="Search question" />
+                  <input
+                    type="text"
+                    value={query}
+                    onChange={handleChange}
+                    className="search-question1"
+                    placeholder="Search question"
+                  />
+                  {query.length > 0 && (
+                    <ul>
+                      {suggestions.map((item, index) => (
+                        <li
+                          key={index}
+                          onClick={() => handleSuggestionClick(item)}
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>

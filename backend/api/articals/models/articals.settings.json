@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articals",
+  "info": {
+    "name": "articals",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "suggetion": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "sortDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 20
+    }
+  }
+}

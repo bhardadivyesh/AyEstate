@@ -1,20 +1,46 @@
 import "./PageLinks.css";
 import minus from "../../assets/faqs/icons/minus.png";
 import plus from "../../assets/faqs/icons/add.png";
-import { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 const PageLinks = () => {
-  const [buttonOneState, setButtonOneState] = useState(true);
-  const [buttonTwoState, setButtonTwoState] = useState(false);
-  const [buttonThreeState, setButtonThreeState] = useState(false);
-  const [buttonFourState, setButtonFourState] = useState(false);
-  const [buttonFiveState,setButtonFiveState] = useState(false)
+  const [question, setQuestion] = useState([]);
+  const [openIndices, setOpenIndices] = useState([]);
+  const [readMoreIndices, setReadMoreIndices] = useState([]);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleGiveAquotebtnClick = () =>{
-    navigate('/contact')
-  }
+  const handleGiveAquotebtnClick = () => {
+    navigate("/contact");
+  };
+
+  useEffect(() => {
+    axios.get("http://localhost:1337/faqs").then((res) => {
+      setQuestion(res.data);
+    });
+  }, []);
+
+  const toggleDescription = (index) => {
+    setOpenIndices((prevOpenIndices) => {
+      if (prevOpenIndices.includes(index)) {
+        return prevOpenIndices.filter((i) => i !== index);
+      } else {
+        return [...prevOpenIndices, index];
+      }
+    });
+  };
+
+  const toggleReadMore = (index) => {
+    setReadMoreIndices((prevReadMoreIndices) => {
+      if (prevReadMoreIndices.includes(index)) {
+        return prevReadMoreIndices.filter((i) => i !== index);
+      } else {
+        return [...prevReadMoreIndices, index];
+      }
+    });
+  };
 
   return (
     <div className="page-links">
@@ -29,141 +55,35 @@ const PageLinks = () => {
             </div>
           </div>
         </div>
-        <div className="delete-project">
-          <div className="new-project-from-template">
-            <div className="duplicate-project">
-              <b className="what-types-of">
-                What types of properties are available on your website?
-              </b>
-              <img
-                className="minus-icon1"
-                loading="lazy"
-                alt=""
-                src={buttonOneState ? minus : plus}
-                onClick={() => setButtonOneState(!buttonOneState)}
-              />
+        {question.map((item, index) => (
+          <div className="delete-project" key={index}>
+            <div className="new-project-from-template">
+              <div className="duplicate-project">
+                <b className="what-types-of">{item?.question}</b>
+                <img
+                  className="minus-icon1"
+                  loading="lazy"
+                  alt=""
+                  src={openIndices.includes(index) ? minus : plus}
+                  onClick={() => toggleDescription(index)}
+                />
+              </div>
+              {openIndices.includes(index) && (
+                <>
+                  <div className="our-website-lists">{item?.description}</div>
+                  {item?.moreDescription && readMoreIndices.includes(index) && (
+                    <div className="our-website-lists">{item?.moreDescription}</div>
+                  )}
+                  {item?.moreDescription && (
+                    <b className="read-more1" onClick={() => toggleReadMore(index)}>
+                      {readMoreIndices.includes(index) ? "Read Less" : "Read More"}
+                    </b>
+                  )}
+                </>
+              )}
             </div>
-            {buttonOneState && (
-              <>
-                <div className="our-website-lists">
-                  Our website lists a variety of properties including
-                  residential homes, apartments, condos, townhouses, commercial
-                  properties, vacant land, and more. You can filter your search
-                  based on your preferences.
-                </div>
-                <b className="read-more1">Read More</b>
-              </>
-            )}
           </div>
-        </div>
-        <div className="delete-project">
-          <div className="new-project-from-template">
-            <div className="duplicate-project">
-              <b className="what-types-of">
-              How do I schedule a viewing of a property listed on your website?
-              </b>
-              <img
-                className="minus-icon1"
-                loading="lazy"
-                alt=""
-                src={buttonTwoState ? minus : plus}
-                onClick={() => setButtonTwoState(!buttonTwoState)}
-              />
-            </div>
-            {buttonTwoState && (
-              <>
-                <div className="our-website-lists">
-                  Our website lists a variety of properties including
-                  residential homes, apartments, condos, townhouses, commercial
-                  properties, vacant land, and more. You can filter your search
-                  based on your preferences.
-                </div>
-                <b className="read-more1">Read More</b>
-              </>
-            )}
-          </div>
-        </div>
-        <div className="delete-project">
-          <div className="new-project-from-template">
-            <div className="duplicate-project">
-              <b className="what-types-of">
-              Can I list my property for sale or rent on your website?
-              </b>
-              <img
-                className="minus-icon1"
-                loading="lazy"
-                alt=""
-                src={buttonThreeState ? minus : plus}
-                onClick={() => setButtonThreeState(!buttonThreeState)}
-              />
-            </div>
-            {buttonThreeState && (
-              <>
-                <div className="our-website-lists">
-                  Our website lists a variety of properties including
-                  residential homes, apartments, condos, townhouses, commercial
-                  properties, vacant land, and more. You can filter your search
-                  based on your preferences.
-                </div>
-                <b className="read-more1">Read More</b>
-              </>
-            )}
-          </div>
-        </div>
-        <div className="delete-project">
-          <div className="new-project-from-template">
-            <div className="duplicate-project">
-              <b className="what-types-of">
-              What should I consider when buying a home?
-              </b>
-              <img
-                className="minus-icon1"
-                loading="lazy"
-                alt=""
-                src={buttonFourState ? minus : plus}
-                onClick={() => setButtonFourState(!buttonFourState)}
-              />
-            </div>
-            {buttonFourState && (
-              <>
-                <div className="our-website-lists">
-                  Our website lists a variety of properties including
-                  residential homes, apartments, condos, townhouses, commercial
-                  properties, vacant land, and more. You can filter your search
-                  based on your preferences.
-                </div>
-                <b className="read-more1">Read More</b>
-              </>
-            )}
-          </div>
-        </div>
-        <div className="delete-project">
-          <div className="new-project-from-template">
-            <div className="duplicate-project">
-              <b className="what-types-of">
-              How do I determine the value of my property?
-              </b>
-              <img
-                className="minus-icon1"
-                loading="lazy"
-                alt=""
-                src={buttonFiveState ? minus : plus}
-                onClick={() => setButtonFiveState(!buttonFiveState)}
-              />
-            </div>
-            {buttonFiveState && (
-              <>
-                <div className="our-website-lists">
-                  Our website lists a variety of properties including
-                  residential homes, apartments, condos, townhouses, commercial
-                  properties, vacant land, and more. You can filter your search
-                  based on your preferences.
-                </div>
-                <b className="read-more1">Read More</b>
-              </>
-            )}
-          </div>
-        </div>
+        ))}
       </div>
       <div className="button-wrapper3">
         <button className="button33" onClick={handleGiveAquotebtnClick}>

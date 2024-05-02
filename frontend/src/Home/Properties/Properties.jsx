@@ -3,8 +3,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 const Properties = () => {
   const [productData, setProductData] = useState();
+  // useEffect(() => {
+  //   axios.get("http://localhost:1337/data").then((res) => {
+  //     if (res.status == 200) {
+  //       setProductData(res.data);
+  //     }
+  //   });
+  // }, []);
   useEffect(() => {
-    axios.get("http://localhost:1337/data").then((res) => {
+    axios.get("http://localhost:3000/get-home").then((res) => {
       if (res.status == 200) {
         setProductData(res.data);
       }
@@ -116,7 +123,7 @@ const Properties = () => {
             return (
               <Product
                 key={index}
-                placeholderImage={`http://localhost:1337${items.image[0].url}`}
+                placeholderImage={items.image}
                 heading={items.productname}
                 text={items.category}
                 price={`$${items.price}`}

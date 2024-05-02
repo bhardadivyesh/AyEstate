@@ -32,7 +32,6 @@ const CardType = ({
       flex: propFlex1,
     };
   }, [propDisplay, propMinWidth, propFlex1]);
-console.log(blogs);
   return (
     <div className="card-type2">
       <img

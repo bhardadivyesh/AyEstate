@@ -2,7 +2,7 @@
 import React, { useMemo } from "react";
 import "./Form.css";
 
-const Form = ({ yourName, clientEngagementPoPlaceho, propMinWidth, onChange }) => {
+const Form = ({ yourName, clientEngagementPoPlaceho, propMinWidth, onChange,type }) => {
   const firstNameStyle = useMemo(() => {
     return {
       minWidth: propMinWidth,
@@ -12,7 +12,7 @@ const Form = ({ yourName, clientEngagementPoPlaceho, propMinWidth, onChange }) =
   const handleChange = (e) => {
     onChange(e.target.value);
   };
-
+  console.log(type);
   return (
     <div className="form">
       <b className="first-name" style={firstNameStyle}>
@@ -22,7 +22,7 @@ const Form = ({ yourName, clientEngagementPoPlaceho, propMinWidth, onChange }) =
       <input
         className="client-engagement-point"
         placeholder={clientEngagementPoPlaceho}
-        type="text"
+        type={type}
         onChange={handleChange}
       />
     </div>

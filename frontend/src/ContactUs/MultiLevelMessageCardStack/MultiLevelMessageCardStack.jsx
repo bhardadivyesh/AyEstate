@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import "./MultiLevelMessageCardStack.css";
-import arrow from "../../assets/contactus/icons/arrow-down.png"
-import axios from "axios"
+import arrow from "../../assets/contactus/icons/arrow-down.png";
+import axios from "axios";
 
 const MultiLevelMessageCardStack = () => {
   const [formData, setFormData] = useState({
@@ -13,30 +13,39 @@ const MultiLevelMessageCardStack = () => {
     additionalInfo: "",
     agreeToTerms: false,
   });
-  
+  const [buttonState, setButtonState] = useState(false);
+
   const handleFormChange = (fieldName, value) => {
-    setFormData(prevData => ({
+    setFormData((prevData) => ({
       ...prevData,
       [fieldName]: value,
     }));
   };
 
   const handleCheckboxChange = () => {
-    setFormData(prevData => ({
+    setFormData((prevData) => ({
       ...prevData,
       agreeToTerms: !prevData.agreeToTerms,
     }));
   };
-
+  useEffect(()=>{
+    if (
+      formData.yourName == "" ||
+      formData.email == "" ||
+      formData.phoneNumber == "" ||
+      formData.companySize == "" ||
+      formData.additionalInfo == "" ||
+      formData.agreeToTerms == false
+    ) {
+      setButtonState(false);
+    }
+    else{
+      setButtonState(true)
+    }
+  },[formData])
+ 
   const handleSubmit = () => {
-    axios.post('http://localhost:1337/contactuses', formData)
-  .then(response => {
-    console.log('Response:', response.data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  }); 
-    
+    axios.post("http://localhost:1337/contactuses", formData);
   };
   return (
     <div className="multi-level-message-card-stack">
@@ -63,12 +72,14 @@ const MultiLevelMessageCardStack = () => {
             <div className="form-parent">
               <Form
                 yourName="Your Name"
+                type="text"
                 clientEngagementPoPlaceho="Enter your name"
                 onChange={(value) => handleFormChange("yourName", value)}
               />
               <Form
                 yourName="Email"
-                clientEngagementPoPlaceho="Enter your first name"
+                type="email"
+                clientEngagementPoPlaceho="Enter your email"
                 propMinWidth="3.625rem"
                 onChange={(value) => handleFormChange("email", value)}
               />
@@ -79,11 +90,13 @@ const MultiLevelMessageCardStack = () => {
                 <input
                   className="form-child"
                   placeholder="Enter your phone number"
-                  type="text"
-                  value={formData.phoneNumber} // Bind value to state
-                  onChange={(e) =>
-                    handleFormChange("phoneNumber", e.target.value)
-                  } // Update state on change
+                  type="number"
+                  value={formData.phoneNumber}
+                  onChange={(e) => {
+                    let phoneNumber = e.target.value;
+                    phoneNumber = phoneNumber.slice(0, 10);
+                    handleFormChange("phoneNumber", phoneNumber);
+                  }}
                 />
               </div>
               <div className="form3">
@@ -95,57 +108,61 @@ const MultiLevelMessageCardStack = () => {
                   <div className="choose-company-size-parent">
                     <select
                       className="choose-company-size"
-                      value={formData.companySize} // Bind value to state
+                      value={formData.companySize}
                       onChange={(e) =>
                         handleFormChange("companySize", e.target.value)
-                      } // Update state on change
+                      }
                     >
                       <option value="">Choose company size</option>
                       <option value="0 to 10">0 to 10</option>
                       <option value="11 to 50">11 to 50</option>
                       <option value="50 to 100">50 to 100</option>
                     </select>
-                    <img
-                      className="arrow-down-icon1"
-                      alt=""
-                      src={arrow}
-                    />
+                    <img className="arrow-down-icon1" alt="" src={arrow} />
                   </div>
                 </div>
               </div>
             </div>
-           
-           <div className="form4">
-          <b className="anything-else-youd">
-            Anything Else You’d Like Us To Know?
-          </b>
-          <textarea
-            className="form-item"
-            placeholder="Type anything"
-            rows={9}
-            cols={44}
-            value={formData.additionalInfo} // Bind value to state
-            onChange={(e) => handleFormChange("additionalInfo", e.target.value)} // Update state on change
-          />
-        </div>
-      </div>
 
-      <div className="form-input-first-name">
-        <div className="checkbox-wrapper">
-          <input
-            className="checkbox"
-            type="checkbox"
-            checked={formData.agreeToTerms} // Bind checked status to state
-            onChange={handleCheckboxChange} // Update state on change
-          />
-        </div>
-        <div className="privacy-policy-button">
-          <div className="i-agree-to">
-            I agree to Loom's Terms of Service and Privacy Policy.*
+            <div className="form4">
+              <b className="anything-else-youd">
+                Anything Else You’d Like Us To Know?
+              </b>
+              <textarea
+                className="form-item"
+                placeholder="Type anything"
+                rows={9}
+                cols={44}
+                value={formData.additionalInfo}
+                onChange={(e) =>
+                  handleFormChange("additionalInfo", e.target.value)
+                }
+              />
+            </div>
           </div>
-        </div>
-        <button disabled={formData.agreeToTerms == false} className="button30" onClick={handleSubmit}>Contact Sales</button>
-      </div>
+
+          <div className="form-input-first-name">
+            <div className="checkbox-wrapper">
+              <input
+                className="checkbox"
+                type="checkbox"
+                checked={formData.agreeToTerms}
+                onChange={handleCheckboxChange}
+              />
+            </div>
+            <div className="privacy-policy-button">
+              <div className="i-agree-to">
+                I agree to Loom's Terms of Service and Privacy Policy.*
+              </div>
+            </div>
+            <button
+              disabled={buttonState == false}
+              className="button30"
+              onClick={handleSubmit}
+            >
+              Contact Sales
+            </button>
+          </div>
         </div>
       </div>
     </div>
