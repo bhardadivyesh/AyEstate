@@ -16,6 +16,7 @@ import Merge from "./Authentication/Merge/Merge";
 import SignIn from "./Authentication/SignIn/SignIn";
 import SignUp from "./Authentication/SignUp/SignUp";
 import PaymentMain from "./paymentGateway/PaymentMain/PaymentMain";
+import Payment from "./paymentGateway/RazorPay/Payment";
 function App() {
   const [detailPropertyData,setDetailPropertyData] = useState([])
   const [resentArticalData,setResentArticalData] = useState([])
@@ -46,6 +47,7 @@ function App() {
             <Route path="/form" element={<AdminForm />}/>
             <Route path="/" element={<Merge />}/>
             <Route path="/payment" element={<PaymentMain />}/>
+            <Route path="/razorpay" element={<Payment />}/>
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>
