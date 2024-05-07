@@ -82,7 +82,6 @@ const FrameComponent3 = () => {
               </div>
               {articleNames.map((items,index)=>{
                 return(
-
                   <div className="success-stories invest-strategies tips success-story" style={{marginLeft : "20px"}}>{items}</div>
                 )
               })}

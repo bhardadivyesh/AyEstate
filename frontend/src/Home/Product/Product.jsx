@@ -1,6 +1,5 @@
 import mainImage from "../../assets/DetailProperty/firstImage.png"
 const Product = ({ placeholderImage, heading, text, price }) => {
-  console.log(placeholderImage);
   const numericPrice = parseFloat(price.replace(/[^0-9.-]+/g,""));
   const formattedPrice = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(numericPrice);
   return (

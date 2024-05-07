@@ -3,7 +3,6 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 
 export default function AdminForm() {
-  const [submitting, setSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
@@ -11,48 +10,40 @@ export default function AdminForm() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    setSubmitting(true);
-    try {
-      const imageData = await Promise.all(
-        Object.keys(data).map(async (key) => {
-          if (key.startsWith("image")) {
-            const base64Image = await convertImageToBase64(data[key][0]);
-            return { name: key, data: base64Image };
-          }
-          return null;
-        })
-      );
-      const formData = []
-      imageData.forEach((image) => {
-        if (image) {
-          formData[image.name] = image.data;
-        }
-      });
-      console.log(formData);
-      await axios.post("http://localhost:3000/post-listing", data);
-      console.log("Data submitted successfully");
-    } catch (error) {
-      console.error("Error submitting data:", error);
-    } finally {
-      setSubmitting(false);
-    }
-  };
-  const convertImageToBase64 = (file) => {
-    if (!file) {
-      return Promise.resolve(null);
+    const formData = new FormData();
+    for (let i = 1; i <= 5; i++) {
+      if (data[`image${i}`]) {
+        formData.append(`image${i}`, data[`image${i}`][0]);
+      }
     }
 
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = (error) => reject(error);
-    });
+    formData.append("name", data.name);
+    formData.append("price", data.price);
+    formData.append("description", data.description);
+    formData.append("bed", data.bed);
+    formData.append("category", data.category);
+    formData.append("location", data.location);
+    formData.append("size", data.size);
+    formData.append("washbasin", data.washbasin);
+
+    try {
+      const result = await axios.post(
+        "http://localhost:3000/post-listing",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
+      console.log(result.data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
+
   return (
     <>
       <h1>Listing Page Add Data</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
         <label>Name:</label>
         <input {...register("name", { required: true })} type="text" />
         <br />
@@ -97,19 +88,20 @@ export default function AdminForm() {
         <label>Washbasin:</label>
         <input {...register("washbasin", { required: true })} type="number" />
         <br />
-        {/* Image input fields */}
+        {/* Five file input fields */}
         {[1, 2, 3, 4, 5].map((index) => (
           <div key={index}>
-            <label>{`Image ${index}:`}</label>
+            <label>Image {index}:</label>
             <input
-              {...register(`image${index}`, { required: true })}
+              {...register(`image${index}`)} 
               type="file"
               accept="image/*"
             />
             <br />
           </div>
         ))}
-        <input type="submit" disabled={submitting} />
+        <br />
+        <input type="submit" />
       </form>
     </>
   );

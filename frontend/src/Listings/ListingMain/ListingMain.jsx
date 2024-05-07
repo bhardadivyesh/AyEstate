@@ -14,7 +14,6 @@ import "./ListingMain.css";
 import MyContext from "../../context/context";
 const ListingMain = () => {
   const value = useContext(MyContext)
-  // console.log(value.detailPropertyData);
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   let minPriceValue = parseInt(minPrice);
@@ -44,21 +43,20 @@ const ListingMain = () => {
   };
   const [productData, setProductData] = useState();
   // api call
-  // useEffect(() => {
-  //   axios.get("http://localhost:1337/listings").then((res) => {
-  //     setProductData(res.data);
-  //   });
-  // }, []);
   useEffect(() => {
-    axios.get("http://localhost:3000/get-listing")
-      .then((res) => {
-        setProductData(res.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching product data:", error);
-      });
+    axios.get("http://localhost:1337/listings").then((res) => {
+      setProductData(res.data);
+    });
   }, []);
-  console.log(productData);
+  // useEffect(() => {
+  //   axios.get("http://localhost:3000/get-listing")
+  //     .then((res) => {
+  //       setProductData(res.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching product data:", error);
+  //     });
+  // }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -285,7 +283,6 @@ const ListingMain = () => {
                   productData
                     .slice(3)
                     .reduce((uniqueCategory, item) => {
-                      console.log(productData);
                       if (
                         !uniqueCategory.includes(item.category) &&
                         item.category !== "House" &&

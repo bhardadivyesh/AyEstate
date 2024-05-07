@@ -97,6 +97,7 @@
   .navigation-bar6 {
     font-size: 1rem;
     font-family: Sora;
+    cursor: pointer;
   }
   .navigation-bar6 {
     align-self: stretch;

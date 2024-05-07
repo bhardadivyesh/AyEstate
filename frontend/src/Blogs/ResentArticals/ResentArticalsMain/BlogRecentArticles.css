@@ -30,6 +30,7 @@
   align-self: stretch;
 }
 .card-type-parent {
+  display: flex;
   width: 78rem;
   flex-direction: row;
   flex-wrap: wrap;

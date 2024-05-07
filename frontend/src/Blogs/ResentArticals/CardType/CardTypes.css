@@ -63,9 +63,9 @@
 .card-type {
   display: flex;
   flex-direction: row;
-  width: 40.625rem;
+  width: 24.625rem;
   gap: 1.5rem;
-  min-width: 23.375rem;
+  min-width: 40.375rem;
   max-width: 100%;
   text-align: left;
   font-size: 1.125rem;

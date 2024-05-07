@@ -61,7 +61,7 @@ const DataSorter = ({
                 justifyContent: "space-between",
                 padding: "16px 24px",
                 boxSizing: "border-box",
-                backgroundImage: `url(http://localhost:1337${items?.image[0]?.url})`,
+                backgroundImage: `url(http://localhost:1337${items?.image?.[0]?.url})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top",

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "contactUs",
   "info": {
-    "name": "contactus"
+    "name": "contactus",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,7 +20,7 @@
       "type": "string",
       "required": true
     },
-    "yourName": {
+    "name": {
       "type": "string",
       "required": true
     },

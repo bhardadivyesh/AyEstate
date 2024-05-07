@@ -6,6 +6,7 @@ import MyContext from "../../context/context";
 const PortfolioHeader = () => {
   const value = useContext(MyContext);
 const [data,setdata] = useState() 
+console.log(value);
 useEffect(() => {
   if (value.detailPropertyData != "") {
     localStorage.setItem("data", JSON.stringify(value.detailPropertyData));

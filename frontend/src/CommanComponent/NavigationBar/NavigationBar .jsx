@@ -20,9 +20,9 @@ const NavigationBar = () => {
           <Link className="about-us6" to="/aboutus">About Us</Link>
         </nav>
       </nav>
-      <div className="connector">
-        <div className="button26">
-          <button className="detail-information7" onClick={handleContactBtnClick}>Contact Us</button>
+      <div className="connector" onClick={handleContactBtnClick}>
+        <div className="button26" >
+          <button className="detail-information7" >Contact Us</button>
         </div>
       </div>
     </header>
