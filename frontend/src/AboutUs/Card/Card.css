@@ -56,7 +56,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 0.875rem;
+    gap: 1.875rem;
+    margin-top: 15px;
   }
   .card {
     flex: 1;

@@ -6,7 +6,6 @@ import MyContext from "../../context/context";
 const PortfolioHeader = () => {
   const value = useContext(MyContext);
 const [data,setdata] = useState() 
-console.log(value);
 useEffect(() => {
   if (value.detailPropertyData != "") {
     localStorage.setItem("data", JSON.stringify(value.detailPropertyData));
@@ -17,7 +16,6 @@ useEffect(()=>{
   let parsedata = JSON.parse(localStorageData)
   setdata(parsedata)
 },[]) 
-// console.log(data.date);
   return (
     <section className="portfolio-header-7">
       <div className="content13">
@@ -57,7 +55,6 @@ useEffect(()=>{
               <b className="text18">Location</b>
               <div className="text19">{data?.location}</div>
             </div>
-            {console.log()}
             <div className="list-item3">
               <b className="text20">Price</b>
               <div className="text21">{data?.price}</div>

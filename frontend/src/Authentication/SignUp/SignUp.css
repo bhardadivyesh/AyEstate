@@ -112,6 +112,7 @@
 .frame-parent12 {
   align-self: stretch;
   gap: 11px;
+  margin-left: -75px;
 }
 .desktop-6-inner1 {
   width: 229px;

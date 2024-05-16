@@ -24,7 +24,6 @@ const ContentData = () => {
   const part1 = text?.slice(0, partLength);
   const part2 = text?.slice(partLength, 2 * partLength);
   const part3 = text?.slice(2 * partLength);
-  console.log(data);
   const images = [
     { url: `http://localhost:1337${data?.image?.[1]?.url}` },
     { url: `http://localhost:1337${data?.image?.[3  ]?.url}` },

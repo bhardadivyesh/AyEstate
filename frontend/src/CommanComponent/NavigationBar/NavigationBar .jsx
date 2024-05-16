@@ -13,9 +13,8 @@ const NavigationBar = () => {
       </div>
       <nav className="image-handler-wrapper">
         <nav className="image-handler">
-          <Link className="home3" to="/" >Home</Link>
+          <Link className="home3" to="/home" >Home</Link>
           <Link className="listings5" to="/listing">Listings</Link>
-          <Link className="company3" to="/company">Company</Link>
           <Link className="blog5" to="/blog">Blog</Link>
           <Link className="about-us6" to="/aboutus">About Us</Link>
         </nav>

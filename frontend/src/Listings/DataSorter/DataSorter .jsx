@@ -25,7 +25,6 @@ const DataSorter = ({
   const value = useContext(MyContext)
   const navigate = useNavigate();
   const handleProductClick = (productData) => {
-    console.log();
     value.setDetailPropertyData(productData)
 
     navigate("/detailProperty");

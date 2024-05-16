@@ -13,28 +13,21 @@ import BlogRecentArticles from "./Blogs/ResentArticals/ResentArticalsMain/BlogRe
 import BlogRecentlyArticlesDetailMain from "./BlogResentArticalDetail/BlogResentArticalDetailMain/BlogResentArticalDetailMain"
 import AdminForm from "./AdminForm/AdminForm";
 import Merge from "./Authentication/Merge/Merge";
-import SignIn from "./Authentication/SignIn/SignIn";
-import SignUp from "./Authentication/SignUp/SignUp";
 import PaymentMain from "./paymentGateway/PaymentMain/PaymentMain";
-import Payment from "./paymentGateway/RazorPay/Payment";
+import PaymentSuccess from "./paymentGateway/PaymentSuccess/PaymentSuccess";
+import PaymentFail from "./paymentGateway/PaymentFail/PaymentFail";
+import RequestUnderReview from "./paymentGateway/RequestUnderReview/RequestUnderReview";
+import Dashboard from "./Admin/Dashboard/Dashboard";
+import Revenuecat from "./RevenueCat/Revenuecat";
 function App() {
   const [detailPropertyData,setDetailPropertyData] = useState([])
   const [resentArticalData,setResentArticalData] = useState([])
-  // const [loggedIn, setLoggedIn] = useState(false);
-  // const [registered, setRegistered] = useState(false);
-  // const handleLogin = () => {
-  //   setLoggedIn(true);
-  // };
-  // const handleRegistration = () => {
-  //   setRegistered(true);
-  // };
+
   return (
     <>
       <MyContext.Provider value={{detailPropertyData,resentArticalData,setDetailPropertyData,setResentArticalData}}>
         <BrowserRouter>
           <Routes>
-            {/* <Route path="/" element={<SignIn handleLogin={handleLogin} />}/> */}
-            {/* <Route path="/signUp" element={<SignUp handleRegistration={handleRegistration} />} /> */}
             <Route path="/home" element={<Homepage />} />
             <Route path="listing" element={<ListingMain />} />
             <Route path="detailProperty" element={<DetailPropertyMain />} />
@@ -47,7 +40,13 @@ function App() {
             <Route path="/form" element={<AdminForm />}/>
             <Route path="/" element={<Merge />}/>
             <Route path="/payment" element={<PaymentMain />}/>
-            <Route path="/razorpay" element={<Payment />}/>
+            <Route path="/paymentSuccess" element={<PaymentSuccess />}/>
+            <Route path="/paymentFail" element={<PaymentFail />}/>
+            <Route path="/requestUnderReview" element={<RequestUnderReview />}/>
+            <Route path="/revenueCat" element={<Revenuecat />}/>
+
+            {/* admin routes */}
+            <Route path="/dashboard" element={<Dashboard />}/>
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>

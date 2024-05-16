@@ -30,7 +30,6 @@ const FrameComponent = ({
   const [buttonFourState, setButtonFourState] = useState(false);
 
   const handleButtonClick = (buttonNumber) => {
-    console.log(buttonNumber);
     switch (buttonNumber) {
       case 1:
         setButtonOneState(!buttonOneState);

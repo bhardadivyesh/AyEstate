@@ -22,15 +22,6 @@ router.get('/api/v1/rzp_capture/:payment_id/:amount', (req, res) => {
 	});
 });
 
-router.get('/api/v1/rzp_refunds/:payment_id', (req, res) => {
-	const { payment_id } = req.params;
-	instance.payments.refund(payment_id).then((data) => {
-		res.json(data);
-	}).catch((error) => {
-		res.json(error);
-	});
-});
+
 
 module.exports = router;
-
-

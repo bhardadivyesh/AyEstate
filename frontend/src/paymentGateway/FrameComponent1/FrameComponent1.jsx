@@ -1,16 +1,70 @@
-import { useCallback } from "react";
 import "./FrameComponent1.css";
-import line from "../../assets/paymentGetway/line.png"
-import sadow from "../../assets/paymentGetway/curveImage.jpg"
+import line from "../../assets/paymentGetway/line.png";
+import sadow from "../../assets/paymentGetway/curveImage.jpg";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const FrameComponent1 = () => {
-  const onInfoClick = useCallback(() => {
-    // Please sync "package free paid" to the project
-  }, []);
+  const navigate = useNavigate();
+  const [payment_amount, setPaymentAmount] = useState(1200);
+  const HandlePaymentClick = () => {
+    navigate("/razorpay");
+  };
+  const handleSubscribeClick = () => {
+    if (!window.Razorpay) {
+      return;
+    }
 
-  const onDigitalMarketingClick = useCallback(() => {
-    // Please sync "package free paid" to the project
-  }, []);
+    const options = {
+      key: "rzp_test_afA1UpXOWaKZPn",
+      amount: payment_amount * 100,
+      name: "Payments",
+      description: "Donate yourself some time",
+      handler: (response) => {
+        const paymentId = response.razorpay_payment_id;
+        const url =
+          "http://localhost:3000/api/v1/rzp_capture/" +
+          paymentId +
+          "/" +
+          payment_amount;
+
+        fetch(url, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+          },
+        })
+          .then((resp) => {
+            resp.json()
+          })
+          .then((data) => {
+            navigate("/paymentSuccess")
+          })
+          .catch((error) => {
+            navigate("/paymenterror")
+          });
+      },
+      prefill: {
+        name: "Bharada Divyesh",
+        email: "divyeshtechrabbit@gmail.com",
+      },
+      notes: {
+        address: "Ahmedabad, India",
+      },
+      theme: {
+        color: "#9D50BB",
+      },
+      
+    };
+
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+    rzp1.on('payment.failed', function (response){
+      rzp1.close();
+      // Navigate to payment failure page
+      navigate("/paymentFail");
+    });
+  };
 
   return (
     <section className="frame-wrapper28">
@@ -39,17 +93,13 @@ const FrameComponent1 = () => {
           </div>
           <div className="frame-wrapper29">
             <div className="info-parent">
-              <div className="info" onClick={onInfoClick} />
+              {/* onClick={HandlePaymentClick} */}
+              <div className="info" />
               <b className="subscribe-now">Subscribe now</b>
             </div>
           </div>
         </div>
-        <img
-          className="group-icon"
-          loading="lazy"
-          alt=""
-          src={line}
-        />
+        <img className="group-icon" loading="lazy" alt="" src={line} />
         <div className="rectangle-parent51">
           <div className="frame-child81" />
           <div className="abstract-curved-shapes-white-c-parent">
@@ -65,14 +115,14 @@ const FrameComponent1 = () => {
             <b className="month">1 MONTH</b>
             <div className="inr-month-wrapper">
               <div className="inr-month">
-                <b className="free">{`1,200 INR* `}</b>
-                <span className="month1">/month</span>
+                <b className="free">{`₹ 1,200 INR* `}</b>
+                {/* <span className="month1">/month</span> */}
               </div>
             </div>
           </div>
           <div className="inr-every-month-wrapper">
             <div className="inr-every-month-container">
-              <span className="inr">1,200 INR*</span>
+              <span className="inr">₹ 1,200 INR*</span>
               <b className="b3">{` `}</b>
               <span className="every-month1">every month</span>
             </div>
@@ -81,11 +131,10 @@ const FrameComponent1 = () => {
             <div className="vat-and-local1">*VAT and local taxes may apply</div>
           </div>
           <div className="digital-marketing-parent">
-            <div
-              className="digital-marketing"
-              onClick={onDigitalMarketingClick}
-            />
-            <b className="subscribe-now1">Subscribe now</b>
+            <div className="digital-marketing" onClick={handleSubscribeClick} />
+            <b className="subscribe-now1" onClick={handleSubscribeClick}>
+              Subscribe now
+            </b>
           </div>
         </div>
       </main>

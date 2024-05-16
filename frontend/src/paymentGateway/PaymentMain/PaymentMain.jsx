@@ -1,5 +1,4 @@
-// import React from 'react'
-// import { useCallback } from "react";
+import React from 'react'
 import FrameComponent1 from "../FrameComponent1/FrameComponent1";
 import FrameComponent from "../FrameComponent/FrameComponent";
 import "./PaymentMain.css";
@@ -14,7 +13,6 @@ const PaymentMain = () => {
           loading="lazy"
           alt=""
           src={polygon}
-        //   onClick={onBentoFlexboxClick}
         />
       </div>
       <div className="frame-parent23">

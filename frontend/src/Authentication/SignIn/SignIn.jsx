@@ -4,7 +4,6 @@ import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import "./SingIn.css";
 import sideImage from "../../assets/Authentication/SignIn/sideImage.png";
-import passwordImage from "../../assets/Authentication/SignIn/eye.png";
 import { useContext, useState } from "react";
 import authContext from "../authContext";
 
@@ -12,16 +11,15 @@ export default function SignIn() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
   const value = useContext(authContext);
-  console.log(value);
   const [continueButton, setContinueButton] = useState(false);
   const [contentStateRender, setContentStateRender] = useState("");
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
+    console.log(data);
     const { email, password } = data;
     const userCredential = await signInWithEmailAndPassword(
       auth,
@@ -36,10 +34,15 @@ export default function SignIn() {
   const HandleContinueClick = () => {
     setContinueButton(true);
   };
-  console.log(continueButton);
   const handleRadiobutton = (radiostate) => {
     setContentStateRender(radiostate);
   };
+  const [passwordType, setPasswordType] = useState("password");
+
+  const handleCheckboxChange = () => {
+    setPasswordType(prevType => prevType === "text" ? "password" : "text");
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -72,7 +75,7 @@ export default function SignIn() {
                   className="sign-up11"
                   onClick={() => value.setRegistrationForm("register")}
                 >
-                  Sign up
+                  Registration
                 </div>
               </button>
             </div>
@@ -97,17 +100,18 @@ export default function SignIn() {
                     {...register("email", { required: true })}
                   />
                 </div>
-                {continueButton == false ?
-                <div className="continue-btn">
-                  <button
-                    className="rectangle-parent43 frame-child62 continue"
-                    onClick={HandleContinueClick}
-                  >
-                    continue
-                  </button>
-                </div>
-                : ""
-                }
+                {continueButton == false ? (
+                  <div className="continue-btn">
+                    <button
+                      className="rectangle-parent43 frame-child62 continue"
+                      onClick={HandleContinueClick}
+                    >
+                      continue
+                    </button>
+                  </div>
+                ) : (
+                  ""
+                )}
                 {continueButton && (
                   <>
                     <div className="frame-wrapper17">
@@ -149,11 +153,6 @@ export default function SignIn() {
                             <span className="span2">{` `}</span>
                             <span>OTP here</span>
                           </div>
-                          <div className="enter-otp-here-container1">
-                            <span>Enter</span>
-                            <span className="span3">{` `}</span>
-                            <span>OTP here</span>
-                          </div>
                         </div>
                         {/* password */}
                         {contentStateRender == "otpGenerate" ? (
@@ -168,19 +167,9 @@ export default function SignIn() {
                             </div>
                           </div>
                         ) : (
-                          <div className="rectangle-parent34">
-                            <div className="frame-child46" />
-                            <input
-                              type="password"
-                              className="frame-wrapper12"
-                              {...register("password")}
-                            />
-
-                            <img
-                              className="vuesaxlineareye-icon"
-                              alt=""
-                              src={passwordImage}
-                            />
+                          <div className="parentClass">
+                          <input type={passwordType} className="rectangle-parent34" placeholder="Enter Password" {...register("password")} />
+                          <input type="checkbox" className="checkbox" onChange={handleCheckboxChange}/>
                           </div>
                         )}
                       </div>

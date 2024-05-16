@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import PopUp from "../PopUp/PopUp";
 
 export default function AdminForm() {
   const {
@@ -13,10 +14,12 @@ export default function AdminForm() {
     const formData = new FormData();
     for (let i = 1; i <= 5; i++) {
       if (data[`image${i}`]) {
+        console.log(`image${i}`, data[`image${i}`][0]);
         formData.append(`image${i}`, data[`image${i}`][0]);
       }
     }
 
+    console.log(data.image[1]);
     formData.append("name", data.name);
     formData.append("price", data.price);
     formData.append("description", data.description);
@@ -25,7 +28,6 @@ export default function AdminForm() {
     formData.append("location", data.location);
     formData.append("size", data.size);
     formData.append("washbasin", data.washbasin);
-
     try {
       const result = await axios.post(
         "http://localhost:3000/post-listing",
@@ -39,10 +41,17 @@ export default function AdminForm() {
       console.error("Error:", error);
     }
   };
+  const [popUpState,setPopUsState] = useState(false)
+  const handlePopUp = () =>{
+    setPopUsState(true)
+  }
 
   return (
     <>
       <h1>Listing Page Add Data</h1>
+      <button type="submit" onClick={handlePopUp}>PopUpButton</button>
+      {/* <PopUp /> */}
+      {popUpState && <PopUp state={{popUpState}} /> }
       <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
         <label>Name:</label>
         <input {...register("name", { required: true })} type="text" />

@@ -28,7 +28,7 @@ const MultiLevelMessageCardStack = () => {
       agreeToTerms: !prevData.agreeToTerms,
     }));
   };
-  useEffect(()=>{
+  useEffect(() => {
     if (
       formData.name == "" ||
       formData.email == "" ||
@@ -38,21 +38,19 @@ const MultiLevelMessageCardStack = () => {
       formData.agreeToTerms == false
     ) {
       setButtonState(false);
+    } else {
+      setButtonState(true);
     }
-    else{
-      setButtonState(true)
-    }
-  },[formData])
- 
+  }, [formData]);
+
   const handleSubmit = () => {
-    console.log(formData);
-    try{
+    try {
       axios.post("http://localhost:3000/post-contact", formData);
-      axios.post('http://localhost:1337/contactuses',formData)
-    console.log("Data submitted successfully");
-  } catch (error) {
-    console.error("Error submitting data:", error);
-  }
+      axios.post("http://localhost:1337/contactuses", formData);
+      console.log("Data submitted successfully");
+    } catch (error) {
+      console.error("Error submitting data:", error);
+    }
   };
   return (
     <div className="multi-level-message-card-stack">
@@ -111,23 +109,18 @@ const MultiLevelMessageCardStack = () => {
                   <span>How Can Our Sales Team Help?</span>
                   <span className="span1">*</span>
                 </b>
-                <div className="form-inner">
-                  <div className="choose-company-size-parent">
-                    <select
-                      className="choose-company-size"
-                      value={formData.companySize}
-                      onChange={(e) =>
-                        handleFormChange("companySize", e.target.value)
-                      }
-                    >
-                      <option value="">Choose company size</option>
-                      <option value="0 to 10">0 to 10</option>
-                      <option value="11 to 50">11 to 50</option>
-                      <option value="50 to 100">50 to 100</option>
-                    </select>
-                    <img className="arrow-down-icon1" alt="" src={arrow} />
-                  </div>
-                </div>
+                <select
+                  className="form-inner"
+                  value={formData.companySize}
+                  onChange={(e) =>
+                    handleFormChange("companySize", e.target.value)
+                  }
+                >
+                  <option value="">Select company size</option>
+                  <option value="0 to 10">0 to 10</option>
+                  <option value="11 to 50">11 to 50</option>
+                  <option value="50 to 100">50 to 100</option>
+                </select>
               </div>
             </div>
 

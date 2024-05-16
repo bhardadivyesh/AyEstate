@@ -5,6 +5,7 @@ import "./SignUp.css";
 import sideImage from "../../assets/Authentication/SignUp/sideImage.png";
 import { useContext, useState } from "react";
 import authContext from "../authContext";
+import axios from "axios"
 
 function SignUp() {
   const {
@@ -12,8 +13,7 @@ function SignUp() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const value = useContext(authContext)
-  console.log(value);
+  const value = useContext(authContext);
   const onSubmit = async (data) => {
     console.log(data);
     const { email, password, companyName, countryCode, fullName, phoneNumber } =
@@ -28,6 +28,7 @@ function SignUp() {
         fullName,
         phoneNumber
       );
+      await axios.post('http://localhost:3000/post-Registration',data)
       console.log(userCredential);
       const user = userCredential.user;
       await updateProfile(user, {
@@ -88,7 +89,7 @@ function SignUp() {
                 <div className="rectangle-parent23">
                   <div className="frame-child32" />
                   <div className="frame-parent15">
-                    <div >
+                    <div>
                       <select
                         className="empty-space-parent"
                         {...register("countryCode", { required: true })}
@@ -104,31 +105,36 @@ function SignUp() {
                   <input
                     className="e-m-p-t-y-wrapper"
                     placeholder="Enter Phone Number"
-                    {...register("phoneNumber", { required: true })}
+                    {...register("phone", { required: true })}
                   />
                 </div>
+                {errors.phoneNumber && (
+                  <p style={{ color: "red" }}>PhoneNumber is required</p>
+                )}
                 <input
                   className="rectangle-parent24"
                   placeholder="Full name (Required)*"
-                  {...register("fullName", { required: true })}
+                  {...register("name", { required: true })}
                 />
-
+                {errors.fullName && <p style={{color : "red"}}>Name is required</p>}
                 <input
                   className="rectangle-parent24"
                   placeholder="Company name (Required)*"
+                  {...register("company", { required: true })}
                 />
-
+                {errors.company && <p style={{color : "red"}}>companyName is required</p>}
                 <input
                   className="rectangle-parent24"
                   placeholder="Email address (Required)*"
                   {...register("email", { required: true })}
                 />
-
+                {errors.email && <p style={{color : "red"}}>email is required</p>}
                 <input
                   className="rectangle-parent24"
                   placeholder="Password"
                   {...register("password", { required: true })}
                 />
+                {errors.password && <p style={{color : "red"}}>password is required</p>}
               </div>
             </div>
             <div className="frame-wrapper7">

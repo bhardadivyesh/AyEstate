@@ -41,11 +41,12 @@
   }
   .how-intrapreneurship-can3 {
     align-self: stretch;
-    position: relative;
-    font-size: 1.5rem;
-    line-height: 130%;
-    text-transform: capitalize;
-    color: #1b2124;
+position: relative;
+font-size: 32px; /* Adjusted font size */
+line-height: 130%;
+text-transform: capitalize;
+color: #1b2124;
+font-family: 'Sora Bold', sans-serif;
   }
   .card-type4,
   .frame-parent23 {
