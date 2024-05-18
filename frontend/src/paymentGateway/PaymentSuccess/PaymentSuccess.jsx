@@ -8,23 +8,23 @@ const PaymentSuccess = () => {
     }, 5000);
 
   return (
-    <div className="desktop-18">
-      <div className="desktop-18-inner">
-        <div className="frame-parent26">
-          <div className="cbd3594bb5e8d90924a105d4aae924-wrapper">
+    <div className="desktop-18-payment-paymentSuccess">
+      <div className="desktop-18-inner-payment-paymentSuccess">
+        <div className="frame-parent26-payment-paymentSuccess">
+          <div className="cbd3594bb5e8d90924a105d4aae924-wrapper-payment-paymentSuccess">
             <img
-              className="cbd3594bb5e8d90924a105d4aae924-icon"
+              className="cbd3594bb5e8d90924a105d4aae924-icon-payment-paymentSuccess"
               loading="lazy"
               alt=""
               src={successGif}
             />
           </div>
-          <div className="your-payment-was">your payment was successful</div>
+          <div className="your-payment-was-payment-paymentSuccess">your payment was successful</div>
         </div>
       </div>
-      <div className="thank-you-for-container">
-        <p className="thank-you-for">Thank you for your payment we will</p>
-        <p className="be-in-contact">{`be in contact with more details shortiy `}</p>
+      <div className="thank-you-for-container-payment-paymentSuccess">
+        <p className="thank-you-for-payment-paymentSuccess">Thank you for your payment we will</p>
+        <p className="be-in-contact-payment-paymentSuccess">{`be in contact with more details shortiy `}</p>
       </div>
     </div>
   );

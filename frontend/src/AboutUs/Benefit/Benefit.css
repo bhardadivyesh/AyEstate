@@ -1,38 +1,38 @@
-.medal-star-icon {
+.medal-star-icon-aboutBenefit {
     width: 2.25rem;
     height: 2.25rem;
     position: relative;
   }
-  .subtitle3,
-  .title6 {
+  .subtitle3-aboutBenefit,
+  .title6-aboutBenefit {
     position: relative;
     letter-spacing: -0.02em;
   }
-  .title6 {
+  .title6-aboutBenefit {
     margin: 0;
     font-size: inherit;
     line-height: 2.25rem;
     font-weight: 700;
     font-family: inherit;
   }
-  .subtitle3 {
+  .subtitle3-aboutBenefit {
     align-self: stretch;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #c7c1ea;
   }
-  .benefit-1,
-  .shape-set {
+  .benefit-1-aboutBenefit,
+  .shape-set-aboutBenefit {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .shape-set {
+  .shape-set-aboutBenefit {
     align-self: stretch;
     gap: 1rem;
   }
-  .benefit-1 {
+  .benefit-1-aboutBenefit {
     flex: 1;
     padding: 2rem 1.5rem;
     box-sizing: border-box;
@@ -45,7 +45,7 @@
     font-family: Sora;
   }
   @media screen and (max-width: 450px) {
-    .title6 {
+    .title6-aboutBenefit {
       font-size: 1.375rem;
       line-height: 1.813rem;
     }

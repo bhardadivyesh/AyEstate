@@ -10,23 +10,23 @@ const FrameComponent1 = () => {
     });
   }, []);
   return (
-    <section className="about-us-inner">
-      <div className="frame-parent2">
-        <div className="frame-wrapper">
-          <div className="frame-parent3">
-            <div className="label-wrapper">
-              <button className="label1">
-                <div className="label-title1">Our team</div>
+    <section className="about-us-inner-aboutFrame1">
+      <div className="frame-parent2-aboutFrame1">
+        <div className="frame-wrapper-aboutFrame1">
+          <div className="frame-parent3-aboutFrame1">
+            <div className="label-wrapper-aboutFrame1">
+              <button className="label1-aboutFrame1">
+                <div className="label-title1-aboutFrame1">Our team</div>
               </button>
             </div>
-            <h1 className="title5">meet our creative team</h1>
-            <div className="subtitle2">
+            <h1 className="title5-aboutFrame1">meet our creative team</h1>
+            <div className="subtitle2-aboutFrame1">
               Magna metus, adipiscing dictumst magna fringilla metus fermentum
               tristique. Enim vitae purus lectus augue maecenas
             </div>
           </div>
         </div>
-        <div className="content24">
+        <div className="content24-aboutFrame1">
           {teamData.map((member, index) => {
             return <Card key={index} teamData={member} />;
           })}

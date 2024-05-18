@@ -1,5 +1,5 @@
 
-.heap-element-priority {
+.heap-element-priority-blog-Stackelement {
     position: absolute;
     top: 0;
     left: 0;
@@ -8,7 +8,7 @@
     height: 100%;
     object-fit: cover;
   }
-  .stack-element-data-child {
+  .stack-element-data-child-blog-Stackelement {
     position: absolute;
     top: 20.438rem;
     left: 1.5rem;
@@ -17,7 +17,7 @@
     display: none;
     z-index: 1;
   }
-  .stack-element-data {
+  .stack-element-data-blog-Stackelement {
     height: 31.375rem;
     flex: 1;
     position: relative;
@@ -25,7 +25,7 @@
     max-width: 100%;
   }
   @media screen and (max-width: 750px) {
-    .stack-element-data {
+    .stack-element-data-blog-Stackelement {
       min-width: 100%;
     }
   }

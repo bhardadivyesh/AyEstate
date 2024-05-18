@@ -1,17 +1,17 @@
-.article-listings,
-.frame-parent10 {
+.article-listings-blog-frame,
+.frame-parent10-blog-frame {
   align-self: stretch;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
 }
-.article-listings {
+.article-listings-blog-frame {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.812rem;
 }
-.frame-parent10 {
+.frame-parent10-blog-frame {
   flex-direction: column;
   gap: 3.125rem;
   text-align: left;
@@ -20,7 +20,7 @@
   font-family: Sora;
 }
 @media screen and (max-width: 750px) {
-  .frame-parent10 {
+  .frame-parent10-blog-frame {
     gap: 1.563rem;
   }
 }

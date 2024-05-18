@@ -1,43 +1,43 @@
-.frame-child27,
-.frame-child28 {
+.frame-child27-registration,
+.frame-child28-registration {
   position: absolute;
   height: 100%;
   top: 0;
   bottom: 0;
   max-height: 100%;
 }
-.frame-child27 {
+.frame-child27-registration {
   left: -75px;
   border-radius: 50px;
   width: 1084px;
   object-fit: cover;
 }
-.frame-child28 {
+.frame-child28-registration {
   left: -49px;
   border-radius: 49px;
   width: 1058px;
   z-index: 1;
 }
-.frame-child29,
-.rectangle-parent19 {
+.frame-child29-registration,
+.rectangle-parent19-registration {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
 }
-.rectangle-parent19 {
+.rectangle-parent19-registration {
   width: 1009px;
   margin: 0 !important;
   bottom: 0;
 }
-.frame-child29 {
+.frame-child29-registration {
   border-radius: 9px;
   background-color: transparent;
   width: 100%;
   cursor: pointer;
   z-index: 2;
 }
-.log-in4 {
+.log-in4-registration {
   position: absolute;
   top: 18px;
   left: 28px;
@@ -51,7 +51,7 @@
   min-width: 93px;
   z-index: 3;
 }
-.rectangle-parent20 {
+.rectangle-parent20-registration {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -61,7 +61,7 @@
   position: relative;
   white-space: nowrap;
 }
-.frame-child30 {
+.frame-child30-registration {
   height: 76px;
   width: 228px;
   position: relative;
@@ -69,7 +69,7 @@
   background-color: #fff;
   display: none;
 }
-.sign-up8 {
+.sign-up8-registration {
   position: relative;
   font-size: 30px;
   line-height: 130%;
@@ -81,7 +81,7 @@
   min-width: 117px;
   z-index: 3;
 }
-.rectangle-parent21 {
+.rectangle-parent21-registration {
   cursor: pointer;
   border: 0;
   padding: 15px 27px 22px;
@@ -92,35 +92,35 @@
   white-space: nowrap;
   z-index: 2;
 }
-.desktop-6-inner1,
-.frame-parent12,
-.frame-wrapper5,
-.rectangle-parent21 {
+.desktop-6-inner1-registration,
+.frame-parent12-registration,
+.frame-wrapper5-registration,
+.rectangle-parent21-registration {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-wrapper5 {
+.frame-wrapper5-registration {
   align-self: stretch;
   flex-direction: row;
   padding: 0 0 0 1px;
 }
-.desktop-6-inner1,
-.frame-parent12 {
+.desktop-6-inner1-registration,
+.frame-parent12-registration {
   flex-direction: column;
 }
-.frame-parent12 {
+.frame-parent12-registration {
   align-self: stretch;
   gap: 11px;
   margin-left: -75px;
 }
-.desktop-6-inner1 {
+.desktop-6-inner1-registration {
   width: 229px;
   padding: 373px 0 0;
   box-sizing: border-box;
   min-width: 229px;
 }
-.ayestate5 {
+.ayestate5-registration {
   margin: 0;
   width: 409px;
   position: relative;
@@ -134,7 +134,7 @@
   flex-shrink: 0;
   max-width: 100%;
 }
-.ayestate-wrapper2 {
+.ayestate-wrapper2-registration {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -142,7 +142,7 @@
   justify-content: flex-end;
   max-width: 100%;
 }
-.frame-child31 {
+.frame-child31-registration {
   width: 597px;
   height: 788px;
   position: relative;
@@ -154,7 +154,7 @@
   display: none;
   max-width: 100%;
 }
-.sign-up9 {
+.sign-up9-registration {
   margin: 0;
   width: 220px;
   position: relative;
@@ -169,12 +169,12 @@
   white-space: nowrap;
   z-index: 1;
 }
-.frame-child32,
-.sign-up-container {
+.frame-child32-registration,
+.sign-up-container-registration {
   box-sizing: border-box;
   max-width: 100%;
 }
-.sign-up-container {
+.sign-up-container-registration {
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -182,7 +182,7 @@
   justify-content: center;
   padding: 0 20px;
 }
-.frame-child32 {
+.frame-child32-registration {
   height: 69px;
   width: 467px;
   position: relative;
@@ -192,7 +192,7 @@
   border: 1px solid #e7e7e7;
   display: none;
 }
-.empty-space1 {
+.empty-space1-registration {
   position: relative;
   font-size: 24px;
   line-height: 27px;
@@ -204,7 +204,7 @@
   white-space: nowrap;
   z-index: 2;
 }
-.vuesaxboldarrow-down-icon3 {
+.vuesaxboldarrow-down-icon3-registration {
   width: 23px;
   height: 23px;
   position: relative;
@@ -212,41 +212,41 @@
   flex-shrink: 0;
   z-index: 3;
 }
-.vuesaxboldarrow-down-frame {
+.vuesaxboldarrow-down-frame-registration {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 3px 0 0;
 }
-.empty-space-parent,
-.frame-wrapper6 {
+.empty-space-parent-registration,
+.frame-wrapper6-registration {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
 }
-.frame-wrapper6 {
+.frame-wrapper6-registration {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0 12px;
 }
-.frame-child33 {
+.frame-child33-registration {
   height: 54px;
   width: 0;
   position: relative;
   object-fit: contain;
   z-index: 2;
 }
-.frame-parent15 {
+.frame-parent15-registration {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   gap: 17px;
 }
-.e-m-p {
+.e-m-p-registration {
   align-self: stretch;
   position: relative;
   font-size: 24px;
@@ -255,7 +255,7 @@
   text-align: left;
   z-index: 2;
 }
-.e-m-p-t-y-wrapper {
+.e-m-p-t-y-wrapper-registration {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -265,8 +265,8 @@
     max-width: 100%;
     width: 100%;
 }
-.frame-child34,
-.rectangle-parent23 {
+.frame-child34-registration,
+.rectangle-parent23-registration {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   background-color: #fff;
@@ -274,7 +274,7 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.rectangle-parent23 {
+.rectangle-parent23-registration {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -283,13 +283,13 @@
   padding: 3px 9px 8px;
   /* gap: 52px; */
 }
-.frame-child34 {
+.frame-child34-registration {
   height: 69px;
   width: 467px;
   position: relative;
   display: none;
 }
-.full-name-required2 {
+.full-name-required2-registration {
   width: 264px;
   border: 0;
   outline: 0;
@@ -305,15 +305,15 @@
   padding: 0;
   z-index: 2;
 }
-.frame-child35,
-.rectangle-parent24 {
+.frame-child35-registration,
+.rectangle-parent24-registration {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
 }
-.rectangle-parent24 {
+.rectangle-parent24-registration {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -322,7 +322,7 @@
   padding: 19px 9px 22px;
   max-width: 100%;
 }
-.frame-child35 {
+.frame-child35-registration {
   position: absolute;
   height: 100%;
   top: 0;
@@ -330,7 +330,7 @@
   left: 19px;
   width: 467px;
 }
-.company-name-required2 {
+.company-name-required2-registration {
   width: 100%;
   border: 0;
   outline: 0;
@@ -348,14 +348,14 @@
   padding: 0;
   z-index: 2;
 }
-.rectangle-parent25 {
+.rectangle-parent25-registration {
   width: 486px;
   height: 69px;
   position: relative;
   max-width: 105%;
   flex-shrink: 0;
 }
-.frame-child36 {
+.frame-child36-registration {
   position: absolute;
   height: 100%;
   top: 0;
@@ -368,7 +368,7 @@
   box-sizing: border-box;
   width: 467px;
 }
-.email-address-required2 {
+.email-address-required2-registration {
   width: 100%;
   border: 0;
   outline: 0;
@@ -386,14 +386,14 @@
   padding: 0;
   z-index: 2;
 }
-.rectangle-parent26 {
+.rectangle-parent26-registration {
   width: 496px;
   height: 69px;
   position: relative;
   max-width: 107%;
   flex-shrink: 0;
 }
-.frame-child37 {
+.frame-child37-registration {
   position: absolute;
   height: 100%;
   top: 0;
@@ -406,7 +406,7 @@
   box-sizing: border-box;
   width: 467px;
 }
-.password2 {
+.password2-registration {
   width: 100%;
   border: 0;
   outline: 0;
@@ -424,21 +424,21 @@
   padding: 0;
   z-index: 2;
 }
-.rectangle-parent27 {
+.rectangle-parent27-registration {
   width: 586px;
   height: 69px;
   position: relative;
   max-width: 126%;
   flex-shrink: 0;
 }
-.frame-parent14,
-.password-input {
+.frame-parent14-registration,
+.password-input-registration {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   max-width: 100%;
 }
-.frame-parent14 {
+.frame-parent14-registration {
   align-self: stretch;
   border-radius: 1px;
   align-items: flex-end;
@@ -447,12 +447,12 @@
   gap: 34px;
   z-index: 1;
 }
-.password-input {
+.password-input-registration {
   width: 483px;
   align-items: flex-start;
   gap: 60px;
 }
-.frame-child38 {
+.frame-child38-registration {
   height: 69px;
   width: 321px;
   position: relative;
@@ -462,7 +462,7 @@
   display: none;
   max-width: 100%;
 }
-.sign-up10 {
+.sign-up10-registration {
   width: 222px;
   position: relative;
   font-size: 32px;
@@ -474,8 +474,8 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.frame-wrapper7,
-.rectangle-parent28 {
+.frame-wrapper7-registration,
+.rectangle-parent28-registration {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -483,7 +483,7 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.rectangle-parent28 {
+.rectangle-parent28-registration {
   cursor: pointer;
   border: 0;
   padding: 21px 100px 24px;
@@ -494,14 +494,14 @@
   white-space: nowrap;
   z-index: 1;
 }
-.rectangle-parent28:hover {
+.rectangle-parent28-registration:hover {
   background-color: #85ad57;
 }
-.frame-wrapper7 {
+.frame-wrapper7-registration {
   width: 469px;
   padding: 0 74px;
 }
-.rectangle-parent22 {
+.rectangle-parent22-registration {
   box-shadow: 0 0 12.6px -10px rgba(0, 0, 0, 0.25);
   border-radius: 60px;
   background-color: #fff;
@@ -511,21 +511,21 @@
   padding: 57px 40px 34px 64px;
   gap: 51px;
 }
-.desktop-62,
-.frame-parent13,
-.rectangle-parent22 {
+.desktop-62-registration,
+.frame-parent13-registration,
+.rectangle-parent22-registration {
   max-width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent13 {
+.frame-parent13-registration {
   flex: 1;
   flex-direction: column;
   gap: 57px;
   min-width: 392px;
 }
-.desktop-62 {
+.desktop-62-registration {
   margin: 0;
   width: 1920px;
   background-color: #fff;
@@ -539,18 +539,18 @@
   letter-spacing: normal;
 }
 @media screen and (max-width: 1525px) {
-  .desktop-6-inner1 {
+  .desktop-6-inner1-registration {
     flex: 1;
   }
-  .frame-parent13 {
+  .frame-parent13-registration {
     min-width: 100%;
   }
-  .desktop-62 {
+  .desktop-62-registration {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1225px) {
-  .desktop-62 {
+  .desktop-62-registration {
     gap: 86px;
     padding-left: 401px;
     padding-right: 56px;
@@ -558,44 +558,44 @@
   }
 }
 @media screen and (max-width: 850px) {
-  .desktop-6-inner1 {
+  .desktop-6-inner1-registration {
     padding-top: 242px;
     box-sizing: border-box;
   }
-  .ayestate5 {
+  .ayestate5-registration {
     font-size: 40px;
     line-height: 62px;
   }
-  .sign-up9 {
+  .sign-up9-registration {
     font-size: 38px;
     line-height: 19px;
   }
-  .rectangle-parent23 {
+  .rectangle-parent23-registration {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .frame-parent14 {
+  .frame-parent14-registration {
     gap: 17px;
   }
-  .password-input {
+  .password-input-registration {
     gap: 30px;
   }
-  .frame-wrapper7 {
+  .frame-wrapper7-registration {
     padding-left: 37px;
     padding-right: 37px;
     box-sizing: border-box;
   }
-  .rectangle-parent22 {
+  .rectangle-parent22-registration {
     gap: 25px;
     padding-left: 32px;
     padding-top: 37px;
     padding-bottom: 22px;
     box-sizing: border-box;
   }
-  .frame-parent13 {
+  .frame-parent13-registration {
     gap: 28px;
   }
-  .desktop-62 {
+  .desktop-62-registration {
     gap: 43px;
     padding-left: 200px;
     padding-right: 28px;
@@ -603,37 +603,37 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .ayestate5 {
+  .ayestate5-registration {
     font-size: 24px;
     line-height: 42px;
   }
-  .sign-up9 {
+  .sign-up9-registration {
     font-size: 29px;
     line-height: 14px;
   }
-  .empty-space1 {
+  .empty-space1-registration {
     line-height: 22px;
   }
-  .e-m-p,
-  .empty-space1 {
+  .e-m-p-registration,
+  .empty-space1-registration {
     font-size: 19px;
   }
-  .rectangle-parent23 {
+  .rectangle-parent23-registration {
     gap: 26px;
   }
-  .company-name-required2,
-  .email-address-required2,
-  .full-name-required2,
-  .password2 {
+  .company-name-required2-registration,
+  .email-address-required2-registration,
+  .full-name-required2-registration,
+  .password2-registration {
     font-size: 19px;
     line-height: 19px;
   }
-  .rectangle-parent28 {
+  .rectangle-parent28-registration {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
   }
-  .rectangle-parent22 {
+  .rectangle-parent22-registration {
     padding-top: 24px;
     padding-bottom: 20px;
     box-sizing: border-box;

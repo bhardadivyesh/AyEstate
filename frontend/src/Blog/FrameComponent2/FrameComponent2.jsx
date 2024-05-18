@@ -14,30 +14,30 @@ const FrameComponent2 = () => {
   let blogs = blogArticals.slice(0, 4);
 
   return (
-    <div className="frame-parent7">
+    <div className="frame-parent7-blog-Frame2">
       <img
-        className="frame-child2"
+        className="frame-child2-blog-Frame2"
         alt=""
         src={`http://localhost:1337${blogs?.[0]?.images?.[0]?.url}`}
       />
-      <div className="card-type-parent">
-        <div className="card-type1">
+      <div className="card-type-parent-blog-Frame2">
+        <div className="card-type1-blog-Frame2">
           <img
-            className="card-type-item"
+            className="card-type-item-blog-Frame2"
             loading="lazy"
             alt=""
             src={`http://localhost:1337${blogs?.[1]?.images?.[0]?.url}`}
           />
-          <div className="card-type-inner1">
-            <div className="frame-parent8">
-              <div className="sep-2022-group">
-                <div className="sep-20221">{blogs[1]?.date}</div>
-                <div className="ellipse-wrapper">
-                  <div className="ellipse-div" />
+          <div className="card-type-inner1-blog-Frame2">
+            <div className="frame-parent8-blog-Frame2">
+              <div className="sep-2022-group-blog-Frame2">
+                <div className="sep-20221-blog-Frame2">{blogs[1]?.date}</div>
+                <div className="ellipse-wrapper-blog-Frame2">
+                  <div className="ellipse-div-blog-Frame2" />
                 </div>
-                <div className="career-tips1">{blogs[1]?.suggestion}</div>
+                <div className="career-tips1-blog-Frame2">{blogs[1]?.suggestion}</div>
               </div>
-              <b className="how-to-figure1">{blogs[1]?.sortDescription}</b>
+              <b className="how-to-figure1-blog-Frame2">{blogs[1]?.sortDescription}</b>
             </div>
           </div>
         </div>
@@ -57,5 +57,4 @@ const FrameComponent2 = () => {
     </div>
   );
 };
-
 export default FrameComponent2;

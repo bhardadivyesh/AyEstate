@@ -1,56 +1,32 @@
-import StatusBar from "../StatusBar/StatusBar";
-import PendingStatus from "../PendingStatus/PendingStatus";
 import "./StatusMain.css";
+import PendingStatus from "../PendingStatus/PendingStatus"
+import { useState } from "react";
+import ActiveStatus from "../ActiveStatus/ActiveStatus";
+import RejectStatus from "../RejectStatus/RejectStatus";
+import PreviewPage from "../PreviewPage/PreviewPage";
+import statusContext from "../statusContext";
 
 const StatusMain = () => {
+    const [statusRender,setStatusRender] = useState("pending")
+    const [previewPageRenderPage,setPreviewPageRender] = useState(false)
   return (
-    <form className="home2">
-      <header className="group-header">
-        <div className="frame-child55" />
-        <div className="frame-wrapper13">
-          <StatusBar />
+    <div className="status-main">
+      <div className="rectangle-parent36-main">
+        <div className="group-child11-main" />
+        <div className="group-parent1-main">
+          <button type="submit" className="rectangle-parent37-main group-child12-main pending-main" onClick={()=>setStatusRender("pending")}>{"Pending (4)"}</button>
+          <button type="submit" className="rectangle-parent38-main group-child13-main active-main" onClick={()=>setStatusRender("active")}>{"Active (5)"}</button>
+          <button type="submit" className="rectangle-parent39-main group-child14-main reject-main" onClick={()=>setStatusRender("reject")}> {"Reject (7)"}</button>
         </div>
-        <div className="rectangle-parent36">
-          <div className="frame-child56" />
-          <div className="frame-parent28">
-            <div className="frame-wrapper14">
-              <div className="frame-parent29">
-                <div className="id-parent">
-                  <div className="id">Id</div>
-                  <div className="vendor2">Vendor</div>
-                </div>
-                <div className="categories-wrapper">
-                  <div className="categories1">Categories</div>
-                </div>
-                <div className="location-wrapper">
-                  <div className="location1">Location</div>
-                </div>
-                <div className="products-wrapper">
-                  <div className="products40">Products</div>
-                </div>
-                <div className="price-wrapper">
-                  <div className="price">Price</div>
-                </div>
-                <div className="date-wrapper">
-                  <div className="date">Date</div>
-                </div>
-                <div className="request-status-wrapper">
-                  <div className="request-status">Request status</div>
-                </div>
-                <div className="more-detail-wrapper">
-                  <div className="more-detail">More detail</div>
-                </div>
-                <div className="action-wrapper">
-                  <div className="action1">Action</div>
-                </div>
-              </div>
-            </div>
-            <div className="separator" />
-          </div>
-          <PendingStatus />
-        </div>
-      </header>
-    </form>
+       {/* status component */}
+       <statusContext.Provider value={{previewPageRenderPage,setPreviewPageRender}}>
+       {statusRender == "pending" && <PendingStatus />}
+       {statusRender == "active" && <ActiveStatus />}
+       {statusRender == "reject" && <RejectStatus />}
+       {previewPageRenderPage == true && <PreviewPage />}
+       </statusContext.Provider >
+      </div>
+    </div>
   );
 };
 

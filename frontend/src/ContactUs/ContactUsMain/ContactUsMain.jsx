@@ -11,12 +11,12 @@ import location from "../../assets/contactus/icons/location.png"
 
 const ContactUsMain = () => {
   return (
-    <div className="contact-us">
+    <div className="contact-us-contactUsMain">
       <NavigationBar />
-      <main className="email-us">
-        <section className="contact-our-sales-team">
+      <main className="email-us-contactUsMain">
+        <section className="contact-our-sales-team-contactUsMain">
           <FrameComponent1 />
-          <div className="email-us-askus-a-question-by-e">
+          <div className="email-us-askus-a-question-by-e-contactUsMain">
             <FrameComponent
               askusaquestionbyemailandw={emailIcon}
               emailUs="Email Us"

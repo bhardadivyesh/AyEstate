@@ -1,4 +1,4 @@
-.popular-articles {
+.popular-articles-blog-TreeLeaf {
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -7,13 +7,13 @@
     font-weight: 700;
     font-family: inherit;
   }
-  .we-provide-blog {
+  .we-provide-blog-blog-TreeLeaf {
     position: relative;
     font-size: 1.125rem;
     line-height: 180%;
     color: #7f879e;
   }
-  .popular-articles-parent {
+  .popular-articles-parent-blog-TreeLeaf {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,7 +21,7 @@
     gap: 0.75rem;
     max-width: 100%;
   }
-  .view-all {
+  .view-all-blog-TreeLeaf {
     position: relative;
     font-size: 1.125rem;
     line-height: 130%;
@@ -32,13 +32,13 @@
     display: inline-block;
     min-width: 4.688rem;
   }
-  .dictionary-entry-key,
-  .dictionary-entry-key-wrapper {
+  .dictionary-entry-key-blog-TreeLeaf,
+  .dictionary-entry-key-wrapper-blog-TreeLeaf {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .dictionary-entry-key {
+  .dictionary-entry-key-blog-TreeLeaf {
     cursor: pointer;
     border: 1px solid #111;
     padding: 0.75rem 0.937rem 0.75rem 1rem;
@@ -49,16 +49,16 @@
     flex-direction: row;
     white-space: nowrap;
   }
-  .dictionary-entry-key:hover {
+  .dictionary-entry-key-blog-TreeLeaf:hover {
     background-color: rgba(69, 69, 69, 0.09);
     border: 1px solid #454545;
     box-sizing: border-box;
   }
-  .dictionary-entry-key-wrapper {
+  .dictionary-entry-key-wrapper-blog-TreeLeaf {
     flex-direction: column;
     padding: 1.218rem 0 0;
   }
-  .tree-leaf {
+  .tree-leaf-blog-TreeLeaf {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -72,17 +72,17 @@
     font-family: Sora;
   }
   @media screen and (max-width: 750px) {
-    .popular-articles {
+    .popular-articles-blog-TreeLeaf {
       font-size: 1.625rem;
       line-height: 2.063rem;
     }
-    .tree-leaf {
+    .tree-leaf-blog-TreeLeaf {
       flex-wrap: wrap;
       justify-content: center;
     }
   }
   @media screen and (max-width: 450px) {
-    .popular-articles {
+    .popular-articles-blog-TreeLeaf {
       font-size: 1.188rem;
       line-height: 1.563rem;
     }

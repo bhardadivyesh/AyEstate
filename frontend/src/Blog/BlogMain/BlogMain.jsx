@@ -8,10 +8,10 @@ import "./BlogMain.css";
 
 const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog-blogMain">
       <NavigationBar />
-      <main className="card-list-wrapper">
-        <div className="card-list">
+      <main className="card-list-wrapper-blogMain">
+        <div className="card-list-blogMain">
           <FrameComponent3 />
           <FrameComponent2 />
           <FrameComponent1 />

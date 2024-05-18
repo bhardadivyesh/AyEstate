@@ -1,4 +1,4 @@
-.contact-our-sales {
+.contact-our-sales-contactUs-MultiForm {
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -7,7 +7,7 @@
     font-weight: 700;
     font-family: inherit;
   }
-  .site-explorer {
+  .site-explorer-contactUs-MultiForm {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -15,18 +15,18 @@
     justify-content: center;
     padding: 0 1.25rem;
   }
-  .built-for-every,
-  .upgraded-security-and {
+  .built-for-every-contactUs-MultiForm,
+  .upgraded-security-and-contactUs-MultiForm {
     margin: 0;
   }
-  .built-for-every-container {
+  .built-for-every-container-contactUs-MultiForm {
     position: relative;
     font-size: 1.125rem;
     line-height: 160%;
     color: #7f879e;
     text-align: center;
   }
-  .messaging-platform {
+  .messaging-platform-contactUs-MultiForm {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -35,39 +35,39 @@
     gap: 1.875rem;
     max-width: 100%;
   }
-  .form-parent,
-  .personal-identity-field-busine {
+  .form-parent-contactUs-MultiForm,
+  .personal-identity-field-busine-contactUs-MultiForm {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     max-width: 100%;
   }
-  .personal-identity-field-busine {
+  .personal-identity-field-busine-contactUs-MultiForm {
     width: 55.375rem;
     justify-content: flex-end;
     padding: 0 3.687rem;
     box-sizing: border-box;
   }
-  .form-parent {
+  .form-parent-contactUs-MultiForm {
     align-self: stretch;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1.25rem;
   }
-  .first-name1 {
+  .first-name1-contactUs-MultiForm {
     position: relative;
     line-height: 1.313rem;
     text-transform: capitalize;
     display: inline-block;
     min-width: 7.75rem;
   }
-  .form-child,
-  .form2 {
+  .form-child-contactUs-MultiForm,
+  .form2-contactUs-MultiForm {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .form-child {
+  .form-child-contactUs-MultiForm {
     width: 100%;
     border: 0;
     outline: 0;
@@ -83,31 +83,31 @@
     color: #7f879e;
     min-width: 15.625rem;
   }
-  .form2 {
+  .form2-contactUs-MultiForm {
     flex: 1;
     flex-direction: column;
     gap: 0.75rem;
     min-width: 17.563rem;
     max-width: 100%;
   }
-  .span1 {
+  .span1-contactUs-MultiForm {
     color: #e60019;
   }
-  .company-size {
+  .company-size-contactUs-MultiForm {
     position: relative;
     line-height: 130%;
     text-transform: capitalize;
   }
-  .choose-company-size {
+  .choose-company-size-contactUs-MultiForm {
     position: relative;
     line-height: 160%;
   }
-  .arrow-down-icon1 {
+  .arrow-down-icon1-contactUs-MultiForm {
     height: 1.125rem;
     width: 1.125rem;
     position: relative;
   }
-  .choose-company-size-parent {
+  .choose-company-size-parent-contactUs-MultiForm {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -116,14 +116,14 @@
     max-width: 100%;
     gap: 1.25rem;
   }
-  .form-group,
-  .form-inner,
-  .form3 {
+  .form-group-contactUs-MultiForm,
+  .form-inner-contactUs-MultiForm,
+  .form3-contactUs-MultiForm {
     display: flex;
     justify-content: flex-start;
     max-width: 100%;
   }
-  .form-inner {
+  .form-inner-contactUs-MultiForm {
     align-self: stretch;
     border-radius: 16px;
     background-color: #f6f8f9;
@@ -135,36 +135,36 @@
     color: #7f879e;
     font-family: "Plus Jakarta Sans";
   }
-  .form-group,
-  .form3 {
+  .form-group-contactUs-MultiForm,
+  .form3-contactUs-MultiForm {
     align-items: flex-start;
   }
-  .form3 {
+  .form3-contactUs-MultiForm {
     flex: 1;
     flex-direction: column;
     gap: 0.75rem;
     min-width: 17.563rem;
   }
-  .form-group {
+  .form-group-contactUs-MultiForm {
     align-self: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.25rem;
   }
-  .anything-else-youd {
+  .anything-else-youd-contactUs-MultiForm {
     position: relative;
     line-height: 1.313rem;
     text-transform: capitalize;
   }
-  .form-item,
-  .form-listings,
-  .form4 {
+  .form-item-contactUs-MultiForm,
+  .form-listings-contactUs-MultiForm,
+  .form4-contactUs-MultiForm {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .form-item {
+  .form-item-contactUs-MultiForm {
     border: 0;
     background-color: #f6f8f9;
     height: 11.25rem;
@@ -178,35 +178,35 @@
     font-size: 0.875rem;
     color: #7f879e;
   }
-  .form-listings,
-  .form4 {
+  .form-listings-contactUs-MultiForm,
+  .form4-contactUs-MultiForm {
     flex-direction: column;
     gap: 0.75rem;
   }
-  .form-listings {
+  .form-listings-contactUs-MultiForm {
     gap: 2.5rem;
     max-width: 100%;
   }
-  .checkbox {
+  .checkbox-contactUs-MultiForm {
     margin: 0;
     width: 1.5rem;
     height: 1.5rem;
   }
-  .checkbox-wrapper {
+  .checkbox-wrapper-contactUs-MultiForm {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0.875rem 0 0;
   }
-  .i-agree-to {
+  .i-agree-to-contactUs-MultiForm {
     position: relative;
     line-height: 1.313rem;
     font-weight: 600;
     display: inline-block;
     max-width: 100%;
   }
-  .privacy-policy-button {
+  .privacy-policy-button-contactUs-MultiForm {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -217,7 +217,7 @@
     min-width: 27.188rem;
     max-width: 100%;
   }
-  .detail-information9 {
+  .detail-information9-contactUs-MultiForm {
     position: relative;
     font-size: 1rem;
     line-height: 1.313rem;
@@ -228,14 +228,14 @@
     display: inline-block;
     min-width: 7.188rem;
   }
-  .button30,
-  .form-input-first-name {
+  .button30-contactUs-MultiForm,
+  .form-input-first-name-contactUs-MultiForm {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .button30 {
+  .button30-contactUs-MultiForm {
     cursor: pointer;
     border: 0;
     padding: 0.968rem 1.406rem;
@@ -243,24 +243,24 @@
     border-radius: 12px;
     white-space: nowrap;
   }
-  .button30:hover {
+  .button30-contactUs-MultiForm:hover {
     background-color: #85ad57;
   }
-  .form-input-first-name {
+  .form-input-first-name-contactUs-MultiForm {
     align-self: stretch;
     flex-wrap: wrap;
     gap: 1rem;
     max-width: 100%;
     text-align: center;
   }
-  .form1,
-  .site-navigator-design-resource {
+  .form1-contactUs-MultiForm,
+  .site-navigator-design-resource-contactUs-MultiForm {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-width: 100%;
   }
-  .form1 {
+  .form1-contactUs-MultiForm {
     align-self: stretch;
     box-shadow: 0 4px 120px rgba(151, 159, 183, 0.1);
     border-radius: 16px;
@@ -271,12 +271,12 @@
     gap: 3.812rem;
     font-size: 1rem;
   }
-  .site-navigator-design-resource {
+  .site-navigator-design-resource-contactUs-MultiForm {
     width: 59.125rem;
     align-items: flex-end;
     gap: 3.125rem;
   }
-  .multi-level-message-card-stack {
+  .multi-level-message-card-stack-contactUs-MultiForm {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -291,42 +291,42 @@
     font-family: Sora;
   }
   @media screen and (max-width: 1050px) {
-    .personal-identity-field-busine {
+    .personal-identity-field-busine-contactUs-MultiForm {
       padding-left: 1.813rem;
       padding-right: 1.813rem;
       box-sizing: border-box;
     }
-    .form1 {
+    .form1-contactUs-MultiForm {
       gap: 1.875rem;
     }
   }
   @media screen and (max-width: 750px) {
-    .contact-our-sales {
+    .contact-our-sales-contactUs-MultiForm {
       font-size: 2.188rem;
       line-height: 2.875rem;
     }
-    .privacy-policy-button {
+    .privacy-policy-button-contactUs-MultiForm {
       min-width: 100%;
     }
-    .form1 {
+    .form1-contactUs-MultiForm {
       gap: 0.938rem;
       padding-top: 1.25rem;
       padding-bottom: 1.313rem;
       box-sizing: border-box;
     }
-    .site-navigator-design-resource {
+    .site-navigator-design-resource-contactUs-MultiForm {
       gap: 1.563rem;
     }
   }
   @media screen and (max-width: 450px) {
-    .contact-our-sales {
+    .contact-our-sales-contactUs-MultiForm {
       font-size: 1.625rem;
       line-height: 2.125rem;
     }
-    .form-inner {
+    .form-inner-contactUs-MultiForm {
       gap: 7.375rem;
     }
-    .form-listings {
+    .form-listings-contactUs-MultiForm {
       gap: 1.25rem;
     }
   }

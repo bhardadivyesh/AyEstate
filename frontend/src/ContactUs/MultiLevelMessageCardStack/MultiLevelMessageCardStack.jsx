@@ -53,28 +53,28 @@ const MultiLevelMessageCardStack = () => {
     }
   };
   return (
-    <div className="multi-level-message-card-stack">
-      <div className="site-navigator-design-resource">
-        <div className="personal-identity-field-busine">
-          <div className="messaging-platform">
-            <div className="site-explorer">
-              <h1 className="contact-our-sales">Contact our sales team</h1>
+    <div className="multi-level-message-card-stack-contactUs-MultiForm">
+      <div className="site-navigator-design-resource-contactUs-MultiForm">
+        <div className="personal-identity-field-busine-contactUs-MultiForm">
+          <div className="messaging-platform-contactUs-MultiForm">
+            <div className="site-explorer-contactUs-MultiForm">
+              <h1 className="contact-our-sales-contactUs-MultiForm">Contact our sales team</h1>
             </div>
-            <div className="built-for-every-container">
-              <p className="built-for-every">
+            <div className="built-for-every-container-contactUs-MultiForm">
+              <p className="built-for-every-contactUs-MultiForm">
                 Built for every team across your company, Jobify Enterprise
                 boosts productivity with
               </p>
-              <p className="upgraded-security-and">
+              <p className="upgraded-security-and-contactUs-MultiForm">
                 upgraded security and account support. Contact us today to
                 unlock:
               </p>
             </div>
           </div>
         </div>
-        <div className="form1">
-          <div className="form-listings">
-            <div className="form-parent">
+        <div className="form1-contactUs-MultiForm">
+          <div className="form-listings-contactUs-MultiForm">
+            <div className="form-parent-contactUs-MultiForm">
               <Form
                 name="Your Name"
                 type="text"
@@ -89,11 +89,11 @@ const MultiLevelMessageCardStack = () => {
                 onChange={(value) => handleFormChange("email", value)}
               />
             </div>
-            <div className="form-group">
-              <div className="form2">
-                <b className="first-name1">Phone Number</b>
+            <div className="form-group-contactUs-MultiForm">
+              <div className="form2-contactUs-MultiForm">
+                <b className="first-name1-contactUs-MultiForm">Phone Number</b>
                 <input
-                  className="form-child"
+                  className="form-child-contactUs-MultiForm"
                   placeholder="Enter your phone number"
                   type="number"
                   value={formData.phoneNumber}
@@ -104,13 +104,13 @@ const MultiLevelMessageCardStack = () => {
                   }}
                 />
               </div>
-              <div className="form3">
-                <b className="company-size">
+              <div className="form3-contactUs-MultiForm">
+                <b className="company-size-contactUs-MultiForm">
                   <span>How Can Our Sales Team Help?</span>
-                  <span className="span1">*</span>
+                  <span className="span1-contactUs-MultiForm">*</span>
                 </b>
                 <select
-                  className="form-inner"
+                  className="form-inner-contactUs-MultiForm"
                   value={formData.companySize}
                   onChange={(e) =>
                     handleFormChange("companySize", e.target.value)
@@ -124,12 +124,12 @@ const MultiLevelMessageCardStack = () => {
               </div>
             </div>
 
-            <div className="form4">
-              <b className="anything-else-youd">
+            <div className="form4-contactUs-MultiForm">
+              <b className="anything-else-youd-contactUs-MultiForm">
                 Anything Else You’d Like Us To Know?
               </b>
               <textarea
-                className="form-item"
+                className="form-item-contactUs-MultiForm"
                 placeholder="Type anything"
                 rows={9}
                 cols={44}
@@ -141,23 +141,23 @@ const MultiLevelMessageCardStack = () => {
             </div>
           </div>
 
-          <div className="form-input-first-name">
-            <div className="checkbox-wrapper">
+          <div className="form-input-first-name-contactUs-MultiForm">
+            <div className="checkbox-wrapper-contactUs-MultiForm">
               <input
-                className="checkbox"
+                className="checkbox-contactUs-MultiForm"
                 type="checkbox"
                 checked={formData.agreeToTerms}
                 onChange={handleCheckboxChange}
               />
             </div>
-            <div className="privacy-policy-button">
-              <div className="i-agree-to">
+            <div className="privacy-policy-button-contactUs-MultiForm">
+              <div className="i-agree-to-contactUs-MultiForm">
                 I agree to Loom's Terms of Service and Privacy Policy.*
               </div>
             </div>
             <button
               disabled={buttonState == false}
-              className="button30"
+              className="button30-contactUs-MultiForm"
               onClick={handleSubmit}
             >
               Contact Sales

@@ -32,28 +32,28 @@ const FrameComponent3 = () => {
     }
   });
   return (
-    <div className="search-bar-instance-wrapper">
-      <div className="search-bar-instance">
-        <div className="our-blog-wrapper">
-          <h1 className="our-blog">Our Blog</h1>
+    <div className="search-bar-instance-wrapper-blog-Frame3">
+      <div className="search-bar-instance-blog-Frame3">
+        <div className="our-blog-wrapper-blog-Frame3">
+          <h1 className="our-blog-blog-Frame3">Our Blog</h1>
         </div>
-        <div className="frame-parent4">
-          <div className="rectangle-parent1">
-            <div className="frame-child1" />
-            <div className="frame-wrapper2">
-              <div className="search-normal-parent">
+        <div className="frame-parent4-blog-Frame3">
+          <div className="rectangle-parent1-blog-Frame3">
+            <div className="frame-child1-blog-Frame3" />
+            <div className="frame-wrapper2-blog-Frame3">
+              <div className="search-normal-parent-blog-Frame3">
                 <img
-                  className="search-normal-icon1"
+                  className="search-normal-icon1-blog-Frame3"
                   loading="lazy"
                   alt=""
                   src={searchIcon}
                 />
-                <div className="search-article-name-wrapper">
+                <div className="search-article-name-wrapper-blog-Frame3">
                   <input
                     type="text"
                     value={query}
                     onChange={handleChange}
-                    className="search-article-name"
+                    className="search-article-name-blog-Frame3"
                     placeholder="Search article name"
                   />
                   {query.length > 0 && (
@@ -71,18 +71,18 @@ const FrameComponent3 = () => {
                 </div>
               </div>
             </div>
-            <button className="button35">
-              <div className="detail-information14">Search</div>
+            <button className="button35-blog-Frame3">
+              <div className="detail-information14-blog-Frame3">Search</div>
             </button>
           </div>
-          <div className="frame-wrapper3">
-            <div className="frame-parent5">
-              <div className="suggested-wrapper">
-                <div className="suggested">Suggested:</div>
+          <div className="frame-wrapper3-blog-Frame3">
+            <div className="frame-parent5-blog-Frame3">
+              <div className="suggested-wrapper-blog-Frame3">
+                <div className="suggested-blog-Frame3">Suggested:</div>
               </div>
               {articleNames.map((items,index)=>{
                 return(
-                  <div className="success-stories invest-strategies tips success-story" style={{marginLeft : "20px"}}>{items}</div>
+                  <div className="success-stories-blog-Frame3 invest-strategies-blog-Frame3 tips-blog-Frame3 success-story-blog-Frame3" style={{marginLeft : "20px"}}>{items}</div>
                 )
               })}
             </div>

@@ -26,22 +26,22 @@ const FrameComponent = ({
   }, [propDisplay1, propMinWidth1]);
 
   return (
-    <div className="email-us-askus-a-question-by-e-inner">
-      <div className="askusaquestionbyemailandwewill-parent">
+    <div className="email-us-askus-a-question-by-e-inner-contactUs-Frame">
+      <div className="askusaquestionbyemailandwewill-parent-contactUs-Frame">
         <img
-          className="askusaquestionbyemailandwewill-icon"
+          className="askusaquestionbyemailandwewill-icon-contactUs-Frame"
           loading="lazy"
           alt=""
           src={askusaquestionbyemailandw}
         />
-        <div className="listings-properties-official-w">
-          <div className="email-us-parent">
-            <b className="email-us1" style={emailUsStyle}>
+        <div className="listings-properties-official-w-contactUs-Frame">
+          <div className="email-us-parent-contactUs-Frame">
+            <b className="email-us1-contactUs-Frame" style={emailUsStyle}>
               {emailUs}
             </b>
-            <div className="ask-us-a">{askUsAQuestionByEmailAndW}</div>
+            <div className="ask-us-a-contactUs-Frame">{askUsAQuestionByEmailAndW}</div>
           </div>
-          <b className="leave-a-messages" style={leaveAMessagesStyle}>
+          <b className="leave-a-messages-contactUs-Frame" style={leaveAMessagesStyle}>
             {leaveAMessages}
           </b>
         </div>

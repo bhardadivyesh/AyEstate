@@ -1,20 +1,20 @@
-.heading8,
-.text15 {
+.heading8-detailProperty-PortfolioHeader,
+.text15-detailProperty-PortfolioHeader {
   align-self: stretch;
   position: relative;
 }
-.heading8 {
+.heading8-detailProperty-PortfolioHeader {
   margin: 0;
   font-size: inherit;
   line-height: 120%;
   font-weight: 700;
   font-family: inherit;
 }
-.text15 {
+.text15-detailProperty-PortfolioHeader {
   font-size: 1.125rem;
   line-height: 150%;
 }
-.content14 {
+.content14-detailProperty-PortfolioHeader {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   justify-content: flex-start;
   gap: 1.25rem;
 }
-.tag-one {
+.tag-one-detailProperty-PortfolioHeader {
   position: relative;
   font-size: 0.875rem;
   line-height: 150%;
@@ -33,7 +33,7 @@
   display: inline-block;
   min-width: 5rem;
 }
-.tag {
+.tag-detailProperty-PortfolioHeader {
   cursor: pointer;
   border: 0;
   padding: 0.25rem 0.5rem;
@@ -43,12 +43,12 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag1:hover,
-.tag2:hover,
-.tag:hover {
+.tag1-detailProperty-PortfolioHeader:hover,
+.tag2-detailProperty-PortfolioHeader:hover,
+.tag-detailProperty-PortfolioHeader:hover {
   background-color: #d4d4d4;
 }
-.tag-two {
+.tag-two-detailProperty-PortfolioHeader {
   position: relative;
   font-size: 0.875rem;
   line-height: 150%;
@@ -59,7 +59,7 @@
   display: inline-block;
   min-width: 3.563rem;
 }
-.tag1 {
+.tag1-detailProperty-PortfolioHeader {
   cursor: pointer;
   border: 0;
   padding: 0.25rem 0.5rem;
@@ -69,7 +69,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tag-three {
+.tag-three-detailProperty-PortfolioHeader {
   position: relative;
   font-size: 0.875rem;
   line-height: 150%;
@@ -80,44 +80,44 @@
   display: inline-block;
   min-width: 4.188rem;
 }
-.tag2 {
+.tag2-detailProperty-PortfolioHeader {
   cursor: pointer;
   border: 0;
   padding: 0.25rem 0.5rem;
   background-color: #eee;
   flex-direction: row;
 }
-.column6,
-.tag2,
-.tags {
+.column6-detailProperty-PortfolioHeader,
+.tag2-detailProperty-PortfolioHeader,
+.tags-detailProperty-PortfolioHeader {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tags {
+.tags-detailProperty-PortfolioHeader {
   align-self: stretch;
   flex-direction: row;
   padding: 0 31.25rem 0 0;
   gap: 0.5rem;
 }
-.column6 {
+.column6-detailProperty-PortfolioHeader {
   flex: 1;
   flex-direction: column;
   gap: 1.5rem;
   min-width: 31.188rem;
   max-width: 100%;
 }
-.text16,
-.text17 {
+.text16-detailProperty-PortfolioHeader,
+.text17-detailProperty-PortfolioHeader {
   align-self: stretch;
   position: relative;
   line-height: 140%;
 }
-.text17 {
+.text17-detailProperty-PortfolioHeader {
   font-size: 1rem;
   line-height: 150%;
 }
-.list-item {
+.list-item-detailProperty-PortfolioHeader {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -126,44 +126,44 @@
   gap: 0.5rem;
   min-width: 8.75rem;
 }
-.style-primary,
-.style-secondary {
+.style-primary-detailProperty-PortfolioHeader,
+.style-secondary-detailProperty-PortfolioHeader {
   align-self: stretch;
   position: relative;
   line-height: 140%;
 }
-.style-secondary {
+.style-secondary-detailProperty-PortfolioHeader {
   font-size: 1rem;
   line-height: 150%;
 }
-.content15,
-.list-item1 {
+.content15-detailProperty-PortfolioHeader,
+.list-item1-detailProperty-PortfolioHeader {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.list-item1 {
+.list-item1-detailProperty-PortfolioHeader {
   flex: 1;
   flex-direction: column;
   gap: 0.5rem;
   min-width: 8.75rem;
 }
-.content15 {
+.content15-detailProperty-PortfolioHeader {
   align-self: stretch;
   flex-direction: row;
   gap: 2rem;
 }
-.text18,
-.text19 {
+.text18-detailProperty-PortfolioHeader,
+.text19-detailProperty-PortfolioHeader {
   align-self: stretch;
   position: relative;
   line-height: 140%;
 }
-.text19 {
+.text19-detailProperty-PortfolioHeader {
   font-size: 1rem;
   line-height: 150%;
 }
-.list-item2 {
+.list-item2-detailProperty-PortfolioHeader {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -172,43 +172,43 @@
   gap: 0.5rem;
   min-width: 8.75rem;
 }
-.text20,
-.text21 {
+.text20-detailProperty-PortfolioHeader,
+.text21-detailProperty-PortfolioHeader {
   align-self: stretch;
   position: relative;
   line-height: 140%;
 }
-.text21 {
+.text21-detailProperty-PortfolioHeader {
   font-size: 1rem;
   text-decoration: underline;
   line-height: 150%;
   white-space: nowrap;
 }
-.list-item3 {
+.list-item3-detailProperty-PortfolioHeader {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5rem;
   min-width: 8.75rem;
 }
-.content13,
-.content16,
-.list,
-.list-item3 {
+.content13-detailProperty-PortfolioHeader,
+.content16-detailProperty-PortfolioHeader,
+.list-detailProperty-PortfolioHeader,
+.list-item3-detailProperty-PortfolioHeader {
   display: flex;
   align-items: flex-start;
 }
-.content16 {
+.content16-detailProperty-PortfolioHeader {
   align-self: stretch;
   flex-direction: row;
   justify-content: flex-start;
   gap: 2rem;
 }
-.content13,
-.list {
+.content13-detailProperty-PortfolioHeader,
+.list-detailProperty-PortfolioHeader {
   max-width: 100%;
 }
-.list {
+.list-detailProperty-PortfolioHeader {
   width: 29rem;
   flex-direction: column;
   justify-content: flex-start;
@@ -216,25 +216,25 @@
   min-width: 29rem;
   font-size: 1.25rem;
 }
-.content13 {
+.content13-detailProperty-PortfolioHeader {
   align-self: stretch;
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
 }
-.placeholder-image-icon3,
-.portfolio-header-7 {
+.placeholder-image-icon3-detailProperty-PortfolioHeader,
+.portfolio-header-7-detailProperty-PortfolioHeader {
   align-self: stretch;
   overflow: hidden;
   max-width: 100%;
 }
-.placeholder-image-icon3 {
+.placeholder-image-icon3-detailProperty-PortfolioHeader {
   position: relative;
   border-radius: 24px;
   max-height: 200%;
   object-fit: cover;
 }
-.portfolio-header-7 {
+.portfolio-header-7-detailProperty-PortfolioHeader {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -249,77 +249,77 @@
   font-family: Sora;
 }
 @media screen and (max-width: 1225px) {
-  .list {
+  .list-detailProperty-PortfolioHeader {
     flex: 1;
   }
-  .content13 {
+  .content13-detailProperty-PortfolioHeader {
     flex-wrap: wrap;
   }
-  .portfolio-header-7 {
+  .portfolio-header-7-detailProperty-PortfolioHeader {
     padding-top: 4.563rem;
     padding-bottom: 4.563rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 1050px) {
-  .tags {
+  .tags-detailProperty-PortfolioHeader {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 750px) {
-  .heading8 {
+  .heading8-detailProperty-PortfolioHeader {
     font-size: 2.813rem;
     line-height: 3.375rem;
   }
-  .tags {
+  .tags-detailProperty-PortfolioHeader {
     padding-right: 15.625rem;
     box-sizing: border-box;
   }
-  .column6,
-  .list {
+  .column6-detailProperty-PortfolioHeader,
+  .list-detailProperty-PortfolioHeader {
     min-width: 100%;
   }
-  .content13 {
+  .content13-detailProperty-PortfolioHeader {
     gap: 2.5rem;
   }
-  .portfolio-header-7 {
+  .portfolio-header-7-detailProperty-PortfolioHeader {
     gap: 2.5rem;
     padding: 2.938rem 2rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .heading8 {
+  .heading8-detailProperty-PortfolioHeader {
     font-size: 2.125rem;
     line-height: 2.5rem;
   }
-  .tags {
+  .tags-detailProperty-PortfolioHeader {
     padding-right: 1.25rem;
     box-sizing: border-box;
   }
-  .style-primary,
-  .text16 {
+  .style-primary-detailProperty-PortfolioHeader,
+  .text16-detailProperty-PortfolioHeader {
     font-size: 1rem;
     line-height: 1.375rem;
   }
-  .content15 {
+  .content15-detailProperty-PortfolioHeader {
     flex-wrap: wrap;
     gap: 1rem;
   }
-  .text18,
-  .text20 {
+  .text18-detailProperty-PortfolioHeader,
+  .text20-detailProperty-PortfolioHeader {
     font-size: 1rem;
     line-height: 1.375rem;
   }
-  .content16 {
+  .content16-detailProperty-PortfolioHeader {
     flex-wrap: wrap;
     gap: 1rem;
   }
-  .list {
+  .list-detailProperty-PortfolioHeader {
     gap: 1rem;
   }
-  .content13,
-  .portfolio-header-7 {
+  .content13-detailProperty-PortfolioHeader,
+  .portfolio-header-7-detailProperty-PortfolioHeader {
     gap: 1.25rem;
   }
 }

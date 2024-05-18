@@ -1,11 +1,11 @@
-.cbd3594bb5e8d90924a105d4aae924-icon {
+.cbd3594bb5e8d90924a105d4aae924-icon-payment-paymentSuccess {
     width: 38.625rem;
     position: relative;
     max-height: 100%;
     object-fit: cover;
     max-width: 100%;
   }
-  .cbd3594bb5e8d90924a105d4aae924-wrapper {
+  .cbd3594bb5e8d90924a105d4aae924-wrapper-payment-paymentSuccess {
     width: 54rem;
     display: flex;
     flex-direction: row;
@@ -15,46 +15,46 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .your-payment-was {
+  .your-payment-was-payment-paymentSuccess {
     align-self: stretch;
     position: relative;
     line-height: 1.5rem;
     color: #00D34F;
   }
-  .desktop-18-inner,
-  .frame-parent26 {
+  .desktop-18-inner-payment-paymentSuccess,
+  .frame-parent26-payment-paymentSuccess {
     display: flex;
     justify-content: flex-start;
     max-width: 100%;
   }
-  .frame-parent26 {
+  .frame-parent26-payment-paymentSuccess {
     flex: 1;
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
   }
-  .desktop-18-inner {
+  .desktop-18-inner-payment-paymentSuccess {
     width: 55.875rem;
     flex-direction: row;
     align-items: flex-start;
     padding: 0 0.062rem;
     box-sizing: border-box;
   }
-  .thank-you-for {
+  .thank-you-for-payment-paymentSuccess {
     margin-block-start: 0;
     margin-block-end: 40px;
   }
-  .be-in-contact {
+  .be-in-contact-payment-paymentSuccess {
     margin: 0;
   }
-  .thank-you-for-container {
+  .thank-you-for-container-payment-paymentSuccess {
     align-self: stretch;
     position: relative;
     font-size: 2.5rem;
     line-height: 1.5rem;
     color: rgba(0, 0, 0, 0.4);
   }
-  .desktop-18 {
+  .desktop-18-payment-paymentSuccess {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -74,7 +74,7 @@
     font-family: Sora;
   }
   @media screen and (max-width: 975px) {
-    .desktop-18 {
+    .desktop-18-payment-paymentSuccess {
       gap: 2.938rem;
       padding-left: 15.563rem;
       padding-right: 15.25rem;
@@ -82,17 +82,17 @@
     }
   }
   @media screen and (max-width: 950px) {
-    .your-payment-was {
+    .your-payment-was-payment-paymentSuccess {
       font-size: 2.375rem;
       line-height: 1.188rem;
     }
-    .thank-you-for-container {
+    .thank-you-for-container-payment-paymentSuccess {
       font-size: 2rem;
       line-height: 1.188rem;
     }
   }
   @media screen and (max-width: 700px) {
-    .desktop-18 {
+    .desktop-18-payment-paymentSuccess {
       gap: 1.5rem;
       padding-left: 7.75rem;
       padding-right: 7.625rem;
@@ -100,11 +100,11 @@
     }
   }
   @media screen and (max-width: 450px) {
-    .your-payment-was {
+    .your-payment-was-payment-paymentSuccess {
       font-size: 1.813rem;
       line-height: 0.875rem;
     }
-    .thank-you-for-container {
+    .thank-you-for-container-payment-paymentSuccess {
       font-size: 1.5rem;
       line-height: 0.875rem;
     }

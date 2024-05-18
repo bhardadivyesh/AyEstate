@@ -6,22 +6,22 @@ import website from "../../assets/faqs/icons/website.png"
 
 const FrameComponent = () => {
   return (
-    <div className="listings-properties-official-parent">
-      <div className="listings-properties-official">
-        <div className="f-a-q-about-us">
-          <div className="property-types-available">
-            <h1 className="still-have-a">Still Have a question?</h1>
+    <div className="listings-properties-official-parent-faqs-Frame">
+      <div className="listings-properties-official-faqs-Frame">
+        <div className="f-a-q-about-us-faqs-Frame">
+          <div className="property-types-available-faqs-Frame">
+            <h1 className="still-have-a-faqs-Frame">Still Have a question?</h1>
           </div>
-          <div className="if-you-cannot-container">
-            <p className="if-you-cannot">
+          <div className="if-you-cannot-container-faqs-Frame">
+            <p className="if-you-cannot-faqs-Frame">
               If you cannot find answer to your question in our FAQ, you can
               always contact us.
             </p>
-            <p className="we-wil-answer">We wil answer to you shortly!</p>
+            <p className="we-wil-answer-faqs-Frame">We wil answer to you shortly!</p>
           </div>
         </div>
       </div>
-      <div className="can-list-property">
+      <div className="can-list-property-faqs-Frame">
         <AlternativeWaysToGetAnswer
           copyrightAyEstate={contact}
           myAccount="+(+1) 2345 6789"

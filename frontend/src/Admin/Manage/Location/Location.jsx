@@ -7,6 +7,9 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenToSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
+import line from "../../../assets/admin/manage/line.png"
 
 const Location = () => {
   const value = useContext(manageContext)
@@ -24,7 +27,6 @@ const Location = () => {
     await axios
       .post("http://localhost:3000/post-location", data)
       .then((res) => {
-        console.log(res.data.message);
         toast(res.data.message);
       });
   };
@@ -33,7 +35,17 @@ const Location = () => {
       setLocationData(res.data);
     });
   }, []);
-  console.log(locationData);
+  const handleEditClick = (editData) =>{
+    console.log(editData);
+  }
+  const handleDeleteClick = (deleteData) =>{
+    console.log(deleteData.locationName);
+    let locationName = deleteData.locationName;
+
+   axios.delete('http://localhost:3000/delete-location',{ data: { locationName: locationName } }).then((res)=>{
+    console.log(res.data);
+   })
+  }
   return (
     <>
       <button
@@ -50,22 +62,33 @@ const Location = () => {
       >
         Location
       </button>
-
       <div className="rectangle-parent2">
         <div className="group-child2" />
         <div className="categories-id-parent">
           <div className="categories-id">Location-id</div>
           <div className="categories-name">Location name</div>
           <div className="action">Action</div>
-          <img className="line-icon" alt="" src="/line-28.svg" />
+          <img className="line-icon" alt="" src={line} />
         </div>
-        <div className="line-parent">
-          <div className="line-div" />
-          <div className="div">1</div>
-          <div className="bandung">Bandung</div>
-          <img className="bin-8-1" alt="" src={deleteImg} />
-          <img className="edit-1-1" alt="" src={edit} />
-        </div>
+          <table className="line-parent">
+          <tbody>
+            {locationData.map((items, index) => {
+              return (
+                <tr key={index} className="tableRow">
+                  <td className="locationIndex">{index + 1}</td>
+                  <td className="locationName">{items.locationName}</td>
+                  <td className="editIcon">
+                    <FontAwesomeIcon icon={faPenToSquare} className="iconEdit" onClick={()=>handleEditClick(items)} />
+                  </td>
+                  <td className="deleteIcon centerImages">
+                  <FontAwesomeIcon icon={faTrash} className="iconDelete"  onClick={()=>handleDeleteClick(items)} />
+                  </td>
+                  <td></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
 
         <form className="group-parent"  onSubmit={handleSubmit(onSubmit)}>
           <div className="rectangle-parent3">

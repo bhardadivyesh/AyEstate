@@ -46,11 +46,10 @@ router.get("/get-Registration", async (req, res) => {
 router.put('/put-Registration', async (req, res) => {
   try {
     const userEmail = req.body.email; 
-    const isVendor = true
     const status = req.body.status
     console.log(status);
     
-    let updatedCategory = await RegistrationSchema.findOneAndUpdate({ email: userEmail }, {isVendor : isVendor,status : status}, { new: true });
+    let updatedCategory = await RegistrationSchema.findOneAndUpdate({ email: userEmail }, {status : status}, { new: true });
     if (!updatedCategory) {
         return res.status(404).json({ error: 'User not found' });
     }

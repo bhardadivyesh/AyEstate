@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import edit from "../../../assets/admin/dashboard/edit.png";
-import deleteImg from "../../../assets/admin/dashboard/delete.png";
 import manageContext from "../Manage";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenToSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
+import line from "../../../assets/admin/manage/line.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Category = () => {
   const [categoryData, setCategoryData] = useState([]);
   const value = useContext(manageContext);
@@ -22,7 +24,6 @@ const Category = () => {
     await axios
       .post("http://localhost:3000/post-category", data)
       .then((res) => {
-        console.log(res.data.message);
         toast(res.data.message);
       });
   };
@@ -31,7 +32,16 @@ const Category = () => {
       setCategoryData(res.data);
     });
   }, []);
-  console.log(categoryData);
+  const handleEditButton = (editItem) =>{
+    console.log(editItem);
+  }
+  const handleDeleteClick = (deleteItem) =>{
+    console.log(deleteItem.category);
+    let categoryName = deleteItem.category;
+   axios.delete('http://localhost:3000/delete-category',{ data: { category: categoryName } }).then((res)=>{
+    console.log(res.data);
+   })
+  }
   return (
     <>
       <button
@@ -54,41 +64,39 @@ const Category = () => {
           <div className="categories-id">Categories-id</div>
           <div className="categories-name">Categories name</div>
           <div className="action">Action</div>
-          <img className="line-icon" alt="" src="/line-28.svg" />
+          <img className="line-icon" alt="" src={line} />
         </div>
         <table className="line-parent">
           <tbody>
             {categoryData.map((items, index) => {
               return (
-                <tr key={index}>
-                  {console.log(items.category)}
-                  <td className="div">{index}</td>
-                  <td className="bandung">{items.category}</td>
-                  <td>
-                    <img className="bin-8-1" alt="" src={deleteImg} />
+                <tr key={index} className="tableRow">
+                  <td className="categoryIndex">{index + 1}</td>
+                  <td className="categoryName">{items.category}</td>
+                  <td className="editIcon" >
+                    <FontAwesomeIcon icon={faPenToSquare} className="iconEdit" onClick={()=>handleEditButton(items)}/>
                   </td>
-                  <td>
-                    <img className="edit-1-1" alt="" src={edit} />
+                  <td className="deleteIcon centerImages" >
+                    <FontAwesomeIcon icon={faTrash} className="iconDelete" onClick={()=>handleDeleteClick(items)}/>
                   </td>
-                  <td className="line-div"></td>
                 </tr>
               );
             })}
           </tbody>
         </table>
 
-        <form className="group-parent" onSubmit={handleSubmit(onSubmit)}>
-          <div className="rectangle-parent3">
-            <input
-              className="group-child5"
-              placeholder="Enter Category"
-              {...register("category", { required: true })}
-            />
-          </div>
-          <button type="submit" className="submit group-child6">
-            submit
-          </button>
-        </form>
+          <form className="group-parent" onSubmit={handleSubmit(onSubmit)}>
+            <div className="rectangle-parent3">
+              <input
+                className="group-child5"
+                placeholder="Enter Category"
+                {...register("category", { required: true })}
+              />
+            </div>
+            <button type="submit" className="submit group-child6">
+              submit
+            </button>
+          </form>
       </div>
       <ToastContainer />
     </>

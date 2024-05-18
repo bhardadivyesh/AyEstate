@@ -1,17 +1,17 @@
-.card-list {
+.card-list-blogMain {
     width: 77.5rem;
     flex-direction: column;
     justify-content: flex-start;
     gap: 6.25rem;
     max-width: 100%;
   }
-  .blog,
-  .card-list,
-  .card-list-wrapper {
+  .blog-blogMain,
+  .card-list-blogMain,
+  .card-list-wrapper-blogMain {
     display: flex;
     align-items: flex-start;
   }
-  .card-list-wrapper {
+  .card-list-wrapper-blogMain {
     align-self: stretch;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +19,7 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .blog {
+  .blog-blogMain {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -31,28 +31,28 @@
     letter-spacing: normal;
   }
   @media screen and (max-width: 1225px) {
-    .card-list-wrapper {
+    .card-list-wrapper-blogMain {
       padding-bottom: 2.75rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 750px) {
-    .card-list {
+    .card-list-blogMain {
       gap: 3.125rem;
     }
-    .card-list-wrapper {
+    .card-list-wrapper-blogMain {
       padding-bottom: 1.813rem;
       box-sizing: border-box;
     }
-    .blog {
+    .blog-blogMain {
       gap: 3.75rem;
     }
   }
   @media screen and (max-width: 450px) {
-    .card-list {
+    .card-list-blogMain {
       gap: 1.563rem;
     }
-    .blog {
+    .blog-blogMain {
       gap: 1.875rem;
     }
   }

@@ -19,17 +19,17 @@ const FrameComponent = () => {
     setdata(parsedata)
   },[]) 
   return (
-    <section className="layout-1-wrapper">
-      <div className="layout-1">
-        <div className="container">
-          <div className="content21">
-            <div className="section-title2">
-              <div className="subheading4">Luxury</div>
-              <div className="content22">
-                <h1 className="heading10">
+    <section className="layout-1-wrapper-detailProperty-Frame1">
+      <div className="layout-1-detailProperty-Frame1">
+        <div className="container-detailProperty-Frame1">
+          <div className="content21-detailProperty-Frame1">
+            <div className="section-title2-detailProperty-Frame1">
+              <div className="subheading4-detailProperty-Frame1">Luxury</div>
+              <div className="content22-detailProperty-Frame1">
+                <h1 className="heading10-detailProperty-Frame1">
                   Experience the Perfect Blend of Comfort and Style
                 </h1>
-                <div className="text22">
+                <div className="text22-detailProperty-Frame1">
                   Welcome to our stunning property! With a beautiful image
                   gallery, immersive virtual tour, and outstanding features,
                   this is the perfect place to call home. Explore the spacious
@@ -38,14 +38,14 @@ const FrameComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="actions4">
-              <button className="stylesecondary-smallfalse2">
-                <div className="button24">Learn More</div>
+            <div className="actions4-detailProperty-Frame1">
+              <button className="stylesecondary-smallfalse2-detailProperty-Frame1">
+                <div className="button24-detailProperty-Frame1">Learn More</div>
               </button>
-              <div className="stylelink-smallfalse-dark3">
-                <div className="button25">Contact</div>
+              <div className="stylelink-smallfalse-dark3-detailProperty-Frame1">
+                <div className="button25-detailProperty-Frame1">Contact</div>
                 <img
-                  className="icon-chevron-right2"
+                  className="icon-chevron-right2-detailProperty-Frame1"
                   loading="lazy"
                   alt=""
                   src={icon}
@@ -54,7 +54,7 @@ const FrameComponent = () => {
             </div>
           </div>
           <img
-            className="container-child"
+            className="container-child-detailProperty-Frame1"
             loading="lazy"
             alt=""
             src={`http://localhost:1337${data?.image?.[4]?.url}`}
@@ -64,5 +64,4 @@ const FrameComponent = () => {
     </section>
   );
 };
-
 export default FrameComponent;

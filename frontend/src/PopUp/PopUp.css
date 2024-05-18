@@ -1,4 +1,4 @@
-.frame-child55 {
+.frame-child55-popup {
     width: 748px;
     height: 538px;
     position: relative;
@@ -10,12 +10,12 @@
     display: none;
     max-width: 100%;
   }
-  .frame-child56 {
+  .frame-child56-popup {
     border: 0;
     outline: 0;
   }
-  .frame-child56,
-  .frame-child57 {
+  .frame-child56-popup,
+  .frame-child57-popup {
     height: 47px;
     flex: 1;
     position: relative;
@@ -27,7 +27,7 @@
     z-index: 1;
     padding: 15px;
   }
-  .rectangle-parent37 {
+  .rectangle-parent37-popup {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -37,8 +37,8 @@
     gap: 19px;
     max-width: 100%;
   }
-  .first-child-rect,
-  .last-child-rect {
+  .first-child-rect-popup,
+  .last-child-rect-popup {
     height: 47px;
     position: relative;
     box-shadow: 0 1px 11.6px 0.3px rgba(0, 0, 0, 0.25);
@@ -46,7 +46,7 @@
     background-color: #fff;
     z-index: 1;
   }
-  .first-child-rect {
+  .first-child-rect-popup {
     border: 0;
     outline: 0;
     flex: 1;
@@ -54,11 +54,11 @@
     max-width: 100%;
     padding: 15px;
   }
-  .last-child-rect {
+  .last-child-rect-popup {
     align-self: stretch;
     padding: 15px;
   }
-  .second-child-rect {
+  .second-child-rect-popup {
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
     padding: 0 6px 0 0;
     box-sizing: border-box;
   }
-  .first-child-rect1 {
+  .first-child-rect1-popup {
     height: 47px;
     width: 151px;
     position: relative;
@@ -77,7 +77,7 @@
     z-index: 1;
     padding: 15px;
   }
-  .first-child-rect-parent {
+  .first-child-rect-parent-popup {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -87,10 +87,10 @@
     gap: 19px;
     max-width: 100%;
   }
-  .compound-rects,
-  .compound-rects1,
-  .compound-rects2,
-  .crush-opponents {
+  .compound-rects-popup,
+  .compound-rects1-popup,
+  .compound-rects2-popup,
+  .crush-opponents-popup {
     height: 46px;
     flex: 1;
     position: relative;
@@ -101,23 +101,23 @@
     max-width: 153px;
     z-index: 1;
   }
-  .compound-rects-parent,
-  .frame-parent26 {
+  .compound-rects-parent-popup,
+  .frame-parent26-popup {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 22px;
   }
-  .compound-rects-parent {
+  .compound-rects-parent-popup {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .frame-parent26 {
+  .frame-parent26-popup {
     flex-direction: column;
     max-width: 100%;
   }
-  .frame-child58 {
+  .frame-child58-popup {
     align-self: stretch;
     height: 127px;
     position: relative;
@@ -126,7 +126,7 @@
     background-color: #fff;
     z-index: 1;
   }
-  .frame-parent25 {
+  .frame-parent25-popup {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -135,12 +135,12 @@
     gap: 26px;
     max-width: 100%;
   }
-  .frame-child59,
-  .frame-child60 {
+  .frame-child59-popup,
+  .frame-child60-popup {
     background-color: #fff;
     position: absolute;
   }
-  .frame-child59 {
+  .frame-child59-popup {
     top: 0;
     left: 1px;
     box-shadow: 1px -1px 10.4px rgba(0, 0, 0, 0.25);
@@ -150,7 +150,7 @@
     display: none;
     z-index: 1;
   }
-  .frame-child60 {
+  .frame-child60-popup {
     border: 0;
     outline: 0;
     height: calc(100% - 1px);
@@ -162,39 +162,39 @@
     width: 153px;
     z-index: 2;
   }
-  .frame-child61,
-  .rectangle-parent38 {
+  .frame-child61-popup,
+  .rectangle-parent38-popup {
     height: 51px;
     position: relative;
     box-shadow: 1px -1px 10.4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     z-index: 1;
   }
-  .rectangle-parent38 {
+  .rectangle-parent38-popup {
     flex: 1;
     background-color: #fff;
     min-width: 317px;
     max-width: 100%;
   }
-  .frame-child61 {
+  .frame-child61-popup {
     width: 169px;
     background-color: #b7e08a;
   }
-  .frame-parent27 {
+  .frame-parent27-popup {
     align-self: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 22px;
   }
-  .frame-parent27,
-  .home1,
-  .rectangle-parent36 {
+  .frame-parent27-popup,
+  .home1-popup,
+  .rectangle-parent36-popup {
     max-width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .rectangle-parent36 {
+  .rectangle-parent36-popup {
     flex: 1;
     box-shadow: 0 1px 20px -2px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
@@ -205,14 +205,14 @@
     padding: 75px 30px 41px;
     gap: 22px;
   }
-  .home1 {
+  .home1-popup {
     width: 748px;
     flex-direction: row;
     line-height: normal;
     letter-spacing: normal;
   }
   @media screen and (max-width: 526px) {
-    .rectangle-parent36 {
+    .rectangle-parent36-popup {
       padding-top: 49px;
       padding-bottom: 27px;
       box-sizing: border-box;

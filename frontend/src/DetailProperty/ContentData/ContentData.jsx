@@ -26,57 +26,35 @@ const ContentData = () => {
   const part3 = text?.slice(2 * partLength);
   const images = [
     { url: `http://localhost:1337${data?.image?.[1]?.url}` },
-    { url: `http://localhost:1337${data?.image?.[3  ]?.url}` },
+    { url: `http://localhost:1337${data?.image?.[3]?.url}` },
     { url: `http://localhost:1337${data?.image?.[4]?.url}` },
-
-    
   ];
   return (
-    <section className="content-5">
-      <div className="content17">
-        <div className="column7">
-          <h1 className="heading9">
-            Stunning Property with {data?.category}
-          </h1>
-          <div className="rich-text">
-            <div className="content18">
-              <div className="paragraph">{part1}</div>
+    <section className="content-5-detailProperty-contantData">
+      <div className="content17-detailProperty-contantData">
+        <div className="column7-detailProperty-contantData">
+          <h1 className="heading9-detailProperty-contantData">Stunning Property with {data?.category}</h1>
+          <div className="rich-text-detailProperty-contantData">
+            <div className="content18-detailProperty-contantData">
+              <div className="paragraph-detailProperty-contantData">{part1}</div>
             </div>
-            <div className="content19">
-              <div className="paragraph1">{part2}</div>
+            <div className="content19-detailProperty-contantData">
+              <div className="paragraph1-detailProperty-contantData">{part2}</div>
             </div>
-            <div className="content20">
-              <div className="paragraph2">{part3}</div>
+            <div className="content20-detailProperty-contantData">
+              <div className="paragraph2-detailProperty-contantData">{part3}</div>
             </div>
           </div>
         </div>
         <SimpleImageSlider
-        width={896}
-        height={504}
-        images={images}
-        showBullets={true}
-        showNavs={true}
-      />
-        {/* <div className="gallery">
-          <img
-            className="placeholder-image-icon4"
-            alt=""
-            src={`http://localhost:1337${data?.image?.[1]?.url}`}
-          /> */}
-          {/* <img
-            className="placeholder-image-icon5"
-            alt=""
-            src={`http://localhost:1337${data?.image?.[2]?.url}`}
-          />
-          <img
-            className="placeholder-image-icon6"
-            alt=""
-            src={`http://localhost:1337${data?.image?.[4]?.url}`}
-          /> */}
-        {/* </div> */}
+          width={896}
+          height={504}
+          images={images}
+          showBullets={true}
+          showNavs={true}
+        />
       </div>
     </section>
   );
 };
-
 export default ContentData;

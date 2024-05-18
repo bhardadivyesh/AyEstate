@@ -1,0 +1,185 @@
+.first-div-listing-dataSorter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+.second-div-listing-dataSorter {
+  flex-basis: calc(50% - 8px);
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.third-div-listing-dataSorter {
+  height: 400px;
+  width: 429px;
+  position: relative;
+  border-radius: 12px;
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+}
+.feature-btn-listing-dataSorter {
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  background-color: rgba(17, 17, 17, 0.75);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.feature-btn-listing-label {
+  position: relative;
+  font-size: 14px;
+  line-height: 160%;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 64px;
+}
+.wishlist-icon-listing-dataSorter {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  z-index: 1;
+}
+.items-categoryName-one-listing-dataSorter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.items-categoryName-label-listing-dataSorter {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+}
+.items-price-listing-dataSorter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 18px;
+}
+.items-price-label-listing-dataSorter {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  font-size: 26px;
+}
+.items-location-label-listing-dataSorter {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+}
+.after-location-first-div-listing-dataSorter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+  max-width: 100%;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.after-location-second-div-listing-dataSorter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.after-location-first-img-listing-dataSorter {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.items-category-listing-dataSorter {
+  position: relative;
+  display: inline-block;
+  min-width: 31px;
+}
+.frame-img-first-div-listing-dataSorter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.frame-img-img-listing-dataSorter{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.washbasin-img-listing-dataSorter{
+    position: relative;
+    display: inline-block;
+    min-width: 9px;
+}
+.bed-img-first-div-listing-dataSorter{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.bed-img-listing-dataSorter{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.bed-label-listing-dataSorter{
+    position: relative;
+    display: inline-block;
+    min-width: 9px;
+}
+.size-img-first-div-listing-dataSorter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.size-img-listing-dataSorter{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.size-label-listing-dataSorter{
+    position: relative;
+    display: inline-block;
+    min-width: 58px;
+}
+.last-div-listing-dataSorter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}

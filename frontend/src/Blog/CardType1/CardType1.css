@@ -1,44 +1,44 @@
-.card-type-child {
+.card-type-child-blogCartType1 {
     height: 11rem;
     width: 11.875rem;
     position: relative;
     border-radius: 16px;
     object-fit: cover;
   }
-  .sep-2022 {
+  .sep-2022-blogCartType1 {
     position: relative;
     line-height: 1.313rem;
     font-weight: 600;
   }
-  .pages-menu-child {
+  .pages-menu-child-blogCartType1 {
     width: 0.188rem;
     height: 0.188rem;
     position: relative;
     border-radius: 50%;
     background-color: #d4d7df;
   }
-  .pages-menu {
+  .pages-menu-blogCartType1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0.562rem 0 0;
   }
-  .career-tips {
+  .career-tips-blogCartType1 {
     position: relative;
     line-height: 1.313rem;
     font-weight: 600;
     display: inline-block;
     min-width: 2.188rem;
   }
-  .sep-2022-parent {
+  .sep-2022-parent-blogCartType1 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.75rem;
   }
-  .how-to-figure {
+  .how-to-figure-blogCartType1 {
     align-self: stretch;
     position: relative;
     font-size: 1.25rem;
@@ -47,26 +47,26 @@
     font-family: "Plus Jakarta Sans";
     color: #1b2124;
   }
-  .frame-parent6 {
+  .frame-parent6-blogCartType1 {
     align-self: stretch;
     flex-direction: column;
     gap: 0.75rem;
   }
-  .card-type,
-  .card-type-inner,
-  .frame-parent6 {
+  .card-type-blogCartType1,
+  .card-type-inner-blogCartType1,
+  .frame-parent6-blogCartType1 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .card-type-inner {
+  .card-type-inner-blogCartType1 {
     flex: 1;
     flex-direction: column;
     padding: 2.843rem 0 0;
     box-sizing: border-box;
     min-width: 12.438rem;
   }
-  .card-type {
+  .card-type-blogCartType1 {
     align-self: stretch;
     flex-direction: row;
     gap: 1.5rem;
@@ -76,14 +76,14 @@
     font-family: Sora;
   }
   @media screen and (max-width: 450px) {
-    .card-type-child {
+    .card-type-child-blogCartType1 {
       flex: 1;
     }
-    .how-to-figure {
+    .how-to-figure-blogCartType1 {
       font-size: 1rem;
       line-height: 1.313rem;
     }
-    .card-type {
+    .card-type-blogCartType1 {
       flex-wrap: wrap;
     }
   }

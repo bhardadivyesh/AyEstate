@@ -103,12 +103,12 @@ class Payment extends Component {
   render() {
     const { payment_amount, refund_id } = this.state;
     return (
-      <div className="wrapper">
-        <div className="payments">
-          <div className="payments-title">
+      <div className="wrapper-payment-Razorpay">
+        <div className="payments-payment-Razorpay">
+          <div className="payments-title-payment-Razorpay">
             <h1>Test Payments</h1>
           </div>
-          <div className="payments-form">
+          <div className="payments-form-payment-Razorpay">
             <form onSubmit={this.paymentHandler}>
               <p>
                 <label htmlFor="pay_amount">Amount to be Paid</label>
@@ -128,11 +128,11 @@ class Payment extends Component {
           </div>
         </div>
 
-        <div className="refunds">
-          <div className="refunds-title">
+        <div className="refunds-payment-Razorpay">
+          <div className="refunds-title-payment-Razorpay">
             <h1>Test Refunds</h1>
           </div>
-          <div className="refunds-form">
+          <div className="refunds-form-payment-Razorpay">
             <form onSubmit={this.refundHandler}>
               <p>
                 <label htmlFor="refund_amount">Payment Transaction ID</label>

@@ -12,13 +12,13 @@ const Form = ({ name, clientEngagementPoPlaceho, propMinWidth, onChange,type }) 
     onChange(e.target.value);
   };
   return (
-    <div className="form">
-      <b className="first-name" style={firstNameStyle}>
+    <div className="form-contactUs-Form">
+      <b className="first-name-contactUs-Form" style={firstNameStyle}>
         <span>{name}</span>
-        <span className="span">*</span>
+        <span className="span-contactUs-Form">*</span>
       </b>
       <input
-        className="client-engagement-point"
+        className="client-engagement-point-contactUs-Form"
         placeholder={clientEngagementPoPlaceho}
         type={type}
         onChange={handleChange}

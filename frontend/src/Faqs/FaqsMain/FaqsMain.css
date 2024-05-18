@@ -1,17 +1,17 @@
-.home-listings-company-blog-parent {
+.home-listings-company-blog-parent-faqsMain {
     width: 77.5rem;
     flex-direction: column;
     justify-content: flex-start;
     gap: 12.5rem;
     max-width: 100%;
   }
-  .faqs,
-  .faqs-inner,
-  .home-listings-company-blog-parent {
+  .faqs-faqsMain,
+  .faqs-inner-faqsMain,
+  .home-listings-company-blog-parent-faqsMain {
     display: flex;
     align-items: flex-start;
   }
-  .faqs-inner {
+  .faqs-inner-faqsMain {
     align-self: stretch;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +19,7 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .faqs {
+  .faqs-faqsMain {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -31,31 +31,31 @@
     letter-spacing: normal;
   }
   @media screen and (max-width: 1225px) {
-    .home-listings-company-blog-parent {
+    .home-listings-company-blog-parent-faqsMain {
       gap: 6.25rem;
     }
-    .faqs-inner {
+    .faqs-inner-faqsMain {
       padding-bottom: 2.125rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 750px) {
-    .home-listings-company-blog-parent {
+    .home-listings-company-blog-parent-faqsMain {
       gap: 3.125rem;
     }
-    .faqs-inner {
+    .faqs-inner-faqsMain {
       padding-bottom: 1.375rem;
       box-sizing: border-box;
     }
-    .faqs {
+    .faqs-faqsMain {
       gap: 3.75rem;
     }
   }
   @media screen and (max-width: 450px) {
-    .home-listings-company-blog-parent {
+    .home-listings-company-blog-parent-faqsMain {
       gap: 1.563rem;
     }
-    .faqs {
+    .faqs-faqsMain {
       gap: 1.875rem;
     }
   }

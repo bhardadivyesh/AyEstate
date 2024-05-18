@@ -14,14 +14,14 @@ const StackElementData = ({
   }, [frameDivWidth, frameDivHeight]);
 
   return (
-    <div className="stack-element-data">
+    <div className="stack-element-data-blog-Stackelement">
       <img
-        className="heap-element-priority"
+        className="heap-element-priority-blog-Stackelement"
         loading="lazy"
         alt=""
         src={heapElementPriority}
       />
-      <div className="stack-element-data-child" style={frameDiv1Style} />
+      <div className="stack-element-data-child-blog-Stackelement" style={frameDiv1Style} />
     </div>
   );
 };

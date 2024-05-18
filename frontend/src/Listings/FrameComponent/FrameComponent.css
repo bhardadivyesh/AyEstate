@@ -1,0 +1,80 @@
+.first-div-listing-Frame{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #1d9e34;
+    font-family: 'Sora', sans-serif;
+}
+.second-div-listing-Frame{
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px; 
+}
+.home-link-listing-Frame{
+    position: relative;
+  line-height: 26px;
+  display: inline-block;
+  min-width: 49px;
+}
+.third-div-listing-Frame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 0px 0px;
+}
+.arrowRight-listing-Frame{
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+.category-listing-Frame{
+    position: relative;
+    line-height: 26px;
+    display: inline-block;
+    min-width: 89px;
+}
+.forth-div-listing-Frame{
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 24px;
+    color: #0b0f0e;
+}
+.fifth-div-listing-Frame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+}
+.showing-listing-property-listing-Frame{
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.2px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: inherit;
+}
+.last-div-listing-Frame{
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    color: #818b9c;
+    font-family: 'Sora', sans-serif;
+    font-weight: normal;
+}

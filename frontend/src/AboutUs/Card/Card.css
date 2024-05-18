@@ -1,4 +1,4 @@
-.photo-by-juan-ordonez {
+.photo-by-juan-ordonez-aboutCard {
   width: 5rem;
   height: 5rem;
   position: relative;
@@ -7,32 +7,32 @@
   display: block; 
   margin: 0 auto;
   }
-  .job-title,
-  .name {
+  .job-title-aboutCard,
+  .name-aboutCard {
     align-self: stretch;
     position: relative;
     line-height: 150%;
   }
-  .name {
+  .name-aboutCard {
     font-weight: 600;
   }
-  .job-title {
+  .job-title-aboutCard {
     font-size: 1.125rem;
   }
-  .title4 {
+  .title4-aboutCard {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
   }
-  .blend-mode {
+  .blend-mode-aboutCard {
     align-self: stretch;
     position: relative;
     font-size: 1rem;
     line-height: 150%;
   }
-  .content23 {
+  .content23-aboutCard {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -40,9 +40,9 @@
     justify-content: flex-start;
     gap: 1rem;
   }
-  .icon-dribble,
-  .icon-linkedin,
-  .icon-x {
+  .icon-dribble-aboutCard,
+  .icon-linkedin-aboutCard,
+  .icon-x-aboutCard {
     height: 1.5rem;
     width: 1.5rem;
     position: relative;
@@ -50,8 +50,8 @@
     flex-shrink: 0;
     min-height: 1.5rem;
   }
-  .card,
-  .social-icons {
+  .card-aboutCard,
+  .social-icons-aboutCard {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -59,7 +59,7 @@
     gap: 1.875rem;
     margin-top: 15px;
   }
-  .card {
+  .card-aboutCard {
     flex: 1;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@
     font-family: Sora;
   }
   @media screen and (max-width: 450px) {
-    .name {
+    .name-aboutCard {
       font-size: 1rem;
       line-height: 1.5rem;
     }

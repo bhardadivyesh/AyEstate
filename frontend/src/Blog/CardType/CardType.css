@@ -1,4 +1,4 @@
-.rectangle-icon {
+.rectangle-icon-blogCardType {
     align-self: stretch;
     height: 18.75rem;
     position: relative;
@@ -8,38 +8,38 @@
     flex-shrink: 0;
     object-fit: cover;
   }
-  .may-2022 {
+  .may-2022-blogCardType {
     position: relative;
     line-height: 130%;
   }
-  .frame-child3 {
+  .frame-child3-blogCardType {
     width: 0.188rem;
     height: 0.188rem;
     position: relative;
     border-radius: 50%;
     background-color: #d4d7df;
   }
-  .ellipse-container {
+  .ellipse-container-blogCardType {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0.625rem 0 0;
   }
-  .career-tips2 {
+  .career-tips2-blogCardType {
     position: relative;
     line-height: 130%;
     display: inline-block;
     min-width: 2.375rem;
   }
-  .may-2022-parent {
+  .may-2022-parent-blogCardType {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.75rem;
   }
-  .how-intrapreneurship-can {
+  .how-intrapreneurship-can-blogCardType {
     align-self: stretch;
     position: relative;
     font-size: 1.5rem;
@@ -47,18 +47,18 @@
     text-transform: capitalize;
     color: #1b2124;
   }
-  .card-type2,
-  .frame-parent9 {
+  .card-type2-blogCardType,
+  .frame-parent9-blogCardType {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .frame-parent9 {
+  .frame-parent9-blogCardType {
     align-self: stretch;
     gap: 0.75rem;
   }
-  .card-type2 {
+  .card-type2-blogCardType {
     flex: 1;
     gap: 1.5rem;
     min-width: 18.438rem;
@@ -69,7 +69,7 @@
     font-family: Sora;
   }
   @media screen and (max-width: 450px) {
-    .how-intrapreneurship-can {
+    .how-intrapreneurship-can-blogCardType {
       font-size: 1.188rem;
       line-height: 1.563rem;
     }

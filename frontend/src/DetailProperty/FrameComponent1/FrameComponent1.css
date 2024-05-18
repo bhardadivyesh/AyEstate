@@ -1,43 +1,43 @@
-.subheading4 {
+.subheading4-detailProperty-Frame1 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   display: inline-block;
   min-width: 3.438rem;
 }
-.heading10,
-.text22 {
+.heading10-detailProperty-Frame1,
+.text22-detailProperty-Frame1 {
   align-self: stretch;
   position: relative;
 }
-.heading10 {
+.heading10-detailProperty-Frame1 {
   margin: 0;
   font-size: inherit;
   line-height: 120%;
   font-weight: 700;
   font-family: inherit;
 }
-.text22 {
+.text22-detailProperty-Frame1 {
   font-size: 1.125rem;
   line-height: 150%;
 }
-.content22,
-.section-title2 {
+.content22-detailProperty-Frame1,
+.section-title2-detailProperty-Frame1 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.content22 {
+.content22-detailProperty-Frame1 {
   gap: 1.5rem;
   text-align: left;
   font-size: 3rem;
 }
-.section-title2 {
+.section-title2-detailProperty-Frame1 {
   gap: 1rem;
 }
-.button24 {
+.button24-detailProperty-Frame1 {
   position: relative;
   font-size: 1rem;
   line-height: 150%;
@@ -48,7 +48,7 @@
   display: inline-block;
   min-width: 5.75rem;
 }
-.stylesecondary-smallfalse2 {
+.stylesecondary-smallfalse2-detailProperty-Frame1 {
   cursor: pointer;
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -60,16 +60,16 @@
   justify-content: center;
   white-space: nowrap;
 }
-.stylesecondary-smallfalse2:hover {
+.stylesecondary-smallfalse2-detailProperty-Frame1:hover {
   background-color: #85ad57;
 }
-.button25 {
+.button25-detailProperty-Frame1 {
   position: relative;
   line-height: 150%;
   display: inline-block;
   min-width: 4.188rem;
 }
-.icon-chevron-right2 {
+.icon-chevron-right2-detailProperty-Frame1 {
   height: 0.5rem;
   width: 0.5rem;
   position: relative;
@@ -77,26 +77,26 @@
   flex-shrink: 0;
   min-height: 0.1rem;
 }
-.stylelink-smallfalse-dark3 {
+.stylelink-smallfalse-dark3-detailProperty-Frame1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
-.actions4,
-.content21 {
+.actions4-detailProperty-Frame1,
+.content21-detailProperty-Frame1 {
   display: flex;
   justify-content: flex-start;
   gap: 1.5rem;
 }
-.actions4 {
+.actions4-detailProperty-Frame1 {
   flex-direction: row;
   align-items: center;
   padding: 1rem 0 0;
   text-align: left;
 }
-.content21 {
+.content21-detailProperty-Frame1 {
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
@@ -105,7 +105,7 @@
   min-width: 25.5rem;
   max-width: 100%;
 }
-.container-child {
+.container-child-detailProperty-Frame1 {
   width: 37.813rem;
   position: relative;
   border-radius: 12px;
@@ -113,32 +113,31 @@
   object-fit: cover;
   max-width: 100%;
 }
-.container,
-.layout-1,
-.layout-1-wrapper {
+.container-detailProperty-Frame1,
+.layout-1-detailProperty-Frame1,
+.layout-1-wrapper-detailProperty-Frame1 {
   display: flex;
   justify-content: flex-start;
-
 }
-.container {
+.container-detailProperty-Frame1 {
   align-self: stretch;
   flex-direction: row;
   align-items: center;
   gap: 5rem;
 }
-.layout-1,
-.layout-1-wrapper {
+.layout-1-detailProperty-Frame1,
+.layout-1-wrapper-detailProperty-Frame1 {
   align-items: flex-start;
   box-sizing: border-box;
 }
-.layout-1 {
+.layout-1-detailProperty-Frame1 {
   flex: 1;
   background-color: #fff;
   overflow: hidden;
   flex-direction: column;
   padding: 7rem 4rem;
 }
-.layout-1-wrapper {
+.layout-1-wrapper-detailProperty-Frame1 {
   align-self: stretch;
   flex-direction: row;
   padding: 0 0 0.281rem;
@@ -148,48 +147,48 @@
   font-family: Sora;
 }
 @media screen and (max-width: 1225px) {
-  .container-child {
+  .container-child-detailProperty-Frame1 {
     flex: 1;
   }
-  .container {
+  .container-detailProperty-Frame1 {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1050px) {
-  .layout-1 {
+  .layout-1-detailProperty-Frame1 {
     padding-top: 4.563rem;
     padding-bottom: 4.563rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
-  .heading10 {
+  .heading10-detailProperty-Frame1 {
     font-size: 2.375rem;
     line-height: 2.875rem;
   }
-  .content21 {
+  .content21-detailProperty-Frame1 {
     min-width: 100%;
   }
-  .container,
-  .layout-1 {
+  .container-detailProperty-Frame1,
+  .layout-1-detailProperty-Frame1 {
     gap: 2.5rem;
   }
-  .layout-1 {
+  .layout-1-detailProperty-Frame1 {
     padding-left: 2rem;
     padding-right: 2rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .heading10 {
+  .heading10-detailProperty-Frame1 {
     font-size: 1.813rem;
     line-height: 2.188rem;
   }
-  .container,
-  .layout-1 {
+  .container-detailProperty-Frame1,
+  .layout-1-detailProperty-Frame1 {
     gap: 1.25rem;
   }
-  .layout-1 {
+  .layout-1-detailProperty-Frame1 {
     padding-top: 2.938rem;
     padding-bottom: 2.938rem;
     box-sizing: border-box;

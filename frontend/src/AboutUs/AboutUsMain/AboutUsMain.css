@@ -1,4 +1,4 @@
-.summarizer-icon {
+.summarizer-icon-aboutMain {
     height: 31.25rem;
     flex: 1;
     position: relative;
@@ -6,7 +6,7 @@
     overflow: hidden;
     object-fit: cover;
   }
-  .summarizer-wrapper {
+  .summarizer-wrapper-aboutMain {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .label-title {
+  .label-title-aboutMain {
     position: relative;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -28,7 +28,7 @@
     display: inline-block;
     min-width: 7.625rem;
   }
-  .label {
+  .label-aboutMain {
     cursor: pointer;
     border: 0;
     padding: 0.75rem 1rem;
@@ -39,10 +39,10 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .label:hover {
+  .label-aboutMain:hover {
     background-color: rgba(230, 230, 230, 0.1);
   }
-  .title1 {
+  .title1-aboutMain {
     margin: 0;
     align-self: stretch;
     position: relative;
@@ -53,13 +53,13 @@
     font-weight: 700;
     font-family: inherit;
   }
-  .description,
-  .title-wrapper {
+  .description-aboutMain,
+  .title-wrapper-aboutMain {
     flex: 1;
     min-width: 22.75rem;
     max-width: 100%;
   }
-  .title-wrapper {
+  .title-wrapper-aboutMain {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,7 +67,7 @@
     padding: 0.062rem 0 0;
     box-sizing: border-box;
   }
-  .description {
+  .description-aboutMain {
     position: relative;
     font-size: 1.125rem;
     letter-spacing: -0.02em;
@@ -75,7 +75,7 @@
     color: #c7c1ea;
     display: inline-block;
   }
-  .frame-parent {
+  .frame-parent-aboutMain {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -85,21 +85,21 @@
     gap: 5rem;
     max-width: 100%;
   }
-  .divider {
+  .divider-aboutMain {
     align-self: stretch;
     height: 0.094rem;
     position: relative;
     border-top: 1.5px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
   }
-  .about-us1,
-  .benefits-section {
+  .about-us1-aboutMain,
+  .benefits-section-aboutMain {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .benefits-section {
+  .benefits-section-aboutMain {
     align-self: stretch;
     background-color: #16112f;
     padding: 5rem 7.375rem 5rem 7.5rem;
@@ -111,7 +111,7 @@
     color: #f4f2ff;
     font-family: Sora;
   }
-  .about-us1 {
+  .about-us1-aboutMain {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -120,45 +120,45 @@
     letter-spacing: normal;
   }
   @media screen and (max-width: 1350px) {
-    .frame-parent {
+    .frame-parent-aboutMain {
       gap: 2.5rem;
     }
   }
   @media screen and (max-width: 1125px) {
-    .benefits-section {
+    .benefits-section-aboutMain {
       padding-top: 3.25rem;
       padding-bottom: 3.25rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 800px) {
-    .summarizer-wrapper {
+    .summarizer-wrapper-aboutMain {
       padding-bottom: 4.063rem;
       box-sizing: border-box;
     }
-    .title1 {
+    .title1-aboutMain {
       font-size: 1.813rem;
       line-height: 2.688rem;
     }
-    .description,
-    .title-wrapper {
+    .description-aboutMain,
+    .title-wrapper-aboutMain {
       min-width: 100%;
     }
-    .frame-parent {
+    .frame-parent-aboutMain {
       gap: 1.25rem;
     }
-    .benefits-section {
+    .benefits-section-aboutMain {
       gap: 1.875rem;
       padding: 2.125rem 3.688rem 2.125rem 3.75rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 450px) {
-    .title1 {
+    .title1-aboutMain {
       font-size: 1.375rem;
       line-height: 2rem;
     }
-    .benefits-section {
+    .benefits-section-aboutMain {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
       box-sizing: border-box;

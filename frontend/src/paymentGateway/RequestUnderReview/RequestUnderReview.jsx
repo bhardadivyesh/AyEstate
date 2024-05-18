@@ -2,29 +2,24 @@ import "./RequestUnderReview.css";
 import requestUnderReview from "../../assets/payment/requestUnderReview.gif"
 
 const RequestUnderReview = () => {
-
-    // setTimeout(() => {
-       
-    // }, 5000);
-
   return (
-    <div className="desktop-18">
-      <div className="desktop-18-inner">
-        <div className="frame-parent26">
-          <div className="cbd3594bb5e8d90924a105d4aae924-wrapper">
+    <div className="desktop-18-payment-requestUnderReview">
+      <div className="desktop-18-inner-payment-requestUnderReview">
+        <div className="frame-parent26-payment-requestUnderReview">
+          <div className="cbd3594bb5e8d90924a105d4aae924-wrapper-payment-requestUnderReview">
             <img
-              className="cbd3594bb5e8d90924a105d4aae924-icon"
+              className="cbd3594bb5e8d90924a105d4aae924-icon-payment-requestUnderReview"
               loading="lazy"
               alt=""
               src={requestUnderReview}
             />
           </div>
-          <div className="your-payment">Request under review </div>
+          <div className="your-payment-payment-requestUnderReview">Request under review </div>
         </div>
       </div>
-      <div className="thank-you-for-container">
-        <p className="thank-you-for">Request Under Review" signifies active </p>
-        <p className="be-in-contact">{`be in contact with more details shortiy `}</p>
+      <div className="thank-you-for-container-payment-requestUnderReview">
+        <p className="thank-you-for-payment-requestUnderReview">Request Under Review" signifies active </p>
+        <p className="be-in-contact-payment-requestUnderReview">be in contact with more details shortiy</p>
       </div>
     </div>
   );

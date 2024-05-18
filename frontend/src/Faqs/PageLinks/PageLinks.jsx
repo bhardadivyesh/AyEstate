@@ -43,25 +43,25 @@ const PageLinks = () => {
   };
 
   return (
-    <div className="page-links">
-      <div className="logo-and-menu">
-        <div className="figma-project-settings">
-          <div className="save-version">
-            <div className="export-as-image">
-              <h1 className="our-website">Our Website</h1>
+    <div className="page-links-faqs-PageLinks">
+      <div className="logo-and-menu-faqs-PageLinks">
+        <div className="figma-project-settings-faqs-PageLinks">
+          <div className="save-version-faqs-PageLinks">
+            <div className="export-as-image-faqs-PageLinks">
+              <h1 className="our-website-faqs-PageLinks">Our Website</h1>
             </div>
-            <div className="frequently-asked-question1">
+            <div className="frequently-asked-question1-faqs-PageLinks">
               Frequently asked question about our website
             </div>
           </div>
         </div>
         {question.map((item, index) => (
-          <div className="delete-project" key={index}>
-            <div className="new-project-from-template">
-              <div className="duplicate-project">
-                <b className="what-types-of">{item?.question}</b>
+          <div className="delete-project-faqs-PageLinks" key={index}>
+            <div className="new-project-from-template-faqs-PageLinks">
+              <div className="duplicate-project-faqs-PageLinks">
+                <b className="what-types-of-faqs-PageLinks">{item?.question}</b>
                 <img
-                  className="minus-icon1"
+                  className="minus-icon1-faqs-PageLinks"
                   loading="lazy"
                   alt=""
                   src={openIndices.includes(index) ? minus : plus}
@@ -70,12 +70,12 @@ const PageLinks = () => {
               </div>
               {openIndices.includes(index) && (
                 <>
-                  <div className="our-website-lists">{item?.description}</div>
+                  <div className="our-website-lists-faqs-PageLinks">{item?.description}</div>
                   {item?.moreDescription && readMoreIndices.includes(index) && (
-                    <div className="our-website-lists">{item?.moreDescription}</div>
+                    <div className="our-website-lists-faqs-PageLinks">{item?.moreDescription}</div>
                   )}
                   {item?.moreDescription && (
-                    <b className="read-more1" onClick={() => toggleReadMore(index)}>
+                    <b className="read-more1-faqs-PageLinks" onClick={() => toggleReadMore(index)}>
                       {readMoreIndices.includes(index) ? "Read Less" : "Read More"}
                     </b>
                   )}
@@ -85,9 +85,9 @@ const PageLinks = () => {
           </div>
         ))}
       </div>
-      <div className="button-wrapper3">
-        <button className="button33" onClick={handleGiveAquotebtnClick}>
-          <div className="detail-information12">Give a Quote</div>
+      <div className="button-wrapper3-faqs-PageLinks">
+        <button className="button33-faqs-PageLinks" onClick={handleGiveAquotebtnClick}>
+          <div className="detail-information12-faqs-PageLinks">Give a Quote</div>
         </button>
       </div>
     </div>

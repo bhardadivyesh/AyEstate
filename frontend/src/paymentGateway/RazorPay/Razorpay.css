@@ -4,7 +4,7 @@ html{
     font-family: 'Poiret One', cursive;
     font-size: 18px;
   }
-  .wrapper{
+  .wrapper-payment-Razorpay{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,7 +13,7 @@ html{
     color: #fff;
   }
   
-  .payments{
+  .payments-payment-Razorpay{
     width: 50%;
     padding: 2%;
     float: left;
@@ -23,7 +23,7 @@ html{
     background: linear-gradient(to top, #6E48AA, #9D50BB); 
   }
   
-  .payments-form, .refunds-form{
+  .payments-form-payment-Razorpay, .refunds-form-payment-Razorpay{
     margin-top: 30%;
   }
   
@@ -78,11 +78,11 @@ html{
       width: 100%;
   }
   
-  .pay_amount, .refund_amount{
+  .pay_amount-payment-Razorpay, .refund_amount-payment-Razorpay{
     font-size: 140%;
   }
   
-  .refunds{
+  .refunds-payment-Razorpay{
     width: 50%;
     padding: 2%;
     float: left;

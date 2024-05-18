@@ -1,17 +1,17 @@
-.array-element,
-.tree-leaf-parent {
+.array-element-blog-Frame1,
+.tree-leaf-parent-blog-Frame1 {
   align-self: stretch;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
 }
-.array-element {
+.array-element-blog-Frame1 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.875rem;
 }
-.tree-leaf-parent {
+.tree-leaf-parent-blog-Frame1 {
   flex-direction: column;
   gap: 3.125rem;
   text-align: left;
@@ -20,7 +20,7 @@
   font-family: Sora;
 }
 @media screen and (max-width: 750px) {
-  .tree-leaf-parent {
+  .tree-leaf-parent-blog-Frame1 {
     gap: 1.563rem;
   }
 }

@@ -1,11 +1,11 @@
-.sign-for-error-or-explanation-icon {
+.sign-for-error-or-explanation-icon-payment-PaymentFail {
     width: 22rem;
     position: relative;
     max-height: 100%;
     object-fit: cover;
     max-width: 100%;
   }
-  .error-alert {
+  .error-alert-payment-PaymentFail {
     width: 32.375rem;
     display: flex;
     flex-direction: row;
@@ -15,37 +15,37 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .payment-failed {
+  .payment-failed-payment-PaymentFail {
     align-self: stretch;
     position: relative;
     line-height: 1.5rem;
     white-space: pre-wrap;
   }
-  .desktop-19-inner,
-  .error-alert-parent {
+  .desktop-19-inner-payment-PaymentFail,
+  .error-alert-parent-payment-PaymentFail {
     display: flex;
     align-items: flex-start;
     max-width: 100%;
   }
-  .error-alert-parent {
+  .error-alert-parent-payment-PaymentFail {
     width: 33.813rem;
     flex-direction: column;
     justify-content: flex-start;
     gap: 3.812rem;
   }
-  .desktop-19-inner {
+  .desktop-19-inner-payment-PaymentFail {
     width: 88.688rem;
     flex-direction: row;
     justify-content: center;
     padding: 0 0 1.312rem;
     box-sizing: border-box;
   }
-  .again-later-or,
-  .the-payment-was {
+  .again-later-or-payment-PaymentFail,
+  .the-payment-was-payment-PaymentFail {
     margin-block-start: 0;
     margin-block-end: 39px;
   }
-  .the-payment-was-container {
+  .the-payment-was-container-payment-PaymentFail {
     width: 88.688rem;
     position: relative;
     font-size: 2.5rem;
@@ -56,7 +56,7 @@
     display: inline-block;
     max-width: 100%;
   }
-  .form-structure-child {
+  .form-structure-child-payment-PaymentFail {
     height: 5rem;
     width: 18.438rem;
     position: relative;
@@ -64,7 +64,7 @@
     background-color: #ff7c80;
     display: none;
   }
-  .try-agan {
+  .try-agan-payment-PaymentFail {
     flex: 1;
     position: relative;
     font-size: 2.25rem;
@@ -75,13 +75,13 @@
     text-align: center;
     z-index: 1;
   }
-  .form-structure,
-  .form-structure-wrapper {
+  .form-structure-payment-PaymentFail,
+  .form-structure-wrapper-payment-PaymentFail {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
-  .form-structure {
+  .form-structure-payment-PaymentFail {
     cursor: pointer;
     border: 0;
     padding: 1.562rem 1.125rem 1.937rem 1.375rem;
@@ -92,15 +92,15 @@
     box-sizing: border-box;
     white-space: nowrap;
   }
-  .form-structure:hover {
+  .form-structure-payment-PaymentFail:hover {
     background-color: #cc4a4d;
   }
-  .form-structure-wrapper {
+  .form-structure-wrapper-payment-PaymentFail {
     width: 87.563rem;
     justify-content: center;
     max-width: 100%;
   }
-  .desktop-19 {
+  .desktop-19-payment-PaymentFail {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -120,27 +120,27 @@
     font-family: Sora;
   }
   @media screen and (max-width: 1200px) {
-    .desktop-19 {
+    .desktop-19-payment-PaymentFail {
       padding-left: 5.938rem;
       padding-right: 5.938rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 1050px) {
-    .payment-failed {
+    .payment-failed-payment-PaymentFail {
       font-size: 2.375rem;
       line-height: 1.188rem;
     }
-    .the-payment-was-container {
+    .the-payment-was-container-payment-PaymentFail {
       font-size: 2rem;
       line-height: 1.188rem;
     }
   }
   @media screen and (max-width: 750px) {
-    .error-alert-parent {
+    .error-alert-parent-payment-PaymentFail {
       gap: 1.875rem;
     }
-    .desktop-19 {
+    .desktop-19-payment-PaymentFail {
       gap: 1.25rem;
       padding-left: 2.938rem;
       padding-right: 2.938rem;
@@ -148,18 +148,18 @@
     }
   }
   @media screen and (max-width: 450px) {
-    .payment-failed {
+    .payment-failed-payment-PaymentFail {
       font-size: 1.813rem;
       line-height: 0.875rem;
     }
-    .error-alert-parent {
+    .error-alert-parent-payment-PaymentFail {
       gap: 0.938rem;
     }
-    .the-payment-was-container {
+    .the-payment-was-container-payment-PaymentFail {
       font-size: 1.5rem;
       line-height: 0.875rem;
     }
-    .desktop-19 {
+    .desktop-19-payment-PaymentFail {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
       box-sizing: border-box;

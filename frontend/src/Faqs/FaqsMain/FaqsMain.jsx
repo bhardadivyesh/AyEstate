@@ -7,10 +7,10 @@ import "./FaqsMain.css";
 
 const FaqsMain = () => {
   return (
-    <div className="faqs">
+    <div className="faqs-faqsMain">
       <NavigationBar />
-      <main className="faqs-inner">
-        <section className="home-listings-company-blog-parent">
+      <main className="faqs-inner-faqsMain">
+        <section className="home-listings-company-blog-parent-faqsMain">
           <HomeListingsCompanyBlog />
           <PageLinks />
           <FrameComponent />

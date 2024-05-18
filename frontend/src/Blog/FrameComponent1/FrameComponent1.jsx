@@ -1,8 +1,6 @@
 import TreeLeaf from "../TreeLeaf/TreeLeaf";
 import StackElementData from "../StackElementData/StackElementData";
 import "./FrameComponent1.css";
-import firstImage from "../../assets/blogs/popularArticals/firstImage.png"
-import secondImage from "../../assets/blogs/popularArticals/secondImage.png"
 import { useState,useEffect } from "react";
 import axios from 'axios'
 
@@ -13,15 +11,13 @@ const FrameComponent1 = () => {
       setPopularArticals(res.data);
     });
   }, []);
-  console.log();
-  console.log(`http://localhost:1337${popularArticals[1]?.image[0]?.url}`);
   return (
-    <div className="tree-leaf-parent">
+    <div className="tree-leaf-parent-blog-Frame1">
       <TreeLeaf
         popularArticles="Popular Articles"
         weProvideBlogThatHelpStar="We provide blog that help start your career on AyEstate"
       />
-      <div className="array-element">
+      <div className="array-element-blog-Frame1">
         <StackElementData heapElementPriority={`http://localhost:1337${popularArticals[0]?.image[0].url}`} />
         <StackElementData
           heapElementPriority={`http://localhost:1337${popularArticals[1]?.image[0]?.url}`}

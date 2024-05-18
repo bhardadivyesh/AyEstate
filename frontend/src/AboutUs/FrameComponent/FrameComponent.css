@@ -1,11 +1,11 @@
-.title7 {
+.title7-aboutFrame {
     align-self: stretch;
     position: relative;
     letter-spacing: -0.02em;
     line-height: 1.75rem;
   }
-  .facebook-logowine-icon,
-  .netflix-logowine-icon {
+  .facebook-logowine-icon-aboutFrame,
+  .netflix-logowine-icon-aboutFrame {
     height: 8.125rem;
     width: 12.5rem;
     position: relative;
@@ -13,7 +13,7 @@
     flex-shrink: 0;
     min-height: 8.125rem;
   }
-  .amazon-company-logowine-icon {
+  .amazon-company-logowine-icon-aboutFrame {
     align-self: stretch;
     flex: 1;
     position: relative;
@@ -21,7 +21,7 @@
     overflow: hidden;
     max-height: 100%;
   }
-  .amazon-company-logowine-wrapper {
+  .amazon-company-logowine-wrapper-aboutFrame {
     height: 8.125rem;
     width: 13.944rem;
     display: flex;
@@ -31,46 +31,46 @@
     padding: 0 1.443rem 0 0;
     box-sizing: border-box;
   }
-  .g7433-icon,
-  .g7451-icon {
+  .g7433-icon-aboutFrame,
+  .g7451-icon-aboutFrame {
     align-self: stretch;
     position: relative;
   }
-  .g7433-icon {
+  .g7433-icon-aboutFrame {
     width: 3.063rem;
     max-height: 100%;
     min-height: 2.125rem;
   }
-  .g7451-icon {
+  .g7451-icon-aboutFrame {
     height: 1.888rem;
     max-width: 100%;
     overflow: hidden;
     flex-shrink: 0;
   }
-  .g7451-wrapper {
+  .g7451-wrapper-aboutFrame {
     flex: 1;
     flex-direction: column;
     padding: 0.081rem 0 0;
   }
-  .frame-wrapper1,
-  .g7433-parent,
-  .g7451-wrapper {
+  .frame-wrapper1-aboutFrame,
+  .g7433-parent-aboutFrame,
+  .g7451-wrapper-aboutFrame {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .g7433-parent {
+  .g7433-parent-aboutFrame {
     align-self: stretch;
     flex-direction: row;
     gap: 0.306rem;
   }
-  .frame-wrapper1 {
+  .frame-wrapper1-aboutFrame {
     width: 11.056rem;
     flex-direction: column;
     padding: 3rem 1.443rem 0 0;
     box-sizing: border-box;
   }
-  .google-logowine-1-icon {
+  .google-logowine-1-icon-aboutFrame {
     height: 8.125rem;
     width: 12.469rem;
     position: relative;
@@ -78,8 +78,8 @@
     flex-shrink: 0;
     min-height: 8.125rem;
   }
-  .facebook-logowine-parent,
-  .title-parent {
+  .facebook-logowine-parent-aboutFrame,
+  .title-parent-aboutFrame {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -87,7 +87,7 @@
     justify-content: center;
     gap: 3.125rem;
   }
-  .title-parent {
+  .title-parent-aboutFrame {
     flex-direction: column;
     justify-content: flex-start;
     gap: 1.5rem;
@@ -97,12 +97,12 @@
     font-family: Sora;
   }
   @media screen and (max-width: 1350px) {
-    .facebook-logowine-parent {
+    .facebook-logowine-parent-aboutFrame {
       flex-wrap: wrap;
     }
   }
   @media screen and (max-width: 800px) {
-    .facebook-logowine-parent {
+    .facebook-logowine-parent-aboutFrame {
       gap: 1.563rem;
     }
   }

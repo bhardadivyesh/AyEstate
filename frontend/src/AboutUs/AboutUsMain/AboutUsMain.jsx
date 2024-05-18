@@ -9,11 +9,11 @@ import "./AboutUsMain.css";
 import frameImage from "../../assets/aboutUs/frameimage.png"
 const AboutUs = () => {
   return (
-    <div className="about-us1">
+    <div className="about-us1-aboutMain">
       <NavigationBar />
-      <section className="summarizer-wrapper">
+      <section className="summarizer-wrapper-aboutMain">
         <img
-          className="summarizer-icon"
+          className="summarizer-icon-aboutMain"
           loading="lazy"
           alt=""
           src={frameImage}
@@ -21,21 +21,21 @@ const AboutUs = () => {
       </section>
       <FrameComponent2 />
       <FrameComponent1 />
-      <section className="benefits-section">
-        <button className="label">
-          <div className="label-title">Achievement</div>
+      <section className="benefits-section-aboutMain">
+        <button className="label-aboutMain">
+          <div className="label-title-aboutMain">Achievement</div>
         </button>
-        <div className="frame-parent">
-          <div className="title-wrapper">
-            <h1 className="title1">Our award this year</h1>
+        <div className="frame-parent-aboutMain">
+          <div className="title-wrapper-aboutMain">
+            <h1 className="title1-aboutMain">Our award this year</h1>
           </div>
-          <div className="description">
+          <div className="description-aboutMain">
             We’re happy to receive this award so that it motivates us to grow
             and provide the best service for you.
           </div>
         </div>
         <Paste />
-        <div className="divider" />
+        <div className="divider-aboutMain" />
         <FrameComponent />
       </section>
       <CTASection />

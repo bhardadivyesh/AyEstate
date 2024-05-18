@@ -1,54 +1,53 @@
 import React from 'react'
-import "./PendingStatus.css"
+import { useContext } from 'react'
+import statusContext from '../statusContext'
 
 const PendingStatus = () => {
+  const value = useContext(statusContext)
+  const handleActiveStatusClick = (listingData) =>{
+      value.setPreviewPageRender(true)
+  }
   return (
-    <div className="frame-wrapper37">
-    <div className="frame-parent70">
-      <div className="blank-wrapper">
-        <div className="blank">{`1  `}</div>
-      </div>
-      <div className="karan-home">
-        <div className="karan">Karan</div>
-      </div>
-      <div className="karan-home1">
-        <div className="home11">Home</div>
-      </div>
-      <div className="frame-wrapper38">
-        <div className="jakarta-parent">
-          <div className="jakarta1">Jakarta</div>
-          <div className="frame-parent71">
-            <div className="cozy-xcottage-wrapper">
-              <div className="cozy-xcottage">Cozy xCottage</div>
-            </div>
-            <div className="div31">$20021</div>
-            <div className="wrapper2">
-              <div className="div32">2024-04-02</div>
-            </div>
+    <>
+     <div className="rectangle-parent40-main">
+          <div className="group-child15-main" />
+          {/* <div className="group-child16-main" /> */}
+          <div className="div27-main">
+            <div className="child-main" />
+            <div className="div28-main">1</div>
+            <div className="home2-main">Home</div>
+            <div className="jakarta1-main">Jakarta</div>
+            <div className="cozy-xcottage-main">Cozy xCottage</div>
+            <div className="div29-main">$20021</div>
+            <div className="div30-main">2024-04-02</div>
+            <div className="karan-main">Karan</div>
+            <select className="rectangle-parent41-main">
+                <option value="" className='option'>change status</option>
+                <option value="" className='option'>pending</option> 
+                <option value="" className='option'>active</option>
+                <option value="" className='option'>reject</option>
+            </select>
+            <div className="pending1-main">pending</div>
+            <button type='submit' className="rectangle-parent42-main group-child18-main"  onClick={()=>handleActiveStatusClick("data")}>
+              {/* <div className="group-child18-main" /> */}
+              <span className="preview-main">Preview</span>
+            </button>
+          </div>
+          <div className="id-main">
+            <div className="id1-main">Id</div>
+            <div className="categories1-main">Categories</div>
+            <div className="location1-main">Location</div>
+            <div className="products40-main">Products</div>
+            <div className="price-main">Price</div>
+            <div className="date-main">Date</div>
+            <div className="id-child-main" />
+            <div className="vendor2-main">Vendor</div>
+            <div className="request-status-main">Request status</div>
+            <div className="more-detail-main">More detail</div>
+            <div className="action1-main">Action</div>
           </div>
         </div>
-      </div>
-      <div className="pending-wrapper">
-        <div className="pending1">PENDING</div>
-      </div>
-      <div className="frame-parent72">
-        <div className="frame-wrapper39">
-          <div className="rectangle-parent64">
-            <div className="frame-child103" />
-            <div className="preview">Preview</div>
-          </div>
-        </div>
-        <div className="frame-parent73">
-            <select className="rectangle-parent65">
-                <option value="" className='frame-wrapper40'>CHANGE STATUS</option>
-                <option value="" className='frame-wrapper40'>PENDING</option>
-                <option value="" className='frame-wrapper40'>ACTIVE</option>
-                <option value="" className='frame-wrapper40'>REJECT</option>
-                </select>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
 

@@ -1,26 +1,26 @@
-.days,
-.plan-validity {
+.days-payment-Frame,
+.plan-validity-payment-Frame {
   margin: 0;
 }
-.days-plan-validity-container {
+.days-plan-validity-container-payment-Frame {
   width: 26.5rem;
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.top-slot-listing,
-.x-more-visicility {
+.top-slot-listing-payment-Frame,
+.x-more-visicility-payment-Frame {
   margin: 0;
 }
-.top-slot-listing-container {
+.top-slot-listing-container-payment-Frame {
   flex: 1;
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.top-slot-listing-for-5x-more-v-wrapper {
+.top-slot-listing-for-5x-more-v-wrapper-payment-Frame {
   width: 26.625rem;
   display: flex;
   flex-direction: row;
@@ -30,11 +30,11 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.relationship-manager,
-.super-fast-closure {
+.relationship-manager-payment-Frame,
+.super-fast-closure-payment-Frame {
   margin: 0;
 }
-.relationship-manager-super-container {
+.relationship-manager-super-container-payment-Frame {
   align-self: stretch;
   height: 3.188rem;
   position: relative;
@@ -43,42 +43,42 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.frame-parent53 {
+.frame-parent53-payment-Frame {
   flex: 1;
   flex-direction: column;
   gap: 3.625rem;
 }
-.days-plan-validity-parent,
-.frame-parent53,
-.frame-wrapper30 {
+.days-plan-validity-parent-payment-Frame,
+.frame-parent53-payment-Frame,
+.frame-wrapper30-payment-Frame {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
 }
-.frame-wrapper30 {
+.frame-wrapper30-payment-Frame {
   align-self: stretch;
   flex-direction: row;
   padding: 0 0 0 0.062rem;
   box-sizing: border-box;
 }
-.days-plan-validity-parent {
+.days-plan-validity-parent-payment-Frame {
   width: 29.813rem;
   flex-direction: column;
   gap: 3.25rem;
 }
-.guaranteed-tenants,
-.or-100-moneyback {
+.guaranteed-tenants-payment-Frame,
+.or-100-moneyback-payment-Frame {
   margin: 0;
 }
-.guaranteed-tenants-or-100-container {
+.guaranteed-tenants-or-100-container-payment-Frame {
   flex: 1;
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.guaranteed-tenants-or-100-mon-wrapper {
+.guaranteed-tenants-or-100-mon-wrapper-payment-Frame {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -88,18 +88,18 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.property-promotion-on,
-.website {
+.property-promotion-on-payment-Frame,
+.website-payment-Frame {
   margin: 0;
 }
-.property-promotion-on-website-container {
+.property-promotion-on-website-container-payment-Frame {
   flex: 1;
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.property-promotion-on-website-wrapper {
+.property-promotion-on-website-wrapper-payment-Frame {
   width: 26.75rem;
   height: 3.75rem;
   display: flex;
@@ -109,11 +109,11 @@
   padding: 0 0 0 0.25rem;
   box-sizing: border-box;
 }
-.photoshoot-of,
-.your-property {
+.photoshoot-of-payment-Frame,
+.your-property-payment-Frame {
   margin: 0;
 }
-.photoshoot-of-your-property-container {
+.photoshoot-of-your-property-container-payment-Frame {
   align-self: stretch;
   height: 3.188rem;
   position: relative;
@@ -121,44 +121,44 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.frame-parent54,
-.frame-parent55,
-.frame-wrapper31 {
+.frame-parent54-payment-Frame,
+.frame-parent55-payment-Frame,
+.frame-wrapper31-payment-Frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent55 {
+.frame-parent55-payment-Frame {
   width: 26.75rem;
   height: 10.563rem;
   gap: 3.625rem;
 }
-.frame-parent54,
-.frame-wrapper31 {
+.frame-parent54-payment-Frame,
+.frame-wrapper31-payment-Frame {
   max-width: 100%;
 }
-.frame-parent54 {
+.frame-parent54-payment-Frame {
   align-self: stretch;
   gap: 3.125rem;
 }
-.frame-wrapper31 {
+.frame-wrapper31-payment-Frame {
   width: 29.188rem;
   padding: 0.125rem 2.187rem 0 0;
   box-sizing: border-box;
 }
-.field-assistant,
-.personal {
+.field-assistant-payment-Frame,
+.personal-payment-Frame {
   margin: 0;
 }
-.personal-field-assistant {
+.personal-field-assistant-payment-Frame {
   flex: 1;
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.personal-field-assistant-wrapper {
+.personal-field-assistant-wrapper-payment-Frame {
   width: 26.563rem;
   height: 3.75rem;
   display: flex;
@@ -168,20 +168,20 @@
   padding: 0 0 0 0.062rem;
   box-sizing: border-box;
 }
-.home-delivered,
-.rental-agreement {
+.home-delivered-payment-Frame,
+.rental-agreement-payment-Frame {
   margin: 0;
 }
-.rental-agreement-home-delivere-container {
+.rental-agreement-home-delivere-container-payment-Frame {
   align-self: stretch;
   position: relative;
   z-index: 2;
 }
-.number,
-.privacy-of-your {
+.number-payment-Frame,
+.privacy-of-your-payment-Frame {
   margin: 0;
 }
-.privacy-of-your-container {
+.privacy-of-your-container-payment-Frame {
   align-self: stretch;
   height: 3.188rem;
   position: relative;
@@ -189,25 +189,25 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.frame-parent56,
-.frame-wrapper32 {
+.frame-parent56-payment-Frame,
+.frame-wrapper32-payment-Frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent56 {
+.frame-parent56-payment-Frame {
   align-self: stretch;
   gap: 3.25rem;
   max-width: 100%;
 }
-.frame-wrapper32 {
+.frame-wrapper32-payment-Frame {
   height: 17.25rem;
   width: 26.563rem;
   padding: 0.062rem 0 0;
   box-sizing: border-box;
 }
-.profileimg {
+.profileimg-payment-Frame {
   position: absolute;
   top: 0;
   left: 0;
@@ -220,8 +220,8 @@
   height: 100%;
   z-index: 1;
 }
-.customer-service-3-1,
-.schedule-1-icon {
+.customer-service-3-1-payment-Frame,
+.schedule-1-icon-payment-Frame {
   position: absolute;
   top: 2.313rem;
   left: 4.188rem;
@@ -230,15 +230,15 @@
   object-fit: contain;
   z-index: 2;
 }
-.customer-service-3-1 {
+.customer-service-3-1-payment-Frame {
   top: 16.063rem;
   left: 4.25rem;
   width: 3.063rem;
   height: 3.313rem;
 }
-.megaphone-1-icon,
-.money-back-1-icon,
-.photoshoot-1-icon {
+.megaphone-1-icon-payment-Frame,
+.money-back-1-icon-payment-Frame,
+.photoshoot-1-icon-payment-Frame {
   position: absolute;
   top: 2rem;
   left: 40.375rem;
@@ -247,23 +247,23 @@
   object-fit: contain;
   z-index: 2;
 }
-.megaphone-1-icon,
-.photoshoot-1-icon {
+.megaphone-1-icon-payment-Frame,
+.photoshoot-1-icon-payment-Frame {
   top: 8.75rem;
   left: 40.313rem;
   width: 3.188rem;
   height: 3.625rem;
 }
-.photoshoot-1-icon {
+.photoshoot-1-icon-payment-Frame {
   top: 16.125rem;
   left: 40.375rem;
   width: 4.313rem;
   height: 3.25rem;
 }
-.networking-1-icon,
-.padlock-1-icon,
-.rent-1-icon,
-.smart-home-1-icon {
+.networking-1-icon-payment-Frame,
+.padlock-1-icon-payment-Frame,
+.rent-1-icon-payment-Frame,
+.smart-home-1-icon-payment-Frame {
   position: absolute;
   top: 8.75rem;
   left: 75.875rem;
@@ -272,26 +272,26 @@
   object-fit: contain;
   z-index: 2;
 }
-.networking-1-icon,
-.padlock-1-icon,
-.smart-home-1-icon {
+.networking-1-icon-payment-Frame,
+.padlock-1-icon-payment-Frame,
+.smart-home-1-icon-payment-Frame {
   top: 2.063rem;
   height: 3.563rem;
 }
-.padlock-1-icon,
-.smart-home-1-icon {
+.padlock-1-icon-payment-Frame,
+.smart-home-1-icon-payment-Frame {
   top: 9.125rem;
   left: 4.188rem;
   width: 3.188rem;
   height: 3.188rem;
 }
-.padlock-1-icon {
+.padlock-1-icon-payment-Frame {
   top: 15.813rem;
   left: 75.813rem;
   width: 3.563rem;
   height: 3.5rem;
 }
-.subscription-services-containe {
+.subscription-services-containe-payment-Frame {
   height: 100%;
   width: 105.313rem;
   position: absolute;
@@ -300,7 +300,7 @@
   bottom: 0;
   left: 0;
 }
-.frame-footer {
+.frame-footer-payment-Frame {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -318,50 +318,50 @@
   font-family: Sora;
 }
 @media screen and (max-width: 1825px) {
-  .frame-footer {
+  .frame-footer-payment-Frame {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1350px) {
-  .frame-footer {
+  .frame-footer-payment-Frame {
     padding-left: 5.188rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 925px) {
-  .frame-parent53 {
+  .frame-parent53-payment-Frame {
     gap: 1.813rem;
   }
-  .days-plan-validity-parent {
+  .days-plan-validity-parent-payment-Frame {
     gap: 1.625rem;
   }
-  .frame-footer {
+  .frame-footer-payment-Frame {
     padding-left: 2.563rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .days-plan-validity-container,
-  .top-slot-listing-container {
+  .days-plan-validity-container-payment-Frame,
+  .top-slot-listing-container-payment-Frame {
     font-size: 1.188rem;
   }
-  .relationship-manager-super-container {
+  .relationship-manager-super-container-payment-Frame {
     font-size: 1.125rem;
   }
-  .guaranteed-tenants-or-100-container,
-  .photoshoot-of-your-property-container,
-  .property-promotion-on-website-container {
+  .guaranteed-tenants-or-100-container-payment-Frame,
+  .photoshoot-of-your-property-container-payment-Frame,
+  .property-promotion-on-website-container-payment-Frame {
     font-size: 1.188rem;
   }
-  .frame-parent54 {
+  .frame-parent54-payment-Frame {
     gap: 1.563rem;
   }
-  .personal-field-assistant,
-  .privacy-of-your-container,
-  .rental-agreement-home-delivere-container {
+  .personal-field-assistant-payment-Frame,
+  .privacy-of-your-container-payment-Frame,
+  .rental-agreement-home-delivere-container-payment-Frame {
     font-size: 1.188rem;
   }
-  .frame-parent56 {
+  .frame-parent56-payment-Frame {
     gap: 1.625rem;
   }
 }

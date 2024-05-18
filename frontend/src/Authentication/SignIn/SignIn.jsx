@@ -46,33 +46,33 @@ export default function SignIn() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="desktop-7">
-          <div className="desktop-7-inner">
-            <div className="rectangle-parent29">
+        <div className="desktop-7-signIn">
+          <div className="desktop-7-inner-signIn">
+            <div className="rectangle-parent29-signIn">
               <img
-                className="frame-child39"
+                className="frame-child39-signIn"
                 loading="lazy"
                 alt=""
                 src={sideImage}
               />
-              <img className="frame-child40" alt="" src={sideImage} />
+              <img className="frame-child40-signIn" alt="" src={sideImage} />
             </div>
           </div>
-          <div className="desktop-7-child">
-            <div className="frame-parent17">
-              <button className="rectangle-parent30">
-                <div className="frame-child41" />
+          <div className="desktop-7-child-signIn">
+            <div className="frame-parent17-signIn">
+              <button className="rectangle-parent30-signIn">
+                <div className="frame-child41-signIn" />
                 <div
-                  className="log-in5"
+                  className="log-in5-signIn"
                   onClick={() => value.setRegistrationForm("login")}
                 >
                   Log in
                 </div>
               </button>
-              <button className="rectangle-parent31">
-                <div className="frame-child42" />
+              <button className="rectangle-parent31-signIn">
+                <div className="frame-child42-signIn" />
                 <div
-                  className="sign-up11"
+                  className="sign-up11-signIn"
                   onClick={() => value.setRegistrationForm("register")}
                 >
                   Registration
@@ -80,30 +80,30 @@ export default function SignIn() {
               </button>
             </div>
           </div>
-          <div className="email-field1">
-            <div className="ayestate-wrapper3">
-              <h1 className="ayestate6">AyEstate</h1>
+          <div className="email-field1-signIn">
+            <div className="ayestate-wrapper3-signIn">
+              <h1 className="ayestate6-signIn">AyEstate</h1>
             </div>
             {/* sign in form */}
-            <div className="group-div">
-              <div className="frame-child61" />
-              <div className="log-in-wrapper">
-                <h1 className="log-in6">Log in</h1>
+            <div className="group-div-signIn">
+              <div className="frame-child61-signIn" />
+              <div className="log-in-wrapper-signIn">
+                <h1 className="log-in6-signIn">Log in</h1>
               </div>
 
-              <div className="email-phone-reqd-parent">
-                <div className="email-phone-reqd">
+              <div className="email-phone-reqd-parent-signIn">
+                <div className="email-phone-reqd-signIn">
                   <input
-                    className="email-phone-reqd-child"
+                    className="email-phone-reqd-child-signIn"
                     type="text"
                     placeholder="Email phone (Required)*"
                     {...register("email", { required: true })}
                   />
                 </div>
                 {continueButton == false ? (
-                  <div className="continue-btn">
+                  <div className="continue-btn-signIn">
                     <button
-                      className="rectangle-parent43 frame-child62 continue"
+                      className="rectangle-parent43-signIn frame-child62-signIn continue-signIn"
                       onClick={HandleContinueClick}
                     >
                       continue
@@ -114,30 +114,30 @@ export default function SignIn() {
                 )}
                 {continueButton && (
                   <>
-                    <div className="frame-wrapper17">
-                      <div className="frame-parent42">
-                        <div className="frame-parent43">
-                          <div className="generate-otp-parent">
-                            <div className="generate-otp">Generate OTP</div>
+                    <div className="frame-wrapper17-signIn">
+                      <div className="frame-parent42-signIn">
+                        <div className="frame-parent43-signIn">
+                          <div className="generate-otp-parent-signIn">
+                            <div className="generate-otp-signIn">Generate OTP</div>
                           </div>
-                          <div className="frame-wrapper18">
+                          <div className="frame-wrapper18-signIn">
                             <input
                               type="radio"
                               name="otp"
-                              className="icon-parent"
+                              className="icon-parent-signIn"
                               onChange={() => handleRadiobutton("otpGenerate")}
                             />
                           </div>
                         </div>
-                        <div className="frame-parent44">
-                          <div className="ive-password-parent">
-                            <div className="ive-password">I’ve Password</div>
-                            <div className="ive-password1">I’ve Password</div>
+                        <div className="frame-parent44-signIn">
+                          <div className="ive-password-parent-signIn">
+                            <div className="ive-password-signIn">I’ve Password</div>
+                            <div className="ive-password1-signIn">I’ve Password</div>
                           </div>
                           <input
                             type="radio"
                             name="otp"
-                            className="icon-container"
+                            className="icon-container-signIn"
                             onChange={() =>
                               handleRadiobutton("passwordGenerate")
                             }
@@ -145,31 +145,31 @@ export default function SignIn() {
                         </div>
                       </div>
                     </div>
-                    <div className="frame-wrapper19">
-                      <div className="frame-parent45">
-                        <div className="enter-otp-here-parent">
-                          <div className="enter-otp-here-container">
+                    <div className="frame-wrapper19-signIn">
+                      <div className="frame-parent45-signIn">
+                        <div className="enter-otp-here-parent-signIn">
+                          <div className="enter-otp-here-container-signIn">
                             <span>Enter</span>
-                            <span className="span2">{` `}</span>
+                            <span className="span2-signIn">{` `}</span>
                             <span>OTP here</span>
                           </div>
                         </div>
                         {/* password */}
                         {contentStateRender == "otpGenerate" ? (
-                          <div className="frame-wrapper20">
-                            <div className="rectangle-parent44">
-                              <input type="text" className="frame-child63" />
-                              <input type="text" className="frame-child64" />
-                              <input type="text" className="frame-child65" />
-                              <div className="rectangle-wrapper2">
-                                <input type="text" className="frame-child66" />
+                          <div className="frame-wrapper20-signIn">
+                            <div className="rectangle-parent44-signIn">
+                              <input type="text" className="frame-child63-signIn" />
+                              <input type="text" className="frame-child64-signIn" />
+                              <input type="text" className="frame-child65-signIn" />
+                              <div className="rectangle-wrapper2-signIn">
+                                <input type="text" className="frame-child66-signIn" />
                               </div>
                             </div>
                           </div>
                         ) : (
-                          <div className="parentClass">
-                          <input type={passwordType} className="rectangle-parent34" placeholder="Enter Password" {...register("password")} />
-                          <input type="checkbox" className="checkbox" onChange={handleCheckboxChange}/>
+                          <div className="parentClass-signIn">
+                          <input type={passwordType} className="rectangle-parent34-signIn" placeholder="Enter Password" {...register("password")} />
+                          <input type="checkbox" className="checkbox-signIn" onChange={handleCheckboxChange}/>
                           </div>
                         )}
                       </div>
@@ -178,10 +178,10 @@ export default function SignIn() {
                 )}
               </div>
               {continueButton == true ? (
-                <div className="frame-wrapper21">
-                  <button className="rectangle-parent45">
-                    <div className="frame-child67" />
-                    <div className="log-in7">Log in</div>
+                <div className="frame-wrapper21-signIn">
+                  <button className="rectangle-parent45-signIn">
+                    <div className="frame-child67-signIn" />
+                    <div className="log-in7-signIn">Log in</div>
                   </button>
                 </div>
               ) : (

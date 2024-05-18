@@ -48,14 +48,6 @@ const ListingMain = () => {
       setProductData(res.data);
     });
   }, []);
-  // useEffect(() => {
-  //   axios.get("http://localhost:3000/get-listing")
-  //     .then((res) => {
-  //       setProductData(res.data);
-  //     })
-  //     .catch((error) => {
-  //     });
-  // }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -127,18 +119,18 @@ const ListingMain = () => {
     }
   };
   return (
-    <div className="main-div">
+    <div className="main-div-listing-listingMain">
       <NavigationBar />
-      <main className="main-tag">
-        <section className="section-tag">
+      <main className="main-tag-listingMain">
+        <section className="section-tag-listingMain">
           <FrameComponent
             productCount={productData?.length}
             category={selectedCategories}
             location={selectedLocation}
           />
-          <div className="section-firstDiv">
+          <div className="section-firstDiv-listingMain">
             <div
-              className="filter-option-firstDiv"
+              className="filter-option-firstDiv-listingMain"
               style={{
                 height:
                   allCategoryToggle && allLocationToggle
@@ -150,48 +142,48 @@ const ListingMain = () => {
                     : "860px",
               }}
             >
-              <div className="filter-option-secondDiv" />
-              <h3 className="filter-option">Filter Option</h3>
-              <div className="filter-after-first-div">
-                <div className="filter-after-second-div" />
+              <div className="filter-option-secondDiv-listingMain" />
+              <h3 className="filter-option-listingMain">Filter Option</h3>
+              <div className="filter-after-first-div-listingMain">
+                <div className="filter-after-second-div-listingMain" />
               </div>
-              <div className="filter-after-third-div" />
-              <div className="filter-after-fourth-div">
-                <div className="filter-after-fifth-div">
-                  <div className="filter-after-sixth-div">
-                    <b className="location">Location</b>
-                    <img className="down-arrow" alt="" src={arrowDown} />
+              <div className="filter-after-third-div-listingMain" />
+              <div className="filter-after-fourth-div-listingMain">
+                <div className="filter-after-fifth-div-listingMain">
+                  <div className="filter-after-sixth-div-listingMain">
+                    <b className="location-listingMain">Location</b>
+                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
                   </div>
-                  <div className="location-after-first-div">
-                    <div className="location-after-second-div">
+                  <div className="location-after-first-div-listingMain">
+                    <div className="location-after-second-div-listingMain">
                       <input
-                        className="checkbox"
+                        className="checkbox-listingMain"
                         type="checkbox"
                         value="Bandung"
                         checked={selectedLocation === "Bandung"}
                         onChange={() => handleCheckboxChange("Bandung")}
                       />
-                      <div className="Bandung-div">Bandung</div>
+                      <div className="Bandung-div-listingMain">Bandung</div>
                     </div>
-                    <div className="Bandung-after-first-div">
+                    <div className="Bandung-after-first-div-listingMain">
                       <input
-                        className="checkbox"
+                        className="checkbox-listingMain"
                         type="checkbox"
                         value="Jakarta"
                         checked={selectedLocation === "Jakarta"}
                         onChange={() => handleCheckboxChange("Jakarta")}
                       />
-                      <div className="jakarta-div">Jakarta</div>
+                      <div className="jakarta-div-listingMain">Jakarta</div>
                     </div>
-                    <div className="jakarta-afiter-first-div">
+                    <div className="jakarta-afiter-first-div-listingMain">
                       <input
-                        className="checkbox"
+                        className="checkbox-listingMain"
                         type="checkbox"
                         value="Bali"
                         checked={selectedLocation === "Bali"}
                         onChange={() => handleCheckboxChange("Bali")}
                       />
-                      <div className="bali-after-first-div">Bali</div>
+                      <div className="bali-after-first-div-listingMain">Bali</div>
                     </div>
                     {allLocationToggle &&
                       productData
@@ -210,72 +202,72 @@ const ListingMain = () => {
                         .map((location, index) => {
                           return (
                             <div
-                              className="location-loop-first-div"
+                              className="location-loop-first-div-listingMain"
                               key={index}
                             >
                               <input
-                                className="checkbox"
+                                className="checkbox-listingMain"
                                 type="checkbox"
                                 value={location}
                                 checked={selectedLocation === location}
                                 onChange={() => handleCheckboxChange(location)}
                               />
-                              <div className="location-loop-second-loop">
+                              <div className="location-loop-second-loop-listingMain">
                                 {location}
                               </div>
                             </div>
                           );
                         })}
                   </div>
-                  <div className="showAll-btn" onClick={handleShowAllClick}>
-                    {allLocationToggle == true ? "Hide" : "show All"}
+                  <div className="showAll-btn-listingMain" onClick={handleShowAllClick}>
+                    {allLocationToggle == true ? "Hide" : "Show All"}
                   </div>
                 </div>
               </div>
-              <div className="showAll-btn-after-first-div">
-                <div className="showAll-btn-after-second-div" />
+              <div className="showAll-btn-after-first-div-listingMain">
+                <div className="showAll-btn-after-second-div-listingMain" />
               </div>
-              <div className="showAll-btn-after-third-div">
-                <div className="showAll-btn-after-fourth-div">
-                  <b className="category">Category</b>
-                  <div className="category-after-first-div">
-                    <img className="down-arrow" alt="" src={arrowDown} />
+              <div className="showAll-btn-after-third-div-listingMain">
+                <div className="showAll-btn-after-fourth-div-listingMain">
+                  <b className="category-listingMain">Category</b>
+                  <div className="category-after-first-div-listingMain">
+                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
                   </div>
                 </div>
-                <div className="category-after-first-div">
+                <div className="category-after-first-div-listingMain">
                   <input
-                    className="checkbox"
+                    className="checkbox-listingMain"
                     type="checkbox"
                     value="House"
                     checked={selectedCategories === "House"}
                     onChange={() => handleCategoryChange("House")}
                   />
-                  <div className="house-after-first-div">
-                    <div className="house">House</div>
+                  <div className="house-after-first-div-listingMain">
+                    <div className="house-listingMain">House</div>
                   </div>
                 </div>
-                <div className="house-after-second-div">
+                <div className="house-after-second-div-listingMain">
                   <input
-                    className="checkbox"
+                    className="checkbox-listingMain"
                     type="checkbox"
                     value="Villa"
                     checked={selectedCategories === "Villa"}
                     onChange={() => handleCategoryChange("Villa")}
                   />
-                  <div className="villa-after-first-div">
-                    <div className="villa">Villa</div>
+                  <div className="villa-after-first-div-listingMain">
+                    <div className="villa-listingMain">Villa</div>
                   </div>
                 </div>
-                <div className="villa-after-second-div">
+                <div className="villa-after-second-div-listingMain">
                   <input
-                    className="checkbox"
+                    className="checkbox-listingMain"
                     type="checkbox"
                     value="Apartment"
                     checked={selectedCategories === "Apartment"}
                     onChange={() => handleCategoryChange("Apartment")}
                   />
-                  <div className="appartment-after-first-div">
-                    <div className="appartment">Apartment</div>
+                  <div className="appartment-after-first-div-listingMain">
+                    <div className="appartment-listingMain">Apartment</div>
                   </div>
                 </div>
                 {allCategoryToggle &&
@@ -295,50 +287,50 @@ const ListingMain = () => {
                     }, [])
                     .map((category, index) => {
                       return (
-                        <div key={index} className="allCategory-toggle">
+                        <div key={index} className="allCategory-toggle-listingMain">
                           <input
-                            className="checkbox"
+                            className="checkbox-listingMain"
                             type="checkbox"
                             value={category}
                             checked={selectedCategories === category}
                             onChange={() => handleCategoryChange(category)}
                           />
-                          <div className="allCategory-after-first-div">
+                          <div className="allCategory-after-first-div-listingMain">
                             {category}
                           </div>
                         </div>
                       );
                     })}
                 <div
-                  className="allCategort-btn"
+                  className="allCategort-btn-listingMain"
                   onClick={handlaAllCateforiesClick}
                 >
                   {allCategoryToggle ? "Hide" : "Show All Categories"}
                 </div>
               </div>
-              <div className="allCategort-btn-after-first-div">
-                <div className="allCategort-btn-after-second-div" />
+              <div className="allCategort-btn-after-first-div-listingMain">
+                <div className="allCategort-btn-after-second-div-listingMain" />
               </div>
-              <div className="allCategort-btn-after-third-div">
-                <div className="allCategort-btn-after-fourth-div">
-                  <b className="priceRange">Price Range</b>
-                  <div className="priceRange-after-first-div">
-                    <img className="down-arrow" alt="" src={arrowDown} />
+              <div className="allCategort-btn-after-third-div-listingMain">
+                <div className="allCategort-btn-after-fourth-div-listingMain">
+                  <b className="priceRange-listingMain">Price Range</b>
+                  <div className="priceRange-after-first-div-listingMain">
+                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
                   </div>
                 </div>
-                <div className="down-arrow-after-first-div">
-                  <div className="down-arrow-after-second-div" />
-                  <div className="down-arrow-after-third-div">
-                    <div className="usd-one">USD</div>
-                    <div className="usd-after-first-div">
-                      <img className="down-arrow" alt="" src={arrowDown} />
+                <div className="down-arrow-after-first-div-listingMain">
+                  <div className="down-arrow-after-second-div-listingMain" />
+                  <div className="down-arrow-after-third-div-listingMain">
+                    <div className="usd-one-listingMain">USD</div>
+                    <div className="usd-after-first-div-listingMain">
+                      <img className="down-arrow-listingMain" alt="" src={arrowDown} />
                     </div>
-                    <div className="usd-after-second-div">
-                      <div className="usd-after-third-div" />
+                    <div className="usd-after-second-div-listingMain">
+                      <div className="usd-after-third-div-listingMain" />
                     </div>
                   </div>
                   <input
-                    className="minprice-input"
+                    className="minprice-input-listingMain"
                     type="number"
                     step="1"
                     placeholder="Minimum price"
@@ -346,19 +338,19 @@ const ListingMain = () => {
                     onChange={handleMinInputChange}
                   />
                 </div>
-                <div className="minprice-input-after-first-div">
-                  <div className="minprice-input-after-second-div" />
-                  <div className="minprice-input-after-third-div">
-                    <div className="usd-two">USD</div>
-                    <div className="minprice-input-after-fifth-div">
-                      <img className="down-arrow" alt="" src={arrowDown} />
+                <div className="minprice-input-after-first-div-listingMain">
+                  <div className="minprice-input-after-second-div-listingMain" />
+                  <div className="minprice-input-after-third-div-listingMain">
+                    <div className="usd-two-listingMain">USD</div>
+                    <div className="minprice-input-after-fifth-div-listingMain">
+                      <img className="down-arrow-listingMain" alt="" src={arrowDown} />
                     </div>
-                    <div className="max-input-first-div">
-                      <div className="max-input-second-div" />
+                    <div className="max-input-first-div-listingMain">
+                      <div className="max-input-second-div-listingMain" />
                     </div>
                   </div>
                   <input
-                    className="maxnumber-input"
+                    className="maxnumber-input-listingMain"
                     type="number"
                     step="1"
                     placeholder="Maximum price"
@@ -366,25 +358,25 @@ const ListingMain = () => {
                     onChange={handleMaxChange}
                   />
                 </div>
-                <div className="first-price-filter-first-div">
+                <div className="first-price-filter-first-div-listingMain">
                   <div
-                    className="first-price-filter"
+                    className="first-price-filter-listingMain"
                     onClick={() => handlePriceClick(0, 5000)}
                   >
                     $0 - $5,000
                   </div>
                 </div>
-                <div className="second-price-filter-first-div">
+                <div className="second-price-filter-first-div-listingMain">
                   <div
-                    className="second-price-filter"
+                    className="second-price-filter-listingMain"
                     onClick={() => handlePriceClick(5000, 50000)}
                   >
                     $5,000 - $50,000
                   </div>
                 </div>
-                <button className="third-price-filter-first-div">
+                <button className="third-price-filter-first-div-listingMain">
                   <div
-                    className="third-price-filter"
+                    className="third-price-filter-listingMain"
                     onClick={() => handlePriceClick(50000)}
                   >
                     {`> $50,000`}
@@ -404,15 +396,15 @@ const ListingMain = () => {
         </section>
       </main>
       <div>
-        <div className="pagination">
+        <div className="pagination-listingMain">
           {currentPage > 1 && (
-            <button onClick={previousPage} className="previous-btn">
+            <button onClick={previousPage} className="previous-btn-listingMain">
               Previous
             </button>
           )}
           {generatePageButtons()}
           {currentPage < totalPages && (
-            <button className="next-btn" onClick={nextPage}>
+            <button className="next-btn-listingMain" onClick={nextPage}>
               Next
             </button>
           )}

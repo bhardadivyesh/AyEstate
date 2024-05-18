@@ -8,14 +8,14 @@ const TreeLeaf = ({ popularArticles, weProvideBlogThatHelpStar }) => {
     navigate('/resent-articals')
   }
   return (
-    <div className="tree-leaf">
-      <div className="popular-articles-parent">
-        <h2 className="popular-articles">{popularArticles}</h2>
-        <div className="we-provide-blog">{weProvideBlogThatHelpStar}</div>
+    <div className="tree-leaf-blog-TreeLeaf">
+      <div className="popular-articles-parent-blog-TreeLeaf">
+        <h2 className="popular-articles-blog-TreeLeaf">{popularArticles}</h2>
+        <div className="we-provide-blog-blog-TreeLeaf">{weProvideBlogThatHelpStar}</div>
       </div>
-      <div className="dictionary-entry-key-wrapper">
-        <button className="dictionary-entry-key"onClick={handleViewAllBtnClick}>
-          <div className="view-all" >View All</div>
+      <div className="dictionary-entry-key-wrapper-blog-TreeLeaf">
+        <button className="dictionary-entry-key-blog-TreeLeaf"onClick={handleViewAllBtnClick}>
+          <div className="view-all-blog-TreeLeaf" >View All</div>
         </button>
       </div>
     </div>

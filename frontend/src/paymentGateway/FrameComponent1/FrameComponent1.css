@@ -1,16 +1,16 @@
-.frame-child80,
-.free-month {
+.frame-child80-payment-Frame1,
+.free-month-payment-Frame1 {
   position: relative;
   max-width: 100%;
 }
-.frame-child80 {
+.frame-child80-payment-Frame1 {
   width: 42.969rem;
   height: 26.25rem;
   border-radius: 38px;
   background-color: #fff;
   display: none;
 }
-.free-month {
+.free-month-payment-Frame1 {
   margin: 0;
   flex: 1;
   font-size: inherit;
@@ -19,7 +19,7 @@
   z-index: 2;
   font-family: inherit;
 }
-.free-month-wrapper {
+.free-month-wrapper-payment-Frame1 {
   width: 29.813rem;
   display: flex;
   flex-direction: row;
@@ -29,44 +29,44 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.free {
+.free-payment-Frame1 {
   font-weight: 600;
 }
-.free{
+.free-payment-Frame1{
     color: #000;
 }
-.b2 {
+.b2-payment-Frame1 {
   color: black;
 }
-.every-month {
+.every-month-payment-Frame1 {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.33);
 }
-.free-every-month-container,
-.vat-and-local {
+.free-every-month-container-payment-Frame1,
+.vat-and-local-payment-Frame1 {
   position: relative;
   display: inline-block;
   max-width: 100%;
   z-index: 2;
 }
-.free-every-month-container {
+.free-every-month-container-payment-Frame1 {
   width: 27.188rem;
   line-height: 2.625rem;
 }
-.vat-and-local {
+.vat-and-local-payment-Frame1 {
   flex: 1;
   line-height: 130%;
   font-weight: 600;
 }
-.frame-parent52,
-.subscribe-button,
-.vat-and-local-taxes-may-apply-wrapper {
+.frame-parent52-payment-Frame1,
+.subscribe-button-payment-Frame1,
+.vat-and-local-taxes-may-apply-wrapper-payment-Frame1 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
 }
-.vat-and-local-taxes-may-apply-wrapper {
+.vat-and-local-taxes-may-apply-wrapper-payment-Frame1 {
   align-self: stretch;
   flex-direction: row;
   padding: 0 0 0 0.062rem;
@@ -74,21 +74,21 @@
   font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.33);
 }
-.frame-parent52,
-.subscribe-button {
+.frame-parent52-payment-Frame1,
+.subscribe-button-payment-Frame1 {
   flex-direction: column;
 }
-.subscribe-button {
+.subscribe-button-payment-Frame1 {
   align-self: stretch;
   gap: 0.875rem;
   font-size: 2rem;
   color: #000;
 }
-.frame-parent52 {
+.frame-parent52-payment-Frame1 {
   width: 34.563rem;
   gap: 0.312rem;
 }
-.info {
+.info-payment-Frame1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@
   cursor: pointer;
   z-index: 1;
 }
-.subscribe-now {
+.subscribe-now-payment-Frame1 {
   position: absolute;
   top: 0.956rem;
   left: 7.65rem;
@@ -111,19 +111,19 @@
   z-index: 2;
   cursor: pointer;
 }
-.info-parent {
+.info-parent-payment-Frame1 {
   height: 5.25rem;
   flex: 1;
   position: relative;
   max-width: 100%;
 }
-.frame-wrapper29,
-.rectangle-parent50 {
+.frame-wrapper29-payment-Frame1,
+.rectangle-parent50-payment-Frame1 {
   display: flex;
   box-sizing: border-box;
   max-width: 100%;
 }
-.frame-wrapper29 {
+.frame-wrapper29-payment-Frame1 {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
@@ -133,7 +133,7 @@
   font-size: 2rem;
   color: #000;
 }
-.rectangle-parent50 {
+.rectangle-parent50-payment-Frame1 {
   width: 42.969rem;
   box-shadow: 2px 0 12.5px rgba(0, 0, 0, 0.25);
   border-radius: 38px;
@@ -144,12 +144,12 @@
   padding: 4.5rem 3.593rem 2.143rem;
   gap: 3.668rem;
 }
-.group-icon {
+.group-icon-payment-Frame1 {
   height: 26.438rem;
   width: 3px;
   position: relative;
 }
-.frame-child81 {
+.frame-child81-payment-Frame1 {
   width: 42.744rem;
   height: 26.25rem;
   position: relative;
@@ -160,7 +160,7 @@
   max-width: 100%;
   z-index: 0;
 }
-.abstract-curved-shapes-white-c-icon {
+.abstract-curved-shapes-white-c-icon-payment-Frame1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -175,8 +175,8 @@
   object-fit: cover;
   z-index: 1;
 }
-.abstract-curved-shapes-white-c-parent,
-.graphics-designing {
+.abstract-curved-shapes-white-c-parent-payment-Frame1,
+.graphics-designing-payment-Frame1 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -185,7 +185,7 @@
   bottom: 0;
   left: 0;
 }
-.graphics-designing {
+.graphics-designing-payment-Frame1 {
   border-radius: 38px;
   background: linear-gradient(
     235.12deg,
@@ -194,21 +194,21 @@
   );
   z-index: 2;
 }
-.abstract-curved-shapes-white-c-parent {
+.abstract-curved-shapes-white-c-parent-payment-Frame1 {
   margin: 0 !important;
 }
-.month {
+.month-payment-Frame1 {
   width: 19.875rem;
   position: relative;
   line-height: 2.625rem;
   display: inline-block;
   z-index: 4;
 }
-.month1 {
+.month1-payment-Frame1 {
   font-size: 2rem;
   color: #000;
 }
-.inr-month {
+.inr-month-payment-Frame1 {
   width: 35.313rem;
   position: relative;
   line-height: 4.875rem;
@@ -217,12 +217,12 @@
   max-width: 100%;
   z-index: 4;
 }
-.inr-month-wrapper,
-.month-parent {
+.inr-month-wrapper-payment-Frame1,
+.month-parent-payment-Frame1 {
   display: flex;
   align-items: flex-start;
 }
-.inr-month-wrapper {
+.inr-month-wrapper-payment-Frame1 {
   align-self: stretch;
   flex-direction: row;
   justify-content: flex-end;
@@ -231,7 +231,7 @@
   font-size: 3.375rem;
   color: #fff;
 }
-.month-parent {
+.month-parent-payment-Frame1 {
   margin-left: -4.413rem;
   width: 40.5rem;
   flex-direction: column;
@@ -240,17 +240,17 @@
   max-width: 113%;
   flex-shrink: 0;
 }
-.inr {
+.inr-payment-Frame1 {
   font-weight: 600;
 }
-.b3 {
+.b3-payment-Frame1 {
   color: #acabab;
 }
-.every-month1 {
+.every-month1-payment-Frame1 {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.33);
 }
-.inr-every-month-container {
+.inr-every-month-container-payment-Frame1 {
   flex: 1;
   position: relative;
   line-height: 2.625rem;
@@ -258,7 +258,7 @@
   max-width: 100%;
   z-index: 4;
 }
-.inr-every-month-wrapper {
+.inr-every-month-wrapper-payment-Frame1 {
   width: 33.925rem;
   display: flex;
   flex-direction: row;
@@ -269,7 +269,7 @@
   max-width: 100%;
   text-align: left;
 }
-.vat-and-local1 {
+.vat-and-local1-payment-Frame1 {
   width: 41.063rem;
   position: relative;
   line-height: 130%;
@@ -279,7 +279,7 @@
   max-width: 117%;
   z-index: 4;
 }
-.vat-and-local-taxes-may-apply-container {
+.vat-and-local-taxes-may-apply-container-payment-Frame1 {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -292,7 +292,7 @@
   font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.33);
 }
-.digital-marketing {
+.digital-marketing-payment-Frame1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -304,7 +304,7 @@
   cursor: pointer;
   z-index: 3;
 }
-.subscribe-now1 {
+.subscribe-now1-payment-Frame1 {
   position: absolute;
   top: 1.194rem;
   left: 8.4rem;
@@ -315,20 +315,20 @@
   z-index: 4;
   cursor: pointer;
 }
-.digital-marketing-parent {
+.digital-marketing-parent-payment-Frame1 {
   width: 34.938rem;
   height: 5.25rem;
   position: relative;
   max-width: 100%;
 }
-.frame-main,
-.frame-wrapper28,
-.rectangle-parent51 {
+.frame-main-payment-Frame1,
+.frame-wrapper28-payment-Frame1,
+.rectangle-parent51-payment-Frame1 {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.rectangle-parent51 {
+.rectangle-parent51-payment-Frame1 {
   width: 42.969rem;
   box-shadow: 0 0 15.8px 1px rgba(0, 0, 0, 0.25);
   border-radius: 38px;
@@ -343,11 +343,11 @@
   font-size: 2rem;
   color: #000;
 }
-.frame-main,
-.frame-wrapper28 {
+.frame-main-payment-Frame1,
+.frame-wrapper28-payment-Frame1 {
   flex-direction: row;
 }
-.frame-main {
+.frame-main-payment-Frame1 {
   flex: 1;
   justify-content: flex-start;
   gap: 10.25rem;
@@ -356,96 +356,96 @@
   color: #fff;
   font-family: Sora;
 }
-.frame-wrapper28 {
+.frame-wrapper28-payment-Frame1 {
   width: 105.281rem;
   justify-content: flex-start;
   padding: 0 0.187rem;
   box-sizing: border-box;
 }
 @media screen and (max-width: 1825px) {
-  .frame-main {
+  .frame-main-payment-Frame1 {
     flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 925px) {
-  .free-month {
+  .free-month-payment-Frame1 {
     font-size: 3.188rem;
     line-height: 4.188rem;
   }
-  .free-every-month-container,
-  .subscribe-now {
+  .free-every-month-container-payment-Frame1,
+  .subscribe-now-payment-Frame1 {
     font-size: 1.625rem;
     line-height: 2.063rem;
   }
-  .rectangle-parent50 {
+  .rectangle-parent50-payment-Frame1 {
     gap: 1.813rem;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
     box-sizing: border-box;
   }
-  .inr-month,
-  .month {
+  .inr-month-payment-Frame1,
+  .month-payment-Frame1 {
     font-size: 1.625rem;
     line-height: 2.063rem;
   }
-  .inr-month {
+  .inr-month-payment-Frame1 {
     line-height: 3.5rem;
   }
-  .inr-every-month-container,
-  .subscribe-now1 {
+  .inr-every-month-container-payment-Frame1,
+  .subscribe-now1-payment-Frame1 {
     font-size: 1.625rem;
     line-height: 2.063rem;
   }
-  .rectangle-parent51 {
+  .rectangle-parent51-payment-Frame1 {
     padding-left: 2.063rem;
     padding-right: 1.313rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .free-month {
+  .free-month-payment-Frame1 {
     font-size: 2.375rem;
     line-height: 3.125rem;
   }
-  .free-every-month-container {
+  .free-every-month-container-payment-Frame1 {
     font-size: 1.188rem;
     line-height: 1.563rem;
   }
-  .vat-and-local {
+  .vat-and-local-payment-Frame1 {
     font-size: 1rem;
     line-height: 1.313rem;
   }
-  .subscribe-now {
+  .subscribe-now-payment-Frame1 {
     font-size: 1.188rem;
     line-height: 1.563rem;
   }
-  .rectangle-parent50 {
+  .rectangle-parent50-payment-Frame1 {
     padding-top: 2.938rem;
     padding-bottom: 1.375rem;
     box-sizing: border-box;
   }
-  .inr-month,
-  .month {
+  .inr-month-payment-Frame1,
+  .month-payment-Frame1 {
     font-size: 1.188rem;
     line-height: 1.563rem;
   }
-  .inr-month {
+  .inr-month-payment-Frame1 {
     line-height: 2.625rem;
   }
-  .inr-every-month-container {
+  .inr-every-month-container-payment-Frame1 {
     font-size: 1.188rem;
     line-height: 1.563rem;
   }
-  .vat-and-local1 {
+  .vat-and-local1-payment-Frame1 {
     font-size: 1rem;
     line-height: 1.313rem;
   }
-  .subscribe-now1 {
+  .subscribe-now1-payment-Frame1 {
     font-size: 1.188rem;
     line-height: 1.563rem;
   }
-  .rectangle-parent51 {
+  .rectangle-parent51-payment-Frame1 {
     padding-top: 2.125rem;
     padding-bottom: 1.313rem;
     box-sizing: border-box;

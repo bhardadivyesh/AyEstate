@@ -1,4 +1,4 @@
-.main-div {
+.main-div-listingMain {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -15,7 +15,7 @@
   color: #818b9c;
   font-family: "Sora", sans-serif;
 }
-.main-tag {
+.main-tag-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.section-tag {
+.section-tag-listingMain {
   width: 1521px;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   color: #0b0f0e;
   font-family: "Sora", sans-serif;
 }
-.section-firstDiv {
+.section-firstDiv-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@
   gap: 40px;
   max-width: 100%;
 }
-.filter-option-firstDiv {
+.filter-option-firstDiv-listingMain {
   width: 300px;
   border-radius: 12px;
   border: 1px solid #e4e9ee;
@@ -59,7 +59,7 @@
   padding: 24px 23px 407px 24px;
   gap: 10px;
 }
-.filter-option-secondDiv {
+.filter-option-secondDiv-listingMain {
   width: 279px;
   height: 1239px;
   position: relative;
@@ -68,7 +68,7 @@
   box-sizing: border-box;
   display: none;
 }
-.filter-option {
+.filter-option-listingMain {
   margin: 0;
   position: relative;
   font-size: 24px;
@@ -80,7 +80,7 @@
   min-width: 112px;
   z-index: 1;
 }
-.filter-after-first-div {
+.filter-after-first-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -88,7 +88,7 @@
   justify-content: flex-start;
   padding: 0px 0px 7px;
 }
-.filter-after-second-div {
+.filter-after-second-div-listingMain {
   height: 1px;
   flex: 1;
   position: relative;
@@ -96,7 +96,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.filter-after-third-div {
+.filter-after-third-div-listingMain {
   height: 1px;
   flex: 1;
   position: relative;
@@ -104,7 +104,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.filter-after-fourth-div {
+.filter-after-fourth-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -112,7 +112,7 @@
   justify-content: flex-start;
   padding: 0px 0px 8px;
 }
-.filter-after-fifth-div {
+.filter-after-fifth-div-listingMain {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
   gap: 12px;
   z-index: 1;
 }
-.filter-after-sixth-div {
+.filter-after-sixth-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -129,7 +129,7 @@
   justify-content: space-between;
   gap: 20px;
 }
-.location {
+.location-listingMain {
   position: relative;
   letter-spacing: -0.2px;
   line-height: 140%;
@@ -139,12 +139,12 @@
   font-weight: bold;
   font-size: 16px;
 }
-.down-arrow {
+.down-arrow-listingMain {
   height: 12px;
   width: 12px;
   position: relative;
 }
-.location-after-first-div {
+.location-after-first-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -152,65 +152,65 @@
   gap: 12px;
   color: #818b9c;
 }
-.location-after-second-div {
+.location-after-second-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
-.checkbox {
+.checkbox-listingMain {
   margin: 0;
   height: 24px;
   width: 24px;
   position: relative;
 }
-.Bandung-div {
+.Bandung-div-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 73px;
 }
-.Bandung-after-first-div {
+.Bandung-after-first-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
-.jakarta-div {
+.jakarta-div-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 61px;
 }
-.jakarta-afiter-first-div {
+.jakarta-afiter-first-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
-.bali-after-first-div {
+.bali-after-first-div-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 30px;
 }
-.location-loop-first-div {
+.location-loop-first-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
-.location-loop-second-loop {
+.location-loop-second-loop-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 47px;
 }
-.showAll-btn {
+.showAll-btn-listingMain {
   position: relative;
   line-height: 26px;
   font-weight: 500;
@@ -220,7 +220,7 @@
   z-index: 1;
   cursor: pointer;
 }
-.showAll-btn-after-first-div {
+.showAll-btn-after-first-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -228,7 +228,7 @@
   justify-content: flex-start;
   padding: 0px 0px 7px;
 }
-.showAll-btn-after-second-div {
+.showAll-btn-after-second-div-listingMain {
   height: 1px;
   flex: 1;
   position: relative;
@@ -236,7 +236,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.showAll-btn-after-third-div {
+.showAll-btn-after-third-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -246,7 +246,7 @@
   gap: 10.3px;
   color: #818b9c;
 }
-.showAll-btn-after-fourth-div {
+.showAll-btn-after-fourth-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -256,21 +256,21 @@
   z-index: 1;
   color: #0b0f0e;
 }
-.category {
+.category-listingMain {
   position: relative;
   letter-spacing: -0.2px;
   line-height: 140%;
   display: inline-block;
   min-width: 76px;
 }
-.category-after-first-div {
+.category-after-first-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5px 0px 0px;
 }
-.category-after-first-div {
+.category-after-first-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -278,7 +278,7 @@
   justify-content: flex-start;
   gap: 8px;
 }
-.house-after-first-div {
+.house-after-first-div-listingMain {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -286,14 +286,14 @@
   justify-content: flex-start;
   padding: 0px 20px 0px 0px;
 }
-.house {
+.house-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 53px;
   z-index: 1;
 }
-.house-after-second-div {
+.house-after-second-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -301,7 +301,7 @@
   justify-content: flex-start;
   gap: 8px;
 }
-.villa-after-first-div {
+.villa-after-first-div-listingMain {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -309,14 +309,14 @@
   justify-content: flex-start;
   padding: 0px 20px 0px 0px;
 }
-.villa {
+.villa-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 35px;
   z-index: 1;
 }
-.villa-after-second-div {
+.villa-after-second-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -324,7 +324,7 @@
   justify-content: flex-start;
   gap: 8px;
 }
-.appartment-after-first-div {
+.appartment-after-first-div-listingMain {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -332,34 +332,34 @@
   justify-content: flex-start;
   padding: 0px 20px 0px 0px;
 }
-.appartment {
+.appartment-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 89px;
   z-index: 1;
 }
-.appartment-after-second-div {
+.appartment-after-second-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5px 0px 0px;
 }
-.allCategory-toggle {
+.allCategory-toggle-listingMain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
 }
-.allCategory-after-first-div {
+.allCategory-after-first-div-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 47px;
 }
-.allCategort-btn {
+.allCategort-btn-listingMain {
   position: relative;
   line-height: 26px;
   font-weight: 500;
@@ -369,7 +369,7 @@
   z-index: 1;
   cursor: pointer;
 }
-.allCategort-btn-after-first-div {
+.allCategort-btn-after-first-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -377,7 +377,7 @@
   justify-content: flex-start;
   padding: 0px 0px 7px;
 }
-.allCategort-btn-after-second-div {
+.allCategort-btn-after-second-div-listingMain {
   height: 1px;
   flex: 1;
   position: relative;
@@ -385,7 +385,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.allCategort-btn-after-third-div {
+.allCategort-btn-after-third-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -393,7 +393,7 @@
   justify-content: flex-start;
   gap: 12px;
 }
-.allCategort-btn-after-fourth-div {
+.allCategort-btn-after-fourth-div-listingMain {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -402,21 +402,21 @@
   gap: 20px;
   z-index: 1;
 }
-.priceRange {
+.priceRange-listingMain {
   position: relative;
   letter-spacing: -0.2px;
   line-height: 140%;
   display: inline-block;
   min-width: 97px;
 }
-.priceRange-after-first-div {
+.priceRange-after-first-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5px 0px 0px;
 }
-.down-arrow-after-first-div {
+.down-arrow-after-first-div-listingMain {
   align-self: stretch;
   height: 45px;
   border-radius: 12px;
@@ -430,7 +430,7 @@
   gap: 11px;
   z-index: 1;
 }
-.down-arrow-after-second-div {
+.down-arrow-after-second-div-listingMain {
   height: 45px;
   width: 231px;
   position: relative;
@@ -439,14 +439,14 @@
   box-sizing: border-box;
   display: none;
 }
-.down-arrow-after-third-div {
+.down-arrow-after-third-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5px;
 }
-.usd-one {
+.usd-one-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
@@ -456,14 +456,14 @@
   font-weight: normal;
   font-size: 16px;
 }
-.usd-after-first-div {
+.usd-after-first-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 7px 0px 0px;
 }
-.usd-after-second-div {
+.usd-after-second-div-listingMain {
   height: 25px;
   display: flex;
   flex-direction: column;
@@ -472,7 +472,7 @@
   padding: 1px 0px 0px;
   box-sizing: border-box;
 }
-.usd-after-third-div {
+.usd-after-third-div-listingMain {
   width: 1px;
   height: 25px;
   position: relative;
@@ -480,7 +480,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.minprice-input {
+.minprice-input-listingMain {
   position: relative;
   line-height: 26px;
   color: #818b9c;
@@ -490,7 +490,7 @@
   border: none;
   appearance: textfield;
 }
-.minprice-input-after-first-div {
+.minprice-input-after-first-div-listingMain {
   height: 45px;
   border-radius: 12px;
   border: 1px solid #e4e9ee;
@@ -503,7 +503,7 @@
   gap: 11px;
   z-index: 1;
 }
-.minprice-input-after-second-div {
+.minprice-input-after-second-div-listingMain {
   height: 45px;
   width: 231px;
   position: relative;
@@ -512,28 +512,28 @@
   box-sizing: border-box;
   display: none;
 }
-.minprice-input-after-third-div {
+.minprice-input-after-third-div-listingMain {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5px;
 }
-.usd-two {
+.usd-two-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 37px;
   z-index: 1;
 }
-.minprice-input-after-fifth-div {
+.minprice-input-after-fifth-div-listingMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 7px 0px 0px;
 }
-.max-input-first-div {
+.max-input-first-div-listingMain {
   height: 25px;
   display: flex;
   flex-direction: column;
@@ -542,7 +542,7 @@
   padding: 1px 0px 0px;
   box-sizing: border-box;
 }
-.max-input-second-div {
+.max-input-second-div-listingMain {
   width: 1px;
   height: 25px;
   position: relative;
@@ -550,7 +550,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.maxnumber-input {
+.maxnumber-input-listingMain {
   position: relative;
   line-height: 26px;
   color: #818b9c;
@@ -559,7 +559,7 @@
   z-index: 1;
   width: 146px;
 }
-.first-price-filter-first-div {
+.first-price-filter-first-div-listingMain {
   height: 49px;
   border-radius: 12px;
   border: 1px solid #e4e9ee;
@@ -572,14 +572,14 @@
   white-space: nowrap;
   z-index: 1;
 }
-.first-price-filter {
+.first-price-filter-listingMain {
   position: relative;
   line-height: 26px;
   display: inline-block;
   min-width: 98px;
   cursor: pointer;
 }
-.second-price-filter-first-div {
+.second-price-filter-first-div-listingMain {
   height: 49px;
   border-radius: 12px;
   border: 1px solid #e4e9ee;
@@ -592,12 +592,12 @@
   white-space: nowrap;
   z-index: 1;
 }
-.second-price-filter {
+.second-price-filter-listingMain {
   position: relative;
   line-height: 26px;
   cursor: pointer;
 }
-.third-price-filter-first-div {
+.third-price-filter-first-div-listingMain {
   cursor: pointer;
   border: 1px solid #e4e9ee;
   padding: 11px 15px 11px 16px;
@@ -612,7 +612,7 @@
   white-space: nowrap;
   z-index: 1;
 }
-.third-price-filter {
+.third-price-filter-listingMain {
   position: relative;
   font-size: 16px;
   line-height: 26px;
@@ -622,30 +622,30 @@
   display: inline-block;
   min-width: 86px;
 }
-.pagination {
-  height: 44px;
+.pagination-listingMain {
+  height: 116px;
   width: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: right;
   gap: 8px;
 }
-.previous-btn {
+.previous-btn-listingMain {
   height: 45px;
   border-radius: 8px;
   border: 1px solid #e4e9ee;
   box-sizing: border-box;
-  padding: 11px 18px;
+  padding: 9px 18px;
   cursor: pointer;
   background-color: #f9f9f9;
 }
-.next-btn {
+.next-btn-listingMain {
   height: 45px;
   border-radius: 8px;
   border: 1px solid #e4e9ee;
   box-sizing: border-box;
-  padding: 11px 18px;
+  padding: 9px 18px;
   cursor: pointer;
   background-color: #f9f9f9;
 }

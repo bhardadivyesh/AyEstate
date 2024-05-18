@@ -1,33 +1,33 @@
-.frame-child39,
-.frame-child40 {
+.frame-child39-signIn,
+.frame-child40-signIn {
   position: absolute;
   top: 0;
   width: 88%;
   height: 100%;
 }
-.frame-child39 {
+.frame-child39-signIn {
   left: 0.625rem;
   border-radius: 50px;
   object-fit: cover;
 }
-.frame-child40 {
+.frame-child40-signIn {
   left: 0;
   border-radius: 49px;
   z-index: 1;
 }
-.desktop-7-inner,
-.rectangle-parent29 {
+.desktop-7-inner-signIn,
+.rectangle-parent29-signIn {
   height: 100%;
   margin: 0 !important;
   position: absolute;
   top: 0;
   bottom: 0;
 }
-.rectangle-parent29 {
+.rectangle-parent29-signIn {
   width: 66rem;
   left: -3rem;
 }
-.desktop-7-inner {
+.desktop-7-inner-signIn {
   width: 63rem;
   left: 0;
   display: flex;
@@ -35,7 +35,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-child41 {
+.frame-child41-signIn {
   height: 4.75rem;
   width: 14.25rem;
   position: relative;
@@ -43,7 +43,7 @@
   background-color: #fff;
   display: none;
 }
-.log-in5 {
+.log-in5-signIn {
   position: relative;
   font-size: 1.875rem;
   line-height: 130%;
@@ -55,13 +55,13 @@
   min-width: 5.813rem;
   z-index: 3;
 }
-.frame-child42,
-.rectangle-parent30 {
+.frame-child42-signIn,
+.rectangle-parent30-signIn {
   border-radius: 9px;
   cursor: pointer;
   z-index: 2;
 }
-.rectangle-parent30 {
+.rectangle-parent30-signIn {
   border: 0;
   padding: 1rem 2rem 1.312rem;
   background-color: #fff;
@@ -72,7 +72,7 @@
   justify-content: flex-start;
   white-space: nowrap;
 }
-.frame-child42 {
+.frame-child42-signIn {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@
   width: 100%;
   height: 100%;
 }
-.sign-up11 {
+.sign-up11-signIn {
   position: absolute;
   top: 1.063rem;
   left: 2.125rem;
@@ -94,7 +94,7 @@
   min-width: 7.313rem;
   z-index: 3;
 }
-.rectangle-parent31 {
+.rectangle-parent31-signIn {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -105,24 +105,24 @@
   white-space: nowrap;
   margin-left: -18px;
 }
-.desktop-7-child,
-.frame-parent17 {
+.desktop-7-child-signIn,
+.frame-parent17-signIn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent17 {
+.frame-parent17-signIn {
   align-self: stretch;
   gap: 0.625rem;
 }
-.desktop-7-child {
+.desktop-7-child-signIn {
   width: 14.25rem;
   padding: 24.875rem 0 0;
   box-sizing: border-box;
   min-width: 14.25rem;
 }
-.ayestate6 {
+.ayestate6-signIn {
   margin: 0;
   width: 25.563rem;
   position: relative;
@@ -135,27 +135,27 @@
   debug_commit: 1de1738;
   max-width: 100%;
 }
-.ayestate-wrapper3,
-.email-field1 {
+.ayestate-wrapper3-signIn,
+.email-field1-signIn {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.ayestate-wrapper3 {
+.ayestate-wrapper3-signIn {
   align-self: stretch;
   flex-direction: row;
   justify-content: flex-end;
   padding: 0 1.5rem;
   box-sizing: border-box;
 }
-.email-field1 {
+.email-field1-signIn {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
   gap: 3.937rem;
   min-width: 24.25rem;
 }
-.desktop-7-item {
+.desktop-7-item-signIn {
   height: 2.938rem;
   width: 3.563rem;
   position: relative;
@@ -163,7 +163,7 @@
   display: none;
   z-index: 3;
 }
-.desktop-7 {
+.desktop-7-signIn {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -183,7 +183,7 @@
   font-family: Playball;
   height: 940px;
 }
-.frame-child61 {
+.frame-child61-signIn {
     width: 37.313rem;
     height: 48.838rem;
     position: relative;
@@ -195,7 +195,7 @@
     display: none;
     max-width: 100%;
   }
-  .log-in6 {
+  .log-in6-signIn {
     margin: 0;
     width: 13.75rem;
     position: relative;
@@ -208,7 +208,7 @@
     flex-shrink: 0;
     z-index: 1;
   }
-  .log-in-wrapper {
+  .log-in-wrapper-signIn {
     width: 29.75rem;
     display: flex;
     flex-direction: row;
@@ -216,7 +216,7 @@
     justify-content: center;
     max-width: 100%;
   }
-  .email-phone-reqd-child {
+  .email-phone-reqd-child-signIn {
     border: 1px solid #e7e7e7;
     outline: 0;
     background-color: #fff;
@@ -231,8 +231,8 @@
     z-index: 1;
     padding: 33px;
   }
-  .email-phone-required,
-  .email-phone-required1 {
+  .email-phone-required-signIn,
+  .email-phone-required1-signIn {
     height: 2.169rem;
     flex: 1;
     position: relative;
@@ -242,11 +242,11 @@
     max-width: 100%;
     z-index: 2;
   }
-  .email-phone-required1 {
+  .email-phone-required1-signIn {
     z-index: 3;
     margin-left: -24.125rem;
   }
-  .email-phone-required-parent {
+  .email-phone-required-parent-signIn {
     position: absolute;
     top: 1.363rem;
     left: 0;
@@ -257,7 +257,7 @@
     justify-content: flex-start;
     max-width: 100%;
   }
-  .email-phone-reqd {
+  .email-phone-reqd-signIn {
     align-self: stretch;
     height: 5.513rem;
     position: relative;
@@ -265,7 +265,7 @@
     font-size: 1.5rem;
     font-family: Rubik;
   }
-  .frame-child62 {
+  .frame-child62-signIn {
     height: 3.844rem;
     width: 20.063rem;
     position: relative;
@@ -275,7 +275,7 @@
     display: none;
     max-width: 100%;
   }
-  .continue {
+  .continue-signIn {
     position: relative;
     font-size: 1.563rem;
     line-height: 130%;
@@ -286,15 +286,15 @@
     min-width: 7.25rem;
     z-index: 1;
   }
-  .continue-btn,
-  .rectangle-parent43 {
+  .continue-btn-signIn,
+  .rectangle-parent43-signIn {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     box-sizing: border-box;
     max-width: 100%;
   }
-  .rectangle-parent43 {
+  .rectangle-parent43-signIn {
     cursor: pointer;
     border: 0;
     padding: 0.931rem 1.25rem 0.931rem 1.687rem;
@@ -305,17 +305,17 @@
     justify-content: center;
     z-index: 1;
   }
-  .rectangle-parent43:hover,
-  .rectangle-parent45:hover {
+  .rectangle-parent43-signIn:hover,
+  .rectangle-parent45-signIn:hover {
     background-color: #85ad57;
   }
-  .continue-btn {
+  .continue-btn-signIn {
     width: 28.813rem;
     justify-content: flex-end;
     padding: 0 4.375rem 1.8rem;
   }
-  .generate-otp,
-  .generate-otp1 {
+  .generate-otp-signIn,
+  .generate-otp1-signIn {
     height: 2.169rem;
     flex: 1;
     position: relative;
@@ -323,11 +323,11 @@
     display: inline-block;
     z-index: 1;
   }
-  .generate-otp1 {
+  .generate-otp1-signIn {
     z-index: 3;
     margin-left: -11.313rem;
   }
-  .generate-otp-parent {
+  .generate-otp-parent-signIn {
     position: absolute;
     top: 0;
     left: 1.375rem;
@@ -337,7 +337,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .icon {
+  .icon-signIn {
     position: absolute;
     top: 0;
     left: 0;
@@ -345,8 +345,8 @@
     height: 100%;
     z-index: 2;
   }
-  .icon1,
-  .icon2 {
+  .icon1-signIn,
+  .icon2-signIn {
     position: absolute;
     top: 0.369rem;
     left: 0.375rem;
@@ -354,26 +354,26 @@
     height: 0.931rem;
     z-index: 1;
   }
-  .icon2 {
+  .icon2-signIn {
     z-index: 4;
   }
-  .icon3 {
+  .icon3-signIn {
     z-index: 5;
   }
-  .icon-group,
-  .icon3 {
+  .icon-group-signIn,
+  .icon3-signIn {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
-  .icon-parent {
+  .icon-parent-signIn {
     height: 1.675rem;
     width: 1.75rem;
     position: relative;
   }
-  .frame-wrapper18 {
+  .frame-wrapper18-signIn {
     position: absolute;
     top: 0;
     left: 0;
@@ -382,14 +382,14 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .frame-parent43 {
+  .frame-parent43-signIn {
     height: 2.169rem;
     flex: 1;
     position: relative;
     min-width: 8.25rem;
   }
-  .ive-password,
-  .ive-password1 {
+  .ive-password-signIn,
+  .ive-password1-signIn {
     height: 2.169rem;
     flex: 1;
     position: relative;
@@ -397,11 +397,11 @@
     display: inline-block;
     z-index: 1;
   }
-  .ive-password1 {
+  .ive-password1-signIn {
     z-index: 2;
     margin-left: -11.313rem;
   }
-  .ive-password-parent {
+  .ive-password-parent-signIn {
     position: absolute;
     top: 0;
     left: 1.375rem;
@@ -411,79 +411,79 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .icon4 {
+  .icon4-signIn {
     width: 100%;
     height: 100%;
     z-index: 1;
   }
-  .icon-container,
-  .icon4,
-  .icon5 {
+  .icon-container-signIn,
+  .icon4-signIn,
+  .icon5-signIn {
     position: absolute;
     top: 0;
     left: 0;
   }
-  .icon5 {
+  .icon5-signIn {
     width: 100%;
     height: 100%;
     z-index: 3;
   }
-  .icon-container {
+  .icon-container-signIn {
     width: 1.75rem;
     height: 1.675rem;
   }
-  .frame-parent44 {
+  .frame-parent44-signIn {
     height: 2.169rem;
     flex: 1;
     position: relative;
     min-width: 8.25rem;
   }
-  .frame-parent42,
-  .frame-wrapper17 {
+  .frame-parent42-signIn,
+  .frame-wrapper17-signIn {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     max-width: 100%;
   }
-  .frame-parent42 {
+  .frame-parent42-signIn {
     flex: 1;
     justify-content: flex-start;
     gap: 2.312rem;
   }
-  .frame-wrapper17 {
+  .frame-wrapper17-signIn {
     width: 28.063rem;
     justify-content: flex-end;
     padding: 0 0.187rem;
     box-sizing: border-box;
     color: #2f2f2f;
   }
-  .span2 {
+  .span2-signIn {
     font-weight: 600;
   }
-  .enter-otp-here-container {
+  .enter-otp-here-container-signIn {
     position: relative;
     line-height: 130%;
     z-index: 1;
   }
-  .span3 {
+  .span3-signIn {
     font-weight: 600;
   }
-  .enter-otp-here-container1 {
+  .enter-otp-here-container1-signIn {
     position: relative;
     line-height: 130%;
     z-index: 2;
     margin-left: -9.375rem;
   }
-  .enter-otp-here-parent {
+  .enter-otp-here-parent-signIn {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .frame-child63,
-  .frame-child64,
-  .frame-child65,
-  .frame-child66 {
+  .frame-child63-signIn,
+  .frame-child64-signIn,
+  .frame-child65-signIn,
+  .frame-child66-signIn {
     height: 6.506rem;
     position: relative;
     box-shadow: 0 1px 5.9px 1px rgba(0, 0, 0, 0.25);
@@ -491,21 +491,21 @@
     background-color: #fff;
     z-index: 1;
   }
-  .frame-child63,
-  .frame-child64,
-  .frame-child65 {
+  .frame-child63-signIn,
+  .frame-child64-signIn,
+  .frame-child65-signIn {
     flex: 1;
     min-width: 5.25rem;
     max-width: 5.688rem;
     text-align: center;
     font-size: xx-large;
   }
-  .frame-child66 {
+  .frame-child66-signIn {
     align-self: stretch;
     text-align: center;
     font-size: xx-large;
   }
-  .rectangle-wrapper2 {
+  .rectangle-wrapper2-signIn {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -516,37 +516,37 @@
     min-width: 5.25rem;
     max-width: 5.688rem;
   }
-  .frame-wrapper20,
-  .rectangle-parent44 {
+  .frame-wrapper20-signIn,
+  .rectangle-parent44-signIn {
     flex-direction: row;
     justify-content: flex-start;
   }
-  .rectangle-parent44 {
+  .rectangle-parent44-signIn {
     flex: 1;
     display: flex;
     align-items: flex-end;
     gap: 0.643rem;
     max-width: 100%;
   }
-  .frame-wrapper20 {
+  .frame-wrapper20-signIn {
     align-self: stretch;
     padding: 0 0 0 1.125rem;
     box-sizing: border-box;
   }
-  .frame-parent45,
-  .frame-wrapper19,
-  .frame-wrapper20 {
+  .frame-parent45-signIn,
+  .frame-wrapper19-signIn,
+  .frame-wrapper20-signIn {
     display: flex;
     align-items: flex-start;
     max-width: 100%;
   }
-  .frame-parent45 {
+  .frame-parent45-signIn {
     flex: 1;
     flex-direction: column;
     justify-content: flex-start;
     gap: 1.668rem;
   }
-  .frame-wrapper19 {
+  .frame-wrapper19-signIn {
     width: 30.313rem;
     flex-direction: row;
     justify-content: flex-end;
@@ -555,7 +555,7 @@
     text-align: left;
     color: #000;
   }
-  .email-phone-reqd-parent {
+  .email-phone-reqd-parent-signIn {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -566,7 +566,7 @@
     font-size: 1.25rem;
     color: rgba(110, 110, 110, 0.7);
   }
-  .frame-child67 {
+  .frame-child67-signIn {
     height: 4.275rem;
     width: 20.063rem;
     position: relative;
@@ -576,7 +576,7 @@
     display: none;
     max-width: 100%;
   }
-  .log-in7 {
+  .log-in7-signIn {
     position: relative;
     font-size: 1.938rem;
     line-height: 130%;
@@ -587,7 +587,7 @@
     min-width: 6.063rem;
     z-index: 2;
   }
-  .rectangle-parent45 {
+  .rectangle-parent45-signIn {
     cursor: pointer;
     border: 0;
     padding: 0.993rem 1.25rem 0.8rem;
@@ -601,21 +601,21 @@
     white-space: nowrap;
     z-index: 1;
   }
-  .frame-wrapper21,
-  .group-div,
-  .rectangle-parent45 {
+  .frame-wrapper21-signIn,
+  .group-div-signIn,
+  .rectangle-parent45-signIn {
     box-sizing: border-box;
     display: flex;
     max-width: 100%;
   }
-  .frame-wrapper21 {
+  .frame-wrapper21-signIn {
     width: 29.813rem;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
     padding: 0 4.875rem;
   }
-  .group-div {
+  .group-div-signIn {
     align-self: stretch;
     box-shadow: 0 0 12.6px -10px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
@@ -633,12 +633,12 @@
     color: #000;
     font-family: Sora;
   }
-  .parentClass{
+  .parentClass-signIn{
     display: flex;
     flex-direction: row;
     gap: 21px;
   }
-  .rectangle-parent34 {
+  .rectangle-parent34-signIn {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
@@ -652,24 +652,24 @@
     border-radius: 10px;
     margin-left: -65px;
   }
-  .checkbox{
+  .checkbox-signIn{
     height: 30px;
     width: 30px;
     margin-top: 20px;
   }
-  .vuesaxlineareye-icon {
+  .vuesaxlineareye-icon-signIn {
     height: 35px;
     width: 36.6px;
     position: relative;
     z-index: 2;
   }
-  .ellipse-parent,
-.frame-wrapper12 {
+  .ellipse-parent-signIn,
+.frame-wrapper12-signIn {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.ellipse-div {
+.ellipse-div-signIn {
     height: 13px;
     width: 12px;
     position: relative;
@@ -677,12 +677,12 @@
     background-color: #111;
     z-index: 2;
   }
-  .frame-child47,
-  .frame-child48,
-  .frame-child49,
-  .frame-child50,
-  .frame-child51,
-  .frame-child52 {
+  .frame-child47-signIn,
+  .frame-child48-signIn,
+  .frame-child49-signIn,
+  .frame-child50-signIn,
+  .frame-child51-signIn,
+  .frame-child52-signIn {
     height: 13px;
     width: 13px;
     position: relative;
@@ -690,26 +690,26 @@
     background-color: #111;
     z-index: 2;
   }
-  .frame-child46,
-.frame-wrapper11 {
+  .frame-child46-signIn,
+.frame-wrapper11-signIn {
   box-sizing: border-box;
   max-width: 100%;
 }
   @media screen and (max-width: 850px) {
-    .log-in6 {
+    .log-in6-signIn {
       font-size: 2.375rem;
       line-height: 1.188rem;
     }
-    .frame-parent42,
-    .rectangle-parent44 {
+    .frame-parent42-signIn,
+    .rectangle-parent44-signIn {
       flex-wrap: wrap;
     }
-    .frame-wrapper21 {
+    .frame-wrapper21-signIn {
       padding-left: 2.438rem;
       padding-right: 2.438rem;
       box-sizing: border-box;
     }
-    .group-div {
+    .group-div-signIn {
       gap: 2.313rem;
       padding-top: 2.313rem;
       padding-right: 1.75rem;
@@ -718,40 +718,40 @@
     }
   }
   @media screen and (max-width: 450px) {
-    .log-in6 {
+    .log-in6-signIn {
       font-size: 1.813rem;
       line-height: 0.875rem;
     }
-    .email-phone-required,
-    .email-phone-required1 {
+    .email-phone-required-signIn,
+    .email-phone-required1-signIn {
       font-size: 1.188rem;
       line-height: 1.188rem;
     }
-    .continue {
+    .continue-signIn {
       font-size: 1.25rem;
       line-height: 1.625rem;
     }
-    .continue-btn {
+    .continue-btn-signIn {
       padding-left: 2.188rem;
       padding-right: 2.188rem;
       box-sizing: border-box;
     }
-    .generate-otp,
-    .generate-otp1,
-    .ive-password,
-    .ive-password1 {
+    .generate-otp-signIn,
+    .generate-otp1-signIn,
+    .ive-password-signIn,
+    .ive-password1-signIn {
       font-size: 1rem;
       line-height: 1.188rem;
     }
-    .frame-parent42 {
+    .frame-parent42-signIn {
       gap: 1.125rem;
     }
-    .enter-otp-here-container,
-    .enter-otp-here-container1 {
+    .enter-otp-here-container-signIn,
+    .enter-otp-here-container1-signIn {
       font-size: 1rem;
       line-height: 1.313rem;
     }
-    .group-div {
+    .group-div-signIn {
       gap: 1.125rem;
       padding-top: 1.5rem;
       box-sizing: border-box;
@@ -759,18 +759,18 @@
   }
   
 @media screen and (max-width: 1525px) {
-  .desktop-7-child {
+  .desktop-7-child-signIn {
     flex: 1;
   }
-  .email-field1 {
+  .email-field1-signIn {
     min-width: 100%;
   }
-  .desktop-7 {
+  .desktop-7-signIn {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1225px) {
-  .desktop-7 {
+  .desktop-7-signIn {
     gap: 5.688rem;
     padding-left: 25rem;
     padding-right: 3.5rem;
@@ -778,18 +778,18 @@
   }
 }
 @media screen and (max-width: 850px) {
-  .desktop-7-child {
+  .desktop-7-child-signIn {
     padding-top: 16.188rem;
     box-sizing: border-box;
   }
-  .ayestate6 {
+  .ayestate6-signIn {
     font-size: 2.5rem;
     line-height: 3.875rem;
   }
-  .email-field1 {
+  .email-field1-signIn {
     gap: 1.938rem;
   }
-  .desktop-7 {
+  .desktop-7-signIn {
     gap: 2.813rem;
     padding-left: 12.5rem;
     padding-right: 1.75rem;
@@ -797,11 +797,11 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .ayestate6 {
+  .ayestate6-signIn {
     font-size: 1.5rem;
     line-height: 2.625rem;
   }
-  .email-field1 {
+  .email-field1-signIn {
     gap: 1rem;
   }
 }

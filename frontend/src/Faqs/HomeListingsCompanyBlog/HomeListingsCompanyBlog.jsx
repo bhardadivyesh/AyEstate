@@ -18,28 +18,28 @@ const HomeListingsCompanyBlog = () => {
     setSuggestions(filteredSuggestions);
   };
   return (
-    <div className="home-listings-company-blog">
-      <div className="helping-you">
-        <h1 className="helping-you-is">Helping you is our priority</h1>
+    <div className="home-listings-company-blog-faqs-HomeListings">
+      <div className="helping-you-faqs-HomeListings">
+        <h1 className="helping-you-is-faqs-HomeListings">Helping you is our priority</h1>
       </div>
-      <div className="search-question">
-        <div className="button-detail-info1">
-          <div className="collect-keywords">
-            <div className="collect-keywords-child" />
-            <div className="account-setup">
-              <div className="email-campaigns">
+      <div className="search-question-faqs-HomeListings">
+        <div className="button-detail-info1-faqs-HomeListings">
+          <div className="collect-keywords-faqs-HomeListings">
+            <div className="collect-keywords-child-faqs-HomeListings" />
+            <div className="account-setup-faqs-HomeListings">
+              <div className="email-campaigns-faqs-HomeListings">
                 <img
-                  className="search-normal-icon"
+                  className="search-normal-icon-faqs-HomeListings"
                   loading="lazy"
                   alt=""
                   src={search}
                 />
-                <div className="engage-contacts">
+                <div className="engage-contacts-faqs-HomeListings">
                   <input
                     type="text"
                     value={query}
                     onChange={handleChange}
-                    className="search-question1"
+                    className="search-question1-faqs-HomeListings"
                     placeholder="Search question"
                   />
                   {query.length > 0 && (
@@ -57,18 +57,18 @@ const HomeListingsCompanyBlog = () => {
                 </div>
               </div>
             </div>
-            <button className="button32">
-              <div className="detail-information11">Search</div>
+            <button className="button32-faqs-HomeListings">
+              <div className="detail-information11-faqs-HomeListings">Search</div>
             </button>
           </div>
-          <div className="property-f-a-q">
-            <div className="we-are-collect">
+          <div className="property-f-a-q-faqs-HomeListings">
+            <div className="we-are-collect-faqs-HomeListings">
               *We are collect your searching keywords to improve our FAQ
             </div>
           </div>
         </div>
       </div>
-      <div className="support-ayestatecom">
+      <div className="support-ayestatecom-faqs-HomeListings">
         <AlternativeWaysToGetAnswer
           copyrightAyEstate={myAccount}
           myAccount="My Account"

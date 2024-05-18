@@ -1,4 +1,4 @@
-.email-us-askus-a-question-by-e {
+.email-us-askus-a-question-by-e-contactUsMain {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -8,20 +8,20 @@
     gap: 1.25rem;
     max-width: 100%;
   }
-  .contact-our-sales-team {
+  .contact-our-sales-team-contactUsMain {
     width: 77.5rem;
     flex-direction: column;
     justify-content: flex-start;
     gap: 6.25rem;
     max-width: 100%;
   }
-  .contact-our-sales-team,
-  .contact-us,
-  .email-us {
+  .contact-our-sales-team-contactUsMain,
+  .contact-us-contactUsMain,
+  .email-us-contactUsMain {
     display: flex;
     align-items: flex-start;
   }
-  .email-us {
+  .email-us-contactUsMain {
     align-self: stretch;
     flex-direction: row;
     justify-content: center;
@@ -29,7 +29,7 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .contact-us {
+  .contact-us-contactUsMain {
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -41,28 +41,28 @@
     letter-spacing: normal;
   }
   @media screen and (max-width: 1225px) {
-    .email-us {
+    .email-us-contactUsMain {
       padding-bottom: 2.938rem;
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 750px) {
-    .contact-our-sales-team {
+    .contact-our-sales-team-contactUsMain {
       gap: 3.125rem;
     }
-    .email-us {
+    .email-us-contactUsMain {
       padding-bottom: 1.938rem;
       box-sizing: border-box;
     }
-    .contact-us {
+    .contact-us-contactUsMain {
       gap: 3.75rem;
     }
   }
   @media screen and (max-width: 450px) {
-    .contact-our-sales-team {
+    .contact-our-sales-team-contactUsMain {
       gap: 1.563rem;
     }
-    .contact-us {
+    .contact-us-contactUsMain {
       gap: 1.875rem;
     }
   }

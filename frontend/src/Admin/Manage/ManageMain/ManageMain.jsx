@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import manageContext from "../Manage";
 import Category from "../Category/Category";
 import Location from "../Location/Location";

@@ -1,23 +1,23 @@
-.askusaquestionbyemailandwewill-icon {
+.askusaquestionbyemailandwewill-icon-contactUs-Frame {
     width: 4.75rem;
     height: 4.75rem;
     position: relative;
   }
-  .email-us1 {
+  .email-us1-contactUs-Frame {
     position: relative;
     line-height: 130%;
     text-transform: capitalize;
     display: inline-block;
     min-width: 6.563rem;
   }
-  .ask-us-a {
+  .ask-us-a-contactUs-Frame {
     align-self: stretch;
     position: relative;
     font-size: 1.125rem;
     line-height: 160%;
     color: #7f879e;
   }
-  .email-us-parent {
+  .email-us-parent-contactUs-Frame {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -25,30 +25,30 @@
     justify-content: flex-start;
     gap: 1rem;
   }
-  .leave-a-messages {
+  .leave-a-messages-contactUs-Frame {
     position: relative;
     font-size: 1rem;
     line-height: 1.313rem;
     text-transform: capitalize;
     color: #111;
   }
-  .askusaquestionbyemailandwewill-parent,
-  .listings-properties-official-w {
+  .askusaquestionbyemailandwewill-parent-contactUs-Frame,
+  .listings-properties-official-w-contactUs-Frame {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
   }
-  .listings-properties-official-w {
+  .listings-properties-official-w-contactUs-Frame {
     align-self: stretch;
     gap: 1.5rem;
   }
-  .askusaquestionbyemailandwewill-parent {
+  .askusaquestionbyemailandwewill-parent-contactUs-Frame {
     flex: 1;
     gap: 1.875rem;
     max-width: 100%;
   }
-  .email-us-askus-a-question-by-e-inner {
+  .email-us-askus-a-question-by-e-inner-contactUs-Frame {
     flex: 1;
     border-radius: 16px;
     border: 1px solid #f6f8f9;
@@ -67,7 +67,7 @@
     font-family: Sora;
   }
   @media screen and (max-width: 450px) {
-    .email-us1 {
+    .email-us1-contactUs-Frame {
       font-size: 1.188rem;
       line-height: 1.563rem;
     }
