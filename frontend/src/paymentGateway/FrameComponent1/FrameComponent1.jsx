@@ -93,7 +93,6 @@ const FrameComponent1 = () => {
           </div>
           <div className="frame-wrapper29-payment-Frame1">
             <div className="info-parent-payment-Frame1">
-              {/* onClick={HandlePaymentClick} */}
               <div className="info-payment-Frame1" />
               <b className="subscribe-now-payment-Frame1">Subscribe now</b>
             </div>

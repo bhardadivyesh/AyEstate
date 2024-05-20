@@ -14,9 +14,10 @@ import StatusMain from "../Status/StatusMain/StatusMain";
 import VendorMain from "../Vendor/VendorMain/VendorMain";
 import ManageMain from "../Manage/ManageMain/ManageMain";
 import { useNavigate } from "react-router-dom";
+import Membership from "../Membership/MembershipMain";
 
 const Dashboard = () => {
-  const [renderManage, setRenderManage] = useState("Manage");
+  const [renderManage, setRenderManage] = useState("membership");
   const handleManageClick = (state) => {
     setRenderManage(state);
   };
@@ -59,6 +60,7 @@ const Dashboard = () => {
           {renderManage == "Manage" && <ManageMain />}
           {renderManage == "status" && <StatusMain />}
           {renderManage == "vendor" && <VendorMain />}
+          {renderManage == "membership" && <Membership />}
         </dashboardContext.Provider>
       </div>
       <button

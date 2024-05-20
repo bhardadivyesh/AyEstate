@@ -18,7 +18,6 @@ const StatusMain = () => {
           <button type="submit" className="rectangle-parent38-main group-child13-main active-main" onClick={()=>setStatusRender("active")}>{"Active (5)"}</button>
           <button type="submit" className="rectangle-parent39-main group-child14-main reject-main" onClick={()=>setStatusRender("reject")}> {"Reject (7)"}</button>
         </div>
-       {/* status component */}
        <statusContext.Provider value={{previewPageRenderPage,setPreviewPageRender}}>
        {statusRender == "pending" && <PendingStatus />}
        {statusRender == "active" && <ActiveStatus />}

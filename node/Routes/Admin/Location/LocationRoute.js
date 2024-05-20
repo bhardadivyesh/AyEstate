@@ -22,19 +22,25 @@ router.get("/get-location", async (req, res) => {
       res.status(500).json({ error: "Internal Server Error" });
     }
   });
-  router.put('/put-location', async (req, res) => {
+  router.put('/put-location/:locationName', async (req, res) => {
     try {
-      const location = req.body.locationName; 
+      const locationName = req.params.locationName; 
       const newData = req.body;
-      
-      let updatedLocation = await LocationSchema.findOneAndUpdate({ locationName: location }, newData, { new: true });
+  
+      let updatedLocation = await LocationSchema.findOneAndUpdate(
+        { locationName: locationName }, 
+        newData, 
+        { new: true }
+      );
+  
       if (!updatedLocation) {
-          return res.status(404).json({ error: 'Location not found' });
+        return res.status(404).json({ error: 'Location not found' });
       }
-      res.status(200).json(updatedLocation);
-  } catch (error) {
+  
+      res.status(200).json({ message: 'Location updated successfully', location: updatedLocation });
+    } catch (error) {
       res.status(500).json({ error: 'Internal Server Error' }); 
-  }
+    }
   });
   router.delete('/delete-location', async (req, res) => {
     try {

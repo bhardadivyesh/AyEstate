@@ -29,7 +29,6 @@ const PendingStatus = () => {
             </select>
             <div className="pending1-main">pending</div>
             <button type='submit' className="rectangle-parent42-main group-child18-main"  onClick={()=>handleActiveStatusClick("data")}>
-              {/* <div className="group-child18-main" /> */}
               <span className="preview-main">Preview</span>
             </button>
           </div>

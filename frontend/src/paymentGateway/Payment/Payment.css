@@ -1,0 +1,950 @@
+.group-child43-payment-screen,
+.group-child44-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  width: 28.75rem;
+  height: 53.25rem;
+}
+.group-child44-payment-screen {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px 14px 30px 30px;
+  background-color: #000;
+  width: 28.5rem;
+  height: 19.25rem;
+}
+.group-child45-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #b7e08a;
+  width: 7.125rem;
+  height: 1.563rem;
+}
+.discont-payment-screen {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.625rem;
+  display: inline-block;
+  width: 5.813rem;
+  height: 1.063rem;
+}
+.rectangle-parent57-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  width: 7.125rem;
+  height: 1.563rem;
+}
+.vat-and-local-payment-screen {
+  position: absolute;
+  top: 7.125rem;
+  left: 0.688rem;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  width: 19.938rem;
+  height: 1.625rem;
+}
+.inr-payment-screen,
+.vat-and-local-payment-screen {
+  font-weight: 600;
+}
+.listing2-payment-screen {
+  white-space: pre-wrap;
+}
+.inr-25-container-payment-screen {
+  position: absolute;
+  top: 4.063rem;
+  left: 0.625rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 17.375rem;
+}
+.inr1-payment-screen {
+  font-weight: 600;
+}
+.inr-container-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.25rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 26.813rem;
+}
+.vat-and-local-taxes-may-apply-parent-payment-screen {
+  position: absolute;
+  top: 5.813rem;
+  left: 0;
+  width: 26.813rem;
+  height: 8.75rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.group-icon-payment-screen {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  transform: scale(1.61);
+}
+.wrapper-group-payment-screen {
+  position: absolute;
+  height: 18.03%;
+  width: 20.28%;
+  top: 7.73%;
+  right: 41.01%;
+  bottom: 74.25%;
+  left: 38.71%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-parent11-payment-screen,
+.group-wrapper2-payment-screen {
+  position: absolute;
+  width: 27.125rem;
+  height: 14.563rem;
+}
+.group-parent11-payment-screen {
+  top: 0;
+  left: 0;
+}
+.group-wrapper2-payment-screen {
+  top: 0.563rem;
+  left: 0.813rem;
+}
+.rectangle-parent56-payment-screen {
+  position: absolute;
+  top: 0.188rem;
+  left: 0.125rem;
+  width: 28.5rem;
+  height: 19.25rem;
+}
+.fi-1828739-icon-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2693507-icon-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.031rem;
+  width: 2.475rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.days-plan-validity-payment-screen {
+  position: absolute;
+  top: 0.375rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 10.063rem;
+  height: 1.25rem;
+}
+.fi-1828739-parent-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18.25rem;
+  height: 2rem;
+}
+.fi-1828739-icon1-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-1239608-icon-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.personal-field-assistant-payment-screen {
+  position: absolute;
+  top: 0.188rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 11rem;
+  height: 1.25rem;
+}
+.fi-1828739-group-payment-screen,
+.fi-1828739-icon2-payment-screen {
+  position: absolute;
+  top: 20.938rem;
+  left: 0;
+  width: 19.188rem;
+  height: 2rem;
+}
+.fi-1828739-icon2-payment-screen {
+  top: 0.125rem;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2889676-icon-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2.063rem;
+  overflow: hidden;
+}
+.privacy-of-your-payment-screen {
+  position: absolute;
+  top: 0.688rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 14.188rem;
+  height: 1.563rem;
+}
+.fi-1828739-container-payment-screen {
+  position: absolute;
+  top: 10.438rem;
+  left: 0;
+  width: 22.375rem;
+  height: 2.25rem;
+}
+.fi-870073-icon-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.231rem;
+  width: 2.213rem;
+  height: 1.938rem;
+  overflow: hidden;
+}
+.fi-1828739-icon3-payment-screen {
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.relationship-manager-fast-payment-screen {
+  position: absolute;
+  top: 0.5rem;
+  left: 8.125rem;
+  display: inline-block;
+  width: 18.563rem;
+  height: 1.438rem;
+}
+.fi-1828739-icon4-payment-screen,
+.fi-870073-parent-payment-screen {
+  position: absolute;
+  top: 15.813rem;
+  left: 0;
+  width: 26.688rem;
+  height: 2rem;
+}
+.fi-1828739-icon4-payment-screen {
+  top: 0.25rem;
+  width: 2.081rem;
+  height: 1.75rem;
+  overflow: hidden;
+}
+.fi-2668384-icon-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 3.969rem;
+  width: 2.669rem;
+  height: 2.313rem;
+  overflow: hidden;
+}
+.top-slot-listing-payment-screen {
+  position: absolute;
+  top: 0.75rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 16.25rem;
+  height: 1.563rem;
+}
+.fi-1828739-parent1-payment-screen {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 24.438rem;
+  height: 2.313rem;
+}
+.group-child46-payment-screen,
+.group-parent13-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.688rem;
+  height: 22.938rem;
+}
+.group-child46-payment-screen {
+  border-radius: 10px;
+  background-color: #b7e08a;
+  width: 19.688rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.get-started-payment-screen {
+  position: absolute;
+  top: 0.688rem;
+  left: 5.438rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 9.125rem;
+  height: 1.688rem;
+}
+.rectangle-parent58-payment-screen {
+  position: absolute;
+  top: 25.5rem;
+  left: 3.313rem;
+  width: 19.688rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+.group-parent12-payment-screen {
+  position: absolute;
+  top: 22.438rem;
+  left: 1.5rem;
+  width: 26.688rem;
+  height: 29rem;
+}
+.group-child47-payment-screen,
+.group-child48-payment-screen,
+.vector-parent-payment-screen {
+  position: absolute;
+  top: 0;
+  width: 28.75rem;
+  height: 53.25rem;
+}
+.vector-parent-payment-screen {
+  left: 34.938rem;
+}
+.group-child47-payment-screen,
+.group-child48-payment-screen {
+  left: 0;
+}
+.group-child48-payment-screen {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px 14px 30px 30px;
+  background-color: #fff;
+  width: 28.5rem;
+  height: 19.25rem;
+}
+.free-3-container-payment-screen,
+.vat-and-local1-payment-screen {
+  position: absolute;
+  left: 0;
+  line-height: 130%;
+  display: inline-block;
+}
+.vat-and-local1-payment-screen {
+  top: 7rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  width: 19.938rem;
+  height: 2.625rem;
+}
+.free-3-container-payment-screen {
+  top: 0;
+  font-size: 2.313rem;
+  width: 17.688rem;
+  height: 2.813rem;
+}
+.span-payment-screen {
+  color: #acabab;
+}
+.free-3-listing-container-payment-screen {
+  position: absolute;
+  top: 3.688rem;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+  width: 11.625rem;
+  height: 2.438rem;
+}
+.vat-and-local-taxes-may-apply-group-payment-screen {
+  position: absolute;
+  top: 5.313rem;
+  left: 4.875rem;
+  width: 19.938rem;
+  height: 9.625rem;
+}
+.rectangle-parent59-payment-screen {
+  position: absolute;
+  top: 0.188rem;
+  left: 0.125rem;
+  width: 28.5rem;
+  height: 19.25rem;
+}
+.fi-1828739-icon5-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2693507-icon1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.031rem;
+  width: 2.475rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.days-plan-validity1-payment-screen {
+  position: absolute;
+  top: 0.375rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 10.063rem;
+  height: 1.25rem;
+}
+.fi-1828739-parent2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18.25rem;
+  height: 2rem;
+}
+.fi-1828739-icon6-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-1239608-icon1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.personal-field-assistant1-payment-screen {
+  position: absolute;
+  top: 0.188rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 11rem;
+  height: 1.25rem;
+}
+.fi-1828739-icon7-payment-screen,
+.fi-1828739-parent3-payment-screen {
+  position: absolute;
+  top: 20.938rem;
+  left: 0;
+  width: 19.188rem;
+  height: 2rem;
+}
+.fi-1828739-icon7-payment-screen {
+  top: 0.125rem;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2889676-icon1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2.063rem;
+  overflow: hidden;
+}
+.privacy-of-your1-payment-screen {
+  position: absolute;
+  top: 0.688rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 13.625rem;
+  height: 1.563rem;
+}
+.fi-1828739-parent4-payment-screen {
+  position: absolute;
+  top: 10.438rem;
+  left: 0;
+  width: 21.813rem;
+  height: 2.25rem;
+}
+.fi-870073-icon1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.231rem;
+  width: 2.213rem;
+  height: 1.938rem;
+  overflow: hidden;
+}
+.fi-1828739-icon8-payment-screen {
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.relationship-manager-fast1-payment-screen {
+  position: absolute;
+  top: 0.5rem;
+  left: 8.125rem;
+  display: inline-block;
+  width: 15.313rem;
+  height: 1.438rem;
+}
+.fi-1828739-icon9-payment-screen,
+.fi-870073-group-payment-screen {
+  position: absolute;
+  top: 15.813rem;
+  left: 0;
+  width: 23.438rem;
+  height: 2rem;
+}
+.fi-1828739-icon9-payment-screen {
+  top: 0.25rem;
+  width: 2.081rem;
+  height: 1.75rem;
+  overflow: hidden;
+}
+.fi-2668384-icon1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 3.969rem;
+  width: 2.669rem;
+  height: 2.313rem;
+  overflow: hidden;
+}
+.top-slot-listing1-payment-screen {
+  position: absolute;
+  top: 0.75rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 16.25rem;
+  height: 1.563rem;
+}
+.fi-1828739-parent5-payment-screen {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 24.438rem;
+  height: 2.313rem;
+}
+.group-child49-payment-screen,
+.group-parent16-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24.438rem;
+  height: 22.938rem;
+}
+.group-child49-payment-screen {
+  border-radius: 10px;
+  background-color: #b7e08a;
+  width: 19.688rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.get-started1-payment-screen {
+  position: absolute;
+  top: 0.75rem;
+  left: 5.125rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 9.125rem;
+  height: 1.688rem;
+}
+.group-parent15-payment-screen,
+.rectangle-parent60-payment-screen {
+  position: absolute;
+  top: 25.5rem;
+  left: 3.063rem;
+  width: 19.688rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+.group-parent15-payment-screen {
+  top: 22.438rem;
+  left: 1.5rem;
+  width: 24.438rem;
+  height: 29rem;
+  font-size: 0.875rem;
+}
+.group-child50-payment-screen,
+.group-child51-payment-screen,
+.group-parent14-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28.75rem;
+  height: 53.25rem;
+}
+.group-parent14-payment-screen {
+  font-size: 1.25rem;
+}
+.group-child50-payment-screen,
+.group-child51-payment-screen {
+  border-radius: 16px;
+}
+.group-child51-payment-screen {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px 14px 30px 30px;
+  background-color: #eee;
+  width: 28.5rem;
+  height: 19.313rem;
+}
+.group-child52-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #b7e08a;
+  width: 7.125rem;
+  height: 1.563rem;
+}
+.discont1-payment-screen {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.625rem;
+  display: inline-block;
+  width: 5.813rem;
+  height: 1.063rem;
+}
+.group-wrapper4-payment-screen,
+.rectangle-parent62-payment-screen {
+  position: absolute;
+  top: 0;
+  width: 7.125rem;
+  height: 1.563rem;
+}
+.rectangle-parent62-payment-screen {
+  left: 0;
+}
+.group-wrapper4-payment-screen {
+  left: 19.5rem;
+}
+.vat-and-local2-payment-screen {
+  position: absolute;
+  top: 7.125rem;
+  left: 0.688rem;
+  line-height: 130%;
+  font-weight: 600;
+  color: rgba(48, 48, 48, 0.8);
+  display: inline-block;
+  width: 21.25rem;
+  height: 2.625rem;
+}
+.inr2-payment-screen {
+  font-weight: 600;
+}
+.inr-container1-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.25rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 27.063rem;
+}
+.inr3-payment-screen {
+  font-weight: 600;
+}
+.listing3-payment-screen {
+  white-space: pre-wrap;
+}
+.inr-15-container-payment-screen {
+  position: absolute;
+  top: 4.063rem;
+  left: 0.625rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 23.75rem;
+}
+.vat-and-local-taxes-may-apply-container-payment-screen {
+  position: absolute;
+  top: 5.813rem;
+  left: 0;
+  width: 27.063rem;
+  height: 9.75rem;
+  font-size: 1.25rem;
+}
+.group-icon1-payment-screen {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  transform: scale(1.61);
+}
+.wrapper-group1-payment-screen {
+  position: absolute;
+  height: 16.87%;
+  width: 20.32%;
+  top: 6.83%;
+  right: 43.65%;
+  bottom: 76.31%;
+  left: 36.03%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-parent17-payment-screen {
+  position: absolute;
+  top: 0.625rem;
+  left: 1.125rem;
+  width: 27.063rem;
+  height: 15.563rem;
+}
+.group-wrapper3-payment-screen,
+.rectangle-parent61-payment-screen {
+  position: absolute;
+  width: 28.5rem;
+  height: 19.313rem;
+}
+.rectangle-parent61-payment-screen {
+  top: 0;
+  left: 0;
+}
+.group-wrapper3-payment-screen {
+  top: 0.125rem;
+  left: 0.125rem;
+}
+.fi-1828739-icon10-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2693507-icon2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.031rem;
+  width: 2.475rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.days-plan-validity2-payment-screen {
+  position: absolute;
+  top: 0.375rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 10.063rem;
+  height: 1.25rem;
+}
+.fi-1828739-parent6-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18.25rem;
+  height: 2rem;
+}
+.fi-1828739-icon11-payment-screen {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-1239608-icon2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.personal-field-assistant2-payment-screen {
+  position: absolute;
+  top: 0.188rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 11rem;
+  height: 1.25rem;
+}
+.fi-1828739-icon12-payment-screen,
+.fi-1828739-parent7-payment-screen {
+  position: absolute;
+  top: 20.938rem;
+  left: 0;
+  width: 19.188rem;
+  height: 2rem;
+}
+.fi-1828739-icon12-payment-screen {
+  top: 0.125rem;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.fi-2889676-icon2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.163rem;
+  width: 2.275rem;
+  height: 2.063rem;
+  overflow: hidden;
+}
+.privacy-of-your2-payment-screen {
+  position: absolute;
+  top: 0.688rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 14.188rem;
+  height: 1.563rem;
+}
+.fi-1828739-parent8-payment-screen {
+  position: absolute;
+  top: 10.438rem;
+  left: 0;
+  width: 22.375rem;
+  height: 2.25rem;
+}
+.fi-870073-icon2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 4.231rem;
+  width: 2.213rem;
+  height: 1.938rem;
+  overflow: hidden;
+}
+.fi-1828739-icon13-payment-screen {
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 2.081rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.relationship-manager-fast2-payment-screen {
+  position: absolute;
+  top: 0.5rem;
+  left: 8.125rem;
+  display: inline-block;
+  width: 18.563rem;
+  height: 1.438rem;
+}
+.fi-1828739-icon14-payment-screen,
+.fi-870073-container-payment-screen {
+  position: absolute;
+  top: 15.813rem;
+  left: 0;
+  width: 26.688rem;
+  height: 2rem;
+}
+.fi-1828739-icon14-payment-screen {
+  top: 0.25rem;
+  width: 2.081rem;
+  height: 1.75rem;
+  overflow: hidden;
+}
+.fi-2668384-icon2-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 3.969rem;
+  width: 2.669rem;
+  height: 2.313rem;
+  overflow: hidden;
+}
+.top-slot-listing2-payment-screen {
+  position: absolute;
+  top: 0.75rem;
+  left: 8.188rem;
+  display: inline-block;
+  width: 16.25rem;
+  height: 1.563rem;
+}
+.fi-1828739-parent9-payment-screen {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 24.438rem;
+  height: 2.313rem;
+}
+.group-child53-payment-screen,
+.group-parent19-payment-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.688rem;
+  height: 22.938rem;
+}
+.group-child53-payment-screen {
+  border-radius: 10px;
+  background-color: #b7e08a;
+  width: 19.688rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.get-started2-payment-screen {
+  position: absolute;
+  top: 0.688rem;
+  left: 5.938rem;
+  line-height: 130%;
+  display: inline-block;
+  width: 9.125rem;
+  height: 1.688rem;
+}
+.rectangle-parent63-payment-screen {
+  position: absolute;
+  top: 25.5rem;
+  left: 3.125rem;
+  width: 19.688rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+.group-parent18-payment-screen {
+  position: absolute;
+  top: 22.438rem;
+  left: 1.5rem;
+  width: 26.688rem;
+  height: 29rem;
+}
+.group-parent10-payment-screen,
+.vector-group-payment-screen {
+  position: absolute;
+  height: 53.25rem;
+}
+.vector-group-payment-screen {
+  top: 0;
+  left: 69.875rem;
+  width: 28.75rem;
+}
+.group-parent10-payment-screen {
+  top: 6.5rem;
+  left: 10.688rem;
+  width: 98.625rem;
+}
+.free-paid-payment-screen {
+  width: 100%;
+  position: relative;
+  border-radius: 25px;
+  background-color: #fff;
+  height: 67.5rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #000;
+  font-family: Sora;
+}

@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const PendingRequest = ({ data }) => {
+const PendingRequest = () => {
   const [statusData, setStatusData] = useState();
   const [vendorData,setVendorData] = useState([])
+  const [pendingUser,setPendingUser] = useState([])
+  const [updateState,setUpdateState] = useState(false)
   const handleChange = (items,e) => {
     setVendorData(items)
     if(e.target.value != ""){
@@ -16,16 +18,21 @@ const PendingRequest = ({ data }) => {
      vendorData.status = statusData
      if(statusData != undefined){
       axios.put('http://localhost:3000/put-Registration',vendorData).then((res)=>{
-         console.log("update status");
+
+         setUpdateState(!updateState)
        })
      }
-    
   },[statusData])
+  useEffect(() => {
+  axios.get("http://localhost:3000/get-Registration-pending").then((res) => {
+    setPendingUser(res.data);
+    });
+  },[updateState]);
   return (
     <>
       <table>
         <tbody>
-          {data?.map((items, index) => {
+          {pendingUser?.map((items, index) => {
             return (
               <tr className="group" key={index}>
                 <td className="div27">{index + 1}</td>

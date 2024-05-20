@@ -43,6 +43,30 @@ router.get("/get-Registration", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.get("/get-Registration-active", async (req, res) => {
+  try {
+    let getListingData = await RegistrationSchema.find({ status: 'active' });
+    res.status(200).json(getListingData);
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/get-Registration-pending", async (req, res) => {
+  try {
+    let getListingData = await RegistrationSchema.find({ status: 'pending' });
+    res.status(200).json(getListingData);
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/get-Registration-reject", async (req, res) => {
+  try {
+    let getListingData = await RegistrationSchema.find({ status: 'reject' });
+    res.status(200).json(getListingData);
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 router.put('/put-Registration', async (req, res) => {
   try {
     const userEmail = req.body.email; 

@@ -1,0 +1,968 @@
+.group-child-membership {
+    background-color: #f2f6fe;
+  }
+  .group-child-membership,
+  .group-item-membership,
+  .rectangle-wrapper-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1601px;
+    height: 1413px;
+  }
+  .group-item-membership {
+    box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 688px;
+    height: 234px;
+  }
+  .layer-3-icon-membership {
+    position: absolute;
+    height: 15%;
+    width: 8.63%;
+    top: 11.54%;
+    right: 2.85%;
+    bottom: 73.46%;
+    left: 88.52%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .active-members-membership {
+    top: 40px;
+    left: 27px;
+    font-weight: 300;
+    width: 206px;
+    height: 23px;
+  }
+  .active-members-membership,
+  .div-membership,
+  .view-all-members-membership {
+    position: absolute;
+    display: inline-block;
+  }
+  .div-membership {
+    top: 91px;
+    left: 34px;
+    font-size: 35px;
+    text-align: left;
+    width: 24px;
+    height: 28px;
+  }
+  .view-all-members-membership {
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    width: 235px;
+    height: 23px;
+  }
+  .group-inner-membership {
+    position: absolute;
+    top: 16px;
+    left: 260px;
+    max-height: 100%;
+    width: 43px;
+  }
+  .view-all-members-parent-membership {
+    position: absolute;
+    top: 164px;
+    left: 29px;
+    width: 303px;
+    height: 23px;
+    font-size: 25px;
+  }
+  .rectangle-div-membership,
+  .rectangle-parent-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 688px;
+    height: 234px;
+  }
+  .rectangle-div-membership {
+    box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .membership-revenue-membership {
+    top: 40px;
+    left: 26px;
+    font-weight: 300;
+    width: 252px;
+    height: 23px;
+  }
+  .div1-membership,
+  .membership-revenue-membership,
+  .view-all-members1-membership {
+    position: absolute;
+    display: inline-block;
+  }
+  .div1-membership {
+    top: 91px;
+    left: 31px;
+    font-size: 35px;
+    text-align: left;
+    width: 24px;
+    height: 28px;
+  }
+  .view-all-members1-membership {
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    width: 235px;
+    height: 23px;
+  }
+  .line-icon-membership {
+    position: absolute;
+    top: 17px;
+    left: 258px;
+    max-height: 100%;
+    width: 43px;
+  }
+  .view-all-members-group-membership {
+    position: absolute;
+    top: 164px;
+    left: 25px;
+    width: 301px;
+    height: 23px;
+    font-size: 25px;
+  }
+  .fi-10164350-icon-membership {
+    position: absolute;
+    top: 8px;
+    left: 637px;
+    width: 41px;
+    height: 28px;
+    overflow: hidden;
+  }
+  .group-child1-membership,
+  .group-parent1-membership,
+  .rectangle-group-membership {
+    position: absolute;
+    top: 0;
+    left: 809px;
+    width: 688px;
+    height: 234px;
+  }
+  .group-child1-membership,
+  .group-parent1-membership {
+    left: 0;
+    width: 1497px;
+  }
+  .group-child1-membership {
+    box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 1182px;
+    height: 988px;
+  }
+  .edit-your-membership-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    display: inline-block;
+    width: 748px;
+    height: 33px;
+  }
+  .make-changes-to-membership {
+    position: absolute;
+    top: 92px;
+    left: 13px;
+    font-size: 27px;
+    color: #afafaf;
+    display: inline-block;
+    width: 1053px;
+  }
+  .edit-your-membership-parent-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1066px;
+    height: 126px;
+  }
+  .div2-membership,
+  .group-child2-membership {
+    position: absolute;
+    top: 0;
+  }
+  .group-child2-membership {
+    left: 0;
+    box-shadow: 3px 4px 23.2px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    background-color: #fff;
+    width: 1071px;
+    height: 581px;
+  }
+  .div2-membership {
+    left: 22px;
+    line-height: 130%;
+    font-weight: 300;
+    display: inline-block;
+    width: 61px;
+    height: 29px;
+  }
+  .fi-7204809-icon-membership {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 27px;
+    overflow: hidden;
+    
+  }
+  .parent-membership,
+  .pricing-membership {
+    position: absolute;
+    top: 72px;
+    left: 46px;
+    width: 83px;
+    height: 29px;
+  }
+  .pricing-membership {
+    top: 0;
+    left: 34px;
+    line-height: 130%;
+    font-weight: 300;
+    display: inline-block;
+    width: 143px;
+    height: 42px;
+  }
+  .ellipse-div-membership {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #b7e08a;
+    width: 14px;
+    height: 14px;
+  }
+  .group-parent4-membership,
+  .pricing-parent-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 177px;
+    height: 42px;
+    font-size: 37px;
+  }
+  .group-parent4-membership {
+    left: 8px;
+    height: 101px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .subscription-membership {
+    position: absolute;
+    top: 0;
+    left: 31px;
+    line-height: 130%;
+    font-weight: 300;
+    display: inline-block;
+    width: 260px;
+    height: 42px;
+  }
+  .group-child3-membership {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #b7e08a;
+    width: 14px;
+    height: 14px;
+  }
+  .subscription-parent-membership {
+    position: absolute;
+    top: 136px;
+    left: 9px;
+    width: 291px;
+    height: 42px;
+    text-align: center;
+    font-size: 37px;
+  }
+  .fi-1828739-icon-membership,
+  .fi-2693507-icon-membership {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 32px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .fi-2693507-icon-membership {
+    top: 0;
+    left: 62px;
+    width: 38px;
+    height: 32px;
+  }
+  .days-plan-validity-membership {
+    position: absolute;
+    top: 6px;
+    left: 133px;
+    display: inline-block;
+    width: 180px;
+    height: 20px;
+  }
+  .fi-1828739-parent-membership {
+    position: absolute;
+    top: 209px;
+    left: 0;
+    width: 313px;
+    height: 32px;
+  }
+  .fi-1239608-icon-membership,
+  .fi-1828739-icon1-membership {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 32px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .fi-1239608-icon-membership {
+    top: 0;
+    left: 64px;
+    width: 35px;
+    height: 32px;
+  }
+  .personal-field-assistant-membership {
+    position: absolute;
+    top: 3px;
+    left: 133px;
+    display: inline-block;
+    width: 196px;
+    height: 20px;
+  }
+  .fi-1828739-group-membership {
+    position: absolute;
+    top: 497px;
+    left: 0;
+    width: 329px;
+    height: 32px;
+  }
+  .fi-1828739-icon2-membership,
+  .fi-2889676-icon-membership {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 32px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .fi-2889676-icon-membership {
+    top: 0;
+    left: 64px;
+    width: 35px;
+    height: 33px;
+  }
+  .privacy-of-your-membership {
+    position: absolute;
+    top: 11px;
+    left: 133px;
+    display: inline-block;
+    width: 254px;
+    height: 25px;
+  }
+  .fi-1828739-container-membership {
+    position: absolute;
+    top: 352px;
+    left: 0;
+    width: 387px;
+    height: 36px;
+  }
+  .fi-1828739-icon3-membership,
+  .fi-870073-icon-membership {
+    position: absolute;
+    top: 0;
+    left: 65px;
+    width: 34px;
+    height: 31px;
+    overflow: hidden;
+  }
+  .fi-1828739-icon3-membership {
+    top: 2px;
+    left: 0;
+    width: 32px;
+    height: 30px;
+  }
+  .relationship-manager-super-membership {
+    position: absolute;
+    top: 8px;
+    left: 132px;
+    display: inline-block;
+    width: 332px;
+    height: 23px;
+  }
+  .fi-870073-parent-membership {
+    position: absolute;
+    top: 424px;
+    left: 0;
+    width: 464px;
+    height: 32px;
+  }
+  .fi-1828739-icon4-membership,
+  .fi-2668384-icon-membership {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 32px;
+    height: 28px;
+    overflow: hidden;
+  }
+  .fi-2668384-icon-membership {
+    top: 0;
+    left: 61px;
+    width: 41px;
+    height: 37px;
+  }
+  .top-slot-listing-membership {
+    position: absolute;
+    top: 12px;
+    left: 133px;
+    display: inline-block;
+    width: 291px;
+    height: 25px;
+  }
+  .fi-1828739-parent1-membership {
+    position: absolute;
+    top: 279px;
+    left: 0;
+    width: 424px;
+    height: 37px;
+  }
+  .frame-child-membership,
+  .group-parent3-membership {
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    width: 464px;
+    height: 529px;
+  }
+  .frame-child-membership {
+    top: 0;
+    left: 0;
+    width: 377px;
+    height: 539px;
+  }
+  .group-child4-membership {
+    border-radius: 17px;
+    background-color: #fff;
+    border: 2px solid #e8e8e8;
+    box-sizing: border-box;
+  }
+  .group-child4-membership,
+  .group-frame-membership,
+  .rectangle-frame-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 343px;
+    height: 509px;
+  }
+  .fi-1828739-icon5-membership,
+  .fi-2693507-icon1-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15.9px;
+    height: 15px;
+    overflow: hidden;
+  }
+  .fi-2693507-icon1-membership {
+    left: 38.8px;
+    width: 23.9px;
+    height: 17px;
+  }
+  .days-plan-validity1-membership {
+    position: absolute;
+    top: 1px;
+    left: 75.5px;
+    display: inline-block;
+    width: 130.2px;
+    height: 20px;
+  }
+  .fi-1828739-parent2-membership,
+  .group-icon-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 205.7px;
+    height: 21px;
+  }
+  .group-icon-membership {
+    height: 100%;
+    width: 7.1%;
+    right: 79.71%;
+    bottom: 0;
+    left: 13.19%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .top-slot-listing1-membership {
+    position: absolute;
+    top: 0;
+    left: 75.5px;
+    display: inline-block;
+    width: 218.7px;
+    height: 15px;
+  }
+  .vector-icon-membership {
+    position: absolute;
+    height: 78.95%;
+    width: 5.4%;
+    top: 0;
+    right: 94.6%;
+    bottom: 21.05%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-group-membership,
+  .group-icon1-membership {
+    position: absolute;
+    height: 10.5%;
+    width: 89.97%;
+    top: 23.2%;
+    right: 10.03%;
+    bottom: 66.3%;
+    left: 0;
+  }
+  .group-icon1-membership {
+    height: 94.12%;
+    width: 4.54%;
+    top: 2.94%;
+    right: 78.62%;
+    bottom: 2.94%;
+    left: 16.84%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .privacy-of-your1-membership {
+    position: absolute;
+    top: 0;
+    left: 74.5px;
+    display: inline-block;
+    width: 187.9px;
+    height: 15px;
+  }
+  .vector-icon1-membership {
+    position: absolute;
+    height: 88.24%;
+    width: 6.06%;
+    top: 11.76%;
+    right: 93.94%;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-icon2-membership,
+  .group-parent7-membership {
+    position: absolute;
+    height: 9.39%;
+    width: 80.24%;
+    top: 45.3%;
+    right: 19.76%;
+    bottom: 45.3%;
+    left: 0;
+  }
+  .group-icon2-membership {
+    height: 73.68%;
+    width: 4.56%;
+    top: 0;
+    right: 82.66%;
+    bottom: 26.32%;
+    left: 12.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .relationship-manager-super1-membership {
+    position: absolute;
+    top: 2px;
+    left: 74.5px;
+    display: inline-block;
+    width: 252.5px;
+    height: 17px;
+  }
+  .vector-icon2-membership {
+    position: absolute;
+    height: 78.95%;
+    width: 4.86%;
+    top: 0;
+    right: 95.14%;
+    bottom: 21.05%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-parent8-membership,
+  .vector-icon3-membership {
+    position: absolute;
+    height: 10.5%;
+    width: 100%;
+    top: 66.3%;
+    right: 0;
+    bottom: 23.2%;
+    left: 0;
+  }
+  .vector-icon3-membership {
+    height: 76.19%;
+    width: 7.18%;
+    top: 0;
+    right: 73.96%;
+    bottom: 23.81%;
+    left: 18.86%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .personal-field-assistant1-membership {
+    position: absolute;
+    top: 1px;
+    left: 74.5px;
+    display: inline-block;
+    width: 147.1px;
+    height: 20px;
+  }
+  .vector-icon4-membership {
+    position: absolute;
+    height: 71.43%;
+    width: 7.18%;
+    top: 4.76%;
+    right: 92.82%;
+    bottom: 23.81%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-parent-membership {
+    position: absolute;
+    height: 11.6%;
+    width: 67.77%;
+    top: 88.4%;
+    right: 32.23%;
+    bottom: 0;
+    left: 0;
+  }
+  .group-child5-membership,
+  .group-parent6-membership {
+    position: absolute;
+    top: 264px;
+    left: 13px;
+    width: 327px;
+    height: 181px;
+  }
+  .group-child5-membership {
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 18px 18px;
+    background-color: #000;
+    width: 339px;
+    height: 240px;
+  }
+  .group-icon3-membership {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    transform: scale(2.012);
+  }
+  .wrapper-group-membership {
+    position: absolute;
+    height: 13.98%;
+    width: 17.26%;
+    top: 8.84%;
+    right: 47.56%;
+    bottom: 77.18%;
+    left: 35.18%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .group-child6-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #b7e08a;
+    width: 87px;
+    height: 16px;
+  }
+  .discont-membership {
+    position: absolute;
+    top: 1px;
+    left: 12.6px;
+    display: inline-block;
+    width: 72.5px;
+    height: 11px;
+  }
+  .rectangle-parent3-membership {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    width: 87px;
+    height: 16px;
+  }
+  .inr-membership {
+    font-weight: 600;
+  }
+  .inr-container-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 130%;
+    display: inline-block;
+    width: 288px;
+  }
+  .inr1-membership {
+    font-weight: 600;
+  }
+  .listing-membership {
+    white-space: pre-wrap;
+  }
+  .inr-25-container-membership,
+  .vat-and-local-membership {
+    line-height: 130%;
+    display: inline-block;
+  }
+  .inr-25-container-membership {
+    position: absolute;
+    top: 45px;
+    left: 2px;
+    font-size: 16px;
+    width: 186px;
+  }
+  .vat-and-local-membership {
+    font-weight: 600;
+  }
+  .group-wrapper1-membership,
+  .group-wrapper2-membership,
+  .vat-and-local-membership,
+  .vat-and-local-taxes-may-apply-wrapper-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 244px;
+    height: 26px;
+  }
+  .group-wrapper1-membership {
+    top: 85px;
+    left: 5px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .inr-25-listing-parent-membership {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 288px;
+    height: 111px;
+    font-size: 24px;
+    color: #fff;
+  }
+  .wrapper-group-parent-membership {
+    position: absolute;
+    height: 75.42%;
+    width: 90.56%;
+    top: 2.08%;
+    right: 1.77%;
+    bottom: 22.5%;
+    left: 7.67%;
+  }
+  .rectangle-parent2-membership {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 339px;
+    height: 240px;
+    font-size: 10px;
+  }
+  .group-child7-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #b7e08a;
+    width: 269px;
+    height: 35px;
+  }
+  .get-started-membership {
+    position: absolute;
+    top: 7px;
+    left: 92px;
+    line-height: 130%;
+    display: inline-block;
+    width: 94px;
+    height: 21px;
+  }
+  .rectangle-parent4-membership {
+    position: absolute;
+    top: 457px;
+    left: 40px;
+    width: 269px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .frame-div-membership,
+  .group-parent5-membership {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 343px;
+    height: 509px;
+  }
+  .frame-div-membership {
+    top: 31px;
+    left: 596px;
+    width: 377px;
+    height: 539px;
+    font-size: 12px;
+  }
+  .rectangle-parent1-membership {
+    position: absolute;
+    top: 188px;
+    left: 56px;
+    width: 1071px;
+    height: 581px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .group-child8-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #fff;
+    width: 574px;
+    height: 100px;
+  }
+  .preview-membership-page-membership {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    line-height: 130%;
+    display: inline-block;
+    width: 446px;
+    height: 62px;
+  }
+  .fi-2356572-icon-membership {
+    position: absolute;
+    top: 0;
+    left: 476px;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+  }
+  .preview-membership-page-parent-membership {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    width: 528px;
+    height: 66px;
+  }
+  .group-child9-membership,
+  .rectangle-parent5-membership {
+    position: absolute;
+    top: 0;
+    left: 495px;
+    width: 574px;
+    height: 100px;
+  }
+  .rectangle-parent5-membership:hover{
+    background-color: #b7e08a;
+  }
+  .group-child9-membership {
+    left: 0;
+    box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    /* background-color: #b7e08a; */
+    width: 471px;
+  }
+  .edit-membership-membership {
+    position: absolute;
+    top: 27px;
+    left: 93px;
+    line-height: 130%;
+    display: inline-block;
+    width: 335px;
+    height: 56px;
+  }
+  .fi-2040504-icon-membership {
+    position: absolute;
+    top: 27px;
+    left: 44px;
+    width: 46px;
+    height: 44px;
+    overflow: hidden;
+  }
+  .group-parent9-membership,
+  .rectangle-parent6-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 471px;
+    height: 100px;
+  }
+  .rectangle-parent6-membership:hover{
+    background-color: #b7e08a;
+  }
+  .group-parent9-membership {
+    top: 803px;
+    left: 45px;
+    width: 1069px;
+    font-size: 33px;
+  }
+  .group-parent2-membership {
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    width: 1127px;
+    height: 903px;
+  }
+  .rectangle-container-membership {
+    position: absolute;
+    top: 276px;
+    left: 137px;
+    width: 1182px;
+    height: 988px;
+    font-size: 64px;
+  }
+  .group-div-membership {
+    position: absolute;
+    top: 79px;
+    left: 57px;
+    width: 1497px;
+    height: 1264px;
+  }
+  .group-container-membership,
+  .group-wrapper-membership {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1601px;
+    height: 1413px;
+  }
+  .group-parent-membership {
+    width: 100%;
+    position: relative;
+    height: 1413px;
+    text-align: center;
+    font-size: 23px;
+    color: #000;
+    font-family: Sora;
+  }
+  

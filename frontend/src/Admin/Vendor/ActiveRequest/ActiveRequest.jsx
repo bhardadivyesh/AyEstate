@@ -2,30 +2,35 @@ import React from "react";
 import { useState,useEffect } from "react";
 import axios from "axios";
 
-const ActiveRequest = ({data}) => {
+const ActiveRequest = () => {
   const [statusData, setStatusData] = useState();
   const [vendorData,setVendorData] = useState([])
+  const [activeUser,setActiveUser] = useState([])
+  const [updateState,setUpdateState] = useState(false)
   const handleChange = (items,e) => {
     setVendorData(items)
     if(e.target.value != ""){
       setStatusData(e.target.value);
     }
   };
-
   useEffect(()=>{
      vendorData.status = statusData
      if(statusData != undefined){
-      axios.put('http://localhost:3000/put-Registration',vendorData).then((res)=>{
-         console.log("update status");
+      axios.put('http://localhost:3000/put-Registration',vendorData).then(()=>{
+         setUpdateState(!updateState)
        })
      }
-    
   },[statusData])
+  useEffect(() => {
+  axios.get("http://localhost:3000/get-Registration-active").then((res) => {
+      setActiveUser(res.data);
+    });
+  },[updateState]);
   return (
     <>
        <table>
         <tbody>
-          {data?.map((items, index) => {
+          {activeUser?.map((items, index) => {
             return (
               <tr className="group" key={index}>
                 <td className="div27">{index + 1}</td>

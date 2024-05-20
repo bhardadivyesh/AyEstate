@@ -1,4 +1,4 @@
-import { useContext, useState,useEffect } from "react";
+import {useState,useEffect } from "react";
 import ActiveRequest from "../ActiveRequest/ActiveRequest";
 import PendingRequest from "../PendingRequest/PendingRequest";
 import RejectRequest from "../RejectRequest/RejectRequest";
@@ -16,6 +16,7 @@ const VendorMain = () => {
       setVendorData(res.data);
     });
   },[]);
+ 
   let PendingRequestData = vendorData.filter((items) => items.status == "pending");
   let ActiveRequestData = vendorData.filter((items => items.status == "active"));   
   let RejectRequestData = vendorData.filter((items => items.status == "reject"));                                                           
@@ -41,11 +42,11 @@ const VendorMain = () => {
             <div className="action1">Action</div>
             <div className="group-child15" />
           </div>
-          {/* <vendorContext.Provider value={{vendorRendor,setVendorManage}}/> */}
-          {vendorRendor === "pending" && <PendingRequest data={PendingRequestData} />}
-          {vendorRendor === "active" && <ActiveRequest data={ActiveRequestData}/>}
-          {vendorRendor === "reject" && <RejectRequest data={RejectRequestData}/>}
-          {/* <vendorContext.Provider /> */}
+          {/* <vendorContext.Provider value={{activeUsers,setActiveUsers}}> */}
+          {vendorRendor === "pending" && <PendingRequest  />}
+          {vendorRendor === "active" && <ActiveRequest />}
+          {vendorRendor === "reject" && <RejectRequest />}
+          {/* </vendorContext.Provider > */}
         </div>
       </div>
     </div>

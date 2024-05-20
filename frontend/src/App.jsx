@@ -19,6 +19,7 @@ import PaymentFail from "./paymentGateway/PaymentFail/PaymentFail";
 import RequestUnderReview from "./paymentGateway/RequestUnderReview/RequestUnderReview";
 import Dashboard from "./Admin/Dashboard/Dashboard";
 import Revenuecat from "./RevenueCat/Revenuecat";
+import PaymentNew from "./paymentGateway/Payment/PaymentNew"
 function App() {
   const [detailPropertyData,setDetailPropertyData] = useState([])
   const [resentArticalData,setResentArticalData] = useState([])
@@ -47,6 +48,7 @@ function App() {
 
             {/* admin routes */}
             <Route path="/dashboard" element={<Dashboard />}/>
+            <Route path="/paymentScreen" element={<PaymentNew />}/>
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>
