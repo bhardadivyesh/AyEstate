@@ -1,0 +1,596 @@
+.frame-child94-membership-revenue,
+.membership-revenue-inner-membership-revenue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f2f6fe;
+}
+.frame-child94-membership-revenue {
+  display: none;
+}
+.membership-revenue-inner-membership-revenue {
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+}
+.frame-child95-membership-revenue {
+  width: 43rem;
+  height: 14.625rem;
+  position: relative;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+  max-width: 100%;
+}
+.total-revenue-membership-revenue {
+  width: 14.5rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.separator-content-membership-revenue {
+  flex: 1;
+  position: relative;
+  line-height: 3.375rem;
+  z-index: 1;
+}
+.separator-content-wrapper-membership-revenue {
+  width: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.875rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 3.438rem;
+}
+.frame-child96-membership-revenue,
+.rectangle-parent83-membership-revenue {
+  width: 43rem;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 100%;
+}
+.rectangle-parent83-membership-revenue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.375rem 2.937rem 5.437rem;
+  box-sizing: border-box;
+  gap: 1.125rem;
+  z-index: 1;
+}
+.frame-child96-membership-revenue {
+  height: 14.625rem;
+  position: relative;
+  display: none;
+}
+.div37-membership-revenue,
+.total-refund-membership-revenue {
+  position: relative;
+  z-index: 1;
+}
+.total-refund-membership-revenue {
+  width: 12.875rem;
+  display: inline-block;
+}
+.div37-membership-revenue {
+  flex: 1;
+  line-height: 3.313rem;
+}
+.container-membership-revenue {
+  width: 3.813rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 3.438rem;
+}
+.rectangle-parent84-membership-revenue,
+.revenue-summary-membership-revenue {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.rectangle-parent84-membership-revenue {
+  width: 43rem;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2.312rem 4.125rem 5.5rem;
+  box-sizing: border-box;
+  gap: 1.187rem;
+  z-index: 1;
+}
+.revenue-summary-membership-revenue {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.frame-child97-membership-revenue {
+  align-self: stretch;
+  height: 35.75rem;
+  position: relative;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+}
+.id-membership-revenue,
+.payment-date-membership-revenue {
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.id-membership-revenue {
+  width: 1.938rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.payment-date-membership-revenue {
+  align-self: stretch;
+}
+.payment-date-wrapper-membership-revenue {
+  width: 13.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1.562rem 0 0;
+  box-sizing: border-box;
+}
+.amount-membership-revenue {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.amount-wrapper-membership-revenue {
+  width: 7.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.062rem;
+  box-sizing: border-box;
+}
+.payment-entry-membership-revenue,
+.payment-info-membership-revenue {
+  display: flex;
+  justify-content: flex-start;
+}
+.payment-entry-membership-revenue {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2.875rem;
+}
+.payment-info-membership-revenue {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 2.437rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.vendor2-membership-revenue {
+  width: 6.688rem;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.688rem;
+  z-index: 1;
+}
+.vendor-wrapper-membership-revenue {
+  width: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item-membership-revenue {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.item-wrapper-membership-revenue {
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.437rem 2.437rem 0 0;
+  box-sizing: border-box;
+}
+.payment-status-membership-revenue {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.payment-status-wrapper-membership-revenue {
+  width: 13.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.187rem 0 0;
+  box-sizing: border-box;
+}
+.payment-detail-membership-revenue {
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.payment-details-membership-revenue {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4.125rem;
+  max-width: 100%;
+}
+.membership-revenue2-membership-revenue,
+.payment-details-wrapper-membership-revenue,
+.rectangle-parent85-membership-revenue {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.payment-details-wrapper-membership-revenue {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 1.375rem 0 1.125rem;
+  max-width: 100%;
+}
+.membership-revenue2-membership-revenue,
+.rectangle-parent85-membership-revenue {
+  flex-direction: column;
+}
+.rectangle-parent85-membership-revenue {
+  align-self: stretch;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1.187rem 0 23.5rem;
+  gap: 3.437rem;
+  max-width: 100%;
+  z-index: 1;
+  font-size: 1.688rem;
+}
+.membership-revenue2-membership-revenue {
+  width: 100%;
+  position: relative;
+  padding: 2.437rem 2.875rem 4.75rem 3.125rem;
+  gap: 4.25rem;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 1.875rem;
+  color: #000;
+  font-family: Sora;
+}
+.div43-membership-revenue,
+.frame-child170-membership-revenue {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.frame-child170-membership-revenue {
+  height: 0.125rem;
+  border-top: 2px solid #2b2b2b;
+  box-sizing: border-box;
+}
+.div43-membership-revenue {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+.wrapper2-membership-revenue {
+  width: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.875rem 0 0;
+  box-sizing: border-box;
+}
+.div44-membership-revenue {
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 7.125rem;
+  z-index: 1;
+}
+.wrapper3-membership-revenue {
+  width: 11.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.875rem 1.25rem 0 0;
+  box-sizing: border-box;
+}
+.div45-membership-revenue {
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 4.313rem;
+  white-space: nowrap;
+  z-index: 1;
+}
+.wrapper4-membership-revenue {
+  width: 7.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.875rem 1.25rem 0 0;
+  box-sizing: border-box;
+}
+.karan1-membership-revenue {
+  width: 5.375rem;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  z-index: 1;
+}
+.karan-wrapper-membership-revenue {
+  width: 8.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.687rem 1.25rem 0 0;
+  box-sizing: border-box;
+  font-size: 1.688rem;
+}
+.paid-membership-revenue {
+  width: 4.25rem;
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  z-index: 1;
+}
+.paid-wrapper-membership-revenue {
+  width: 7.063rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.687rem 1.25rem 0 0;
+  box-sizing: border-box;
+  font-size: 1.688rem;
+}
+.successful-membership-revenue {
+  position: relative;
+  line-height: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+.successful-wrapper-membership-revenue {
+  width: 13.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.687rem 1.25rem 0 0;
+  box-sizing: border-box;
+  font-size: 1.688rem;
+  color: #00d34f;
+}
+.frame-child171-membership-revenue {
+  height: 2.688rem;
+  width: 7.188rem;
+  position: relative;
+  box-shadow: 0 0 5.3px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: #fff;
+  display: none;
+}
+.detail-membership-revenue {
+  flex: 1;
+  position: relative;
+  font-size: 1.063rem;
+  line-height: 1.688rem;
+  font-weight: 300;
+  font-family: Sora;
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.rectangle-parent132-membership-revenue {
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 1.75rem 0.5rem 2rem;
+  background-color: #fff;
+  width: 7.188rem;
+  box-shadow: 0 0 5.3px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.rectangle-parent132-membership-revenue:hover {
+  background-color: #e6e6e6;
+}
+.frame-parent105-membership-revenue,
+.frame-wrapper61-membership-revenue,
+.line-parent1-membership-revenue {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent105-membership-revenue {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.frame-wrapper61-membership-revenue,
+.line-parent1-membership-revenue {
+  justify-content: flex-start;
+}
+.frame-wrapper61-membership-revenue {
+  width: 92.313rem;
+  flex-direction: row;
+  padding: 0 1.437rem;
+  box-sizing: border-box;
+}
+.line-parent1-membership-revenue {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.frame-child172-membership-revenue {
+  align-self: stretch;
+  height: 0.125rem;
+  position: relative;
+  border-top: 2px solid rgba(178, 175, 175, 0.56);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-parent104-membership-revenue {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: Sora;
+}
+@media screen and (max-width: 1225px) {
+  .frame-parent105-membership-revenue {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div43-membership-revenue,
+  .div44-membership-revenue,
+  .div45-membership-revenue {
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+  .karan1-membership-revenue,
+  .paid-membership-revenue,
+  .successful-membership-revenue {
+    font-size: 1.375rem;
+    line-height: 1.188rem;
+  }
+}
+@media screen and (max-width: 1525px) {
+  .payment-details-membership-revenue,
+  .revenue-summary-membership-revenue {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 850px) {
+  .total-revenue-membership-revenue {
+    font-size: 1.5rem;
+  }
+  .separator-content-membership-revenue {
+    font-size: 2.75rem;
+    line-height: 2.688rem;
+  }
+  .total-refund-membership-revenue {
+    font-size: 1.5rem;
+  }
+  .div37-membership-revenue {
+    font-size: 2.75rem;
+    line-height: 2.625rem;
+  }
+  .payment-entry-membership-revenue {
+    flex-wrap: wrap;
+    gap: 1.438rem;
+  }
+  .payment-details-membership-revenue {
+    gap: 2.063rem;
+  }
+  .rectangle-parent85-membership-revenue {
+    gap: 1.688rem;
+    padding-top: 1.25rem;
+    padding-bottom: 15.25rem;
+    box-sizing: border-box;
+  }
+  .membership-revenue2-membership-revenue {
+    gap: 2.125rem;
+    padding-left: 1.563rem;
+    padding-right: 1.438rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .total-revenue-membership-revenue {
+    font-size: 1.125rem;
+  }
+  .separator-content-membership-revenue {
+    font-size: 2.063rem;
+    line-height: 2rem;
+  }
+  .rectangle-parent83-membership-revenue {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .total-refund-membership-revenue {
+    font-size: 1.125rem;
+  }
+  .div37-membership-revenue {
+    font-size: 2.063rem;
+    line-height: 2rem;
+  }
+  .rectangle-parent84-membership-revenue {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .amount-membership-revenue,
+  .id-membership-revenue,
+  .item-membership-revenue,
+  .payment-date-membership-revenue,
+  .payment-detail-membership-revenue,
+  .payment-status-membership-revenue,
+  .vendor2-membership-revenue {
+    font-size: 1.375rem;
+    line-height: 1.188rem;
+  }
+  .payment-details-membership-revenue {
+    gap: 1rem;
+  }
+  .membership-revenue2-membership-revenue {
+    gap: 1.063rem;
+  }
+}

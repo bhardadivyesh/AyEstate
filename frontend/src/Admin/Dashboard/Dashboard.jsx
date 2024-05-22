@@ -14,10 +14,12 @@ import StatusMain from "../Status/StatusMain/StatusMain";
 import VendorMain from "../Vendor/VendorMain/VendorMain";
 import ManageMain from "../Manage/ManageMain/ManageMain";
 import { useNavigate } from "react-router-dom";
-import Membership from "../Membership/MembershipMain";
+import Membership from "../Membership/MembershipMain/MembershipMain";
+import MembershipPricing from "../Membership/MembershipPricing/MembershipPricing";
+import MembershipRevenueMain from "../Membership/MembershipMain/MembershipRevenueMain/MembershipRevenueMain";
 
 const Dashboard = () => {
-  const [renderManage, setRenderManage] = useState("membership");
+  const [renderManage, setRenderManage] = useState("Manage");
   const handleManageClick = (state) => {
     setRenderManage(state);
   };
@@ -53,6 +55,13 @@ const Dashboard = () => {
         <img className="product-3-icon" alt="Manage Icon" src={manage} />
         <span className="manage">Manage</span>
       </button>
+      <button
+        className="rectangle-group1"
+        onClick={() => handleManageClick("dashboard")}
+      >
+        <img className="product-3-icon" alt="Manage Icon" src={manage} />
+        <span className="manage">Dashboard</span>
+      </button>
       <div className="rectangle-container">
         <div className="group-inner" />
         {/* body part */}
@@ -61,6 +70,8 @@ const Dashboard = () => {
           {renderManage == "status" && <StatusMain />}
           {renderManage == "vendor" && <VendorMain />}
           {renderManage == "membership" && <Membership />}
+          {renderManage == "/editMembership" && <MembershipPricing />}
+          {renderManage == "membershipRevenue" && <MembershipRevenueMain />}
         </dashboardContext.Provider>
       </div>
       <button

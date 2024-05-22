@@ -74,13 +74,13 @@
 .email-3-1 {
   position: absolute;
   top: 1.688rem;
-  left: 109.375rem;
+  left: 98.375rem;
   width: 2.75rem;
   height: 2.75rem;
   object-fit: cover;
 }
 .email-3-1 {
-  left: 104.25rem;
+  left: 93.25rem;
   width: 3.125rem;
   height: 2.625rem;
 }
@@ -239,9 +239,21 @@
   object-fit: cover;
   margin-top: 4px;
 }
+.rectangle-group1{
+  position: absolute;
+  top: 8.188rem;
+  left: 0;
+  width: 19.938rem;
+  height: 4.563rem;
+  cursor: pointer;
+}
+.rectangle-group1:hover{
+  background-color: #b7e08a;
+  border-radius: 0px 22px 22px 0px;
+}
 .rectangle-group {
   position: absolute;
-  top: 18.188rem;
+  top: 14.188rem;
   left: 0;
   width: 19.938rem;
   height: 4.563rem;
@@ -656,7 +668,7 @@
   height: 4.563rem;
 }
 .rectangle-parent4 {
-  top: 24.5rem;
+  top: 20.5rem;
   cursor: pointer;
 }
 .rectangle-parent4:hover{
@@ -695,7 +707,7 @@
   height: 4.563rem;
 }
 .rectangle-parent5 {
-  top: 31.063rem;
+  top: 27.063rem;
   font-size: 1.688rem;
   cursor: pointer;
 }
@@ -729,7 +741,7 @@
 }
 .rectangle-parent6 {
   position: absolute;
-  top: 37.375rem;
+  top: 33.375rem;
   left: 0;
   width: 19.938rem;
   height: 4.563rem;

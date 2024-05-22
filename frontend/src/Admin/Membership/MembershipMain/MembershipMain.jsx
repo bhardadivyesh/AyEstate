@@ -1,18 +1,30 @@
 import "./MembershipMain.css";
-import arrow from "../../assets/admin/membership/arrow.png"
-import groupicon from "../../assets/admin/membership/groupicon.png"
-import group from "../../assets/admin/membership/group.png"
-import vector from "../../assets/admin/membership/vector.png"
-import days from "../../assets/admin/membership/45days.png"
-import topSlot from "../../assets/admin/membership/topSlot.png"
-import privacy from "../../assets/admin/membership/privacy.png"
-import relationship from "../../assets/admin/membership/relationship.png"
-import personal from "../../assets/admin/membership/personal.png"
-import gold from "../../assets/admin/membership/gold.png"
-import background from "../../assets/admin/membership/background.png"
-import setting from "../../assets/admin/membership/setting.png"
-import preview from "../../assets/admin/membership/preview.png"
+import arrow from "../../../assets/admin/membership/arrow.png"
+import groupicon from "../../../assets/admin/membership/groupicon.png"
+import group from "../../../assets/admin/membership/group.png"
+import vector from "../../../assets/admin/membership/vector.png"
+import days from "../../../assets/admin/membership/45days.png"
+import topSlot from "../../../assets/admin/membership/topSlot.png"
+import privacy from "../../../assets/admin/membership/privacy.png"
+import relationship from "../../../assets/admin/membership/relationship.png"
+import personal from "../../../assets/admin/membership/personal.png"
+import gold from "../../../assets/admin/membership/gold.png"
+import background from "../../../assets/admin/membership/background.png"
+import setting from "../../../assets/admin/membership/setting.png"
+import preview from "../../../assets/admin/membership/preview.png"
+import {useNavigate} from "react-router-dom"
+import dashboardContext from "../../admin";
+import { useContext } from "react";
 const Membership = () => {
+  const value = useContext(dashboardContext)
+  console.log(value);
+  const navigate = useNavigate()
+  const handleNavigation = (navigationPath) =>{
+    navigate(`/${navigationPath}`)
+  }
+  const handleEditMembership = (navigatePath) =>{
+    value.setRenderManage(navigatePath)
+  }
   return (
     <div className="group-parent-membership">
       <div className="group-wrapper-membership">
@@ -36,10 +48,10 @@ const Membership = () => {
                 <div className="rectangle-div-membership" />
                 <div className="membership-revenue-membership">Membership revenue</div>
                 <div className="div1-membership">0</div>
-                <div className="view-all-members-group-membership">
-                  <div className="view-all-members1-membership">View all members</div>
+                <button type="button" className="view-all-members-group-membership" onClick={()=>handleEditMembership("membershipRevenue")}>
+                  <span className="view-all-members1-membership">View all members</span>
                   <img className="line-icon-membership" alt="" src={arrow} />
-                </div>
+                </button>
                 <img
                   className="fi-10164350-icon-membership"
                   alt=""
@@ -64,7 +76,7 @@ const Membership = () => {
                   <div className="group-parent3-membership">
                     <div className="group-parent4-membership">
                       <div className="parent-membership">
-                        <div className="div2-membership">1200</div>
+                        <div className="div2-membership">2450</div>
                         <span className="fi-7204809-icon-membership">₹</span>
                       </div>
                       <div className="pricing-parent-membership">
@@ -257,8 +269,8 @@ const Membership = () => {
                               <span> / 25 Listing</span>
                             </div>
                             <div className="inr-25-container-membership">
-                              <span className="inr1-membership"> 2,500 INR *</span>
-                              <span className="listing-membership"> 25 Listing</span>
+                              <span className="inr1-membership"> 2500 Billed</span>
+                              <span className="listing-membership"> - 2450</span>
                             </div>
                             <div className="group-wrapper1-membership">
                               <div className="group-wrapper2-membership">
@@ -280,7 +292,7 @@ const Membership = () => {
                   </div>
                 </div>
                 <div className="group-parent9-membership">
-                  <button className="rectangle-parent5-membership group-child8-membership">
+                  <button className="rectangle-parent5-membership group-child8-membership" onClick={()=>handleNavigation("paymentScreen")}>
                     <div className="preview-membership-page-parent-membership">
                       <span className="preview-membership-page-membership">Preview Membership page</span>
                       <img
@@ -290,8 +302,7 @@ const Membership = () => {
                       />
                     </div>
                   </button>
-                  <button className="rectangle-parent6-membership group-child9-membership">
-                    {/* <div className="group-child9-membership" /> */}
+                  <button className="rectangle-parent6-membership group-child9-membership" onClick={()=>handleEditMembership("/editMembership")}>
                     <span className="edit-membership-membership">Edit membership</span>
                     <img
                       className="fi-2040504-icon-membership"

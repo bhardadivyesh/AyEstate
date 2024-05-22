@@ -1,0 +1,179 @@
+import "./FrameComponent2.css";
+import { useContext, useState } from "react";
+import { useForm } from "react-hook-form";
+import priceLogo from "../../../../assets/admin/membership/pricing/priceImage.png";
+import line from "../../../../assets/admin/membership/pricing/line.png";
+import membershipPriceContext from "../MembershipPricing";
+
+const FrameComponent2 = () => {
+  const value = useContext(membershipPriceContext)
+  const [isChecked, setIsChecked] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    value.setPricingDetail(data)
+  }
+  const handleChange = () => {
+    setIsChecked(!isChecked);
+  };
+  return (
+    <div className="membership-pricing-child-membership-pricing-Frame2">
+      <div className="rectangle-parent89-membership-pricing-Frame2">
+        <div className="frame-child115-membership-pricing-Frame2" />
+        <div className="frame-wrapper45-membership-pricing-Frame2">
+          <div className="pricing-group-membership-pricing-Frame2">
+            <h1 className="pricing2-membership-pricing-Frame2">Pricing</h1>
+            <div className="change-subscription-pricing-an-wrapper-membership-pricing-Frame2">
+              <div className="change-subscription-pricing-membership-pricing-Frame2">{`Change subscription pricing and add discounts `}</div>
+            </div>
+          </div>
+        </div>
+        <form
+          className="rectangle-parent90-membership-pricing-Frame2"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <div className="frame-child116-membership-pricing-Frame2" />
+          <div className="frame-parent78-membership-pricing-Frame2">
+            <div className="frame-parent79-membership-pricing-Frame2">
+              <div className="trang-ch">
+                <section className="rectangle-parent81">
+                  <div className="frame-child91" />
+                  <button className="rectangle-parent82">
+                    <div className="frame-child92" />
+                    <img className="icon6" alt="" src={priceLogo} />
+                  </button>
+                  <img
+                    className="frame-child93"
+                    loading="lazy"
+                    alt=""
+                    src={priceLogo}
+                  />
+                  <input
+                    type="number"
+                    className="div36"
+                    placeholder="Enter Price "
+                    {...register("price", { required: true })}
+                  />
+                </section>
+              </div>
+              {errors.price && <span style={{color:'red'}}>Enter Price</span>}
+              <div className="frame-wrapper46-membership-pricing-Frame2">
+                <div className="rectangle-parent91-membership-pricing-Frame2">
+                  <input
+                    type="checkbox"
+                    className="frame-child118-membership-pricing-Frame2"
+                    checked={isChecked}
+                    onChange={handleChange}
+                  />
+                  <div className="set-dicount-wrapper-membership-pricing-Frame2">
+                    <div className="set-dicount-membership-pricing-Frame2">
+                      Set dicount
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {isChecked == true && (
+              <div className="rectangle-parent92-membership-pricing-Frame2">
+                <div className="frame-child119-membership-pricing-Frame2" />
+                <div className="rectangle-parent93-membership-pricing-Frame2">
+                  <div className="frame-child120-membership-pricing-Frame2" />
+                  <div className="discount-membership-pricing-Frame2">
+                    Discount
+                  </div>
+                </div>
+                <div className="frame-wrapper47-membership-pricing-Frame2">
+                  <div className="frame-parent80-membership-pricing-Frame2">
+                    <div className="rectangle-wrapper8-membership-pricing-Frame2">
+                      <input
+                        className="frame-child121-membership-pricing-Frame2"
+                        type="number"
+                        {...register("discount", { required: false })}
+                      />
+                    </div>
+                    <div className="frame-parent81-membership-pricing-Frame2">
+                      <div className="frame-parent82-membership-pricing-Frame2">
+                        <div className="frame-wrapper48-membership-pricing-Frame2">
+                          <div className="group-parent20-membership-pricing-Frame2">
+                            <button type="button" className="group1-membership-pricing-Frame2 group-child42-membership-pricing-Frame2">
+                              <span className="user-membership-pricing-Frame2">
+                                10%
+                              </span>
+                            </button>
+                            <button type="button" className="rectangle-parent94-membership-pricing-Frame2 frame-child122-membership-pricing-Frame2">
+                              <span className="div40-membership-pricing-Frame2">
+                                25%
+                              </span>
+                            </button>
+                            <button type="button" className="rectangle-parent95-membership-pricing-Frame2 frame-child123-membership-pricing-Frame2">
+                              <span className="find-mentor-membership-pricing-Frame2">
+                                50%
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                        <div className="you-will-be-membership-pricing-Frame2">
+                          You will be providing a discout
+                        </div>
+                      </div>
+                      <button type="button" className="rectangle-parent96-membership-pricing-Frame2 frame-child124-membership-pricing-Frame2">
+                        <span className="rupam-banik-membership-pricing-Frame2">
+                          75%
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="swe-nothing-inc-parent-membership-pricing-Frame2">
+                  <input
+                    className="swe-nothing-inc-membership-pricing-Frame2"
+                    type="text"
+                    readOnly
+                  />
+                  <div className="rectangle-parent97-membership-pricing-Frame2">
+                    <div className="frame-child125-membership-pricing-Frame2" />
+                    <div className="discount-price-membership-pricing-Frame2">Discount Price</div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="sign-up-page-membership-pricing-Frame2">
+            <section className="rectangle-parent11-membership-pricing-Frame2">
+              <div className="frame-child20-membership-pricing-Frame2" />
+              <div className="listing-number-membership-pricing-Frame2">
+                Listing Number
+              </div>
+              <img
+                className="frame-child21-membership-pricing-Frame2"
+                loading="lazy"
+                alt=""
+                src={line}
+              />
+              <input
+                type="number"
+                className="number-item-membership-pricing-Frame2"
+                placeholder="enter listing number"
+                {...register("listingNumber", { required: true })}
+              />
+            </section>
+          </div>
+              {errors.listingNumber && <span style={{color:'red'}}>Enter Listing Number</span>}
+          <div className="frame-wrapper50-membership-pricing-Frame2">
+            <button
+              type="submit"
+              className="rectangle-parent99-membership-pricing-Frame2"
+            >
+              <span className="save-membership-pricing-Frame2">Save</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default FrameComponent2;

@@ -12,6 +12,7 @@ const LocationRoute = require('./Routes/Admin/Location/LocationRoute')
 const CategoryRoute = require('./Routes/Admin/Category/CategoryRoute')
 const ProductRoute = require('./Routes/Admin/Listings/ListingSchema')
 const ListingDetailRoute = require('./Routes/ListingDetailProperty/ListingDetailPropertyRoute')
+const membershipPriceRoute = require('./Routes/MembershipPrice/MembershipPriceRoute')
 
 
 const app = express();
@@ -46,6 +47,7 @@ app.use(LocationRoute)
 app.use(CategoryRoute)
 app.use(ProductRoute)
 app.use(ListingDetailRoute)
+app.use(membershipPriceRoute)
 
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);

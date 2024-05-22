@@ -24,7 +24,7 @@ const PaymentNew = () => {
 
     const options = {
       key: "rzp_test_afA1UpXOWaKZPn",
-      amount: price * 100, // Use the price directly here
+      amount: price * 100, 
       name: "Payments",
       description: "Donate yourself some time",
       handler: (response) => {
@@ -33,7 +33,7 @@ const PaymentNew = () => {
           "http://localhost:3000/api/v1/rzp_capture/" +
           paymentId +
           "/" +
-          price; // Use the price directly here
+          price; 
 
         fetch(url, {
           method: "GET",
@@ -87,8 +87,8 @@ const PaymentNew = () => {
                     *VAT and local taxes may apply
                   </div>
                   <div className="inr-25-container-payment-screen">
-                    <span className="inr-payment-screen"> 2,500 INR *</span>
-                    <span className="listing2-payment-screen"> 25 Listing</span>
+                    <span className="inr-payment-screen"> 2500 Billed</span>
+                    <span className="listing2-payment-screen"> - 2450</span>
                   </div>
                   <div className="inr-container-payment-screen">
                     <span className="inr1-payment-screen"> 2,500 INR *</span>
@@ -167,12 +167,12 @@ const PaymentNew = () => {
                 *VAT and local taxes may apply
               </div>
               <div className="free-3-container-payment-screen">
-                <b>{`FREE `}</b>
+                <b>FREE</b>
                 <span>/ 3 Listing</span>
               </div>
               <div className="free-3-listing-container-payment-screen">
                 <span>FREE*</span>
-                <span className="span-payment-screen">{` `}</span>
+                <span className="span-payment-screen"></span>
                 <span>3 Listing</span>
               </div>
             </div>
@@ -275,8 +275,8 @@ const PaymentNew = () => {
                     <span> / 15 Listing</span>
                   </div>
                   <div className="inr-15-container-payment-screen">
-                    <span className="inr3-payment-screen"> 1,200 INR *</span>
-                    <span className="listing3-payment-screen"> 15 Listing</span>
+                    <span className="inr3-payment-screen"> 1200 Billed</span>
+                    <span className="listing3-payment-screen"> - 2450</span>
                   </div>
                 </div>
                 <div className="wrapper-group1-payment-screen">
