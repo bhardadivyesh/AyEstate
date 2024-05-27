@@ -3,19 +3,32 @@ import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import priceLogo from "../../../../assets/admin/membership/pricing/priceImage.png";
 import line from "../../../../assets/admin/membership/pricing/line.png";
-import membershipPriceContext from "../MembershipPricing";
-
+import MembershipPriceContext from "../MembershipPricing";
 const FrameComponent2 = () => {
-  const value = useContext(membershipPriceContext)
+  const value = useContext(MembershipPriceContext);
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
+    setValue,
   } = useForm();
-  const onSubmit = (data) => {
-    value.setPricingDetail(data)
+
+  const price = watch("price");
+  const discount = watch("discount");
+  let discountedValue = price;
+
+  if (discount) {
+    const discountPriceValue = (price * discount) / 100;
+    discountedValue = price - discountPriceValue;
   }
+  const handleDiscountChange = (newDiscount) => {
+    setValue("discount", newDiscount);
+  };
+  const onSubmit = (data) => {
+    value.setPricingDetail(data);
+  };
   const handleChange = () => {
     setIsChecked(!isChecked);
   };
@@ -27,7 +40,9 @@ const FrameComponent2 = () => {
           <div className="pricing-group-membership-pricing-Frame2">
             <h1 className="pricing2-membership-pricing-Frame2">Pricing</h1>
             <div className="change-subscription-pricing-an-wrapper-membership-pricing-Frame2">
-              <div className="change-subscription-pricing-membership-pricing-Frame2">{`Change subscription pricing and add discounts `}</div>
+              <div className="change-subscription-pricing-membership-pricing-Frame2">
+                Change subscription pricing and add discounts
+              </div>
             </div>
           </div>
         </div>
@@ -59,7 +74,9 @@ const FrameComponent2 = () => {
                   />
                 </section>
               </div>
-              {errors.price && <span style={{color:'red'}}>Enter Price</span>}
+              {errors.price && (
+                <span style={{ color: "red" }}>Enter Price</span>
+              )}
               <div className="frame-wrapper46-membership-pricing-Frame2">
                 <div className="rectangle-parent91-membership-pricing-Frame2">
                   <input
@@ -91,24 +108,45 @@ const FrameComponent2 = () => {
                       <input
                         className="frame-child121-membership-pricing-Frame2"
                         type="number"
-                        {...register("discount", { required: false })}
+                        {...register("discount", {
+                          required: false,
+                          min: 0,
+                          max: 100,
+                        })}
                       />
                     </div>
+                    {errors.discount && (
+                      <span style={{ color: "red" }}>
+                        Enter Discount between 1 to 100
+                      </span>
+                    )}
                     <div className="frame-parent81-membership-pricing-Frame2">
                       <div className="frame-parent82-membership-pricing-Frame2">
                         <div className="frame-wrapper48-membership-pricing-Frame2">
                           <div className="group-parent20-membership-pricing-Frame2">
-                            <button type="button" className="group1-membership-pricing-Frame2 group-child42-membership-pricing-Frame2">
+                            <button
+                              type="button"
+                              className="group1-membership-pricing-Frame2 group-child42-membership-pricing-Frame2"
+                              onClick={() => handleDiscountChange(10)}
+                            >
                               <span className="user-membership-pricing-Frame2">
                                 10%
                               </span>
                             </button>
-                            <button type="button" className="rectangle-parent94-membership-pricing-Frame2 frame-child122-membership-pricing-Frame2">
+                            <button
+                              type="button"
+                              className="rectangle-parent94-membership-pricing-Frame2 frame-child122-membership-pricing-Frame2"
+                              onClick={() => handleDiscountChange(25)}
+                            >
                               <span className="div40-membership-pricing-Frame2">
                                 25%
                               </span>
                             </button>
-                            <button type="button" className="rectangle-parent95-membership-pricing-Frame2 frame-child123-membership-pricing-Frame2">
+                            <button
+                              type="button"
+                              className="rectangle-parent95-membership-pricing-Frame2 frame-child123-membership-pricing-Frame2"
+                              onClick={() => handleDiscountChange(50)}
+                            >
                               <span className="find-mentor-membership-pricing-Frame2">
                                 50%
                               </span>
@@ -119,7 +157,11 @@ const FrameComponent2 = () => {
                           You will be providing a discout
                         </div>
                       </div>
-                      <button type="button" className="rectangle-parent96-membership-pricing-Frame2 frame-child124-membership-pricing-Frame2">
+                      <button
+                        type="button"
+                        className="rectangle-parent96-membership-pricing-Frame2 frame-child124-membership-pricing-Frame2"
+                        onClick={() => handleDiscountChange(75)}
+                      >
                         <span className="rupam-banik-membership-pricing-Frame2">
                           75%
                         </span>
@@ -131,11 +173,14 @@ const FrameComponent2 = () => {
                   <input
                     className="swe-nothing-inc-membership-pricing-Frame2"
                     type="text"
-                    readOnly
+                    defaultValue={discountedValue}
+                    {...register("discountPrice")}
                   />
                   <div className="rectangle-parent97-membership-pricing-Frame2">
                     <div className="frame-child125-membership-pricing-Frame2" />
-                    <div className="discount-price-membership-pricing-Frame2">Discount Price</div>
+                    <div className="discount-price-membership-pricing-Frame2">
+                      Discount Price
+                    </div>
                   </div>
                 </div>
               </div>
@@ -161,7 +206,9 @@ const FrameComponent2 = () => {
               />
             </section>
           </div>
-              {errors.listingNumber && <span style={{color:'red'}}>Enter Listing Number</span>}
+          {errors.listingNumber && (
+            <span style={{ color: "red" }}>Enter Listing Number</span>
+          )}
           <div className="frame-wrapper50-membership-pricing-Frame2">
             <button
               type="submit"
@@ -171,9 +218,9 @@ const FrameComponent2 = () => {
             </button>
           </div>
         </form>
+        {console.log("frame componenr call")}
       </div>
     </div>
   );
 };
-
 export default FrameComponent2;

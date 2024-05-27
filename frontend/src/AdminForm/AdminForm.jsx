@@ -18,8 +18,6 @@ export default function AdminForm() {
         formData.append(`image${i}`, data[`image${i}`][0]);
       }
     }
-
-    console.log(data.image[1]);
     formData.append("name", data.name);
     formData.append("price", data.price);
     formData.append("description", data.description);

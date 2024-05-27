@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import MyContext from "../../context/context";
 import "./DataSorter.css";
 
+
 const getStyleValue = (key, value) => {
   if (value === undefined || value === "") return;
   return { [key]: value };
@@ -18,6 +19,8 @@ const DataSorter = ({
   propBackgroundImage,
   currentItems,
 }) => {
+  // console.log(currentItems[0]?.images[0]);
+ console.log(currentItems);
   const dataFinderStyle = useMemo(() => {
     return {
       ...getStyleValue("backgroundImage", propBackgroundImage),

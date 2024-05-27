@@ -6,39 +6,39 @@ import { useContext, useState } from "react";
 import membershipPriceContext from "../MembershipPricing";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import dashboardContext from "../../../admin";
 
 const Subscription = () => {
   const value = useContext(membershipPriceContext);
   const [bg, setBg] = useState("black");
   const [fontColor, setFontColor] = useState("white");
   const [showMore, setShowMore] = useState(false);
-console.log("call component");
+
   const handleColorButtonClick = (bgColor, fontColor) => {
     setBg(bgColor);
     setFontColor(fontColor);
   };
 
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = async(data) => {
+  const onSubmit = async (data) => {
     try {
-        let priceData = value.pricingDetail;
-        console.log(priceData);
-        let allData = { ...data, ...priceData };
-        console.log(allData);
-       
-        axios.post('http://localhost:3000/post-membershipPriceDetail', allData)
+      let priceData = value.pricingDetail;
+      console.log(priceData);
+      let allData = { ...data, ...priceData };
+      console.log(allData);
+
+      axios.post('http://localhost:3000/post-membershipPriceDetail', allData)
         .then((response) => {
-          console.log(response.data); 
+          console.log(response.data);
         })
         .catch((error) => {
-          console.error('Error:', error); 
+          console.error('Error:', error);
         });
-        console.log("api call");
+      console.log("api call");
     } catch (error) {
-        console.error("Error while calling API:", error);
+      console.error("Error while calling API:", error);
     }
-};
+  };
+
   const handleAddMoreBenefitClick = () => {
     setShowMore(!showMore);
   };
@@ -47,7 +47,7 @@ console.log("call component");
     <div className="subscription3">
       <main className="group-main">
         <div className="frame-child74" />
-        <h1 className="subscription4">{`Subscription `}</h1>
+        <h1 className="subscription4">Subscription</h1>
         <div className="pitch-membership">
           <div className="pitch-membership-offerings1">
             Pitch membership offerings to prospective members
@@ -170,31 +170,26 @@ console.log("call component");
                   </div>
                 </div>
                 {showMore &&
-                <div className="frame-parent51">
-                  <div className="rectangle-parent79">
-                    <input type="file" className="frame-child87" {...register("image5", { required: true })} />
-                    {errors.image5 && <span>This field is required</span>}
-                    <input className="frame-child88" type="text" placeholder="Membership Detail" {...register("membershipdescription5", { required: true })} />
-                    {errors.membershipdescription5 && <span>This field is required</span>}
+                  <div className="frame-parent51">
+                    <div className="rectangle-parent79">
+                      <input type="file" className="frame-child87" {...register("image5", { required: true })} />
+                      {errors.image5 && <span>This field is required</span>}
+                      <input className="frame-child88" type="text" placeholder="Membership Detail" {...register("membershipdescription5", { required: true })} />
+                      {errors.membershipdescription5 && <span>This field is required</span>}
+                    </div>
+                    <div className="vector-wrapper5">
+                      <img className="vector-icon13" loading="lazy" alt="" src={vector} />
+                    </div>
                   </div>
-                  <div className="vector-wrapper5">
-                    <img className="vector-icon13" loading="lazy" alt="" src={vector} />
-                  </div>
-                </div>
                 }
               </div>
               <button className="frame-parent52" type="button" onClick={handleAddMoreBenefitClick}>
                 <img className="frame-child89" loading="lazy" alt="" src={plusIcon} />
                 <div className="add-benefit">
-                  <div className="add-more-benefit">Add more benefit</div>
+                  <div className="add-more-benefit">Add more Benefit</div>
                 </div>
               </button>
-              <div className="frame-wrapper32">
-                <button className="rectangle-parent80" type="submit">
-                  <div className="frame-child90" />
-                  <div className="save">Save</div>
-                </button>
-              </div>
+              <button className="submit-button" type="submit">Submit</button>
             </form>
           </div>
         </div>

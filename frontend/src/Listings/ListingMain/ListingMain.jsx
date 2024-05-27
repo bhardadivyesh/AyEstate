@@ -42,12 +42,24 @@ const ListingMain = () => {
     setAllCategoryToggle(!allCategoryToggle);
   };
   const [productData, setProductData] = useState();
+  const [locationData,setLocationData] = useState([])
+  const [listingData,setListingData] = useState([])
+
   // api call
   useEffect(() => {
     axios.get("http://localhost:1337/listings").then((res) => {
       setProductData(res.data);
     });
   }, []);
+  useEffect(()=>{
+    axios.get('http://localhost:3000/get-location').then((res)=>{
+      setLocationData(res.data)
+    })
+    axios.get('http://localhost:3000/get-listing').then((res)=>{
+      setListingData(res.data)
+    })
+  },[])
+  console.log(listingData[0]);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");

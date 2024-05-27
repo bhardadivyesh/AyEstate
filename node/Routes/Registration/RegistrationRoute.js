@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const RegistrationSchema = require("./RegistrationSchema");
-
 router.post("/post-Registration", async (req, res) => {
   try {
     let {name,phone,company,email,password} = req.body;
@@ -15,7 +14,6 @@ router.post("/post-Registration", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-
 // forgot password
 router.post("/forgot-password", async (req, res) => {
   const { email, newPassword } = req.body; 
@@ -34,7 +32,6 @@ router.post("/forgot-password", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
 router.get("/get-Registration", async (req, res) => {
   try {
     let getListingData = await RegistrationSchema.find();
@@ -82,5 +79,4 @@ router.put('/put-Registration', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' }); 
 }
 });
-
 module.exports = router;

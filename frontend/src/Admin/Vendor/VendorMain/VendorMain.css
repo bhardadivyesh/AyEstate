@@ -14,6 +14,49 @@
   width: 13.125rem;
   height: 4.188rem;
 }
+.table-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  font-family: Sora;
+  padding-left: 40px;
+}
+
+.table-row {
+  margin-bottom: 10px; 
+  padding: 10px; 
+}
+.row-name{
+  width: 168px;
+  padding-left: 47px;
+}
+.row-company{
+  padding-left: 70px;
+  width: 267px;
+}
+.row-phone{
+  width: 270px;
+  padding-left: 60px;
+}
+.row-membershiptype{
+  padding-left: 74px;
+}
+.row-date{
+  width: 191px;
+  padding-left: 100px;
+}
+.row-status{
+  padding-left: 106px;
+}
+.row-status-dropdown{
+  background-color: #b7e08a;
+  padding: 14px;
+  margin-left: 112px;
+  border-radius: 10px;
+}
+
 .pending {
   position: absolute;
   top: 1.125rem;

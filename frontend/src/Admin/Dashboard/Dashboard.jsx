@@ -8,6 +8,7 @@ import emailImg from "../../assets/admin/dashboard/email.png";
 import notification from "../../assets/admin/dashboard/alert.png";
 import avatarImg from "../../assets/admin/dashboard/avatar.png";
 import downArrow from "../../assets/admin/dashboard/More.png";
+import dashboard from "../../assets/admin/dashboard/dashboard.png";
 import { useState } from "react";
 import dashboardContext from "../admin";
 import StatusMain from "../Status/StatusMain/StatusMain";
@@ -15,18 +16,25 @@ import VendorMain from "../Vendor/VendorMain/VendorMain";
 import ManageMain from "../Manage/ManageMain/ManageMain";
 import { useNavigate } from "react-router-dom";
 import Membership from "../Membership/MembershipMain/MembershipMain";
-import MembershipPricing from "../Membership/MembershipPricing/MembershipPricing";
+import MembershipPricing from "../../Admin/Membership/MembershipPricing/membershipPricing/MembershipPricing";
 import MembershipRevenueMain from "../Membership/MembershipMain/MembershipRevenueMain/MembershipRevenueMain";
+import DashboardOverview from "../DashboardOverview/DashboardOverview";
+import DashboardCharts from "../DashboardOverview/DashboardChart/DashboardCharts";
+import ActiveMemberMain from "../Membership/MembershipMain/ActiveMemberMain/ActiveMemberMain";
 
 const Dashboard = () => {
-  const [renderManage, setRenderManage] = useState("Manage");
+  const [renderManage, setRenderManage] = useState("dashboardcomponent");
+  console.log(renderManage);
+
   const handleManageClick = (state) => {
     setRenderManage(state);
   };
+
   const navigate = useNavigate();
   const handleLogoutClick = () => {
     navigate("/");
   };
+
   return (
     <div className="categories">
       <div className="navigation-top-bar-1">
@@ -57,21 +65,22 @@ const Dashboard = () => {
       </button>
       <button
         className="rectangle-group1"
-        onClick={() => handleManageClick("dashboard")}
+        onClick={() => handleManageClick("dashboardcomponent")}
       >
-        <img className="product-3-icon" alt="Manage Icon" src={manage} />
+        <img className="product-3-icon" alt="Dashboard Icon" src={dashboard} />
         <span className="manage">Dashboard</span>
       </button>
       <div className="rectangle-container">
         <div className="group-inner" />
-        {/* body part */}
         <dashboardContext.Provider value={{ renderManage, setRenderManage }}>
-          {renderManage == "Manage" && <ManageMain />}
-          {renderManage == "status" && <StatusMain />}
-          {renderManage == "vendor" && <VendorMain />}
-          {renderManage == "membership" && <Membership />}
-          {renderManage == "/editMembership" && <MembershipPricing />}
-          {renderManage == "membershipRevenue" && <MembershipRevenueMain />}
+          {renderManage === "Manage" && <ManageMain />}
+          {renderManage === "status" && <StatusMain />}
+          {renderManage === "vendor" && <VendorMain />}
+          {renderManage === "membership" && <Membership />}
+          {renderManage === "membershipRevenue" && <MembershipRevenueMain />}
+          {renderManage === "activeMember" && <ActiveMemberMain />}
+          {renderManage === "editMembership" && <MembershipPricing />}
+          {renderManage === "dashboardcomponent" && <DashboardCharts />}
         </dashboardContext.Provider>
       </div>
       <button

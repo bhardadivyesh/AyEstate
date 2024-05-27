@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const CategorySchema = require('./CategorySchema')
-
 router.post("/post-category", async (req, res) => {
   try {
     let data = req.body;
@@ -13,7 +12,6 @@ router.post("/post-category", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-
 router.get("/get-category", async (req, res) => {
     try {
       let getCategoryData = await CategorySchema.find();
@@ -37,7 +35,6 @@ router.get("/get-category", async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' }); 
     }
   });
-  
   router.delete('/delete-category', async (req, res) => {
     try {
       const category = req.body.category; 
@@ -46,13 +43,9 @@ router.get("/get-category", async (req, res) => {
       if (!deletedCategory) {
         return res.status(404).json({ error: 'Category not found' });
       }
-      res.status(200).json(deletedCategory);
-      
+      res.status(200).json(deletedCategory); 
     } catch (error) {
-      
       res.status(500).json({ error: 'Internal Server Error' }); 
     }
   });
-  
   module.exports = router;
-  

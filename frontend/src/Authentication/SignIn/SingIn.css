@@ -55,7 +55,6 @@
   min-width: 5.813rem;
   z-index: 3;
 }
-.frame-child42-signIn,
 .rectangle-parent30-signIn {
   border-radius: 9px;
   cursor: pointer;
@@ -72,14 +71,6 @@
   justify-content: flex-start;
   white-space: nowrap;
 }
-.frame-child42-signIn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-}
 .sign-up11-signIn {
   position: absolute;
   top: 1.063rem;
@@ -93,6 +84,7 @@
   display: inline-block;
   min-width: 7.313rem;
   z-index: 3;
+  cursor: pointer;
 }
 .rectangle-parent31-signIn {
   cursor: pointer;
@@ -103,7 +95,7 @@
   height: 4.75rem;
   position: relative;
   white-space: nowrap;
-  margin-left: -18px;
+  margin-left: 183px;
 }
 .desktop-7-child-signIn,
 .frame-parent17-signIn {

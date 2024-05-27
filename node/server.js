@@ -48,6 +48,10 @@ app.use(CategoryRoute)
 app.use(ProductRoute)
 app.use(ListingDetailRoute)
 app.use(membershipPriceRoute)
+app.use(bodyParser.json());
+app.use("/paymentDetail", express.static('paymentDetail')); // Serve static files
+
+app.use("/", membershipPriceRoute);
 
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);

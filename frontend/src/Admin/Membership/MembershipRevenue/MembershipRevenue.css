@@ -200,12 +200,14 @@
 }
 .vendor-wrapper-membership-revenue {
   width: 10.5rem;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .item-membership-revenue {
+  padding-top: 3px;
   align-self: stretch;
   position: relative;
   line-height: 1.5rem;
@@ -223,10 +225,12 @@
 }
 .payment-status-membership-revenue {
   align-self: stretch;
+  padding-top: 6px;
   position: relative;
   line-height: 1.5rem;
   font-weight: 300;
   z-index: 1;
+  width: 15rem;
 }
 .payment-status-wrapper-membership-revenue {
   width: 13.125rem;
@@ -242,6 +246,8 @@
   line-height: 1.5rem;
   font-weight: 300;
   z-index: 1;
+  width: 14rem;
+  padding-top: 10px;
 }
 .payment-details-membership-revenue {
   flex: 1;
@@ -439,6 +445,7 @@
   justify-content: flex-start;
   box-sizing: border-box;
   z-index: 1;
+  margin-right: 16px;
 }
 .rectangle-parent132-membership-revenue:hover {
   background-color: #e6e6e6;

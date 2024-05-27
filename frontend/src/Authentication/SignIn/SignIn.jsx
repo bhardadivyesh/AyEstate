@@ -70,13 +70,12 @@ export default function SignIn() {
                 </div>
               </button>
               <button className="rectangle-parent31-signIn">
-                <div className="frame-child42-signIn" />
-                <div
+                <label
                   className="sign-up11-signIn"
                   onClick={() => value.setRegistrationForm("register")}
                 >
                   Registration
-                </div>
+                </label>
               </button>
             </div>
           </div>

@@ -1,0 +1,1906 @@
+.group-child-dashboard-charts {
+    background-color: #f2f6fe;
+  }
+  .active-listing-child-dashboard-charts,
+  .group-child-dashboard-charts,
+  .rectangle-wrapper-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.063rem;
+    height: 61.813rem;
+  }
+  .active-listing-child-dashboard-charts {
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+    width: 31.5rem;
+    height: 24.813rem;
+  }
+  .group-item-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.813rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.25rem;
+  }
+  .div-dashboard-charts,
+  .line-parent-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 1.681rem;
+  }
+  .div-dashboard-charts {
+    top: 15.25rem;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent-dashboard-charts {
+    top: 0;
+    height: 16.5rem;
+  }
+  .group-inner-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div1-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .line-group-dashboard-charts {
+    top: 0;
+    left: 4.675rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .div2-dashboard-charts,
+  .line-div-dashboard-charts,
+  .line-group-dashboard-charts {
+    position: absolute;
+  }
+  .line-div-dashboard-charts {
+    top: 0;
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div2-dashboard-charts {
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.725rem;
+    height: 1.25rem;
+  }
+  .group-child1-dashboard-charts,
+  .line-container-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 9.35rem;
+    width: 1.725rem;
+    height: 16.481rem;
+  }
+  .group-child1-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div3-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child2-dashboard-charts,
+  .line-parent1-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 14.113rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child2-dashboard-charts {
+    left: 0.956rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div4-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.906rem;
+    height: 1.25rem;
+  }
+  .group-child3-dashboard-charts,
+  .line-parent2-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 18.831rem;
+    width: 1.906rem;
+    height: 16.481rem;
+  }
+  .group-child3-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div5-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child4-dashboard-charts,
+  .line-parent3-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 23.775rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child4-dashboard-charts {
+    left: 0.906rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div6-dashboard-charts,
+  .line-parent4-dashboard-charts {
+    position: absolute;
+    width: 1.813rem;
+  }
+  .div6-dashboard-charts {
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent4-dashboard-charts {
+    top: 0;
+    left: 28.5rem;
+    height: 16.481rem;
+  }
+  .group-parent3-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .group-child5-dashboard-charts,
+  .group-parent3-dashboard-charts,
+  .k-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.675rem;
+    height: 0.919rem;
+  }
+  .group-child5-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent-dashboard-charts {
+    top: 4.419rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child6-dashboard-charts,
+  .k-parent-dashboard-charts,
+  .k1-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k1-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.813rem;
+    height: 0.875rem;
+  }
+  .group-child6-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-group-dashboard-charts {
+    top: 2.188rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child7-dashboard-charts,
+  .k-group-dashboard-charts,
+  .k2-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k2-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child7-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-container-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child8-dashboard-charts,
+  .k-container-dashboard-charts,
+  .k3-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k3-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child8-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent1-dashboard-charts {
+    top: 6.625rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child9-dashboard-charts,
+  .k-parent1-dashboard-charts,
+  .k4-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k4-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child9-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent2-dashboard-charts {
+    top: 8.813rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child10-dashboard-charts,
+  .k-parent2-dashboard-charts,
+  .k5-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k5-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.538rem;
+    height: 0.875rem;
+  }
+  .group-child10-dashboard-charts {
+    top: 1.519rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent3-dashboard-charts {
+    top: 11.088rem;
+    width: 30.313rem;
+    height: 1.519rem;
+  }
+  .div7-dashboard-charts,
+  .group-child11-dashboard-charts,
+  .k-parent3-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .div7-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.406rem;
+    height: 0.919rem;
+  }
+  .group-child11-dashboard-charts {
+    top: 1.288rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .group-parent4-dashboard-charts,
+  .parent-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 30.313rem;
+  }
+  .parent-dashboard-charts {
+    top: 12.925rem;
+    height: 1.288rem;
+  }
+  .group-parent4-dashboard-charts {
+    top: 0;
+    height: 14.213rem;
+  }
+  .vector-icon-dashboard-charts {
+    position: absolute;
+    top: 3.188rem;
+    left: 0.938rem;
+    width: 29.375rem;
+    height: 11.063rem;
+  }
+  .group-parent2-dashboard-charts {
+    position: absolute;
+    top: 6.875rem;
+    left: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .active-listing1-dashboard-charts,
+  .active-listing2-dashboard-charts,
+  .div8-dashboard-charts {
+    position: absolute;
+    top: 0;
+    line-height: 1.5rem;
+  }
+  .active-listing1-dashboard-charts {
+    left: 0.188rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.375rem;
+    height: 1.563rem;
+  }
+  .active-listing2-dashboard-charts,
+  .div8-dashboard-charts {
+    font-weight: 300;
+  }
+  .div8-dashboard-charts {
+    left: 0;
+    display: inline-block;
+    width: 2.75rem;
+    height: 1.438rem;
+  }
+  .active-listing2-dashboard-charts {
+    left: 1.513rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.55rem;
+    height: 0.65rem;
+  }
+  .rectangle-div-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 1.3px rgba(0, 0, 0, 0.25);
+    background-color: #b3edb3;
+    width: 0.875rem;
+    height: 0.625rem;
+  }
+  .active-listing-container-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 4.063rem;
+    width: 6.063rem;
+    height: 0.65rem;
+    text-align: center;
+    font-size: 0.563rem;
+    font-family: Sora;
+  }
+  .group-dashboard-charts {
+    position: absolute;
+    top: 2.813rem;
+    left: 0;
+    width: 10.125rem;
+    height: 1.438rem;
+    text-align: right;
+    font-family: "Plus Jakarta Sans";
+  }
+  .active-listing-group-dashboard-charts,
+  .group-child12-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.563rem;
+    height: 4.25rem;
+  }
+  .group-child12-dashboard-charts {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 0.7px solid #e0e0e0;
+    box-sizing: border-box;
+    width: 5.125rem;
+    height: 1.25rem;
+  }
+  .march-2022-dashboard-charts {
+    position: absolute;
+    top: 0.419rem;
+    left: 0.563rem;
+    line-height: 140%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 3.313rem;
+    height: 0.325rem;
+  }
+  .vector-icon1-dashboard-charts {
+    position: absolute;
+    height: 23.5%;
+    width: 10%;
+    top: 37.5%;
+    right: 5.73%;
+    bottom: 39%;
+    left: 84.27%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-wrapper-dashboard-charts,
+  .rectangle-parent-dashboard-charts {
+    position: absolute;
+    width: 5.125rem;
+    height: 1.25rem;
+  }
+  .rectangle-parent-dashboard-charts {
+    top: 0;
+    left: 0;
+  }
+  .group-wrapper-dashboard-charts {
+    top: 2.625rem;
+    left: 24.188rem;
+    text-align: left;
+    font-size: 0.563rem;
+    color: #7c8fac;
+    font-family: "Plus Jakarta Sans";
+  }
+  .group-parent5-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.75rem;
+    width: 29.313rem;
+    height: 4.25rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-family: Sora;
+  }
+  .active-listing-inner-dashboard-charts,
+  .group-parent1-dashboard-charts {
+    position: absolute;
+    width: 30.313rem;
+    height: 23.375rem;
+  }
+  .group-parent1-dashboard-charts {
+    top: 0;
+    left: 0;
+  }
+  .active-listing-inner-dashboard-charts {
+    top: 1.438rem;
+    left: 0.625rem;
+  }
+  .active-listing-dashboard-charts,
+  .reject-listing-child-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31.5rem;
+    height: 24.813rem;
+  }
+  .reject-listing-child-dashboard-charts {
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+  }
+  .group-child13-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.813rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.25rem;
+  }
+  .div9-dashboard-charts,
+  .line-parent5-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 1.681rem;
+  }
+  .div9-dashboard-charts {
+    top: 15.25rem;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent5-dashboard-charts {
+    top: 0;
+    height: 16.5rem;
+  }
+  .group-child14-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div10-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child15-dashboard-charts,
+  .line-parent6-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 4.675rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child15-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div11-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.725rem;
+    height: 1.25rem;
+  }
+  .group-child16-dashboard-charts,
+  .line-parent7-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 9.35rem;
+    width: 1.725rem;
+    height: 16.481rem;
+  }
+  .group-child16-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div12-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child17-dashboard-charts,
+  .line-parent8-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 14.113rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child17-dashboard-charts {
+    left: 0.956rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div13-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.906rem;
+    height: 1.25rem;
+  }
+  .group-child18-dashboard-charts,
+  .line-parent9-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 18.831rem;
+    width: 1.906rem;
+    height: 16.481rem;
+  }
+  .group-child18-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div14-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child19-dashboard-charts,
+  .line-parent10-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 23.775rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child19-dashboard-charts {
+    left: 0.906rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div15-dashboard-charts,
+  .line-parent11-dashboard-charts {
+    position: absolute;
+    width: 1.813rem;
+  }
+  .div15-dashboard-charts {
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent11-dashboard-charts {
+    top: 0;
+    left: 28.5rem;
+    height: 16.481rem;
+  }
+  .group-parent8-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .group-child20-dashboard-charts,
+  .group-parent8-dashboard-charts,
+  .k6-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k6-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.675rem;
+    height: 0.919rem;
+  }
+  .group-child20-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent4-dashboard-charts {
+    top: 4.419rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child21-dashboard-charts,
+  .k-parent4-dashboard-charts,
+  .k7-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k7-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.813rem;
+    height: 0.875rem;
+  }
+  .group-child21-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent5-dashboard-charts {
+    top: 2.188rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child22-dashboard-charts,
+  .k-parent5-dashboard-charts,
+  .k8-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k8-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child22-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent6-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child23-dashboard-charts,
+  .k-parent6-dashboard-charts,
+  .k9-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k9-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child23-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent7-dashboard-charts {
+    top: 6.625rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child24-dashboard-charts,
+  .k-parent7-dashboard-charts,
+  .k10-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k10-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child24-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent8-dashboard-charts {
+    top: 8.813rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child25-dashboard-charts,
+  .k-parent8-dashboard-charts,
+  .k11-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k11-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.538rem;
+    height: 0.875rem;
+  }
+  .group-child25-dashboard-charts {
+    top: 1.519rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent9-dashboard-charts {
+    top: 11.088rem;
+    width: 30.313rem;
+    height: 1.519rem;
+  }
+  .div16-dashboard-charts,
+  .group-child26-dashboard-charts,
+  .k-parent9-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .div16-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.406rem;
+    height: 0.919rem;
+  }
+  .group-child26-dashboard-charts {
+    top: 1.288rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .container-dashboard-charts,
+  .group-parent9-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 30.313rem;
+  }
+  .container-dashboard-charts {
+    top: 12.925rem;
+    height: 1.288rem;
+  }
+  .group-parent9-dashboard-charts {
+    top: 0;
+    height: 14.213rem;
+  }
+  .group-child27-dashboard-charts {
+    position: absolute;
+    top: 3.188rem;
+    left: 0.938rem;
+    width: 29.375rem;
+    height: 11.063rem;
+  }
+  .group-parent7-dashboard-charts {
+    position: absolute;
+    top: 6.875rem;
+    left: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .div17-dashboard-charts,
+  .reject-listing1-dashboard-charts,
+  .reject-listing2-dashboard-charts {
+    position: absolute;
+    top: 0;
+    line-height: 1.5rem;
+  }
+  .reject-listing1-dashboard-charts {
+    left: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.375rem;
+    height: 1.563rem;
+  }
+  .div17-dashboard-charts,
+  .reject-listing2-dashboard-charts {
+    font-weight: 300;
+  }
+  .div17-dashboard-charts {
+    left: 0;
+    display: inline-block;
+    width: 2.75rem;
+    height: 1.438rem;
+  }
+  .reject-listing2-dashboard-charts {
+    left: 1.513rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.55rem;
+    height: 0.65rem;
+  }
+  .group-child28-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 1.3px rgba(0, 0, 0, 0.25);
+    background-color: #b3edb3;
+    width: 0.875rem;
+    height: 0.625rem;
+  }
+  .reject-listing-group-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 4.063rem;
+    width: 6.063rem;
+    height: 0.65rem;
+    text-align: center;
+    font-size: 0.563rem;
+    font-family: Sora;
+  }
+  .parent1-dashboard-charts {
+    position: absolute;
+    top: 2.813rem;
+    left: 0;
+    width: 10.125rem;
+    height: 1.438rem;
+    text-align: right;
+    font-family: "Plus Jakarta Sans";
+  }
+  .reject-listing-parent-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.625rem;
+    height: 4.25rem;
+  }
+  .group-child29-dashboard-charts {
+    position: absolute;
+    top: 2.625rem;
+    left: 24.188rem;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 0.7px solid #e0e0e0;
+    box-sizing: border-box;
+    width: 5.125rem;
+    height: 1.25rem;
+  }
+  .march-20221-dashboard-charts {
+    position: absolute;
+    top: 3.044rem;
+    left: 24.75rem;
+    font-size: 0.563rem;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans";
+    color: #7c8fac;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 3.313rem;
+    height: 0.325rem;
+  }
+  .group-parent11-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.313rem;
+    height: 4.25rem;
+  }
+  .vector-icon2-dashboard-charts {
+    position: absolute;
+    height: 6.91%;
+    width: 1.75%;
+    top: 72.79%;
+    right: 1%;
+    bottom: 20.29%;
+    left: 97.25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-frame-dashboard-charts,
+  .group-parent10-dashboard-charts {
+    position: absolute;
+    top: 0;
+    width: 29.313rem;
+    height: 4.25rem;
+  }
+  .group-parent10-dashboard-charts {
+    left: 0;
+  }
+  .group-frame-dashboard-charts {
+    left: 0.75rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-family: Sora;
+  }
+  .group-parent6-dashboard-charts {
+    position: absolute;
+    top: 1.438rem;
+    left: 0.625rem;
+    width: 30.313rem;
+    height: 23.375rem;
+  }
+  .pending-listing-child-dashboard-charts,
+  .reject-listing-dashboard-charts {
+    position: absolute;
+    top: 0;
+    width: 31.5rem;
+    height: 24.813rem;
+  }
+  .reject-listing-dashboard-charts {
+    left: 32.938rem;
+  }
+  .pending-listing-child-dashboard-charts {
+    left: 0;
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+  }
+  .group-child30-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.813rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.25rem;
+  }
+  .div18-dashboard-charts,
+  .line-parent12-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 1.681rem;
+  }
+  .div18-dashboard-charts {
+    top: 15.25rem;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent12-dashboard-charts {
+    top: 0;
+    height: 16.5rem;
+  }
+  .group-child31-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div19-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child32-dashboard-charts,
+  .line-parent13-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 4.675rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child32-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div20-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.725rem;
+    height: 1.25rem;
+  }
+  .group-child33-dashboard-charts,
+  .line-parent14-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 9.35rem;
+    width: 1.725rem;
+    height: 16.481rem;
+  }
+  .group-child33-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div21-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child34-dashboard-charts,
+  .line-parent15-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 14.113rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child34-dashboard-charts {
+    left: 0.956rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div22-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.906rem;
+    height: 1.25rem;
+  }
+  .group-child35-dashboard-charts,
+  .line-parent16-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 18.831rem;
+    width: 1.906rem;
+    height: 16.481rem;
+  }
+  .group-child35-dashboard-charts {
+    left: 0.863rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div23-dashboard-charts {
+    position: absolute;
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 1.681rem;
+    height: 1.25rem;
+  }
+  .group-child36-dashboard-charts,
+  .line-parent17-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 23.775rem;
+    width: 1.681rem;
+    height: 16.481rem;
+  }
+  .group-child36-dashboard-charts {
+    left: 0.906rem;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 0.063rem;
+    height: 14.138rem;
+  }
+  .div24-dashboard-charts,
+  .line-parent18-dashboard-charts {
+    position: absolute;
+    width: 1.813rem;
+  }
+  .div24-dashboard-charts {
+    top: 15.225rem;
+    left: 0;
+    line-height: 140%;
+    display: inline-block;
+    height: 1.25rem;
+  }
+  .line-parent18-dashboard-charts {
+    top: 0;
+    left: 28.5rem;
+    height: 16.481rem;
+  }
+  .group-parent14-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .group-child37-dashboard-charts,
+  .group-parent14-dashboard-charts,
+  .k12-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k12-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.675rem;
+    height: 0.919rem;
+  }
+  .group-child37-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent10-dashboard-charts {
+    top: 4.419rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child38-dashboard-charts,
+  .k-parent10-dashboard-charts,
+  .k13-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k13-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.813rem;
+    height: 0.875rem;
+  }
+  .group-child38-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent11-dashboard-charts {
+    top: 2.188rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child39-dashboard-charts,
+  .k-parent11-dashboard-charts,
+  .k14-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k14-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child39-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent12-dashboard-charts {
+    top: 0;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child40-dashboard-charts,
+  .k-parent12-dashboard-charts,
+  .k15-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k15-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child40-dashboard-charts {
+    top: 1.563rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent13-dashboard-charts {
+    top: 6.625rem;
+    width: 30.313rem;
+    height: 1.563rem;
+  }
+  .group-child41-dashboard-charts,
+  .k-parent13-dashboard-charts,
+  .k16-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k16-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.688rem;
+    height: 0.938rem;
+  }
+  .group-child41-dashboard-charts {
+    top: 1.581rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent14-dashboard-charts {
+    top: 8.813rem;
+    width: 30.313rem;
+    height: 1.581rem;
+  }
+  .group-child42-dashboard-charts,
+  .k-parent14-dashboard-charts,
+  .k17-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .k17-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.538rem;
+    height: 0.875rem;
+  }
+  .group-child42-dashboard-charts {
+    top: 1.519rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .k-parent15-dashboard-charts {
+    top: 11.088rem;
+    width: 30.313rem;
+    height: 1.519rem;
+  }
+  .div25-dashboard-charts,
+  .group-child43-dashboard-charts,
+  .k-parent15-dashboard-charts {
+    position: absolute;
+    left: 0;
+  }
+  .div25-dashboard-charts {
+    top: 0;
+    line-height: 140%;
+    display: inline-block;
+    width: 0.406rem;
+    height: 0.919rem;
+  }
+  .group-child43-dashboard-charts {
+    top: 1.288rem;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: 30.375rem;
+    height: 0.063rem;
+  }
+  .group-parent15-dashboard-charts,
+  .parent2-dashboard-charts {
+    position: absolute;
+    left: 0;
+    width: 30.313rem;
+  }
+  .parent2-dashboard-charts {
+    top: 12.925rem;
+    height: 1.288rem;
+  }
+  .group-parent15-dashboard-charts {
+    top: 0;
+    height: 14.213rem;
+  }
+  .group-child44-dashboard-charts {
+    position: absolute;
+    top: 3.188rem;
+    left: 0.938rem;
+    width: 29.375rem;
+    height: 11.063rem;
+  }
+  .group-parent13-dashboard-charts {
+    position: absolute;
+    top: 6.875rem;
+    left: 0;
+    width: 30.313rem;
+    height: 16.5rem;
+  }
+  .pending-listing1-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.25rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.25rem;
+    height: 1.563rem;
+  }
+  .div26-dashboard-charts,
+  .pending-listing2-dashboard-charts {
+    position: absolute;
+    top: 0;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .div26-dashboard-charts {
+    left: 0;
+    display: inline-block;
+    width: 2.75rem;
+    height: 1.438rem;
+  }
+  .pending-listing2-dashboard-charts {
+    left: 1.513rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.55rem;
+    height: 0.65rem;
+  }
+  .group-child45-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 1.3px rgba(0, 0, 0, 0.25);
+    background-color: #b3edb3;
+    width: 0.875rem;
+    height: 0.625rem;
+  }
+  .pending-listing-group-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 4.063rem;
+    width: 6.063rem;
+    height: 0.65rem;
+    text-align: center;
+    font-size: 0.563rem;
+    font-family: Sora;
+  }
+  .parent3-dashboard-charts {
+    position: absolute;
+    top: 2.813rem;
+    left: 0;
+    width: 10.125rem;
+    height: 1.438rem;
+    text-align: right;
+    font-family: "Plus Jakarta Sans";
+  }
+  .group-child46-dashboard-charts,
+  .pending-listing-parent-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15.5rem;
+    height: 4.25rem;
+  }
+  .group-child46-dashboard-charts {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 0.7px solid #e0e0e0;
+    box-sizing: border-box;
+    width: 5.125rem;
+    height: 1.25rem;
+  }
+  .march-20222-dashboard-charts {
+    position: absolute;
+    top: 0.419rem;
+    left: 0.563rem;
+    line-height: 140%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 3.313rem;
+    height: 0.325rem;
+  }
+  .vector-icon3-dashboard-charts {
+    position: absolute;
+    height: 23.5%;
+    width: 10%;
+    top: 37.5%;
+    right: 5.73%;
+    bottom: 39%;
+    left: 84.27%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-wrapper1-dashboard-charts,
+  .rectangle-group-dashboard-charts {
+    position: absolute;
+    width: 5.125rem;
+    height: 1.25rem;
+  }
+  .rectangle-group-dashboard-charts {
+    top: 0;
+    left: 0;
+  }
+  .group-wrapper1-dashboard-charts {
+    top: 2.625rem;
+    left: 24.188rem;
+    text-align: left;
+    font-size: 0.563rem;
+    color: #7c8fac;
+    font-family: "Plus Jakarta Sans";
+  }
+  .group-parent16-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0.75rem;
+    width: 29.313rem;
+    height: 4.25rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-family: Sora;
+  }
+  .group-parent12-dashboard-charts {
+    position: absolute;
+    top: 1.438rem;
+    left: 0.625rem;
+    width: 30.313rem;
+    height: 23.375rem;
+  }
+  .pending-listing-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 66rem;
+    width: 31.5rem;
+    height: 24.813rem;
+  }
+  .active-listing-parent-dashboard-charts {
+    position: absolute;
+    top: 23.313rem;
+    left: 0;
+    width: 97.5rem;
+    height: 24.813rem;
+  }
+  .total-revenue-child-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+    width: 31.5rem;
+    height: 17.125rem;
+  }
+  .group-icon-dashboard-charts {
+    position: absolute;
+    height: 26.16%;
+    width: 13.02%;
+    top: 0;
+    right: 0;
+    bottom: 73.84%;
+    left: 86.98%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .total-revenue1-dashboard-charts {
+    top: 0;
+    left: 0.063rem;
+    line-height: 1.5rem;
+    width: 14.25rem;
+    height: 2.438rem;
+  }
+  .div27-dashboard-charts,
+  .total-revenue1-dashboard-charts,
+  .view-all-detail-dashboard-charts {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div27-dashboard-charts {
+    top: 5.438rem;
+    left: 1.75rem;
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+    width: 9.625rem;
+    height: 2.063rem;
+  }
+  .view-all-detail-dashboard-charts {
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    width: 11.269rem;
+    height: 1.438rem;
+  }
+  .line-icon-dashboard-charts {
+    position: absolute;
+    top: 1rem;
+    left: 12.563rem;
+    max-height: 100%;
+    width: 2.063rem;
+  }
+  .view-all-detail-parent-dashboard-charts {
+    position: absolute;
+    top: 11.813rem;
+    left: 0;
+    width: 14.625rem;
+    height: 1.438rem;
+    font-size: 1.563rem;
+  }
+  .total-revenue-group-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 0;
+    width: 14.625rem;
+    height: 13.25rem;
+  }
+  .group-parent17-dashboard-charts {
+    position: absolute;
+    height: 79.93%;
+    width: 91.47%;
+    top: 4.01%;
+    right: 2.58%;
+    bottom: 16.06%;
+    left: 5.95%;
+  }
+  .paid-vendrs-child-dashboard-charts,
+  .total-revenue-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31.5rem;
+    height: 17.125rem;
+  }
+  .paid-vendrs-child-dashboard-charts {
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+    width: 31.188rem;
+  }
+  .total-vendors-icon-dashboard-charts {
+    position: absolute;
+    height: 26.53%;
+    width: 13.22%;
+    top: 0;
+    right: 0;
+    bottom: 73.47%;
+    left: 86.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .div28-dashboard-charts,
+  .paid-vendrs1-dashboard-charts {
+    position: absolute;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .paid-vendrs1-dashboard-charts {
+    top: 0;
+    left: 0;
+    width: 14.25rem;
+    height: 2.438rem;
+  }
+  .div28-dashboard-charts {
+    top: 5.938rem;
+    left: 5.25rem;
+    font-size: 2.25rem;
+    width: 3.188rem;
+    height: 2.188rem;
+  }
+  .view-all-detail1-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    display: inline-block;
+    width: 11.269rem;
+    height: 1.438rem;
+  }
+  .group-child47-dashboard-charts {
+    position: absolute;
+    top: 1rem;
+    left: 12.563rem;
+    max-height: 100%;
+    width: 2.063rem;
+  }
+  .view-all-detail-group-dashboard-charts {
+    position: absolute;
+    top: 11.625rem;
+    left: 0.188rem;
+    width: 14.625rem;
+    height: 1.438rem;
+    font-size: 1.563rem;
+  }
+  .paid-vendrs-parent-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 0;
+    width: 14.813rem;
+    height: 13.063rem;
+  }
+  .total-vendors-icon-parent-dashboard-charts {
+    position: absolute;
+    height: 78.83%;
+    width: 90.98%;
+    top: 4.01%;
+    right: 2.81%;
+    bottom: 17.15%;
+    left: 6.21%;
+  }
+  .free-revenue-child-dashboard-charts,
+  .paid-vendrs-dashboard-charts {
+    position: absolute;
+    top: 0;
+    height: 17.125rem;
+  }
+  .paid-vendrs-dashboard-charts {
+    left: 33.125rem;
+    width: 31.188rem;
+  }
+  .free-revenue-child-dashboard-charts {
+    left: 0;
+    box-shadow: 0 0 7.8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: #fff;
+    width: 31.5rem;
+  }
+  .group-child48-dashboard-charts {
+    position: absolute;
+    height: 27.78%;
+    width: 12.9%;
+    top: 0;
+    right: 0;
+    bottom: 72.22%;
+    left: 87.1%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .div29-dashboard-charts,
+  .free-revenue1-dashboard-charts {
+    position: absolute;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .free-revenue1-dashboard-charts {
+    top: 0;
+    left: 0;
+    width: 14.25rem;
+    height: 2.438rem;
+  }
+  .div29-dashboard-charts {
+    top: 5.938rem;
+    left: 5.5rem;
+    font-size: 2.25rem;
+    width: 3.188rem;
+    height: 2.188rem;
+  }
+  .view-all-detail2-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    display: inline-block;
+    width: 10.931rem;
+    height: 1.438rem;
+  }
+  .group-child49-dashboard-charts {
+    position: absolute;
+    top: 1rem;
+    left: 12.188rem;
+    max-height: 100%;
+    width: 2rem;
+  }
+  .view-all-detail-container-dashboard-charts {
+    position: absolute;
+    top: 11.625rem;
+    left: 0.625rem;
+    width: 14.188rem;
+    height: 1.438rem;
+    font-size: 1.563rem;
+  }
+  .free-revenue-parent-dashboard-charts {
+    position: absolute;
+    top: 0.438rem;
+    left: 0;
+    width: 14.813rem;
+    height: 13.063rem;
+  }
+  .group-parent18-dashboard-charts {
+    position: absolute;
+    height: 78.83%;
+    width: 91.81%;
+    top: 4.01%;
+    right: 2.84%;
+    bottom: 17.15%;
+    left: 5.36%;
+  }
+  .free-revenue-dashboard-charts,
+  .total-revenue-parent-dashboard-charts {
+    position: absolute;
+    top: 0;
+    height: 17.125rem;
+  }
+  .free-revenue-dashboard-charts {
+    left: 66.063rem;
+    width: 31.5rem;
+  }
+  .total-revenue-parent-dashboard-charts {
+    left: 0;
+    width: 97.563rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-family: Sora;
+  }
+  .group-div-dashboard-charts {
+    position: absolute;
+    top: 7.25rem;
+    left: 1.313rem;
+    width: 97.563rem;
+    height: 48.125rem;
+  }
+  .group-container-dashboard-charts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.063rem;
+    height: 61.813rem;
+  }
+  .group-parent-dashboard-charts {
+    width: 100%;
+    position: relative;
+    height: 61.813rem;
+    text-align: left;
+    font-size: 0.563rem;
+    color: #7c8fac;
+    font-family: "Plus Jakarta Sans";
+  }
+  
