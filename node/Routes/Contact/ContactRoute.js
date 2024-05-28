@@ -5,7 +5,6 @@ const ContactSchema = require("./ContactSchema");
 router.post("/post-contact", async (req, res) => {
     try {
       const newItem = new ContactSchema(req.body);
-      console.log(newItem);
       await newItem.save();
       res.status(201).json({ message: 'contact added successfully' });
     } catch (err) {

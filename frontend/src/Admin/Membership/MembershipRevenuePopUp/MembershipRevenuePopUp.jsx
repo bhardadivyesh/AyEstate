@@ -2,10 +2,14 @@ import "./MembershipRevenuePopUp.css";
 import closeIcon from "../../../assets/admin/membershipRevenueStatus/deleteIcon.png";
 import line from "../../../assets/admin/membershipRevenueStatus/line.png";
 import membershipRevenue from "../MembershipRevenue";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 const MembershipRevenuePopup = () => {
   const value = useContext(membershipRevenue);
-  console.log(value);
+  const [transactionId,setTransactionId] = useState()
+  useEffect(()=>{
+    let transactionIdData = localStorage.getItem("rzp_device_id")
+    setTransactionId(transactionIdData)
+  },[])
   return (
     <div className="membership-revenue-popup-membership-revenue-popup">
       <section className="rectangle-parent86-membership-revenue-popup">
@@ -31,7 +35,7 @@ const MembershipRevenuePopup = () => {
               />
               <div className="empty-transaction-detail-membership-revenue-popup">
                 <label className="empty-space1-membership-revenue-popup">
-                  4588 4674 897
+                  {transactionId}
                 </label>
               </div>
             </div>

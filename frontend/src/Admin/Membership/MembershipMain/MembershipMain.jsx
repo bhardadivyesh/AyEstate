@@ -15,11 +15,13 @@ import privacy from "../../../assets/admin/membership/membership/privacy.png"
 import relationShip from "../../../assets/admin/membership/membership/relationship.png"
 import personalField from "../../../assets/admin/membership/membership/personal.png"
 import rightTick from "../../../assets/admin/membership/membership/vector.png"
-
+import backgroundImg from "../../../assets/admin/membership/membership/background.png"
 import { useNavigate } from "react-router-dom";
 import dashboardContext from "../../admin";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
 const Membership = () => {
+  const [activeMemberData,setActiveMemberData] = useState([])
   const value = useContext(dashboardContext);
   const navigate = useNavigate();
   const handleNavigation = (navigationPath) => {
@@ -28,6 +30,12 @@ const Membership = () => {
   const handleEditMembership = (navigatePath) => {
     value.setRenderManage(navigatePath);
   };
+  useEffect(()=>{
+    axios.get('http://localhost:3000/get-Registration').then((res)=>{
+      setActiveMemberData(res.data)
+    })
+  },[])
+  console.log(activeMemberData?.length);
   return (
     <>
       <div className="group-parent41-membershipMain-screen">
@@ -48,7 +56,7 @@ const Membership = () => {
                     </div>
                   </div>
                   <div className="group-parent44-membershipMain-screen">
-                    <button className="group-wrapper14-membershipMain-screen rectangle-parent107-membershipMain-screen group-child63-membershipMain-screen " onClick={()=>handleNavigation("paymenScreen")}>
+                    <button className="group-wrapper14-membershipMain-screen rectangle-parent107-membershipMain-screen group-child63-membershipMain-screen " onClick={()=>handleNavigation("paymentScreen")}>
                         <div className="preview-membership-page-container-membershipMain-screen">
                           <label className="preview-membership-page3-membershipMain-screen">Preview Membership page</label>
                           <img
@@ -59,7 +67,6 @@ const Membership = () => {
                         </div>
                     </button>
                     <button className="rectangle-parent108-membershipMain-screen group-child64-membershipMain-screen " onClick={()=>handleEditMembership("editMembership")}>
-                      {/* <div className="group-child64-membershipMain-screen" /> */}
                       <div className="new-add-membership-group-membershipMain-screen">
                         <label className="new-add-membership1-membershipMain-screen">
                           New Add Membership
@@ -82,7 +89,7 @@ const Membership = () => {
                             <img
                               className="gold-child-membershipMain-screen"
                               alt=""
-                              src="/rectangle-9723.svg"
+                              src={backgroundImg}
                             />
                             <div className="group-parent1-membershipMain-screen">
                               <div className="parent-membershipMain-screen">
@@ -237,7 +244,7 @@ const Membership = () => {
                             <img
                               className="gold-child-membershipMain-screen"
                               alt=""
-                              src="/rectangle-9723.svg"
+                              src={backgroundImg}
                             />
                             <div className="group-parent1-membershipMain-screen">
                               <div className="parent-membershipMain-screen">
@@ -370,7 +377,6 @@ const Membership = () => {
                                         </div>
                                       </div>
                                       <div className="billed-2450-membershipMain-screen">
-                                        {" "}
                                         2,500 Billed - 2450
                                       </div>
                                     </div>
@@ -544,7 +550,7 @@ const Membership = () => {
                     <div className="group-child66-membershipMain-screen" />
                     <img className="layer-3-icon2-membershipMain-screen" alt="" src={group} />
                     <div className="active-members2-membershipMain-screen">Active Members</div>
-                    <div className="div46-membershipMain-screen">0</div>
+                    <div className="div46-membershipMain-screen">{activeMemberData?.length}</div>
                     <button className="view-all-members-parent2-membershipMain-screen" onClick={()=>handleEditMembership("activeMember")}>
                       <span className="view-all-members4-membershipMain-screen">View all members</span>
                       <img

@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useContext } from 'react';
 import statusContext from '../statusContext';
+import axios from 'axios';
 
 const ActiveStatus = () => {
     const value = useContext(statusContext)
     const handleActiveStatusClick = (listingData) =>{
         value.setPreviewPageRender(true)
     }
+    console.log("active call");
   return (
     <>
      <div className="rectangle-parent40-main">

@@ -103,14 +103,15 @@ const Category = () => {
                     className="iconEdit"
                     onClick={() => handleEditButton(items)}
                   />
-                </td>
-                <td className="deleteIcon centerImages">
                   <FontAwesomeIcon
                     icon={faTrash}
                     className="iconDelete"
                     onClick={() => handleDeleteClick(items)}
                   />
                 </td>
+                {/* <td className="deleteIcon centerImages"> */}
+                  
+                {/* </td> */}
               </tr>
             ))}
           </tbody>

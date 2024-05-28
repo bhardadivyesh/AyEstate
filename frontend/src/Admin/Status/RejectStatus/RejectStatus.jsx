@@ -7,6 +7,8 @@ const RejectStatus = () => {
   const handleActiveStatusClick = (listingData) =>{
       value.setPreviewPageRender(true)
   }
+  console.log("reject call");
+
   return (
     <>
     <div className="rectangle-parent40-main">

@@ -1,9 +1,11 @@
 import "./FrameComponent2.css";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import priceLogo from "../../../../assets/admin/membership/pricing/priceImage.png";
 import line from "../../../../assets/admin/membership/pricing/line.png";
 import MembershipPriceContext from "../MembershipPricing";
+import axios from "axios";
+
 const FrameComponent2 = () => {
   const value = useContext(MembershipPriceContext);
   const [isChecked, setIsChecked] = useState(false);
@@ -17,21 +19,37 @@ const FrameComponent2 = () => {
 
   const price = watch("price");
   const discount = watch("discount");
-  let discountedValue = price;
 
-  if (discount) {
-    const discountPriceValue = (price * discount) / 100;
-    discountedValue = price - discountPriceValue;
-  }
+  let discountedValue = price;
+  useEffect(() => {
+    if (discount) {
+      const discountPriceValue = (price * discount) / 100;
+      discountedValue = price - discountPriceValue;
+    }
+    setValue("discountPrice", discountedValue);
+  }, [price, discount, setValue]);
+
   const handleDiscountChange = (newDiscount) => {
     setValue("discount", newDiscount);
   };
-  const onSubmit = (data) => {
+
+  const onSubmit = async (data) => {
+    try {
+      console.log(data);
+      const response = await axios.post("http://localhost:3000/post-membershipPriceDetail", data);
+      console.log('API call response:', response.data);
+      // Reset form or handle success
+      reset();
+    } catch (error) {
+      console.error("There was an error creating the membership price detail!", error);
+    }
     value.setPricingDetail(data);
   };
+
   const handleChange = () => {
     setIsChecked(!isChecked);
   };
+
   return (
     <div className="membership-pricing-child-membership-pricing-Frame2">
       <div className="rectangle-parent89-membership-pricing-Frame2">
@@ -54,6 +72,11 @@ const FrameComponent2 = () => {
           <div className="frame-parent78-membership-pricing-Frame2">
             <div className="frame-parent79-membership-pricing-Frame2">
               <div className="trang-ch">
+                <input
+                  type="file"
+                  className="input-file"
+                  // {...register("logoImage", { required: true })}
+                />
                 <section className="rectangle-parent81">
                   <div className="frame-child91" />
                   <button className="rectangle-parent82">
@@ -93,7 +116,7 @@ const FrameComponent2 = () => {
                 </div>
               </div>
             </div>
-            {isChecked == true && (
+            {isChecked && (
               <div className="rectangle-parent92-membership-pricing-Frame2">
                 <div className="frame-child119-membership-pricing-Frame2" />
                 <div className="rectangle-parent93-membership-pricing-Frame2">
@@ -109,7 +132,7 @@ const FrameComponent2 = () => {
                         className="frame-child121-membership-pricing-Frame2"
                         type="number"
                         {...register("discount", {
-                          required: false,
+                          required: true,
                           min: 0,
                           max: 100,
                         })}
@@ -173,13 +196,14 @@ const FrameComponent2 = () => {
                   <input
                     className="swe-nothing-inc-membership-pricing-Frame2"
                     type="text"
-                    defaultValue={discountedValue}
-                    {...register("discountPrice")}
+                    readOnly
+                    value={discountedValue}
+                    {...register("discountPrice", { required: true })}
                   />
                   <div className="rectangle-parent97-membership-pricing-Frame2">
                     <div className="frame-child125-membership-pricing-Frame2" />
                     <div className="discount-price-membership-pricing-Frame2">
-                      Discount Price
+                      Discounted Price
                     </div>
                   </div>
                 </div>
@@ -218,9 +242,10 @@ const FrameComponent2 = () => {
             </button>
           </div>
         </form>
-        {console.log("frame componenr call")}
+        {console.log("frame component call")}
       </div>
     </div>
   );
 };
+
 export default FrameComponent2;

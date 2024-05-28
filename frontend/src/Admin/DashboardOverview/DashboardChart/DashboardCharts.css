@@ -1640,7 +1640,6 @@
   }
   .div27-dashboard-charts {
     top: 5.438rem;
-    left: 1.75rem;
     font-size: 2.25rem;
     line-height: 1.5rem;
     width: 9.625rem;
@@ -1650,12 +1649,12 @@
     top: 0;
     left: 0;
     font-weight: 300;
-    width: 11.269rem;
+    width: 12.269rem;
     height: 1.438rem;
   }
   .line-icon-dashboard-charts {
     position: absolute;
-    top: 1rem;
+    bottom: 0.1rem;
     left: 12.563rem;
     max-height: 100%;
     width: 2.063rem;
@@ -1727,7 +1726,7 @@
   }
   .div28-dashboard-charts {
     top: 5.938rem;
-    left: 5.25rem;
+    left: 0.5rem;
     font-size: 2.25rem;
     width: 3.188rem;
     height: 2.188rem;
@@ -1738,12 +1737,11 @@
     left: 0;
     font-weight: 300;
     display: inline-block;
-    width: 11.269rem;
+    width: 12.269rem;
     height: 1.438rem;
   }
   .group-child47-dashboard-charts {
     position: absolute;
-    top: 1rem;
     left: 12.563rem;
     max-height: 100%;
     width: 2.063rem;
@@ -1817,7 +1815,7 @@
   }
   .div29-dashboard-charts {
     top: 5.938rem;
-    left: 5.5rem;
+    left: 1rem;
     font-size: 2.25rem;
     width: 3.188rem;
     height: 2.188rem;
@@ -1828,12 +1826,11 @@
     left: 0;
     font-weight: 300;
     display: inline-block;
-    width: 10.931rem;
+    width: 11.931rem;
     height: 1.438rem;
   }
   .group-child49-dashboard-charts {
     position: absolute;
-    top: 1rem;
     left: 12.188rem;
     max-height: 100%;
     width: 2rem;

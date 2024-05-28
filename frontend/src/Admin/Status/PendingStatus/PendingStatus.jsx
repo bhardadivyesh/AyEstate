@@ -7,6 +7,7 @@ const PendingStatus = () => {
   const handleActiveStatusClick = (listingData) =>{
       value.setPreviewPageRender(true)
   }
+  console.log("pending call");
   return (
     <>
      <div className="rectangle-parent40-main">

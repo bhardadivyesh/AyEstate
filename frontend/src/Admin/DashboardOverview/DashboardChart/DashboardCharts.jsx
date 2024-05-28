@@ -3,6 +3,7 @@ import chart1 from "../../../assets/admin/DashboardChart/chart1.png"
 import totalRevenue from "../../../assets/admin/DashboardChart/totalRevenue.png"
 import paidVendor from "../../../assets/admin/DashboardChart/paidVendor.png"
 import freeVendor from "../../../assets/admin/DashboardChart/freeVendor.png"
+import rightArrow from "../../../assets/admin/DashboardChart/rightArrow.png"
 const  DashboardCharts= () => {
   return (
     <div className="group-parent-dashboard-charts">
@@ -295,8 +296,8 @@ const  DashboardCharts= () => {
                   <div className="total-revenue1-dashboard-charts">Total Revenue</div>
                   <div className="div27-dashboard-charts">₹ 50263</div>
                   <button className="view-all-detail-parent-dashboard-charts">
-                    <span className="view-all-detail-dashboard-charts">View all Detail</span>
-                    <img className="line-icon-dashboard-charts" alt="" src="/line-41.svg" />
+                    <span className="view-all-detail-dashboard-charts">View all Details</span>
+                    <img className="line-icon-dashboard-charts" alt="" src={rightArrow} />
                   </button>
                 </div>
               </div>
@@ -312,10 +313,10 @@ const  DashboardCharts= () => {
                 <div className="paid-vendrs-parent-dashboard-charts">
                   <div className="paid-vendrs1-dashboard-charts">Paid Vendors</div>
                   <div className="div28-dashboard-charts">30</div>
-                  <div className="view-all-detail-group-dashboard-charts">
-                    <div className="view-all-detail1-dashboard-charts">View all Detail</div>
-                    <img className="group-child47-dashboard-charts" alt="" src="/line-41.svg" />
-                  </div>
+                  <button className="view-all-detail-group-dashboard-charts">
+                    <span className="view-all-detail1-dashboard-charts">View all Details</span>
+                    <img className="group-child47-dashboard-charts" alt="" src={rightArrow} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -330,10 +331,10 @@ const  DashboardCharts= () => {
                 <div className="free-revenue-parent-dashboard-charts">
                   <div className="free-revenue1-dashboard-charts">Free Vendor</div>
                   <div className="div29-dashboard-charts">50</div>
-                  <div className="view-all-detail-container-dashboard-charts">
-                    <div className="view-all-detail2-dashboard-charts">View all Detail</div>
-                    <img className="group-child49-dashboard-charts" alt="" src="/line-411.svg" />
-                  </div>
+                  <button className="view-all-detail-container-dashboard-charts">
+                    <span className="view-all-detail2-dashboard-charts">View all Details</span>
+                    <img className="group-child49-dashboard-charts" alt="" src={rightArrow} />
+                  </button>
                 </div>
               </div>
             </div>

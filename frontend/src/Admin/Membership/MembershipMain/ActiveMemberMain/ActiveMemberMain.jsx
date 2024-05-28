@@ -4,13 +4,11 @@ import "./ActiveMemberMain.css";
 
 const ActiveMemberMain = () => {
   const [activeMember, setActiveMember] = useState([]);
-
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setActiveMember(res.data);
     });
   }, []);
-  console.log(activeMember);
 
   return (
     <div className="membership-revenue3-activeMember-Main">

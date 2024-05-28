@@ -4,9 +4,13 @@ import PendingRequest from "../PendingRequest/PendingRequest";
 import RejectRequest from "../RejectRequest/RejectRequest";
 import "./VendorMain.css";
 import axios from "axios";
+import vendorContext from "../Vendor"
 
 const VendorMain = () => {
   const [vendorRendor,setVendorManage] = useState("pending")
+  const [pendingUsers,setPendingUsers] = useState([])
+  const [activeUsers,setActiveUsers] = useState([])
+  const [rejectUsers,setRejectUsers] = useState([])
   const handleVendorRendorState = (renderState) =>{
     setVendorManage(renderState)
   }
@@ -15,19 +19,19 @@ const VendorMain = () => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setVendorData(res.data);
     });
-  },[]);
+  },[vendorRendor]);
  
-  let PendingRequestData = vendorData.filter((items) => items.status == "pending");
-  let ActiveRequestData = vendorData.filter((items => items.status == "active"));   
-  let RejectRequestData = vendorData.filter((items => items.status == "reject"));                                                           
+  // let PendingRequestData = vendorData.filter((items) => items.status == "pending");
+  // let ActiveRequestData = vendorData.filter((items => items.status == "active"));   
+  // let RejectRequestData = vendorData.filter((items => items.status == "reject"));                                                           
   return (
     <div className="group-root">
       <div className="rectangle-parent36">
         <div className="group-child10" />
         <div className="group-parent1">
-            <button type="button" className="rectangle-parent37 group-child11 pending" onClick={()=>handleVendorRendorState("pending")}>{`Pending (${PendingRequestData?.length})`}</button>
-            <button type="button" className="group-child12 active" onClick={()=>handleVendorRendorState("active")}>{`Active (${ActiveRequestData?.length})`}</button>
-            <button type="button" className="rectangle-parent39 group-child13 reject" onClick={()=>handleVendorRendorState("reject")}>{`Reject (${RejectRequestData?.length})`}</button>
+            <button type="button" className="rectangle-parent37 group-child11 pending" onClick={()=>handleVendorRendorState("pending")}>{`Pending (${pendingUsers})`}</button>
+            <button type="button" className="group-child12 active" onClick={()=>handleVendorRendorState("active")}>{`Active (${activeUsers})`}</button>
+            <button type="button" className="rectangle-parent39 group-child13 reject" onClick={()=>handleVendorRendorState("reject")}>{`Reject (${rejectUsers})`}</button>
         </div>
         <div className="rectangle-parent40">
           <div className="group-child14" />
@@ -42,11 +46,11 @@ const VendorMain = () => {
             <div className="action1">Action</div>
             <div className="group-child15" />
           </div>
-          {/* <vendorContext.Provider value={{activeUsers,setActiveUsers}}> */}
+          <vendorContext.Provider value={{pendingUsers,activeUsers,rejectUsers,setPendingUsers,setActiveUsers,setRejectUsers}}>
           {vendorRendor === "pending" && <PendingRequest  />}
           {vendorRendor === "active" && <ActiveRequest />}
           {vendorRendor === "reject" && <RejectRequest />}
-          {/* </vendorContext.Provider > */}
+          </vendorContext.Provider >
         </div>
       </div>
     </div>

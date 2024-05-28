@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const listingSchema = new mongoose.Schema({
+const contactSchema = new mongoose.Schema({
   name: { type: String, required: true },
   additionalInfo : { type : String , required : true },
   agreeToTerms : { type : Boolean, required : true },
@@ -8,5 +8,5 @@ const listingSchema = new mongoose.Schema({
   email : {type : String,require : true},
   phoneNumber : {type : String,require : true}
 });
-
-module.exports = mongoose.model("ContactUs", listingSchema);
+// 
+module.exports = mongoose.model("ContactUs", contactSchema);

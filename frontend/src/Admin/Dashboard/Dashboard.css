@@ -432,19 +432,21 @@
 }
 .categoryIndex{
   font-family: 'Sora';
+  width: 138px;
   font-size: 40px;
   font-weight: 200;
 }
 .categoryName{
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 32px;
-    font-family: 'Sora';
-    font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 32px;
+  font-family: 'Sora';
+  font-weight: 300;
 }
 .locationIndex{
+  width: 108px;
   font-family: 'Sora';
   font-size: 40px;
   font-weight: 200;
@@ -462,7 +464,8 @@
   text-align: center;
 }
  .editIcon{
-  align-items: center;
+  padding-right: 103px;
+  width: 191px;
 } 
 .iconEdit{
   cursor: pointer;

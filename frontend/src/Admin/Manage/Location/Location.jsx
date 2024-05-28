@@ -105,10 +105,9 @@ const Location = () => {
                 <td className="locationName">{item?.locationName}</td>
                 <td className="editIcon">
                   <FontAwesomeIcon icon={faPenToSquare} className="iconEdit" onClick={() => handleEditButton(item)} />
-                </td>
-                <td className="deleteIcon centerImages">
                   <FontAwesomeIcon icon={faTrash} className="iconDelete" onClick={() => handleDeleteClick(item)} />
                 </td>
+              
               </tr>
             ))}
           </tbody>
