@@ -107,7 +107,7 @@ function SignUp() {
                     {...register("phone", { required: true })}
                   />
                 </div>
-                {errors.phoneNumber && (
+                {errors.phone && (
                   <p style={{ color: "red" }}>PhoneNumber is required</p>
                 )}
                 <input
@@ -115,7 +115,7 @@ function SignUp() {
                   placeholder="Full name (Required)*"
                   {...register("name", { required: true })}
                 />
-                {errors.fullName && <p style={{color : "red"}}>Name is required</p>}
+                {errors.name && <p style={{color : "red"}}>Name is required</p>}
                 <input
                   className="rectangle-parent24-registration"
                   placeholder="Company name (Required)*"

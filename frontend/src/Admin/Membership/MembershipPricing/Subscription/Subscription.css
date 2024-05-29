@@ -17,7 +17,7 @@
   }
   .subscription4 {
     margin: 0;
-    width: 430px;
+    width: 577px;
     font-size: inherit;
     line-height: 130%;
     font-weight: 400;
@@ -767,6 +767,7 @@
     margin-top: -1749px;
   }
   .subscription3 {
+    margin-left: 7rem;
     width: 1380px;
     max-width: 100%;
     display: flex;
@@ -781,6 +782,22 @@
     color: #000;
     font-family: Sora;
   }
+  /* submit button */
+  .rectangle-parent117 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    box-shadow: 0-1px 5.3px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    background-color: #b7e08a;
+    font-family: 'Sora';
+    font-size: 23px;
+    padding: 14px 27px 15px;
+  }
+  
+  /* submit button over */
   @media screen and (max-width: 1200px) {
     .group-main {
       padding-top: 49px;

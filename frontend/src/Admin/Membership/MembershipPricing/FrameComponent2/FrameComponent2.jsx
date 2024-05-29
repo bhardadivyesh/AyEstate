@@ -8,6 +8,7 @@ import axios from "axios";
 
 const FrameComponent2 = () => {
   const value = useContext(MembershipPriceContext);
+  console.log(value);
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
@@ -35,15 +36,20 @@ const FrameComponent2 = () => {
 
   const onSubmit = async (data) => {
     try {
-      console.log(data);
-      const response = await axios.post("http://localhost:3000/post-membershipPriceDetail", data);
-      console.log('API call response:', response.data);
+      value.setPricingDetail(data);
+      const response = await axios.post(
+        "http://localhost:3000/post-membershipPriceDetail",
+        data
+      );
+      console.log("API call response:", response.data);
       // Reset form or handle success
       reset();
     } catch (error) {
-      console.error("There was an error creating the membership price detail!", error);
+      console.error(
+        "There was an error creating the membership price detail!",
+        error
+      );
     }
-    value.setPricingDetail(data);
   };
 
   const handleChange = () => {
@@ -70,13 +76,28 @@ const FrameComponent2 = () => {
         >
           <div className="frame-child116-membership-pricing-Frame2" />
           <div className="frame-parent78-membership-pricing-Frame2">
+            <div className="rectangle-parent115">
+              <input
+                type="file"
+                className="logo-input-file"
+                {...register("logoImage", { required: true })}
+              />
+            </div>
+            {errors.logoImage && (
+              <span style={{ color: "#d92323" }}>Enter LogoIcon</span>
+            )}
+            <input
+              className="rectangle-parent116"
+              placeholder="Enter Title"
+              {...register("title", { required: true })}
+            />
+            {errors.title && (
+              <span style={{ color: "#d92323" }}>Enter Title</span>
+            )}
             <div className="frame-parent79-membership-pricing-Frame2">
               <div className="trang-ch">
-                <input
-                  type="file"
-                  className="input-file"
-                  // {...register("logoImage", { required: true })}
-                />
+                {/* choose file */}
+                {/* choose file over */}
                 <section className="rectangle-parent81">
                   <div className="frame-child91" />
                   <button className="rectangle-parent82">
@@ -98,7 +119,7 @@ const FrameComponent2 = () => {
                 </section>
               </div>
               {errors.price && (
-                <span style={{ color: "red" }}>Enter Price</span>
+                <span style={{ color: "#d92323" }}>Enter Price</span>
               )}
               <div className="frame-wrapper46-membership-pricing-Frame2">
                 <div className="rectangle-parent91-membership-pricing-Frame2">
@@ -226,7 +247,7 @@ const FrameComponent2 = () => {
                 type="number"
                 className="number-item-membership-pricing-Frame2"
                 placeholder="enter listing number"
-                {...register("listingNumber", { required: true })}
+                {...register("listingNumber", { required: true,min:0 })}
               />
             </section>
           </div>
@@ -238,7 +259,7 @@ const FrameComponent2 = () => {
               type="submit"
               className="rectangle-parent99-membership-pricing-Frame2"
             >
-              <span className="save-membership-pricing-Frame2">Save</span>
+              <span className="save-membership-pricing-Frame2">Next</span>
             </button>
           </div>
         </form>

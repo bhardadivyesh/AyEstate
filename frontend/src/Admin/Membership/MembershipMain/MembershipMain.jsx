@@ -2,26 +2,27 @@ import "./MembershipMain.css";
 import lineArror from "../../../assets/admin/membership/membership/arrow.png"
 import groupIcon from "../../../assets/admin/membership/membership/groupicon.png"
 import group from "../../../assets/admin/membership/membership/group.png"
-import freeIcon from "../../../assets/admin/membership/membership/freeIcon.png"
-import gold from "../../../assets/admin/membership/membership/gold.png"
-import silver from "../../../assets/admin/membership/membership/silver.png"
-import next from "../../../assets/admin/membership/membership/next.png"
-import previous from "../../../assets/admin/membership/membership/previous.png"
-import setting from "../../../assets/admin/membership/membership/setting.png"
-import preview from "../../../assets/admin/membership/membership/preview.png"
-import days from "../../../assets/admin/membership/membership/45days.png"
-import topSlot from "../../../assets/admin/membership/membership/topSlot.png"
-import privacy from "../../../assets/admin/membership/membership/privacy.png"
-import relationShip from "../../../assets/admin/membership/membership/relationship.png"
-import personalField from "../../../assets/admin/membership/membership/personal.png"
-import rightTick from "../../../assets/admin/membership/membership/vector.png"
-import backgroundImg from "../../../assets/admin/membership/membership/background.png"
+import freeIcon from "../../../assets/admin/membership/membership/membershipNew/free.png"
+import gold from "../../../assets/admin/membership/membership/membershipNew/goldIcon.png"
+import silver from "../../../assets/admin/membership/membership/membershipNew/silverIcon.png"
+import discount from "../../../assets/admin/membership/membership/membershipNew/discount.png"
+import checkMark from "../../../assets/admin/membership/membership/membershipNew/checkmark.png"
+import days from "../../../assets/admin/membership/membership/membershipNew/day.png"
+import topSlot from "../../../assets/admin/membership/membership/membershipNew/topSlot.png"
+import privacy from "../../../assets/admin/membership/membership/membershipNew/privacy.png"
+import relationaship from "../../../assets/admin/membership/membership/membershipNew/relationship.png"
+import personal from "../../../assets/admin/membership/membership/membershipNew/personal.png"
+import next from "../../../assets/admin/membership/membership/membershipNew/next.png"
+import previous from "../../../assets/admin/membership/membership/membershipNew/previous.png"
+import newAdd from "../../../assets/admin/membership/membership/membershipNew/setting.png"
+import preview from "../../../assets/admin/membership/membership/membershipNew/preview.png"
 import { useNavigate } from "react-router-dom";
 import dashboardContext from "../../admin";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 const Membership = () => {
   const [activeMemberData,setActiveMemberData] = useState([])
+  console.log(activeMemberData.length);
   const value = useContext(dashboardContext);
   const navigate = useNavigate();
   const handleNavigation = (navigationPath) => {
@@ -33,552 +34,501 @@ const Membership = () => {
   useEffect(()=>{
     axios.get('http://localhost:3000/get-Registration').then((res)=>{
       setActiveMemberData(res.data)
+      console.log("call api");
     })
   },[])
   console.log(activeMemberData?.length);
   return (
     <>
-      <div className="group-parent41-membershipMain-screen">
-        <div className="rectangle-parent105-membershipMain-screen">
-          <div className="group-child61-membershipMain-screen" />
-          <div className="group-parent42-membershipMain-screen">
-            <div className="group-wrapper13-membershipMain-screen">
-              <div className="rectangle-parent106-membershipMain-screen">
-                <div className="group-child62-membershipMain-screen" />
-                <div className="group-parent43-membershipMain-screen">
-                  <div className="edit-your-membership-parent1-membershipMain-screen">
-                    <div className="edit-your-membership3-membershipMain-screen">
-                      Edit your membership
-                    </div>
-                    <div className="make-changes-to3-membershipMain-screen">
-                      Make changes to your membership plan, launch promotional
-                      offers and more.
-                    </div>
-                  </div>
-                  <div className="group-parent44-membershipMain-screen">
-                    <button className="group-wrapper14-membershipMain-screen rectangle-parent107-membershipMain-screen group-child63-membershipMain-screen " onClick={()=>handleNavigation("paymentScreen")}>
-                        <div className="preview-membership-page-container-membershipMain-screen">
-                          <label className="preview-membership-page3-membershipMain-screen">Preview Membership page</label>
-                          <img
-                            className="fi-2356572-icon3-membershipMain-screen"
-                            alt=""
-                            src={preview}
-                          />
-                        </div>
-                    </button>
-                    <button className="rectangle-parent108-membershipMain-screen group-child64-membershipMain-screen " onClick={()=>handleEditMembership("editMembership")}>
-                      <div className="new-add-membership-group-membershipMain-screen">
-                        <label className="new-add-membership1-membershipMain-screen">
-                          New Add Membership
-                        </label>
-                        <img
-                          className="vector-icon18-membershipMain-screen"
-                          alt=""
-                          src={setting}
-                        />
-                      </div>
-                    </button>
-                  </div>
-                  <div className="rectangle-parent109-membershipMain-screen">
-                    <div className="group-child65-membershipMain-screen" />
-                    <div className="group-parent45-membershipMain-screen">
-                      <div className="group-wrapper15-membershipMain-screen">
-                        <div className="gold-group-membershipMain-screen">
-                          {/* <Gold /> */}
-                          <div className="gold-membershipMain-screen">
-                            <img
-                              className="gold-child-membershipMain-screen"
-                              alt=""
-                              src={backgroundImg}
-                            />
-                            <div className="group-parent1-membershipMain-screen">
-                              <div className="parent-membershipMain-screen">
-                                <div className="div-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <div className="days-plan-validity-membershipMain-screen">
-                                    45 Days plan validity
-                                  </div>
-                                  <img
-                                    className="fi-2693507-icon-membershipMain-screen"
-                                    alt=""
-                                    src={days}
-                                  />
-                                </div>
-                                <div className="fi-1828739-parent-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon-membershipMain-screen"
-                                    alt=""
-                                    src={topSlot}
-                                  />
-                                  <div className="top-slot-listing-membershipMain-screen">
-                                    Top slot listing for 5x more visicility
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-group-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon2-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={privacy}
-                                  />
-                                  <div className="privacy-of-your-membershipMain-screen">
-                                    Privacy Of Your Phone Number
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-container-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon3-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon2-membershipMain-screen"
-                                    alt=""
-                                    src={relationShip}
-                                  />
-                                  <div className="relationship-manager-super-membershipMain-screen">
-                                    Relationship Manager Super Fast Closure
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-parent1-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon4-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="vector-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={personalField}
-                                  />
-                                  <div className="personal-field-assistant-membershipMain-screen">
-                                    Personal Field Assistant
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="div1-membershipMain-screen">
-                                <div className="group-parent2-membershipMain-screen">
-                                  <div className="rectangle-wrapper-membershipMain-screen">
-                                    <div className="group-child1-membershipMain-screen" />
-                                  </div>
-                                  <div className="delete-membershipMain-screen">Delete</div>
-                                </div>
-                                <div className="rectangle-parent2-membershipMain-screen">
-                                  <div className="group-child2-membershipMain-screen" />
-                                  <div className="edit-membership-membershipMain-screen">
-                                    Edit Membership
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="group-parent3-membershipMain-screen">
-                              <div className="rectangle-frame-membershipMain-screen">
-                                <div className="group-child3-membershipMain-screen" />
-                              </div>
-                              <div className="group-parent4-membershipMain-screen">
-                                <div className="rectangle-parent3-membershipMain-screen">
-                                  <div className="group-child4-membershipMain-screen" />
-                                  <div className="discont-membershipMain-screen">2% Discont%</div>
-                                </div>
-                                <div className="wrapper-group-parent-membershipMain-screen">
-                                  <div className="wrapper-group-membershipMain-screen">
-                                    <img
-                                      className="group-icon3-membershipMain-screen"
-                                      alt=""
-                                      src={gold}
-                                    />
-                                  </div>
-                                  <div className="group-parent5-membershipMain-screen">
-                                    <div className="inr-25-listing-parent-membershipMain-screen">
-                                      <div className="inr-container-membershipMain-screen">
-                                        <span className="inr-container1-membershipMain-screen">
-                                          <span className="inr-membershipMain-screen">
-                                            {" "}
-                                            2,500 INR *
-                                          </span>
-                                          <span> / 25 Listing</span>
-                                        </span>
-                                      </div>
-                                      <div className="group-wrapper2-membershipMain-screen">
-                                        <div className="group-wrapper3-membershipMain-screen">
-                                          <div className="vat-and-local-taxes-may-apply-wrapper-membershipMain-screen">
-                                            <div className="vat-and-local-membershipMain-screen">
-                                              VAT and local taxes may apply
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="billed-2450-membershipMain-screen">
-                                        {" "}
-                                        2,500 Billed - 2450
-                                      </div>
-                                    </div>
-                                    <img
-                                      className="line-icon-membershipMain-screen"
-                                      alt=""
-                                      src="/line-54.svg"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          {/* over */}
-                          <div className="silver-parent-membershipMain-screen">
-                            {/* <Silver /> */}
-                            {/* silver over */}
-
-                            <img
-                              className="gold-child-membershipMain-screen"
-                              alt=""
-                              src={backgroundImg}
-                            />
-                            <div className="group-parent1-membershipMain-screen">
-                              <div className="parent-membershipMain-screen">
-                                <div className="div-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <div className="days-plan-validity-membershipMain-screen">
-                                    45 Days plan validity
-                                  </div>
-                                  <img
-                                    className="fi-2693507-icon-membershipMain-screen"
-                                    alt=""
-                                    src={days}
-                                  />
-                                </div>
-                                <div className="fi-1828739-parent-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon-membershipMain-screen"
-                                    alt=""
-                                    src={topSlot}
-                                  />
-                                  <div className="top-slot-listing-membershipMain-screen">
-                                    Top slot listing for 5x more visicility
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-group-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon2-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={privacy}
-                                  />
-                                  <div className="privacy-of-your-membershipMain-screen">
-                                    Privacy Of Your Phone Number
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-container-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon3-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon2-membershipMain-screen"
-                                    alt=""
-                                    src={relationShip}
-                                  />
-                                  <div className="relationship-manager-super-membershipMain-screen">
-                                    Relationship Manager Super Fast Closure
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-parent1-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon4-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="vector-icon1-membershipMain-screen"
-                                    alt=""
-                                    src={personalField}
-                                  />
-                                  <div className="personal-field-assistant-membershipMain-screen">
-                                    Personal Field Assistant
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="div1-membershipMain-screen">
-                                <div className="group-parent2-membershipMain-screen">
-                                  <div className="rectangle-wrapper-membershipMain-screen">
-                                    <div className="group-child1-membershipMain-screen" />
-                                  </div>
-                                  <div className="delete-membershipMain-screen">Delete</div>
-                                </div>
-                                <div className="rectangle-parent2-membershipMain-screen">
-                                  <div className="group-child2-membershipMain-screen" />
-                                  <div className="edit-membership-membershipMain-screen">
-                                    Edit Membership
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="group-parent3-membershipMain-screen">
-                              <div className="rectangle-frame-membershipMain-screen">
-                                <div className="group-child3-membershipMain-screen" />
-                              </div>
-                              <div className="group-parent4-membershipMain-screen">
-                                <div className="rectangle-parent3-membershipMain-screen">
-                                  <div className="group-child4-membershipMain-screen" />
-                                  <div className="discont-membershipMain-screen">2% Discont%</div>
-                                </div>
-                                <div className="wrapper-group-parent-membershipMain-screen">
-                                  <div className="wrapper-group-membershipMain-screen">
-                                    <img
-                                      className="group-icon3-membershipMain-screen"
-                                      alt=""
-                                      src={silver}
-                                    />
-                                  </div>
-                                  <div className="group-parent5-membershipMain-screen">
-                                    <div className="inr-25-listing-parent-membershipMain-screen">
-                                      <div className="inr-container-membershipMain-screen">
-                                        <span className="inr-container1-membershipMain-screen">
-                                          <span className="inr-membershipMain-screen">
-                                            {" "}
-                                            2,500 INR *
-                                          </span>
-                                          <span> / 25 Listing</span>
-                                        </span>
-                                      </div>
-                                      <div className="group-wrapper2-membershipMain-screen">
-                                        <div className="group-wrapper3-membershipMain-screen">
-                                          <div className="vat-and-local-taxes-may-apply-wrapper-membershipMain-screen">
-                                            <div className="vat-and-local-membershipMain-screen">
-                                              VAT and local taxes may apply
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="billed-2450-membershipMain-screen">
-                                        2,500 Billed - 2450
-                                      </div>
-                                    </div>
-                                    <img
-                                      className="line-icon-membershipMain-screen"
-                                      alt=""
-                                      src="/line-54.svg"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="group-wrapper16-membershipMain-screen">
-                            <div className="group-wrapper17-membershipMain-screen">
-                              <div className="vat-and-local-taxes-may-apply-wrapper3-membershipMain-screen">
-                                <div className="vat-and-local6-membershipMain-screen">
-                                  VAT and local taxes may apply
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          {/* </div> */}
-                          {/* <FREE /> */}
-                          <div className="free-membershipMain-screen">
-                            <div className="free-child-membershipMain-screen" />
-                            <div className="group-parent12-membershipMain-screen">
-                              <div className="rectangle-parent6-membershipMain-screen">
-                                <div className="group-child10-membershipMain-screen" />
-                                <div className="div3-membershipMain-screen">
-                                  <div className="free-3-container-membershipMain-screen">
-                                    <span className="free-3-container1-membershipMain-screen">
-                                      <span className="free1-membershipMain-screen">{` FREE `}</span>
-                                      <span>/ 3 Listing</span>
-                                    </span>
-                                  </div>
-                                  <div className="free3listing-membershipMain-screen">
-                                    FREE*3LISTING
-                                  </div>
-                                  <img
-                                    className="free-1-icon-membershipMain-screen"
-                                    alt=""
-                                    src={freeIcon}
-                                  />
-                                  <div className="inner-membershipMain-screen">
-                                    <div className="group-wrapper5-membershipMain-screen">
-                                      <div className="vat-and-local-taxes-may-apply-container-membershipMain-screen">
-                                        <div className="vat-and-local2-membershipMain-screen">
-                                          VAT and local taxes may apply
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="container-membershipMain-screen">
-                                <div className="div4-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon10-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <div className="days-plan-validity2-membershipMain-screen">
-                                    45 Days plan validity
-                                  </div>
-                                  <img
-                                    className="fi-2693507-icon2-membershipMain-screen"
-                                    alt=""
-                                    src={days}
-                                  />
-                                </div>
-                                <div className="fi-1828739-parent6-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon11-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon8-membershipMain-screen"
-                                    alt=""
-                                    src={topSlot}
-                                  />
-                                  <div className="top-slot-listing2-membershipMain-screen">
-                                    Top slot listing for 5x more visicility
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-parent7-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon12-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon9-membershipMain-screen"
-                                    alt=""
-                                    src={privacy}
-                                  />
-                                  <div className="privacy-of-your2-membershipMain-screen">
-                                    Privacy Of Your Phone Number
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-parent8-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon13-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="group-icon10-membershipMain-screen"
-                                    alt=""
-                                    src={relationShip}
-                                  />
-                                  <div className="relationship-manager-super2-membershipMain-screen">
-                                    Relationship Manager Super Fast Closure
-                                  </div>
-                                </div>
-                                <div className="fi-1828739-parent9-membershipMain-screen">
-                                  <img
-                                    className="fi-1828739-icon14-membershipMain-screen"
-                                    alt=""
-                                    src={rightTick}
-                                  />
-                                  <img
-                                    className="vector-icon3-membershipMain-screen"
-                                    alt=""
-                                    src={personalField}
-                                  />
-                                  <div className="personal-field-assistant2-membershipMain-screen">
-                                    Personal Field Assistant
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="group-parent13-membershipMain-screen">
-                                <div className="group-parent14-membershipMain-screen">
-                                  <div className="rectangle-wrapper3-membershipMain-screen">
-                                    <div className="group-child11-membershipMain-screen" />
-                                  </div>
-                                  <div className="edit-membership2-membershipMain-screen">
-                                    Edit Membership
-                                  </div>
-                                </div>
-                                <div className="rectangle-parent7-membershipMain-screen">
-                                  <div className="group-child12-membershipMain-screen" />
-                                  <div className="delete2-membershipMain-screen">Delete</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          {/* free over */}
-                        </div>
-                      </div>
-                      <img
-                        className="fi-3661484-icon1-membershipMain-screen"
-                        alt=""
-                        src={previous}
-                      />
-                      <img
-                        className="fi-3661482-icon1-membershipMain-screen"
-                        alt=""
-                        src={next}
-                      />
-                    </div>
-                  </div>
+    <div className="membershipnew-membershipMain">
+      <div className="membershipnew-inner-membershipMain">
+        <div className="group-parent-membershipMain">
+          <div className="group-container-membershipMain">
+            <div className="rectangle-wrapper-membershipMain">
+              <div className="group-child-membershipMain" />
+            </div>
+            <div className="group-wrapper-membershipMain">
+              <div className="group-div-membershipMain">
+                <div className="rectangle-parent-membershipMain">
+                  <div className="group-item-membershipMain" />
+                  <img className="layer-3-icon-membershipMain" alt="" src={group} />
+                  <div className="active-members-membershipMain">Active Members</div>
+                  <div className="div-membershipMain">{activeMemberData?.length}</div>
+                  <button className="view-all-members-parent-membershipMain" onClick={()=>handleEditMembership("activeMember")}>
+                    <span className="view-all-members-membershipMain">View all members</span>
+                    <img className="group-inner-membershipMain" alt="" src={lineArror} />
+                  </button>
+                </div>
+                <div className="rectangle-group-membershipMain">
+                  <div className="rectangle-div-membershipMain" />
+                  <div className="membership-revenue-membershipMain">Membership revenue</div>
+                  <div className="div1-membershipMain">0</div>
+                  <button className="view-all-members-group-membershipMain" onClick={()=>handleEditMembership("membershipRevenue")}>
+                    <span className="view-all-members1-membershipMain">View all members</span>
+                    <img className="line-icon-membershipMain" alt="" src={lineArror} />
+                  </button>
+                  <img
+                    className="fi-10164350-icon-membershipMain"
+                    alt=""
+                    src={groupIcon}
+                  />
                 </div>
               </div>
             </div>
-            <div className="group-wrapper18-membershipMain-screen">
-              <div className="group-wrapper19-membershipMain-screen">
-                <div className="group-parent46-membershipMain-screen">
-                  <div className="rectangle-parent110-membershipMain-screen">
-                    <div className="group-child66-membershipMain-screen" />
-                    <img className="layer-3-icon2-membershipMain-screen" alt="" src={group} />
-                    <div className="active-members2-membershipMain-screen">Active Members</div>
-                    <div className="div46-membershipMain-screen">{activeMemberData?.length}</div>
-                    <button className="view-all-members-parent2-membershipMain-screen" onClick={()=>handleEditMembership("activeMember")}>
-                      <span className="view-all-members4-membershipMain-screen">View all members</span>
-                      <img
-                        className="group-child67-membershipMain-screen"
-                        alt=""
-                        src={lineArror}
-                      />
+          </div>
+          <div className="rectangle-container-membershipMain">
+            <div className="group-child1-membershipMain" />
+            <div className="group-parent1-membershipMain">
+              <div className="edit-your-membership-parent-membershipMain">
+                <div className="edit-your-membership-membershipMain">Edit your membership</div>
+                <div className="make-changes-to-membershipMain">
+                  Make changes to your membership plan, launch promotional
+                  offers and more.
+                </div>
+              </div>
+              <div className="group-parent2-membershipMain">
+                <div className="rectangle-parent1-membershipMain">
+                  <button className="group-child2-membershipMain" onClick={()=>handleNavigation("paymentScreen")}>
+                  <span className="preview-membership-page-membershipMain">Preview Membership page</span>
+                  <img
+                    className="fi-2356572-icon-membershipMain"
+                    alt=""
+                    src={preview}
+                  />
+                  </button>
+                </div>
+                <div className="group-frame-membershipMain">
+                  <div className="rectangle-parent2-membershipMain">
+                    <button className="group-child3-membershipMain" onClick={()=>handleEditMembership("editMembership")}>
+                    <div className="new-add-membership-membershipMain">New Add Membership</div>
+                    <img className="vector-icon-membershipMain" alt="" src={newAdd} />
                     </button>
                   </div>
-                  <div className="rectangle-parent111-membershipMain-screen">
-                    <div className="group-child68-membershipMain-screen" />
-                    <div className="membership-revenue4-membershipMain-screen">
-                      Membership revenue
-                    </div>
-                    <div className="div47-membershipMain-screen">0</div>
-                    <button className="view-all-members-parent3-membershipMain-screen" onClick={()=>handleEditMembership("membershipRevenue")}>
-                      <span className="view-all-members5-membershipMain-screen">View all members</span>
-                      <img
-                        className="group-child69-membershipMain-screen"
-                        alt=""
-                        src={lineArror}
-                      />
-                    </button>
+                </div>
+              </div>
+              <div className="group-parent3-membershipMain">
+                <div className="fi-3661484-wrapper-membershipMain">
+                  <div className="fi-3661484-membershipMain" />
+                </div>
+                <div className="rectangle-parent3-membershipMain">
+                  <div className="group-child4-membershipMain" />
+                  <div className="group-group-membershipMain">
+                    <img className="group-icon-membershipMain" alt="" src={previous} />
                     <img
-                      className="fi-10164350-icon2-membershipMain-screen"
+                      className="fi-3661482-icon-membershipMain"
                       alt=""
-                      src={groupIcon}
+                      src={next}
                     />
+                    <div className="group-parent4-membershipMain">
+                      <div className="rectangle-parent4-membershipMain">
+                        <div className="group-child5-membershipMain" />
+                        <div className="group-parent5-membershipMain">
+                          <div className="rectangle-parent5-membershipMain">
+                            <div className="group-child6-membershipMain" />
+                            <div className="div2-membershipMain">
+                              <div className="free-packages-membershipMain">{`Free Packages `}</div>
+                              <div className="free-3-container-membershipMain">
+                                <span className="free-3-container1-membershipMain">
+                                  <span className="free-membershipMain">
+                                    <span>FREE</span>
+                                  </span>
+                                  <span className="listing-membershipMain">
+                                    <span className="span-membershipMain">{`  `}</span>
+                                    <span>/ 3 Listing</span>
+                                  </span>
+                                </span>
+                              </div>
+                              <img
+                                className="child-membershipMain"
+                                alt=""
+                                src={freeIcon}
+                              />
+                            </div>
+                          </div>
+                          <div className="group-parent6-membershipMain">
+                            <div className="group-parent7-membershipMain">
+                              <div className="rectangle-parent6-membershipMain">
+                                <div className="group-child7-membershipMain" />
+                                <div className="edit-membership-membershipMain">
+                                  Edit Membership
+                                </div>
+                              </div>
+                              <div className="rectangle-parent7-membershipMain">
+                                <div className="group-child8-membershipMain" />
+                                <div className="delete-membershipMain">Delete</div>
+                              </div>
+                            </div>
+                            <div className="group-parent8-membershipMain">
+                              <div className="checkmark-circle-2-parent-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2693507-icon-membershipMain"
+                                  alt=""
+                                  src={days}
+                                />
+                                <div className="days-plan-validity-membershipMain">
+                                  10 Days plan validity
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-group-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon1-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2668384-icon-membershipMain"
+                                  alt=""
+                                  src={topSlot}
+                                />
+                                <div className="top-slot-listing-membershipMain">
+                                  Top slot listing for 5x more visicility
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-container-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon2-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2889676-icon-membershipMain"
+                                  alt=""
+                                  src={privacy}
+                                />
+                                <div className="privacy-of-your-membershipMain">
+                                  Privacy Of Your Phone Number
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent1-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon3-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-870073-icon-membershipMain"
+                                  alt=""
+                                  src={relationaship}
+                                />
+                                <div className="relationship-manager-fast-membershipMain">
+                                  Relationship Manager Fast Closure
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent2-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon4-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-1239608-icon-membershipMain"
+                                  alt=""
+                                  src={personal}
+                                />
+                                <div className="personal-field-assistant-membershipMain">
+                                  Personal Field Assistant
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="rectangle-parent8-membershipMain">
+                        <div className="group-child9-membershipMain" />
+                        <div className="group-parent9-membershipMain">
+                          <div className="group-wrapper1-membershipMain">
+                            <div className="rectangle-parent9-membershipMain">
+                              <div className="group-child10-membershipMain" />
+                              <div className="div3-membershipMain">
+                                <div className="vector-parent-membershipMain">
+                                  <img
+                                    className="rectangle-icon-membershipMain"
+                                    alt=""
+                                    src={discount}
+                                  />
+                                  <div className="discont-membershipMain">2% Discont</div>
+                                </div>
+                                <div className="inner-membershipMain">
+                                  <div className="silver-packages-wrapper-membershipMain">
+                                    <div className="silver-packages-membershipMain">{`Silver Packages `}</div>
+                                  </div>
+                                </div>
+                                <div className="listing-parent-membershipMain">
+                                  <div className="listing1-membershipMain">
+                                    <span className="listing-txt-membershipMain">
+                                      <span className="span1-membershipMain">
+                                        <span>₹1470</span>
+                                      </span>
+                                      <span className="listing2-membershipMain">
+                                        <span className="span2-membershipMain">
+                                          <span className="span3-membershipMain">{` `}</span>
+                                        </span>
+                                        <span>
+                                          <span className="span4-membershipMain">{`1,500 `}</span>
+                                          <span> / 10 Listing</span>
+                                        </span>
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <img
+                                    className="group-child11-membershipMain"
+                                    alt=""
+                                    src="/line-66.svg"
+                                  />
+                                </div>
+                                <img
+                                  className="group-icon1-membershipMain"
+                                  alt=""
+                                  src={silver}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="group-parent10-membershipMain">
+                            <div className="group-parent11-membershipMain">
+                              <div className="rectangle-parent10-membershipMain">
+                                <div className="group-child12-membershipMain" />
+                                <div className="edit-membership1-membershipMain">
+                                  Edit Membership
+                                </div>
+                              </div>
+                              <div className="rectangle-parent11-membershipMain">
+                                <div className="group-child13-membershipMain" />
+                                <div className="delete1-membershipMain">Delete</div>
+                              </div>
+                            </div>
+                            <div className="group-parent12-membershipMain">
+                              <div className="checkmark-circle-2-parent3-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon5-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2693507-icon1-membershipMain"
+                                  alt=""
+                                  src={days}
+                                />
+                                <div className="days-plan-validity1-membershipMain">
+                                  15 Days plan validity
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent4-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon6-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2668384-icon1-membershipMain"
+                                  alt=""
+                                  src={topSlot}
+                                />
+                                <div
+                                  className="top-slot-listing1-membershipMain"
+                                >
+                                  Top slot listing for 5x more visicility
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent5-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon7-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2889676-icon1-membershipMain"
+                                  alt=""
+                                  src={privacy}
+                                />
+                                <div className="privacy-of-your1-membershipMain">
+                                  Privacy Of Your Phone Number
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent6-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon8-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-870073-icon1-membershipMain"
+                                  alt=""
+                                  src={relationaship}
+                                />
+                                <div className="relationship-manager-fast1-membershipMain">
+                                  Relationship Manager Fast Closure
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent7-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon9-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-1239608-icon1-membershipMain"
+                                  alt=""
+                                  src={personal}
+                                />
+                                <div className="personal-field-assistant1-membershipMain">
+                                  Personal Field Assistant
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="rectangle-parent12-membershipMain">
+                        <div className="group-child14-membershipMain" />
+                        <div className="group-parent13-membershipMain">
+                          <div className="rectangle-parent13-membershipMain">
+                            <div className="group-child15-membershipMain" />
+                            <div className="wrapper-group-parent-membershipMain">
+                              <div className="wrapper-group-membershipMain">
+                                <img
+                                  className="group-icon2-membershipMain"
+                                  alt=""
+                                  src={gold}
+                                />
+                              </div>
+                              <div className="gold-packages-wrapper-membershipMain">
+                                <div className="gold-packages-membershipMain">{`Gold Packages `}</div>
+                              </div>
+                              <div className="vector-group-membershipMain">
+                                <img
+                                  className="group-child16-membershipMain"
+                                  alt=""
+                                  src={discount}
+                                />
+                                <div className="discont1-membershipMain">2% Discont</div>
+                              </div>
+                              <div className="listing-group-membershipMain">
+                                <div className="listing3-membershipMain">
+                                  <span className="listing-txt1-membershipMain">
+                                    <span className="span5-membershipMain">
+                                      <span>₹2450</span>
+                                    </span>
+                                    <span className="listing4-membershipMain">
+                                      <span className="span6-membershipMain">
+                                        <span className="span7-membershipMain">{` `}</span>
+                                      </span>
+                                      <span>
+                                        <span className="span8-membershipMain">{`2,500 `}</span>
+                                        <span> / 25 Listing</span>
+                                      </span>
+                                    </span>
+                                  </span>
+                                </div>
+                                <img
+                                  className="group-child17-membershipMain"
+                                  alt=""
+                                  src="/line-661.svg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="group-parent14-membershipMain">
+                            <div className="group-parent15-membershipMain">
+                              <div className="rectangle-parent14-membershipMain">
+                                <div className="group-child18-membershipMain" />
+                                <div className="edit-membership2-membershipMain">
+                                  Edit Membership
+                                </div>
+                              </div>
+                              <div className="rectangle-parent15-membershipMain">
+                                <div className="group-child19-membershipMain" />
+                                <div className="delete2-membershipMain">Delete</div>
+                              </div>
+                            </div>
+                            <div className="group-parent16-membershipMain">
+                              <div className="checkmark-circle-2-parent8-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon10-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2693507-icon2-membershipMain"
+                                  alt=""
+                                  src={days}
+                                />
+                                <div className="days-plan-validity2-membershipMain">
+                                  25 Days plan validity
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent9-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon11-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2668384-icon2-membershipMain"
+                                  alt=""
+                                  src={topSlot}
+                                />
+                                <div
+                                  className="top-slot-listing2-membershipMain"
+                                >
+                                  Top slot listing for 5x more visicility
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent10-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon12-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-2889676-icon2-membershipMain"
+                                  alt=""
+                                  src={privacy}
+                                />
+                                <div className="privacy-of-your2-membershipMain">
+                                  Privacy Of Your Phone Number
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent11-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon13-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-870073-icon2-membershipMain"
+                                  alt=""
+                                  src={relationaship}
+                                />
+                                <div className="relationship-manager-fast2-membershipMain">
+                                  Relationship Manager Fast Closure
+                                </div>
+                              </div>
+                              <div className="checkmark-circle-2-parent12-membershipMain">
+                                <img
+                                  className="checkmark-circle-2-icon14-membershipMain"
+                                  alt=""
+                                  src={checkMark}
+                                />
+                                <img
+                                  className="fi-1239608-icon2-membershipMain"
+                                  alt=""
+                                  src={personal}
+                                />
+                                <div className="personal-field-assistant2-membershipMain">
+                                  Personal Field Assistant
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -586,6 +536,7 @@ const Membership = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

@@ -16,6 +16,7 @@ export default function SignIn() {
   const value = useContext(authContext);
   const [continueButton, setContinueButton] = useState(false);
   const [contentStateRender, setContentStateRender] = useState("");
+  console.log(contentStateRender);
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
@@ -99,6 +100,7 @@ export default function SignIn() {
                     {...register("email", { required: true })}
                   />
                 </div>
+                  {errors.email && <span style={{color:'#d92323'}}>Enter Email</span>}
                 {continueButton == false ? (
                   <div className="continue-btn-signIn">
                     <button
@@ -131,7 +133,6 @@ export default function SignIn() {
                         <div className="frame-parent44-signIn">
                           <div className="ive-password-parent-signIn">
                             <div className="ive-password-signIn">I’ve Password</div>
-                            <div className="ive-password1-signIn">I’ve Password</div>
                           </div>
                           <input
                             type="radio"
@@ -148,9 +149,8 @@ export default function SignIn() {
                       <div className="frame-parent45-signIn">
                         <div className="enter-otp-here-parent-signIn">
                           <div className="enter-otp-here-container-signIn">
-                            <span>Enter</span>
-                            <span className="span2-signIn">{` `}</span>
-                            <span>OTP here</span>
+                            {contentStateRender == "otpGenerate" && <span>Enter otp here</span>}
+                            {contentStateRender == 'passwordGenerate' && <span>Enter Password Here</span>}
                           </div>
                         </div>
                         {/* password */}

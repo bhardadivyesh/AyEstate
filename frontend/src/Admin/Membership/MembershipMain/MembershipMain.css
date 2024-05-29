@@ -1,1212 +1,1561 @@
-.group-child61-membershipMain-screen,
-.group-child62-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
+.group-child-membershipMain {
   background-color: #f2f6fe;
-  width: 99.75rem;
-  height: 92.5rem;
 }
-.group-child62-membershipMain-screen {
+.group-child-membershipMain,
+.group-item-membershipMain,
+.rectangle-wrapper-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1596px;
+  height: 1436px;
+}
+.group-item-membershipMain {
   box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: #fff;
-  width: 93.25rem;
-  height: 64.563rem;
+  width: 685.9px;
+  height: 229px;
 }
-.edit-your-membership3-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-weight: 600;
-  display: inline-block;
-  width: 46.625rem;
-  height: 5.063rem;
-}
-.make-changes-to3-membershipMain-screen {
-  position: absolute;
-  top: 5.563rem;
-  left: 1.063rem;
-  font-size: 1.688rem;
-  color: #afafaf;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  width: 73.25rem;
-  height: 2.063rem;
-}
-.edit-your-membership-parent1-membershipMain-screen,
-.group-child63-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 74.313rem;
-  height: 7.625rem;
-}
-.group-child63-membershipMain-screen {
-  box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  background-color: #fff;
-  width: 35.763rem;
-  height: 6.119rem;
-}
-.preview-membership-page3-membershipMain-screen {
-  position: absolute;
-  top: 0.306rem;
-  left: 4.631rem;
-  line-height: 130%;
-  display: inline-block;
-  width: 27.788rem;
-  height: 3.794rem;
-  cursor: pointer;
-}
-.fi-2356572-icon3-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3.238rem;
-  height: 3.181rem;
-  overflow: hidden;
-}
-.preview-membership-page-container-membershipMain-screen {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.906rem;
-  width: 32.419rem;
-  height: 4.1rem;
-}
-.rectangle-parent107-membershipMain-screen {
-  left: 0;
-  width: 35.763rem;
-}
-.group-child64-membershipMain-screen,
-.group-wrapper14-membershipMain-screen,
-.rectangle-parent107-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  height: 6.119rem;
-}
-.group-wrapper14-membershipMain-screen {
-  left: 48.031rem;
-  width: 35.763rem;
-}
-.group-wrapper14-membershipMain-screen:hover{
-  background-color: #b7e08a;
-}
-.group-child64-membershipMain-screen {
-  left: 0;
-  box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  width: 29.344rem;
-}
-.new-add-membership1-membershipMain-screen {
-  position: absolute;
-  top: 0.1rem;
-  left: 3.463rem;
-  line-height: 130%;
-  display: inline-block;
-  width: 24.063rem;
-  height: 3.438rem;
-  cursor: pointer;
-}
-.vector-icon18-membershipMain-screen {
-  position: absolute;
-  height: 76.15%;
-  width: 10.08%;
-  top: 0;
-  right: 89.92%;
-  bottom: 23.85%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.new-add-membership-group-membershipMain-screen {
-  position: absolute;
-  top: 1.588rem;
-  left: 1.413rem;
-  width: 27.525rem;
-  height: 3.538rem;
-}
-.rectangle-parent108-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 29.344rem;
-  height: 6.119rem;
-}
-.rectangle-parent108-membershipMain-screen:hover{
-  background-color: #b7e08a;
-}
-.group-parent44-membershipMain-screen {
-  position: absolute;
-  top: 53.688rem;
-  left: 0.875rem;
-  width: 83.794rem;
-  height: 6.119rem;
-  font-size: 2.063rem;
-}
-.group-child65-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-shadow: 3px 4px 23.2px rgba(0, 0, 0, 0.25);
-  border-radius: 11px;
-  background-color: #fff;
-  width: 84rem;
-  height: 41.063rem;
-}
-.vat-and-local6-membershipMain-screen {
-  line-height: 130%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-.group-wrapper17-membershipMain-screen,
-.vat-and-local-taxes-may-apply-wrapper3-membershipMain-screen,
-.vat-and-local6-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18.063rem;
-  height: 1.188rem;
-}
-.group-wrapper16-membershipMain-screen {
-  position: absolute;
-  top: 6.375rem;
-  left: 2.563rem;
-  width: 18.063rem;
-  height: 1.188rem;
-}
-.silver-parent-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 47.5rem;
-  width: 21.438rem;
-  height: 37.438rem;
-}
-.gold-group-membershipMain-screen,
-.group-wrapper15-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  width: 68.938rem;
-  height: 37.438rem;
-}
-.gold-group-membershipMain-screen {
-  left: 0;
-}
-.group-wrapper15-membershipMain-screen {
-  left: 5.625rem;
-}
-.fi-3661482-icon1-membershipMain-screen,
-.fi-3661484-icon1-membershipMain-screen {
-  position: absolute;
-  top: 15.563rem;
-  width: 3.125rem;
-  height: 3.125rem;
-  overflow: hidden;
-}
-.fi-3661484-icon1-membershipMain-screen {
-  left: 0;
-}
-.fi-3661482-icon1-membershipMain-screen {
-  left: 76.875rem;
-}
-.group-parent45-membershipMain-screen {
-  position: absolute;
-  top: 1.875rem;
-  left: 1.938rem;
-  width: 80rem;
-  height: 37.438rem;
-}
-.rectangle-parent109-membershipMain-screen {
-  position: absolute;
-  top: 10.125rem;
-  left: 0.813rem;
-  width: 84rem;
-  height: 41.063rem;
-  text-align: left;
-  font-size: 1.125rem;
-  color: #fff;
-}
-.group-parent43-membershipMain-screen {
-  position: absolute;
-  top: 2.188rem;
-  left: 4rem;
-  width: 84.813rem;
-  height: 59.806rem;
-}
-.group-wrapper13-membershipMain-screen,
-.rectangle-parent106-membershipMain-screen {
-  position: absolute;
-  left: 0;
-  width: 93.25rem;
-  height: 64.563rem;
-}
-.rectangle-parent106-membershipMain-screen {
-  top: 0;
-}
-.group-wrapper13-membershipMain-screen {
-  top: 19.25rem;
-}
-.group-child66-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  background-color: #fff;
-  width: 42.869rem;
-  height: 14.313rem;
-}
-.layer-3-icon2-membershipMain-screen {
+.layer-3-icon-membershipMain {
   position: absolute;
   height: 12.1%;
   width: 7.11%;
-  top: 5.11%;
+  top: 5.15%;
   right: 2.62%;
-  bottom: 82.79%;
+  bottom: 82.75%;
   left: 90.26%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-.active-members2-membershipMain-screen {
-  top: 2.45rem;
-  left: 1.681rem;
+.active-members-membershipMain {
+  top: 39.2px;
+  left: 26.9px;
   font-weight: 300;
-  width: 12.838rem;
-  height: 1.406rem;
+  width: 205.4px;
+  height: 22.5px;
 }
-.active-members2-membershipMain-screen,
-.div46-membershipMain-screen,
-.view-all-members4-membershipMain-screen {
+.active-members-membershipMain,
+.div-membershipMain,
+.view-all-members-membershipMain {
   position: absolute;
   display: inline-block;
 }
-.div46-membershipMain-screen {
-  top: 5.569rem;
-  left: 2.119rem;
-  font-size: 2.188rem;
+.div-membershipMain {
+  top: 89.1px;
+  left: 33.9px;
+  font-size: 35px;
   text-align: left;
-  width: 1.494rem;
-  height: 1.713rem;
+  width: 23.9px;
+  height: 27.4px;
 }
-.view-all-members4-membershipMain-screen {
+.view-all-members-membershipMain {
   top: 0;
   left: 0;
   font-weight: 300;
-  width: 14.644rem;
-  height: 1.406rem;
+  width: 234.3px;
+  height: 22.5px;
 }
-.group-child67-membershipMain-screen {
+.group-inner-membershipMain {
   position: absolute;
-  left: 16.325rem;
+  left: 261.2px;
   max-height: 100%;
-  width: 2.681rem;
+  width: 42.9px;
 }
-.view-all-members-parent2-membershipMain-screen {
+.view-all-members-parent-membershipMain {
   position: absolute;
-  top: 10.031rem;
-  left: 1.681rem;
-  width: 19rem;
-  height: 1.406rem;
-  font-size: 1.563rem;
+  top: 160.5px;
+  left: 26.9px;
+  width: 304px;
+  height: 22.5px;
+  font-size: 25px;
 }
-.group-child68-membershipMain-screen,
-.rectangle-parent110-membershipMain-screen {
+.rectangle-div-membershipMain,
+.rectangle-parent-membershipMain {
   position: absolute;
   top: 0;
   left: 0;
-  width: 42.869rem;
-  height: 14.313rem;
+  width: 685.9px;
+  height: 229px;
 }
-.group-child68-membershipMain-screen {
+.rectangle-div-membershipMain {
   box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: #fff;
 }
-.membership-revenue4-membershipMain-screen {
-  top: 2.45rem;
-  left: 1.619rem;
+.membership-revenue-membershipMain {
+  top: 39.2px;
+  left: 25.9px;
   font-weight: 300;
-  width: 15.7rem;
-  height: 1.406rem;
+  width: 251.2px;
+  height: 22.5px;
 }
-.div47-membershipMain-screen,
-.membership-revenue4-membershipMain-screen,
-.view-all-members5-membershipMain-screen {
+.div1-membershipMain,
+.membership-revenue-membershipMain,
+.view-all-members1-membershipMain {
   position: absolute;
   display: inline-block;
 }
-.div47-membershipMain-screen {
-  top: 5.569rem;
-  left: 1.931rem;
-  font-size: 2.188rem;
+.div1-membershipMain {
+  top: 89.1px;
+  left: 30.9px;
+  font-size: 35px;
   text-align: left;
-  width: 1.494rem;
-  height: 1.713rem;
+  width: 23.9px;
+  height: 27.4px;
 }
-.view-all-members5-membershipMain-screen {
+.view-all-members1-membershipMain {
   top: 0;
   left: 0;
   font-weight: 300;
-  width: 14.644rem;
-  height: 1.406rem;
+  width: 234.3px;
+  height: 22.5px;
 }
-.group-child69-membershipMain-screen {
+.line-icon-membershipMain {
   position: absolute;
-  left: 16.075rem;
+  left: 257.2px;
   max-height: 100%;
-  width: 2.681rem;
+  width: 42.9px;
 }
-.view-all-members-parent3-membershipMain-screen {
+.view-all-members-group-membershipMain {
   position: absolute;
-  top: 10.031rem;
-  left: 1.556rem;
-  width: 18.756rem;
-  height: 1.406rem;
-  font-size: 1.563rem;
+  top: 160.5px;
+  left: 24.9px;
+  width: 300.1px;
+  height: 22.5px;
+  font-size: 25px;
 }
-.fi-10164350-icon2-membershipMain-screen {
+.fi-10164350-icon-membershipMain {
   position: absolute;
-  top: 0.488rem;
-  left: 39.688rem;
-  width: 2.556rem;
-  height: 1.713rem;
+  top: 7.9px;
+  left: 635px;
+  width: 40.9px;
+  height: 27.4px;
   overflow: hidden;
 }
-.rectangle-parent111-membershipMain-screen {
+.rectangle-group-membershipMain {
   position: absolute;
   top: 0;
-  left: 50.406rem;
-  width: 42.869rem;
-  height: 14.313rem;
+  left: 806.5px;
+  width: 685.9px;
+  height: 229px;
 }
-.group-parent46-membershipMain-screen,
-.group-wrapper18-membershipMain-screen,
-.group-wrapper19-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  width: 93.269rem;
-  height: 14.313rem;
-}
-.group-parent46-membershipMain-screen,
-.group-wrapper19-membershipMain-screen {
-  left: 0;
-}
-.group-wrapper18-membershipMain-screen {
-  left: 0.3rem;
-  font-size: 1.438rem;
-}
-.group-parent42-membershipMain-screen {
-  position: absolute;
-  top: 4.813rem;
-  left: 3.25rem;
-  width: 93.569rem;
-  height: 83.813rem;
-}
-.rectangle-parent105-membershipMain-screen {
+.group-container-membershipMain,
+.group-div-membershipMain,
+.group-wrapper-membershipMain {
   position: absolute;
   top: 0;
   left: 0;
-  width: 99.75rem;
-  height: 92.5rem;
+  width: 1492.3px;
+  height: 229px;
 }
-.group-parent41-membershipMain-screen {
-  width: 100%;
-  position: relative;
-  height: 92.5rem;
-  text-align: center;
-  font-size: 4rem;
-  color: #000;
-  font-family: Sora;
+.group-container-membershipMain,
+.group-wrapper-membershipMain {
+  top: 77.3px;
+  left: 56.8px;
 }
-/* free cart */
-.free-child-membershipMain-screen,
-.group-child10-membershipMain-screen {
+.group-container-membershipMain {
+  top: 0;
+  left: 0;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  width: 1596px;
+  height: 1436px;
+}
+.group-child1-membershipMain {
   position: absolute;
   top: 0;
   left: 0;
-}
-.free-child-membershipMain-screen {
-  border-radius: 17px;
+  box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
   background-color: #fff;
-  border: 2px solid #e8e8e8;
-  box-sizing: border-box;
-  width: 21.438rem;
-  height: 37.438rem;
+  width: 1492px;
+  height: 1033px;
 }
-.group-child10-membershipMain-screen {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px 15px 18px 18px;
-  background-color: #000;
-  width: 21.188rem;
-  height: 17.356rem;
-}
-.free1-membershipMain-screen {
-  font-weight: 600;
-}
-.free-3-container1-membershipMain-screen {
-  width: 100%;
-}
-.free-3-container-membershipMain-screen,
-.free3listing-membershipMain-screen {
+.edit-your-membership-membershipMain {
   position: absolute;
-  line-height: 130%;
-}
-.free-3-container-membershipMain-screen {
-  top: 7.625rem;
+  top: 0;
   left: 0;
+  font-weight: 600;
+  display: inline-block;
+  width: 746px;
+  height: 81px;
+}
+.make-changes-to-membershipMain {
+  position: absolute;
+  top: 89px;
+  left: 17px;
+  font-size: 27px;
+  color: #afafaf;
+  text-align: left;
   display: flex;
   align-items: center;
-  width: 11.688rem;
-  height: 1.875rem;
+  width: 1172px;
+  height: 33px;
 }
-.free3listing-membershipMain-screen {
-  top: 10.625rem;
-  left: 0.313rem;
-  font-weight: 600;
-  display: inline-block;
-  width: 7.875rem;
-  height: 1.063rem;
-}
-.free-1-icon-membershipMain-screen {
+.edit-your-membership-parent-membershipMain,
+.group-child2-membershipMain {
   position: absolute;
   top: 0;
-  left: 6.75rem;
-  width: 4.313rem;
-  height: 3.75rem;
+  left: 0;
+  width: 1189px;
+  height: 122px;
+}
+.group-child2-membershipMain {
+  box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 572.2px;
+  height: 97.9px;
+}
+.preview-membership-page-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 104.5px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  width: 468px;
+  height: 98px;
+}
+.fi-2356572-icon-membershipMain {
+  position: absolute;
+  top: 20px;
+  left: 25.5px;
+  width: 51.8px;
+  height: 50.9px;
   overflow: hidden;
 }
-.vat-and-local2-membershipMain-screen {
+.group-child3-membershipMain,
+.rectangle-parent1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 768.5px;
+  width: 572.5px;
+  height: 98px;
+}
+.group-child3-membershipMain {
+  left: 0;
+  box-shadow: -1px 1px 8.5px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #b7e08a;
+  width: 469.5px;
+  height: 97.9px;
+}
+.new-add-membership-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 78px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  width: 392px;
+  height: 98px;
+}
+.vector-icon-membershipMain {
+  position: absolute;
+  height: 43.98%;
+  width: 9.45%;
+  top: 26.94%;
+  right: 87.23%;
+  bottom: 29.08%;
+  left: 3.32%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-frame-membershipMain,
+.group-parent2-membershipMain,
+.rectangle-parent2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 98px;
+}
+.group-parent2-membershipMain {
+  top: 859px;
+  left: 14px;
+  width: 1341px;
+  text-align: left;
+  font-size: 33px;
+}
+.fi-3661484-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.fi-3661484-wrapper-membershipMain,
+.group-child4-membershipMain {
+  position: absolute;
+  top: 279px;
+  left: 31px;
+  width: 50px;
+  height: 50px;
+}
+.group-child4-membershipMain {
+  top: 0;
+  left: 0;
+  box-shadow: 3px 4px 23.2px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  background-color: #fff;
+  width: 1344px;
+  height: 657px;
+}
+.fi-3661482-icon-membershipMain,
+.group-icon-membershipMain {
+  position: absolute;
+  overflow: hidden;
+}
+.group-icon-membershipMain {
+  height: 8.35%;
+  width: 3.91%;
+  top: 41.57%;
+  right: 96.09%;
+  bottom: 50.08%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.fi-3661482-icon-membershipMain {
+  top: 249px;
+  left: 1230px;
+  width: 50px;
+  height: 50px;
+}
+.group-child5-membershipMain {
+  top: 0;
+  box-shadow: 0-1px 14.3px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  background-color: #f6f6f6;
+  height: 599px;
+}
+.free-packages-membershipMain,
+.group-child5-membershipMain,
+.group-child6-membershipMain {
+  position: absolute;
+  left: 0;
+  width: 343px;
+}
+.group-child6-membershipMain {
+  top: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px 17px 18px 18px;
+  background-color: #fff;
+  height: 217px;
+}
+.free-packages-membershipMain {
+  top: 52px;
   line-height: 130%;
   font-weight: 600;
   display: inline-block;
+  height: 40px;
 }
-.group-wrapper5-membershipMain-screen,
-.vat-and-local-taxes-may-apply-container-membershipMain-screen,
-.vat-and-local2-membershipMain-screen {
+.free-membershipMain,
+.span-membershipMain {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.listing-membershipMain {
+  font-size: 20px;
+}
+.free-3-container1-membershipMain {
+  width: 100%;
+}
+.free-3-container-membershipMain {
   position: absolute;
-  top: 0;
+  top: 109px;
   left: 0;
-  width: 18.188rem;
-  height: 1.188rem;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  width: 343px;
+  height: 43px;
+  font-size: 39px;
 }
-.div3-membershipMain-screen,
-.inner-membershipMain-screen {
+.child-membershipMain {
   position: absolute;
-}
-.inner-membershipMain-screen {
-  top: 5.063rem;
-  left: 0.375rem;
-  width: 18.188rem;
-  height: 1.188rem;
-  font-size: 1.125rem;
-}
-.div3-membershipMain-screen {
-  top: 1rem;
-  left: 1.938rem;
-  width: 18.563rem;
-  height: 11.688rem;
-}
-.fi-1828739-icon10-membershipMain-screen,
-.rectangle-parent6-membershipMain-screen {
-  position: absolute;
+  height: 29.87%;
+  width: 25.07%;
   top: 0;
-  left: 0;
-  width: 21.188rem;
-  height: 17.356rem;
-}
-.fi-1828739-icon10-membershipMain-screen {
-  width: 1rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.days-plan-validity2-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 4.563rem;
-  display: inline-block;
-  width: 15.25rem;
-  height: 1.063rem;
-  color: #000;
-}
-.fi-2693507-icon2-membershipMain-screen {
-  position: absolute;
-  top: 0.063rem;
-  left: 2.438rem;
-  width: 1.25rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.div4-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 19.813rem;
-  height: 1.063rem;
-}
-.fi-1828739-icon11-membershipMain-screen,
-.group-icon8-membershipMain-screen {
-  position: absolute;
-  overflow: hidden;
-}
-.fi-1828739-icon11-membershipMain-screen {
-  top: 0.069rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.group-icon8-membershipMain-screen {
-  height: 97.29%;
-  width: 6.5%;
-  top: 0;
-  right: 81.78%;
-  bottom: 2.71%;
-  left: 11.72%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.top-slot-listing2-membershipMain-screen {
-  position: absolute;
-  top: 0.319rem;
-  left: 4.5rem;
-  display: inline-block;
-  width: 15.5rem;
-  height: 1.063rem;
-  color: #000;
-}
-.fi-1828739-parent6-membershipMain-screen {
-  position: absolute;
-  top: 2.619rem;
-  left: 0.063rem;
-  width: 20rem;
-  height: 1.381rem;
-}
-.fi-1828739-icon12-membershipMain-screen,
-.group-icon9-membershipMain-screen {
-  position: absolute;
-  overflow: hidden;
-}
-.fi-1828739-icon12-membershipMain-screen {
-  top: 0.019rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.group-icon9-membershipMain-screen {
-  height: 93.78%;
-  width: 3.71%;
-  top: 0;
-  right: 82.59%;
-  bottom: 6.22%;
-  left: 13.71%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.privacy-of-your2-membershipMain-screen {
-  position: absolute;
-  top: 0.144rem;
-  left: 4.5rem;
-  display: inline-block;
-  width: 15.563rem;
-  height: 1.063rem;
-  color: #000;
-}
-.fi-1828739-icon13-membershipMain-screen,
-.fi-1828739-parent7-membershipMain-screen {
-  position: absolute;
-  top: 5.544rem;
-  left: 0;
-  width: 20.063rem;
-  height: 1.206rem;
-}
-.fi-1828739-icon13-membershipMain-screen {
-  top: 0.188rem;
-  width: 1rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.group-icon10-membershipMain-screen {
-  position: absolute;
-  height: 96%;
-  width: 6.92%;
-  top: 0;
-  right: 82%;
-  bottom: 4%;
-  left: 11.08%;
+  right: 40.52%;
+  bottom: 70.13%;
+  left: 34.4%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-.relationship-manager-super2-membershipMain-screen {
+.div2-membershipMain,
+.group-child7-membershipMain,
+.rectangle-parent5-membershipMain {
   position: absolute;
-  top: 0.331rem;
-  left: 4.531rem;
-  display: inline-block;
-  width: 15.781rem;
-  height: 1.231rem;
-  color: #000;
-}
-.fi-1828739-icon14-membershipMain-screen,
-.fi-1828739-parent8-membershipMain-screen {
-  position: absolute;
-  top: 8.188rem;
+  top: 21px;
   left: 0;
-  width: 20.313rem;
-  height: 1.563rem;
+  width: 343px;
+  height: 152px;
 }
-.fi-1828739-icon14-membershipMain-screen {
-  top: 0.125rem;
-  width: 1rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.vector-icon3-membershipMain-screen {
-  position: absolute;
-  height: 100%;
-  width: 5.31%;
+.group-child7-membershipMain,
+.rectangle-parent5-membershipMain {
   top: 0;
-  right: 82.81%;
-  bottom: 0;
-  left: 11.88%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+  height: 217px;
 }
-.personal-field-assistant2-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 4.438rem;
-  display: inline-block;
-  width: 15.563rem;
-  height: 0.938rem;
-  color: #000;
-}
-.container-membershipMain-screen,
-.fi-1828739-parent9-membershipMain-screen {
-  position: absolute;
-  top: 11rem;
-  left: 0.063rem;
-  width: 20rem;
-  height: 1.188rem;
-}
-.container-membershipMain-screen {
-  top: 19rem;
-  left: 0.688rem;
-  width: 20.313rem;
-  height: 12.188rem;
-  font-size: 0.75rem;
-}
-.group-child11-membershipMain-screen {
+.group-child7-membershipMain {
   border-radius: 5px;
   background-color: #b7e08a;
+  width: 197.8px;
+  height: 43px;
 }
-.group-child11-membershipMain-screen,
-.rectangle-wrapper3-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12.25rem;
-  height: 2.688rem;
-}
-.edit-membership2-membershipMain-screen {
-  position: absolute;
-  top: 0.688rem;
-  left: 1.813rem;
+.edit-membership-membershipMain {
   line-height: 130%;
-  display: inline-block;
-  width: 8.688rem;
-  height: 1.063rem;
-  color: #000;
-}
-.group-child12-membershipMain-screen,
-.group-parent14-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12.25rem;
-  height: 2.688rem;
-}
-.group-child12-membershipMain-screen {
-  border-radius: 5px;
-  background-color: #d11a2a;
-  width: 6.875rem;
-  height: 2.625rem;
-}
-.delete2-membershipMain-screen {
-  position: absolute;
-  top: 0.875rem;
-  left: 1.813rem;
   display: flex;
   align-items: center;
-  width: 3.75rem;
-  color: white;
-  height: 0.938rem;
+  justify-content: center;
 }
-.rectangle-parent7-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 12.938rem;
-  width: 6.875rem;
-  height: 2.625rem;
-}
-.group-parent12-membershipMain-screen,
-.group-parent13-membershipMain-screen {
-  position: absolute;
-  top: 32.875rem;
-  left: 0.688rem;
-  width: 19.813rem;
-  height: 2.688rem;
-}
-.group-parent12-membershipMain-screen {
-  top: 0.125rem;
-  left: 0.125rem;
-  width: 21.188rem;
-  height: 35.563rem;
-}
-.free-membershipMain-screen {
+.edit-membership-membershipMain,
+.rectangle-parent6-membershipMain {
   position: absolute;
   top: 0;
   left: 0;
-  width: 21.438rem;
-  height: 37.438rem;
-  font-size: 1rem;
+  width: 198px;
+  height: 43px;
+}
+.group-child8-membershipMain {
+  left: 0;
+  border-radius: 5px;
+  background-color: #d11a2a;
+  width: 111px;
+}
+.delete-membershipMain,
+.group-child8-membershipMain,
+.rectangle-parent7-membershipMain {
+  position: absolute;
+  top: 0;
+  height: 43px;
+}
+.delete-membershipMain {
+  left: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 111px;
+}
+.rectangle-parent7-membershipMain {
+  left: 208.9px;
+  width: 111.1px;
   color: #fff;
 }
-
-/* free over */
-/* gold */
-.fi-1828739-icon-membershipMain-screen,
-.gold-child-membershipMain-screen {
+.group-parent7-membershipMain {
   position: absolute;
-  top: 0;
+  top: 285px;
   left: 0;
+  width: 320px;
+  height: 43px;
 }
-.gold-child-membershipMain-screen {
-  border-radius: 17px;
-  width: 21.438rem;
-  height: 37.438rem;
-}
-.fi-1828739-icon-membershipMain-screen {
-  width: 1rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.days-plan-validity-membershipMain-screen {
-  left: 4.563rem;
-  display: inline-block;
-  width: 15.25rem;
-  height: 1.063rem;
-  color: #000;
-}
-.days-plan-validity-membershipMain-screen,
-.div-membershipMain-screen,
-.fi-2693507-icon-membershipMain-screen {
+.checkmark-circle-2-icon-membershipMain {
   position: absolute;
-  top: 0;
-}
-.fi-2693507-icon-membershipMain-screen {
-  left: 2.438rem;
-  width: 1.25rem;
-  height: 1rem;
-  overflow: hidden;
-}
-.div-membershipMain-screen {
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
   left: 0;
-  width: 19.813rem;
-  height: 1.063rem;
-}
-.fi-1828739-icon1-membershipMain-screen,
-.group-icon-membershipMain-screen {
-  position: absolute;
-  overflow: hidden;
-}
-.fi-1828739-icon1-membershipMain-screen {
-  top: 0.069rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.group-icon-membershipMain-screen {
-  height: 97.29%;
-  width: 6.58%;
-  top: 0;
-  right: 81.55%;
-  bottom: 2.71%;
-  left: 11.87%;
   max-width: 100%;
+  overflow: hidden;
   max-height: 100%;
 }
-.top-slot-listing-membershipMain-screen {
+.fi-2693507-icon-membershipMain {
   position: absolute;
-  top: 0.319rem;
-  left: 4.5rem;
-  display: inline-block;
-  width: 15.25rem;
-  height: 1.063rem;
-  color: #000;
-}
-.fi-1828739-parent-membershipMain-screen {
-  position: absolute;
-  top: 2.619rem;
-  left: 0.063rem;
-  width: 19.75rem;
-  height: 1.381rem;
-}
-.fi-1828739-icon2-membershipMain-screen,
-.group-icon1-membershipMain-screen {
-  position: absolute;
+  top: 0;
+  left: 34.4px;
+  width: 34.3px;
+  height: 30px;
   overflow: hidden;
 }
-.fi-1828739-icon2-membershipMain-screen {
-  top: 0.019rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.group-icon1-membershipMain-screen {
-  height: 93.78%;
-  width: 3.75%;
-  top: 0;
-  right: 82.37%;
-  bottom: 6.22%;
-  left: 13.88%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.privacy-of-your-membershipMain-screen {
+.days-plan-validity-membershipMain {
   position: absolute;
-  top: 0.144rem;
-  left: 4.5rem;
-  display: inline-block;
-  width: 15.313rem;
-  height: 1.063rem;
-  color: #000;
-}
-.fi-1828739-group-membershipMain-screen {
-  position: absolute;
-  top: 5.544rem;
-  left: 0;
-  width: 19.813rem;
-  height: 1.206rem;
-}
-.fi-1828739-icon3-membershipMain-screen,
-.group-icon2-membershipMain-screen {
-  position: absolute;
-  overflow: hidden;
-}
-.fi-1828739-icon3-membershipMain-screen {
-  top: 0.188rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.group-icon2-membershipMain-screen {
-  height: 96%;
-  width: 6.92%;
-  top: 0;
-  right: 82%;
-  bottom: 4%;
-  left: 11.08%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.relationship-manager-super-membershipMain-screen {
-  position: absolute;
-  top: 0.331rem;
-  left: 4.531rem;
-  display: inline-block;
-  width: 15.781rem;
-  height: 1.231rem;
-  color: #000;
-}
-.fi-1828739-container-membershipMain-screen {
-  position: absolute;
-  top: 8.188rem;
-  left: 0;
-  width: 20.313rem;
-  height: 1.563rem;
-}
-.fi-1828739-icon4-membershipMain-screen,
-.vector-icon1-membershipMain-screen {
-  position: absolute;
-  overflow: hidden;
-}
-.fi-1828739-icon4-membershipMain-screen {
-  top: 0.125rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-}
-.vector-icon1-membershipMain-screen {
-  height: 100%;
-  width: 5.38%;
-  top: 0;
-  right: 82.59%;
-  bottom: 0;
-  left: 12.03%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.personal-field-assistant-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 4.438rem;
-  display: inline-block;
-  width: 15.313rem;
-  height: 0.938rem;
-  color: #000;
-}
-.fi-1828739-parent1-membershipMain-screen {
-  position: absolute;
-  top: 11rem;
-  left: 0.063rem;
-  width: 19.75rem;
-  height: 1.188rem;
-}
-.parent-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20.313rem;
-  height: 12.188rem;
-}
-.group-child1-membershipMain-screen {
-  border-radius: 5px;
-  background-color: #d11a2a;
-}
-.group-child1-membershipMain-screen,
-.rectangle-wrapper-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6.875rem;
-  height: 2.625rem;
-}
-.delete-membershipMain-screen {
-  position: absolute;
-  top: 0.875rem;
-  left: 1.813rem;
+  top: 4px;
+  left: 88px;
   display: flex;
   align-items: center;
-  width: 3.75rem;
-  color: white;
-  height: 0.938rem;
+  width: 240px;
+  height: 22px;
 }
-.group-child2-membershipMain-screen,
-.group-parent2-membershipMain-screen {
+.checkmark-circle-2-parent-membershipMain {
+  position: absolute;
+  height: 11.45%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 88.55%;
+  left: 0;
+}
+.checkmark-circle-2-icon1-membershipMain {
+  position: absolute;
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2668384-icon-membershipMain {
   position: absolute;
   top: 0;
-  height: 2.625rem;
+  left: 35.4px;
+  width: 31.3px;
+  height: 30px;
+  overflow: hidden;
 }
-.group-parent2-membershipMain-screen {
-  left: 12.875rem;
-  width: 6.875rem;
-}
-.group-child2-membershipMain-screen {
-  left: 0;
-  border-radius: 5px;
-  background-color: #b7e08a;
-  width: 12.25rem;
-}
-.edit-membership-membershipMain-screen {
+.top-slot-listing-membershipMain {
   position: absolute;
-  top: 0.538rem;
-  left: 1rem;
+  top: 5px;
+  left: 88px;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 18px;
+}
+.checkmark-circle-2-group-membershipMain {
+  position: absolute;
+  height: 11.45%;
+  width: 100%;
+  top: 22.14%;
+  right: 0;
+  bottom: 66.41%;
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.checkmark-circle-2-icon2-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 25.81%;
+  right: 94.15%;
+  bottom: 12.9%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2889676-icon-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34.4px;
+  width: 31.3px;
+  height: 31px;
+  overflow: hidden;
+}
+.privacy-of-your-membershipMain {
+  position: absolute;
+  top: 7px;
+  left: 88px;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 17px;
+}
+.checkmark-circle-2-container-membershipMain {
+  position: absolute;
+  height: 11.83%;
+  width: 100%;
+  top: 44.27%;
+  right: 0;
+  bottom: 43.89%;
+  left: 0;
+}
+.checkmark-circle-2-icon3-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 19.35%;
+  right: 94.15%;
+  bottom: 19.35%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-870073-icon-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34.4px;
+  width: 31.3px;
+  height: 31px;
+  overflow: hidden;
+}
+.relationship-manager-fast-membershipMain {
+  position: absolute;
+  top: 2px;
+  left: 86.8px;
+  display: flex;
+  align-items: center;
+  width: 241.2px;
+  height: 25px;
+}
+.checkmark-circle-2-parent1-membershipMain {
+  position: absolute;
+  height: 11.83%;
+  width: 100%;
+  top: 66.03%;
+  right: 0;
+  bottom: 22.14%;
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.checkmark-circle-2-icon4-membershipMain {
+  position: absolute;
+  height: 67.86%;
+  width: 5.85%;
+  top: 10.71%;
+  right: 94.15%;
+  bottom: 21.43%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-1239608-icon-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 37.4px;
+  width: 29.3px;
+  height: 28px;
+  overflow: hidden;
+}
+.personal-field-assistant-membershipMain {
+  position: absolute;
+  top: 2px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 241px;
+  height: 22px;
+}
+.checkmark-circle-2-parent2-membershipMain,
+.group-parent8-membershipMain {
+  position: absolute;
+  height: 10.69%;
+  width: 100%;
+  top: 89.31%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+}
+.group-parent8-membershipMain {
+  height: 79.88%;
+  width: 98.5%;
+  top: 0;
+  bottom: 20.12%;
+  left: 1.5%;
+  text-align: left;
+  font-size: 13px;
+}
+.group-parent6-membershipMain {
+  position: absolute;
+  top: 241px;
+  left: 10px;
+  width: 333px;
+  height: 328px;
+  font-size: 16px;
+}
+.group-parent5-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 569px;
+}
+.group-child10-membershipMain,
+.group-child9-membershipMain,
+.rectangle-parent4-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 599px;
+}
+.group-child10-membershipMain,
+.group-child9-membershipMain {
+  box-shadow: 0-1px 14.3px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  background-color: #f6f6f6;
+}
+.group-child10-membershipMain {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px 17px 18px 18px;
+  background-color: #fff;
+  height: 217px;
+}
+.rectangle-icon-membershipMain {
+  left: 0;
+  width: 90px;
+  object-fit: contain;
+}
+.discont-membershipMain,
+.rectangle-icon-membershipMain,
+.vector-parent-membershipMain {
+  position: absolute;
+  top: 0;
+  height: 15.6px;
+}
+.discont-membershipMain {
+  left: 8.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80.8px;
+}
+.vector-parent-membershipMain {
+  left: 253px;
+  width: 90px;
+}
+.silver-packages-membershipMain {
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+}
+.inner-membershipMain,
+.silver-packages-membershipMain,
+.silver-packages-wrapper-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 40px;
+}
+.inner-membershipMain {
+  top: 58px;
+  font-size: 30px;
+}
+.span1-membershipMain {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.span3-membershipMain {
+  font-size: 40px;
+}
+.span2-membershipMain,
+.span4-membershipMain {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.listing2-membershipMain {
+  color: #000;
+  font-size: 20px;
+}
+.listing-txt-membershipMain {
+  width: 100%;
+}
+.listing1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
   line-height: 130%;
   display: flex;
   align-items: center;
-  width: 9.75rem;
-  height: 1.625rem;
-  color: #000;
+  width: 343px;
+  height: 43px;
 }
-.rectangle-parent2-membershipMain-screen {
+.group-child11-membershipMain {
+  position: absolute;
+  top: 25px;
+  left: 137px;
+  width: 61px;
+  height: 6px;
+  object-fit: contain;
+}
+.listing-parent-membershipMain {
+  position: absolute;
+  top: 115px;
+  left: 0;
+  width: 343px;
+  height: 43px;
+  font-size: 32px;
+  color: #b7e08a;
+}
+.group-icon1-membershipMain {
+  position: absolute;
+  height: 21.58%;
+  width: 18.08%;
+  top: 7.22%;
+  right: 41.11%;
+  bottom: 71.2%;
+  left: 40.82%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.div3-membershipMain {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 343px;
+  height: 158px;
+}
+.group-child12-membershipMain,
+.group-wrapper1-membershipMain,
+.rectangle-parent9-membershipMain {
   position: absolute;
   top: 0;
   left: 0;
-  width: 12.25rem;
-  height: 2.625rem;
+  width: 343px;
+  height: 217px;
 }
-.div1-membershipMain-screen,
-.group-parent1-membershipMain-screen {
-  position: absolute;
-  top: 13.875rem;
-  left: 0.063rem;
-  width: 19.75rem;
-  height: 2.625rem;
-}
-.group-parent1-membershipMain-screen {
-  top: 19.125rem;
-  left: 0.813rem;
-  width: 20.313rem;
-  height: 16.5rem;
-}
-.group-child3-membershipMain-screen {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px 15px 18px 18px;
-  background-color: #000;
-}
-.group-child3-membershipMain-screen,
-.group-child4-membershipMain-screen,
-.rectangle-frame-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 21.188rem;
-  height: 17.356rem;
-}
-.group-child4-membershipMain-screen {
-  border-radius: 10px;
+.group-child12-membershipMain {
+  border-radius: 5px;
   background-color: #b7e08a;
-  width: 5.438rem;
-  height: 1.156rem;
+  width: 196px;
+  height: 43px;
 }
-.discont-membershipMain-screen {
-  position: absolute;
-  top: 0.075rem;
-  left: 0.788rem;
-  display: inline-block;
-  width: 4.531rem;
-  height: 0.794rem;
+.edit-membership1-membershipMain {
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.rectangle-parent3-membershipMain-screen {
+.edit-membership1-membershipMain,
+.group-child13-membershipMain,
+.rectangle-parent10-membershipMain {
   position: absolute;
   top: 0;
-  left: 13.313rem;
-  width: 5.438rem;
-  height: 1.156rem;
+  left: 0;
+  width: 196px;
+  height: 43px;
 }
-.group-icon3-membershipMain-screen {
+.group-child13-membershipMain {
+  border-radius: 5px;
+  background-color: #d11a2a;
+  width: 110px;
+  height: 42px;
+}
+.delete1-membershipMain {
+  position: absolute;
+  top: 10px;
+  left: 29px;
+  display: inline-block;
+  width: 56px;
+  height: 15px;
+}
+.rectangle-parent11-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 207px;
+  width: 110px;
+  height: 42px;
+  text-align: left;
+  color: #fff;
+}
+.group-parent11-membershipMain {
+  position: absolute;
+  top: 286px;
+  left: 0;
+  width: 317px;
+  height: 43px;
+}
+.checkmark-circle-2-icon5-membershipMain {
+  position: absolute;
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2693507-icon1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 34px;
+  height: 30px;
+  overflow: hidden;
+}
+.days-plan-validity1-membershipMain {
+  position: absolute;
+  top: 4px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 22px;
+}
+.checkmark-circle-2-parent3-membershipMain {
+  position: absolute;
+  height: 11.41%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 88.59%;
+  left: 0;
+}
+.checkmark-circle-2-icon6-membershipMain {
+  position: absolute;
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2668384-icon1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 31px;
+  height: 30px;
+  overflow: hidden;
+}
+.top-slot-listing1-membershipMain {
+  position: absolute;
+  top: 7px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 18px;
+}
+.checkmark-circle-2-parent4-membershipMain {
+  position: absolute;
+  height: 11.41%;
+  width: 100%;
+  top: 22.43%;
+  right: 0;
+  bottom: 66.16%;
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.checkmark-circle-2-icon7-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 25.81%;
+  right: 94.15%;
+  bottom: 12.9%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2889676-icon1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 31px;
+  height: 31px;
+  overflow: hidden;
+}
+.privacy-of-your1-membershipMain {
+  position: absolute;
+  top: 2px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 27px;
+}
+.checkmark-circle-2-parent5-membershipMain {
+  position: absolute;
+  height: 11.79%;
+  width: 100%;
+  top: 44.49%;
+  right: 0;
+  bottom: 43.73%;
+  left: 0;
+}
+.checkmark-circle-2-icon8-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 19.35%;
+  right: 94.15%;
+  bottom: 19.35%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-870073-icon1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 31px;
+  height: 31px;
+  overflow: hidden;
+}
+.relationship-manager-fast1-membershipMain {
+  position: absolute;
+  top: 3px;
+  left: 86px;
+  display: flex;
+  align-items: center;
+  width: 239px;
+  height: 25px;
+}
+.checkmark-circle-2-parent6-membershipMain {
+  position: absolute;
+  height: 11.79%;
+  width: 100%;
+  top: 66.16%;
+  right: 0;
+  bottom: 22.05%;
+  left: 0;
+}
+.checkmark-circle-2-icon9-membershipMain {
+  position: absolute;
+  height: 67.86%;
+  width: 5.85%;
+  top: 10.71%;
+  right: 94.15%;
+  bottom: 21.43%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-1239608-icon1-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 29px;
+  height: 28px;
+  overflow: hidden;
+}
+.personal-field-assistant1-membershipMain {
+  position: absolute;
+  top: 3px;
+  left: 86px;
+  display: flex;
+  align-items: center;
+  width: 239px;
+  height: 22px;
+}
+.checkmark-circle-2-parent7-membershipMain,
+.group-parent12-membershipMain {
+  position: absolute;
+  height: 10.65%;
+  width: 100%;
+  top: 89.35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+}
+.group-parent12-membershipMain {
+  height: 79.94%;
+  width: 98.48%;
+  top: 0;
+  bottom: 20.06%;
+  left: 1.52%;
+  text-align: left;
+  font-size: 13px;
+}
+.group-parent10-membershipMain {
+  position: absolute;
+  top: 240px;
+  left: 13px;
+  width: 330px;
+  height: 329px;
+  font-size: 16px;
+}
+.group-parent9-membershipMain,
+.rectangle-parent8-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 569px;
+}
+.rectangle-parent8-membershipMain {
+  left: 381px;
+  height: 599px;
+  font-size: 10px;
+}
+.group-child14-membershipMain,
+.group-child15-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0-1px 14.3px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  background-color: #f6f6f6;
+  width: 343px;
+  height: 599px;
+}
+.group-child15-membershipMain {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px 17px 18px 18px;
+  background-color: #fff;
+  height: 217px;
+}
+.group-icon2-membershipMain {
   height: 100%;
   width: 100%;
   overflow: hidden;
   object-fit: contain;
   position: absolute;
   left: 0;
-  top: 0.25rem;
-  transform: scale(1.895);
+  top: 4px;
+  transform: scale(1.826);
 }
-.wrapper-group-membershipMain-screen {
+.wrapper-group-membershipMain {
   position: absolute;
-  height: 15.98%;
-  width: 17.96%;
-  top: 0;
-  right: 47.01%;
-  bottom: 84.02%;
-  left: 35.03%;
+  height: 19.62%;
+  width: 16.82%;
+  top: 9.49%;
+  right: 42.33%;
+  bottom: 70.89%;
+  left: 40.85%;
   max-width: 100%;
   max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.inr-membershipMain-screen {
-  font-weight: 600;
+.gold-packages-membershipMain,
+.gold-packages-wrapper-membershipMain {
+  position: absolute;
+  left: 0;
+  width: 343px;
+  height: 40px;
 }
-.inr-container1-membershipMain-screen {
+.gold-packages-membershipMain {
+  top: 0;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+}
+.gold-packages-wrapper-membershipMain {
+  top: 58px;
+}
+.group-child16-membershipMain {
+  left: 0;
+  width: 90px;
+  object-fit: contain;
+}
+.discont1-membershipMain,
+.group-child16-membershipMain,
+.vector-group-membershipMain {
+  position: absolute;
+  top: 0;
+  height: 15.6px;
+}
+.discont1-membershipMain {
+  left: 8.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80.8px;
+}
+.vector-group-membershipMain {
+  left: 253px;
+  width: 90px;
+  font-size: 10px;
+}
+.span5-membershipMain {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.span7-membershipMain {
+  font-size: 40px;
+}
+.span6-membershipMain,
+.span8-membershipMain {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.listing4-membershipMain {
+  color: #000;
+  font-size: 20px;
+}
+.listing-txt1-membershipMain {
   width: 100%;
 }
-.inr-container-membershipMain-screen,
-.vat-and-local-membershipMain-screen {
+.listing3-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
   line-height: 130%;
   display: flex;
   align-items: center;
+  width: 343px;
+  height: 43px;
 }
-.inr-container-membershipMain-screen {
+.group-child17-membershipMain {
   position: absolute;
-  top: 2.625rem;
-  left: 0;
-  width: 15.25rem;
-  height: 1.563rem;
-}
-.vat-and-local-membershipMain-screen {
-  font-weight: 600;
-}
-.group-wrapper3-membershipMain-screen,
-.vat-and-local-membershipMain-screen,
-.vat-and-local-taxes-may-apply-wrapper-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18.063rem;
-  height: 1.188rem;
-}
-.group-wrapper2-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0.313rem;
-  width: 18.063rem;
-  height: 1.188rem;
-}
-.billed-2450-membershipMain-screen {
-  position: absolute;
-  top: 5.5rem;
-  left: 0.063rem;
-  font-size: 1rem;
-  line-height: 130%;
-  font-weight: 600;
-  white-space: pre-wrap;
-  display: inline-block;
-  width: 10.75rem;
-  height: 1.5rem;
-}
-.inr-25-listing-parent-membershipMain-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18.375rem;
-  height: 7rem;
-}
-.line-icon-membershipMain-screen {
-  position: absolute;
-  top: 5.938rem;
-  left: 0.063rem;
-  width: 3.563rem;
-  height: 0.381rem;
+  top: 24px;
+  left: 136px;
+  width: 66px;
+  height: 7px;
   object-fit: contain;
 }
-.group-parent5-membershipMain-screen {
+.listing-group-membershipMain {
   position: absolute;
-  top: 4.188rem;
+  top: 115px;
   left: 0;
-  width: 18.375rem;
-  height: 7rem;
+  width: 343px;
+  height: 43px;
+  font-size: 32px;
+  color: #b7e08a;
 }
-.wrapper-group-parent-membershipMain-screen {
+.wrapper-group-parent-membershipMain {
   position: absolute;
-  height: 87.66%;
-  width: 98%;
-  top: 12.34%;
-  right: 2%;
-  bottom: 0;
+  height: 72.81%;
+  width: 100%;
+  top: 6.91%;
+  right: 0;
+  bottom: 20.28%;
   left: 0;
 }
-.group-parent3-membershipMain-screen,
-.group-parent4-membershipMain-screen {
-  position: absolute;
-  top: 0.425rem;
-  left: 1.938rem;
-  width: 18.75rem;
-  height: 12.763rem;
-}
-.group-parent3-membershipMain-screen {
-  top: 0.125rem;
-  left: 0.125rem;
-  width: 21.188rem;
-  height: 17.356rem;
-  font-size: 1.125rem;
-  color: #fff;
-}
-.gold-membershipMain-screen {
+.group-child18-membershipMain,
+.rectangle-parent13-membershipMain {
   position: absolute;
   top: 0;
-  left: 23.75rem;
-  width: 21.438rem;
-  height: 37.438rem;
-  font-size: 1rem;
-  color: #000;
+  left: 0;
+  width: 343px;
+  height: 217px;
 }
-
-/* gold over */
+.group-child18-membershipMain {
+  border-radius: 5px;
+  background-color: #b7e08a;
+  width: 196px;
+  height: 43px;
+}
+.edit-membership2-membershipMain {
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-membership2-membershipMain,
+.rectangle-parent14-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 196px;
+  height: 43px;
+}
+.group-child19-membershipMain {
+  left: 0;
+  border-radius: 5px;
+  background-color: #d11a2a;
+}
+.delete2-membershipMain,
+.group-child19-membershipMain,
+.rectangle-parent15-membershipMain {
+  position: absolute;
+  top: 0;
+  width: 110px;
+  height: 42px;
+}
+.delete2-membershipMain {
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-parent15-membershipMain {
+  left: 207px;
+  color: #fff;
+}
+.group-parent15-membershipMain {
+  position: absolute;
+  top: 286px;
+  left: 0;
+  width: 317px;
+  height: 43px;
+}
+.checkmark-circle-2-icon10-membershipMain {
+  position: absolute;
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2693507-icon2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 34px;
+  height: 30px;
+  overflow: hidden;
+}
+.days-plan-validity2-membershipMain {
+  position: absolute;
+  top: 4px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 22px;
+}
+.checkmark-circle-2-parent8-membershipMain {
+  position: absolute;
+  height: 11.41%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 88.59%;
+  left: 0;
+}
+.checkmark-circle-2-icon11-membershipMain {
+  position: absolute;
+  height: 63.33%;
+  width: 5.85%;
+  top: 20%;
+  right: 94.15%;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2668384-icon2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 31px;
+  height: 30px;
+  overflow: hidden;
+}
+.top-slot-listing2-membershipMain {
+  position: absolute;
+  top: 7px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 18px;
+}
+.checkmark-circle-2-parent9-membershipMain {
+  position: absolute;
+  height: 11.41%;
+  width: 100%;
+  top: 22.43%;
+  right: 0;
+  bottom: 66.16%;
+  left: 0;
+}
+.checkmark-circle-2-icon12-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 25.81%;
+  right: 94.15%;
+  bottom: 12.9%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-2889676-icon2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 31px;
+  height: 31px;
+  overflow: hidden;
+}
+.privacy-of-your2-membershipMain {
+  position: absolute;
+  top: 2px;
+  left: 87px;
+  display: flex;
+  align-items: center;
+  width: 238px;
+  height: 27px;
+}
+.checkmark-circle-2-parent10-membershipMain {
+  position: absolute;
+  height: 11.79%;
+  width: 100%;
+  top: 44.49%;
+  right: 0;
+  bottom: 43.73%;
+  left: 0;
+}
+.checkmark-circle-2-icon13-membershipMain {
+  position: absolute;
+  height: 61.29%;
+  width: 5.85%;
+  top: 19.35%;
+  right: 94.15%;
+  bottom: 19.35%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-870073-icon2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 31px;
+  height: 31px;
+  overflow: hidden;
+}
+.relationship-manager-fast2-membershipMain {
+  position: absolute;
+  top: 3px;
+  left: 86px;
+  display: flex;
+  align-items: center;
+  width: 239px;
+  height: 25px;
+}
+.checkmark-circle-2-parent11-membershipMain {
+  position: absolute;
+  height: 11.79%;
+  width: 100%;
+  top: 66.16%;
+  right: 0;
+  bottom: 22.05%;
+  left: 0;
+}
+.checkmark-circle-2-icon14-membershipMain {
+  position: absolute;
+  height: 67.86%;
+  width: 5.85%;
+  top: 10.71%;
+  right: 94.15%;
+  bottom: 21.43%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fi-1239608-icon2-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 29px;
+  height: 28px;
+  overflow: hidden;
+}
+.personal-field-assistant2-membershipMain {
+  position: absolute;
+  top: 3px;
+  left: 86px;
+  display: flex;
+  align-items: center;
+  width: 239px;
+  height: 22px;
+}
+.checkmark-circle-2-parent12-membershipMain,
+.group-parent16-membershipMain {
+  position: absolute;
+  height: 10.65%;
+  width: 100%;
+  top: 89.35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+}
+.group-parent16-membershipMain {
+  height: 79.94%;
+  width: 98.48%;
+  top: 0;
+  bottom: 20.06%;
+  left: 1.52%;
+  text-align: left;
+  font-size: 13px;
+}
+.group-parent14-membershipMain {
+  position: absolute;
+  top: 240px;
+  left: 13px;
+  width: 330px;
+  height: 329px;
+  font-size: 16px;
+}
+.group-parent13-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 569px;
+}
+.group-group-membershipMain,
+.group-parent4-membershipMain,
+.rectangle-parent12-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 770px;
+  width: 343px;
+  height: 599px;
+}
+.group-group-membershipMain,
+.group-parent4-membershipMain {
+  left: 82px;
+  width: 1113px;
+}
+.group-group-membershipMain {
+  height: 91.17%;
+  width: 95.24%;
+  top: 4.57%;
+  right: 2.46%;
+  bottom: 4.26%;
+  left: 2.31%;
+}
+.group-parent3-membershipMain,
+.rectangle-parent3-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1344px;
+  height: 657px;
+}
+.group-parent3-membershipMain {
+  top: 162px;
+  left: 13px;
+  font-size: 30px;
+}
+.group-parent1-membershipMain {
+  position: absolute;
+  top: 35px;
+  left: 64px;
+  width: 1357px;
+  height: 957px;
+}
+.rectangle-container-membershipMain {
+  position: absolute;
+  top: 368px;
+  left: 57px;
+  width: 1492px;
+  height: 1033px;
+  font-size: 64px;
+}
+.group-parent-membershipMain,
+.membershipnew-inner-membershipMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1596px;
+  height: 1436px;
+}
+.membershipnew-membershipMain {
+  width: 100%;
+  position: relative;
+  height: 1436px;
+  text-align: center;
+  font-size: 23px;
+  color: #000;
+  font-family: Sora;
+}
