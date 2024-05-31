@@ -4,16 +4,21 @@ import { auth } from "../../firebase";
 import "./SignUp.css";
 import sideImage from "../../assets/Authentication/SignUp/sideImage.png";
 import { useContext, useState } from "react";
-import authContext from "../authContext";
 import axios from "axios"
+import { useNavigate } from "react-router-dom";
+import MyContext from "../../context/context";
+import authContext from "../authContext";
 
 function SignUp() {
+  const navigate = useNavigate()
+  const values = useContext(authContext)
+  const value = useContext(MyContext);
+  console.log(value);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const value = useContext(authContext);
   const onSubmit = async (data) => {
     console.log(data);
     const { email, password, companyName, countryCode, fullName, phoneNumber } =
@@ -28,12 +33,17 @@ function SignUp() {
         fullName,
         phoneNumber
       );
-      await axios.post('http://localhost:3000/post-Registration',data)
+      await axios.post('http://localhost:3000/post-Registration',data).then((res)=>{
+        console.log(res.data);
+        value.setSignUpData(data)
+      })
+
       console.log(userCredential);
       const user = userCredential.user;
       await updateProfile(user, {
         displayName: "vendor",
       });
+      navigate('/paymentScreen')
       console.log("User signed up successfully!");
     } catch (error) {
       console.error("Error signing up:", error);
@@ -58,7 +68,7 @@ function SignUp() {
           <div className="frame-parent12-registration">
             <button
               className="rectangle-parent20-registration"
-              onClick={() => value.setRegistrationForm("login")}
+              onClick={() => values.setRegistrationForm("login")}
             >
               <div className="frame-child29-registration" />
               <div className="log-in4-registration">Log in</div>

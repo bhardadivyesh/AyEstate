@@ -21,13 +21,15 @@ import Dashboard from "./Admin/Dashboard/Dashboard";
 import Revenuecat from "./RevenueCat/Revenuecat";
 import PaymentNew from "./paymentGateway/Payment/PaymentNew"
 import Chart from "./Admin/Chart/Chart";
+import VendorDashboard from "./vendor/VendorMasterPage/VendorMasterPage";
 function App() {
   const [detailPropertyData,setDetailPropertyData] = useState([])
   const [resentArticalData,setResentArticalData] = useState([])
+  const [signUpData,setSignUpData] = useState({})
 
   return (
     <>
-      <MyContext.Provider value={{detailPropertyData,resentArticalData,setDetailPropertyData,setResentArticalData}}>
+      <MyContext.Provider value={{detailPropertyData,resentArticalData,signUpData,setDetailPropertyData,setResentArticalData,setSignUpData}}>
         <BrowserRouter>
           <Routes>
             <Route path="/home" element={<Homepage />} />
@@ -51,6 +53,10 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />}/>
             <Route path="/paymentScreen" element={<PaymentNew />}/>
             <Route path="/chart" element={<Chart />}/>
+            {/* admin route over */}
+            {/* Vendor route */}
+            <Route path="/vendor-dashboard" element={<VendorDashboard />}/>
+            {/* vendor Route over */}
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>

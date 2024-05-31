@@ -314,15 +314,6 @@
   line-height: 1.5rem;
   font-weight: 300;
 }
-.wrapper2-membership-revenue {
-  width: 1.125rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.875rem 0 0;
-  box-sizing: border-box;
-}
 .div44-membership-revenue {
   position: relative;
   line-height: 1.5rem;
@@ -330,15 +321,6 @@
   display: inline-block;
   min-width: 7.125rem;
   z-index: 1;
-}
-.wrapper3-membership-revenue {
-  width: 11.875rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.875rem 1.25rem 0 0;
-  box-sizing: border-box;
 }
 .div45-membership-revenue {
   position: relative;
@@ -349,15 +331,6 @@
   white-space: nowrap;
   z-index: 1;
 }
-.wrapper4-membership-revenue {
-  width: 7.875rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.875rem 1.25rem 0 0;
-  box-sizing: border-box;
-}
 .karan1-membership-revenue {
   width: 5.375rem;
   position: relative;
@@ -365,16 +338,6 @@
   font-weight: 300;
   display: inline-block;
   z-index: 1;
-}
-.karan-wrapper-membership-revenue {
-  width: 8.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.687rem 1.25rem 0 0;
-  box-sizing: border-box;
-  font-size: 1.688rem;
 }
 .paid-membership-revenue {
   width: 4.25rem;
@@ -384,41 +347,11 @@
   display: inline-block;
   z-index: 1;
 }
-.paid-wrapper-membership-revenue {
-  width: 7.063rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.687rem 1.25rem 0 0;
-  box-sizing: border-box;
-  font-size: 1.688rem;
-}
 .successful-membership-revenue {
   position: relative;
   line-height: 1.5rem;
   font-weight: 300;
   z-index: 1;
-}
-.successful-wrapper-membership-revenue {
-  width: 13.688rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.687rem 1.25rem 0 0;
-  box-sizing: border-box;
-  font-size: 1.688rem;
-  color: #00d34f;
-}
-.frame-child171-membership-revenue {
-  height: 2.688rem;
-  width: 7.188rem;
-  position: relative;
-  box-shadow: 0 0 5.3px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  background-color: #fff;
-  display: none;
 }
 .detail-membership-revenue {
   flex: 1;
@@ -459,6 +392,7 @@
 }
 .frame-parent105-membership-revenue {
   flex: 1;
+  padding-top: 18px;
   flex-direction: row;
   justify-content: space-between;
   gap: 1.25rem;
@@ -472,6 +406,8 @@
   flex-direction: row;
   padding: 0 1.437rem;
   box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
 }
 .line-parent1-membership-revenue {
   align-self: stretch;

@@ -6,7 +6,8 @@ router.post("/post-Registration", async (req, res) => {
     let {name,phone,company,email,password} = req.body;
     let isVendor = false
     let status = "pending"
-    const newItem = new RegistrationSchema({name,phone,company,email,password,isVendor,status});
+    const createdAt = new Date();
+    const newItem = new RegistrationSchema({name,phone,company,email,password,isVendor,status,createdAt});
     await newItem.save();
     res.status(201).json({ message: "Registration successfully" });
   } catch (err) {
@@ -67,10 +68,11 @@ router.get("/get-Registration-reject", async (req, res) => {
 router.put('/put-Registration', async (req, res) => {
   try {
     const userEmail = req.body.email; 
+    const paymentValue = req.body.paymentValue
     const status = req.body.status
-    console.log(status);
+    console.log(paymentValue);
     
-    let updatedCategory = await RegistrationSchema.findOneAndUpdate({ email: userEmail }, {status : status}, { new: true });
+    let updatedCategory = await RegistrationSchema.findOneAndUpdate({ email: userEmail }, {status : status,paymentValue: paymentValue}, { new: true });
     if (!updatedCategory) {
         return res.status(404).json({ error: 'User not found' });
     }

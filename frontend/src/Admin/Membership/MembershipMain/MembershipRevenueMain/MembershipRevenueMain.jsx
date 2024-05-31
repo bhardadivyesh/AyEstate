@@ -5,9 +5,10 @@ import membershipRevenue from "../../MembershipRevenue"
 
 const MembershipRevenueMain = () => {
     const [popUpToggle,setPopUpToggle] = useState(false)
+    const [membershipMemberData,setMembershipMemberData] = useState([])
   return (
     <>
-    <membershipRevenue.Provider value={{popUpToggle,setPopUpToggle}}>
+    <membershipRevenue.Provider value={{popUpToggle,membershipMemberData,setPopUpToggle,setMembershipMemberData}}>
         {popUpToggle == false && <MembershipRevenue />}
         {popUpToggle == true && <MembershipRevenuePopup />}
     </membershipRevenue.Provider>

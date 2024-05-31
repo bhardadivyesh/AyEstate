@@ -1,61 +1,6 @@
-/* choose file */
-.frame-child130 {
-  align-self: stretch;
-  width: 875px;
-  position: relative;
-  box-shadow: 1px 0 9.4px -32px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  background-color: #fff;
-  border: 3px solid #d5d5d5;
-  box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-}
-.choose-file {
-  height: 112px;
-  width: 269px;
-  position: relative;
-  line-height: 160%;
-  font-weight: 300;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  min-width: 269px;
-  z-index: 1;
-}
-.frame-child131 {
-  width: 0;
-  flex: 1;
-  position: relative;
-  max-height: 100%;
-  object-fit: contain;
-  z-index: 1;
-}
-.vector-wrapper6 {
-  height: 86px;
-  width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 3px 0 0;
-  box-sizing: border-box;
-}
+
 .logo-input-file {
   padding: 13px;
-}
-.no-file-chosen {
-  align-self: stretch;
-  height: 106px;
-  position: relative;
-  line-height: 24px;
-  font-weight: 300;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  z-index: 1;
 }
 .file-status,
 .rectangle-parent115 {
@@ -63,15 +8,6 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.file-status {
-  width: 259px;
-  flex-direction: column;
-  padding: 3px 0 0;
-  box-sizing: border-box;
-  min-width: 259px;
-  font-size: 32px;
-}
-
 .rectangle-parent115 {
   max-width: 100%;
   flex-direction: row;
@@ -91,57 +27,10 @@
   color: #000;
   font-family: Sora;
 }
-
-@media screen and (max-width: 750px) {
-  .no-file-chosen {
-    font-size: 26px;
-    line-height: 19px;
-  }
-}
 @media screen and (max-width: 675px) {
-  .choose-file,
-  .file-status {
-    flex: 1;
-  }
   .rectangle-parent115 {
     flex-wrap: wrap;
   }
-}
-@media screen and (max-width: 450px) {
-  .choose-file {
-    font-size: 22px;
-    line-height: 35px;
-  }
-  .no-file-chosen {
-    font-size: 19px;
-    line-height: 14px;
-  }
-}
-
-/* choose file over */
-/* title css */
-.frame-child132 {
-  height: 97px;
-  width: 873px;
-  position: relative;
-  border-radius: 9px;
-  background-color: #fff;
-  border: 3px solid #d5d5d5;
-  box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-}
-.title-membership {
-  height: 30px;
-  width: 355px;
-  position: relative;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  max-width: 100%;
-  z-index: 1;
 }
 .rectangle-parent116 {
   max-width: 100%;
@@ -161,9 +50,6 @@
   font-size: 28px;
   font-family: "Sora";
 }
-
-/* title over */
-
 .frame-child115-membership-pricing-Frame2 {
   width: 65.125rem;
   height: 73.375rem;
@@ -230,17 +116,6 @@
   background-color: #fff;
   display: none;
   max-width: 100%;
-}
-.frame-child117-membership-pricing-Frame2 {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  z-index: 1;
-  border: 3px solid #d5d5d5;
-  border-radius: 14px;
 }
 .frame-child118-membership-pricing-Frame2 {
   height: 2rem;
@@ -654,16 +529,6 @@
   padding: 0 0 0.562rem;
   gap: 3.25rem;
 }
-.frame-child126-membership-pricing-Frame2 {
-  height: 5.813rem;
-  width: 54.125rem;
-  position: relative;
-  box-shadow: 1px 0 9.4px -32px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-  background-color: #fff;
-  border: 3px solid #d5d5d5;
-  display: none;
-}
 .listing-number-membership-pricing-Frame2 {
   height: 2.188rem;
   position: relative;
@@ -673,64 +538,12 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.listing-number-wrapper-membership-pricing-Frame2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 1.562rem 0 0;
-  box-sizing: border-box;
-  min-width: 9.063rem;
-}
-.frame-child127-membership-pricing-Frame2 {
-  height: 5.375rem;
-  width: 0;
-  position: relative;
-  object-fit: contain;
-  z-index: 2;
-}
-.frame-parent83-membership-pricing-Frame2,
-.frame-wrapper49-membership-pricing-Frame2 {
+.frame-parent83-membership-pricing-Frame2{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent83-membership-pricing-Frame2 {
-  align-self: stretch;
-  flex-direction: row;
-  gap: 1.937rem;
-}
-.frame-wrapper49-membership-pricing-Frame2 {
-  width: 15.875rem;
-  flex-direction: column;
-  padding: 0.062rem 0 0;
-  box-sizing: border-box;
-}
-.frame-child128-membership-pricing-Frame2 {
-  height: 5.5rem;
-  width: 0;
-  position: relative;
-  object-fit: contain;
-  z-index: 2;
-}
-.vuesaxboldarrow-down-icon5-membership-pricing-Frame2 {
-  width: 2.813rem;
-  height: 2.813rem;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-  z-index: 2;
-}
-.vuesaxboldarrow-down-wrapper1-membership-pricing-Frame2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0 1.312rem;
-}
-.rectangle-parent98-membership-pricing-Frame2,
-.vector-group-membership-pricing-Frame2 {
+.rectangle-parent98-membership-pricing-Frame2{
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -819,31 +632,6 @@
     font-size: var(--font-size-3xl);
     line-height: 1.188rem;
   }
-}
-.rectangle-parent98-membership-pricing-Frame2 {
-  align-self: stretch;
-  box-shadow: 1px 0 9.4px -32px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-  background-color: #fff;
-  border: 3px solid #d5d5d5;
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0.125rem 1.062rem 0 1.75rem;
-  max-width: 100%;
-  gap: 1.25rem;
-  z-index: 1;
-  text-align: left;
-  font-size: 1.75rem;
-}
-.frame-child129-membership-pricing-Frame2 {
-  height: 3.625rem;
-  width: 10.063rem;
-  position: relative;
-  box-shadow: 0-1px 5.3px -1px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  background-color: #b7e08a;
-  display: none;
 }
 .save-membership-pricing-Frame2 {
   width: 4.875rem;
@@ -1064,9 +852,6 @@
   .frame-wrapper47-membership-pricing-Frame2 {
     min-width: 100%;
   }
-  .rectangle-parent98-membership-pricing-Frame2 {
-    flex-wrap: wrap;
-  }
   .rectangle-parent89-membership-pricing-Frame2 {
     gap: 1rem;
     padding-bottom: 1.313rem;
@@ -1111,10 +896,6 @@
   .listing-number-membership-pricing-Frame2 {
     font-size: 1.375rem;
     line-height: 1.188rem;
-  }
-  .frame-parent83-membership-pricing-Frame2 {
-    flex-wrap: wrap;
-    gap: 0.938rem;
   }
   .save-membership-pricing-Frame2 {
     font-size: 1.375rem;

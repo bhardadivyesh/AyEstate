@@ -4,8 +4,6 @@ import { useForm } from "react-hook-form";
 import priceLogo from "../../../../assets/admin/membership/pricing/priceImage.png";
 import line from "../../../../assets/admin/membership/pricing/line.png";
 import MembershipPriceContext from "../MembershipPricing";
-import axios from "axios";
-
 const FrameComponent2 = () => {
   const value = useContext(MembershipPriceContext);
   console.log(value);
@@ -37,13 +35,6 @@ const FrameComponent2 = () => {
   const onSubmit = async (data) => {
     try {
       value.setPricingDetail(data);
-      const response = await axios.post(
-        "http://localhost:3000/post-membershipPriceDetail",
-        data
-      );
-      console.log("API call response:", response.data);
-      // Reset form or handle success
-      reset();
     } catch (error) {
       console.error(
         "There was an error creating the membership price detail!",
@@ -96,8 +87,6 @@ const FrameComponent2 = () => {
             )}
             <div className="frame-parent79-membership-pricing-Frame2">
               <div className="trang-ch">
-                {/* choose file */}
-                {/* choose file over */}
                 <section className="rectangle-parent81">
                   <div className="frame-child91" />
                   <button className="rectangle-parent82">
@@ -247,7 +236,7 @@ const FrameComponent2 = () => {
                 type="number"
                 className="number-item-membership-pricing-Frame2"
                 placeholder="enter listing number"
-                {...register("listingNumber", { required: true,min:0 })}
+                {...register("listingNumber", { required: true, min: 0 })}
               />
             </section>
           </div>
@@ -263,7 +252,6 @@ const FrameComponent2 = () => {
             </button>
           </div>
         </form>
-        {console.log("frame component call")}
       </div>
     </div>
   );

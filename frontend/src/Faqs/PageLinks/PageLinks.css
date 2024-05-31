@@ -101,10 +101,6 @@
     box-sizing: border-box;
     gap: 3.125rem;
   }
-  .edit-component-faqs-PageLinks {
-    gap: 1.875rem;
-    font-size: 1.5rem;
-  }
   .detail-information12-faqs-PageLinks {
     position: relative;
     font-size: 1rem;

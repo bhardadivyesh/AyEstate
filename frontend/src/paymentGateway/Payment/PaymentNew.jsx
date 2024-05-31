@@ -15,13 +15,23 @@ import relationship from "../../assets/admin/membership/membership/membershipNew
 import personal from "../../assets/admin/membership/membership/membershipNew/personal.png"
 import strikeLine from "../../assets/admin/membership/membership/membershipNew/strike.png"
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import axios from "axios";
+import MyContext from "../../context/context";
 
 const PaymentNew = () => {
+  const values = useContext(MyContext);
+  
   const navigate = useNavigate();
   const [gold_amount, setGold_amount] = useState(0);
 
-  const handleGoldClick = (price) => {
+  const handleGoldClick = async (price) => {
+    let paymentValue = price
+    let data = values.signUpData
+      data.paymentValue = paymentValue
+    await axios.put('http://localhost:3000/put-Registration',data).then((res)=>{
+      console.log("api call");
+    })
     setGold_amount(price);
     
     if (!window.Razorpay) {
@@ -74,7 +84,6 @@ const PaymentNew = () => {
       navigate("/paymentFail");
     });
   };
-  console.log("payment screen");
 
   return (
    <>

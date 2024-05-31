@@ -10,6 +10,9 @@ const RejectRequest = () => {
     const updatedStatus = e.target.value;
     if (updatedStatus !== "") {
       const updatedVendor = { ...vendor, status: updatedStatus };
+      console.log("vendor",vendor);
+      console.log("updatestatus",updatedStatus);
+      console.log(updatedVendor);
       axios.put('http://localhost:3000/put-Registration', updatedVendor)
         .then((res) => {
           setUpdateState(!updateState);
@@ -34,7 +37,7 @@ const RejectRequest = () => {
                 <td className="row-name">{vendor.name}</td>
                 <td className="row-company">{vendor.company}</td>
                 <td className="row-phone">{vendor.phone}</td>
-                <td className="row-membershiptype">FREE</td>
+                <td className="row-membershiptype">{`₹${vendor.paymentValue}`}</td>
                 <td className="row-date">2024-04-02</td>
                 <td className="row-status">{vendor.status}</td>
                 <td>

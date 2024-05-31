@@ -22,7 +22,7 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 const Membership = () => {
   const [activeMemberData,setActiveMemberData] = useState([])
-  console.log(activeMemberData.length);
+  console.log(activeMemberData);
   const value = useContext(dashboardContext);
   const navigate = useNavigate();
   const handleNavigation = (navigationPath) => {
@@ -37,7 +37,9 @@ const Membership = () => {
       console.log("call api");
     })
   },[])
-  console.log(activeMemberData?.length);
+  const membershipRevenue = activeMemberData?.reduce((total, current) => {
+    return total + Number(current.paymentValue);
+}, 0);
   return (
     <>
     <div className="membershipnew-membershipMain">
@@ -62,7 +64,7 @@ const Membership = () => {
                 <div className="rectangle-group-membershipMain">
                   <div className="rectangle-div-membershipMain" />
                   <div className="membership-revenue-membershipMain">Membership revenue</div>
-                  <div className="div1-membershipMain">0</div>
+                  <div className="div1-membershipMain">{`₹${membershipRevenue}`}</div>
                   <button className="view-all-members-group-membershipMain" onClick={()=>handleEditMembership("membershipRevenue")}>
                     <span className="view-all-members1-membershipMain">View all members</span>
                     <img className="line-icon-membershipMain" alt="" src={lineArror} />

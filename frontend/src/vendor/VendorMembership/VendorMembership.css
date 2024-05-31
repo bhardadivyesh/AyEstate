@@ -1,0 +1,712 @@
+.frame-child159-vendorMembership {
+    height: 61.875rem;
+    width: 100rem;
+    background-color: #f3f7fe;
+    display: none;
+  }
+  .child-vendorMembership,
+  .current-membership-vendorMembership,
+  .frame-child159-vendorMembership {
+    position: relative;
+    max-width: 100%;
+  }
+  .child-vendorMembership {
+    width: 91.5rem;
+    height: 54.813rem;
+    box-shadow: 0-1px 17.6px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    background-color: #fff;
+    display: none;
+  }
+  .current-membership-vendorMembership {
+    margin: 0;
+    flex: 1;
+    font-size: inherit;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    z-index: 1;
+  }
+  .current-membership-wrapper-vendorMembership {
+    width: 33.875rem;
+    flex-direction: row;
+    padding: 0 0.562rem;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .current-membership-wrapper-vendorMembership,
+  .div79-vendorMembership,
+  .rectangle-parent140-vendorMembership,
+  .vendormembership-vendorMembership {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .div79-vendorMembership {
+    width: 91.5rem;
+    box-shadow: 0-1px 17.6px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 4.375rem 4rem 9.562rem;
+    box-sizing: border-box;
+    gap: 5.875rem;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .rectangle-parent140-vendorMembership,
+  .vendormembership-vendorMembership {
+    flex-direction: row;
+  }
+  .rectangle-parent140-vendorMembership {
+    flex: 1;
+    background-color: #f3f7fe;
+    padding: 2.2rem 3.75rem 3.5rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #000;
+    font-family: Sora;
+  }
+  .vendormembership-vendorMembership {
+    width: 100%;
+    position: relative;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .frame-child280-vendorMembership,
+.gold-packages-child-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  border-radius: 21px;
+  display: none;
+}
+.gold-packages-child-vendorMembership {
+  width: 83.125rem;
+  box-shadow: 4px 4px 21.3px 1px rgba(0, 0, 0, 0.25);
+  background-color: #f6f6f6;
+  max-width: 100%;
+}
+.frame-child280-vendorMembership {
+  height: 33.438rem;
+  box-shadow: 11px -5px 17.7px -7px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.frame-child281-vendorMembership {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+.discont8-vendorMembership {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0.981rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.313rem;
+  height: 2.125rem;
+  z-index: 2;
+}
+.vector-parent5-vendorMembership {
+  width: 10.375rem;
+  height: 2.125rem;
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: bf4bc93;
+}
+.group-icon22-vendorMembership,
+.wrapper-group6-vendorMembership {
+  flex-shrink: 0;
+  debug_commit: bf4bc93;
+  z-index: 1;
+}
+.group-icon22-vendorMembership {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  transform: scale(1.29);
+}
+.wrapper-group6-vendorMembership {
+  height: 5.525rem;
+  width: 11.188rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.package-details-vendorMembership,
+.wrapper-group-frame-vendorMembership {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper-group-frame-vendorMembership {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.package-details-vendorMembership {
+  width: 23.625rem;
+  height: 9.963rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.312rem;
+  max-width: 100%;
+}
+.gold-packages3-vendorMembership {
+  margin: 0;
+  align-self: stretch;
+  height: 5.188rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 130%;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.span17-vendorMembership {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.span19-vendorMembership {
+  font-size: 6rem;
+}
+.span18-vendorMembership,
+.span20-vendorMembership {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.listing21-vendorMembership {
+  color: #000;
+  font-size: 2rem;
+}
+.listing20-vendorMembership {
+  flex: 1;
+  position: relative;
+  line-height: 5.188rem;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.listing-details-child-vendorMembership {
+    height: 0.875rem;
+    width: 6.95rem;
+    position: absolute;
+    margin: 1.4rem;
+    right: 12.594rem;
+    bottom: 0.875rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: 2;
+}
+.listing-details-vendorMembership {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 100%;
+  font-size: 3.75rem;
+  color: #b7e08a;
+}
+.gold-packages-parent-vendorMembership,
+.rectangle-parent219-vendorMembership {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.gold-packages-parent-vendorMembership {
+  align-self: stretch;
+  gap: 0.937rem;
+  font-size: 3.438rem;
+}
+.rectangle-parent219-vendorMembership {
+  width: 36.063rem;
+  box-shadow: 11px -5px 17.7px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  background-color: #fff;
+  padding: 0.75rem 0 7.25rem;
+  box-sizing: border-box;
+  gap: 4.162rem;
+  min-width: 36.063rem;
+  z-index: 1;
+}
+.checkmark-circle-2-icon20-vendorMembership {
+  height: 2.563rem;
+  width: 2.563rem;
+  position: relative;
+}
+.fi-2693507-icon9-vendorMembership {
+  height: 3.063rem;
+  width: 3.438rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.days-plan-validity9-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.375rem;
+}
+.validity-duration-vendorMembership {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.812rem;
+  box-sizing: border-box;
+  min-width: 19.188rem;
+  max-width: 100%;
+}
+.checkmark-circle-2-parent-vendorMembership,
+.fi-2693507-parent-vendorMembership {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.fi-2693507-parent-vendorMembership {
+  flex: 1;
+  align-items: flex-end;
+  gap: 4.25rem;
+  min-width: 24.188rem;
+}
+.checkmark-circle-2-parent-vendorMembership {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 3.937rem;
+}
+.checkmark-circle-2-icon21-vendorMembership {
+  width: 2.563rem;
+  height: 2.563rem;
+  position: relative;
+}
+.checkmark-circle-2-wrapper9-vendorMembership {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.25rem 0 0;
+}
+.fi-2668384-icon5-vendorMembership {
+  height: 3.188rem;
+  width: 3.375rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-parent172-vendorMembership {
+  width: 9.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.top-slot-listing10-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.688rem;
+}
+.frame-parent171-vendorMembership,
+.frame-wrapper92-vendorMembership,
+.top-slot-listing-for-5x-more-v-wrapper1-vendorMembership {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.top-slot-listing-for-5x-more-v-wrapper1-vendorMembership {
+  flex: 1;
+  flex-direction: column;
+  padding: 0.75rem 0 0;
+  box-sizing: border-box;
+  min-width: 19.188rem;
+}
+.frame-parent171-vendorMembership,
+.frame-wrapper92-vendorMembership {
+  flex-direction: row;
+}
+.frame-parent171-vendorMembership {
+  flex: 1;
+  gap: 4.625rem;
+}
+.frame-wrapper92-vendorMembership {
+  align-self: stretch;
+  padding: 0 0 0.25rem;
+  box-sizing: border-box;
+}
+.checkmark-circle-2-icon22-vendorMembership {
+  height: 2.563rem;
+  width: 2.563rem;
+  position: relative;
+}
+.fi-2889676-icon5-vendorMembership {
+  height: 3.125rem;
+  width: 3.188rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.checkmark-circle-2-group-vendorMembership {
+  width: 9.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.privacy-of-your10-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.688rem;
+}
+.frame-parent174-vendorMembership,
+.privacy-of-your-phone-number-wrapper3-vendorMembership {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.privacy-of-your-phone-number-wrapper3-vendorMembership {
+  flex: 1;
+  flex-direction: column;
+  padding: 0.687rem 0 0;
+  box-sizing: border-box;
+  min-width: 19.188rem;
+}
+.frame-parent174-vendorMembership {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 4.625rem;
+}
+.checkmark-circle-2-icon23-vendorMembership {
+  width: 2.563rem;
+  height: 2.563rem;
+  position: relative;
+}
+.checkmark-circle-2-wrapper10-vendorMembership {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.187rem;
+}
+.fi-870073-icon5-vendorMembership {
+  height: 3.313rem;
+  width: 3.438rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-parent176-vendorMembership {
+  width: 9.688rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.relationship-manager-fast4-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.563rem;
+}
+.relationship-manager-fast-clos-frame-vendorMembership {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.812rem;
+  box-sizing: border-box;
+  min-width: 19.188rem;
+  max-width: 100%;
+}
+.frame-parent173-vendorMembership,
+.frame-parent175-vendorMembership {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 4.5rem;
+  max-width: 100%;
+}
+.frame-parent173-vendorMembership {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.25rem;
+}
+.checkmark-circle-2-icon24-vendorMembership {
+  width: 2.563rem;
+  height: 2.563rem;
+  position: relative;
+}
+.checkmark-circle-2-wrapper11-vendorMembership {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.437rem;
+}
+.vector-icon25-vendorMembership {
+  height: 3.563rem;
+  width: 3.625rem;
+  position: relative;
+}
+.frame-parent178-vendorMembership {
+  width: 9.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.personal-field-assistant10-vendorMembership {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.375rem;
+}
+.frame-parent170-vendorMembership,
+.frame-parent177-vendorMembership,
+.personal-field-assistant-wrapper2-vendorMembership {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.personal-field-assistant-wrapper2-vendorMembership {
+  flex: 1;
+  flex-direction: column;
+  padding: 1.062rem 0 0;
+  box-sizing: border-box;
+  min-width: 19.188rem;
+}
+.frame-parent170-vendorMembership,
+.frame-parent177-vendorMembership {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 4.312rem;
+}
+.frame-parent170-vendorMembership {
+  flex-direction: column;
+  gap: 2.75rem;
+  z-index: 1;
+}
+.gold-packages-inner-vendorMembership,
+.gold-packages2-vendorMembership {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.gold-packages-inner-vendorMembership {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem 0 0;
+  min-width: 28.438rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.gold-packages2-vendorMembership {
+  align-self: stretch;
+  box-shadow: 4px 4px 21.3px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  background-color: #f6f6f6;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.062rem 0 0;
+  gap: 3.312rem;
+  z-index: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  font-family: Sora;
+}
+@media screen and (max-width: 1250px) {
+  .rectangle-parent219-vendorMembership {
+    flex: 1;
+  }
+  .gold-packages2-vendorMembership {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .rectangle-parent219-vendorMembership {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gold-packages3-vendorMembership {
+    font-size: 2.75rem;
+    line-height: 3.563rem;
+  }
+  .listing20-vendorMembership {
+    font-size: 1.625rem;
+    line-height: 6.25rem;
+  }
+  .rectangle-parent219-vendorMembership {
+    gap: 2.063rem;
+    padding-top: 1.25rem;
+    padding-bottom: 4.688rem;
+    box-sizing: border-box;
+  }
+  .fi-2693507-parent-vendorMembership {
+    flex-wrap: wrap;
+    gap: 2.125rem;
+    min-width: 100%;
+  }
+  .checkmark-circle-2-parent-vendorMembership {
+    flex-wrap: wrap;
+    gap: 1.938rem;
+  }
+  .frame-parent171-vendorMembership,
+  .frame-parent174-vendorMembership {
+    flex-wrap: wrap;
+    gap: 2.313rem;
+  }
+  .frame-parent175-vendorMembership {
+    flex-wrap: wrap;
+    gap: 2.25rem;
+  }
+  .frame-parent173-vendorMembership {
+    gap: 1.125rem;
+  }
+  .frame-parent177-vendorMembership {
+    flex-wrap: wrap;
+    gap: 2.125rem;
+  }
+  .frame-parent170-vendorMembership {
+    gap: 1.375rem;
+  }
+  .gold-packages-inner-vendorMembership {
+    padding-top: 1.938rem;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .gold-packages2-vendorMembership {
+    gap: 1.625rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .package-details-vendorMembership {
+    gap: 1.125rem;
+  }
+  .gold-packages3-vendorMembership {
+    font-size: 2.063rem;
+    line-height: 2.688rem;
+  }
+  .listing20-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 4.688rem;
+  }
+  .rectangle-parent219-vendorMembership {
+    gap: 1.063rem;
+  }
+  .days-plan-validity9-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 1.125rem;
+  }
+  .fi-2693507-parent-vendorMembership {
+    gap: 1.063rem;
+  }
+  .checkmark-circle-2-parent-vendorMembership {
+    gap: 1rem;
+  }
+  .top-slot-listing10-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+  }
+  .frame-parent171-vendorMembership {
+    gap: 1.125rem;
+  }
+  .privacy-of-your10-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+  }
+  .frame-parent174-vendorMembership {
+    gap: 1.125rem;
+  }
+  .relationship-manager-fast4-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 1.25rem;
+  }
+  .frame-parent175-vendorMembership {
+    gap: 1.125rem;
+  }
+  .personal-field-assistant10-vendorMembership {
+    font-size: 1.188rem;
+    line-height: 1.125rem;
+  }
+  .frame-parent177-vendorMembership {
+    gap: 1.063rem;
+  }
+}
+
+  @media screen and (max-width: 1250px) {
+    .div79-vendorMembership {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .div79-vendorMembership {
+      padding-top: 2.813rem;
+      padding-bottom: 6.188rem;
+      box-sizing: border-box;
+    }
+    .rectangle-parent140-vendorMembership {
+      padding: 2.313rem 1.875rem 2.25rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .current-membership-vendorMembership {
+      font-size: 2.375rem;
+      line-height: 1.188rem;
+    }
+    .div79-vendorMembership {
+      gap: 2.938rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .current-membership-vendorMembership {
+      font-size: 1.813rem;
+      line-height: 0.875rem;
+    }
+    .div79-vendorMembership {
+      gap: 1.438rem;
+      padding-top: 1.813rem;
+      padding-bottom: 4rem;
+      box-sizing: border-box;
+    }
+    .rectangle-parent140-vendorMembership {
+      padding-top: 1.5rem;
+      padding-bottom: 1.438rem;
+      box-sizing: border-box;
+    }
+  }
+  

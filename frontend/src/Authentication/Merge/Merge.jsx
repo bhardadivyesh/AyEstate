@@ -6,6 +6,7 @@ import authContext from "../authContext";
 import { useState } from "react";
 const Merge = () => {
   const [registrationForm, setRegistrationForm] = useState("register");
+
   return (
     <>
       <authContext.Provider value={{ registrationForm, setRegistrationForm }}>

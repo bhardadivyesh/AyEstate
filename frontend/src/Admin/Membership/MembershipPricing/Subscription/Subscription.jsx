@@ -16,29 +16,43 @@ const Subscription = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    try {
-      let priceData = value.pricingDetail;
+    let priceData = value.pricingDetail;
       let allData = { ...data, ...priceData };
       console.log(allData);
-
-      axios
-        .post("http://localhost:3000/post-membershipPriceDetail", allData)
-        .then((response) => {
-          console.log(response.data);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
+      const formData = new FormData();
+      formData.append('title', allData.title);
+      formData.append('price', allData.price);
+      formData.append('listingNumber', allData.listingNumber);
+      formData.append('discountPrice', allData.discountPrice);
+      formData.append('discount', allData.discount);
+      formData.append('membershipdescription1', allData.membershipdescription1);
+      formData.append('membershipdescription2', allData.membershipdescription2);
+      formData.append('membershipdescription3', allData.membershipdescription3);
+      formData.append('membershipdescription4', allData.membershipdescription4);
+      formData.append('membershipdescription5', allData.membershipdescription5);
+      formData.append('logoImage', allData.logoImage[0]);
+      formData.append('image1', allData.image1[0]);
+      formData.append('image2', allData.image2[0]);
+      formData.append('image3', allData.image3[0]);
+      formData.append('image4', allData.image4[0]);
+      formData.append('image5', allData.image5[0]);
+  
+      try {
+        const response = await axios.post('http://localhost:3000/post-membership', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
         });
-      console.log("api call");
-    } catch (error) {
-      console.error("Error while calling API:", error);
-    }
+        console.log('Product created:', response.data);
+      } catch (error) {
+        console.error('Error creating product:', error);
+      }
   };
 
   const handleAddMoreBenefitClick = () => {
     setShowMore(!showMore);
   };
-
+console.log("css component");
   return (
     <div className="subscription3">
       <main className="group-main">

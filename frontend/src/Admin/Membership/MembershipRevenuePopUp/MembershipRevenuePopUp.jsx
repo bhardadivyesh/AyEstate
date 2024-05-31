@@ -3,8 +3,10 @@ import closeIcon from "../../../assets/admin/membershipRevenueStatus/deleteIcon.
 import line from "../../../assets/admin/membershipRevenueStatus/line.png";
 import membershipRevenue from "../MembershipRevenue";
 import { useContext, useEffect, useState } from "react";
+import moment from 'moment-timezone';
 const MembershipRevenuePopup = () => {
   const value = useContext(membershipRevenue);
+  console.log(value.membershipMemberData);
   const [transactionId,setTransactionId] = useState()
   useEffect(()=>{
     let transactionIdData = localStorage.getItem("rzp_device_id")
@@ -53,7 +55,7 @@ const MembershipRevenuePopup = () => {
             src={line}
           />
           <div className="member-info-membership-revenue-popup">
-            <label className="karan1-membership-revenue-popup">karan</label>
+            <label className="karan1-membership-revenue-popup">{value.membershipMemberData.name}</label>
           </div>
         </div>
         <div className="rectangle-parent89-membership-revenue-popup">
@@ -68,7 +70,7 @@ const MembershipRevenuePopup = () => {
           />
           <div className="kar23gmailcom-wrapper-membership-revenue-popup">
             <label className="kar23gmailcom-membership-revenue-popup">
-              kar23@gmail.com
+              {value.membershipMemberData.email}
             </label>
           </div>
         </div>
@@ -83,7 +85,7 @@ const MembershipRevenuePopup = () => {
             src={line}
           />
           <div className="frame-membership-revenue-popup">
-            <label className="div38-membership-revenue-popup">12/05/2023</label>
+            <label className="div38-membership-revenue-popup">{moment.utc(value.membershipMemberData.createdAt).tz('Asia/Kolkata').format('YYYY-MM-DD')}</label>
           </div>
         </div>
         <div className="rectangle-parent91-membership-revenue-popup">
@@ -115,7 +117,7 @@ const MembershipRevenuePopup = () => {
             <div className="payment-details1-membership-revenue-popup">
               <div className="payment-status1-membership-revenue-popup">
                 <label className="empty-payment-status-membership-revenue-popup">
-                ₹12000
+                {`₹${value.membershipMemberData.paymentValue}`}
                 </label>
               </div>
             </div>

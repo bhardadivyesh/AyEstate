@@ -1,10 +1,12 @@
 import "./PreviewPage.css";
-import homeIcon from "../../../assets/admin/status/preview/home.png"
-import washbasin from "../../../assets/admin/status/preview/washbasin.png"
-import bed from "../../../assets/admin/status/preview/bed.png"
-import size from "../../../assets/admin/status/preview/size.png"
-import dummyImage from "../../../assets/admin/status/preview/dummyImage.png"
-import line from "../../../assets/admin/status/preview/line.png"
+import homeIcon from "../../../assets/admin/status/preview/home.png";
+import washbasin from "../../../assets/admin/status/preview/washbasin.png";
+import bed from "../../../assets/admin/status/preview/bed.png";
+import size from "../../../assets/admin/status/preview/size.png";
+import dummyImage from "../../../assets/admin/status/preview/dummyImage.png";
+import line from "../../../assets/admin/status/preview/line.png";
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
 const PreviewPage = () => {
   return (
     <div className="preview1-main">
@@ -29,22 +31,34 @@ const PreviewPage = () => {
               <div className="rectangle-parent45-main">
                 <div className="group-child23-main" />
                 <div className="morbi-sed-imperdiet-in-ipsum-parent-main">
-                  <div className="morbi-sed-imperdiet-main">Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus</div>
-                  <div className="morbi-sed-imperdiet1-main">Morbi sed imperdiet in ipsum, adipiscing elit dui lectus.</div>
+                  <div className="morbi-sed-imperdiet-main">
+                    Morbi sed imperdiet in ipsum, adipiscing elit dui lectus.
+                    Tellus id scelerisque est ultricies ultricies. Duis est sit
+                    sed leo nisl, blandit elit sagittis. Quisque tristique
+                    consequat quam sed. Nisl at scelerisque amet nulla purus
+                  </div>
+                  <div className="morbi-sed-imperdiet1-main">
+                    Morbi sed imperdiet in ipsum, adipiscing elit dui lectus.
+                  </div>
                 </div>
               </div>
-              <img
+              <AwesomeSlider className="placeholder-image-icon-main">
+                <div data-src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D" />
+                <div data-src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D" />
+                <div data-src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D" />
+              </AwesomeSlider>
+              {/* <img
                 className="placeholder-image-icon-main"
                 alt=""
                 src={dummyImage}
-              />
+              /> */}
             </div>
           </div>
           <div className="group-parent7-main">
             <div className="rectangle-parent46-main">
               <div className="group-child24-main" />
               <img className="frame-icon-main" alt="" src={homeIcon} />
-              <img className="group-child25-main" alt="" src={line}/>
+              <img className="group-child25-main" alt="" src={line} />
               <div className="villa-main">villa</div>
             </div>
             <div className="rectangle-parent47-main">

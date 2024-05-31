@@ -38,7 +38,7 @@ const PendingRequest = () => {
                   <td className="row-name">{vendor.name}</td>
                   <td className="row-company">{vendor.company}</td>
                   <td className="row-phone">{vendor.phone}</td>
-                  <td className="row-membershiptype">FREE</td>
+                  <td className="row-membershiptype">{`₹${vendor.paymentValue}`}</td>
                   <td className="row-date">2024-04-02</td>
                   <td className="row-status">{vendor.status}</td>
                   <td>
@@ -54,7 +54,6 @@ const PendingRequest = () => {
                     </select>
                   </td>
                 </tr>
-              
               </>
             ))}
           </tbody>

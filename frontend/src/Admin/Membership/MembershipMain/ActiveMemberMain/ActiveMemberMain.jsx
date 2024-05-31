@@ -39,17 +39,18 @@ const ActiveMemberMain = () => {
               {activeMember.map((items, index) => {
                 return (
                   <>
+                  {console.log(items)}
                     <tr className="table-row-activeMember-Main" key={index}>
-                      <td className="row-id-activeMember-Main">{index}</td>
+                      <td className="row-id-activeMember-Main">{index + 1}</td>
                       <td className="row-name-activeMember-Main">{items.name}</td>
                       <td className="row-company-activeMember-Main">{items.company}</td>
                       <td className="row-email-activeMember-Main">{items.email}</td>
-                      <td className="row-membership-type-activeMember-Main">FREE</td>
+                      <td className="row-membership-type-activeMember-Main">{`₹${items.paymentValue}`}</td>
                     </tr>
                     <div className="line-activeMember-Main" />
                   </>
                 );
-              })}
+              })}z
             </tbody>
           </table>
         </section>

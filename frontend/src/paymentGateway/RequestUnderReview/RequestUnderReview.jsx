@@ -1,7 +1,14 @@
 import "./RequestUnderReview.css";
 import requestUnderReview from "../../assets/payment/requestUnderReview.gif"
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const RequestUnderReview = () => {
+  const navigate = useNavigate()
+ setTimeout(() => {
+   navigate('/home')
+ }, 5000);
+  
   return (
     <div className="desktop-18-payment-requestUnderReview">
       <div className="desktop-18-inner-payment-requestUnderReview">

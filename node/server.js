@@ -35,6 +35,8 @@ db.on("error", (err) => {
   console.error("MongoDB connection error:", err);
 });
 // Routes
+app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 app.use(HomeRoute);
 app.use(ListingRoute);
 app.use(ContactRoute)

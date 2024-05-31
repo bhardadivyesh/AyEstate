@@ -4,7 +4,25 @@ import totalRevenue from "../../../assets/admin/DashboardChart/totalRevenue.png"
 import paidVendor from "../../../assets/admin/DashboardChart/paidVendor.png"
 import freeVendor from "../../../assets/admin/DashboardChart/freeVendor.png"
 import rightArrow from "../../../assets/admin/DashboardChart/rightArrow.png"
+import { useContext, useEffect, useState } from 'react';
+import axios from 'axios';
+import dashboardContext from '../../admin';
 const  DashboardCharts= () => {
+  const value = useContext(dashboardContext)
+  const [activeMemberData,setActiveMemberData] = useState()
+  useEffect(() => {
+    axios.get("http://localhost:3000/get-Registration").then((res) => {
+      setActiveMemberData(res.data);
+    });
+  }, []);
+  const membershipRevenueTotal = activeMemberData?.reduce((total, current) => {
+    return total + Number(current.paymentValue);
+  }, 0);
+  const handleNavigation = (navigationPath) =>{
+   value.setRenderManage(navigationPath);
+    
+  }
+  console.log(activeMemberData?.length);
   return (
     <div className="group-parent-dashboard-charts">
       <div className="group-container-dashboard-charts">
@@ -294,8 +312,8 @@ const  DashboardCharts= () => {
                 />
                 <div className="total-revenue-group-dashboard-charts">
                   <div className="total-revenue1-dashboard-charts">Total Revenue</div>
-                  <div className="div27-dashboard-charts">₹ 50263</div>
-                  <button className="view-all-detail-parent-dashboard-charts">
+                  <div className="div27-dashboard-charts">{`₹${membershipRevenueTotal}`}</div>
+                  <button className="view-all-detail-parent-dashboard-charts" onClick={()=>handleNavigation("membershipRevenue")}>
                     <span className="view-all-detail-dashboard-charts">View all Details</span>
                     <img className="line-icon-dashboard-charts" alt="" src={rightArrow} />
                   </button>
@@ -312,8 +330,8 @@ const  DashboardCharts= () => {
                 />
                 <div className="paid-vendrs-parent-dashboard-charts">
                   <div className="paid-vendrs1-dashboard-charts">Paid Vendors</div>
-                  <div className="div28-dashboard-charts">30</div>
-                  <button className="view-all-detail-group-dashboard-charts">
+                  <div className="div28-dashboard-charts">{activeMemberData?.length}</div>
+                  <button className="view-all-detail-group-dashboard-charts" onClick={()=>handleNavigation("vendor")}>
                     <span className="view-all-detail1-dashboard-charts">View all Details</span>
                     <img className="group-child47-dashboard-charts" alt="" src={rightArrow} />
                   </button>

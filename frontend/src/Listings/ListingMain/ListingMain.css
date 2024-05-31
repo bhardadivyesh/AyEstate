@@ -339,13 +339,6 @@
   min-width: 89px;
   z-index: 1;
 }
-.appartment-after-second-div-listingMain {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 5px 0px 0px;
-}
 .allCategory-toggle-listingMain {
   display: flex;
   flex-direction: row;
