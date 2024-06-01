@@ -23,7 +23,7 @@ const RejectRequest = () => {
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration-reject").then((res) => {
       setRejectUsers(res.data);
-      value.setRejectUsers(res.data.length)
+      value.setRejectUsers(updateState)
     });
   }, [updateState]);
   return (

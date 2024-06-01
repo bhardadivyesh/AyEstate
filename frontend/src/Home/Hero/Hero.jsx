@@ -2,6 +2,7 @@ import HeroImage from "../../assets/heroimage.png";
 const Hero = () => {
   return (
     <section
+    className="hero-se"
       style={{
         marginLeft: "-11px",
         width: "100%",

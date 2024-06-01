@@ -27,6 +27,7 @@ export default function SignIn() {
       email,
       password
     );
+    console.log(userCredential);
     const user = userCredential.user;
     if (user.displayName == "vendor") {
       navigate("/home");

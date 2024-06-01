@@ -20,7 +20,7 @@ const ActiveRequest = () => {
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration-active").then((res) => {
       setActiveUsers(res.data);
-      value.setActiveUsers(res.data.length)
+      value.setActiveUsers(updateState)
     });
   }, [updateState]);
 

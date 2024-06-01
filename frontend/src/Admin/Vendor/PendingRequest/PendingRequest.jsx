@@ -22,7 +22,7 @@ const PendingRequest = () => {
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration-pending").then((res) => {
       setPendingUsers(res.data);
-      value.setPendingUsers(res.data.length);
+      value.setPendingUsers(updateState);
     });
   }, [updateState]);
 

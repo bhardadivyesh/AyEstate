@@ -1,5 +1,4 @@
-.frame-child-vendor-addListing,
-.listing-child-vendor-addListing {
+.frame-child-vendor-addListing{
   position: relative;
   display: none;
 }
@@ -9,18 +8,12 @@
   background-color: #f2f6fe;
   max-width: 100%;
 }
-.listing-child-vendor-addListing {
-  height: 4.188rem;
-  width: 13.125rem;
-  box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  background-color: #b7e08a;
-}
 .listing1-vendor-addListing {
   text-decoration: none;
   height: 2.188rem;
   width: 6.563rem;
   position: relative;
+  cursor: pointer;
   line-height: 1.5rem;
   font-weight: 300;
   color: inherit;
@@ -28,8 +21,7 @@
   flex-shrink: 0;
   z-index: 1;
 }
-.listing-vendor-addListing,
-.location-child-vendor-addListing {
+.listing-vendor-addListing{
   box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
@@ -47,16 +39,10 @@
 .listing-vendor-addListing:hover{
   background-color: #b7e08a;
 }
-.location-child-vendor-addListing {
-  height: 4.188rem;
-  width: 16.625rem;
-  position: relative;
-  background-color: #fff;
-  display: none;
-}
 .location-detail-vendor-addListing {
   height: 2.188rem;
   flex: 1;
+  padding-right: 20px;
   position: relative;
   line-height: 1.5rem;
   font-weight: 300;
@@ -74,6 +60,7 @@
 }
 .location-vendor-addListing {
   width: 16.625rem;
+  cursor: context-menu;
   box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   background-color: #fff;
@@ -124,6 +111,9 @@
   gap: 2.312rem;
   max-width: 100%;
   z-index: 1;
+}
+.date-picker-addListing{
+  width: 100%;
 }
 .frame-inner-vendor-addListing,
 .property-name-vendor-addListing {
@@ -182,6 +172,7 @@
 .villa-vendor-addListing {
   position: absolute;
   height: 100%;
+  border-radius: 7px;
   top: 0;
   left: 5.938rem;
   line-height: 160%;
@@ -260,6 +251,7 @@
   height: 5.438rem;
   padding: 2rem;
   flex: 1;
+  border-radius: 7px;
   position: relative;
   letter-spacing: 0.3px;
   font-weight: 300;
@@ -378,6 +370,8 @@
 }
 .rectangle-parent1-vendor-addListing {
   flex: 1;
+  padding-top: 1rem;
+  height: 5rem;
   box-shadow: 0 1px 11.6px 0.3px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   background-color: #fff;
@@ -386,7 +380,7 @@
 }
 .products-price-parent-vendor-addListing {
   align-self: stretch;
-  gap: 3.75rem;
+  gap: 1.75rem;
 }
 .frame-child3-vendor-addListing,
 .vector-icon1-vendor-addListing {
@@ -521,6 +515,7 @@
 }
 .m2-vendor-addListing {
   height: 5.438rem;
+  border-radius: 7px;
   position: relative;
   line-height: 160%;
   font-weight: 300;
@@ -548,7 +543,7 @@
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
-  gap: 3.75rem;
+  gap: 1.75rem;
   font-size: 3rem;
 }
 .category-parent-vendor-addListing {
@@ -732,10 +727,6 @@
     padding-left: 1.875rem;
     padding-right: 1.875rem;
     box-sizing: border-box;
-  }
-  .location2-vendor-addListing {
-    font-size: 1.625rem;
-    line-height: 1.188rem;
   }
   .location1-vendor-addListing {
     flex-wrap: wrap;

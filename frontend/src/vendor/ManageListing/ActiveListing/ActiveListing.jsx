@@ -27,13 +27,13 @@ const ActiveListing = () => {
           <div className="details-panel-activeListing">
             <div className="product-info-activeListing">
               <div className="id-container-activeListing">
-                <div className="id2-activeListing">Id</div>
+                <div className="id2-activeListing">No</div>
               </div>
               <div className="info-headers-activeListing">
-                <div className="products-name-activeListing">Products name</div>
+                <div className="products-name-activeListing">Project Name</div>
               </div>
               <div className="info-headers1-activeListing">
-                <a className="categories1-activeListing">Categories</a>
+                <a className="categories1-activeListing">Category</a>
               </div>
               <div className="location-container-activeListing">
                 <a className="location5-activeListing">Location</a>
@@ -45,10 +45,10 @@ const ActiveListing = () => {
                 <a className="date-activeListing">Date</a>
               </div>
               <div className="info-headers4-activeListing">
-                <div className="request-status-activeListing">Request status</div>
+                <div className="request-status-activeListing">Status</div>
               </div>
               <div className="info-headers5-activeListing">
-                <a className="listing-edit-activeListing">listing edit</a>
+                <a className="listing-edit-activeListing">Action</a>
               </div>
             </div>
           </div>

@@ -22,6 +22,9 @@ const AddListing = () => {
     value.setAddListingData(data)
     value.setRenderAddListing("addListingDetail")
   }
+  const handleNextBtnClick = () =>{
+    value.setRenderAddListing("addListingDetail")
+  }
 
   useEffect(() => {
     axios
@@ -40,7 +43,7 @@ const AddListing = () => {
         <button type="button" className="listing-vendor-addListing" onClick={()=>value.setRenderAddListing("addListing")}>
           <label className="listing1-vendor-addListing">Listing</label>
         </button>
-        <button className="location-vendor-addListing" onClick={()=>value.setRenderAddListing("addListingDetail")}>
+        <button className="location-vendor-addListing">
           <span className="location-detail-vendor-addListing">Listing Details</span>
         </button>
       </main>
@@ -119,11 +122,11 @@ const AddListing = () => {
               <div className="products-price-parent-vendor-addListing">
                 <div className="products-price-vendor-addListing">
                   <div className="products-price-child-vendor-addListing" />
-                  <input type="number" className="products-price1-vendor-addListing" placeholder="Products price" {...register("price",{required:true})}/>       
+                  <input type="number" className="products-price1-vendor-addListing" placeholder="Property price" {...register("price",{required:true})}/>       
                 </div>
                 <div className="rectangle-parent1-vendor-addListing">
-                  <div className="frame-child2-vendor-addListing" />
-                  <input type="date" className="div1-vendor-addListing" {...register("date",{required : true})} />
+                  {/* <div className="frame-child2-vendor-addListing" /> */}
+                  <input type="date" className="date-picker-addListing"  {...register("date",{required : true})} />
                 </div>
               </div>
               <div className="frame-div-vendor-addListing">
@@ -182,7 +185,7 @@ const AddListing = () => {
           <div className="frame-wrapper2-vendor-addListing">
             <div className="frame-parent2-vendor-addListing">
               <input type="file" className="rectangle-parent4-vendor-addListing" {...register("image1",{required : true})}/>
-              <button type="submit" className="rectangle-parent6-vendor-addListing" >
+              <button type="submit" className="rectangle-parent6-vendor-addListing" onClick={handleNextBtnClick}>
                 <span className="next-vendor-addListing">Next</span>
               </button>
             </div>

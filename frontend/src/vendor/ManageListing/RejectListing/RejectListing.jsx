@@ -11,13 +11,13 @@ const RejectListing = () => {
         <div className="frame-child157-rejectListing" />
         <div className="frame-parent169-rejectListing">
           <button className="rectangle-parent212-rejectListing" onClick={()=>value.setManageListingRender("activeListing")}>
-            <label className="active3-rejectListing">ACTIVE</label>
+            <label className="active3-rejectListing">ACTIVE (0)</label>
           </button>
           <button className="rectangle-parent213-rejectListing" onClick={()=>value.setManageListingRender("pendingListing")}>
             <label className="pending-61-rejectListing">PENDING (6)</label>
           </button>
           <button className="rectangle-parent214-rejectListing" onClick={()=>value.setManageListingRender("rejectListing")}>
-            <label className="reject1-rejectListing">REJECT</label>
+            <label className="reject1-rejectListing">REJECT (0)</label>
           </button>
         </div>
         <section className="listing13-rejectListing">
@@ -28,7 +28,7 @@ const RejectListing = () => {
                 <div className="info-top-rejectListing">
                   <div className="product-rejectListing">
                     <div className="product-name-rejectListing">
-                      <h3 className="id3-rejectListing">Id</h3>
+                      <h3 className="id3-rejectListing">No</h3>
                       <h3 className="products-name1-rejectListing">
                         Products name
                       </h3>
@@ -48,7 +48,7 @@ const RejectListing = () => {
                   </div>
                   <div className="status1-rejectListing">
                     <h3 className="request-status1-rejectListing">
-                      Request status
+                      Action
                     </h3>
                   </div>
                 </div>

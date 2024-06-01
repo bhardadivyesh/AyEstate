@@ -18,6 +18,7 @@ import vendorDashboardContext from '../VendorDashboardContext';
 import ManageListingMain from '../ManageListing/ManageListingMain/ManageListingMain';
 import VendorMembership from '../VendorMembership/VendorMembership';
 import VendorDashboard from '../VendorDashboard/VendorDashboard/VendorDashboard';
+import Inquiry from '../Inquiry/Inquiry';
 
 const VendorMasterPage = () => {
   const [vendorDashboardRender,setVendorDashboardRender] = useState("dashboard")
@@ -29,7 +30,6 @@ const VendorMasterPage = () => {
   return (
     <div className="vendor-listingdata-vendorDashboard">
       <div className="vendor-listingdata-inner-vendorDashboard">
-        {/* header */}
         <header className="top-bar-bg-parent-vendorDashboard">
           <div className="top-bar-bg2-vendorDashboard" />
           <div className="frame-wrapper84-vendorDashboard">
@@ -58,18 +58,19 @@ const VendorMasterPage = () => {
             />
             <div className="frame-wrapper85-vendorDashboard">
               <main className="jone-aly-parent-vendorDashboard">
-                <a className="jone-aly2-vendorDashboard"> josey Roy</a>
-                <a className="admin2-vendorDashboard">Admin</a>
+                <label className="jone-aly2-vendorDashboard"> josey Roy</label>
+                <label className="admin2-vendorDashboard">Vendor</label>
               </main>
             </div>
           </div>
           <section className="rectangle-parent189-vendorDashboard">
-            {/* <vendorDashboardContext.Provider value={{vendorDashboardRender,setVendorDashboardRender}}> */}
+            <vendorDashboardContext.Provider value={{vendorDashboardRender,setVendorDashboardRender}}>
             {vendorDashboardRender == 'dashboard' && <VendorDashboard />}
             {vendorDashboardRender == "addListing" && <AddListingMain />}
             {vendorDashboardRender == "manageListing" && <ManageListingMain />}
             {vendorDashboardRender == "membership" && <VendorMembership />}
-            {/* </vendorDashboardContext.Provider> */}
+            {vendorDashboardRender == "inquiry" && <Inquiry />}
+            </vendorDashboardContext.Provider>
           </section>
         </header>
       </div>
@@ -120,7 +121,7 @@ const VendorMasterPage = () => {
               src={inquiryIcon}
             />
             <div className="inquiry-wrapper-vendorDashboard">
-              <div className="inquiry-vendorDashboard">Inquiry</div>
+              <div className="inquiry-vendorDashboardMasterPage">Inquiry</div>
             </div>
           </button>
           <button className="membership1-vendorDashboard" onClick={()=>handleDashboardRenderClick("membership")}>

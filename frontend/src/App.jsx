@@ -18,7 +18,6 @@ import PaymentSuccess from "./paymentGateway/PaymentSuccess/PaymentSuccess";
 import PaymentFail from "./paymentGateway/PaymentFail/PaymentFail";
 import RequestUnderReview from "./paymentGateway/RequestUnderReview/RequestUnderReview";
 import Dashboard from "./Admin/Dashboard/Dashboard";
-import Revenuecat from "./RevenueCat/Revenuecat";
 import PaymentNew from "./paymentGateway/Payment/PaymentNew"
 import Chart from "./Admin/Chart/Chart";
 import VendorDashboard from "./vendor/VendorMasterPage/VendorMasterPage";
@@ -47,7 +46,6 @@ function App() {
             <Route path="/paymentSuccess" element={<PaymentSuccess />}/>
             <Route path="/paymentFail" element={<PaymentFail />}/>
             <Route path="/requestUnderReview" element={<RequestUnderReview />}/>
-            <Route path="/revenueCat" element={<Revenuecat />}/>
 
             {/* admin routes */}
             <Route path="/dashboard" element={<Dashboard />}/>

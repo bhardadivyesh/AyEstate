@@ -11,13 +11,13 @@ const PendingListing = () => {
         <div className="frame-child157-pendingListing" />
         <div className="frame-parent169-pendingListing">
           <button className="rectangle-parent212-pendingListing" onClick={()=>value.setManageListingRender("activeListing")}>
-            <label className="active3-pendingListing">ACTIVE</label>
+            <label className="active3-pendingListing">ACTIVE (0)</label>
           </button>
           <button className="rectangle-parent213-pendingListing" onClick={()=>value.setManageListingRender("pendingListing")}>
             <label className="pending-61-pendingListing">PENDING (6)</label>
           </button>
           <button className="rectangle-parent214-pendingListing" onClick={()=>value.setManageListingRender("rejectListing")}>
-            <label className="reject1-pendingListing">REJECT</label>
+            <label className="reject1-pendingListing">REJECT (0)</label>
           </button>
         </div>
         <section className="listing13-pendingListing">
@@ -28,7 +28,7 @@ const PendingListing = () => {
                 <div className="info-top-pendingListing">
                   <div className="product-pendingListing">
                     <div className="product-name-pendingListing">
-                      <h3 className="id3-pendingListing">Id</h3>
+                      <h3 className="id3-pendingListing">No</h3>
                       <h3 className="products-name1-pendingListing">
                         Products name
                       </h3>
@@ -48,7 +48,7 @@ const PendingListing = () => {
                   </div>
                   <div className="status1-pendingListing">
                     <h3 className="request-status1-pendingListing">
-                      Request status
+                      Action
                     </h3>
                   </div>
                 </div>

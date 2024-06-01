@@ -86,7 +86,7 @@ const Dashboard = () => {
         className="rectangle-parent4"
         onClick={() => handleManageClick("status")}
       >
-        <span className="status">Status</span>
+        <span className="statusDashboard">Status</span>
         <img className="check-list-1-icon" alt="Status Icon" src={status} />
       </button>
       <button

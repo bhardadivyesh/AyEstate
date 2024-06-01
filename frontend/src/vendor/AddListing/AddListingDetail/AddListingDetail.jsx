@@ -37,7 +37,7 @@ const AddListingDetail = () => {
           onClick={() => value.setRenderAddListing("addListingDetail")}
         >
           <span className="listing-detail2-addListingDetail">
-            Listing detail
+            Listing Details
           </span>
         </button>
       </main>
@@ -93,14 +93,14 @@ const AddListingDetail = () => {
             </div>
             <input
               className="title10-addListingDetail"
-              placeholder="title listing"
+              placeholder="Title Listing"
               type="text"
               {...register("listingTitle", { required: true })}
             />
           </div>
           <textarea
             className="frame-child149-addListingDetail"
-            placeholder="Listing description"
+            placeholder="Listing Description"
             rows={17}
             cols={67}
             {...register("listingDescription", { required: true })}

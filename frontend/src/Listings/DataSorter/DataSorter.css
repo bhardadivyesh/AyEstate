@@ -183,3 +183,16 @@
     justify-content: flex-start;
     gap: 8px;
 }
+@media Screen and (max-width:860px) {
+
+  .first-div-listing-dataSorter{
+    width: 100%;
+  }
+  .items-categoryName-label-listing-dataSorter{
+    width: 100px;
+  }
+  .items-categoryName-label-listing-dataSorter{
+    width: 10rem;
+  }
+  
+  }

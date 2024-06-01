@@ -48,7 +48,6 @@ export default function AdminForm() {
     <>
       <h1>Listing Page Add Data</h1>
       <button type="submit" onClick={handlePopUp}>PopUpButton</button>
-      {/* <PopUp /> */}
       {popUpState && <PopUp state={{popUpState}} /> }
       <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
         <label>Name:</label>
@@ -95,7 +94,6 @@ export default function AdminForm() {
         <label>Washbasin:</label>
         <input {...register("washbasin", { required: true })} type="number" />
         <br />
-        {/* Five file input fields */}
         {[1, 2, 3, 4, 5].map((index) => (
           <div key={index}>
             <label>Image {index}:</label>

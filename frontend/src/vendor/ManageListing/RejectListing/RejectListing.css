@@ -315,7 +315,7 @@
     max-width: 100%;
   }
   .managelistingvendorpending-rejectListing {
-    width: 100%;
+    width: 100rem;
     position: relative;
     flex-direction: row;
     line-height: normal;
@@ -346,6 +346,9 @@
     padding: 1.187rem 2.687rem 1.062rem 3.125rem;
     white-space: nowrap;
   }
+  .rectangle-parent212-rejectListing:hover{
+    background-color: #B2E27C;
+  }
   .pending-61-rejectListing {
     text-decoration: none;
     height: 1.938rem;
@@ -362,13 +365,16 @@
     border-radius: 8px;
   }
   .rectangle-parent213-rejectListing {
-    background-color: #b7e08a;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25rem 0.875rem 1rem 1rem;
     white-space: nowrap;
+  }
+  .rectangle-parent213-rejectListing:hover{
+    background-color: #B2E27C;
   }
   .reject1-rejectListing {
     text-decoration: none;
@@ -400,8 +406,12 @@
     box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
+  .rectangle-parent214-rejectListing:hover{
+    background-color: #B2E27C;
+  }
   .frame-parent169-rejectListing {
     gap: 2rem;
+    padding-left: 10px;
     max-width: 100%;
     z-index: 1;
     text-align: left;

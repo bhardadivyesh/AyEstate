@@ -10,6 +10,7 @@ import dashboardContext from '../../admin';
 const  DashboardCharts= () => {
   const value = useContext(dashboardContext)
   const [activeMemberData,setActiveMemberData] = useState()
+  console.log(activeMemberData);
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setActiveMemberData(res.data);

@@ -18,18 +18,17 @@ const Subscription = () => {
   const onSubmit = async (data) => {
     let priceData = value.pricingDetail;
       let allData = { ...data, ...priceData };
-      console.log(allData);
       const formData = new FormData();
-      formData.append('title', allData.title);
-      formData.append('price', allData.price);
-      formData.append('listingNumber', allData.listingNumber);
-      formData.append('discountPrice', allData.discountPrice);
       formData.append('discount', allData.discount);
+      formData.append('discountPrice', allData.discountPrice);
+      formData.append('listingNumber', allData.listingNumber);
       formData.append('membershipdescription1', allData.membershipdescription1);
       formData.append('membershipdescription2', allData.membershipdescription2);
       formData.append('membershipdescription3', allData.membershipdescription3);
       formData.append('membershipdescription4', allData.membershipdescription4);
       formData.append('membershipdescription5', allData.membershipdescription5);
+      formData.append('price', allData.price);
+      formData.append('title', allData.title);
       formData.append('logoImage', allData.logoImage[0]);
       formData.append('image1', allData.image1[0]);
       formData.append('image2', allData.image2[0]);
@@ -38,14 +37,18 @@ const Subscription = () => {
       formData.append('image5', allData.image5[0]);
   
       try {
-        const response = await axios.post('http://localhost:3000/post-membership', formData, {
+        const response = await axios.post('http://localhost:3000/upload/uploadMultiple', formData, {
           headers: {
-            'Content-Type': 'multipart/form-data'
-          }
+            'Content-Type': 'multipart/form-data',
+          },
         });
-        console.log('Product created:', response.data);
+  
+        alert('Files and data uploaded successfully!');
+        console.log(response.data);
+        reset(); // Reset form after successful submission
       } catch (error) {
-        console.error('Error creating product:', error);
+        console.error('Error uploading files and data:', error);
+        alert('Error uploading files and data. Please try again.');
       }
   };
 

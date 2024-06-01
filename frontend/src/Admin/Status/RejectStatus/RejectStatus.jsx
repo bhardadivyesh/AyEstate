@@ -34,7 +34,7 @@ const RejectStatus = () => {
             </button>
           </div>
           <div className="id-main">
-            <div className="id1-main">Id</div>
+            <div className="id1-main">No</div>
             <div className="categories1-main">Categories</div>
             <div className="location1-main">Location</div>
             <div className="products40-main">Products</div>

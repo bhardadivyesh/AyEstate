@@ -11,6 +11,7 @@ const VendorMain = () => {
   const [pendingUsers,setPendingUsers] = useState([])
   const [activeUsers,setActiveUsers] = useState([])
   const [rejectUsers,setRejectUsers] = useState([])
+  console.log(rejectUsers);
   const handleVendorRendorState = (renderState) =>{
     setVendorManage(renderState)
   }
@@ -18,26 +19,26 @@ const VendorMain = () => {
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setVendorData(res.data);
+      console.log(res.data);
     });
-  },[vendorRendor]);
- 
-  // let PendingRequestData = vendorData.filter((items) => items.status == "pending");
-  // let ActiveRequestData = vendorData.filter((items => items.status == "active"));   
-  // let RejectRequestData = vendorData.filter((items => items.status == "reject"));                                                           
+  },[rejectUsers,activeUsers,pendingUsers]);   
+  const PendingUsersData = vendorData.filter(items => items.status == "pending");
+  const ActiveUsersData = vendorData.filter(items => items.status == "active");                                                   
+  const RejectUsersData = vendorData.filter(items => items.status == "reject");                                                   
   return (
     <div className="group-root">
       <div className="rectangle-parent36">
         <div className="group-child10" />
         <div className="group-parent1">
-            <button type="button" className="rectangle-parent37 group-child11 pending" onClick={()=>handleVendorRendorState("pending")}>{`Pending (${pendingUsers})`}</button>
-            <button type="button" className="group-child12 active" onClick={()=>handleVendorRendorState("active")}>{`Active (${activeUsers})`}</button>
-            <button type="button" className="rectangle-parent39 group-child13 reject" onClick={()=>handleVendorRendorState("reject")}>{`Reject (${rejectUsers})`}</button>
+            <button type="button" className="rectangle-parent37 group-child11 pending" onClick={()=>handleVendorRendorState("pending")}>{`Pending (${PendingUsersData.length})`}</button>
+            <button type="button" className="group-child12 active" onClick={()=>handleVendorRendorState("active")}>{`Active (${ActiveUsersData.length})`}</button>
+            <button type="button" className="rectangle-parent39 group-child13 reject" onClick={()=>handleVendorRendorState("reject")}>{`Reject (${RejectUsersData.length})`}</button>
         </div>
         <div className="rectangle-parent40">
           <div className="group-child14" />
           <div className="request-status">Request status</div>
           <div className="id-parent">
-            <div className="id">Id</div>
+            <div className="id">No</div>
             <div className="name">Name</div>
             <div className="company-name">Company name</div>
             <div className="phone-number">Phone number</div>

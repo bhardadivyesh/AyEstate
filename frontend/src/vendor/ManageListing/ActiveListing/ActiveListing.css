@@ -135,6 +135,7 @@
   }
   .products-name-activeListing {
     position: relative;
+    left: 22px;
     line-height: 1.313rem;
     font-weight: 300;
     white-space: nowrap;
@@ -149,6 +150,7 @@
   }
   .categories1-activeListing {
     text-decoration: none;
+    left: 55px;
     height: 2.313rem;
     position: relative;
     line-height: 1.5rem;
@@ -171,6 +173,7 @@
   .location5-activeListing {
     text-decoration: none;
     height: 2rem;
+    left: 45px;
     position: relative;
     line-height: 1.5rem;
     font-weight: 300;
@@ -193,6 +196,7 @@
   .price-activeListing {
     height: 2.063rem;
     position: relative;
+    left: 50px;
     line-height: 1.5rem;
     font-weight: 300;
     display: flex;
@@ -214,6 +218,7 @@
   .date-activeListing {
     text-decoration: none;
     width: 4.625rem;
+    left: 65px;
     height: 2.313rem;
     position: relative;
     line-height: 1.5rem;
@@ -236,6 +241,7 @@
   .request-status-activeListing {
     position: relative;
     line-height: 1.688rem;
+    left: 100px;
     font-weight: 300;
     transform: rotate(0.3deg);
     white-space: nowrap;
@@ -254,6 +260,7 @@
     text-decoration: none;
     position: relative;
     line-height: 1.5rem;
+    left: 175px;
     font-weight: 300;
     color: inherit;
     white-space: nowrap;
@@ -534,7 +541,7 @@
     font-family: Sora;
   }
   .managelistingvendor-activeListing {
-    width: 100%;
+    width: 100rem;
     position: relative;
     flex-direction: row;
     line-height: normal;

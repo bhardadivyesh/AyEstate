@@ -1,4 +1,4 @@
-.frame-child202 {
+.frame-child202-vendorDashboard {
   height: 61.875rem;
   width: 100rem;
   position: relative;
@@ -7,66 +7,66 @@
   max-width: 100%;
 }
 .frame-child203,
-.rectangle-parent171 {
+.rectangle-parent171-vendorDashboard {
   box-shadow: 0-1px 17.6px -1px rgba(0, 0, 0, 0.25);
   border-radius: 27px;
   background-color: #fff;
   max-width: 100%;
 }
-.frame-child203 {
+.frame-child203-vendorDashboard {
   height: 56.563rem;
   width: 94.438rem;
   position: relative;
   display: none;
 }
-.rectangle-parent171 {
+.rectangle-parent171-vendorDashboard {
   flex: 1;
   padding: 5.875rem 1.937rem;
   box-sizing: border-box;
   min-height: 56.563rem;
   z-index: 1;
 }
-.home3,
-.rectangle-parent170,
-.rectangle-parent171 {
+.homes3-vendorDashboard,
+.rectangle-parent170-vendorDashboard,
+.rectangle-parent171-vendorDashboard {
   display: flex;
+  width: 95rem;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.rectangle-parent170 {
+.rectangle-parent170-vendorDashboard {
   flex: 1;
   background-color: #f3f7fe;
   padding: 2.937rem 2.75rem 2.375rem 2.812rem;
   box-sizing: border-box;
   max-width: 100%;
 }
-.home3 {
-  width: 100%;
+.homes3-vendorDashboard {
   position: relative;
   line-height: normal;
   letter-spacing: normal;
 }
-.active3 {
+.active3-vendorDashboard {
   position: relative;
   line-height: 24px;
   font-weight: 10px;
   font-weight: 300;
 }
-.active-wrapper {
+.active-wrapper-vendorDashboard {
   width: 291px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.active-wrapper,
-.div81,
-.wrapper3 {
+.active-wrapper-vendorDashboard,
+.div81-vendorDashboard,
+.wrapper3-vendorDashboard {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.div81 {
+.div81-vendorDashboard {
   width: 118px;
   position: relative;
   line-height: 24px;
@@ -76,14 +76,14 @@
   height: 67px;
   flex-shrink: 0;
 }
-.wrapper3 {
+.wrapper3-vendorDashboard {
   width: 291px;
   height: 84px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.view-all-details {
+.view-all-details-vendorDashboard {
   width: 187.2px;
   position: relative;
   font-weight: 300;
@@ -91,31 +91,32 @@
   height: 22.9px;
   flex-shrink: 0;
 }
-.frame-child198 {
+.frame-child198-vendorDashboard {
   width: 34.2px;
   top: 3px;
   position: relative;
   max-height: 100%;
 }
-.view-all-details-parent {
+.view-all-details-parent-vendorDashboard {
   display: flex;
   flex-direction: row;
+  padding-left: 40px;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   font-size: 23px;
 }
-.frame-parent97,
-.frame-wrapper55 {
+.frame-parent97-vendorDashboard,
+.frame-wrapper55-vendorDashboard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent97 {
+.frame-parent97-vendorDashboard {
   gap: 40px;
 }
-.frame-wrapper55 {
+.frame-wrapper55-vendorDashboard {
   position: absolute;
   top: 0;
   left: 44px;
@@ -125,29 +126,33 @@
   overflow: hidden;
   padding: 25px 16px;
 }
-.pending {
-  top: 0;
-  position: relative;
-  line-height: 24px;
-  font-weight: 300px;
+.pending-vendorDashboard {
+  top: 2rem;
+  left: 5rem;
+  position: absolute;
+  line-height: 1.5rem;
   font-weight: 300;
-  height: 2rem;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 12.6rem;
+  height: 4.188rem;
 }
-.pending-wrapper {
+.pending-wrapper-vendorDashboard {
   width: 168px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.div82,
-.pending-wrapper,
-.wrapper4 {
+.div82-vendorDashboard,
+.pending-wrapper-vendorDashboard,
+.wrapper4-vendorDashboard {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.div82 {
+.div82-vendorDashboard {
   width: 187px;
+  top: 2rem;
   font-size: 5rem;
   color: #B2E27C;
   position: relative;
@@ -156,46 +161,49 @@
   height: 67px;
   flex-shrink: 0;
 }
-.wrapper4 {
+.wrapper4-vendorDashboard {
   width: 291px;
   height: 84px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.view-all-details1 {
+.view-all-details1-vendorDashboard {
   width: 187.2px;
+  top: 2rem;
   position: relative;
   font-weight: 300;
   display: inline-block;
   height: 22.9px;
   flex-shrink: 0;
 }
-.frame-child199 {
+.frame-child199-vendorDashboard {
   width: 34.2px;
-  top: 3px;
+  top: 2.4rem;
   position: relative;
   max-height: 100%;
 }
-.view-all-details-group {
+.view-all-details-group-vendorDashboard {
   display: flex;
   flex-direction: row;
+  padding-left: 37px;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   font-size: 23px;
 }
-.frame-parent98,
-.frame-wrapper56 {
+.frame-parent98-vendorDashboard,
+.frame-wrapper56-vendorDashboard {
   display: flex;
+  height: 18rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent98 {
+.frame-parent98-vendorDashboard {
   gap: 40px;
 }
-.frame-wrapper56 {
+.frame-wrapper56-vendorDashboard {
   position: absolute;
   top: 0;
   left: 393px;
@@ -205,26 +213,27 @@
   overflow: hidden;
   padding: 21px 13px;
 }
-.reject1 {
+.reject1-vendorDashboard {
   position: relative;
+  left: 4rem;
   top: 0;
   line-height: 24px;
   font-weight: 300;
 }
-.reject-wrapper {
+.reject-wrapper-vendorDashboard {
   width: 166px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.div83,
-.reject-wrapper,
-.wrapper5 {
+.div83-vendorDashboard,
+.reject-wrapper-vendorDashboard,
+.wrapper5-vendorDashboard {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.div83 {
+.div83-vendorDashboard {
   width: 169px;
   font-size: 5rem;
   color: #B2E27C;
@@ -234,14 +243,14 @@
   height: 69px;
   flex-shrink: 0;
 }
-.wrapper5 {
+.wrapper5-vendorDashboard {
   width: 291px;
   height: 84px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.view-all-details2 {
+.view-all-details2-vendorDashboard {
   width: 187.2px;
   position: relative;
   font-weight: 300;
@@ -249,31 +258,32 @@
   height: 22.9px;
   flex-shrink: 0;
 }
-.frame-child200 {
+.frame-child200-vendorDashboard {
   width: 34.2px;
   top: 3px;
   position: relative;
   max-height: 100%;
 }
-.view-all-details-container {
+.view-all-details-container-vendorDashboard {
   display: flex;
+  padding-left: 40px;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   font-size: 23px;
 }
-.frame-parent99,
-.frame-wrapper57 {
+.frame-parent99-vendorDashboard,
+.frame-wrapper57-vendorDashboard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent99 {
+.frame-parent99-vendorDashboard {
   gap: 40px;
 }
-.frame-wrapper57 {
+.frame-wrapper57-vendorDashboard {
   position: absolute;
   top: 0;
   left: 737px;
@@ -283,27 +293,29 @@
   overflow: hidden;
   padding: 29px 16px;
 }
-.inquiry {
+.inquiry-vendorDashboard {
+  padding-left: 82px;
   position: relative;
   line-height: 24px;
   font-weight: 300;
 }
-.inquiry-wrapper {
+.inquiry-wrapper-vendorDashboard {
   width: 291px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.div84,
-.inquiry-wrapper,
-.wrapper6 {
+.div84-vendorDashboard,
+.inquiry-wrapper-vendorDashboard,
+.wrapper6-vendorDashboard {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.div84 {
+.div84-vendorDashboard {
   font-size: 5rem;
   color: #B2E27C;
+  padding-left: 102px;
   width: 142px;
   position: relative;
   line-height: 24px;
@@ -311,14 +323,14 @@
   height: 75px;
   flex-shrink: 0;
 }
-.wrapper6 {
+.wrapper6-vendorDashboard {
   width: 291px;
   height: 84px;
   flex-direction: row;
   padding: 10px;
   box-sizing: border-box;
 }
-.view-all-details3 {
+.view-all-details3-vendorDashboard {
   width: 187.2px;
   position: relative;
   font-weight: 300;
@@ -326,31 +338,32 @@
   height: 22.9px;
   flex-shrink: 0;
 }
-.frame-child201 {
+.frame-child201-vendorDashboard {
   width: 34.2px;
   top: 3px;
   position: relative;
   max-height: 100%;
 }
-.view-all-details-parent1 {
+.view-all-details-parent1-vendorDashboard {
   display: flex;
   flex-direction: row;
+  padding-left: 40px;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   font-size: 23px;
 }
-.frame-parent100,
-.frame-wrapper58 {
+.frame-parent100-vendorDashboard,
+.frame-wrapper58-vendorDashboard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-parent100 {
+.frame-parent100-vendorDashboard {
   gap: 40px;
 }
-.frame-wrapper58 {
+.frame-wrapper58-vendorDashboard {
   position: absolute;
   top: 2px;
   left: 1086px;
@@ -360,7 +373,7 @@
   overflow: hidden;
   padding: 25px 16px;
 }
-.frame-parent96 {
+.frame-parent96-vendorDashboard {
   position: absolute;
   top: 94px;
   left: 31px;
@@ -370,26 +383,26 @@
 }
 
 @media screen and (max-width: 1125px) {
-  .rectangle-parent170 {
+  .rectangle-parent170-vendorDashboard {
     padding-left: 1.375rem;
     padding-right: 1.375rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 800px) {
-  .rectangle-parent170,
-  .rectangle-parent171 {
+  .rectangle-parent170-vendorDashboard,
+  .rectangle-parent171-vendorDashboard {
     padding-top: 3.813rem;
     padding-bottom: 3.813rem;
     box-sizing: border-box;
   }
-  .rectangle-parent170 {
+  .rectangle-parent170-vendorDashboard {
     padding-top: 1.938rem;
     padding-bottom: 1.563rem;
   }
 }
 @media screen and (max-width: 450px) {
-  .rectangle-parent170 {
+  .rectangle-parent170-vendorDashboard {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     box-sizing: border-box;

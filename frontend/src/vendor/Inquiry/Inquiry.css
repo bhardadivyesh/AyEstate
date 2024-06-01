@@ -1,0 +1,286 @@
+.group-child-vendorInquiry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f2f6fe;
+    width: 100.063rem;
+    height: 61.813rem;
+  }
+  .filter-vendorInquiry,
+  .group-item-vendorInquiry {
+    position: absolute;
+    top: 0;
+    height: 4.313rem;
+  }
+  .group-item-vendorInquiry {
+    left: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    width: 13rem;
+  }
+  .filter-vendorInquiry {
+    left: 3.625rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.313rem;
+  }
+  .fi-12358772-icon-vendorInquiry,
+  .vector-icon-vendorInquiry {
+    position: absolute;
+    overflow: hidden;
+  }
+  .vector-icon-vendorInquiry {
+    height: 17.39%;
+    width: 10.58%;
+    top: 42.03%;
+    right: 4.81%;
+    bottom: 40.58%;
+    left: 84.62%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .fi-12358772-icon-vendorInquiry {
+    top: 0.813rem;
+    left: 0.688rem;
+    width: 2.688rem;
+    height: 2.75rem;
+  }
+  .rectangle-group-vendorInquiry {
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    border-radius: 7px;
+    left: 81.813rem;
+    width: 13rem;
+    height: 4.313rem;
+  }
+  .group-inner-vendorInquiry {
+    top: 0.125rem;
+    left: 0.188rem;
+    box-shadow: 0-1px 11.3px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    width: 95.75rem;
+    height: 53rem;
+  }
+  .group-inner-vendorInquiry,
+  .line-div-vendorInquiry,
+  .no-vendorInquiry {
+    position: absolute;
+  }
+  .line-div-vendorInquiry {
+    top: 7.438rem;
+    left: 0.188rem;
+    border-top: 2px solid #2b2b2b;
+    box-sizing: border-box;
+    width: 95.875rem;
+    height: 0.125rem;
+  }
+  .no-vendorInquiry {
+    left: 0;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.625rem;
+  }
+  .date-vendorInquiry,
+  .full-name-vendorInquiry,
+  .no-vendorInquiry {
+    top: 0.125rem;
+    height: 7.125rem;
+  }
+  .date-vendorInquiry {
+    position: absolute;
+    left: 5.875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.563rem;
+  }
+  .full-name-vendorInquiry {
+    left: 24.688rem;
+    white-space: pre-wrap;
+    width: 14.375rem;
+  }
+  .email-vendorInquiry,
+  .full-name-vendorInquiry,
+  .phone-number-vendorInquiry,
+  .status-vendorInquiry {
+    position: absolute;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .phone-number-vendorInquiry {
+    top: 0;
+    left: 59rem;
+    width: 18.75rem;
+    height: 7.25rem;
+  }
+  .email-vendorInquiry,
+  .status-vendorInquiry {
+    top: 0.188rem;
+    left: 77.938rem;
+    width: 18rem;
+    height: 7.063rem;
+  }
+  .email-vendorInquiry {
+    top: 0.125rem;
+    left: 44.813rem;
+    width: 10.188rem;
+    height: 7.125rem;
+  }
+  .line-parent-vendorInquiry {
+    left: 0;
+    width: 95.938rem;
+    height: 7.438rem;
+  }
+  .div-vendorInquiry,
+  .line-parent-vendorInquiry,
+  .rectangle-div-vendorInquiry {
+    position: absolute;
+    top: 0;
+  }
+  .div-vendorInquiry {
+    left: 8rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.313rem;
+    height: 6.5rem;
+  }
+  .rectangle-div-vendorInquiry {
+    left: 0;
+    box-shadow: 0 0 5.7px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    background-color: var(--color-white);
+    width: 13.375rem;
+    height: 3.063rem;
+  }
+  .approved-vendorInquiry {
+    position: absolute;
+    top: 0.063rem;
+    left: 2.375rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.938rem;
+    height: 3rem;
+  }
+  .vector-icon1-vendorInquiry {
+    position: absolute;
+    height: 20.41%;
+    width: 9.89%;
+    top: 38.78%;
+    right: 4.95%;
+    bottom: 40.82%;
+    left: 180px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-div-vendorInquiry {
+    position: absolute;
+    top: 1.938rem;
+    padding: 4px;
+    border-radius: 7px;
+    left: 81.688rem;
+    width: 11.375rem;
+    height: 3.063rem;
+  }
+  .line-icon-vendorInquiry {
+    position: absolute;
+    top: 6.625rem;
+    left: 0.188rem;
+    width: 95.719rem;
+    height: 1px;
+  }
+  .div1-vendorInquiry,
+  .div2-vendorInquiry,
+  .karan-vendorInquiry,
+  .karan12gmailcom-vendorInquiry {
+    position: absolute;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div1-vendorInquiry {
+    top: 0;
+    left: 0;
+    width: 5.063rem;
+    height: 6.5rem;
+  }
+  .div2-vendorInquiry,
+  .karan-vendorInquiry,
+  .karan12gmailcom-vendorInquiry {
+    top: 0.125rem;
+    left: 21.75rem;
+    width: 20.188rem;
+    height: 6.563rem;
+  }
+  .div2-vendorInquiry,
+  .karan12gmailcom-vendorInquiry {
+    top: 0.063rem;
+    left: 61.313rem;
+    width: 13.375rem;
+  }
+  .karan12gmailcom-vendorInquiry {
+    left: 41.688rem;
+    width: 17.188rem;
+    height: 6.625rem;
+  }
+  .parent-vendorInquiry,
+  .rectangle-container-vendorInquiry {
+    position: absolute;
+    top: 7.375rem;
+    left: 0;
+    width: 95.906rem;
+    height: 6.688rem;
+    font-size: var(--font-size-3xl);
+  }
+  .rectangle-container-vendorInquiry {
+    top: 5.375rem;
+    width: 95.938rem;
+    height: 53.125rem;
+    font-size: var(--font-size-5xl);
+  }
+  .group-container-vendorInquiry {
+    position: absolute;
+    top: 1.125rem;
+    left: 2rem;
+    width: 95.938rem;
+    height: 58.5rem;
+  }
+  .rectangle-parent-vendorInquiry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.063rem;
+    height: 61.813rem;
+  }
+  .group-parent-vendorInquiry {
+    width: 100%;
+    position: relative;
+    height: 61.813rem;
+    text-align: center;
+    font-size: 1.875rem;
+    color: var(--color-black);
+    font-family: var(--font-sora);
+  }
+  

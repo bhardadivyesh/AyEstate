@@ -13,13 +13,15 @@ const CategoryRoute = require('./Routes/Admin/Category/CategoryRoute')
 const ProductRoute = require('./Routes/Admin/Listings/ListingSchema')
 const ListingDetailRoute = require('./Routes/ListingDetailProperty/ListingDetailPropertyRoute')
 const MembershipPricingRoute = require('./Routes/MembershipPrice/MembershipPriceRoute')
-
+const multerRoute = require('./Routes/Multer/multer')
+const path = require('path');
 const app = express();
 const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json({ limit: '500mb' })); 
 app.use(bodyParser.urlencoded({ limit: '200mb', extended: true })); 
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 const url = "mongodb://localhost:27017/AyEstate";
@@ -48,6 +50,7 @@ app.use(CategoryRoute)
 app.use(ProductRoute)
 app.use(ListingDetailRoute)
 app.use(MembershipPricingRoute)
+app.use('/upload', multerRoute);
 
 
 app.listen(port, () => {
