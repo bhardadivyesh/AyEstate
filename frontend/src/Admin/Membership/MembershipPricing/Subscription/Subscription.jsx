@@ -6,9 +6,12 @@ import { useContext, useState } from "react";
 import membershipPriceContext from "../MembershipPricing";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import dashboardContext from "../../../admin";
 
 const Subscription = () => {
   const value = useContext(membershipPriceContext);
+  const membershipValue = useContext(dashboardContext);
+  console.log(membershipValue.membershipData.discount);
   const [showMore, setShowMore] = useState(false);
   const {
     register,
@@ -17,45 +20,43 @@ const Subscription = () => {
   } = useForm();
   const onSubmit = async (data) => {
     let priceData = value.pricingDetail;
-      let allData = { ...data, ...priceData };
-      const formData = new FormData();
-      formData.append('discount', allData.discount);
-      formData.append('discountPrice', allData.discountPrice);
-      formData.append('listingNumber', allData.listingNumber);
-      formData.append('membershipdescription1', allData.membershipdescription1);
-      formData.append('membershipdescription2', allData.membershipdescription2);
-      formData.append('membershipdescription3', allData.membershipdescription3);
-      formData.append('membershipdescription4', allData.membershipdescription4);
-      formData.append('membershipdescription5', allData.membershipdescription5);
-      formData.append('price', allData.price);
-      formData.append('title', allData.title);
-      formData.append('logoImage', allData.logoImage[0]);
-      formData.append('image1', allData.image1[0]);
-      formData.append('image2', allData.image2[0]);
-      formData.append('image3', allData.image3[0]);
-      formData.append('image4', allData.image4[0]);
-      formData.append('image5', allData.image5[0]);
-  
-      try {
-        const response = await axios.post('http://localhost:3000/upload/uploadMultiple', formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
-        });
-  
-        alert('Files and data uploaded successfully!');
-        console.log(response.data);
-        reset(); // Reset form after successful submission
-      } catch (error) {
-        console.error('Error uploading files and data:', error);
-        alert('Error uploading files and data. Please try again.');
+    let allData = { ...data, ...priceData };
+    console.log(allData);
+    const formData = new FormData();
+    for (let i = 1; i <= 6; i++) {
+      if (allData[`image${i}`]) {
+        console.log(`image${i}`, allData[`image${i}`][0]);
+        formData.append(`image${i}`, allData[`image${i}`][0]);
       }
+    }
+    formData.append("name", allData.name);
+    formData.append("price", allData.price);
+    formData.append("discount", allData.discount);
+    formData.append("discountPrice", allData.discountPrice);
+    formData.append("listingNumber", allData.listingNumber);
+    formData.append("membershipdescription1", allData.membershipdescription1);
+    formData.append("membershipdescription2", allData.membershipdescription2);
+    formData.append("membershipdescription3", allData.membershipdescription3);
+    formData.append("membershipdescription4", allData.membershipdescription4);
+    formData.append("membershipdescription5", allData.membershipdescription5);
+    formData.append("title", allData.title);
+    try {
+      const result = await axios.post(
+        "http://localhost:3000/post-membership",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
+      console.log(result.data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
-
   const handleAddMoreBenefitClick = () => {
     setShowMore(!showMore);
   };
-console.log("css component");
+  console.log("css component");
   return (
     <div className="subscription3">
       <main className="group-main">
@@ -79,18 +80,27 @@ console.log("css component");
                     className="rectangle-textarea"
                     {...register("image1", { required: true })}
                   />
-                  {errors.image1 && <span style={{color:'#d92323'}}>Enter Image 1</span>}
+                  {errors.image1 && (
+                    <span style={{ color: "#d92323" }}>Enter Image 1</span>
+                  )}
                   <div className="rectangle-parent74">
                     <input
                       type="text"
                       className="frame-child82"
                       placeholder="Membership Detail"
+                      defaultValue={
+                        membershipValue.membershipData.membershipdescription1 !=
+                          "" &&
+                        membershipValue.membershipData.membershipdescription1
+                      }
                       {...register("membershipdescription1", {
                         required: true,
                       })}
                     />
                     {errors.membershipdescription1 && (
-                      <span style={{color:'#d92323'}}>This field is required</span>
+                      <span style={{ color: "#d92323" }}>
+                        This field is required
+                      </span>
                     )}
                     <div className="vector-wrapper2">
                       <img className="vector-icon10" alt="" src={vector} />
@@ -103,18 +113,29 @@ console.log("css component");
                     className="frame-child83"
                     {...register("image2", { required: true })}
                   />
-                  {errors.image2 && <span style={{color:'#d92323'}}>This field is required</span>}
+                  {errors.image2 && (
+                    <span style={{ color: "#d92323" }}>
+                      This field is required
+                    </span>
+                  )}
                   <div className="rectangle-parent76">
                     <input
                       type="text"
                       className="frame-child84"
                       placeholder="Membership Detail"
+                      defaultValue={
+                        membershipValue.membershipData.membershipdescription2 !=
+                          "" &&
+                        membershipValue.membershipData.membershipdescription2
+                      }
                       {...register("membershipdescription2", {
                         required: true,
                       })}
                     />
                     {errors.membershipdescription2 && (
-                      <span style={{color:'#d92323'}}>This field is required</span>
+                      <span style={{ color: "#d92323" }}>
+                        This field is required
+                      </span>
                     )}
                     <div className="vector-wrapper3">
                       <img className="vector-icon11" alt="" src={vector} />
@@ -127,18 +148,29 @@ console.log("css component");
                     className="frame-child85"
                     {...register("image3", { required: true })}
                   />
-                  {errors.image3 && <span style={{color:'#d92323'}}>This field is required</span>}
+                  {errors.image3 && (
+                    <span style={{ color: "#d92323" }}>
+                      This field is required
+                    </span>
+                  )}
                   <div className="rectangle-parent78">
                     <input
                       type="text"
                       className="frame-child86"
                       placeholder="Membership Detail"
+                      defaultValue={
+                        membershipValue.membershipData.membershipdescription3 !=
+                          "" &&
+                        membershipValue.membershipData.membershipdescription3
+                      }
                       {...register("membershipdescription3", {
                         required: true,
                       })}
                     />
                     {errors.membershipdescription3 && (
-                      <span style={{color:'#d92323'}}>This field is required</span>
+                      <span style={{ color: "#d92323" }}>
+                        This field is required
+                      </span>
                     )}
                     <div className="vector-wrapper4">
                       <img className="vector-icon12" alt="" src={vector} />
@@ -152,17 +184,28 @@ console.log("css component");
                       className="frame-child87"
                       {...register("image4", { required: true })}
                     />
-                    {errors.image4 && <span style={{color:'#d92323'}}>This field is required</span>}
+                    {errors.image4 && (
+                      <span style={{ color: "#d92323" }}>
+                        This field is required
+                      </span>
+                    )}
                     <input
                       className="frame-child88"
                       type="text"
                       placeholder="Membership Detail"
+                      defaultValue={
+                        membershipValue.membershipData.membershipdescription4 !=
+                          "" &&
+                        membershipValue.membershipData.membershipdescription4
+                      }
                       {...register("membershipdescription4", {
                         required: true,
                       })}
                     />
                     {errors.membershipdescription4 && (
-                      <span style={{color:'#d92323'}}>This field is required</span>
+                      <span style={{ color: "#d92323" }}>
+                        This field is required
+                      </span>
                     )}
                   </div>
                   <div className="vector-wrapper5">
@@ -180,19 +223,31 @@ console.log("css component");
                       <input
                         type="file"
                         className="frame-child87"
+                       
                         {...register("image5", { required: true })}
                       />
-                      {errors.image5 && <span style={{color:'#d92323'}}>This field is required</span>}
+                      {errors.image5 && (
+                        <span style={{ color: "#d92323" }}>
+                          This field is required
+                        </span>
+                      )}
                       <input
                         className="frame-child88"
                         type="text"
                         placeholder="Membership Detail"
+                        defaultValue={
+                          membershipValue.membershipData
+                            .membershipdescription5 != "" &&
+                          membershipValue.membershipData.membershipdescription5
+                        }
                         {...register("membershipdescription5", {
                           required: true,
                         })}
                       />
                       {errors.membershipdescription5 && (
-                        <span style={{color:'#d92323'}}>This field is required</span>
+                        <span style={{ color: "#d92323" }}>
+                          This field is required
+                        </span>
                       )}
                     </div>
                     <div className="vector-wrapper5">

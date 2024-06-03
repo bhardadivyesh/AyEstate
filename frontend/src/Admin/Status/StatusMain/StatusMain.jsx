@@ -10,6 +10,7 @@ import axios from "axios";
 const StatusMain = () => {
     const [statusRender,setStatusRender] = useState("pending")
     const [previewPageRenderPage,setPreviewPageRender] = useState(false)
+    const [vendorListingData,setVendorListingData] = useState([])
    
   return (
     <div className="status-main">
@@ -20,7 +21,7 @@ const StatusMain = () => {
           <button type="submit" className="rectangle-parent38-main group-child13-main active-main" onClick={()=>setStatusRender("active")}>Active (5)</button>
           <button type="submit" className="rectangle-parent39-main group-child14-main reject-main" onClick={()=>setStatusRender("reject")}>Reject (7)</button>
         </div>
-       <statusContext.Provider value={{previewPageRenderPage,setPreviewPageRender}}>
+       <statusContext.Provider value={{previewPageRenderPage,vendorListingData,setPreviewPageRender,setVendorListingData}}>
        {statusRender == "pending" && <PendingStatus />}
        {statusRender == "active" && <ActiveStatus />}
        {statusRender == "reject" && <RejectStatus />}

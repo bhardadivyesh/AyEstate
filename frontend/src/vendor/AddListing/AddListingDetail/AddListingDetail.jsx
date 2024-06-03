@@ -1,12 +1,12 @@
 import ViewMoreIcon from "../../../assets/admin/vendordashboard/AddListing/AddListingDetail/viewMore.png";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
 import { useContext, useState } from "react";
 import "./AddListingDetail.css";
 import AddListingContext from "../AddListing";
 const AddListingDetail = () => {
   const value = useContext(AddListingContext);
-  const [addListingDetailData,setAddListingDetailData] = useState([])
+  const [addListingDetailData, setAddListingDetailData] = useState([]);
   const [addMoreToggle, setAddMoreToggle] = useState(false);
   const {
     register,
@@ -14,13 +14,43 @@ const AddListingDetail = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    setAddListingDetailData(data)
-  }
-  let listingAddData = value.addListingData;
-  let listingDataDetail = addListingDetailData
-  let allListingData = {...listingAddData,...listingDataDetail}
-  console.log(allListingData);
+  const onSubmit = async (data) => {
+    setAddListingDetailData(data);
+    let listingAddData = value.addListingData;
+    let listingDataDetail = addListingDetailData;
+    let allListingData = { ...listingAddData, ...listingDataDetail };
+    console.log(allListingData);
+    const formData = new FormData();
+    for (let i = 1; i <= 4; i++) {
+      if (allListingData[`image${i}`]) {
+        console.log(`image${i}`, allListingData[`image${i}`][0]);
+        formData.append(`image${i}`, allListingData[`image${i}`][0]);
+      }
+    }
+    formData.append("bedIcon", allListingData.bedIcon);
+    formData.append("category", allListingData.category);
+    formData.append("date", allListingData.date);
+    formData.append("description", allListingData.description);
+    formData.append("listingDescription", allListingData.listingDescription);
+    formData.append("listingTitle", allListingData.listingTitle);
+    formData.append("location", allListingData.location);
+    formData.append("locationIcon", allListingData.locationIcon);
+    formData.append("price", allListingData.price);
+    formData.append("sizeIcon", allListingData.sizeIcon);
+    formData.append("washbasinIcon", allListingData.washbasinIcon);
+    try {
+      const result = await axios.post(
+        "http://localhost:3000/post-vendorListing",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
+      console.log(result.data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div className="listing-detail1-addListingDetail">

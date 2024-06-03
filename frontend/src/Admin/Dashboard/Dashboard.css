@@ -230,6 +230,17 @@
   height: 2.325rem;
   padding-top: 8px;
 }
+.manage-dashboard{
+  position: absolute;
+  top: 1.225rem;
+  left: 5.056rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  width: 10.438rem;
+  height: 2.325rem;
+  padding-top: 8px;
+}
 .product-3-icon {
   position: absolute;
   top: 0.713rem;

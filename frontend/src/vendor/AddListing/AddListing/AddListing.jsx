@@ -125,7 +125,6 @@ const AddListing = () => {
                   <input type="number" className="products-price1-vendor-addListing" placeholder="Property price" {...register("price",{required:true})}/>       
                 </div>
                 <div className="rectangle-parent1-vendor-addListing">
-                  {/* <div className="frame-child2-vendor-addListing" /> */}
                   <input type="date" className="date-picker-addListing"  {...register("date",{required : true})} />
                 </div>
               </div>
@@ -185,7 +184,8 @@ const AddListing = () => {
           <div className="frame-wrapper2-vendor-addListing">
             <div className="frame-parent2-vendor-addListing">
               <input type="file" className="rectangle-parent4-vendor-addListing" {...register("image1",{required : true})}/>
-              <button type="submit" className="rectangle-parent6-vendor-addListing" onClick={handleNextBtnClick}>
+              <button type="submit" className="rectangle-parent6-vendor-addListing" >
+              {/* onClick={handleNextBtnClick} */}
                 <span className="next-vendor-addListing">Next</span>
               </button>
             </div>

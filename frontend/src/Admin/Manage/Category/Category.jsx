@@ -109,9 +109,6 @@ const Category = () => {
                     onClick={() => handleDeleteClick(items)}
                   />
                 </td>
-                {/* <td className="deleteIcon centerImages"> */}
-                  
-                {/* </td> */}
               </tr>
             ))}
           </tbody>

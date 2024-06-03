@@ -4,9 +4,12 @@ import { useForm } from "react-hook-form";
 import priceLogo from "../../../../assets/admin/membership/pricing/priceImage.png";
 import line from "../../../../assets/admin/membership/pricing/line.png";
 import MembershipPriceContext from "../MembershipPricing";
+import dashboardContext from "../../../admin";
+
 const FrameComponent2 = () => {
   const value = useContext(MembershipPriceContext);
-  console.log(value);
+  const membershipValue = useContext(dashboardContext);
+  console.log(membershipValue.membershipData);
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
@@ -71,7 +74,7 @@ const FrameComponent2 = () => {
               <input
                 type="file"
                 className="logo-input-file"
-                {...register("logoImage", { required: true })}
+                {...register("image6", { required: true })}
               />
             </div>
             {errors.logoImage && (
@@ -81,6 +84,11 @@ const FrameComponent2 = () => {
               className="rectangle-parent116"
               placeholder="Enter Title"
               {...register("title", { required: true })}
+              defaultValue={
+                membershipValue.membershipData.title !=
+                  "" &&
+                membershipValue.membershipData.title
+              }
             />
             {errors.title && (
               <span style={{ color: "#d92323" }}>Enter Title</span>
@@ -103,6 +111,11 @@ const FrameComponent2 = () => {
                     type="number"
                     className="div36"
                     placeholder="Enter Price "
+                    defaultValue={
+                      membershipValue.membershipData.price !=
+                        "" &&
+                      membershipValue.membershipData.price
+                    }
                     {...register("price", { required: true })}
                   />
                 </section>
@@ -141,6 +154,11 @@ const FrameComponent2 = () => {
                       <input
                         className="frame-child121-membership-pricing-Frame2"
                         type="number"
+                        defaultValue={
+                          membershipValue.membershipData.discount !=
+                            "" &&
+                          membershipValue.membershipData.discount
+                        }
                         {...register("discount", {
                           required: true,
                           min: 0,
@@ -208,6 +226,11 @@ const FrameComponent2 = () => {
                     type="text"
                     readOnly
                     value={discountedValue}
+                    defaultValue={
+                      membershipValue.membershipData.discountPrice !=
+                        "" &&
+                      membershipValue.membershipData.discountPrice
+                    }
                     {...register("discountPrice", { required: true })}
                   />
                   <div className="rectangle-parent97-membership-pricing-Frame2">
@@ -236,6 +259,11 @@ const FrameComponent2 = () => {
                 type="number"
                 className="number-item-membership-pricing-Frame2"
                 placeholder="enter listing number"
+                defaultValue={
+                  membershipValue.membershipData.listingNumber !=
+                    "" &&
+                  membershipValue.membershipData.listingNumber
+                }
                 {...register("listingNumber", { required: true, min: 0 })}
               />
             </section>

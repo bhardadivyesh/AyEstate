@@ -10,9 +10,10 @@ const InquiryRoute = require('./Routes/Inquiry/InquiryRoute')
 const RazorpayRoute = require('./Routes/Payment/PaymentRoute')
 const LocationRoute = require('./Routes/Admin/Location/LocationRoute')
 const CategoryRoute = require('./Routes/Admin/Category/CategoryRoute')
-const ProductRoute = require('./Routes/Admin/Listings/ListingSchema')
+// const ProductRoute = require('./Routes/Admin/Listings/ListingSchema')
 const ListingDetailRoute = require('./Routes/ListingDetailProperty/ListingDetailPropertyRoute')
 const MembershipPricingRoute = require('./Routes/MembershipPrice/MembershipPriceRoute')
+const VendorListingRoute = require('./Routes/Vendor/VendorListing/VendorListingRoute')
 const multerRoute = require('./Routes/Multer/multer')
 const path = require('path');
 const app = express();
@@ -47,9 +48,10 @@ app.use(InquiryRoute)
 app.use(RazorpayRoute)
 app.use(LocationRoute)
 app.use(CategoryRoute)
-app.use(ProductRoute)
+// app.use(ProductRoute)
 app.use(ListingDetailRoute)
 app.use(MembershipPricingRoute)
+app.use(VendorListingRoute)
 app.use('/upload', multerRoute);
 
 

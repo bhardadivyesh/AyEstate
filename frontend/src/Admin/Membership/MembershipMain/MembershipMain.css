@@ -427,6 +427,7 @@
   border-radius: 5px;
   background-color: #d11a2a;
   width: 111px;
+  cursor: pointer;
 }
 .delete-membershipMain,
 .group-child8-membershipMain,
@@ -444,6 +445,7 @@
 }
 .rectangle-parent7-membershipMain {
   left: 208.9px;
+  cursor: pointer;
   width: 111.1px;
   color: #fff;
 }
@@ -529,7 +531,6 @@
   right: 0;
   bottom: 66.41%;
   left: 0;
-  color: rgba(0, 0, 0, 0.3);
 }
 .checkmark-circle-2-icon2-membershipMain {
   position: absolute;
@@ -606,7 +607,7 @@
   right: 0;
   bottom: 22.14%;
   left: 0;
-  color: rgba(0, 0, 0, 0.3);
+  
 }
 .checkmark-circle-2-icon4-membershipMain {
   position: absolute;
@@ -934,7 +935,6 @@
   right: 0;
   bottom: 66.16%;
   left: 0;
-  color: rgba(0, 0, 0, 0.3);
 }
 .checkmark-circle-2-icon7-membershipMain {
   position: absolute;

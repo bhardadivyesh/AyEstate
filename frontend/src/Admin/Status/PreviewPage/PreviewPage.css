@@ -27,12 +27,14 @@
   }
   .medan-main {
     position: absolute;
+    padding-left: 15px;
     top: 1.563rem;
+    text-align: left;
     left: 0.75rem;
     line-height: 1.5rem;
     font-weight: 300;
     display: inline-block;
-    width: 11.5rem;
+    width: 39.5rem;
     height: 2.5rem;
   }
   .rectangle-parent44-main {
@@ -60,11 +62,12 @@
   .category-main {
     position: absolute;
     top: 1.5rem;
+    text-align: left;
     left: 47.563rem;
     line-height: 1.5rem;
     font-weight: 300;
     display: inline-block;
-    width: 9.875rem;
+    width: 38.875rem;
     height: 2.375rem;
   }
   .group-parent4-main {
@@ -168,7 +171,7 @@
   }
   .villa-main {
     position: absolute;
-    top: 0.75rem;
+    top: 1rem;
     left: 9.25rem;
     line-height: 160%;
     font-weight: 300;
@@ -216,10 +219,11 @@
   .div31-main {
     position: absolute;
     top: 0.563rem;
-    left: 12.125rem;
+    text-align: left;
+    left: 9.125rem;
     line-height: 160%;
     display: inline-block;
-    width: 2.375rem;
+    width: 10.375rem;
     height: 2.688rem;
   }
   .group-child28-main,
@@ -272,10 +276,11 @@
   .div32-main {
     position: absolute;
     top: 0.75rem;
-    left: 10.5rem;
+    left: 7.5rem;
+    text-align: left;
     line-height: 160%;
     display: inline-block;
-    width: 3.625rem;
+    width: 10.625rem;
     height: 2.688rem;
   }
   .group-child30-main,
@@ -306,7 +311,8 @@
   .div33-main {
     position: absolute;
     top: 0.813rem;
-    left: 7rem;
+    left: 8rem;
+    text-align: left;
     line-height: 160%;
     display: inline-block;
     width: 10.563rem;
@@ -352,11 +358,11 @@
   .cozy-cottage-main {
     position: absolute;
     top: 1.688rem;
-    left: 3.125rem;
+    left: 2.125rem;
     line-height: 1.5rem;
     font-weight: 300;
     display: inline-block;
-    width: 30rem;
+    width: 37rem;
     height: 2.563rem;
   }
   .group-frame-main,
@@ -388,12 +394,12 @@
     top: 1.875rem;
     left: 47.813rem;
     line-height: 1.5rem;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     font-family: 'Sora';
-  font-weight: 300;
-  font-size: 32px;
-    width: 12rem;
+    font-weight: 300;
+    font-size: 32px;
+    width: 38rem;
     height: 1.688rem;
   }
   .group-parent8-main {
@@ -442,6 +448,7 @@
   .div35-main {
     position: absolute;
     top: 1.063rem;
+    text-align: start;
     left: 3.063rem;
     line-height: 150%;
     font-weight: 300;

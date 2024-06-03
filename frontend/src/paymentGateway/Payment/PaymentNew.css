@@ -975,6 +975,7 @@
   }
   .frame-parent130-paymentNew {
     width: 303px;
+    padding-left: 11px;
     flex-direction: row;
     gap: 26.9px;
     flex-shrink: 0;
@@ -1043,6 +1044,7 @@
   .frame-parent131-paymentNew {
     align-self: stretch;
     flex-direction: row;
+    padding-left: 11px;
     gap: 23.8px;
     flex-shrink: 0;
     debug_commit: bf4bc93;

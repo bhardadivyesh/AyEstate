@@ -10,20 +10,21 @@ import dashboardContext from '../../admin';
 const  DashboardCharts= () => {
   const value = useContext(dashboardContext)
   const [activeMemberData,setActiveMemberData] = useState()
-  console.log(activeMemberData);
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setActiveMemberData(res.data);
     });
   }, []);
   const membershipRevenueTotal = activeMemberData?.reduce((total, current) => {
+    console.log(total);
+    console.log(current);
     return total + Number(current.paymentValue);
   }, 0);
+  console.log(membershipRevenueTotal);
   const handleNavigation = (navigationPath) =>{
    value.setRenderManage(navigationPath);
     
   }
-  console.log(activeMemberData?.length);
   return (
     <div className="group-parent-dashboard-charts">
       <div className="group-container-dashboard-charts">

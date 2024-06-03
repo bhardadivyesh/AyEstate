@@ -23,8 +23,7 @@ import ActiveMemberMain from "../Membership/MembershipMain/ActiveMemberMain/Acti
 
 const Dashboard = () => {
   const [renderManage, setRenderManage] = useState("dashboardcomponent");
-  console.log(renderManage);
-
+  const [membershipData,setMembershipData] = useState([])
   const handleManageClick = (state) => {
     setRenderManage(state);
   };
@@ -67,11 +66,11 @@ const Dashboard = () => {
         onClick={() => handleManageClick("dashboardcomponent")}
       >
         <img className="product-3-icon" alt="Dashboard Icon" src={dashboard} />
-        <span className="manage">Dashboard</span>
+        <span className="manage-dashboard">Dashboard</span>
       </button>
       <div className="rectangle-container">
         <div className="group-inner" />
-        <dashboardContext.Provider value={{ renderManage, setRenderManage }}>
+        <dashboardContext.Provider value={{ renderManage,membershipData, setRenderManage,setMembershipData }}>
           {renderManage === "Manage" && <ManageMain />}
           {renderManage === "status" && <StatusMain />}
           {renderManage === "vendor" && <VendorMain />}

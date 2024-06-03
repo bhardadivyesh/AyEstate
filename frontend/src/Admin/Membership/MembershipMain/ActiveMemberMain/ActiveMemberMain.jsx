@@ -50,7 +50,7 @@ const ActiveMemberMain = () => {
                     <div className="line-activeMember-Main" />
                   </>
                 );
-              })}z
+              })}
             </tbody>
           </table>
         </section>
