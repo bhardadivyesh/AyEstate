@@ -10,7 +10,6 @@ const PendingRequest = () => {
     const updatedStatus = e.target.value;
     if (updatedStatus !== "") {
       const updatedVendor = { ...vendor, status: updatedStatus };
-      console.log(vendor.status);
       axios
         .put("http://localhost:3000/put-Registration", updatedVendor)
         .then((res) => {

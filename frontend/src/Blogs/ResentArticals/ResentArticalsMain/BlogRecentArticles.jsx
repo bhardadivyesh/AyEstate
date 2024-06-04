@@ -12,7 +12,6 @@ const BlogRecentArticles = () => {
       setArticals(res.data);
     });
   }, []);
-  console.log(articals);
   // pagination logic
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;

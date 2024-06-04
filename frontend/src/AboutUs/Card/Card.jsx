@@ -19,7 +19,6 @@ const Card = ({ teamData }) => {
     {data?.map((items, index) => {
         return (
           <div key={index}>
-            {console.log()}
             <img
               className="photo-by-juan-ordonez-aboutCard"
               loading="lazy"

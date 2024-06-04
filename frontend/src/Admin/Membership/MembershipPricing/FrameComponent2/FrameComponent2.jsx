@@ -9,7 +9,6 @@ import dashboardContext from "../../../admin";
 const FrameComponent2 = () => {
   const value = useContext(MembershipPriceContext);
   const membershipValue = useContext(dashboardContext);
-  console.log(membershipValue.membershipData);
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
@@ -111,12 +110,8 @@ const FrameComponent2 = () => {
                     type="number"
                     className="div36"
                     placeholder="Enter Price "
-                    defaultValue={
-                      membershipValue.membershipData.price !=
-                        "" &&
-                      membershipValue.membershipData.price
-                    }
-                    {...register("price", { required: true })}
+                    defaultValue={0}
+                    {...register("price")}
                   />
                 </section>
               </div>
@@ -160,7 +155,6 @@ const FrameComponent2 = () => {
                           membershipValue.membershipData.discount
                         }
                         {...register("discount", {
-                          required: true,
                           min: 0,
                           max: 100,
                         })}

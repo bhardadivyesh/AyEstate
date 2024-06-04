@@ -9,7 +9,7 @@ const MembershipRevenue = () => {
   const [activeMemberData, setActiveMemberData] = useState([]);
   const value = useContext(membershipRevenue);
   useEffect(() => {
-    axios.get("http://localhost:3000/get-Registration").then((res) => {
+    axios.get("http://localhost:3000/get-Registration-paidVendor").then((res) => {
       setActiveMemberData(res.data);
     });
   }, []);
@@ -19,7 +19,6 @@ const MembershipRevenue = () => {
   const handleDetailButtonClick = (membershipData)=>{
     value.setPopUpToggle(true)
     value.setMembershipMemberData(membershipData)
-    console.log(membershipData);
   }
   return (
     <>
@@ -37,13 +36,13 @@ const MembershipRevenue = () => {
               <div className="separator-content-membership-revenue">{`₹${membershipRevenueTotal}`}</div>
             </div>
           </div>
-          <div className="rectangle-parent84-membership-revenue">
+          {/* <div className="rectangle-parent84-membership-revenue">
             <div className="frame-child96-membership-revenue" />
             <div className="total-refund-membership-revenue">Total refund</div>
             <div className="container-membership-revenue">
               <div className="div37-membership-revenue">0</div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="rectangle-parent85-membership-revenue">
           <div className="frame-child97-membership-revenue" />
@@ -89,7 +88,6 @@ const MembershipRevenue = () => {
                       className="frame-parent105-membership-revenue"
                       key={index}
                     >
-                      {console.log(items)}
                       <td className="div43-membership-revenue">{index + 1}</td>
                       <td className="div44-membership-revenue">{moment.utc(items.createdAt).tz('Asia/Kolkata').format('YYYY-MM-DD')}</td>
                       <td className="div45-membership-revenue">{`₹${items.paymentValue}`}</td>

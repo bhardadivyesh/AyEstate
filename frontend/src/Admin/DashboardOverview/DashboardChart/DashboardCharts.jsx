@@ -5,26 +5,35 @@ import paidVendor from "../../../assets/admin/DashboardChart/paidVendor.png"
 import freeVendor from "../../../assets/admin/DashboardChart/freeVendor.png"
 import rightArrow from "../../../assets/admin/DashboardChart/rightArrow.png"
 import { useContext, useEffect, useState } from 'react';
+import vector from "../../../assets/admin/DashboardChart/Vector.png"
 import axios from 'axios';
 import dashboardContext from '../../admin';
 const  DashboardCharts= () => {
   const value = useContext(dashboardContext)
   const [activeMemberData,setActiveMemberData] = useState()
+  const [listingData,setListingData] = useState([])
+  const [freeVendorData,setFreeVendorData] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:3000/get-Registration").then((res) => {
+    axios.get("http://localhost:3000/get-Registration-paidVendor").then((res) => {
       setActiveMemberData(res.data);
     });
+    axios.get('http://localhost:3000/get-vendorListing').then((res)=>{
+      setListingData(res.data)
+    })
+    axios.get("http://localhost:3000/get-Registration-freeVendor").then((res)=>{
+      setFreeVendorData(res.data)
+    })
   }, []);
   const membershipRevenueTotal = activeMemberData?.reduce((total, current) => {
-    console.log(total);
-    console.log(current);
+
     return total + Number(current.paymentValue);
   }, 0);
-  console.log(membershipRevenueTotal);
   const handleNavigation = (navigationPath) =>{
    value.setRenderManage(navigationPath);
-    
   }
+  let activeListing = listingData.filter(items => items.status == "active")
+  let rejectListing = listingData.filter(items => items.status == "reject")
+  let pendingListing = listingData.filter(items => items.status == "pending")
   return (
     <div className="group-parent-dashboard-charts">
       <div className="group-container-dashboard-charts">
@@ -104,7 +113,7 @@ const  DashboardCharts= () => {
                     <div className="active-listing-group-dashboard-charts">
                       <div className="active-listing1-dashboard-charts">Active listing</div>
                       <div className="group-dashboard-charts">
-                        <div className="div8-dashboard-charts">70</div>
+                        <div className="div8-dashboard-charts">{activeListing?.length}</div>
                         <div className="active-listing-container-dashboard-charts">
                           <div className="active-listing2-dashboard-charts">Active listing</div>
                           <div className="rectangle-div-dashboard-charts" />
@@ -118,7 +127,7 @@ const  DashboardCharts= () => {
                         <img
                           className="vector-icon1-dashboard-charts"
                           alt=""
-                          src="/vector.svg"
+                          src={vector}
                         />
                       </div>
                     </div>
@@ -198,7 +207,7 @@ const  DashboardCharts= () => {
                       <div className="reject-listing-parent-dashboard-charts">
                         <div className="reject-listing1-dashboard-charts">{`Reject listing `}</div>
                         <div className="parent1-dashboard-charts">
-                          <div className="div17-dashboard-charts">40</div>
+                          <div className="div17-dashboard-charts">{rejectListing?.length}</div>
                           <div className="reject-listing-group-dashboard-charts">
                             <div className="reject-listing2-dashboard-charts">
                               Reject listing
@@ -210,7 +219,7 @@ const  DashboardCharts= () => {
                       <div className="group-child29-dashboard-charts" />
                       <div className="march-20221-dashboard-charts">March 2022</div>
                     </div>
-                    <img className="vector-icon2-dashboard-charts" alt="" src="/vector.svg" />
+                    <img className="vector-icon2-dashboard-charts" alt="" src={vector} />
                   </div>
                 </div>
               </div>
@@ -285,7 +294,7 @@ const  DashboardCharts= () => {
                   <div className="pending-listing-parent-dashboard-charts">
                     <div className="pending-listing1-dashboard-charts">Pending listing</div>
                     <div className="parent3-dashboard-charts">
-                      <div className="div26-dashboard-charts">30</div>
+                      <div className="div26-dashboard-charts">{pendingListing?.length}</div>
                       <div className="pending-listing-group-dashboard-charts">
                         <div className="pending-listing2-dashboard-charts">Pending listing</div>
                         <div className="group-child45-dashboard-charts" />
@@ -296,7 +305,7 @@ const  DashboardCharts= () => {
                     <div className="rectangle-group-dashboard-charts">
                       <div className="group-child46-dashboard-charts" />
                       <div className="march-20222-dashboard-charts">March 2022</div>
-                      <img className="vector-icon3-dashboard-charts" alt="" src="/vector.svg" />
+                      <img className="vector-icon3-dashboard-charts" alt="" src={vector} />
                     </div>
                   </div>
                 </div>
@@ -350,7 +359,7 @@ const  DashboardCharts= () => {
                 />
                 <div className="free-revenue-parent-dashboard-charts">
                   <div className="free-revenue1-dashboard-charts">Free Vendor</div>
-                  <div className="div29-dashboard-charts">50</div>
+                  <div className="div29-dashboard-charts">{freeVendorData?.length}</div>
                   <button className="view-all-detail-container-dashboard-charts">
                     <span className="view-all-detail2-dashboard-charts">View all Details</span>
                     <img className="group-child49-dashboard-charts" alt="" src={rightArrow} />

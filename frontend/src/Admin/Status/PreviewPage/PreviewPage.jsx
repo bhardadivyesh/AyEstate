@@ -9,8 +9,7 @@ import "react-awesome-slider/dist/styles.css";
 import { useContext } from "react";
 import statusContext from "../statusContext";
 const PreviewPage = () => {
-  const value = useContext(statusContext)
-  console.log(value.vendorListingData.images);
+  const value = useContext(statusContext);
   return (
     <div className="preview1-main">
       <div className="group-parent3-main">
@@ -35,20 +34,17 @@ const PreviewPage = () => {
                 <div className="group-child23-main" />
                 <div className="morbi-sed-imperdiet-in-ipsum-parent-main">
                   <div className="morbi-sed-imperdiet-main">
-                  {`${value.vendorListingData.listingDescription}`}
-                  {`${value.vendorListingData.description}`} 
+                    {`${value.vendorListingData.listingDescription}`}
+                    {`${value.vendorListingData.description}`}
                   </div>
-                 
                 </div>
               </div>
               <AwesomeSlider className="placeholder-image-icon-main">
-                <div data-src={value.vendorListingData.images[0]} />
-                <div data-src={value.vendorListingData.images[1]} />
-                <div data-src={value.vendorListingData.images[2]} />
-                <div data-src={value.vendorListingData.images[3]} />
-
+                <div data-src={value?.vendorListingData?.images?.[0]} />
+                <div data-src={value?.vendorListingData?.images?.[1]} />
+                <div data-src={value?.vendorListingData?.images?.[2]} />
+                <div data-src={value?.vendorListingData?.images?.[3]} />
               </AwesomeSlider>
-             
             </div>
           </div>
           <div className="group-parent7-main">

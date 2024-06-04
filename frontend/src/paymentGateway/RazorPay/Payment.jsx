@@ -53,7 +53,6 @@ class Payment extends Component {
         })
           .then((resp) => resp.json())
           .then((data) => {
-            console.log("Request succeeded with JSON response", data);
             self.setState({ refund_id: response.razorpay_payment_id });
           })
           .catch((error) => {
@@ -92,7 +91,6 @@ class Payment extends Component {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log("Request succeeded with JSON response", data);
         alert("Refund Succeeded");
       })
       .catch((error) => {

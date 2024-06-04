@@ -19,7 +19,6 @@ const Membership = () => {
   const [membershipData, setMembershipData] = useState([]);
   const [renderApi, setRenderApi] = useState(false);
   const value = useContext(dashboardContext);
-  console.log(value);
   const navigate = useNavigate();
   const handleNavigation = (navigationPath) => {
     navigate(`/${navigationPath}`);
@@ -28,7 +27,7 @@ const Membership = () => {
     value.setRenderManage(navigatePath);
   };
   useEffect(() => {
-    axios.get("http://localhost:3000/get-Registration").then((res) => {
+    axios.get("http://localhost:3000/get-Registration-paidVendor").then((res) => {
       setActiveMemberData(res.data);
     });
     axios.get("http://localhost:3000/get-membership").then((res) => {
@@ -197,7 +196,6 @@ const Membership = () => {
                                     <div className="free-3-container-membershipMain">
                                       <span className="free-3-container1-membershipMain">
                                         <span className="free-membershipMain">
-                                          {console.log(items.discountPrice)}
                                           <span>
                                             {`${items?.discountPrice} / `}
                                             <s>{items?.price}</s>

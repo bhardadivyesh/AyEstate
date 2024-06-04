@@ -99,6 +99,11 @@
   width: 40.5rem;
   height: 4.188rem;
 }
+/* table css */
+.listing-row-status{
+  top: 10px;
+  justify-content: center;
+}
 .group-child15-main,
 .group-child16-main {
   position: absolute;

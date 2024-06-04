@@ -83,6 +83,22 @@ router.get("/get-membership", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.get("/get-membership-free", async (req, res) => {
+  try {
+    const baseUrl = req.protocol + '://' + req.get('host') + '/images/';
+    let getMembershipData = await membershipSchema.find({price : 0});
+    getMembershipData = getMembershipData.map(membership => {
+      membership.images = membership.images.map(image => baseUrl + image);
+      return membership;
+    });
+
+    res.status(200).json(getMembershipData);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 
 router.put('/put-membership', async (req, res) => {
   try {
@@ -102,7 +118,6 @@ router.put('/put-membership', async (req, res) => {
 router.delete('/delete-membership', async (req, res) => {
   try {
     const title = req.body.title;
-    console.log(title);
     let deleteMembership = await membershipSchema.findOneAndDelete({ title: title });
     if (!deleteMembership) {
       return res.status(404).json({ error: 'membership not found' });

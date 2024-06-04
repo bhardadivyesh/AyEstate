@@ -24,7 +24,6 @@ const Category = () => {
       .get("http://localhost:3000/get-category")
       .then((res) => setCategoryData(res.data))
       .catch((error) => toast.error("Failed to fetch categories."));
-      console.log("get api call");
   }, [renderComponent]);
   const onSubmit = async (data) => {
     try {

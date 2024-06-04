@@ -5,7 +5,6 @@ import "./MembershipPricing.css";
 import Subscription from "../Subscription/Subscription";
 const MembershipPricing = () => {
   const [pricingDetail, setPricingDetail] = useState([]);
-  console.log("2call");
   return (
     <div className="membership-pricing">
       <main className="membership-pricing-inner">

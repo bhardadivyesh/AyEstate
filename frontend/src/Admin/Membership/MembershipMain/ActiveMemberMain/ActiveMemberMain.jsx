@@ -39,7 +39,6 @@ const ActiveMemberMain = () => {
               {activeMember.map((items, index) => {
                 return (
                   <>
-                  {console.log(items)}
                     <tr className="table-row-activeMember-Main" key={index}>
                       <td className="row-id-activeMember-Main">{index + 1}</td>
                       <td className="row-name-activeMember-Main">{items.name}</td>

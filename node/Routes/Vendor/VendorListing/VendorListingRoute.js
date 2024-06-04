@@ -58,6 +58,7 @@ router.post(
           imageNames.push(imageName);
         }
       }
+      let status = "pending"
       const newListing = new VendorListingSchema({
         bedIcon: req.body.bedIcon,
         category: req.body.category,
@@ -70,7 +71,9 @@ router.post(
         locationIcon: req.body.locationIcon,
         price: req.body.price,
         sizeIcon: req.body.sizeIcon,
+        name : req.body.name,
         washbasinIcon: req.body.washbasinIcon,
+        status : status
       });
       await newListing.save();
       res.status(201).send("Listing created successfully");
@@ -80,7 +83,6 @@ router.post(
     }
   }
 );
-
 router.get("/get-vendorListing", async (req, res) => {
   try {
     const baseUrl = req.protocol + "://" + req.get("host") + "/images/";
@@ -89,7 +91,48 @@ router.get("/get-vendorListing", async (req, res) => {
       membership.images = membership.images.map((image) => baseUrl + image);
       return membership;
     });
-
+    res.status(200).json(getListingData);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/get-vendorListing-pending", async (req, res) => {
+  try {
+    const baseUrl = req.protocol + "://" + req.get("host") + "/images/";
+    let getListingData = await VendorListingSchema.find({status : "pending"});
+    getListingData = getListingData.map((membership) => {
+      membership.images = membership.images.map((image) => baseUrl + image);
+      return membership;
+    });
+    res.status(200).json(getListingData);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/get-vendorListing-active", async (req, res) => {
+  try {
+    const baseUrl = req.protocol + "://" + req.get("host") + "/images/";
+    let getListingData = await VendorListingSchema.find({status : "active"});
+    getListingData = getListingData.map((membership) => {
+      membership.images = membership.images.map((image) => baseUrl + image);
+      return membership;
+    });
+    res.status(200).json(getListingData);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/get-vendorListing-reject", async (req, res) => {
+  try {
+    const baseUrl = req.protocol + "://" + req.get("host") + "/images/";
+    let getListingData = await VendorListingSchema.find({status : "reject"});
+    getListingData = getListingData.map((membership) => {
+      membership.images = membership.images.map((image) => baseUrl + image);
+      return membership;
+    });
     res.status(200).json(getListingData);
   } catch (error) {
     console.error("Error:", error);
@@ -97,29 +140,24 @@ router.get("/get-vendorListing", async (req, res) => {
   }
 });
 
-router.put("/put-membership", async (req, res) => {
+router.put('/put-vendorListing', async (req, res) => {
   try {
-    const title = req.body.title;
-    const newMembership = req.body;
-
-    let updateMembership = await membershipSchema.findOneAndUpdate(
-      { title: title },
-      newMembership,
-      { new: true }
-    );
-    if (!updateMembership) {
-      return res.status(404).json({ error: "membership not found" });
+    const listingTitle = req.body.listingTitle; 
+    const status = req.body.status
+    
+    let updatedCategory = await VendorListingSchema.findOneAndUpdate({ listingTitle: listingTitle }, {status : status}, { new: true });
+    if (!updatedCategory) {
+        return res.status(404).json({ error: 'Listing not found' });
     }
-    res.status(200).json(updateMembership);
-  } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" });
-  }
+    res.status(200).json(updatedCategory);
+} catch (error) {
+    res.status(500).json({ error: 'Internal Server Error' }); 
+}
 });
 
 router.delete("/delete-membership", async (req, res) => {
   try {
     const title = req.body.title;
-    console.log(title);
     let deleteMembership = await membershipSchema.findOneAndDelete({
       title: title,
     });
@@ -132,4 +170,4 @@ router.delete("/delete-membership", async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = router

@@ -45,7 +45,6 @@ router.get("/get-location", async (req, res) => {
   router.delete('/delete-location', async (req, res) => {
     try {
       const location = req.body.locationName; 
-      console.log(location);
       let deletedLocation = await LocationSchema.findOneAndDelete({ locationName: location });
       if (!deletedLocation) {
         return res.status(404).json({ error: 'Location not found' });

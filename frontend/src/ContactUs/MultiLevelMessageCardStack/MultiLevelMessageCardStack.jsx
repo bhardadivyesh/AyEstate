@@ -47,7 +47,6 @@ const MultiLevelMessageCardStack = () => {
     try {
       axios.post("http://localhost:3000/post-contact", formData);
       axios.post("http://localhost:1337/contactuses", formData);
-      console.log("Data submitted successfully");
     } catch (error) {
       console.error("Error submitting data:", error);
     }

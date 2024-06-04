@@ -10,9 +10,6 @@ const RejectRequest = () => {
     const updatedStatus = e.target.value;
     if (updatedStatus !== "") {
       const updatedVendor = { ...vendor, status: updatedStatus };
-      console.log("vendor",vendor);
-      console.log("updatestatus",updatedStatus);
-      console.log(updatedVendor);
       axios.put('http://localhost:3000/put-Registration', updatedVendor)
         .then((res) => {
           setUpdateState(!updateState);

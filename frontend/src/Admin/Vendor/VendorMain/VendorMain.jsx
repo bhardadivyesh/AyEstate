@@ -11,7 +11,6 @@ const VendorMain = () => {
   const [pendingUsers,setPendingUsers] = useState([])
   const [activeUsers,setActiveUsers] = useState([])
   const [rejectUsers,setRejectUsers] = useState([])
-  console.log(rejectUsers);
   const handleVendorRendorState = (renderState) =>{
     setVendorManage(renderState)
   }
@@ -19,7 +18,6 @@ const VendorMain = () => {
   useEffect(() => {
     axios.get("http://localhost:3000/get-Registration").then((res) => {
       setVendorData(res.data);
-      console.log(res.data);
     });
   },[rejectUsers,activeUsers,pendingUsers]);   
   const PendingUsersData = vendorData.filter(items => items.status == "pending");

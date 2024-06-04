@@ -1,37 +1,40 @@
 import "./AddListing.css";
-import villaIcon from "../../../assets/admin/vendordashboard/AddListing/listing/villa.png"
-import washbasinIcon from "../../../assets/admin/vendordashboard/AddListing/listing/washbasin.png"
-import bedIcon from "../../../assets/admin/vendordashboard/AddListing/listing/bed.png"
-import sizeIcon from "../../../assets/admin/vendordashboard/AddListing/listing/size.png"
-import line from "../../../assets/admin/vendordashboard/AddListing/listing/Line 30.png"
+import villaIcon from "../../../assets/admin/vendordashboard/AddListing/listing/villa.png";
+import washbasinIcon from "../../../assets/admin/vendordashboard/AddListing/listing/washbasin.png";
+import bedIcon from "../../../assets/admin/vendordashboard/AddListing/listing/bed.png";
+import sizeIcon from "../../../assets/admin/vendordashboard/AddListing/listing/size.png";
+import line from "../../../assets/admin/vendordashboard/AddListing/listing/Line 30.png";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import AddListingContext from "../AddListing";
+import vendorDashboardContext from "../../VendorDashboardContext";
 const AddListing = () => {
-  const value = useContext(AddListingContext)
+  const value = useContext(AddListingContext);
+  const vendorMansterpageContext = useContext(vendorDashboardContext);
+  console.log(vendorMansterpageContext.activeListingValue);
   const [location, setLocation] = useState([]);
-  const [category,setCategory] = useState([])
+  const [category, setCategory] = useState([]);
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) =>{
-    value.setAddListingData(data)
-    value.setRenderAddListing("addListingDetail")
-  }
-  const handleNextBtnClick = () =>{
-    value.setRenderAddListing("addListingDetail")
-  }
+  const onSubmit = (data) => {
+    value.setAddListingData(data);
+    value.setRenderAddListing("addListingDetail");
+  };
+  const handleNextBtnClick = () => {
+    value.setRenderAddListing("addListingDetail");
+  };
 
   useEffect(() => {
     axios
       .get("http://localhost:3000/get-category")
       .then((res) => setCategory(res.data))
       .catch((error) => console.log(error));
-      axios
+    axios
       .get("http://localhost:3000/get-location")
       .then((res) => setLocation(res.data))
       .catch((error) => console.log(error));
@@ -40,19 +43,36 @@ const AddListing = () => {
     <div className="addlisting-vendor-addListing">
       <main className="rectangle-parent-vendor-addListing">
         <div className="frame-child-vendor-addListing" />
-        <button type="button" className="listing-vendor-addListing" onClick={()=>value.setRenderAddListing("addListing")}>
+        <button
+          type="button"
+          className="listing-vendor-addListing"
+          onClick={() => value.setRenderAddListing("addListing")}
+        >
           <label className="listing1-vendor-addListing">Listing</label>
         </button>
         <button className="location-vendor-addListing">
-          <span className="location-detail-vendor-addListing">Listing Details</span>
+          <span className="location-detail-vendor-addListing">
+            Listing Details
+          </span>
         </button>
       </main>
       <div className="addlisting-inner-vendor-addListing">
-        <form className="rectangle-group-vendor-addListing" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="rectangle-group-vendor-addListing"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="frame-item-vendor-addListing" />
           <div className="frame-parent-vendor-addListing">
             <div className="location-parent-vendor-addListing">
-              <select className="location1-vendor-addListing" {...register("location",{required : true})}>
+              <select
+                className="location1-vendor-addListing"
+                defaultValue={
+                  vendorMansterpageContext.activeListingValue.location !== ""
+                    ? vendorMansterpageContext.activeListingValue.location
+                    : ""
+                }
+                {...register("location", { required: true })}
+              >
                 <option value="">Select Location</option>
                 {location.map((items, index) => (
                   <option key={index} value={items.locationName}>
@@ -60,10 +80,17 @@ const AddListing = () => {
                   </option>
                 ))}
               </select>
+
               <input
                 className="property-name-vendor-addListing"
                 placeholder="Property name "
                 type="text"
+                defaultValue={
+                  vendorMansterpageContext.activeListingValue.name !== ""
+                    ? vendorMansterpageContext.activeListingValue.name
+                    : ""
+                }
+                {...register("name",{required : true})}
               />
               <div className="frame-group-vendor-addListing">
                 <div className="rectangle-container-vendor-addListing">
@@ -80,13 +107,23 @@ const AddListing = () => {
                     alt=""
                     src={line}
                   />
-                 
-                  <select className="villa-vendor-addListing" {...register("locationIcon",{register: true})}>
+
+                  <select
+                    className="villa-vendor-addListing"
+                    defaultValue={
+                      vendorMansterpageContext.activeListingValue.category !== ""
+                        ? vendorMansterpageContext.activeListingValue.category
+                        : ""
+                    }
+                    {...register("locationIcon", { register: true })}
+                  >
                     <option value="">Villa</option>
-                    {location.map((items,index)=>(
-                      <option key={index} value={items.locationName}>{items.locationName}</option>
+                    {location.map((items, index) => (
+                      <option key={index} value={items.locationName}>
+                        {items.locationName}
+                      </option>
                     ))}
-                    </select>
+                  </select>
                 </div>
                 <div className="group-div-vendor-addListing">
                   <div className="rectangle-div-vendor-addListing" />
@@ -106,26 +143,53 @@ const AddListing = () => {
                       />
                     </div>
                   </div>
-                  <input type="number" className="div-vendor-addListing" placeholder="3" {...register("washbasinIcon",{required : true})}/>
+                  <input
+                    type="number"
+                    className="div-vendor-addListing"
+                    placeholder="3"
+                    {...register("washbasinIcon", { required: true })}
+                  />
                 </div>
               </div>
             </div>
             <div className="category-parent-vendor-addListing">
-              <select className="category-vendor-addListing" {...register("category",{required: true})}>
-                <option value="">Select Category</option>  
+              <select
+                className="category-vendor-addListing"
+                {...register("category", { required: true })}
+              >
+                <option value="">Select Category</option>
                 {category.map((items, index) => (
                   <option key={index} value={items.category}>
                     {items.category}
                   </option>
-                ))}               
+                ))}
               </select>
               <div className="products-price-parent-vendor-addListing">
                 <div className="products-price-vendor-addListing">
                   <div className="products-price-child-vendor-addListing" />
-                  <input type="number" className="products-price1-vendor-addListing" placeholder="Property price" {...register("price",{required:true})}/>       
+                  <input
+                    type="number"
+                    className="products-price1-vendor-addListing"
+                    placeholder="Property price"
+                    defaultValue={
+                      vendorMansterpageContext.activeListingValue.price !== ""
+                        ? vendorMansterpageContext.activeListingValue.price
+                        : ""
+                    }
+                    {...register("price", { required: true })}
+                  />
                 </div>
                 <div className="rectangle-parent1-vendor-addListing">
-                  <input type="date" className="date-picker-addListing"  {...register("date",{required : true})} />
+                  <input
+                    type="date"
+                    className="date-picker-addListing"
+                    defaultValue={
+                      vendorMansterpageContext.activeListingValue.date !== ""
+                        ? vendorMansterpageContext.activeListingValue.date
+                        : ""
+                    }
+                    {...register("date", { required: true })}
+                  />
                 </div>
               </div>
               <div className="frame-div-vendor-addListing">
@@ -147,7 +211,13 @@ const AddListing = () => {
                       src={line}
                     />
                   </div>
-                  <input type="number" className="div2-vendor-addListing" placeholder="3" {...register("bedIcon",{required : true})}/>
+                  <input
+                    type="number"
+                    className="div2-vendor-addListing"
+                    placeholder="3"
+                   
+                    {...register("bedIcon", { required: true })}
+                  />
                 </div>
                 <div className="rectangle-parent3-vendor-addListing">
                   <div className="frame-child5-vendor-addListing" />
@@ -169,7 +239,12 @@ const AddListing = () => {
                       />
                     </div>
                   </div>
-                  <input type="text" className="m2-vendor-addListing" placeholder="1400m2" {...register("sizeIcon",{required : true})}/>
+                  <input
+                    type="text"
+                    className="m2-vendor-addListing"
+                    placeholder="1400m2"
+                    {...register("sizeIcon", { required: true })}
+                  />
                 </div>
               </div>
             </div>
@@ -179,13 +254,25 @@ const AddListing = () => {
             placeholder="Sort description"
             rows={11}
             cols={68}
-            {...register("description",{required : true})}
+            defaultValue={
+              vendorMansterpageContext.activeListingValue.description !== ""
+                ? vendorMansterpageContext.activeListingValue.description
+                : ""
+            }
+            {...register("description", { required: true })}
           />
           <div className="frame-wrapper2-vendor-addListing">
             <div className="frame-parent2-vendor-addListing">
-              <input type="file" className="rectangle-parent4-vendor-addListing" {...register("image1",{required : true})}/>
-              <button type="submit" className="rectangle-parent6-vendor-addListing" >
-              {/* onClick={handleNextBtnClick} */}
+              <input
+                type="file"
+                className="rectangle-parent4-vendor-addListing"
+                {...register("image1", { required: true })}
+              />
+              <button
+                type="submit"
+                className="rectangle-parent6-vendor-addListing"
+              >
+                {/* onClick={handleNextBtnClick} */}
                 <span className="next-vendor-addListing">Next</span>
               </button>
             </div>

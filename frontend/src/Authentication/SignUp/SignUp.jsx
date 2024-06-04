@@ -13,14 +13,12 @@ function SignUp() {
   const navigate = useNavigate()
   const values = useContext(authContext)
   const value = useContext(MyContext);
-  console.log(value);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data);
     const { email, password, companyName, countryCode, fullName, phoneNumber } =
       data;
     try {
@@ -34,17 +32,14 @@ function SignUp() {
         phoneNumber
       );
       await axios.post('http://localhost:3000/post-Registration',data).then((res)=>{
-        console.log(res.data);
         value.setSignUpData(data)
       })
 
-      console.log(userCredential);
       const user = userCredential.user;
       await updateProfile(user, {
         displayName: "vendor",
       });
       navigate('/paymentScreen')
-      console.log("User signed up successfully!");
     } catch (error) {
       console.error("Error signing up:", error);
     }

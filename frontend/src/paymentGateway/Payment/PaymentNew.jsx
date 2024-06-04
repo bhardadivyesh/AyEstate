@@ -36,13 +36,18 @@ const PaymentNew = () => {
     let paymentValue = price;
     let data = values.signUpData;
     data.paymentValue = paymentValue;
-    await axios
+    console.log(data.paymentValue);
+    if(data.paymentValue == 0){
+      navigate("/home")
+    }else{
+      await axios
       .put("http://localhost:3000/put-Registration", data)
       .then((res) => {
-        console.log("api call");
+        console.log(res.data);
       });
     setGold_amount(price);
-
+    }
+  
     if (!window.Razorpay) {
       return;
     }
@@ -512,8 +517,6 @@ const PaymentNew = () => {
                         alt=""
                         src={items.images[0]}
                       />
-                  {console.log(items)}
-
                       <div className="days-plan-validity-wrapper1-paymentNew">
                         <label className="days-plan-validity6-paymentNew">
                           {items.membershipdescription1}

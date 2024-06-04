@@ -34,7 +34,6 @@ router.post('/uploadMultiple', upload.fields([
       image4: req.files['image4'][0].path,
       image5: req.files['image5'][0].path,
     };
-console.log(req.body);
     const newMembership = new Membership(data);
     await newMembership.save();
 

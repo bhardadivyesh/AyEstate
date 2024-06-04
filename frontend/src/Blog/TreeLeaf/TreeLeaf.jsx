@@ -4,7 +4,6 @@ import "./TreeLeaf.css";
 const TreeLeaf = ({ popularArticles, weProvideBlogThatHelpStar }) => {
   const navigate = useNavigate()
   const handleViewAllBtnClick = () =>{
-    console.log("all button click work");
     navigate('/resent-articals')
   }
   return (

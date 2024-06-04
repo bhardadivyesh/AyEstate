@@ -14,7 +14,6 @@ export default function AdminForm() {
     const formData = new FormData();
     for (let i = 1; i <= 5; i++) {
       if (data[`image${i}`]) {
-        console.log(`image${i}`, data[`image${i}`][0]);
         formData.append(`image${i}`, data[`image${i}`][0]);
       }
     }
@@ -34,7 +33,6 @@ export default function AdminForm() {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
-      console.log(result.data);
     } catch (error) {
       console.error("Error:", error);
     }

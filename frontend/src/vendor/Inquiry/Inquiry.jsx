@@ -2,8 +2,17 @@ import "./Inquiry.css";
 import FilterIcon from "../../assets/admin/vendordashboard/inquiry/filterIcon.png"
 import lineIcon from "../../assets/admin/vendordashboard/inquiry/line.png"
 import dropdownIcon from "../../assets/admin/vendordashboard/inquiry/dropdown.png"
+import { useEffect, useState } from "react";
+import axios from "axios";
+import moment from 'moment-timezone';
 
 const Inquiry = () => {
+  const [inquiryData,setInquiryData] = useState([])
+  useEffect(()=>{
+    axios.get("http://localhost:3000/get-Inquiry").then((res)=>{
+      setInquiryData(res.data)
+    })
+  },[])
   return (
     <div className="group-parent-vendorInquiry">
       <div className="rectangle-parent-vendorInquiry">
@@ -35,19 +44,24 @@ const Inquiry = () => {
               <div className="status-vendorInquiry">Status</div>
               <div className="email-vendorInquiry">Email</div>
             </div>
-            <div className="parent-vendorInquiry">
-              <div className="div-vendorInquiry">14/03/2024</div>
-              <select className="group-div-vendorInquiry">
+            {inquiryData.map((items,index)=>{
+              return(
+                <tr className="row-vendorInquiry" key={index}>
+              <td className="dateData-vendorInquiry">{moment.utc(items.createdAt).tz('Asia/Kolkata').format('YYYY-MM-DD')}</td>
+              <select className="dropdown-div-vendorInquiry">
                 <option value="">Pending</option>
                 <option value="">Approved</option>
                 <option value="">Blocked</option>
               </select>
               <img className="line-icon-vendorInquiry" alt="" src={lineIcon} />
-              <div className="div1-vendorInquiry">1</div>
-              <div className="karan-vendorInquiry">karan</div>
-              <div className="div2-vendorInquiry">9825381643</div>
-              <div className="karan12gmailcom-vendorInquiry">karan12@gmail.com</div>
-            </div>
+              <td className="noData-vendorInquiry">{index + 1}</td>
+              <td className="nameData-vendorInquiry">{items.name}</td>
+              <td className="phoneNumberData-vendorInquiry">{items.phoneNumber}</td>
+              <td className="emailData-vendorInquiry">{items.email}</td>
+            </tr>
+              )
+            })}
+            
           </div>
         </div>
       </div>

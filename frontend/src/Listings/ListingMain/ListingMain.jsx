@@ -13,7 +13,7 @@ import axios from "axios";
 import "./ListingMain.css";
 import MyContext from "../../context/context";
 const ListingMain = () => {
-  const value = useContext(MyContext)
+  const value = useContext(MyContext);
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   let minPriceValue = parseInt(minPrice);
@@ -42,8 +42,8 @@ const ListingMain = () => {
     setAllCategoryToggle(!allCategoryToggle);
   };
   const [productData, setProductData] = useState();
-  const [locationData,setLocationData] = useState([])
-  const [listingData,setListingData] = useState([])
+  const [locationData, setLocationData] = useState([]);
+  const [listingData, setListingData] = useState([]);
 
   // api call
   useEffect(() => {
@@ -51,15 +51,14 @@ const ListingMain = () => {
       setProductData(res.data);
     });
   }, []);
-  useEffect(()=>{
-    axios.get('http://localhost:3000/get-location').then((res)=>{
-      setLocationData(res.data)
-    })
-    axios.get('http://localhost:3000/get-listing').then((res)=>{
-      setListingData(res.data)
-    })
-  },[])
-  console.log(listingData[0]);
+  useEffect(() => {
+    axios.get("http://localhost:3000/get-location").then((res) => {
+      setLocationData(res.data);
+    });
+    axios.get("http://localhost:3000/get-listing").then((res) => {
+      setListingData(res.data);
+    });
+  }, []);
   // filtering logic
   const [selectedCategories, setSelectedCategories] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -164,7 +163,11 @@ const ListingMain = () => {
                 <div className="filter-after-fifth-div-listingMain">
                   <div className="filter-after-sixth-div-listingMain">
                     <b className="location-listingMain">Location</b>
-                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
+                    <img
+                      className="down-arrow-listingMain"
+                      alt=""
+                      src={arrowDown}
+                    />
                   </div>
                   <div className="location-after-first-div-listingMain">
                     <div className="location-after-second-div-listingMain">
@@ -195,7 +198,9 @@ const ListingMain = () => {
                         checked={selectedLocation === "Bali"}
                         onChange={() => handleCheckboxChange("Bali")}
                       />
-                      <div className="bali-after-first-div-listingMain">Bali</div>
+                      <div className="bali-after-first-div-listingMain">
+                        Bali
+                      </div>
                     </div>
                     {allLocationToggle &&
                       productData
@@ -231,7 +236,10 @@ const ListingMain = () => {
                           );
                         })}
                   </div>
-                  <div className="showAll-btn-listingMain" onClick={handleShowAllClick}>
+                  <div
+                    className="showAll-btn-listingMain"
+                    onClick={handleShowAllClick}
+                  >
                     {allLocationToggle == true ? "Hide" : "Show All"}
                   </div>
                 </div>
@@ -243,7 +251,11 @@ const ListingMain = () => {
                 <div className="showAll-btn-after-fourth-div-listingMain">
                   <b className="category-listingMain">Category</b>
                   <div className="category-after-first-div-listingMain">
-                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
+                    <img
+                      className="down-arrow-listingMain"
+                      alt=""
+                      src={arrowDown}
+                    />
                   </div>
                 </div>
                 <div className="category-after-first-div-listingMain">
@@ -299,7 +311,10 @@ const ListingMain = () => {
                     }, [])
                     .map((category, index) => {
                       return (
-                        <div key={index} className="allCategory-toggle-listingMain">
+                        <div
+                          key={index}
+                          className="allCategory-toggle-listingMain"
+                        >
                           <input
                             className="checkbox-listingMain"
                             type="checkbox"
@@ -327,7 +342,11 @@ const ListingMain = () => {
                 <div className="allCategort-btn-after-fourth-div-listingMain">
                   <b className="priceRange-listingMain">Price Range</b>
                   <div className="priceRange-after-first-div-listingMain">
-                    <img className="down-arrow-listingMain" alt="" src={arrowDown} />
+                    <img
+                      className="down-arrow-listingMain"
+                      alt=""
+                      src={arrowDown}
+                    />
                   </div>
                 </div>
                 <div className="down-arrow-after-first-div-listingMain">
@@ -335,7 +354,11 @@ const ListingMain = () => {
                   <div className="down-arrow-after-third-div-listingMain">
                     <div className="usd-one-listingMain">USD</div>
                     <div className="usd-after-first-div-listingMain">
-                      <img className="down-arrow-listingMain" alt="" src={arrowDown} />
+                      <img
+                        className="down-arrow-listingMain"
+                        alt=""
+                        src={arrowDown}
+                      />
                     </div>
                     <div className="usd-after-second-div-listingMain">
                       <div className="usd-after-third-div-listingMain" />
@@ -355,7 +378,11 @@ const ListingMain = () => {
                   <div className="minprice-input-after-third-div-listingMain">
                     <div className="usd-two-listingMain">USD</div>
                     <div className="minprice-input-after-fifth-div-listingMain">
-                      <img className="down-arrow-listingMain" alt="" src={arrowDown} />
+                      <img
+                        className="down-arrow-listingMain"
+                        alt=""
+                        src={arrowDown}
+                      />
                     </div>
                     <div className="max-input-first-div-listingMain">
                       <div className="max-input-second-div-listingMain" />

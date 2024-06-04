@@ -6,7 +6,6 @@ import { useContext, useEffect, useState } from "react";
 import moment from 'moment-timezone';
 const MembershipRevenuePopup = () => {
   const value = useContext(membershipRevenue);
-  console.log(value.membershipMemberData);
   const [transactionId,setTransactionId] = useState()
   useEffect(()=>{
     let transactionIdData = localStorage.getItem("rzp_device_id")

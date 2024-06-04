@@ -95,8 +95,6 @@ const BlogRecentlyArticlesDet = () => {
             </div>
           </div>
           <ArticleContainer />
-          {console.log()}
-          {console.log()}
           <div className="article-listings">
             <CardType
               rectangle9620={`http://localhost:1337${articalData?.[0]?.images[0]?.url}`}

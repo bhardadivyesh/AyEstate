@@ -4,7 +4,6 @@ import vendorContext from "../Vendor";
 
 const ActiveRequest = () => {
   const [activeUsers, setActiveUsers] = useState([]);
-  console.log(activeUsers);
   const [updateState, setUpdateState] = useState(false);
   const value = useContext(vendorContext)
   const handleChange = (vendor, e) => {

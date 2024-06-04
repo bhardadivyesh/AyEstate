@@ -12,7 +12,9 @@ const membershipSchema = new mongoose.Schema({
     locationIcon : { type : String,required : true},
     price : { type : String,required : true},
     sizeIcon : { type : String,required : true},
-    washbasinIcon : { type : String,required : true}
+    washbasinIcon : { type : String,required : true},
+    status : { type : String,required : true},
+    name : { type : String,required : true}
 });
 
 module.exports = mongoose.model("listing", membershipSchema);

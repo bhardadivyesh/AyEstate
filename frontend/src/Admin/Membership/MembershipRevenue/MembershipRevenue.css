@@ -312,11 +312,13 @@
 }
 .div43-membership-revenue {
   line-height: 1.5rem;
+  left: 10px;
   font-weight: 300;
 }
 .div44-membership-revenue {
   position: relative;
   line-height: 1.5rem;
+  left: -50px;
   font-weight: 300;
   display: inline-block;
   min-width: 7.125rem;
@@ -325,6 +327,7 @@
 .div45-membership-revenue {
   position: relative;
   line-height: 1.5rem;
+  right: 40px;
   font-weight: 300;
   display: inline-block;
   min-width: 4.313rem;
@@ -332,7 +335,8 @@
   z-index: 1;
 }
 .karan1-membership-revenue {
-  width: 5.375rem;
+  right: 30px;
+  width: 7.375rem;
   position: relative;
   line-height: 1.5rem;
   font-weight: 300;
@@ -343,12 +347,14 @@
   width: 4.25rem;
   position: relative;
   line-height: 1.5rem;
+  right: 57px;
   font-weight: 300;
   display: inline-block;
   z-index: 1;
 }
 .successful-membership-revenue {
   position: relative;
+  right: 25px;
   line-height: 1.5rem;
   font-weight: 300;
   z-index: 1;

@@ -16,18 +16,15 @@ export default function SignIn() {
   const value = useContext(authContext);
   const [continueButton, setContinueButton] = useState(false);
   const [contentStateRender, setContentStateRender] = useState("");
-  console.log(contentStateRender);
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-    console.log(data);
     const { email, password } = data;
     const userCredential = await signInWithEmailAndPassword(
       auth,
       email,
       password
     );
-    console.log(userCredential);
     const user = userCredential.user;
     if (user.displayName == "vendor") {
       navigate("/home");

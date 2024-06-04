@@ -58,6 +58,9 @@
     width: 13rem;
     height: 4.313rem;
   }
+  .row-vendorInquiry{
+    z-index: 1;
+  }
   .group-inner-vendorInquiry {
     top: 0.125rem;
     left: 0.188rem;

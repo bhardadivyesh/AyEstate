@@ -155,7 +155,6 @@
 }
 .rectangle-parent:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;
 }
 .more-icon {
   position: absolute;
@@ -260,7 +259,6 @@
 }
 .rectangle-group1:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;
 }
 .rectangle-group {
   position: absolute;
@@ -272,7 +270,6 @@
 }
 .rectangle-group:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;
 }
 .group-inner,
 .rectangle-div {
@@ -687,7 +684,6 @@
 }
 .rectangle-parent4:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;
 }
 .group-child8 {
   top: 0;
@@ -727,7 +723,6 @@
 }
 .rectangle-parent5:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;;
 }
 .group-child9 {
   top: 0;
@@ -763,7 +758,6 @@
 }
 .rectangle-parent6:hover{
   background-color: #b7e08a;
-  border-radius: 0px 22px 22px 0px;
 }
 .categories {
   width: 100%;

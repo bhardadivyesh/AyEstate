@@ -187,13 +187,13 @@
     left: 0;
     border-top: 2px solid #bcbcbc;
     box-sizing: border-box;
-    width: 89.5rem;
+    width: 95.5rem;
     height: 0.125rem;
     z-index: 1;
   }
   .active2-rejectListing{
-    top: 0.063rem;
-    left: 80.563rem;
+    top: 1.5rem;
+    left: 82.563rem;
     width: 15.063rem;
     height: 1.5rem;
     z-index: 1;
@@ -208,15 +208,15 @@
     justify-content: center;
   }
   .example-data-rejectListing{
-    top: 0;
-    left: 63.938rem;
+    top: 1.5rem;
+    left: 69.938rem;
     width: 12.438rem;
     height: 1.5rem;
     z-index: 2;
   }
   .example-data1-rejectListing {
-    top: 0.063rem;
-    left: 52.563rem;
+    top: 1.5rem;
+    left: 56.563rem;
     width: 8.5rem;
     white-space: nowrap;
   }
@@ -228,8 +228,8 @@
   }
   .bandung2-rejectListing {
     position: absolute;
-    top: 0.063rem;
-    left: 37.375rem;
+    top: 1.5rem;
+    left: 40.375rem;
     line-height: 1.5rem;
     display: flex;
     align-items: center;
@@ -238,15 +238,16 @@
   }
   .ville1-rejectListing {
     text-decoration: none;
-    left: 21.063rem;
+    left: 22.063rem;
     color: inherit;
+    top: 25px;
     width: 14rem;
   }
   .cozy-cottage2-rejectListing,
   .example-data2-rejectListing,
   .ville1-rejectListing {
     position: absolute;
-    top: 0.063rem;
+    top: 1.5rem;
     line-height: 1.5rem;
     display: flex;
     align-items: center;
@@ -254,6 +255,7 @@
   }
   .cozy-cottage2-rejectListing {
     text-decoration: none;
+    top: 25px;
     left: 4.438rem;
     color: inherit;
     width: 14.063rem;
@@ -261,7 +263,8 @@
     z-index: 2;
   }
   .example-data2-rejectListing {
-    left: 0;
+    left: -0.5rem;
+    top: 25px;
     width: 4.438rem;
     z-index: 3;
   }

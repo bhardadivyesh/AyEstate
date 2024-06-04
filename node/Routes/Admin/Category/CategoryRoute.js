@@ -24,8 +24,6 @@ router.get("/get-category", async (req, res) => {
     try {
       const category = req.params.category; 
       const newData = req.body;
-      console.log(newData);
-      console.log(category);
       let updatedCategory = await CategorySchema.findOneAndUpdate({ category: category }, newData, { new: true });
       if (!updatedCategory) {
           return res.status(404).json({ error: 'Category not found' });
@@ -38,7 +36,6 @@ router.get("/get-category", async (req, res) => {
   router.delete('/delete-category', async (req, res) => {
     try {
       const category = req.body.category; 
-      console.log(category);
       let deletedCategory = await CategorySchema.findOneAndDelete({ category: category });
       if (!deletedCategory) {
         return res.status(404).json({ error: 'Category not found' });

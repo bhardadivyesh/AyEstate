@@ -4,14 +4,17 @@ import axios from "axios";
 import { useContext, useState } from "react";
 import "./AddListingDetail.css";
 import AddListingContext from "../AddListing";
+import vendorDashboardContext from "../../VendorDashboardContext";
 const AddListingDetail = () => {
   const value = useContext(AddListingContext);
+  const vendorMansterpageContext = useContext(vendorDashboardContext);
   const [addListingDetailData, setAddListingDetailData] = useState([]);
   const [addMoreToggle, setAddMoreToggle] = useState(false);
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
@@ -19,15 +22,14 @@ const AddListingDetail = () => {
     let listingAddData = value.addListingData;
     let listingDataDetail = addListingDetailData;
     let allListingData = { ...listingAddData, ...listingDataDetail };
-    console.log(allListingData);
     const formData = new FormData();
     for (let i = 1; i <= 4; i++) {
       if (allListingData[`image${i}`]) {
-        console.log(`image${i}`, allListingData[`image${i}`][0]);
         formData.append(`image${i}`, allListingData[`image${i}`][0]);
       }
     }
     formData.append("bedIcon", allListingData.bedIcon);
+    formData.append("name",allListingData.name);
     formData.append("category", allListingData.category);
     formData.append("date", allListingData.date);
     formData.append("description", allListingData.description);
@@ -46,7 +48,7 @@ const AddListingDetail = () => {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
-      console.log(result.data);
+      reset()
     } catch (error) {
       console.error("Error:", error);
     }
@@ -125,6 +127,11 @@ const AddListingDetail = () => {
               className="title10-addListingDetail"
               placeholder="Title Listing"
               type="text"
+              defaultValue={
+                vendorMansterpageContext.activeListingValue.location !== ""
+                  ? vendorMansterpageContext.activeListingValue.location
+                  : ""
+              }
               {...register("listingTitle", { required: true })}
             />
           </div>
@@ -133,6 +140,11 @@ const AddListingDetail = () => {
             placeholder="Listing Description"
             rows={17}
             cols={67}
+            defaultValue={
+              vendorMansterpageContext.activeListingValue.listingDescription !== ""
+                ? vendorMansterpageContext.activeListingValue.listingDescription
+                : ""
+            }
             {...register("listingDescription", { required: true })}
           />
           <button type="submit" className="homepage1-addListingDetail">

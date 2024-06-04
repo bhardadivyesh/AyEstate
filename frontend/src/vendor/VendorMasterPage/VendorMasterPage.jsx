@@ -22,8 +22,7 @@ import Inquiry from '../Inquiry/Inquiry';
 
 const VendorMasterPage = () => {
   const [vendorDashboardRender,setVendorDashboardRender] = useState("dashboard")
-  console.log(vendorDashboardRender);
-
+  const [activeListingValue,setActiveListingValue] = useState([])
   const handleDashboardRenderClick = (renderState) =>{
     setVendorDashboardRender(renderState)
   }
@@ -64,7 +63,7 @@ const VendorMasterPage = () => {
             </div>
           </div>
           <section className="rectangle-parent189-vendorDashboard">
-            <vendorDashboardContext.Provider value={{vendorDashboardRender,setVendorDashboardRender}}>
+            <vendorDashboardContext.Provider value={{vendorDashboardRender,activeListingValue,setVendorDashboardRender,setActiveListingValue}}>
             {vendorDashboardRender == 'dashboard' && <VendorDashboard />}
             {vendorDashboardRender == "addListing" && <AddListingMain />}
             {vendorDashboardRender == "manageListing" && <ManageListingMain />}

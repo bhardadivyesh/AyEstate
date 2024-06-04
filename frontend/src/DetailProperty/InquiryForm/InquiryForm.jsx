@@ -1,16 +1,23 @@
 import React from "react";
 import "./InquiryForm.css";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const InquiryForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
       } = useForm();
     
       const onSubmit = async (data) =>{
-        console.log(data);
+     await axios.post('http://localhost:3000/post-Inquiry',data).then((res)=>{
+        toast.success(res.data.message)
+        reset()
+       })
       }
   return (
     <>
@@ -59,6 +66,7 @@ const InquiryForm = () => {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </>
   );
 };

@@ -19,8 +19,6 @@ const DataSorter = ({
   propBackgroundImage,
   currentItems,
 }) => {
-  // console.log(currentItems[0]?.images[0]);
- console.log(currentItems);
   const dataFinderStyle = useMemo(() => {
     return {
       ...getStyleValue("backgroundImage", propBackgroundImage),

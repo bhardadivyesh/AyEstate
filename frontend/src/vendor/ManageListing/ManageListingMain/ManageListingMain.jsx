@@ -7,9 +7,6 @@ import vendorDashboardContext from '../../VendorDashboardContext'
 
 const ManageListingMain = () => {
   const value = useContext(vendorDashboardContext)
-  useEffect(()=>{
-    console.log("value change");
-  },[value])
     const [manageListingRender,setManageListingRender] = useState("activeListing")
   return (
     <>

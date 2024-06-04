@@ -178,6 +178,7 @@
   }
   .listing-detail-inner-addListingDetail {
     width: 98.331rem;
+    overflow: auto;
     flex-direction: row;
     padding: 0 2.5rem;
     box-sizing: border-box;

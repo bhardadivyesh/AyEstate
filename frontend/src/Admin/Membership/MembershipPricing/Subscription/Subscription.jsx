@@ -11,21 +11,19 @@ import dashboardContext from "../../../admin";
 const Subscription = () => {
   const value = useContext(membershipPriceContext);
   const membershipValue = useContext(dashboardContext);
-  console.log(membershipValue.membershipData.discount);
   const [showMore, setShowMore] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
     let priceData = value.pricingDetail;
     let allData = { ...data, ...priceData };
-    console.log(allData);
     const formData = new FormData();
     for (let i = 1; i <= 6; i++) {
       if (allData[`image${i}`]) {
-        console.log(`image${i}`, allData[`image${i}`][0]);
         formData.append(`image${i}`, allData[`image${i}`][0]);
       }
     }
@@ -48,7 +46,7 @@ const Subscription = () => {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
-      console.log(result.data);
+      reset()
     } catch (error) {
       console.error("Error:", error);
     }
@@ -56,7 +54,6 @@ const Subscription = () => {
   const handleAddMoreBenefitClick = () => {
     setShowMore(!showMore);
   };
-  console.log("css component");
   return (
     <div className="subscription3">
       <main className="group-main">
