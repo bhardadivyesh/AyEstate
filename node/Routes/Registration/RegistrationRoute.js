@@ -4,7 +4,6 @@ const RegistrationSchema = require("./RegistrationSchema");
 router.post("/post-Registration", async (req, res) => {
   try {
     let {name,phone,company,email,password} = req.body;
-    console.log(req.body);
     let isVendor = false
     let status = "pending"
     const createdAt = new Date();
@@ -12,8 +11,7 @@ router.post("/post-Registration", async (req, res) => {
     await newItem.save();
     res.status(201).json({ message: "Registration successfully" });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Server error" });
+        res.status(500).json({ error: "Server error" });
   }
 });
 // forgot password
@@ -56,7 +54,6 @@ router.get("/get-Registration-freeVendor", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error(error); // Log the error for debugging
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -67,7 +64,6 @@ router.get("/get-Registration-paidVendor", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error(error); // Log the error for debugging
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -75,7 +71,6 @@ router.put('/put-Registration', async (req, res) => {
   try {
     const userEmail = req.body.email; 
     const paymentValue = req.body.paymentValue
-    console.log(paymentValue);
     const status = req.body.status
     let updatedRegistration = await RegistrationSchema.findOneAndUpdate({ email: userEmail }, {status : status,paymentValue: paymentValue}, { new: true });
     if (!updatedRegistration) {

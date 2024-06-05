@@ -1,83 +1,16 @@
 import HeroImage from "../../assets/heroimage.png";
+import "./Hero.css";
 const Hero = () => {
   return (
-    <section
-    className="hero-se"
-      style={{
-        marginLeft: "-11px",
-        width: "100%",
-        backgroundColor: "#f6f3f3",
-        overflow: "hidden",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-end",
-        justifyContent: "flex-start",
-        padding: "130px 80px 70px",
-        boxSizing: "border-box",
-        gap: "85px",
-        maxWidth: "100%",
-        textAlign: "left",
-        fontSize: "56px",
-        color: "#000",
-        fontFamily: "Sora",
-      }}
-    >
-      <div
-        style={{
-          flex: "1",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          padding: "0px 0px 55px",
-          boxSizing: "border-box",
-          minWidth: "400px",
-          minHeight: "444px",
-          maxWidth: "100%",
-        }}
-      >
-        <div
-          style={{
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            gap: "64px",
-          }}
-        >
-          <div
-            style={{
-              alignSelf: "stretch",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              justifyContent: "flex-start",
-              gap: "40px",
-            }}
-          >
-            <h1
-              style={{
-                margin: "0",
-                alignSelf: "stretch",
-                position: "relative",
-                fontSize: "inherit",
-                lineHeight: "120%",
-                fontWeight: "700",
-                fontFamily: "inherit",
-              }}
-            >
+    <section className="section-Hero-homepage">
+      <div className="div1-Hero-homepage">
+        <div className="div2-Hero-homepage">
+          <div className="div3-Hero-homepage">
+            <h1 className="h1-1-Hero-homepage">
               Discover Your Dream <br /> Home Today
             </h1>
 
-            <div
-              style={{
-                alignSelf: "stretch",
-                position: "relative",
-                fontSize: "18px",
-                lineHeight: "160%",
-              }}
-            >
+            <div className="div4-Hero-homepage">
               <span>
                 Find the perfect property that suits your lifestyle. Our real
                 estate <br />
@@ -87,89 +20,19 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "flex-start",
-              justifyContent: "flex-start",
-              padding: "16px 0px 0px",
-              gap: "16px",
-            }}
-          >
-            <button
-              style={{
-                cursor: "pointer",
-                border: "none",
-                padding: "12px 24px",
-                backgroundColor: "#b7e08a",
-                borderRadius: "12px",
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <div
-                style={{
-                  position: "relative",
-                  fontSize: "16px",
-                  lineHeight: "150%",
-                  fontWeight: "600",
-                  fontFamily: "Sora, sans-serif",
-                  color: "#111",
-                  textAlign: "left",
-                  display: "inline-block",
-                  minWidth: "105px",
-                }}
-              >
-                Explore Now
-              </div>
+          <div className="div5-Hero-homepage">
+            <button className="btn1-Hero-homepage">
+              <div className="div6-Hero-homepage">Explore Now</div>
             </button>
 
-            <button
-              style={{
-                cursor: "pointer",
-                border: "1px solid #000",
-                padding: "10px 23px",
-                backgroundColor: "transparent",
-                borderRadius: "12px",
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <div
-                style={{
-                  position: "relative",
-                  fontSize: "16px",
-                  lineHeight: "150%",
-                  fontWeight: "600",
-                  fontFamily: "Sora, sans-serif",
-                  color: "#000",
-                  textAlign: "left",
-                  display: "inline-block",
-                  minWidth: "81px",
-                }}
-              >
-                Learn More
-              </div>
+            <button className="btn2-Hero-homepage">
+              <div className="div7-Hero-homepage">Learn More</div>
             </button>
           </div>
         </div>
       </div>
       <img
-        style={{
-          width: "579px",
-          position: "relative",
-          borderRadius: "16px",
-          maxHeight: "100%",
-          objectFit: "cover",
-          maxWidth: "100%",
-        }}
+        className="img1-Hero-homepage"
         loading="lazy"
         alt=""
         src={HeroImage}

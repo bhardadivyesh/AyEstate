@@ -12,32 +12,10 @@ import Navigation1 from "../CommanComponent/Navigation1/Navigation1";
 const Homepage = () => {
   return (
     <>
-      <div
-        style={{
-          width: "100%",
-          position: "relative",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          lineHeight: "normal",
-          letterSpacing: "normal",
-        }}
-      >
+      <div className="div1-outer-homepage">
         <Hero />
         <Discover />
-        <section
-          style={{
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            padding: "0px 0px 5px",
-            boxSizing: "border-box",
-            maxWidth: "100%",
-          }}
-        >
+        <section className="section-outer-homepage">
           <Simplify />
           <Innovative />
         </section>

@@ -12,9 +12,8 @@ router.post("/post-Inquiry", async (req, res) => {
       status : status
     });
     await newItem.save();
-    res.status(201).json({ message: "Inquiry send successfully" });
+    res.status(201).json({ message: "Inquiry send" });
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: "Server error" });
   }
 });

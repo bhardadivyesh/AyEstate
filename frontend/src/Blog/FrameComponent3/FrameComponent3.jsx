@@ -12,7 +12,7 @@ const FrameComponent3 = () => {
     const { value } = event.target;
     setQuery(value);
     const filteredSuggestions =articleNames?.filter(
-      (item) => item.toLowerCase().includes(value.toLowerCase())
+      (item) => item.toLowerCase()?.includes(value.toLowerCase())
     );
     setSuggestions(filteredSuggestions);
   };
@@ -22,7 +22,7 @@ const FrameComponent3 = () => {
     setSuggestions([]);
   };
   useEffect(()=>{
-    axios.get('http://localhost:1337/blogs').then((res)=>{
+    axios.get('http://localhost:3000/get-blogs').then((res)=>{
       setArticals(res.data)
     })
   },[])

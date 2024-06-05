@@ -1,0 +1,43 @@
+.div1-column1-homepage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: 304px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .img1-column1-homepage {
+    width: 76px;
+    height: 76px;
+    position: relative;
+  }
+  
+  .h2-1-column1-homepage,
+  .h2-2-column1-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: bold;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .div2-column1-homepage,
+  .div3-column1-homepage,
+  .div4-column1-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: normal;
+    font-family: "Sora", sans-serif;
+  }
+  

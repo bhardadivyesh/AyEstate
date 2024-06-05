@@ -1,23 +1,22 @@
 import "./FrameComponent1.css";
-import icon from "../../assets/frameComponent1/icon.png"
-import { useContext,useState,useEffect } from "react";
+import icon from "../../assets/frameComponent1/icon.png";
+import { useContext, useState, useEffect } from "react";
 import MyContext from "../../context/context";
-
 
 const FrameComponent = () => {
   const value = useContext(MyContext);
-  
-  const [data,setdata] = useState() 
+
+  const [data, setdata] = useState();
   useEffect(() => {
     if (value.detailPropertyData != "") {
       localStorage.setItem("data", JSON.stringify(value.detailPropertyData));
     }
   }, [value.detailPropertyData]);
-  useEffect(()=>{
-    let localStorageData = localStorage.getItem("data")
-    let parsedata = JSON.parse(localStorageData)
-    setdata(parsedata)
-  },[]) 
+  useEffect(() => {
+    let localStorageData = localStorage.getItem("data");
+    let parsedata = JSON.parse(localStorageData);
+    setdata(parsedata);
+  }, []);
   return (
     <section className="layout-1-wrapper-detailProperty-Frame1">
       <div className="layout-1-detailProperty-Frame1">
@@ -57,7 +56,7 @@ const FrameComponent = () => {
             className="container-child-detailProperty-Frame1"
             loading="lazy"
             alt=""
-            src={`http://localhost:1337${data?.image?.[4]?.url}`}
+            src={`${data?.images?.[3]}`}
           />
         </div>
       </div>

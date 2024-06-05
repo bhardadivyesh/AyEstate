@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 const BlogRecentArticles = () => {
   const [articals, setArticals] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:1337/blogs").then((res) => {
+    axios.get("http://localhost:3000/get-blogs").then((res) => {
       setArticals(res.data);
     });
   }, []);

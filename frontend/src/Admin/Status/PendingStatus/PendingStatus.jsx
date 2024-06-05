@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import statusContext from '../statusContext';
+import "./PendingStatus.css"
 
 const PendingStatus = () => {
   const [pendingListings, setPendingListings] = useState([]);

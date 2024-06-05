@@ -11,7 +11,6 @@ import FaqsMain from "./Faqs/FaqsMain/FaqsMain";
 import BlogMain from "./Blog/BlogMain/BlogMain";
 import BlogRecentArticles from "./Blogs/ResentArticals/ResentArticalsMain/BlogRecentArticles";
 import BlogRecentlyArticlesDetailMain from "./BlogResentArticalDetail/BlogResentArticalDetailMain/BlogResentArticalDetailMain"
-import AdminForm from "./AdminForm/AdminForm";
 import Merge from "./Authentication/Merge/Merge";
 import PaymentMain from "./paymentGateway/PaymentMain/PaymentMain";
 import PaymentSuccess from "./paymentGateway/PaymentSuccess/PaymentSuccess";
@@ -40,7 +39,6 @@ function App() {
             <Route path="/blog" element={<BlogMain />}/>
             <Route path="/resent-articals" element={<BlogRecentArticles />} />
             <Route path="/resent-artical-detail" element={<BlogRecentlyArticlesDetailMain />}/>
-            <Route path="/form" element={<AdminForm />}/>
             <Route path="/" element={<Merge />}/>
             <Route path="/payment" element={<PaymentMain />}/>
             <Route path="/paymentSuccess" element={<PaymentSuccess />}/>

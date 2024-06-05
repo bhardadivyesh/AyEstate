@@ -4,8 +4,6 @@ const VendorListingSchema = require("./VendorListingSchema");
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
-
-// Multer setup for storing files
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     const uploadsDir = path.join(
@@ -18,8 +16,6 @@ const storage = multer.diskStorage({
       "assets",
       "Images"
     );
-
-    // Create the uploads directory if it doesn't exist
     if (!fs.existsSync(uploadsDir)) {
       fs.mkdirSync(uploadsDir, { recursive: true });
     }
@@ -34,8 +30,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
-// Serve static files from the uploads directory
 router.use(
   "/images",
   express.static(path.join(__dirname, "../../../frontend/src/assets/Images"))
@@ -78,7 +72,6 @@ router.post(
       await newListing.save();
       res.status(201).send("Listing created successfully");
     } catch (error) {
-      console.error("Error:", error);
       res.status(500).json({ error: "Internal Server Error" });
     }
   }
@@ -93,7 +86,6 @@ router.get("/get-vendorListing", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -107,7 +99,6 @@ router.get("/get-vendorListing-pending", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -121,7 +112,6 @@ router.get("/get-vendorListing-active", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -135,17 +125,17 @@ router.get("/get-vendorListing-reject", async (req, res) => {
     });
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
 router.put('/put-vendorListing', async (req, res) => {
   try {
-    const listingTitle = req.body.listingTitle; 
+    const name = req.body.name; 
     const status = req.body.status
-    
-    let updatedCategory = await VendorListingSchema.findOneAndUpdate({ listingTitle: listingTitle }, {status : status}, { new: true });
+    console.log(status);
+    console.log(name);
+    let updatedCategory = await VendorListingSchema.findOneAndUpdate({ name: name }, {status : status}, { new: true });
     if (!updatedCategory) {
         return res.status(404).json({ error: 'Listing not found' });
     }

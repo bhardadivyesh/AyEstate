@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-// import useHistory  from 'react-router-dom'; 
 import "./Card.css";
 import linkdin from "../../assets/aboutUs/team images/team icons/linkdin.png"
 import x from "../../assets/aboutUs/team images/team icons/x.png"
 import website from "../../assets/aboutUs/team images/team icons/website.png"
 
 const Card = ({ teamData }) => {
-  // const history = useHistory();
   const [data, setData] = useState([]);
   useEffect(() => {
     setData([teamData]);
@@ -23,7 +21,7 @@ const Card = ({ teamData }) => {
               className="photo-by-juan-ordonez-aboutCard"
               loading="lazy"
               alt=""
-              src={`http://localhost:1337${teamData?.image?.url}`}
+              src={`${items?.images[0]}`}
             />
             <div className="content23-aboutCard">
               <div className="title4-aboutCard">

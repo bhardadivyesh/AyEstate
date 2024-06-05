@@ -1,0 +1,49 @@
+.divs1-column1-homepage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9px;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .imgs1-column1-homepage {
+    width: 76px;
+    position: relative;
+    height: 76px;
+  }
+  
+  .b1-column1-homepage {
+    align-self: stretch;
+    position: relative;
+    line-height: 130%;
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .b2-column1-homepage {
+    align-self: stretch;
+    position: relative;
+    line-height: 130%;
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .divs2-column1-homepage,
+  .divs3-column1-homepage,
+  .divs4-column1-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+  }
+  

@@ -15,19 +15,17 @@ const ContentData = () => {
     let parsedata = JSON.parse(localStorageData);
     setdata(parsedata);
   }, []);
-  // slice description
-  let text = data?.Discription;
+  let text = data?.description;
   const totalLength = text?.length;
   const partLength = Math.floor(totalLength / 3);
 
-  // Slicing the text into three parts
   const part1 = text?.slice(0, partLength);
   const part2 = text?.slice(partLength, 2 * partLength);
   const part3 = text?.slice(2 * partLength);
   const images = [
-    { url: `http://localhost:1337${data?.image?.[1]?.url}` },
-    { url: `http://localhost:1337${data?.image?.[3]?.url}` },
-    { url: `http://localhost:1337${data?.image?.[4]?.url}` },
+    { url: `${data?.images[1]}` },
+    { url: `${data?.images[2]}` },
+    { url: `${data?.images?.[3]}` },
   ];
   return (
     <section className="content-5-detailProperty-contantData">

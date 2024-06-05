@@ -149,61 +149,9 @@
     height: 7.438rem;
   }
   .div-vendorInquiry,
-  .line-parent-vendorInquiry,
-  .rectangle-div-vendorInquiry {
+  .line-parent-vendorInquiry{
     position: absolute;
     top: 0;
-  }
-  .div-vendorInquiry {
-    left: 8rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 13.313rem;
-    height: 6.5rem;
-  }
-  .rectangle-div-vendorInquiry {
-    left: 0;
-    box-shadow: 0 0 5.7px -1px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    background-color: var(--color-white);
-    width: 13.375rem;
-    height: 3.063rem;
-  }
-  .approved-vendorInquiry {
-    position: absolute;
-    top: 0.063rem;
-    left: 2.375rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 6.938rem;
-    height: 3rem;
-  }
-  .vector-icon1-vendorInquiry {
-    position: absolute;
-    height: 20.41%;
-    width: 9.89%;
-    top: 38.78%;
-    right: 4.95%;
-    bottom: 40.82%;
-    left: 180px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .group-div-vendorInquiry {
-    position: absolute;
-    top: 1.938rem;
-    padding: 4px;
-    border-radius: 7px;
-    left: 81.688rem;
-    width: 11.375rem;
-    height: 3.063rem;
   }
   .line-icon-vendorInquiry {
     position: absolute;
@@ -214,8 +162,7 @@
   }
   .div1-vendorInquiry,
   .div2-vendorInquiry,
-  .karan-vendorInquiry,
-  .karan12gmailcom-vendorInquiry {
+  .karan-vendorInquiry{
     position: absolute;
     line-height: 1.5rem;
     font-weight: 300;
@@ -223,30 +170,17 @@
     align-items: center;
     justify-content: center;
   }
-  .div1-vendorInquiry {
-    top: 0;
-    left: 0;
-    width: 5.063rem;
-    height: 6.5rem;
-  }
   .div2-vendorInquiry,
-  .karan-vendorInquiry,
-  .karan12gmailcom-vendorInquiry {
+  .karan-vendorInquiry{
     top: 0.125rem;
     left: 21.75rem;
     width: 20.188rem;
     height: 6.563rem;
   }
-  .div2-vendorInquiry,
-  .karan12gmailcom-vendorInquiry {
+  .div2-vendorInquiry{
     top: 0.063rem;
     left: 61.313rem;
     width: 13.375rem;
-  }
-  .karan12gmailcom-vendorInquiry {
-    left: 41.688rem;
-    width: 17.188rem;
-    height: 6.625rem;
   }
   .parent-vendorInquiry,
   .rectangle-container-vendorInquiry {

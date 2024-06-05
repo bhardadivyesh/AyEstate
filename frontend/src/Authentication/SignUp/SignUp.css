@@ -192,52 +192,12 @@
   border: 1px solid #e7e7e7;
   display: none;
 }
-.empty-space1-registration {
-  position: relative;
-  font-size: 24px;
-  line-height: 27px;
-  font-family: Poppins;
-  color: #838484;
-  text-align: left;
-  display: inline-block;
-  min-width: 40px;
-  white-space: nowrap;
-  z-index: 2;
-}
-.vuesaxboldarrow-down-icon3-registration {
-  width: 23px;
-  height: 23px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-  z-index: 3;
-}
-.vuesaxboldarrow-down-frame-registration {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 3px 0 0;
-}
-.empty-space-parent-registration,
-.frame-wrapper6-registration {
+.empty-space-parent-registration {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
-}
-.frame-wrapper6-registration {
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 0 12px;
-}
-.frame-child33-registration {
-  height: 54px;
-  width: 0;
-  position: relative;
-  object-fit: contain;
-  z-index: 2;
 }
 .frame-parent15-registration {
   display: flex;
@@ -245,15 +205,6 @@
   align-items: flex-end;
   justify-content: flex-start;
   gap: 17px;
-}
-.e-m-p-registration {
-  align-self: stretch;
-  position: relative;
-  font-size: 24px;
-  font-family: Poppins;
-  color: #838484;
-  text-align: left;
-  z-index: 2;
 }
 .e-m-p-t-y-wrapper-registration {
     align-self: stretch;
@@ -281,29 +232,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 3px 9px 8px;
-  /* gap: 52px; */
-}
-.frame-child34-registration {
-  height: 69px;
-  width: 467px;
-  position: relative;
-  display: none;
-}
-.full-name-required2-registration {
-  width: 264px;
-  border: 0;
-  outline: 0;
-  font-family: Rubik;
-  font-size: 24px;
-  background-color: transparent;
-  height: 24px;
-  position: relative;
-  line-height: 24px;
-  color: rgba(110, 110, 110, 0.7);
-  text-align: center;
-  display: inline-block;
-  padding: 0;
-  z-index: 2;
 }
 .frame-child35-registration,
 .rectangle-parent24-registration {
@@ -321,115 +249,6 @@
   justify-content: flex-start;
   padding: 19px 9px 22px;
   max-width: 100%;
-}
-.frame-child35-registration {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 19px;
-  width: 467px;
-}
-.company-name-required2-registration {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-family: Rubik;
-  font-size: 24px;
-  background-color: transparent;
-  position: absolute;
-  top: 22px;
-  left: 0;
-  line-height: 24px;
-  color: rgba(110, 110, 110, 0.7);
-  text-align: center;
-  display: inline-block;
-  height: 24px;
-  padding: 0;
-  z-index: 2;
-}
-.rectangle-parent25-registration {
-  width: 486px;
-  height: 69px;
-  position: relative;
-  max-width: 105%;
-  flex-shrink: 0;
-}
-.frame-child36-registration {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 29px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #e7e7e7;
-  box-sizing: border-box;
-  width: 467px;
-}
-.email-address-required2-registration {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-family: Rubik;
-  font-size: 24px;
-  background-color: transparent;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  line-height: 24px;
-  color: rgba(110, 110, 110, 0.7);
-  text-align: center;
-  display: inline-block;
-  height: 24px;
-  padding: 0;
-  z-index: 2;
-}
-.rectangle-parent26-registration {
-  width: 496px;
-  height: 69px;
-  position: relative;
-  max-width: 107%;
-  flex-shrink: 0;
-}
-.frame-child37-registration {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 119px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #e7e7e7;
-  box-sizing: border-box;
-  width: 467px;
-}
-.password2-registration {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  font-family: Rubik;
-  font-size: 24px;
-  background-color: transparent;
-  position: absolute;
-  top: 21px;
-  left: 0;
-  line-height: 24px;
-  color: rgba(110, 110, 110, 0.7);
-  text-align: center;
-  display: inline-block;
-  height: 24px;
-  padding: 0;
-  z-index: 2;
-}
-.rectangle-parent27-registration {
-  width: 586px;
-  height: 69px;
-  position: relative;
-  max-width: 126%;
-  flex-shrink: 0;
 }
 .frame-parent14-registration,
 .password-input-registration {
@@ -611,11 +430,7 @@
     font-size: 29px;
     line-height: 14px;
   }
-  .empty-space1-registration {
-    line-height: 22px;
-  }
-  .e-m-p-registration,
-  .empty-space1-registration {
+  .e-m-p-registration{
     font-size: 19px;
   }
   .rectangle-parent23-registration {
@@ -623,8 +438,7 @@
   }
   .company-name-required2-registration,
   .email-address-required2-registration,
-  .full-name-required2-registration,
-  .password2-registration {
+  .full-name-required2-registration{
     font-size: 19px;
     line-height: 19px;
   }

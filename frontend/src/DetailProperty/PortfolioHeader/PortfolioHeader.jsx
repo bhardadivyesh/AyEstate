@@ -56,7 +56,7 @@ useEffect(()=>{
             </div>
             <div className="list-item3-detailProperty-PortfolioHeader">
               <b className="text20-detailProperty-PortfolioHeader">Price</b>
-              <div className="text21-detailProperty-PortfolioHeader">{data?.price}</div>
+              <div className="text21-detailProperty-PortfolioHeader">{`₹${data?.price}`}</div>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ useEffect(()=>{
         className="placeholder-image-icon3-detailProperty-PortfolioHeader"
         loading="lazy"
         alt=""
-        src={`http://localhost:1337${data?.image?.[0].url}`}
+        src={`${data?.images?.[0]}`}
       />
     </section>
   );

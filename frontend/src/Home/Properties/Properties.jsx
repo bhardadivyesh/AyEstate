@@ -1,6 +1,7 @@
 import Product from "../Product/Product";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./Properties.css";
 const Properties = () => {
   const [productData, setProductData] = useState();
   useEffect(() => {
@@ -11,107 +12,18 @@ const Properties = () => {
     });
   }, []);
   return (
-    <section
-      style={{
-        alignSelf: "stretch",
-        backgroundColor: "#fff",
-        overflow: "hidden",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "flex-start",
-        padding: "80px 64px",
-        boxSizing: "border-box",
-        minHeight: "1610px",
-        maxWidth: "100%",
-        textAlign: "center",
-        fontSize: "16px",
-        color: "#000",
-        fontFamily: "Sora",
-      }}
-    >
-      <div
-        style={{
-          flex: "1",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          gap: "80px",
-          maxWidth: "100%",
-        }}
-      >
-        <div
-          style={{
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-            justifyContent: "flex-start",
-            gap: "16px",
-          }}
-        >
-          <div
-            style={{
-              alignSelf: "stretch",
-              position: "relative",
-              lineHeight: "150%",
-              fontWeight: "600",
-            }}
-          >
-            Find
-          </div>
-          <div
-            style={{
-              alignSelf: "stretch",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              gap: "24px",
-              fontSize: "48px",
-            }}
-          >
-            <h1
-              style={{
-                margin: "0",
-                alignSelf: "stretch",
-                position: "relative",
-                fontSize: "inherit",
-                lineHeight: "58px",
-                fontWeight: "700",
-                fontFamily: "inherit",
-              }}
-            >
-              Properties
-            </h1>
-            <div
-              style={{
-                alignSelf: "stretch",
-                position: "relative",
-                fontSize: "18px",
-                lineHeight: "150%",
-                fontFamily: "Sora",
-                fontWeight: "normal",
-              }}
-            >
+    <section className="section1-properties-homepage">
+      <div className="div1-properties-homepage">
+        <div className="div2-properties-homepage">
+          <div className="div3-properties-homepage">Find</div>
+          <div className="div4-properties-homepage">
+            <h1 className="h1-1-properties-homepage">Properties</h1>
+            <div className="div5-properties-homepage">
               Explore our curated list of properties and find your dream home.
             </div>
           </div>
         </div>
-        <div
-          style={{
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-            gap: "64px 30.7px",
-            minHeight: "1110px",
-            fontSize: "18px",
-          }}
-        >
+        <div className="div6-properties-homepage">
           {productData?.map((items, index) => {
             return (
               <Product

@@ -10,6 +10,7 @@ import relationshipIcon from "../../assets/admin/vendordashboard/membership/rela
 import topSlotIcon from "../../assets/admin/vendordashboard/membership/topSlot.png";
 
 const VendorMembership = () => {
+  
   return (
     <div className="vendormembership-vendorMembership">
       <main className="rectangle-parent140-vendorMembership">

@@ -61,8 +61,7 @@
   max-width: 100%;
 }
 .placeholder-image-icon4-detailProperty-contantData,
-.placeholder-image-icon5-detailProperty-contantData,
-.placeholder-image-icon6-detailProperty-contantData {
+.placeholder-image-icon5-detailProperty-contantData{
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -71,17 +70,6 @@
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
-}
-.gallery-detailProperty-contantData {
-  height: 148rem;
-  width: 48rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
-  min-width: 48rem;
-  max-width: 100%;
 }
 .content-5-detailProperty-contantData,
 .content17-detailProperty-contantData {
@@ -110,9 +98,6 @@
   font-family: Sora;
 }
 @media screen and (max-width: 1225px) {
-  .gallery-detailProperty-contantData {
-    flex: 1;
-  }
   .content17-detailProperty-contantData {
     flex-wrap: wrap;
   }
@@ -120,11 +105,6 @@
     padding-top: 2.938rem;
     padding-bottom: 2.938rem;
     box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .gallery-detailProperty-contantData {
-    min-width: 100%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -145,9 +125,6 @@
   .heading9-detailProperty-contantData {
     font-size: 1.813rem;
     line-height: 2.188rem;
-  }
-  .gallery-detailProperty-contantData {
-    gap: 1rem;
   }
   .content-5-detailProperty-contantData,
   .content17-detailProperty-contantData {

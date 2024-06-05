@@ -1,0 +1,152 @@
+.section1-discover-homepage {
+    align-self: stretch;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 64px 44px;
+    box-sizing: border-box;
+    gap: 80px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .div1-discover-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    max-width: 100%;
+  }
+  
+  .div2-discover-homepage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 400px;
+    max-width: 100%;
+  }
+  
+  .div3-discover-homepage {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  
+  .h1-1-discover-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  
+  .div4-discover-homepage {
+    flex: 1;
+    position: relative;
+    font-size: 18px;
+    line-height: 150%;
+    display: inline-block;
+    min-width: 400px;
+    max-width: 100%;
+  }
+  
+  .div5-discover-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    max-width: 100%;
+    font-size: 32px;
+  }
+  
+  .div6-discover-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    max-width: 100%;
+  }
+  
+  .div7-discover-homepage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 0px 0px;
+    gap: 24px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .btn1-discover-homepage {
+    cursor: pointer;
+    border: none;
+    padding: 17.5px 34px;
+    background-color: #b7e08a;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  .div8-discover-homepage {
+    position: relative;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: "Sora", sans-serif;
+    color: #111;
+    text-align: left;
+    display: inline-block;
+    min-width: 92px;
+  }
+  
+  .div9-discover-homepage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .div10-discover-homepage {
+    position: relative;
+    line-height: 150%;
+    display: inline-block;
+    min-width: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .img1-discover-homepage {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+  }
+  

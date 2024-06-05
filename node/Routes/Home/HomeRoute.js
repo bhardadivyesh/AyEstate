@@ -9,7 +9,6 @@ router.post("/post-home", async (req, res) => {
       await HomeData.save();
       res.json({ status: "OK", message: "Home Data send successfully" });
     } catch (error) {
-      console.error("Error feedback:", error);
       res.status(500).json({ error: "Internal server error" });
     }
   });

@@ -682,408 +682,48 @@
   width: 343px;
   height: 599px;
 }
-.group-child10-membershipMain,
-.group-child9-membershipMain {
-  box-shadow: 0-1px 14.3px rgba(0, 0, 0, 0.25);
-  border-radius: 17px;
-  background-color: #f6f6f6;
-}
-.group-child10-membershipMain {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 17px 17px 18px 18px;
-  background-color: #fff;
-  height: 217px;
-}
-.rectangle-icon-membershipMain {
-  left: 0;
-  width: 90px;
-  object-fit: contain;
-}
 .discont-membershipMain,
-.rectangle-icon-membershipMain,
-.vector-parent-membershipMain {
+.rectangle-icon-membershipMain{
   position: absolute;
   top: 0;
   height: 15.6px;
-}
-.discont-membershipMain {
-  left: 8.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80.8px;
-}
-.vector-parent-membershipMain {
-  left: 253px;
-  width: 90px;
-}
-.silver-packages-membershipMain {
-  line-height: 130%;
-  font-weight: 600;
-  display: inline-block;
 }
 .inner-membershipMain,
-.silver-packages-membershipMain,
-.silver-packages-wrapper-membershipMain {
+.silver-packages-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 343px;
   height: 40px;
 }
-.inner-membershipMain {
-  top: 58px;
-  font-size: 30px;
-}
-.span1-membershipMain {
+.span2-membershipMain{
   font-weight: 600;
   white-space: pre-wrap;
-}
-.span3-membershipMain {
-  font-size: 40px;
-}
-.span2-membershipMain,
-.span4-membershipMain {
-  font-weight: 600;
-  white-space: pre-wrap;
-}
-.listing2-membershipMain {
-  color: #000;
-  font-size: 20px;
-}
-.listing-txt-membershipMain {
-  width: 100%;
-}
-.listing1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  width: 343px;
-  height: 43px;
-}
-.group-child11-membershipMain {
-  position: absolute;
-  top: 25px;
-  left: 137px;
-  width: 61px;
-  height: 6px;
-  object-fit: contain;
-}
-.listing-parent-membershipMain {
-  position: absolute;
-  top: 115px;
-  left: 0;
-  width: 343px;
-  height: 43px;
-  font-size: 32px;
-  color: #b7e08a;
-}
-.group-icon1-membershipMain {
-  position: absolute;
-  height: 21.58%;
-  width: 18.08%;
-  top: 7.22%;
-  right: 41.11%;
-  bottom: 71.2%;
-  left: 40.82%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.div3-membershipMain {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  width: 343px;
-  height: 158px;
 }
 .group-child12-membershipMain,
-.group-wrapper1-membershipMain,
-.rectangle-parent9-membershipMain {
+.group-wrapper1-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 343px;
   height: 217px;
 }
-.group-child12-membershipMain {
-  border-radius: 5px;
-  background-color: #b7e08a;
-  width: 196px;
-  height: 43px;
-}
-.edit-membership1-membershipMain {
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .edit-membership1-membershipMain,
-.group-child13-membershipMain,
-.rectangle-parent10-membershipMain {
+.group-child13-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 196px;
   height: 43px;
 }
-.group-child13-membershipMain {
-  border-radius: 5px;
-  background-color: #d11a2a;
-  width: 110px;
-  height: 42px;
-}
-.delete1-membershipMain {
-  position: absolute;
-  top: 10px;
-  left: 29px;
-  display: inline-block;
-  width: 56px;
-  height: 15px;
-}
-.rectangle-parent11-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 207px;
-  width: 110px;
-  height: 42px;
-  text-align: left;
-  color: #fff;
-}
-.group-parent11-membershipMain {
-  position: absolute;
-  top: 286px;
-  left: 0;
-  width: 317px;
-  height: 43px;
-}
-.checkmark-circle-2-icon5-membershipMain {
-  position: absolute;
-  height: 63.33%;
-  width: 5.85%;
-  top: 20%;
-  right: 94.15%;
-  bottom: 16.67%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2693507-icon1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 34px;
-  height: 30px;
-  overflow: hidden;
-}
-.days-plan-validity1-membershipMain {
-  position: absolute;
-  top: 4px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 22px;
-}
-.checkmark-circle-2-parent3-membershipMain {
-  position: absolute;
-  height: 11.41%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 88.59%;
-  left: 0;
-}
-.checkmark-circle-2-icon6-membershipMain {
-  position: absolute;
-  height: 63.33%;
-  width: 5.85%;
-  top: 20%;
-  right: 94.15%;
-  bottom: 16.67%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2668384-icon1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 31px;
-  height: 30px;
-  overflow: hidden;
-}
-.top-slot-listing1-membershipMain {
-  position: absolute;
-  top: 7px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 18px;
-}
-.checkmark-circle-2-parent4-membershipMain {
-  position: absolute;
-  height: 11.41%;
-  width: 100%;
-  top: 22.43%;
-  right: 0;
-  bottom: 66.16%;
-  left: 0;
-}
-.checkmark-circle-2-icon7-membershipMain {
-  position: absolute;
-  height: 61.29%;
-  width: 5.85%;
-  top: 25.81%;
-  right: 94.15%;
-  bottom: 12.9%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2889676-icon1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 31px;
-  height: 31px;
-  overflow: hidden;
-}
-.privacy-of-your1-membershipMain {
-  position: absolute;
-  top: 2px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 27px;
-}
-.checkmark-circle-2-parent5-membershipMain {
-  position: absolute;
-  height: 11.79%;
-  width: 100%;
-  top: 44.49%;
-  right: 0;
-  bottom: 43.73%;
-  left: 0;
-}
-.checkmark-circle-2-icon8-membershipMain {
-  position: absolute;
-  height: 61.29%;
-  width: 5.85%;
-  top: 19.35%;
-  right: 94.15%;
-  bottom: 19.35%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-870073-icon1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 31px;
-  height: 31px;
-  overflow: hidden;
-}
-.relationship-manager-fast1-membershipMain {
-  position: absolute;
-  top: 3px;
-  left: 86px;
-  display: flex;
-  align-items: center;
-  width: 239px;
-  height: 25px;
-}
-.checkmark-circle-2-parent6-membershipMain {
-  position: absolute;
-  height: 11.79%;
-  width: 100%;
-  top: 66.16%;
-  right: 0;
-  bottom: 22.05%;
-  left: 0;
-}
-.checkmark-circle-2-icon9-membershipMain {
-  position: absolute;
-  height: 67.86%;
-  width: 5.85%;
-  top: 10.71%;
-  right: 94.15%;
-  bottom: 21.43%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-1239608-icon1-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 37px;
-  width: 29px;
-  height: 28px;
-  overflow: hidden;
-}
-.personal-field-assistant1-membershipMain {
-  position: absolute;
-  top: 3px;
-  left: 86px;
-  display: flex;
-  align-items: center;
-  width: 239px;
-  height: 22px;
-}
-.checkmark-circle-2-parent7-membershipMain,
-.group-parent12-membershipMain {
-  position: absolute;
-  height: 10.65%;
-  width: 100%;
-  top: 89.35%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 15px;
-}
-.group-parent12-membershipMain {
-  height: 79.94%;
-  width: 98.48%;
-  top: 0;
-  bottom: 20.06%;
-  left: 1.52%;
-  text-align: left;
-  font-size: 13px;
-}
-.group-parent10-membershipMain {
-  position: absolute;
-  top: 240px;
-  left: 13px;
-  width: 330px;
-  height: 329px;
-  font-size: 16px;
-}
-.group-parent9-membershipMain,
-.rectangle-parent8-membershipMain {
+.group-parent9-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 343px;
   height: 569px;
 }
-.rectangle-parent8-membershipMain {
-  left: 381px;
-  height: 599px;
-  font-size: 10px;
-}
-.group-child14-membershipMain,
-.group-child15-membershipMain {
+.group-child14-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
@@ -1093,372 +733,40 @@
   width: 343px;
   height: 599px;
 }
-.group-child15-membershipMain {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 17px 17px 18px 18px;
-  background-color: #fff;
-  height: 217px;
-}
-.group-icon2-membershipMain {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  object-fit: contain;
-  position: absolute;
-  left: 0;
-  top: 4px;
-  transform: scale(1.826);
-}
-.wrapper-group-membershipMain {
-  position: absolute;
-  height: 19.62%;
-  width: 16.82%;
-  top: 9.49%;
-  right: 42.33%;
-  bottom: 70.89%;
-  left: 40.85%;
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gold-packages-membershipMain,
-.gold-packages-wrapper-membershipMain {
+.gold-packages-membershipMain{
   position: absolute;
   left: 0;
   width: 343px;
   height: 40px;
 }
-.gold-packages-membershipMain {
-  top: 0;
-  line-height: 130%;
-  font-weight: 600;
-  display: inline-block;
-}
-.gold-packages-wrapper-membershipMain {
-  top: 58px;
-}
-.group-child16-membershipMain {
-  left: 0;
-  width: 90px;
-  object-fit: contain;
-}
 .discont1-membershipMain,
-.group-child16-membershipMain,
-.vector-group-membershipMain {
+.group-child16-membershipMain{
   position: absolute;
   top: 0;
   height: 15.6px;
 }
-.discont1-membershipMain {
-  left: 8.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80.8px;
-}
-.vector-group-membershipMain {
-  left: 253px;
-  width: 90px;
-  font-size: 10px;
-}
-.span5-membershipMain {
-  font-weight: 600;
-  white-space: pre-wrap;
-}
-.span7-membershipMain {
-  font-size: 40px;
-}
-.span6-membershipMain,
-.span8-membershipMain {
-  font-weight: 600;
-  white-space: pre-wrap;
-}
-.listing4-membershipMain {
-  color: #000;
-  font-size: 20px;
-}
-.listing-txt1-membershipMain {
-  width: 100%;
-}
-.listing3-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  width: 343px;
-  height: 43px;
-}
-.group-child17-membershipMain {
-  position: absolute;
-  top: 24px;
-  left: 136px;
-  width: 66px;
-  height: 7px;
-  object-fit: contain;
-}
-.listing-group-membershipMain {
-  position: absolute;
-  top: 115px;
-  left: 0;
-  width: 343px;
-  height: 43px;
-  font-size: 32px;
-  color: #b7e08a;
-}
-.wrapper-group-parent-membershipMain {
-  position: absolute;
-  height: 72.81%;
-  width: 100%;
-  top: 6.91%;
-  right: 0;
-  bottom: 20.28%;
-  left: 0;
-}
-.group-child18-membershipMain,
-.rectangle-parent13-membershipMain {
+.group-child18-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 343px;
   height: 217px;
 }
-.group-child18-membershipMain {
-  border-radius: 5px;
-  background-color: #b7e08a;
-  width: 196px;
-  height: 43px;
-}
-.edit-membership2-membershipMain {
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.edit-membership2-membershipMain,
-.rectangle-parent14-membershipMain {
+.edit-membership2-membershipMain{
   position: absolute;
   top: 0;
   left: 0;
   width: 196px;
   height: 43px;
 }
-.group-child19-membershipMain {
-  left: 0;
-  border-radius: 5px;
-  background-color: #d11a2a;
-}
 .delete2-membershipMain,
-.group-child19-membershipMain,
-.rectangle-parent15-membershipMain {
+.group-child19-membershipMain{
   position: absolute;
   top: 0;
   width: 110px;
   height: 42px;
 }
-.delete2-membershipMain {
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rectangle-parent15-membershipMain {
-  left: 207px;
-  color: #fff;
-}
-.group-parent15-membershipMain {
-  position: absolute;
-  top: 286px;
-  left: 0;
-  width: 317px;
-  height: 43px;
-}
-.checkmark-circle-2-icon10-membershipMain {
-  position: absolute;
-  height: 63.33%;
-  width: 5.85%;
-  top: 20%;
-  right: 94.15%;
-  bottom: 16.67%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2693507-icon2-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 34px;
-  height: 30px;
-  overflow: hidden;
-}
-.days-plan-validity2-membershipMain {
-  position: absolute;
-  top: 4px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 22px;
-}
-.checkmark-circle-2-parent8-membershipMain {
-  position: absolute;
-  height: 11.41%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 88.59%;
-  left: 0;
-}
-.checkmark-circle-2-icon11-membershipMain {
-  position: absolute;
-  height: 63.33%;
-  width: 5.85%;
-  top: 20%;
-  right: 94.15%;
-  bottom: 16.67%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2668384-icon2-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 31px;
-  height: 30px;
-  overflow: hidden;
-}
-.top-slot-listing2-membershipMain {
-  position: absolute;
-  top: 7px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 18px;
-}
-.checkmark-circle-2-parent9-membershipMain {
-  position: absolute;
-  height: 11.41%;
-  width: 100%;
-  top: 22.43%;
-  right: 0;
-  bottom: 66.16%;
-  left: 0;
-}
-.checkmark-circle-2-icon12-membershipMain {
-  position: absolute;
-  height: 61.29%;
-  width: 5.85%;
-  top: 25.81%;
-  right: 94.15%;
-  bottom: 12.9%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-2889676-icon2-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 31px;
-  height: 31px;
-  overflow: hidden;
-}
-.privacy-of-your2-membershipMain {
-  position: absolute;
-  top: 2px;
-  left: 87px;
-  display: flex;
-  align-items: center;
-  width: 238px;
-  height: 27px;
-}
-.checkmark-circle-2-parent10-membershipMain {
-  position: absolute;
-  height: 11.79%;
-  width: 100%;
-  top: 44.49%;
-  right: 0;
-  bottom: 43.73%;
-  left: 0;
-}
-.checkmark-circle-2-icon13-membershipMain {
-  position: absolute;
-  height: 61.29%;
-  width: 5.85%;
-  top: 19.35%;
-  right: 94.15%;
-  bottom: 19.35%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-870073-icon2-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 34px;
-  width: 31px;
-  height: 31px;
-  overflow: hidden;
-}
-.relationship-manager-fast2-membershipMain {
-  position: absolute;
-  top: 3px;
-  left: 86px;
-  display: flex;
-  align-items: center;
-  width: 239px;
-  height: 25px;
-}
-.checkmark-circle-2-parent11-membershipMain {
-  position: absolute;
-  height: 11.79%;
-  width: 100%;
-  top: 66.16%;
-  right: 0;
-  bottom: 22.05%;
-  left: 0;
-}
-.checkmark-circle-2-icon14-membershipMain {
-  position: absolute;
-  height: 67.86%;
-  width: 5.85%;
-  top: 10.71%;
-  right: 94.15%;
-  bottom: 21.43%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.fi-1239608-icon2-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 37px;
-  width: 29px;
-  height: 28px;
-  overflow: hidden;
-}
-.personal-field-assistant2-membershipMain {
-  position: absolute;
-  top: 3px;
-  left: 86px;
-  display: flex;
-  align-items: center;
-  width: 239px;
-  height: 22px;
-}
-.checkmark-circle-2-parent12-membershipMain,
-.group-parent16-membershipMain {
+.checkmark-circle-2-parent12-membershipMain{
   position: absolute;
   height: 10.65%;
   width: 100%;
@@ -1468,33 +776,8 @@
   left: 0;
   font-size: 15px;
 }
-.group-parent16-membershipMain {
-  height: 79.94%;
-  width: 98.48%;
-  top: 0;
-  bottom: 20.06%;
-  left: 1.52%;
-  text-align: left;
-  font-size: 13px;
-}
-.group-parent14-membershipMain {
-  position: absolute;
-  top: 240px;
-  left: 13px;
-  width: 330px;
-  height: 329px;
-  font-size: 16px;
-}
-.group-parent13-membershipMain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 343px;
-  height: 569px;
-}
 .group-group-membershipMain,
-.group-parent4-membershipMain,
-.rectangle-parent12-membershipMain {
+.group-parent4-membershipMain{
   position: absolute;
   top: 0;
   left: 770px;

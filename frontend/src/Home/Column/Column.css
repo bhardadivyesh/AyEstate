@@ -1,0 +1,67 @@
+.div1-column-homepage {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    min-width: 304px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .img1-column-homepage {
+    align-self: stretch;
+    height: 240px;
+    position: relative;
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  .div2-column-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  
+  .h2-1-column-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    line-height: 50%;
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+  }
+  
+  .h2-2-column-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    line-height: 170%;
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  .div3-column-homepage,
+  .div4-column-homepage,
+  .div5-column-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: "Sora", sans-serif;
+    font-weight: normal;
+    gap: 1px;
+  }
+  

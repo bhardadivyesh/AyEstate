@@ -10,11 +10,12 @@ const InquiryRoute = require('./Routes/Inquiry/InquiryRoute')
 const RazorpayRoute = require('./Routes/Payment/PaymentRoute')
 const LocationRoute = require('./Routes/Admin/Location/LocationRoute')
 const CategoryRoute = require('./Routes/Admin/Category/CategoryRoute')
-// const ProductRoute = require('./Routes/Admin/Listings/ListingSchema')
 const ListingDetailRoute = require('./Routes/ListingDetailProperty/ListingDetailPropertyRoute')
 const MembershipPricingRoute = require('./Routes/MembershipPrice/MembershipPriceRoute')
 const VendorListingRoute = require('./Routes/Vendor/VendorListing/VendorListingRoute')
-const multerRoute = require('./Routes/Multer/multer')
+const blogsRoute = require('./Routes/Blogs/BlogsRoute')
+const aboutUsRoute = require("./Routes/AboutUs/AboutUsRoute")
+const faqsRoute = require("./Routes/Faqs/FaqsRoute")
 const path = require('path');
 const app = express();
 const port = 3000;
@@ -48,12 +49,12 @@ app.use(InquiryRoute)
 app.use(RazorpayRoute)
 app.use(LocationRoute)
 app.use(CategoryRoute)
-// app.use(ProductRoute)
 app.use(ListingDetailRoute)
 app.use(MembershipPricingRoute)
 app.use(VendorListingRoute)
-app.use('/upload', multerRoute);
-
+app.use(blogsRoute)
+app.use(aboutUsRoute)
+app.use(faqsRoute)
 
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);

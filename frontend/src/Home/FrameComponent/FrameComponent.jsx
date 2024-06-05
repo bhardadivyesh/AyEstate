@@ -1,6 +1,7 @@
 import { useContext, useMemo, useState } from "react";
 import minus from "../../assets/minus.png";
 import myContext from "../../context/context";
+import "./FrameComponent.css";
 
 const getStyleValue = (key, value) => {
   if (value === undefined || value === "") return;
@@ -39,19 +40,19 @@ const FrameComponent = ({
         break;
       case 2:
         setButtonTwoState(!buttonTwoState);
-        setButtonOneState(false); // Ensure other button states are reset
+        setButtonOneState(false);
         setButtonThreeState(false);
         setButtonFourState(false);
         break;
       case 3:
         setButtonThreeState(!buttonThreeState);
-        setButtonOneState(false); // Ensure other button states are reset
+        setButtonOneState(false);
         setButtonTwoState(false);
         setButtonFourState(false);
         break;
       case 4:
         setButtonFourState(!buttonFourState);
-        setButtonOneState(false); // Ensure other button states are reset
+        setButtonOneState(false);
         setButtonTwoState(false);
         setButtonThreeState(false);
         break;
@@ -63,37 +64,15 @@ const FrameComponent = ({
   return (
     <>
       <div
+        className="div1-FrameComponent-homepage"
         style={{
-          alignSelf: "stretch",
-          borderRadius: "18px",
-          border: "2px solid #f6f8f9",
-          boxSizing: "border-box",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          padding: "24px 22px 24px 24px",
-          maxWidth: "100%",
-          flexShrink: "0",
-          textAlign: "left",
-          fontSize: "20px",
-          color: "#1b2124",
-          fontFamily: "Sora",
-          position: "relative",
           ...frameDivStyle,
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-          }}
-        >
-          {/* Render image based on button state */}
+        <div className="div2-FrameComponent-homepage">
           {value === "1" && (
             <img
-              style={{ width: "24px", height: "24px" }}
+              className="img1-FrameComponent-homepage"
               src={buttonOneState ? minus : add}
               alt=""
               onClick={() => handleButtonClick(1)}
@@ -101,7 +80,7 @@ const FrameComponent = ({
           )}
           {value === "2" && (
             <img
-              style={{ width: "24px", height: "24px" }}
+              className="img2-FrameComponent-homepage"
               src={buttonTwoState ? minus : add}
               alt=""
               onClick={() => handleButtonClick(2)}
@@ -109,7 +88,7 @@ const FrameComponent = ({
           )}
           {value === "3" && (
             <img
-              style={{ width: "24px", height: "24px" }}
+              className="img3-FrameComponent-homepage"
               src={buttonThreeState ? minus : add}
               alt=""
               onClick={() => handleButtonClick(3)}
@@ -117,7 +96,7 @@ const FrameComponent = ({
           )}
           {value === "4" && (
             <img
-              style={{ width: "24px", height: "24px" }}
+              className="img4-FrameComponent-homepage"
               src={buttonFourState ? minus : add}
               alt=""
               onClick={() => handleButtonClick(4)}
@@ -125,151 +104,50 @@ const FrameComponent = ({
           )}
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateRows: "auto auto",
-            alignItems: "center",
-            gap: "20px",
-            zIndex: "1",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <b
-              style={{
-                lineHeight: "130%",
-                textTransform: "capitalize",
-                fontFamily: "Sora",
-                color: "#000",
-              }}
-            >
+        <div className="div3-FrameComponent-homepage">
+          <div className="div4-FrameComponent-homepage">
+            <b className="b1-FrameComponent-homepage">
               {whatDoWeNeedToApplyForAJo}
             </b>
           </div>
           {value === "1" && buttonOneState && (
             <div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "180%",
-                  fontWeight: "600",
-                  fontFamily: "Sora",
-                  color: "#7f879e",
-                  textAlign: "left",
-                }}
-              >
+              <div className="div5-FrameComponent-homepage">
                 Et lectus viverra aenean malesuada praesent. Egestas praesent
                 quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida
                 tellus auctor ac, vitae justo.
               </div>
-              <b
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "130%",
-                  textTransform: "capitalize",
-                  fontFamily: "Sora",
-                  color: "#3860e2",
-                  textAlign: "left",
-                }}
-              >
-                Read More
-              </b>
+              <b className="b2-FrameComponent-homepage">Read More</b>
             </div>
           )}
           {value === "2" && buttonTwoState && (
             <div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "180%",
-                  fontWeight: "600",
-                  fontFamily: "Sora",
-                  color: "#7f879e",
-                  textAlign: "left",
-                }}
-              >
+              <div className="div6-FrameComponent-homepage">
                 Et lectus viverra aenean malesuada praesent. Egestas praesent
                 quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida
                 tellus auctor ac, vitae justo.
               </div>
-              <b
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "130%",
-                  textTransform: "capitalize",
-                  fontFamily: "Sora",
-                  color: "#3860e2",
-                  textAlign: "left",
-                }}
-              >
-                Read More
-              </b>
+              <b className="b3-FrameComponent-homepage">Read More</b>
             </div>
           )}
           {value === "3" && buttonThreeState && (
             <div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "180%",
-                  fontWeight: "600",
-                  fontFamily: "Sora",
-                  color: "#7f879e",
-                  textAlign: "left",
-                }}
-              >
+              <div className="div7-FrameComponent-homepage">
                 Et lectus viverra aenean malesuada praesent. Egestas praesent
                 quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida
                 tellus auctor ac, vitae justo.
               </div>
-              <b
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "130%",
-                  textTransform: "capitalize",
-                  fontFamily: "Sora",
-                  color: "#3860e2",
-                  textAlign: "left",
-                }}
-              >
-                Read More
-              </b>
+              <b className="b4-FrameComponent-homepage">Read More</b>
             </div>
           )}
           {value === "4" && buttonFourState && (
             <div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "180%",
-                  fontWeight: "600",
-                  fontFamily: "Sora",
-                  color: "#7f879e",
-                  textAlign: "left",
-                }}
-              >
+              <div className="div8-FrameComponent-homepage">
                 Et lectus viverra aenean malesuada praesent. Egestas praesent
                 quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida
                 tellus auctor ac, vitae justo.
               </div>
-              <b
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "130%",
-                  textTransform: "capitalize",
-                  fontFamily: "Sora",
-                  color: "#3860e2",
-                  textAlign: "left",
-                }}
-              >
-                Read More
-              </b>
+              <b className="b5-FrameComponent-homepage">Read More</b>
             </div>
           )}
         </div>

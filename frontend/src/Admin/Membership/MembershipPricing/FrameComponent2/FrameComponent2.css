@@ -1,4 +1,3 @@
-
 .logo-input-file {
   padding: 13px;
 }
@@ -26,11 +25,6 @@
   font-size: 36px;
   color: #000;
   font-family: Sora;
-}
-@media screen and (max-width: 675px) {
-  .rectangle-parent115 {
-    flex-wrap: wrap;
-  }
 }
 .rectangle-parent116 {
   max-width: 100%;
@@ -800,6 +794,11 @@
   align-items: flex-start;
   line-height: normal;
   letter-spacing: normal;
+}
+@media screen and (max-width: 675px) {
+  .rectangle-parent115 {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 767px) {
   .div36 {

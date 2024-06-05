@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import "./MultiLevelMessageCardStack.css";
-import arrow from "../../assets/contactus/icons/arrow-down.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 const MultiLevelMessageCardStack = () => {
@@ -45,8 +46,9 @@ const MultiLevelMessageCardStack = () => {
 
   const handleSubmit = () => {
     try {
-      axios.post("http://localhost:3000/post-contact", formData);
-      axios.post("http://localhost:1337/contactuses", formData);
+      axios.post("http://localhost:3000/post-contact", formData).then((res)=>{
+        toast.success(res.data.message);
+      })
     } catch (error) {
       console.error("Error submitting data:", error);
     }
@@ -164,6 +166,7 @@ const MultiLevelMessageCardStack = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import ViewMoreIcon from "../../../assets/admin/vendordashboard/AddListing/AddListingDetail/viewMore.png";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./AddListingDetail.css";
 import AddListingContext from "../AddListing";
 import vendorDashboardContext from "../../VendorDashboardContext";
@@ -14,13 +14,27 @@ const AddListingDetail = () => {
     register,
     handleSubmit,
     watch,
+    setValue,
     reset,
     formState: { errors },
   } = useForm();
+  useEffect(()=>{
+    if (vendorMansterpageContext.activeListingValue) {
+      const {
+        listingTitle,
+        listingDescription
+      } = vendorMansterpageContext.activeListingValue;
+
+      setValue("listingTitle", listingTitle || "");
+      setValue("listingDescription", listingDescription || "");
+
+      
+    }
+  },[vendorMansterpageContext.activeListingValue, setValue])
   const onSubmit = async (data) => {
     setAddListingDetailData(data);
     let listingAddData = value.addListingData;
-    let listingDataDetail = addListingDetailData;
+    let listingDataDetail = data;
     let allListingData = { ...listingAddData, ...listingDataDetail };
     const formData = new FormData();
     for (let i = 1; i <= 4; i++) {
@@ -127,11 +141,6 @@ const AddListingDetail = () => {
               className="title10-addListingDetail"
               placeholder="Title Listing"
               type="text"
-              defaultValue={
-                vendorMansterpageContext.activeListingValue.location !== ""
-                  ? vendorMansterpageContext.activeListingValue.location
-                  : ""
-              }
               {...register("listingTitle", { required: true })}
             />
           </div>
@@ -140,11 +149,6 @@ const AddListingDetail = () => {
             placeholder="Listing Description"
             rows={17}
             cols={67}
-            defaultValue={
-              vendorMansterpageContext.activeListingValue.listingDescription !== ""
-                ? vendorMansterpageContext.activeListingValue.listingDescription
-                : ""
-            }
             {...register("listingDescription", { required: true })}
           />
           <button type="submit" className="homepage1-addListingDetail">

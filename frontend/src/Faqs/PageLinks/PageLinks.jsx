@@ -17,11 +17,10 @@ const PageLinks = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:1337/faqs").then((res) => {
+    axios.get("http://localhost:3000/get-faqs").then((res) => {
       setQuestion(res.data);
     });
   }, []);
-
   const toggleDescription = (index) => {
     setOpenIndices((prevOpenIndices) => {
       if (prevOpenIndices.includes(index)) {

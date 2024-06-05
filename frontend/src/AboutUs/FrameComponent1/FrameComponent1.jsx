@@ -5,7 +5,7 @@ import axios from "axios";
 const FrameComponent1 = () => {
   const [teamData, setTeamData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:1337/about-uses").then((res) => {
+    axios.get("http://localhost:3000/get-aboutUs").then((res) => {
       setTeamData(res.data);
     });
   }, []);

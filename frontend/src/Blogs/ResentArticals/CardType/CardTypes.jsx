@@ -49,7 +49,7 @@ const CardType = ({
               className="card-type-child"
               loading="lazy"
               alt=""
-              src={`http://localhost:1337${items.images[0].url}`}
+              src={`${items.images[0]}`}
             />
 
             <div className="button-instance-parent">

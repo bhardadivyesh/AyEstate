@@ -43,11 +43,11 @@ const ListingMain = () => {
   };
   const [productData, setProductData] = useState();
   const [locationData, setLocationData] = useState([]);
+  const [categoryData,setCategoryData] = useState([])
   const [listingData, setListingData] = useState([]);
-
   // api call
   useEffect(() => {
-    axios.get("http://localhost:1337/listings").then((res) => {
+    axios.get("http://localhost:3000/get-vendorListing").then((res) => {
       setProductData(res.data);
     });
   }, []);
@@ -55,7 +55,10 @@ const ListingMain = () => {
     axios.get("http://localhost:3000/get-location").then((res) => {
       setLocationData(res.data);
     });
-    axios.get("http://localhost:3000/get-listing").then((res) => {
+    axios.get("http://localhost:3000/get-category").then((res) => {
+      setCategoryData(res.data);
+    });
+    axios.get("http://localhost:3000/get-vendorListing-active").then((res) => {
       setListingData(res.data);
     });
   }, []);
@@ -68,7 +71,7 @@ const ListingMain = () => {
   const handleCategoryChange = (value) => {
     setSelectedCategories(value == selectedCategories ? "" : value);
   };
-  const filteredProperties = productData?.filter((property) => {
+  const filteredProperties = listingData?.filter((property) => {
     const locationMatch =
       selectedLocation?.length === 0 ||
       selectedLocation?.includes(property.location);
@@ -203,16 +206,16 @@ const ListingMain = () => {
                       </div>
                     </div>
                     {allLocationToggle &&
-                      productData
-                        .slice(3)
+                      locationData
+                        ?.slice(3)
                         .reduce((uniqueLocations, item) => {
                           if (
-                            !uniqueLocations.includes(item.location) &&
-                            item.location !== "Bandung" &&
-                            item.location !== "Jakarta" &&
-                            item.location !== "Bali"
+                            !uniqueLocations.includes(item.locationName) &&
+                            item.locationName !== "Bandung" &&
+                            item.locationName !== "Jakarta" &&
+                            item.locationName !== "Bali"
                           ) {
-                            uniqueLocations.push(item.location);
+                            uniqueLocations.push(item.locationName);
                           }
                           return uniqueLocations;
                         }, [])
@@ -295,8 +298,8 @@ const ListingMain = () => {
                   </div>
                 </div>
                 {allCategoryToggle &&
-                  productData
-                    .slice(3)
+                  categoryData
+                    ?.slice(3)
                     .reduce((uniqueCategory, item) => {
                       if (
                         !uniqueCategory.includes(item.category) &&

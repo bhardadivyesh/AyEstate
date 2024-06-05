@@ -82,10 +82,6 @@
     }
   }
   @media screen and (max-width: 950px) {
-    .your-payment-was-payment-requestUnderReview {
-      font-size: 2.375rem;
-      line-height: 1.188rem;
-    }
     .thank-you-for-container-payment-requestUnderReview {
       font-size: 2rem;
       line-height: 1.188rem;
@@ -100,10 +96,6 @@
     }
   }
   @media screen and (max-width: 450px) {
-    .your-payment-was-payment-requestUnderReview {
-      font-size: 1.813rem;
-      line-height: 0.875rem;
-    }
     .thank-you-for-container-payment-requestUnderReview {
       font-size: 1.5rem;
       line-height: 0.875rem;

@@ -13,7 +13,7 @@ const BlogRecentlyArticlesDet = () => {
   const [data, setdata] = useState([]);
   const [articalData,setArticalData] = useState([])
   useEffect(()=>{
-    axios.get('http://localhost:1337/blogs').then((res)=>{
+    axios.get("http://localhost:3000/get-blogs").then((res)=>{
         setArticalData(res.data)
     })
   },[])
@@ -32,7 +32,6 @@ const BlogRecentlyArticlesDet = () => {
   }, []);
   const totalLength = data.longDescription?.length;
   const partLength = Math.ceil(totalLength / 8);
-  // Extract each part and store in variables
   const part1 = data?.longDescription?.substring(0, partLength);
   const part2 = data?.longDescription?.substring(partLength, partLength * 2);
   const part3 = data?.longDescription?.substring(partLength * 2, partLength * 3);
@@ -44,66 +43,66 @@ const BlogRecentlyArticlesDet = () => {
   
 
   return (
-    <div className="blog-recently-articles-det">
+    <div className="blog-recently-articles-det-blog-recentArticalDetailMain">
       <NavigationBar />
-      <main className="main-navigation">
-        <section className="website-info">
-          <div className="website-info-inner">
-            <div className="frame-parent2">
-              <div className="frame-wrapper1">
-                <div className="february-2024-parent">
-                  <div className="february-2024">{data.date}</div>
-                  <div className="ellipse-wrapper">
-                    <div className="frame-item" />
+      <main className="main-navigation-blog-recentArticalDetailMain">
+        <section className="website-info-blog-recentArticalDetailMain">
+          <div className="website-info-inner-blog-recentArticalDetailMain">
+            <div className="frame-parent2-blog-recentArticalDetailMain">
+              <div className="frame-wrapper1-blog-recentArticalDetailMain">
+                <div className="february-2024-parent-blog-recentArticalDetailMain">
+                  <div className="february-2024-blog-recentArticalDetailMain">{data.date}</div>
+                  <div className="ellipse-wrapper-blog-recentArticalDetailMain">
+                    <div className="frame-item-blog-recentArticalDetailMain" />
                   </div>
-                  <div className="success-stories">{data.suggestion}</div>
+                  <div className="success-stories-blog-recentArticalDetailMain">{data.suggestion}</div>
                 </div>
               </div>
-              <div className="from-0-to-40-million-how-a-parent">
-                <h1 className="from-0-to">
+              <div className="from-0-to-40-million-how-a-parent-blog-recentArticalDetailMain">
+                <h1 className="from-0-to-blog-recentArticalDetailMain">
                   From $0 to $40 Million: How a 10-Year Old Orphan Became a
                   Successful Investor
                 </h1>
-                <div className="it-can-be-a-challenge-to-maint-wrapper">
-                  <div className="it-can-be">{data.sortDescription}</div>
+                <div className="it-can-be-a-challenge-to-maint-wrapper-blog-recentArticalDetailMain">
+                  <div className="it-can-be-blog-recentArticalDetailMain">{data.sortDescription}</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="website-info-child">
+          <div className="website-info-child-blog-recentArticalDetailMain">
             <img
-              className="frame-inner"
+              className="frame-inner-blog-recentArticalDetailMain"
               loading="lazy"
               alt=""
-              src={`http://localhost:1337${data.images?.[0].url}`}
+              src={`${data.images?.[0]}`}
             />
           </div>
           <FrameComponent parts={{part1,part2,part3,part4,part5,part6}} images={data?.images} />
-          <div className="website-info-inner1">
-            <div className="from-0-to-40-million-in-asse-parent">
-              <h2 className="from-0-to1">From $0 to $40 Million in Assets</h2>
-              <div className="taking-down-this-container">
-                <p className="taking-down-this">
+          <div className="website-info-inner1-blog-recentArticalDetailMain">
+            <div className="from-0-to-40-million-in-asse-parent-blog-recentArticalDetailMain">
+              <h2 className="from-0-to1-blog-recentArticalDetailMain">From $0 to $40 Million in Assets</h2>
+              <div className="taking-down-this-container-blog-recentArticalDetailMain">
+                <p className="taking-down-this-blog-recentArticalDetailMain">
                   {part7}
                 </p>
-                <p className="blank-line">&nbsp;</p>
-                <p className="blank-line1">&nbsp;</p>
-                <p className="the-journey-was-one-of-bootstr">
+                <p className="blank-line-blog-recentArticalDetailMain">&nbsp;</p>
+                <p className="blank-line1-blog-recentArticalDetailMain">&nbsp;</p>
+                <p className="the-journey-was-one-of-bootstr-blog-recentArticalDetailMain">
                  {part8}
                 </p>
               </div>
             </div>
           </div>
           <ArticleContainer />
-          <div className="article-listings">
+          <div className="article-listings-blog-recentArticalDetailMain">
             <CardType
-              rectangle9620={`http://localhost:1337${articalData?.[0]?.images[0]?.url}`}
+              rectangle9620={`${articalData?.[0]?.images[0]}`}
               may2022={articalData[0]?.date}
               careerTips={articalData[0]?.suggestion}
               howIntrapreneurshipCanHel={articalData[0]?.sortDescription}
             />
             <CardType
-              rectangle9620={`http://localhost:1337${articalData[1]?.images[1].url}`}
+              rectangle9620={`${articalData[1]?.images[1]}`}
               may2022={articalData[1]?.date}
               careerTips={articalData[1]?.suggestion}
               howIntrapreneurshipCanHel={articalData[1]?.sortDescription}
@@ -114,7 +113,7 @@ const BlogRecentlyArticlesDet = () => {
               propFlex1="1"
             />
             <CardType
-              rectangle9620={`http://localhost:1337${articalData[2]?.images[1]?.url}`}
+              rectangle9620={`${articalData[2]?.images[1]}`}
               may2022={articalData[2]?.date}
               careerTips={articalData[2]?.suggestion}
               howIntrapreneurshipCanHel={articalData[2]?.sortDescription}

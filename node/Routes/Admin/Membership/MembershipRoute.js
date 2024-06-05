@@ -13,7 +13,6 @@ router.post("/create-user", async (req, res) => {
       user: newUser,
     });
   } catch (error) {
-    console.error("Error creating user:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 });
@@ -28,7 +27,6 @@ router.get("/get-user/:userId", async (req, res) => {
       res.status(404).json({ success: false, message: "User not found." });
     }
   } catch (error) {
-    console.error("Error getting user details:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 });
@@ -52,7 +50,6 @@ router.put("/update-user/:userId", async (req, res) => {
       res.status(404).json({ success: false, message: "User not found." });
     }
   } catch (error) {
-    console.error("Error updating user details:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 });
@@ -73,7 +70,6 @@ router.delete("/delete-user/:userId", async (req, res) => {
       res.status(404).json({ success: false, message: "User not found." });
     }
   } catch (error) {
-    console.error("Error deleting user:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 });

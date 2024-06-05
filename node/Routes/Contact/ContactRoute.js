@@ -6,9 +6,8 @@ router.post("/post-contact", async (req, res) => {
     try {
       const newItem = new ContactSchema(req.body);
       await newItem.save();
-      res.status(201).json({ message: 'contact added successfully' });
+      res.status(201).json({ message: 'Inquiry Send successfully' });
     } catch (err) {
-      console.error(err);
       res.status(500).json({ error: 'Server error' });
     }
   });

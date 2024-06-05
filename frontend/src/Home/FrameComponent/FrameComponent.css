@@ -1,0 +1,91 @@
+.div1-FrameComponent-homepage {
+    align-self: stretch;
+    border-radius: 18px;
+    border: 2px solid #f6f8f9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 22px 24px 24px;
+    max-width: 100%;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 20px;
+    color: #1b2124;
+    font-family: Sora;
+    position: relative;
+  }
+  
+  .div2-FrameComponent-homepage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .div3-FrameComponent-homepage {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .div4-FrameComponent-homepage,
+  .div5-FrameComponent-homepage,
+  .div6-FrameComponent-homepage,
+  .div7-FrameComponent-homepage,
+  .div8-FrameComponent-homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .b1-FrameComponent-homepage,
+  .b2-FrameComponent-homepage,
+  .b3-FrameComponent-homepage,
+  .b4-FrameComponent-homepage,
+  .b5-FrameComponent-homepage {
+    line-height: 130%;
+    text-transform: capitalize;
+    font-family: Sora;
+  }
+  
+  .div5-FrameComponent-homepage,
+  .div6-FrameComponent-homepage,
+  .div7-FrameComponent-homepage,
+  .div8-FrameComponent-homepage {
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 600;
+    color: #7f879e;
+    text-align: left;
+  }
+  
+  .b2-FrameComponent-homepage,
+  .b3-FrameComponent-homepage,
+  .b4-FrameComponent-homepage,
+  .b5-FrameComponent-homepage {
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: capitalize;
+    font-family: Sora;
+    color: #3860e2;
+    text-align: left;
+  }
+  
+  .img1-FrameComponent-homepage,
+  .img2-FrameComponent-homepage,
+  .img3-FrameComponent-homepage,
+  .img4-FrameComponent-homepage {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .img1-FrameComponent-homepage:hover,
+  .img2-FrameComponent-homepage:hover,
+  .img3-FrameComponent-homepage:hover,
+  .img4-FrameComponent-homepage:hover {
+    cursor: pointer;
+  }
+  

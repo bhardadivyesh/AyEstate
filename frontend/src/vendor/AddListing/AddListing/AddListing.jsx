@@ -9,25 +9,20 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import AddListingContext from "../AddListing";
 import vendorDashboardContext from "../../VendorDashboardContext";
+
 const AddListing = () => {
   const value = useContext(AddListingContext);
   const vendorMansterpageContext = useContext(vendorDashboardContext);
-  console.log(vendorMansterpageContext.activeListingValue);
+
   const [location, setLocation] = useState([]);
   const [category, setCategory] = useState([]);
+
   const {
     register,
     handleSubmit,
-    watch,
+    setValue,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    value.setAddListingData(data);
-    value.setRenderAddListing("addListingDetail");
-  };
-  const handleNextBtnClick = () => {
-    value.setRenderAddListing("addListingDetail");
-  };
 
   useEffect(() => {
     axios
@@ -38,7 +33,37 @@ const AddListing = () => {
       .get("http://localhost:3000/get-location")
       .then((res) => setLocation(res.data))
       .catch((error) => console.log(error));
-  }, []);
+
+    if (vendorMansterpageContext.activeListingValue) {
+      const {
+        location,
+        name,
+        category,
+        price,
+        date,
+        description,
+        bedIcon,
+        washbasinIcon,
+        sizeIcon,
+      } = vendorMansterpageContext.activeListingValue;
+
+      setValue("location", location || "");
+      setValue("name", name || "");
+      setValue("category", category || "");
+      setValue("price", price || "");
+      setValue("date", date || "");
+      setValue("description", description || "");
+      setValue("bedIcon", bedIcon || "");
+      setValue("washbasinIcon", washbasinIcon || "");
+      setValue("sizeIcon", sizeIcon || "");
+    }
+  }, [vendorMansterpageContext.activeListingValue, setValue]);
+
+  const onSubmit = (data) => {
+    value.setAddListingData(data);
+    value.setRenderAddListing("addListingDetail");
+  };
+
   return (
     <div className="addlisting-vendor-addListing">
       <main className="rectangle-parent-vendor-addListing">
@@ -66,11 +91,6 @@ const AddListing = () => {
             <div className="location-parent-vendor-addListing">
               <select
                 className="location1-vendor-addListing"
-                defaultValue={
-                  vendorMansterpageContext.activeListingValue.location !== ""
-                    ? vendorMansterpageContext.activeListingValue.location
-                    : ""
-                }
                 {...register("location", { required: true })}
               >
                 <option value="">Select Location</option>
@@ -85,16 +105,10 @@ const AddListing = () => {
                 className="property-name-vendor-addListing"
                 placeholder="Property name "
                 type="text"
-                defaultValue={
-                  vendorMansterpageContext.activeListingValue.name !== ""
-                    ? vendorMansterpageContext.activeListingValue.name
-                    : ""
-                }
-                {...register("name",{required : true})}
+                {...register("name", { required: true })}
               />
               <div className="frame-group-vendor-addListing">
                 <div className="rectangle-container-vendor-addListing">
-                  <div className="frame-inner-vendor-addListing" />
                   <img
                     className="frame-icon-vendor-addListing"
                     loading="lazy"
@@ -107,17 +121,11 @@ const AddListing = () => {
                     alt=""
                     src={line}
                   />
-
                   <select
                     className="villa-vendor-addListing"
-                    defaultValue={
-                      vendorMansterpageContext.activeListingValue.category !== ""
-                        ? vendorMansterpageContext.activeListingValue.category
-                        : ""
-                    }
                     {...register("locationIcon", { register: true })}
                   >
-                    <option value="">Villa</option>
+                    <option value="">Select Area</option>
                     {location.map((items, index) => (
                       <option key={index} value={items.locationName}>
                         {items.locationName}
@@ -171,11 +179,6 @@ const AddListing = () => {
                     type="number"
                     className="products-price1-vendor-addListing"
                     placeholder="Property price"
-                    defaultValue={
-                      vendorMansterpageContext.activeListingValue.price !== ""
-                        ? vendorMansterpageContext.activeListingValue.price
-                        : ""
-                    }
                     {...register("price", { required: true })}
                   />
                 </div>
@@ -183,11 +186,6 @@ const AddListing = () => {
                   <input
                     type="date"
                     className="date-picker-addListing"
-                    defaultValue={
-                      vendorMansterpageContext.activeListingValue.date !== ""
-                        ? vendorMansterpageContext.activeListingValue.date
-                        : ""
-                    }
                     {...register("date", { required: true })}
                   />
                 </div>
@@ -215,7 +213,6 @@ const AddListing = () => {
                     type="number"
                     className="div2-vendor-addListing"
                     placeholder="3"
-                   
                     {...register("bedIcon", { required: true })}
                   />
                 </div>
@@ -251,14 +248,9 @@ const AddListing = () => {
           </div>
           <textarea
             className="group-textarea-vendor-addListing"
-            placeholder="Sort description"
+            placeholder="Short description"
             rows={11}
             cols={68}
-            defaultValue={
-              vendorMansterpageContext.activeListingValue.description !== ""
-                ? vendorMansterpageContext.activeListingValue.description
-                : ""
-            }
             {...register("description", { required: true })}
           />
           <div className="frame-wrapper2-vendor-addListing">
@@ -268,11 +260,7 @@ const AddListing = () => {
                 className="rectangle-parent4-vendor-addListing"
                 {...register("image1", { required: true })}
               />
-              <button
-                type="submit"
-                className="rectangle-parent6-vendor-addListing"
-              >
-                {/* onClick={handleNextBtnClick} */}
+              <button type="submit" className="rectangle-parent6-vendor-addListing">
                 <span className="next-vendor-addListing">Next</span>
               </button>
             </div>

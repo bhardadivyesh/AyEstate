@@ -1,0 +1,136 @@
+.section1-ctasection-homepage {
+    align-self: stretch;
+    height: 388px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 24px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .div1-ctasection-homepage {
+    width: 623.7px;
+    height: 397.2px;
+    position: absolute;
+    margin: 0;
+    right: -139.7px;
+    bottom: -180.2px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div2-ctasection-homepage {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    max-width: 100%;
+  }
+  
+  .h1-1-ctasection-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  
+  .p1-ctasection-homepage,
+  .p2-ctasection-homepage {
+    margin: 0;
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  
+  .div3-ctasection-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 28px;
+    color: #f4f2ff;
+  }
+  
+  .p3-ctasection-homepage,
+  .p4-ctasection-homepage {
+    margin: 0;
+    font-family: "Sora", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  
+  .div4-ctasection-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  
+  .btn1-ctasection-homepage {
+    cursor: pointer;
+    border: none;
+    padding: 14px 24px;
+    background-color: #b7e08a;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .div5-ctasection-homepage {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: "Sora", sans-serif;
+    color: #16112f;
+    text-align: left;
+  }
+  
+  .div6-ctasection-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0px 0px;
+  }
+  
+  .img1-ctasection-homepage {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  

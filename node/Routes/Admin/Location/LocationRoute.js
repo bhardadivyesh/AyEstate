@@ -9,7 +9,6 @@ router.post("/post-location", async (req, res) => {
     await newItem.save();
     res.status(201).json({ message: "Location Added" });
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: "Server error" });
   }
 });

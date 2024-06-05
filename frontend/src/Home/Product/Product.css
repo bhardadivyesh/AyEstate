@@ -1,0 +1,94 @@
+.div1-product-homepage {
+    height: 522.8px;
+    width: calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 289px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  
+  .img1-product-homepage {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .div2-product-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  
+  .div3-product-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .div4-product-homepage {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  
+  .div5-product-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  
+  .div6-product-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .btn1-product-homepage {
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 6px 20px;
+    background-color: transparent;
+    align-self: stretch;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  .div7-product-homepage {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    min-width: 88px;
+  }
+  

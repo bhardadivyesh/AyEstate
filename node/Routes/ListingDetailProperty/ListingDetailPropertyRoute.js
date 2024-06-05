@@ -40,7 +40,6 @@ router.post("/post-listingDetail", upload.fields([
     await newListing.save();
     res.status(201).send("ListingDetail created successfully");
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -50,7 +49,6 @@ router.get("/get-listingDetail", async (req, res) => {
     let getListingData = await ListingDetailSchema.find();
     res.status(200).json(getListingData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });

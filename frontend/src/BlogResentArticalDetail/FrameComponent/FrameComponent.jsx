@@ -68,7 +68,7 @@ const FrameComponent = ({parts,images}) => {
           className="frame-child8"
           loading="lazy"
           alt=""
-          src={`http://localhost:1337${images?.[1].url}`}
+          src={`${images?.[1]}`}
         />
       </div>
     </div>

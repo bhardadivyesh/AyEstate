@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const FrameComponent = () => {
   const [blogArticals, setBlogArticals] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:1337/blogs").then((res) => {
+    axios.get("http://localhost:3000/get-blogs").then((res) => {
       setBlogArticals(res.data);
     });
   }, []);
@@ -24,7 +24,7 @@ const FrameComponent = () => {
               <CardType
                 key={index}
                 blogs={blogArticals}
-                rectangle9620={`http://localhost:1337${items?.images?.[0]?.url}`}
+                rectangle9620={`${items.images[0]}`}
                 may2022={items?.date}
                 careerTips={items?.suggestion}
                 howIntrapreneurshipCanHel={items?.sortDescription}

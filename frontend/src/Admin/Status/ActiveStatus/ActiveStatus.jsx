@@ -17,7 +17,6 @@ const ActiveStatus = () => {
         });
     }
   };
-
   useEffect(() => {
     axios.get("http://localhost:3000/get-vendorListing-active").then((res) => {
       setActiveListings(res.data);

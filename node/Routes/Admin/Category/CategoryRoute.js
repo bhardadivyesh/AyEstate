@@ -8,7 +8,6 @@ router.post("/post-category", async (req, res) => {
     await newItem.save();
     res.status(201).json({ message: "category Added" });
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: "Server error" });
   }
 });

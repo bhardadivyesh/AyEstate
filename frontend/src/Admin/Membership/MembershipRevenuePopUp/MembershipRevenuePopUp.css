@@ -204,12 +204,6 @@
     object-fit: contain;
     z-index: 1;
   }
-  .gmailcom1-membership-revenue-popup {
-    text-decoration: underline;
-  }
-  .gmailcom-membership-revenue-popup {
-    color: inherit;
-  }
   .kar23gmailcom-membership-revenue-popup {
     align-self: stretch;
     position: relative;
@@ -410,14 +404,6 @@
     object-fit: contain;
     z-index: 1;
     left: -10px;
-  }
-  .fi-7370261-icon-membership-revenue-popup {
-    height: 24px;
-    width: 25px;
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-    z-index: 1;
   }
   .empty-payment-status-membership-revenue-popup {
     position: relative;

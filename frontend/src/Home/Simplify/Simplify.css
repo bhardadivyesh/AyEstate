@@ -1,0 +1,106 @@
+.div1-Simplify-homepage {
+    align-self: stretch;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 64px;
+    box-sizing: border-box;
+    gap: 80px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .div2-Simplify-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .div3-Simplify-homepage {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  
+  .div4-Simplify-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  
+  .div5-Simplify-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  
+  .div6-Simplify-homepage {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 69px;
+  }
+  
+  .h1-1-Simplify-homepage {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  
+  .div7-Simplify-homepage {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  
+  .div8-Simplify-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+    max-width: 100%;
+    font-size: 32px;
+  }
+  
+  .div9-Simplify-homepage {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    max-width: 100%;
+  }
+  
+  .div10-Simplify-homepage {
+    width: 200px;
+    display: none;
+  }
+  

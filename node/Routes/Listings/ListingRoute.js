@@ -63,7 +63,6 @@ router.post("/post-membership", upload.fields([
     await newListing.save();
     res.status(201).send("Listing created successfully");
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -79,7 +78,6 @@ router.get("/get-membership", async (req, res) => {
 
     res.status(200).json(getMembershipData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
@@ -94,7 +92,6 @@ router.get("/get-membership-free", async (req, res) => {
 
     res.status(200).json(getMembershipData);
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });

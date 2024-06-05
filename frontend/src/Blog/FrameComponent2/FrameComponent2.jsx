@@ -6,19 +6,17 @@ import { useEffect, useState } from "react";
 const FrameComponent2 = () => {
   const [blogArticals, setBlogArticals] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:1337/blogs").then((res) => {
+    axios.get("http://localhost:3000/get-blogs").then((res) => {
       setBlogArticals(res.data);
     });
-  }, []);
- 
+  }, []); 
   let blogs = blogArticals.slice(0, 4);
-
   return (
     <div className="frame-parent7-blog-Frame2">
       <img
         className="frame-child2-blog-Frame2"
         alt=""
-        src={`http://localhost:1337${blogs?.[0]?.images?.[0]?.url}`}
+        src={`${blogs?.[0]?.images?.[0]}`}
       />
       <div className="card-type-parent-blog-Frame2">
         <div className="card-type1-blog-Frame2">
@@ -26,7 +24,7 @@ const FrameComponent2 = () => {
             className="card-type-item-blog-Frame2"
             loading="lazy"
             alt=""
-            src={`http://localhost:1337${blogs?.[1]?.images?.[0]?.url}`}
+            src={`${blogs?.[1]?.images?.[0]}`}
           />
           <div className="card-type-inner1-blog-Frame2">
             <div className="frame-parent8-blog-Frame2">
@@ -42,16 +40,16 @@ const FrameComponent2 = () => {
           </div>
         </div>
         <CardType1
-          rectangle9616={`http://localhost:1337${blogs[2]?.images[0]?.url}`}
+          rectangle9616={`${blogs[2]?.images[0]}`}
           sep2022={blogs[2]?.date}
           howToFigureOutIfAPotentia={blogs[2]?.sortDescription}
           suggestion={blogs[2]?.suggestion}
         />
         <CardType1
-          rectangle9616={`http://localhost:1337${blogs[3]?.images[0]?.url}`}
-          sep2022={blogs[3]?.date}
-          howToFigureOutIfAPotentia={blogs[3]?.sortDescription}
-          suggestion={blogs[3]?.suggestion}
+          rectangle9616={`${blogs[2]?.images[1]}`}
+          sep2022={blogs[2]?.date}
+          howToFigureOutIfAPotentia={blogs[2]?.sortDescription}
+          suggestion={blogs[2]?.suggestion}
         />
       </div>
     </div>

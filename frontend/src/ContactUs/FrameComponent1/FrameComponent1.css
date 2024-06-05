@@ -40,24 +40,6 @@
     box-sizing: border-box;
     max-width: 100%;
   }
-  .frame-inner-contactUs-Frame1 {
-    height: 32.5rem;
-    flex: 1;
-    position: relative;
-    border-radius: 16px;
-    max-width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  .frame-icon-contactUs-Frame1 {
-    height: 3.25rem;
-    width: 3.25rem;
-    position: absolute;
-    margin: 0 !important;
-    top: 13.063rem;
-    left: calc(50% - 26px);
-    z-index: 1;
-  }
   .rectangle-container-contactUs-Frame1,
   .style-guide-changelog-licensin-parent-contactUs-Frame1 {
     align-self: stretch;

@@ -50,7 +50,7 @@ const DataSorter = ({
                 justifyContent: "space-between",
                 padding: "16px 24px",
                 boxSizing: "border-box",
-                backgroundImage: `url(http://localhost:1337${items?.image?.[0]?.url})`,
+                backgroundImage: `url(${items?.images?.[0]})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top",
@@ -63,7 +63,7 @@ const DataSorter = ({
               <img
                 className="third-div-listing-dataSorter"
                 alt=""
-                src={placeholderImage}
+                src={items.image?.[0]}
               />
               <button className="feature-btn-listing-dataSorter">
                 <span className="feature-btn-listing-label">Featured</span>
@@ -81,7 +81,7 @@ const DataSorter = ({
               </label>
               <div className="items-price-listing-dataSorter">
                 <label className="items-price-label-listing-dataSorter">
-                  {`$${items.price}`}
+                  {`₹${items.price}`}
                 </label>
                 <label className="items-location-label-listing-dataSorter">
                   {items.location}
@@ -105,7 +105,7 @@ const DataSorter = ({
                     src={frame1}
                   />
                   <label className="washbasin-img-listing-dataSorter">
-                    {items.washbasin}
+                    {items.washbasinIcon}
                   </label>
                 </div>
                 <div className="bed-img-first-div-listing-dataSorter">
@@ -115,7 +115,7 @@ const DataSorter = ({
                     src={progressBarParent}
                   />
                   <label className="bed-label-listing-dataSorter">
-                    {items.bed}
+                    {items.bedIcon}
                   </label>
                 </div>
                 <div className="size-img-first-div-listing-dataSorter">
@@ -125,7 +125,7 @@ const DataSorter = ({
                     src={radioButtonParent}
                   />
                   <label className="size-label-listing-dataSorter">
-                    {items.size}
+                    {items.sizeIcon}
                   </label>
                 </div>
                 <div className="last-div-listing-dataSorter"></div>

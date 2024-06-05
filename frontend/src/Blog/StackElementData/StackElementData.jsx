@@ -12,7 +12,6 @@ const StackElementData = ({
       height: frameDivHeight,
     };
   }, [frameDivWidth, frameDivHeight]);
-
   return (
     <div className="stack-element-data-blog-Stackelement">
       <img

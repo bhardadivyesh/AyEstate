@@ -17,17 +17,11 @@ class Payment extends Component {
 
   componentDidMount() {
     if (!window.Razorpay) {
-      console.error("Razorpay script not loaded");
     }
   }
 
   paymentHandler(e) {
     e.preventDefault();
-
-    if (!window.Razorpay) {
-      console.error("Razorpay script not loaded");
-      return;
-    }
 
     const { payment_amount } = this.state;
     const self = this;

@@ -10,7 +10,7 @@ const ActiveListing = () => {
     const [activeListingData,setActiveListingData] = useState([])
     const [pendingListingData, setPendingListingData] = useState([]);
     const [rejectListingData, setRejectListingData] = useState([]);
-
+console.log(activeListingData);
     useEffect(()=>{
       axios.get('http://localhost:3000/get-vendorListing-active').then((res)=>{
         setActiveListingData(res.data)
