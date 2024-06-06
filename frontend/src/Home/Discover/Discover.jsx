@@ -2,8 +2,13 @@ import Column1 from "../Column1/Column1";
 import frame from "../../assets/Frame 162767.png";
 import buttonIcon from "../../assets/chevron-right.png";
 import "./Discover.css";
+import { useNavigate } from "react-router-dom";
 
 const Discover = () => {
+  const navigation = useNavigate();
+  const handleNavigation = (navigationPath) =>{
+    navigation(navigationPath)
+  } 
   return (
     <section className="section1-discover-homepage">
       <div className="div1-discover-homepage">
@@ -50,10 +55,10 @@ const Discover = () => {
           />
         </div>
         <div className="div7-discover-homepage">
-          <button className="btn1-discover-homepage">
+          <button className="btn1-discover-homepage" onClick={()=>handleNavigation("/listing")}>
             <div className="div8-discover-homepage">Learn More</div>
           </button>
-          <div className="div9-discover-homepage">
+          <div className="div9-discover-homepage" onClick={()=>handleNavigation("/contact")}>
             <div className="div10-discover-homepage">Contact</div>
             <img
               className="img1-discover-homepage"

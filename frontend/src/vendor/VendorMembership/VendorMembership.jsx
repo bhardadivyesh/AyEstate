@@ -8,8 +8,13 @@ import personalIcon from "../../assets/admin/vendordashboard/membership/personal
 import privacyIcon from "../../assets/admin/vendordashboard/membership/privacy.png";
 import relationshipIcon from "../../assets/admin/vendordashboard/membership/relationship.png";
 import topSlotIcon from "../../assets/admin/vendordashboard/membership/topSlot.png";
+import { useEffect } from "react";
+import axios from "axios";
 
 const VendorMembership = () => {
+  useEffect(()=>{
+    axios.get()
+  },[])
   
   return (
     <div className="vendormembership-vendorMembership">

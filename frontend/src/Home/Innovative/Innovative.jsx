@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "./Innovative.css"
 const Innovative = () => {
+  const navigate = useNavigate()
+  const handleNavigation = (navigationpath) =>{
+    navigate(navigationpath)
+  }
   return (
     <div className="div1-Innovative-homepage">
       <div className="div2-Innovative-homepage">
@@ -20,7 +25,7 @@ const Innovative = () => {
               satisfaction is our top priority.
             </div>
             <div className="div8-Innovative-homepage">
-              <button className="btn1--Innovative-homepage">
+              <button className="btn1-Innovative-homepage" onClick={()=>handleNavigation("/contact")}>
                 <div className="div9-Innovative-homepage">Learn More</div>
               </button>
             </div>

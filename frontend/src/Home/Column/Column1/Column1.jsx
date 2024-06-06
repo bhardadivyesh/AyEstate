@@ -1,6 +1,5 @@
 import "./Column1.css";
 const Column1 = ({ frame162767, heading, heading2, text, text2, text3 }) => {
-  console.log(heading);
   return (
     <div className="div1-column1-homepage">
       <img

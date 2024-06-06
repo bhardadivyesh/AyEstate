@@ -133,8 +133,6 @@ router.put('/put-vendorListing', async (req, res) => {
   try {
     const name = req.body.name; 
     const status = req.body.status
-    console.log(status);
-    console.log(name);
     let updatedCategory = await VendorListingSchema.findOneAndUpdate({ name: name }, {status : status}, { new: true });
     if (!updatedCategory) {
         return res.status(404).json({ error: 'Listing not found' });

@@ -3,12 +3,17 @@ import FrameComponent from "../FrameComponent/FrameComponent";
 import add from "../../assets/add.png";
 import minus from "../../assets/minus.png";
 import "./Faqs.css";
+import { useNavigate } from "react-router-dom";
 
 const FAQs = () => {
   const [showContent, setShowContent] = useState(true);
+  const navigate = useNavigate()
   const showContentToggle = () => {
     setShowContent(!showContent);
   };
+  const handleNavigationClick = (navigationPath) =>{
+    navigate(navigationPath)
+  }
   return (
     <form className="form-faqs-homepage">
       <div className="div1-faqs-homepage">
@@ -99,7 +104,7 @@ const FAQs = () => {
         </div>
       </div>
       <div className="div16-faqs-homepage">
-        <button className="btn1-faqs-homepage">
+        <button className="btn1-faqs-homepage" onClick={()=>handleNavigationClick("/contact")}>
           <div className="div17-faqs-homepage">Give a Quote</div>
         </button>
       </div>
